@@ -8,3 +8,13 @@ C:\Users\jupper\source\repos\SouthJLAInformationSystemC\SouthJLAInformationSyste
 C:\Users\jupper\source\repos\SouthJLAInformationSystemC\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
 C:\Users\jupper\source\repos\SouthJLAInformationSystemC\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
 C:\Users\jupper\source\repos\SouthJLAInformationSystemC\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.mainMenu.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.config
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.pdb
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenu.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Properties.Resources.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.GenerateResource.cache
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb

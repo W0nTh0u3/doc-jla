@@ -19,22 +19,32 @@ namespace SouthJLAInformationSystemC
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            Label13.Parent = pictureBox2;
-            Label13.BackColor = Color.Transparent;
-            Label14.Parent = pictureBox2;
-            Label14.BackColor = Color.Transparent;
-            Label15.Parent = pictureBox2;
-            Label15.BackColor = Color.Transparent;
-            Label16.Parent = pictureBox2;
-            Label16.BackColor = Color.Transparent;
-            Label17.Parent = pictureBox2;
-            Label17.BackColor = Color.Transparent;
-
+            MainMenuTree.BackColor = Color.Transparent;
+            //LabelsTransparent();
+            Panel2.Location = new Point(442, 81);
+            Panel5.Hide();
         }
 
         private void MainMenuTree_AfterSelect(object sender, TreeViewEventArgs e)
         {
             lbl_title.Text = MainMenuTree.SelectedNode.Text;
+            if (MainMenuTree.SelectedNode.Tag == "in")
+            {
+                Panel2.Location = new Point(0, 81);
+                Panel5.Show();
+            }
+            else
+            {
+                Panel2.Location = new Point(447, 81);
+                Panel5.Hide();
+            }
+                
         }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

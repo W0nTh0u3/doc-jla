@@ -15,13 +15,36 @@ namespace SouthJLAInformationSystemC
         public LoginForm()
         {
             InitializeComponent();
+            WrongLabel.Hide();
         }
 
-        private void btn_signin_Click(object sender, EventArgs e)
+        private void Btn_signin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+            if (TextBox4.Text == "admin" && TextBox3.Text == "admin")
+            {
+                Hide();
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.Show();
+            }
+            else
+            {
+                WrongLabel.Show();
+            }
+        }
+
+        private void TextBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            WrongLabel.Hide();
+        }
+
+        private void TextBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            WrongLabel.Hide();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            AcceptButton = Btn_signin;
         }
     }
 }

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel2 = new System.Windows.Forms.Panel();
             this.pnl_forgotpassword = new System.Windows.Forms.Panel();
             this.pnl_login = new System.Windows.Forms.Panel();
             this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btn_signin = new System.Windows.Forms.Button();
+            this.Btn_signin = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.TextBox3 = new System.Windows.Forms.TextBox();
@@ -48,10 +48,13 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.TextBox2 = new System.Windows.Forms.TextBox();
             this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.WrongLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_forgotpassword.SuspendLayout();
             this.pnl_login.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,12 +65,6 @@
             this.panel1.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // Panel2
             // 
@@ -93,8 +90,9 @@
             // pnl_login
             // 
             this.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_login.Controls.Add(this.WrongLabel);
             this.pnl_login.Controls.Add(this.LinkLabel1);
-            this.pnl_login.Controls.Add(this.btn_signin);
+            this.pnl_login.Controls.Add(this.Btn_signin);
             this.pnl_login.Controls.Add(this.Label1);
             this.pnl_login.Controls.Add(this.Label4);
             this.pnl_login.Controls.Add(this.TextBox3);
@@ -109,12 +107,12 @@
             this.LinkLabel1.Name = "LinkLabel1";
             this.LinkLabel1.TabStop = true;
             // 
-            // btn_signin
+            // Btn_signin
             // 
-            resources.ApplyResources(this.btn_signin, "btn_signin");
-            this.btn_signin.Name = "btn_signin";
-            this.btn_signin.UseVisualStyleBackColor = true;
-            this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
+            resources.ApplyResources(this.Btn_signin, "Btn_signin");
+            this.Btn_signin.Name = "Btn_signin";
+            this.Btn_signin.UseVisualStyleBackColor = true;
+            this.Btn_signin.Click += new System.EventHandler(this.Btn_signin_Click);
             // 
             // Label1
             // 
@@ -131,11 +129,13 @@
             resources.ApplyResources(this.TextBox3, "TextBox3");
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.UseSystemPasswordChar = true;
+            this.TextBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox3_KeyDown);
             // 
             // TextBox4
             // 
             resources.ApplyResources(this.TextBox4, "TextBox4");
             this.TextBox4.Name = "TextBox4";
+            this.TextBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox4_KeyDown);
             // 
             // TextBox5
             // 
@@ -182,19 +182,36 @@
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.UseSystemPasswordChar = true;
             // 
-            // loginForm
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            // 
+            // WrongLabel
+            // 
+            resources.ApplyResources(this.WrongLabel, "WrongLabel");
+            this.WrongLabel.Name = "WrongLabel";
+            // 
+            // LoginForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "loginForm";
+            this.Name = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_forgotpassword.ResumeLayout(false);
             this.pnl_forgotpassword.PerformLayout();
             this.pnl_login.ResumeLayout(false);
             this.pnl_login.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,7 +223,7 @@
         internal System.Windows.Forms.Panel pnl_forgotpassword;
         internal System.Windows.Forms.Panel pnl_login;
         internal System.Windows.Forms.LinkLabel LinkLabel1;
-        internal System.Windows.Forms.Button btn_signin;
+        internal System.Windows.Forms.Button Btn_signin;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.TextBox TextBox3;
@@ -219,6 +236,8 @@
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.TextBox TextBox2;
         internal System.Windows.Forms.TextBox TextBox1;
+        private System.Windows.Forms.Label WrongLabel;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

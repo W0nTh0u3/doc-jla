@@ -1,0 +1,4 @@
+automatic name register 
+patient id generation depends on the date
+442, 81
+0,81
