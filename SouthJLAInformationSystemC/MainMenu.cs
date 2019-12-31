@@ -19,6 +19,8 @@ namespace SouthJLAInformationSystemC
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseDataSet.ofw' table. You can move, or remove it, as needed.
+            this.ofwTableAdapter.Fill(this.databaseDataSet.ofw);
             MainMenuTree.BackColor = Color.Transparent;
             //LabelsTransparent();
             Panel2.Location = new Point(442, 81);
@@ -46,5 +48,24 @@ namespace SouthJLAInformationSystemC
             Application.Exit();
         }
 
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

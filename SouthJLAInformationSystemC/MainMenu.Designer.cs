@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Enter Requisition");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Edit Requisition");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Enter/Edit Requisition");
@@ -142,10 +143,16 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
+            this.ofwBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
+            this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
+            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ofwBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenuTree
@@ -155,7 +162,7 @@
             this.MainMenuTree.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MainMenuTree.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuTree.Location = new System.Drawing.Point(0, 36);
-            this.MainMenuTree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainMenuTree.Margin = new System.Windows.Forms.Padding(2);
             this.MainMenuTree.Name = "MainMenuTree";
             treeNode1.Name = "Node1";
             treeNode1.Tag = "in";
@@ -281,7 +288,7 @@
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Controls.Add(this.MainMenuTree);
             this.Panel2.Location = new System.Drawing.Point(0, 81);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(213, 699);
             this.Panel2.TabIndex = 8;
@@ -308,7 +315,7 @@
             this.Panel1.Controls.Add(this.lbl_title);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1115, 81);
             this.Panel1.TabIndex = 7;
@@ -628,6 +635,7 @@
             // TextBox6
             // 
             this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
             this.TextBox6.Location = new System.Drawing.Point(122, 155);
             this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox6.MaxLength = 3;
@@ -638,12 +646,14 @@
             // TextBox5
             // 
             this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "address", true));
             this.TextBox5.Location = new System.Drawing.Point(262, 156);
             this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox5.Multiline = true;
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Size = new System.Drawing.Size(146, 54);
             this.TextBox5.TabIndex = 10;
+            this.TextBox5.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
             // Label7
             // 
@@ -668,15 +678,18 @@
             // TextBox3
             // 
             this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
             this.TextBox3.Location = new System.Drawing.Point(361, 100);
             this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.Size = new System.Drawing.Size(47, 20);
             this.TextBox3.TabIndex = 7;
+            this.TextBox3.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // TextBox2
             // 
             this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "givenName", true));
             this.TextBox2.Location = new System.Drawing.Point(233, 99);
             this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox2.Name = "TextBox2";
@@ -686,11 +699,13 @@
             // TextBox1
             // 
             this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
             this.TextBox1.Location = new System.Drawing.Point(122, 99);
             this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(92, 20);
             this.TextBox1.TabIndex = 5;
+            this.TextBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Label6
             // 
@@ -724,6 +739,7 @@
             this.Label4.Size = new System.Drawing.Size(61, 13);
             this.Label4.TabIndex = 2;
             this.Label4.Text = "Lastname";
+            this.Label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // Label3
             // 
@@ -747,6 +763,36 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
             // 
+            // ofwBindingSource
+            // 
+            this.ofwBindingSource.DataMember = "ofw";
+            this.ofwBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ofwTableAdapter
+            // 
+            this.ofwTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.ancillaryResultTableAdapter = null;
+            this.tableAdapterManager.assessmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
+            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
+            this.tableAdapterManager.HematologyTableAdapter = null;
+            this.tableAdapterManager.historyTableAdapter = null;
+            this.tableAdapterManager.ofwTableAdapter = this.ofwTableAdapter;
+            this.tableAdapterManager.SerologyTableAdapter = null;
+            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
+            this.tableAdapterManager.summaryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userAccTableAdapter = null;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -760,7 +806,7 @@
             this.Controls.Add(this.Panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
@@ -773,6 +819,8 @@
             this.Panel5.ResumeLayout(false);
             this.Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ofwBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -822,5 +870,9 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource ofwBindingSource;
+        private DatabaseDataSetTableAdapters.ofwTableAdapter ofwTableAdapter;
+        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
