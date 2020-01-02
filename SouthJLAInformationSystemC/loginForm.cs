@@ -12,6 +12,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class LoginForm : Form
     {
+        
         public LoginForm()
         {
             InitializeComponent();
@@ -22,8 +23,8 @@ namespace SouthJLAInformationSystemC
         {
             if (TextBox4.Text == "admin" && TextBox3.Text == "admin")
             {
-                Hide();
                 MainMenu mainMenu = new MainMenu();
+                Hide();
                 mainMenu.Show();
             }
             else

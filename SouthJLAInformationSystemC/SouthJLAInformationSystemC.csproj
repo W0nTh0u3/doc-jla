@@ -51,6 +51,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CBCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CBCForm.Designer.cs">
+      <DependentUpon>CBCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoolForm.Designer.cs">
+      <DependentUpon>StoolForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,13 +75,34 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainMenuV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuV2.Designer.cs">
+      <DependentUpon>MainMenuV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrinalysisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrinalysisForm.Designer.cs">
+      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CBCForm.resx">
+      <DependentUpon>CBCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoolForm.resx">
+      <DependentUpon>StoolForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuV2.resx">
+      <DependentUpon>MainMenuV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +113,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UrinalysisForm.resx">
+      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>

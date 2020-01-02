@@ -132,6 +132,8 @@
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.TextBox6 = new System.Windows.Forms.TextBox();
+            this.ofwBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
             this.TextBox5 = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.TextBox4 = new System.Windows.Forms.TextBox();
@@ -143,8 +145,6 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.ofwBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
             this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
             this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.Panel2.SuspendLayout();
@@ -262,7 +262,7 @@
             treeNode30,
             treeNode34,
             treeNode39});
-            this.MainMenuTree.Size = new System.Drawing.Size(205, 661);
+            this.MainMenuTree.Size = new System.Drawing.Size(189, 661);
             this.MainMenuTree.TabIndex = 5;
             this.MainMenuTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.MainMenuTree_AfterSelect);
             // 
@@ -280,17 +280,15 @@
             // 
             // Panel2
             // 
-            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.AutoSize = true;
             this.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Controls.Add(this.MainMenuTree);
+            this.Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.Panel2.Location = new System.Drawing.Point(0, 81);
             this.Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(213, 699);
+            this.Panel2.Size = new System.Drawing.Size(191, 699);
             this.Panel2.TabIndex = 8;
             // 
             // lbl_title
@@ -362,17 +360,18 @@
             this.Panel5.Controls.Add(this.Label4);
             this.Panel5.Controls.Add(this.Label3);
             this.Panel5.Controls.Add(this.Label2);
-            this.Panel5.Location = new System.Drawing.Point(209, 81);
+            this.Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel5.Location = new System.Drawing.Point(191, 81);
             this.Panel5.Margin = new System.Windows.Forms.Padding(2);
             this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(905, 697);
+            this.Panel5.Size = new System.Drawing.Size(924, 699);
             this.Panel5.TabIndex = 9;
             // 
             // Label19
             // 
             this.Label19.AutoSize = true;
             this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label19.Location = new System.Drawing.Point(150, 550);
+            this.Label19.Location = new System.Drawing.Point(282, 565);
             this.Label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label19.Name = "Label19";
             this.Label19.Size = new System.Drawing.Size(478, 13);
@@ -382,7 +381,7 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(83, 546);
+            this.textBox14.Location = new System.Drawing.Point(215, 561);
             this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(42, 20);
@@ -393,7 +392,7 @@
             // 
             this.Label18.AutoSize = true;
             this.Label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label18.Location = new System.Drawing.Point(150, 504);
+            this.Label18.Location = new System.Drawing.Point(282, 519);
             this.Label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label18.Name = "Label18";
             this.Label18.Size = new System.Drawing.Size(478, 13);
@@ -403,7 +402,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(83, 500);
+            this.textBox13.Location = new System.Drawing.Point(215, 515);
             this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(42, 20);
@@ -414,7 +413,7 @@
             // 
             this.Label17.AutoSize = true;
             this.Label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label17.Location = new System.Drawing.Point(150, 461);
+            this.Label17.Location = new System.Drawing.Point(282, 476);
             this.Label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label17.Name = "Label17";
             this.Label17.Size = new System.Drawing.Size(478, 13);
@@ -426,7 +425,7 @@
             // 
             this.Label16.AutoSize = true;
             this.Label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label16.Location = new System.Drawing.Point(150, 421);
+            this.Label16.Location = new System.Drawing.Point(282, 436);
             this.Label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label16.Name = "Label16";
             this.Label16.Size = new System.Drawing.Size(478, 13);
@@ -439,41 +438,44 @@
             this.Label15.AutoSize = true;
             this.Label15.BackColor = System.Drawing.Color.Transparent;
             this.Label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.Location = new System.Drawing.Point(150, 381);
+            this.Label15.Location = new System.Drawing.Point(282, 396);
             this.Label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(478, 13);
+            this.Label15.Size = new System.Drawing.Size(477, 13);
             this.Label15.TabIndex = 29;
-            this.Label15.Text = "                                                                                 " +
-    "                                                                            ";
+            this.Label15.Text = "Stool Exam                                                                       " +
+    "                                                                    ";
+            this.Label15.Click += new System.EventHandler(this.Label15_Click);
             // 
             // Label14
             // 
             this.Label14.AutoSize = true;
             this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label14.Location = new System.Drawing.Point(150, 338);
+            this.Label14.Location = new System.Drawing.Point(282, 353);
             this.Label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(478, 13);
+            this.Label14.Size = new System.Drawing.Size(477, 13);
             this.Label14.TabIndex = 28;
-            this.Label14.Text = "                                                                                 " +
-    "                                                                            ";
+            this.Label14.Text = "Urinalysis                                                                       " +
+    "                                                                       ";
+            this.Label14.Click += new System.EventHandler(this.Label14_Click);
             // 
             // Label13
             // 
             this.Label13.AutoSize = true;
             this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label13.Location = new System.Drawing.Point(150, 293);
+            this.Label13.Location = new System.Drawing.Point(282, 308);
             this.Label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(478, 13);
+            this.Label13.Size = new System.Drawing.Size(475, 13);
             this.Label13.TabIndex = 27;
-            this.Label13.Text = "                                                                                 " +
-    "                                                                            ";
+            this.Label13.Text = "CBC                                                                              " +
+    "                                                                       ";
+            this.Label13.Click += new System.EventHandler(this.Label13_Click);
             // 
             // TextBox12
             // 
-            this.TextBox12.Location = new System.Drawing.Point(83, 457);
+            this.TextBox12.Location = new System.Drawing.Point(215, 472);
             this.TextBox12.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Size = new System.Drawing.Size(42, 20);
@@ -482,7 +484,7 @@
             // 
             // TextBox11
             // 
-            this.TextBox11.Location = new System.Drawing.Point(83, 377);
+            this.TextBox11.Location = new System.Drawing.Point(215, 392);
             this.TextBox11.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.Size = new System.Drawing.Size(42, 20);
@@ -491,7 +493,7 @@
             // 
             // TextBox10
             // 
-            this.TextBox10.Location = new System.Drawing.Point(83, 417);
+            this.TextBox10.Location = new System.Drawing.Point(215, 432);
             this.TextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.Size = new System.Drawing.Size(42, 20);
@@ -500,7 +502,7 @@
             // 
             // TextBox9
             // 
-            this.TextBox9.Location = new System.Drawing.Point(83, 335);
+            this.TextBox9.Location = new System.Drawing.Point(215, 350);
             this.TextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox9.Name = "TextBox9";
             this.TextBox9.Size = new System.Drawing.Size(42, 20);
@@ -511,7 +513,7 @@
             // 
             this.Label12.AutoSize = true;
             this.Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label12.Location = new System.Drawing.Point(79, 263);
+            this.Label12.Location = new System.Drawing.Point(211, 278);
             this.Label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(43, 13);
@@ -520,7 +522,7 @@
             // 
             // TextBox8
             // 
-            this.TextBox8.Location = new System.Drawing.Point(83, 291);
+            this.TextBox8.Location = new System.Drawing.Point(215, 306);
             this.TextBox8.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox8.Name = "TextBox8";
             this.TextBox8.Size = new System.Drawing.Size(42, 20);
@@ -643,6 +645,17 @@
             this.TextBox6.Size = new System.Drawing.Size(58, 20);
             this.TextBox6.TabIndex = 11;
             // 
+            // ofwBindingSource
+            // 
+            this.ofwBindingSource.DataMember = "ofw";
+            this.ofwBindingSource.DataSource = this.databaseDataSet;
+            this.ofwBindingSource.CurrentChanged += new System.EventHandler(this.ofwBindingSource_CurrentChanged);
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // TextBox5
             // 
             this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -653,7 +666,6 @@
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Size = new System.Drawing.Size(146, 54);
             this.TextBox5.TabIndex = 10;
-            this.TextBox5.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
             // Label7
             // 
@@ -684,7 +696,6 @@
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.Size = new System.Drawing.Size(47, 20);
             this.TextBox3.TabIndex = 7;
-            this.TextBox3.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // TextBox2
             // 
@@ -705,7 +716,6 @@
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(92, 20);
             this.TextBox1.TabIndex = 5;
-            this.TextBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // Label6
             // 
@@ -739,7 +749,6 @@
             this.Label4.Size = new System.Drawing.Size(61, 13);
             this.Label4.TabIndex = 2;
             this.Label4.Text = "Lastname";
-            this.Label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // Label3
             // 
@@ -762,16 +771,6 @@
             this.Label2.Size = new System.Drawing.Size(64, 13);
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
-            // 
-            // ofwBindingSource
-            // 
-            this.ofwBindingSource.DataMember = "ofw";
-            this.ofwBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ofwTableAdapter
             // 
@@ -801,9 +800,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1115, 780);
-            this.Controls.Add(this.Panel1);
             this.Controls.Add(this.Panel5);
             this.Controls.Add(this.Panel2);
+            this.Controls.Add(this.Panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
