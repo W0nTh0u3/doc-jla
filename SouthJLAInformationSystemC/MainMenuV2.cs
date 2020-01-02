@@ -29,6 +29,7 @@ namespace SouthJLAInformationSystemC
         }
         private void MainMenuV2_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             SidePanel.Dock = DockStyle.Fill;
             SubPanelsHide();
             ContentPanel.Hide();
@@ -200,5 +201,25 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = PhysicalBtn.Text;
         }
         #endregion
+
+        private void MainMenuV2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.NumPad1)
+                GeneralClinicBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad2)
+                PhysicalBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad3)
+                PsychBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad4)
+                XrayBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad5)
+                AudiometBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad6)
+                LaborBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad7)
+                DrugTBtn.PerformClick();
+            if (e.KeyCode == Keys.NumPad8)
+                MisceBtn.PerformClick();
+        }
     }
 }

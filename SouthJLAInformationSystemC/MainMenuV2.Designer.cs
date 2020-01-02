@@ -191,7 +191,7 @@
             this.MenuPanel4.Controls.Add(this.XrayEntEdtResBtn);
             this.MenuPanel4.Controls.Add(this.XrayEntResBtn);
             this.MenuPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel4.Location = new System.Drawing.Point(0, 846);
+            this.MenuPanel4.Location = new System.Drawing.Point(0, 886);
             this.MenuPanel4.Name = "MenuPanel4";
             this.MenuPanel4.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel4.TabIndex = 11;
@@ -203,9 +203,11 @@
             this.XrayRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.XrayRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.XrayRepsBtn.Name = "XrayRepsBtn";
+            this.XrayRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.XrayRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.XrayRepsBtn.TabIndex = 10;
             this.XrayRepsBtn.Text = "Reports";
+            this.XrayRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XrayRepsBtn.UseVisualStyleBackColor = false;
             // 
             // XrayEntEdtResBtn
@@ -215,9 +217,11 @@
             this.XrayEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.XrayEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.XrayEntEdtResBtn.Name = "XrayEntEdtResBtn";
+            this.XrayEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.XrayEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.XrayEntEdtResBtn.TabIndex = 9;
             this.XrayEntEdtResBtn.Text = "Enter / Edit Results";
+            this.XrayEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XrayEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
             // XrayEntResBtn
@@ -227,9 +231,11 @@
             this.XrayEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.XrayEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.XrayEntResBtn.Name = "XrayEntResBtn";
+            this.XrayEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.XrayEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.XrayEntResBtn.TabIndex = 8;
             this.XrayEntResBtn.Text = "Enter Results";
+            this.XrayEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.XrayEntResBtn.UseVisualStyleBackColor = false;
             // 
             // MenuPanel5
@@ -240,7 +246,7 @@
             this.MenuPanel5.Controls.Add(this.AudiometEntEdtResBtn);
             this.MenuPanel5.Controls.Add(this.AudiometEntResBtn);
             this.MenuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel5.Location = new System.Drawing.Point(0, 990);
+            this.MenuPanel5.Location = new System.Drawing.Point(0, 1040);
             this.MenuPanel5.Name = "MenuPanel5";
             this.MenuPanel5.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel5.TabIndex = 13;
@@ -252,9 +258,11 @@
             this.AudiometRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AudiometRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.AudiometRepsBtn.Name = "AudiometRepsBtn";
+            this.AudiometRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.AudiometRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.AudiometRepsBtn.TabIndex = 10;
             this.AudiometRepsBtn.Text = "Reports";
+            this.AudiometRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometRepsBtn.UseVisualStyleBackColor = false;
             // 
             // AudiometEntEdtResBtn
@@ -264,9 +272,11 @@
             this.AudiometEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AudiometEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.AudiometEntEdtResBtn.Name = "AudiometEntEdtResBtn";
+            this.AudiometEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.AudiometEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.AudiometEntEdtResBtn.TabIndex = 9;
             this.AudiometEntEdtResBtn.Text = "Enter / Edit Results";
+            this.AudiometEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
             // AudiometEntResBtn
@@ -276,9 +286,11 @@
             this.AudiometEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AudiometEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.AudiometEntResBtn.Name = "AudiometEntResBtn";
+            this.AudiometEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.AudiometEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.AudiometEntResBtn.TabIndex = 8;
             this.AudiometEntResBtn.Text = "Enter Results";
+            this.AudiometEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometEntResBtn.UseVisualStyleBackColor = false;
             // 
             // MenuPanel6
@@ -289,7 +301,7 @@
             this.MenuPanel6.Controls.Add(this.LaborEntEdtResBtn);
             this.MenuPanel6.Controls.Add(this.LaborEntResBtn);
             this.MenuPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel6.Location = new System.Drawing.Point(0, 1134);
+            this.MenuPanel6.Location = new System.Drawing.Point(0, 1194);
             this.MenuPanel6.Name = "MenuPanel6";
             this.MenuPanel6.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel6.TabIndex = 15;
@@ -301,9 +313,11 @@
             this.LaborRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LaborRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.LaborRepsBtn.Name = "LaborRepsBtn";
+            this.LaborRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.LaborRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.LaborRepsBtn.TabIndex = 10;
             this.LaborRepsBtn.Text = "Reports";
+            this.LaborRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LaborRepsBtn.UseVisualStyleBackColor = false;
             // 
             // LaborEntEdtResBtn
@@ -313,9 +327,11 @@
             this.LaborEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LaborEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.LaborEntEdtResBtn.Name = "LaborEntEdtResBtn";
+            this.LaborEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.LaborEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.LaborEntEdtResBtn.TabIndex = 9;
             this.LaborEntEdtResBtn.Text = "Enter / Edit Results";
+            this.LaborEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LaborEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
             // LaborEntResBtn
@@ -325,9 +341,11 @@
             this.LaborEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LaborEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.LaborEntResBtn.Name = "LaborEntResBtn";
+            this.LaborEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.LaborEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.LaborEntResBtn.TabIndex = 8;
             this.LaborEntResBtn.Text = "Enter Results";
+            this.LaborEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LaborEntResBtn.UseVisualStyleBackColor = false;
             // 
             // MenuPanel7
@@ -338,7 +356,7 @@
             this.MenuPanel7.Controls.Add(this.DrugTEntEdtResBtn);
             this.MenuPanel7.Controls.Add(this.DrugTEntResBtn);
             this.MenuPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel7.Location = new System.Drawing.Point(0, 1278);
+            this.MenuPanel7.Location = new System.Drawing.Point(0, 1348);
             this.MenuPanel7.Name = "MenuPanel7";
             this.MenuPanel7.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel7.TabIndex = 17;
@@ -350,9 +368,11 @@
             this.DrugTRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrugTRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.DrugTRepsBtn.Name = "DrugTRepsBtn";
+            this.DrugTRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.DrugTRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.DrugTRepsBtn.TabIndex = 10;
             this.DrugTRepsBtn.Text = "Reports";
+            this.DrugTRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DrugTRepsBtn.UseVisualStyleBackColor = false;
             // 
             // DrugTEntEdtResBtn
@@ -362,9 +382,11 @@
             this.DrugTEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrugTEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.DrugTEntEdtResBtn.Name = "DrugTEntEdtResBtn";
+            this.DrugTEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.DrugTEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.DrugTEntEdtResBtn.TabIndex = 9;
             this.DrugTEntEdtResBtn.Text = "Enter / Edit Results";
+            this.DrugTEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DrugTEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
             // DrugTEntResBtn
@@ -374,9 +396,11 @@
             this.DrugTEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrugTEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.DrugTEntResBtn.Name = "DrugTEntResBtn";
+            this.DrugTEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.DrugTEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.DrugTEntResBtn.TabIndex = 8;
             this.DrugTEntResBtn.Text = "Enter Results";
+            this.DrugTEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DrugTEntResBtn.UseVisualStyleBackColor = false;
             // 
             // MenuPanel8
@@ -388,7 +412,7 @@
             this.MenuPanel8.Controls.Add(this.MisceDictBtn);
             this.MenuPanel8.Controls.Add(this.MisceBillBtn);
             this.MenuPanel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel8.Location = new System.Drawing.Point(0, 1422);
+            this.MenuPanel8.Location = new System.Drawing.Point(0, 1502);
             this.MenuPanel8.Name = "MenuPanel8";
             this.MenuPanel8.Size = new System.Drawing.Size(204, 132);
             this.MenuPanel8.TabIndex = 19;
@@ -400,9 +424,11 @@
             this.MisceQualBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MisceQualBtn.Location = new System.Drawing.Point(0, 99);
             this.MisceQualBtn.Name = "MisceQualBtn";
+            this.MisceQualBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.MisceQualBtn.Size = new System.Drawing.Size(204, 33);
             this.MisceQualBtn.TabIndex = 8;
             this.MisceQualBtn.Text = "Quality Control";
+            this.MisceQualBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceQualBtn.UseVisualStyleBackColor = false;
             // 
             // MisceECGBtn
@@ -412,9 +438,11 @@
             this.MisceECGBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MisceECGBtn.Location = new System.Drawing.Point(0, 66);
             this.MisceECGBtn.Name = "MisceECGBtn";
+            this.MisceECGBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.MisceECGBtn.Size = new System.Drawing.Size(204, 33);
             this.MisceECGBtn.TabIndex = 7;
             this.MisceECGBtn.Text = "ECG";
+            this.MisceECGBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceECGBtn.UseVisualStyleBackColor = false;
             // 
             // MisceDictBtn
@@ -424,9 +452,11 @@
             this.MisceDictBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MisceDictBtn.Location = new System.Drawing.Point(0, 33);
             this.MisceDictBtn.Name = "MisceDictBtn";
+            this.MisceDictBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.MisceDictBtn.Size = new System.Drawing.Size(204, 33);
             this.MisceDictBtn.TabIndex = 6;
             this.MisceDictBtn.Text = "Dictionaries";
+            this.MisceDictBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceDictBtn.UseVisualStyleBackColor = false;
             // 
             // MisceBillBtn
@@ -436,9 +466,11 @@
             this.MisceBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MisceBillBtn.Location = new System.Drawing.Point(0, 0);
             this.MisceBillBtn.Name = "MisceBillBtn";
+            this.MisceBillBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.MisceBillBtn.Size = new System.Drawing.Size(204, 33);
             this.MisceBillBtn.TabIndex = 5;
             this.MisceBillBtn.Text = "Billing";
+            this.MisceBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceBillBtn.UseVisualStyleBackColor = false;
             // 
             // SidePanel
@@ -476,9 +508,10 @@
             this.MisceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.MisceBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.MisceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MisceBtn.Location = new System.Drawing.Point(0, 1377);
+            this.MisceBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MisceBtn.Location = new System.Drawing.Point(0, 1447);
             this.MisceBtn.Name = "MisceBtn";
-            this.MisceBtn.Size = new System.Drawing.Size(204, 45);
+            this.MisceBtn.Size = new System.Drawing.Size(204, 55);
             this.MisceBtn.TabIndex = 18;
             this.MisceBtn.Text = "Miscellaneous";
             this.MisceBtn.UseVisualStyleBackColor = false;
@@ -489,9 +522,10 @@
             this.DrugTBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.DrugTBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.DrugTBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DrugTBtn.Location = new System.Drawing.Point(0, 1233);
+            this.DrugTBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrugTBtn.Location = new System.Drawing.Point(0, 1293);
             this.DrugTBtn.Name = "DrugTBtn";
-            this.DrugTBtn.Size = new System.Drawing.Size(204, 45);
+            this.DrugTBtn.Size = new System.Drawing.Size(204, 55);
             this.DrugTBtn.TabIndex = 16;
             this.DrugTBtn.Text = "Drugtest";
             this.DrugTBtn.UseVisualStyleBackColor = false;
@@ -502,9 +536,10 @@
             this.LaborBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.LaborBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.LaborBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LaborBtn.Location = new System.Drawing.Point(0, 1089);
+            this.LaborBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LaborBtn.Location = new System.Drawing.Point(0, 1139);
             this.LaborBtn.Name = "LaborBtn";
-            this.LaborBtn.Size = new System.Drawing.Size(204, 45);
+            this.LaborBtn.Size = new System.Drawing.Size(204, 55);
             this.LaborBtn.TabIndex = 14;
             this.LaborBtn.Text = "Laboratory";
             this.LaborBtn.UseVisualStyleBackColor = false;
@@ -515,9 +550,10 @@
             this.AudiometBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.AudiometBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.AudiometBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AudiometBtn.Location = new System.Drawing.Point(0, 945);
+            this.AudiometBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AudiometBtn.Location = new System.Drawing.Point(0, 985);
             this.AudiometBtn.Name = "AudiometBtn";
-            this.AudiometBtn.Size = new System.Drawing.Size(204, 45);
+            this.AudiometBtn.Size = new System.Drawing.Size(204, 55);
             this.AudiometBtn.TabIndex = 12;
             this.AudiometBtn.Text = "Audiometry";
             this.AudiometBtn.UseVisualStyleBackColor = false;
@@ -528,9 +564,10 @@
             this.XrayBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.XrayBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.XrayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.XrayBtn.Location = new System.Drawing.Point(0, 801);
+            this.XrayBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XrayBtn.Location = new System.Drawing.Point(0, 831);
             this.XrayBtn.Name = "XrayBtn";
-            this.XrayBtn.Size = new System.Drawing.Size(204, 45);
+            this.XrayBtn.Size = new System.Drawing.Size(204, 55);
             this.XrayBtn.TabIndex = 10;
             this.XrayBtn.Text = "X-RAY";
             this.XrayBtn.UseVisualStyleBackColor = false;
@@ -544,7 +581,7 @@
             this.MenuPanel3.Controls.Add(this.PsychEntEdtResBtn);
             this.MenuPanel3.Controls.Add(this.PsychEntResBtn);
             this.MenuPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel3.Location = new System.Drawing.Point(0, 702);
+            this.MenuPanel3.Location = new System.Drawing.Point(0, 732);
             this.MenuPanel3.Name = "MenuPanel3";
             this.MenuPanel3.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel3.TabIndex = 9;
@@ -556,9 +593,11 @@
             this.PsychRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PsychRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.PsychRepsBtn.Name = "PsychRepsBtn";
+            this.PsychRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PsychRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.PsychRepsBtn.TabIndex = 10;
             this.PsychRepsBtn.Text = "Reports";
+            this.PsychRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PsychRepsBtn.UseVisualStyleBackColor = false;
             // 
             // PsychEntEdtResBtn
@@ -568,9 +607,11 @@
             this.PsychEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PsychEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.PsychEntEdtResBtn.Name = "PsychEntEdtResBtn";
+            this.PsychEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PsychEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.PsychEntEdtResBtn.TabIndex = 9;
             this.PsychEntEdtResBtn.Text = "Enter / Edit Results";
+            this.PsychEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PsychEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
             // PsychEntResBtn
@@ -580,9 +621,11 @@
             this.PsychEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PsychEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.PsychEntResBtn.Name = "PsychEntResBtn";
+            this.PsychEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PsychEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.PsychEntResBtn.TabIndex = 8;
             this.PsychEntResBtn.Text = "Enter Results";
+            this.PsychEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PsychEntResBtn.UseVisualStyleBackColor = false;
             // 
             // PsychBtn
@@ -590,9 +633,10 @@
             this.PsychBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.PsychBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.PsychBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PsychBtn.Location = new System.Drawing.Point(0, 657);
+            this.PsychBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PsychBtn.Location = new System.Drawing.Point(0, 677);
             this.PsychBtn.Name = "PsychBtn";
-            this.PsychBtn.Size = new System.Drawing.Size(204, 45);
+            this.PsychBtn.Size = new System.Drawing.Size(204, 55);
             this.PsychBtn.TabIndex = 8;
             this.PsychBtn.Text = "Psychological Examination";
             this.PsychBtn.UseVisualStyleBackColor = false;
@@ -606,7 +650,7 @@
             this.MenuPanel2.Controls.Add(this.PhysicalEntEdtResBtn);
             this.MenuPanel2.Controls.Add(this.PhysicalEntResBtn);
             this.MenuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel2.Location = new System.Drawing.Point(0, 558);
+            this.MenuPanel2.Location = new System.Drawing.Point(0, 578);
             this.MenuPanel2.Name = "MenuPanel2";
             this.MenuPanel2.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel2.TabIndex = 7;
@@ -618,9 +662,11 @@
             this.PhysicalRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PhysicalRepsBtn.Location = new System.Drawing.Point(0, 66);
             this.PhysicalRepsBtn.Name = "PhysicalRepsBtn";
+            this.PhysicalRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PhysicalRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.PhysicalRepsBtn.TabIndex = 7;
             this.PhysicalRepsBtn.Text = "Reports";
+            this.PhysicalRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PhysicalRepsBtn.UseVisualStyleBackColor = false;
             this.PhysicalRepsBtn.Click += new System.EventHandler(this.PhysicalRepsBtn_Click);
             // 
@@ -631,9 +677,11 @@
             this.PhysicalEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PhysicalEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
             this.PhysicalEntEdtResBtn.Name = "PhysicalEntEdtResBtn";
+            this.PhysicalEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PhysicalEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
             this.PhysicalEntEdtResBtn.TabIndex = 6;
             this.PhysicalEntEdtResBtn.Text = "Enter / Edit Results";
+            this.PhysicalEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PhysicalEntEdtResBtn.UseVisualStyleBackColor = false;
             this.PhysicalEntEdtResBtn.Click += new System.EventHandler(this.PhysicalEntEdtResBtn_Click);
             // 
@@ -644,9 +692,11 @@
             this.PhysicalEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PhysicalEntResBtn.Location = new System.Drawing.Point(0, 0);
             this.PhysicalEntResBtn.Name = "PhysicalEntResBtn";
+            this.PhysicalEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.PhysicalEntResBtn.Size = new System.Drawing.Size(204, 33);
             this.PhysicalEntResBtn.TabIndex = 5;
             this.PhysicalEntResBtn.Text = "Enter Results";
+            this.PhysicalEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PhysicalEntResBtn.UseVisualStyleBackColor = false;
             this.PhysicalEntResBtn.Click += new System.EventHandler(this.PhysicalEntResBtn_Click);
             // 
@@ -655,10 +705,11 @@
             this.PhysicalBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.PhysicalBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.PhysicalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhysicalBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhysicalBtn.ForeColor = System.Drawing.Color.White;
-            this.PhysicalBtn.Location = new System.Drawing.Point(0, 513);
+            this.PhysicalBtn.Location = new System.Drawing.Point(0, 523);
             this.PhysicalBtn.Name = "PhysicalBtn";
-            this.PhysicalBtn.Size = new System.Drawing.Size(204, 45);
+            this.PhysicalBtn.Size = new System.Drawing.Size(204, 55);
             this.PhysicalBtn.TabIndex = 6;
             this.PhysicalBtn.Text = "Physical Examination";
             this.PhysicalBtn.UseVisualStyleBackColor = false;
@@ -678,7 +729,7 @@
             this.MenuPanel1.Controls.Add(this.GenEditReqBtn);
             this.MenuPanel1.Controls.Add(this.GenEnterReqBtn);
             this.MenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel1.Location = new System.Drawing.Point(0, 216);
+            this.MenuPanel1.Location = new System.Drawing.Point(0, 226);
             this.MenuPanel1.Name = "MenuPanel1";
             this.MenuPanel1.Size = new System.Drawing.Size(204, 297);
             this.MenuPanel1.TabIndex = 5;
@@ -690,9 +741,11 @@
             this.GenQualBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenQualBtn.Location = new System.Drawing.Point(0, 264);
             this.GenQualBtn.Name = "GenQualBtn";
+            this.GenQualBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenQualBtn.Size = new System.Drawing.Size(204, 33);
             this.GenQualBtn.TabIndex = 13;
             this.GenQualBtn.Text = "Quality Control";
+            this.GenQualBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenQualBtn.UseVisualStyleBackColor = false;
             this.GenQualBtn.Click += new System.EventHandler(this.GenQualBtn_Click);
             // 
@@ -703,9 +756,11 @@
             this.GenBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenBillBtn.Location = new System.Drawing.Point(0, 231);
             this.GenBillBtn.Name = "GenBillBtn";
+            this.GenBillBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenBillBtn.Size = new System.Drawing.Size(204, 33);
             this.GenBillBtn.TabIndex = 12;
             this.GenBillBtn.Text = "Billing";
+            this.GenBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenBillBtn.UseVisualStyleBackColor = false;
             this.GenBillBtn.Click += new System.EventHandler(this.GenBillBtn_Click);
             // 
@@ -716,9 +771,11 @@
             this.GenRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenRepsBtn.Location = new System.Drawing.Point(0, 198);
             this.GenRepsBtn.Name = "GenRepsBtn";
+            this.GenRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenRepsBtn.Size = new System.Drawing.Size(204, 33);
             this.GenRepsBtn.TabIndex = 11;
             this.GenRepsBtn.Text = "Reports";
+            this.GenRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenRepsBtn.UseVisualStyleBackColor = false;
             this.GenRepsBtn.Click += new System.EventHandler(this.GenRepsBtn_Click);
             // 
@@ -729,9 +786,11 @@
             this.GenEntEdtResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEntEdtResuBtn.Location = new System.Drawing.Point(0, 165);
             this.GenEntEdtResuBtn.Name = "GenEntEdtResuBtn";
+            this.GenEntEdtResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEntEdtResuBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEntEdtResuBtn.TabIndex = 10;
             this.GenEntEdtResuBtn.Text = "Enter / Edit Results";
+            this.GenEntEdtResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtResuBtn.UseVisualStyleBackColor = false;
             this.GenEntEdtResuBtn.Click += new System.EventHandler(this.GenEntEdtResuBtn_Click);
             // 
@@ -742,9 +801,11 @@
             this.GenEditResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEditResuBtn.Location = new System.Drawing.Point(0, 132);
             this.GenEditResuBtn.Name = "GenEditResuBtn";
+            this.GenEditResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEditResuBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEditResuBtn.TabIndex = 9;
             this.GenEditResuBtn.Text = "Edit Results";
+            this.GenEditResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditResuBtn.UseVisualStyleBackColor = false;
             this.GenEditResuBtn.Click += new System.EventHandler(this.GenEditResuBtn_Click);
             // 
@@ -755,9 +816,11 @@
             this.GenEnterResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEnterResuBtn.Location = new System.Drawing.Point(0, 99);
             this.GenEnterResuBtn.Name = "GenEnterResuBtn";
+            this.GenEnterResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEnterResuBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEnterResuBtn.TabIndex = 8;
             this.GenEnterResuBtn.Text = "Enter Results";
+            this.GenEnterResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterResuBtn.UseVisualStyleBackColor = false;
             this.GenEnterResuBtn.Click += new System.EventHandler(this.GenEnterResuBtn_Click);
             // 
@@ -768,9 +831,11 @@
             this.GenEntEdtReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEntEdtReqBtn.Location = new System.Drawing.Point(0, 66);
             this.GenEntEdtReqBtn.Name = "GenEntEdtReqBtn";
+            this.GenEntEdtReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEntEdtReqBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEntEdtReqBtn.TabIndex = 7;
             this.GenEntEdtReqBtn.Text = "Enter / Edit Requisition";
+            this.GenEntEdtReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtReqBtn.UseVisualStyleBackColor = false;
             this.GenEntEdtReqBtn.Click += new System.EventHandler(this.GenEntEdtReqBtn_Click);
             // 
@@ -781,9 +846,11 @@
             this.GenEditReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEditReqBtn.Location = new System.Drawing.Point(0, 33);
             this.GenEditReqBtn.Name = "GenEditReqBtn";
+            this.GenEditReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEditReqBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEditReqBtn.TabIndex = 6;
             this.GenEditReqBtn.Text = "Edit Requisition";
+            this.GenEditReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditReqBtn.UseVisualStyleBackColor = false;
             this.GenEditReqBtn.Click += new System.EventHandler(this.GenEditReqBtn_Click);
             // 
@@ -794,9 +861,11 @@
             this.GenEnterReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GenEnterReqBtn.Location = new System.Drawing.Point(0, 0);
             this.GenEnterReqBtn.Name = "GenEnterReqBtn";
+            this.GenEnterReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
             this.GenEnterReqBtn.Size = new System.Drawing.Size(204, 33);
             this.GenEnterReqBtn.TabIndex = 5;
             this.GenEnterReqBtn.Text = "Enter Requisition";
+            this.GenEnterReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterReqBtn.UseVisualStyleBackColor = false;
             this.GenEnterReqBtn.Click += new System.EventHandler(this.GenEnterReqBtn_Click);
             // 
@@ -809,7 +878,7 @@
             this.GeneralClinicBtn.ForeColor = System.Drawing.Color.White;
             this.GeneralClinicBtn.Location = new System.Drawing.Point(0, 171);
             this.GeneralClinicBtn.Name = "GeneralClinicBtn";
-            this.GeneralClinicBtn.Size = new System.Drawing.Size(204, 45);
+            this.GeneralClinicBtn.Size = new System.Drawing.Size(204, 55);
             this.GeneralClinicBtn.TabIndex = 4;
             this.GeneralClinicBtn.Text = "General Clinic";
             this.GeneralClinicBtn.UseVisualStyleBackColor = false;
@@ -1344,6 +1413,7 @@
             this.Text = "MainMenuV2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenuV2_FormClosed);
             this.Load += new System.EventHandler(this.MainMenuV2_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainMenuV2_KeyDown);
             this.panel1.ResumeLayout(false);
             this.MenuPanel4.ResumeLayout(false);
             this.MenuPanel5.ResumeLayout(false);
