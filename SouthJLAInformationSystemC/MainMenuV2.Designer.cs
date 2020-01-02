@@ -85,6 +85,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ContentTitlePanel = new System.Windows.Forms.Panel();
+            this.SubMenuLabelClicked = new System.Windows.Forms.Label();
+            this.MenuClickedLabel = new System.Windows.Forms.Label();
             this.Label19 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.Label18 = new System.Windows.Forms.Label();
@@ -122,9 +125,6 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.ContentTitlePanel = new System.Windows.Forms.Panel();
-            this.MenuClickedLabel = new System.Windows.Forms.Label();
-            this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -139,8 +139,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.ContentTitlePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -185,13 +185,15 @@
             // 
             // MenuPanel4
             // 
+            this.MenuPanel4.AutoSize = true;
+            this.MenuPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel4.Controls.Add(this.XrayRepsBtn);
             this.MenuPanel4.Controls.Add(this.XrayEntEdtResBtn);
             this.MenuPanel4.Controls.Add(this.XrayEntResBtn);
             this.MenuPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel4.Location = new System.Drawing.Point(0, 851);
+            this.MenuPanel4.Location = new System.Drawing.Point(0, 846);
             this.MenuPanel4.Name = "MenuPanel4";
-            this.MenuPanel4.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel4.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel4.TabIndex = 11;
             // 
             // XrayRepsBtn
@@ -232,13 +234,15 @@
             // 
             // MenuPanel5
             // 
+            this.MenuPanel5.AutoSize = true;
+            this.MenuPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel5.Controls.Add(this.AudiometRepsBtn);
             this.MenuPanel5.Controls.Add(this.AudiometEntEdtResBtn);
             this.MenuPanel5.Controls.Add(this.AudiometEntResBtn);
             this.MenuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel5.Location = new System.Drawing.Point(0, 997);
+            this.MenuPanel5.Location = new System.Drawing.Point(0, 990);
             this.MenuPanel5.Name = "MenuPanel5";
-            this.MenuPanel5.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel5.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel5.TabIndex = 13;
             // 
             // AudiometRepsBtn
@@ -279,13 +283,15 @@
             // 
             // MenuPanel6
             // 
+            this.MenuPanel6.AutoSize = true;
+            this.MenuPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel6.Controls.Add(this.LaborRepsBtn);
             this.MenuPanel6.Controls.Add(this.LaborEntEdtResBtn);
             this.MenuPanel6.Controls.Add(this.LaborEntResBtn);
             this.MenuPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel6.Location = new System.Drawing.Point(0, 1143);
+            this.MenuPanel6.Location = new System.Drawing.Point(0, 1134);
             this.MenuPanel6.Name = "MenuPanel6";
-            this.MenuPanel6.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel6.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel6.TabIndex = 15;
             // 
             // LaborRepsBtn
@@ -326,13 +332,15 @@
             // 
             // MenuPanel7
             // 
+            this.MenuPanel7.AutoSize = true;
+            this.MenuPanel7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel7.Controls.Add(this.DrugTRepsBtn);
             this.MenuPanel7.Controls.Add(this.DrugTEntEdtResBtn);
             this.MenuPanel7.Controls.Add(this.DrugTEntResBtn);
             this.MenuPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel7.Location = new System.Drawing.Point(0, 1289);
+            this.MenuPanel7.Location = new System.Drawing.Point(0, 1278);
             this.MenuPanel7.Name = "MenuPanel7";
-            this.MenuPanel7.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel7.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel7.TabIndex = 17;
             // 
             // DrugTRepsBtn
@@ -373,14 +381,16 @@
             // 
             // MenuPanel8
             // 
+            this.MenuPanel8.AutoSize = true;
+            this.MenuPanel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel8.Controls.Add(this.MisceQualBtn);
             this.MenuPanel8.Controls.Add(this.MisceECGBtn);
             this.MenuPanel8.Controls.Add(this.MisceDictBtn);
             this.MenuPanel8.Controls.Add(this.MisceBillBtn);
             this.MenuPanel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel8.Location = new System.Drawing.Point(0, 1435);
+            this.MenuPanel8.Location = new System.Drawing.Point(0, 1422);
             this.MenuPanel8.Name = "MenuPanel8";
-            this.MenuPanel8.Size = new System.Drawing.Size(204, 136);
+            this.MenuPanel8.Size = new System.Drawing.Size(204, 132);
             this.MenuPanel8.TabIndex = 19;
             // 
             // MisceQualBtn
@@ -466,7 +476,7 @@
             this.MisceBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.MisceBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.MisceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MisceBtn.Location = new System.Drawing.Point(0, 1390);
+            this.MisceBtn.Location = new System.Drawing.Point(0, 1377);
             this.MisceBtn.Name = "MisceBtn";
             this.MisceBtn.Size = new System.Drawing.Size(204, 45);
             this.MisceBtn.TabIndex = 18;
@@ -479,7 +489,7 @@
             this.DrugTBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.DrugTBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.DrugTBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DrugTBtn.Location = new System.Drawing.Point(0, 1244);
+            this.DrugTBtn.Location = new System.Drawing.Point(0, 1233);
             this.DrugTBtn.Name = "DrugTBtn";
             this.DrugTBtn.Size = new System.Drawing.Size(204, 45);
             this.DrugTBtn.TabIndex = 16;
@@ -492,7 +502,7 @@
             this.LaborBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.LaborBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.LaborBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LaborBtn.Location = new System.Drawing.Point(0, 1098);
+            this.LaborBtn.Location = new System.Drawing.Point(0, 1089);
             this.LaborBtn.Name = "LaborBtn";
             this.LaborBtn.Size = new System.Drawing.Size(204, 45);
             this.LaborBtn.TabIndex = 14;
@@ -505,7 +515,7 @@
             this.AudiometBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.AudiometBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.AudiometBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AudiometBtn.Location = new System.Drawing.Point(0, 952);
+            this.AudiometBtn.Location = new System.Drawing.Point(0, 945);
             this.AudiometBtn.Name = "AudiometBtn";
             this.AudiometBtn.Size = new System.Drawing.Size(204, 45);
             this.AudiometBtn.TabIndex = 12;
@@ -518,7 +528,7 @@
             this.XrayBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.XrayBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.XrayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.XrayBtn.Location = new System.Drawing.Point(0, 806);
+            this.XrayBtn.Location = new System.Drawing.Point(0, 801);
             this.XrayBtn.Name = "XrayBtn";
             this.XrayBtn.Size = new System.Drawing.Size(204, 45);
             this.XrayBtn.TabIndex = 10;
@@ -528,13 +538,15 @@
             // 
             // MenuPanel3
             // 
+            this.MenuPanel3.AutoSize = true;
+            this.MenuPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel3.Controls.Add(this.PsychRepsBtn);
             this.MenuPanel3.Controls.Add(this.PsychEntEdtResBtn);
             this.MenuPanel3.Controls.Add(this.PsychEntResBtn);
             this.MenuPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel3.Location = new System.Drawing.Point(0, 705);
+            this.MenuPanel3.Location = new System.Drawing.Point(0, 702);
             this.MenuPanel3.Name = "MenuPanel3";
-            this.MenuPanel3.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel3.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel3.TabIndex = 9;
             // 
             // PsychRepsBtn
@@ -578,7 +590,7 @@
             this.PsychBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
             this.PsychBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.PsychBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PsychBtn.Location = new System.Drawing.Point(0, 660);
+            this.PsychBtn.Location = new System.Drawing.Point(0, 657);
             this.PsychBtn.Name = "PsychBtn";
             this.PsychBtn.Size = new System.Drawing.Size(204, 45);
             this.PsychBtn.TabIndex = 8;
@@ -588,13 +600,15 @@
             // 
             // MenuPanel2
             // 
+            this.MenuPanel2.AutoSize = true;
+            this.MenuPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel2.Controls.Add(this.PhysicalRepsBtn);
             this.MenuPanel2.Controls.Add(this.PhysicalEntEdtResBtn);
             this.MenuPanel2.Controls.Add(this.PhysicalEntResBtn);
             this.MenuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuPanel2.Location = new System.Drawing.Point(0, 559);
+            this.MenuPanel2.Location = new System.Drawing.Point(0, 558);
             this.MenuPanel2.Name = "MenuPanel2";
-            this.MenuPanel2.Size = new System.Drawing.Size(204, 101);
+            this.MenuPanel2.Size = new System.Drawing.Size(204, 99);
             this.MenuPanel2.TabIndex = 7;
             // 
             // PhysicalRepsBtn
@@ -608,6 +622,7 @@
             this.PhysicalRepsBtn.TabIndex = 7;
             this.PhysicalRepsBtn.Text = "Reports";
             this.PhysicalRepsBtn.UseVisualStyleBackColor = false;
+            this.PhysicalRepsBtn.Click += new System.EventHandler(this.PhysicalRepsBtn_Click);
             // 
             // PhysicalEntEdtResBtn
             // 
@@ -620,6 +635,7 @@
             this.PhysicalEntEdtResBtn.TabIndex = 6;
             this.PhysicalEntEdtResBtn.Text = "Enter / Edit Results";
             this.PhysicalEntEdtResBtn.UseVisualStyleBackColor = false;
+            this.PhysicalEntEdtResBtn.Click += new System.EventHandler(this.PhysicalEntEdtResBtn_Click);
             // 
             // PhysicalEntResBtn
             // 
@@ -632,6 +648,7 @@
             this.PhysicalEntResBtn.TabIndex = 5;
             this.PhysicalEntResBtn.Text = "Enter Results";
             this.PhysicalEntResBtn.UseVisualStyleBackColor = false;
+            this.PhysicalEntResBtn.Click += new System.EventHandler(this.PhysicalEntResBtn_Click);
             // 
             // PhysicalBtn
             // 
@@ -639,7 +656,7 @@
             this.PhysicalBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.PhysicalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PhysicalBtn.ForeColor = System.Drawing.Color.White;
-            this.PhysicalBtn.Location = new System.Drawing.Point(0, 514);
+            this.PhysicalBtn.Location = new System.Drawing.Point(0, 513);
             this.PhysicalBtn.Name = "PhysicalBtn";
             this.PhysicalBtn.Size = new System.Drawing.Size(204, 45);
             this.PhysicalBtn.TabIndex = 6;
@@ -649,6 +666,8 @@
             // 
             // MenuPanel1
             // 
+            this.MenuPanel1.AutoSize = true;
+            this.MenuPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.MenuPanel1.Controls.Add(this.GenQualBtn);
             this.MenuPanel1.Controls.Add(this.GenBillBtn);
             this.MenuPanel1.Controls.Add(this.GenRepsBtn);
@@ -661,7 +680,7 @@
             this.MenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.MenuPanel1.Location = new System.Drawing.Point(0, 216);
             this.MenuPanel1.Name = "MenuPanel1";
-            this.MenuPanel1.Size = new System.Drawing.Size(204, 298);
+            this.MenuPanel1.Size = new System.Drawing.Size(204, 297);
             this.MenuPanel1.TabIndex = 5;
             // 
             // GenQualBtn
@@ -675,6 +694,7 @@
             this.GenQualBtn.TabIndex = 13;
             this.GenQualBtn.Text = "Quality Control";
             this.GenQualBtn.UseVisualStyleBackColor = false;
+            this.GenQualBtn.Click += new System.EventHandler(this.GenQualBtn_Click);
             // 
             // GenBillBtn
             // 
@@ -687,6 +707,7 @@
             this.GenBillBtn.TabIndex = 12;
             this.GenBillBtn.Text = "Billing";
             this.GenBillBtn.UseVisualStyleBackColor = false;
+            this.GenBillBtn.Click += new System.EventHandler(this.GenBillBtn_Click);
             // 
             // GenRepsBtn
             // 
@@ -699,6 +720,7 @@
             this.GenRepsBtn.TabIndex = 11;
             this.GenRepsBtn.Text = "Reports";
             this.GenRepsBtn.UseVisualStyleBackColor = false;
+            this.GenRepsBtn.Click += new System.EventHandler(this.GenRepsBtn_Click);
             // 
             // GenEntEdtResuBtn
             // 
@@ -711,6 +733,7 @@
             this.GenEntEdtResuBtn.TabIndex = 10;
             this.GenEntEdtResuBtn.Text = "Enter / Edit Results";
             this.GenEntEdtResuBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtResuBtn.Click += new System.EventHandler(this.GenEntEdtResuBtn_Click);
             // 
             // GenEditResuBtn
             // 
@@ -723,6 +746,7 @@
             this.GenEditResuBtn.TabIndex = 9;
             this.GenEditResuBtn.Text = "Edit Results";
             this.GenEditResuBtn.UseVisualStyleBackColor = false;
+            this.GenEditResuBtn.Click += new System.EventHandler(this.GenEditResuBtn_Click);
             // 
             // GenEnterResuBtn
             // 
@@ -735,6 +759,7 @@
             this.GenEnterResuBtn.TabIndex = 8;
             this.GenEnterResuBtn.Text = "Enter Results";
             this.GenEnterResuBtn.UseVisualStyleBackColor = false;
+            this.GenEnterResuBtn.Click += new System.EventHandler(this.GenEnterResuBtn_Click);
             // 
             // GenEntEdtReqBtn
             // 
@@ -747,6 +772,7 @@
             this.GenEntEdtReqBtn.TabIndex = 7;
             this.GenEntEdtReqBtn.Text = "Enter / Edit Requisition";
             this.GenEntEdtReqBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtReqBtn.Click += new System.EventHandler(this.GenEntEdtReqBtn_Click);
             // 
             // GenEditReqBtn
             // 
@@ -759,6 +785,7 @@
             this.GenEditReqBtn.TabIndex = 6;
             this.GenEditReqBtn.Text = "Edit Requisition";
             this.GenEditReqBtn.UseVisualStyleBackColor = false;
+            this.GenEditReqBtn.Click += new System.EventHandler(this.GenEditReqBtn_Click);
             // 
             // GenEnterReqBtn
             // 
@@ -771,6 +798,7 @@
             this.GenEnterReqBtn.TabIndex = 5;
             this.GenEnterReqBtn.Text = "Enter Requisition";
             this.GenEnterReqBtn.UseVisualStyleBackColor = false;
+            this.GenEnterReqBtn.Click += new System.EventHandler(this.GenEnterReqBtn_Click);
             // 
             // GeneralClinicBtn
             // 
@@ -878,6 +906,39 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(878, 705);
             this.ContentPanel.TabIndex = 10;
+            // 
+            // ContentTitlePanel
+            // 
+            this.ContentTitlePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ContentTitlePanel.Controls.Add(this.SubMenuLabelClicked);
+            this.ContentTitlePanel.Controls.Add(this.MenuClickedLabel);
+            this.ContentTitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ContentTitlePanel.Location = new System.Drawing.Point(0, 0);
+            this.ContentTitlePanel.Name = "ContentTitlePanel";
+            this.ContentTitlePanel.Size = new System.Drawing.Size(878, 60);
+            this.ContentTitlePanel.TabIndex = 37;
+            // 
+            // SubMenuLabelClicked
+            // 
+            this.SubMenuLabelClicked.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SubMenuLabelClicked.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubMenuLabelClicked.Location = new System.Drawing.Point(0, 30);
+            this.SubMenuLabelClicked.Name = "SubMenuLabelClicked";
+            this.SubMenuLabelClicked.Size = new System.Drawing.Size(876, 28);
+            this.SubMenuLabelClicked.TabIndex = 1;
+            this.SubMenuLabelClicked.Text = "SubMenuTitle";
+            this.SubMenuLabelClicked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MenuClickedLabel
+            // 
+            this.MenuClickedLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuClickedLabel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuClickedLabel.Location = new System.Drawing.Point(0, 0);
+            this.MenuClickedLabel.Name = "MenuClickedLabel";
+            this.MenuClickedLabel.Size = new System.Drawing.Size(876, 30);
+            this.MenuClickedLabel.TabIndex = 0;
+            this.MenuClickedLabel.Text = "MenuTitle";
+            this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label19
             // 
@@ -1265,37 +1326,6 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
             // 
-            // ContentTitlePanel
-            // 
-            this.ContentTitlePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ContentTitlePanel.Controls.Add(this.SubMenuLabelClicked);
-            this.ContentTitlePanel.Controls.Add(this.MenuClickedLabel);
-            this.ContentTitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ContentTitlePanel.Location = new System.Drawing.Point(0, 0);
-            this.ContentTitlePanel.Name = "ContentTitlePanel";
-            this.ContentTitlePanel.Size = new System.Drawing.Size(878, 60);
-            this.ContentTitlePanel.TabIndex = 37;
-            // 
-            // MenuClickedLabel
-            // 
-            this.MenuClickedLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuClickedLabel.Location = new System.Drawing.Point(0, 0);
-            this.MenuClickedLabel.Name = "MenuClickedLabel";
-            this.MenuClickedLabel.Size = new System.Drawing.Size(876, 30);
-            this.MenuClickedLabel.TabIndex = 0;
-            this.MenuClickedLabel.Text = "label";
-            this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SubMenuLabelClicked
-            // 
-            this.SubMenuLabelClicked.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubMenuLabelClicked.Location = new System.Drawing.Point(0, 30);
-            this.SubMenuLabelClicked.Name = "SubMenuLabelClicked";
-            this.SubMenuLabelClicked.Size = new System.Drawing.Size(876, 30);
-            this.SubMenuLabelClicked.TabIndex = 1;
-            this.SubMenuLabelClicked.Text = "label20";
-            this.SubMenuLabelClicked.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // MainMenuV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1321,6 +1351,7 @@
             this.MenuPanel7.ResumeLayout(false);
             this.MenuPanel8.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
+            this.SidePanel.PerformLayout();
             this.MenuPanel3.ResumeLayout(false);
             this.MenuPanel2.ResumeLayout(false);
             this.MenuPanel1.ResumeLayout(false);
@@ -1329,8 +1360,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ContentTitlePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

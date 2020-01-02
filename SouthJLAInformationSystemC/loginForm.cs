@@ -18,12 +18,21 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
             WrongLabel.Hide();
         }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
 
         private void Btn_signin_Click(object sender, EventArgs e)
         {
             if (TextBox4.Text == "admin" && TextBox3.Text == "admin")
             {
-                MainMenu mainMenu = new MainMenu();
+                MainMenuV2 mainMenu = new MainMenuV2();
                 Hide();
                 mainMenu.Show();
             }
