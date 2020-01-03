@@ -50,13 +50,13 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -318,6 +318,22 @@
             this.panel2.Size = new System.Drawing.Size(800, 298);
             this.panel2.TabIndex = 8;
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(137, 297);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(519, 39);
+            this.richTextBox2.TabIndex = 92;
+            this.richTextBox2.Text = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(137, 113);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(519, 141);
+            this.richTextBox1.TabIndex = 91;
+            this.richTextBox1.Text = "";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -363,24 +379,8 @@
             this.SubmitCBC.Name = "SubmitCBC";
             this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
             this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Submit";
+            this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(137, 113);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(519, 141);
-            this.richTextBox1.TabIndex = 91;
-            this.richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(137, 297);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(519, 39);
-            this.richTextBox2.TabIndex = 92;
-            this.richTextBox2.Text = "";
             // 
             // XrayForm
             // 

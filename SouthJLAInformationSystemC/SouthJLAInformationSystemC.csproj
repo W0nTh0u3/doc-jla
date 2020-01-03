@@ -73,6 +73,12 @@
     <Compile Include="ECGForm.Designer.cs">
       <DependentUpon>ECGForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PAPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAPForm.Designer.cs">
+      <DependentUpon>PAPForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XrayForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ECGForm.resx">
       <DependentUpon>ECGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAPForm.resx">
+      <DependentUpon>PAPForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XrayForm.resx">
       <DependentUpon>XrayForm.cs</DependentUpon>

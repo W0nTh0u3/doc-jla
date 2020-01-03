@@ -351,7 +351,7 @@
             this.SubmitCBC.Name = "SubmitCBC";
             this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
             this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Submit";
+            this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
             // 
             // panel2
