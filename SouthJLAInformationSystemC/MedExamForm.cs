@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace SouthJLAInformationSystemC
 {
-    public partial class UrinalysisForm : Form
+    public partial class MedExamForm : Form
     {
-        public UrinalysisForm()
+        public MedExamForm()
         {
             InitializeComponent();
         }
+
     }
 }

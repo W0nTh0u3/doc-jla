@@ -61,13 +61,13 @@ namespace SouthJLAInformationSystemC
 
         private void Label14_Click(object sender, EventArgs e)
         {
-            UrinalysisForm urinalysisForm = new UrinalysisForm();
+            UrinStoolForm urinalysisForm = new UrinStoolForm();
             urinalysisForm.Show();
         }
 
         private void Label15_Click(object sender, EventArgs e)
         {
-            StoolForm stoolForm = new StoolForm();
+            MedExamForm stoolForm = new MedExamForm();
             stoolForm.Show();
         }
     }

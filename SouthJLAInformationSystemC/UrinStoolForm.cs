@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SouthJLAInformationSystemC
 {
-    public partial class StoolForm : Form
+    public partial class UrinStoolForm : Form
     {
-        public StoolForm()
+        public UrinStoolForm()
         {
             InitializeComponent();
         }

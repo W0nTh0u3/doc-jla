@@ -147,6 +147,8 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
             this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.Panel5.SuspendLayout();
@@ -360,6 +362,8 @@
             this.Panel5.Controls.Add(this.Label4);
             this.Panel5.Controls.Add(this.Label3);
             this.Panel5.Controls.Add(this.Label2);
+            this.Panel5.Controls.Add(this.label20);
+            this.Panel5.Controls.Add(this.label21);
             this.Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel5.Location = new System.Drawing.Point(191, 81);
             this.Panel5.Margin = new System.Windows.Forms.Padding(2);
@@ -441,36 +445,34 @@
             this.Label15.Location = new System.Drawing.Point(282, 396);
             this.Label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(477, 13);
+            this.Label15.Size = new System.Drawing.Size(478, 13);
             this.Label15.TabIndex = 29;
-            this.Label15.Text = "Stool Exam                                                                       " +
-    "                                                                    ";
+            this.Label15.Text = "                                                                                 " +
+    "                                                                            ";
             this.Label15.Click += new System.EventHandler(this.Label15_Click);
             // 
             // Label14
             // 
             this.Label14.AutoSize = true;
-            this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label14.Location = new System.Drawing.Point(282, 353);
+            this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label14.Location = new System.Drawing.Point(282, 352);
             this.Label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(477, 13);
+            this.Label14.Size = new System.Drawing.Size(128, 13);
             this.Label14.TabIndex = 28;
-            this.Label14.Text = "Urinalysis                                                                       " +
-    "                                                                       ";
+            this.Label14.Text = "Urinalysis and Stool Exam";
             this.Label14.Click += new System.EventHandler(this.Label14_Click);
             // 
             // Label13
             // 
             this.Label13.AutoSize = true;
-            this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label13.Location = new System.Drawing.Point(282, 308);
             this.Label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(475, 13);
+            this.Label13.Size = new System.Drawing.Size(28, 13);
             this.Label13.TabIndex = 27;
-            this.Label13.Text = "CBC                                                                              " +
-    "                                                                       ";
+            this.Label13.Text = "CBC";
             this.Label13.Click += new System.EventHandler(this.Label13_Click);
             // 
             // TextBox12
@@ -792,6 +794,32 @@
             this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userAccTableAdapter = null;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(282, 353);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(478, 13);
+            this.label20.TabIndex = 37;
+            this.label20.Text = "                                                                                 " +
+    "                                                                            ";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(282, 309);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(478, 13);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "                                                                                 " +
+    "                                                                            ";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -873,5 +901,7 @@
         private System.Windows.Forms.BindingSource ofwBindingSource;
         private DatabaseDataSetTableAdapters.ofwTableAdapter ofwTableAdapter;
         private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        internal System.Windows.Forms.Label label20;
+        internal System.Windows.Forms.Label label21;
     }
 }

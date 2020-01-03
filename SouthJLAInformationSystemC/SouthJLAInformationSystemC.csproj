@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -57,11 +61,17 @@
     <Compile Include="CBCForm.Designer.cs">
       <DependentUpon>CBCForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StoolForm.cs">
+    <Compile Include="FBSCholeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StoolForm.Designer.cs">
-      <DependentUpon>StoolForm.cs</DependentUpon>
+    <Compile Include="FBSCholeForm.Designer.cs">
+      <DependentUpon>FBSCholeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedExamForm.Designer.cs">
+      <DependentUpon>MedExamForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -83,17 +93,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UrinalysisForm.cs">
+    <Compile Include="UrinStoolForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UrinalysisForm.Designer.cs">
-      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    <Compile Include="UrinStoolForm.Designer.cs">
+      <DependentUpon>UrinStoolForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StoolForm.resx">
-      <DependentUpon>StoolForm.cs</DependentUpon>
+    <EmbeddedResource Include="FBSCholeForm.resx">
+      <DependentUpon>FBSCholeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedExamForm.resx">
+      <DependentUpon>MedExamForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -113,8 +126,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UrinalysisForm.resx">
-      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    <EmbeddedResource Include="UrinStoolForm.resx">
+      <DependentUpon>UrinStoolForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
