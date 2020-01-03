@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ComboBox2 = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
@@ -89,11 +90,17 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
+            this.hematologyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hematologyTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.HematologyTableAdapter();
+            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
+            this.wbcTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -121,7 +128,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 202);
+            this.panel1.Size = new System.Drawing.Size(817, 202);
             this.panel1.TabIndex = 0;
             // 
             // ComboBox2
@@ -340,9 +347,9 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Location = new System.Drawing.Point(0, 570);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.Size = new System.Drawing.Size(817, 45);
             this.panel3.TabIndex = 2;
             // 
             // SubmitCBC
@@ -358,6 +365,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.wbcTextBox);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.label38);
@@ -395,11 +403,10 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.Size = new System.Drawing.Size(817, 368);
             this.panel2.TabIndex = 6;
             // 
             // label40
@@ -723,12 +730,44 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "WBC";
             // 
-            // textBox8
+            // databaseDataSet
             // 
-            this.textBox8.Location = new System.Drawing.Point(268, 107);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 0;
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hematologyBindingSource
+            // 
+            this.hematologyBindingSource.DataMember = "Hematology";
+            this.hematologyBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // hematologyTableAdapter
+            // 
+            this.hematologyTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.adminJLATableAdapter = null;
+            this.tableAdapterManager.ancillaryResultTableAdapter = null;
+            this.tableAdapterManager.assessmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
+            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
+            this.tableAdapterManager.HematologyTableAdapter = this.hematologyTableAdapter;
+            this.tableAdapterManager.historyTableAdapter = null;
+            this.tableAdapterManager.ofwTableAdapter = null;
+            this.tableAdapterManager.SerologyTableAdapter = null;
+            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
+            this.tableAdapterManager.summaryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userAccTableAdapter = null;
+            // 
+            // wbcTextBox
+            // 
+            this.wbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "wbc", true));
+            this.wbcTextBox.Location = new System.Drawing.Point(268, 107);
+            this.wbcTextBox.Name = "wbcTextBox";
+            this.wbcTextBox.Size = new System.Drawing.Size(100, 20);
+            this.wbcTextBox.TabIndex = 39;
             // 
             // CBCForm
             // 
@@ -736,7 +775,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(817, 615);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -747,12 +786,15 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CBC";
+            this.Load += new System.EventHandler(this.CBCForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -820,6 +862,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource hematologyBindingSource;
+        private DatabaseDataSetTableAdapters.HematologyTableAdapter hematologyTableAdapter;
+        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox wbcTextBox;
     }
 }

@@ -17,5 +17,19 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
         }
 
+        private void hematologyBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.hematologyBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+
+        }
+
+        private void CBCForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Hematology' table. You can move, or remove it, as needed.
+            this.hematologyTableAdapter.Fill(this.databaseDataSet.Hematology);
+
+        }
     }
 }

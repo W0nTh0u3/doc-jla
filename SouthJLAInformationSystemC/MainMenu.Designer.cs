@@ -139,7 +139,6 @@
             this.TextBox4 = new System.Windows.Forms.TextBox();
             this.TextBox3 = new System.Windows.Forms.TextBox();
             this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
@@ -147,6 +146,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
             this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.Panel5.SuspendLayout();
@@ -707,16 +707,6 @@
             this.TextBox2.Size = new System.Drawing.Size(101, 20);
             this.TextBox2.TabIndex = 6;
             // 
-            // TextBox1
-            // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
-            this.TextBox1.Location = new System.Drawing.Point(122, 99);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 5;
-            // 
             // Label6
             // 
             this.Label6.AutoSize = true;
@@ -778,6 +768,7 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.adminJLATableAdapter = null;
             this.tableAdapterManager.ancillaryResultTableAdapter = null;
             this.tableAdapterManager.assessmentTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
@@ -791,6 +782,16 @@
             this.tableAdapterManager.summaryTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userAccTableAdapter = null;
+            // 
+            // TextBox1
+            // 
+            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
+            this.TextBox1.Location = new System.Drawing.Point(122, 99);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(92, 20);
+            this.TextBox1.TabIndex = 5;
             // 
             // MainMenu
             // 
@@ -863,7 +864,6 @@
         internal System.Windows.Forms.TextBox TextBox4;
         internal System.Windows.Forms.TextBox TextBox3;
         internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
@@ -873,5 +873,6 @@
         private System.Windows.Forms.BindingSource ofwBindingSource;
         private DatabaseDataSetTableAdapters.ofwTableAdapter ofwTableAdapter;
         private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        internal System.Windows.Forms.TextBox TextBox1;
     }
 }

@@ -25,6 +25,7 @@ namespace SouthJLAInformationSystemC
             //LabelsTransparent();
             Panel2.Location = new Point(442, 81);
             Panel5.Hide();
+            
         }
 
         private void MainMenuTree_AfterSelect(object sender, TreeViewEventArgs e)

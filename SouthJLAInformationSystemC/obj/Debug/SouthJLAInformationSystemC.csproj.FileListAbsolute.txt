@@ -32,3 +32,17 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSyst
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinalysisForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.StoolForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.config
+C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe
+C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.pdb
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.StoolForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenu.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Properties.Resources.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinalysisForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.GenerateResource.cache
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
