@@ -934,10 +934,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ancillaryResultRow AddancillaryResultRow(int id, byte[] xray, byte[] ecg, byte[] cbc, byte[] urinalysis, byte[] stool, byte[] hepaB, byte[] hiv, byte[] rpr, string bloodType, byte[] psychological, string specialNeeds, ofwRow parentofwRowByancillaryResult_ofw) {
+            public ancillaryResultRow AddancillaryResultRow(byte[] xray, byte[] ecg, byte[] cbc, byte[] urinalysis, byte[] stool, byte[] hepaB, byte[] hiv, byte[] rpr, string bloodType, byte[] psychological, string specialNeeds, ofwRow parentofwRowByancillaryResult_ofw) {
                 ancillaryResultRow rowancillaryResultRow = ((ancillaryResultRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         xray,
                         ecg,
                         cbc,
@@ -1028,6 +1028,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnxray.AllowDBNull = false;
@@ -1347,10 +1350,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public assessmentRow AddassessmentRow(int id, byte[] fit, int deck, int engine, int catering, int other, int restriction, int visualAids, byte[] restrctions, ofwRow parentofwRowByassessment_ofw) {
+            public assessmentRow AddassessmentRow(byte[] fit, int deck, int engine, int catering, int other, int restriction, int visualAids, byte[] restrctions, ofwRow parentofwRowByassessment_ofw) {
                 assessmentRow rowassessmentRow = ((assessmentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         fit,
                         deck,
                         engine,
@@ -1429,6 +1432,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnfit.AllowDBNull = false;
@@ -1864,7 +1870,6 @@ namespace SouthJLAInformationSystemC {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Blood_ChemistrtyRow AddBlood_ChemistrtyRow(
-                        int id, 
                         float potassium, 
                         float fbs, 
                         float bun, 
@@ -1888,7 +1893,7 @@ namespace SouthJLAInformationSystemC {
                         ofwRow parentofwRowByBlood_Chemistrty_ofw) {
                 Blood_ChemistrtyRow rowBlood_ChemistrtyRow = ((Blood_ChemistrtyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         potassium,
                         fbs,
                         bun,
@@ -2015,6 +2020,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnpotassium.AllowDBNull = false;
@@ -2442,7 +2450,6 @@ namespace SouthJLAInformationSystemC {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Clinic_MicroscopyRow AddClinic_MicroscopyRow(
-                        int id, 
                         string MacroColor, 
                         string MacroTransparency, 
                         byte[] Leukocyte, 
@@ -2464,7 +2471,7 @@ namespace SouthJLAInformationSystemC {
                         ofwRow parentofwRowByClinic_Microscopy_ofw) {
                 Clinic_MicroscopyRow rowClinic_MicroscopyRow = ((Clinic_MicroscopyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         MacroColor,
                         MacroTransparency,
                         Leukocyte,
@@ -2583,6 +2590,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnMacroColor.AllowDBNull = false;
@@ -2917,10 +2927,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public HematologyRow AddHematologyRow(int id, float wbc, float rbc, float hgb, float hct, int platelets, float neutrophil, float lymphocytes, float monocyte, ofwRow parentofwRowByHematology_ofw) {
+            public HematologyRow AddHematologyRow(float wbc, float rbc, float hgb, float hct, int platelets, float neutrophil, float lymphocytes, float monocyte, ofwRow parentofwRowByHematology_ofw) {
                 HematologyRow rowHematologyRow = ((HematologyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         wbc,
                         rbc,
                         hgb,
@@ -2999,6 +3009,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnwbc.AllowDBNull = false;
@@ -3664,7 +3677,6 @@ namespace SouthJLAInformationSystemC {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public historyRow AddhistoryRow(
-                        int id, 
                         byte[] med1, 
                         byte[] med2, 
                         string comment1, 
@@ -3711,7 +3723,7 @@ namespace SouthJLAInformationSystemC {
                         ofwRow parentofwRowByhistory_ofw) {
                 historyRow rowhistoryRow = ((historyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         med1,
                         med2,
                         comment1,
@@ -3930,6 +3942,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnmed1.AllowDBNull = false;
@@ -4352,7 +4367,6 @@ namespace SouthJLAInformationSystemC {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public ofwRow AddofwRow(
-                        int id, 
                         string lastName, 
                         string givenName, 
                         string middleName, 
@@ -4371,7 +4385,7 @@ namespace SouthJLAInformationSystemC {
                         string employer) {
                 ofwRow rowofwRow = ((ofwRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         lastName,
                         givenName,
                         middleName,
@@ -4475,6 +4489,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnemployer);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnlastName.AllowDBNull = false;
@@ -4948,7 +4965,6 @@ namespace SouthJLAInformationSystemC {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public SerologyRow AddSerologyRow(
-                        int id, 
                         byte[] pregnancySerum, 
                         System.DateTime lastenstrualPeriod, 
                         System.DateTime lastSexualContact, 
@@ -4974,7 +4990,7 @@ namespace SouthJLAInformationSystemC {
                         ofwRow parentofwRowBySerology_ofw) {
                 SerologyRow rowSerologyRow = ((SerologyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         pregnancySerum,
                         lastenstrualPeriod,
                         lastSexualContact,
@@ -5109,6 +5125,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnpregnancySerum.AllowDBNull = false;
@@ -5408,10 +5427,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Stool_ExaminationRow AddStool_ExaminationRow(int id, string color, string consistency, string pus, string rbc, string others, ofwRow parentofwRowByStool_Examination_ofw) {
+            public Stool_ExaminationRow AddStool_ExaminationRow(string color, string consistency, string pus, string rbc, string others, ofwRow parentofwRowByStool_Examination_ofw) {
                 Stool_ExaminationRow rowStool_ExaminationRow = ((Stool_ExaminationRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         color,
                         consistency,
                         pus,
@@ -5478,6 +5497,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columncolor.AllowDBNull = false;
@@ -5784,10 +5806,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public summaryRow AddsummaryRow(int id, int DOHmandatory, int additional, int flag, int remarks, System.DateTime dateExam, System.DateTime expiry, int reportNum, ofwRow parentofwRowBysummary_ofw) {
+            public summaryRow AddsummaryRow(int DOHmandatory, int additional, int flag, int remarks, System.DateTime dateExam, System.DateTime expiry, int reportNum, ofwRow parentofwRowBysummary_ofw) {
                 summaryRow rowsummaryRow = ((summaryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         DOHmandatory,
                         additional,
                         flag,
@@ -5862,6 +5884,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnDOHmandatory.AllowDBNull = false;
@@ -6155,10 +6180,10 @@ namespace SouthJLAInformationSystemC {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public userAccRow AdduserAccRow(int id, string username, string userpass, string name, int license, string address, string eSignatue, ofwRow parentofwRowByuserAcc_ofw) {
+            public userAccRow AdduserAccRow(string username, string userpass, string name, int license, string address, string eSignatue, ofwRow parentofwRowByuserAcc_ofw) {
                 userAccRow rowuserAccRow = ((userAccRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        id,
+                        null,
                         username,
                         userpass,
                         name,
@@ -6229,6 +6254,9 @@ namespace SouthJLAInformationSystemC {
                 base.Columns.Add(this.columnofw_id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
+                this.columnid.AutoIncrement = true;
+                this.columnid.AutoIncrementSeed = -1;
+                this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
                 this.columnusername.AllowDBNull = false;

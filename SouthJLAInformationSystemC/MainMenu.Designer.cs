@@ -131,14 +131,15 @@
             this.TextBox7 = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
             this.ofwBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.addressTextbox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
@@ -146,7 +147,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
             this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.submitButton = new System.Windows.Forms.Button();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.Panel5.SuspendLayout();
@@ -323,6 +324,7 @@
             this.Panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Panel5.BackColor = System.Drawing.Color.Transparent;
             this.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel5.Controls.Add(this.submitButton);
             this.Panel5.Controls.Add(this.Label19);
             this.Panel5.Controls.Add(this.textBox14);
             this.Panel5.Controls.Add(this.Label18);
@@ -348,13 +350,13 @@
             this.Panel5.Controls.Add(this.TextBox7);
             this.Panel5.Controls.Add(this.Label9);
             this.Panel5.Controls.Add(this.Label8);
-            this.Panel5.Controls.Add(this.TextBox6);
-            this.Panel5.Controls.Add(this.TextBox5);
+            this.Panel5.Controls.Add(this.ageBox);
+            this.Panel5.Controls.Add(this.addressTextbox);
             this.Panel5.Controls.Add(this.Label7);
             this.Panel5.Controls.Add(this.TextBox4);
-            this.Panel5.Controls.Add(this.TextBox3);
-            this.Panel5.Controls.Add(this.TextBox2);
-            this.Panel5.Controls.Add(this.TextBox1);
+            this.Panel5.Controls.Add(this.middleBox);
+            this.Panel5.Controls.Add(this.firstBox);
+            this.Panel5.Controls.Add(this.lastBox);
             this.Panel5.Controls.Add(this.Label6);
             this.Panel5.Controls.Add(this.Label5);
             this.Panel5.Controls.Add(this.Label4);
@@ -634,16 +636,16 @@
             this.Label8.TabIndex = 12;
             this.Label8.Text = "Address";
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
-            this.TextBox6.Location = new System.Drawing.Point(122, 155);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 11;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
+            this.ageBox.Location = new System.Drawing.Point(122, 155);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 11;
             // 
             // ofwBindingSource
             // 
@@ -656,16 +658,16 @@
             this.databaseDataSet.DataSetName = "DatabaseDataSet";
             this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // TextBox5
+            // addressTextbox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "address", true));
-            this.TextBox5.Location = new System.Drawing.Point(262, 156);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 10;
+            this.addressTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressTextbox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "address", true));
+            this.addressTextbox.Location = new System.Drawing.Point(262, 156);
+            this.addressTextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressTextbox.Multiline = true;
+            this.addressTextbox.Name = "addressTextbox";
+            this.addressTextbox.Size = new System.Drawing.Size(146, 54);
+            this.addressTextbox.TabIndex = 10;
             // 
             // Label7
             // 
@@ -687,25 +689,35 @@
             this.TextBox4.Size = new System.Drawing.Size(195, 20);
             this.TextBox4.TabIndex = 8;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
-            this.TextBox3.Location = new System.Drawing.Point(361, 100);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 7;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
+            this.middleBox.Location = new System.Drawing.Point(361, 100);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 7;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "givenName", true));
-            this.TextBox2.Location = new System.Drawing.Point(233, 99);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 6;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "givenName", true));
+            this.firstBox.Location = new System.Drawing.Point(233, 99);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 6;
+            // 
+            // lastBox
+            // 
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
+            this.lastBox.Location = new System.Drawing.Point(122, 99);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 5;
             // 
             // Label6
             // 
@@ -783,15 +795,17 @@
             this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userAccTableAdapter = null;
             // 
-            // TextBox1
+            // submitButton
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
-            this.TextBox1.Location = new System.Drawing.Point(122, 99);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 5;
+            this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.submitButton.Location = new System.Drawing.Point(498, 180);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.submitButton.Name = "submitButton";
+            this.submitButton.Size = new System.Drawing.Size(66, 30);
+            this.submitButton.TabIndex = 37;
+            this.submitButton.Text = "Submit";
+            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // MainMenu
             // 
@@ -858,12 +872,12 @@
         internal System.Windows.Forms.TextBox TextBox7;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        internal System.Windows.Forms.TextBox ageBox;
+        internal System.Windows.Forms.TextBox addressTextbox;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox firstBox;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
@@ -873,6 +887,7 @@
         private System.Windows.Forms.BindingSource ofwBindingSource;
         private DatabaseDataSetTableAdapters.ofwTableAdapter ofwTableAdapter;
         private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox lastBox;
+        internal System.Windows.Forms.Button submitButton;
     }
 }

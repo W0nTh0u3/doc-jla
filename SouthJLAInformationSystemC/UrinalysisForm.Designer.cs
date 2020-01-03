@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label macroColorLabel;
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Label6 = new System.Windows.Forms.Label();
@@ -52,6 +54,19 @@
             this.TextBox2 = new System.Windows.Forms.TextBox();
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.macroColorTextBox = new System.Windows.Forms.TextBox();
+            this.clinic_MicroscopyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -96,21 +111,25 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.clinic_MicroscopyTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.Clinic_MicroscopyTableAdapter();
+            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
+            macroColorLabel = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clinic_MicroscopyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // macroColorLabel
+            // 
+            macroColorLabel.AutoSize = true;
+            macroColorLabel.Location = new System.Drawing.Point(476, 121);
+            macroColorLabel.Name = "macroColorLabel";
+            macroColorLabel.Size = new System.Drawing.Size(67, 13);
+            macroColorLabel.TabIndex = 132;
+            macroColorLabel.Text = "Macro Color:";
             // 
             // SubmitCBC
             // 
@@ -125,9 +144,9 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Location = new System.Drawing.Point(0, 704);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.Size = new System.Drawing.Size(835, 45);
             this.panel3.TabIndex = 5;
             // 
             // Label6
@@ -210,7 +229,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 202);
+            this.panel1.Size = new System.Drawing.Size(835, 202);
             this.panel1.TabIndex = 3;
             // 
             // ComboBox2
@@ -374,6 +393,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(macroColorLabel);
+            this.panel2.Controls.Add(this.macroColorTextBox);
             this.panel2.Controls.Add(this.label44);
             this.panel2.Controls.Add(this.textBox25);
             this.panel2.Controls.Add(this.label13);
@@ -431,8 +452,108 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.Size = new System.Drawing.Size(835, 502);
             this.panel2.TabIndex = 6;
+            // 
+            // macroColorTextBox
+            // 
+            this.macroColorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clinic_MicroscopyBindingSource, "MacroColor", true));
+            this.macroColorTextBox.Location = new System.Drawing.Point(549, 118);
+            this.macroColorTextBox.Name = "macroColorTextBox";
+            this.macroColorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.macroColorTextBox.TabIndex = 133;
+            // 
+            // clinic_MicroscopyBindingSource
+            // 
+            this.clinic_MicroscopyBindingSource.DataMember = "Clinic_Microscopy";
+            this.clinic_MicroscopyBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(85, 727);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(60, 13);
+            this.label44.TabIndex = 132;
+            this.label44.Text = "BACTERIA";
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(267, 724);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(100, 20);
+            this.textBox25.TabIndex = 131;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(627, 695);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(44, 13);
+            this.label13.TabIndex = 130;
+            this.label13.Text = "(NONE)";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(85, 695);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(29, 13);
+            this.label16.TabIndex = 129;
+            this.label16.Text = "RBC";
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(267, 692);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(100, 20);
+            this.textBox24.TabIndex = 128;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(627, 664);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 13);
+            this.label12.TabIndex = 127;
+            this.label12.Text = "(NONE)";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(85, 664);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 13);
+            this.label14.TabIndex = 125;
+            this.label14.Text = "PUS CELLS";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(267, 661);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(100, 20);
+            this.textBox22.TabIndex = 124;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(85, 631);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(134, 13);
+            this.label15.TabIndex = 123;
+            this.label15.Text = "AMORPHOUS MATERIAL";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(267, 628);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(100, 20);
+            this.textBox23.TabIndex = 122;
             // 
             // label45
             // 
@@ -806,94 +927,34 @@
             this.label42.Text = "CLINICAL MICROSCOPY";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // clinic_MicroscopyTableAdapter
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(627, 664);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 13);
-            this.label12.TabIndex = 127;
-            this.label12.Text = "(NONE)";
+            this.clinic_MicroscopyTableAdapter.ClearBeforeFill = true;
             // 
-            // label14
+            // tableAdapterManager
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(85, 664);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(65, 13);
-            this.label14.TabIndex = 125;
-            this.label14.Text = "PUS CELLS";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(267, 661);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 124;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(85, 631);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(134, 13);
-            this.label15.TabIndex = 123;
-            this.label15.Text = "AMORPHOUS MATERIAL";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(267, 628);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
-            this.textBox23.TabIndex = 122;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(627, 695);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 13);
-            this.label13.TabIndex = 130;
-            this.label13.Text = "(NONE)";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(85, 695);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 13);
-            this.label16.TabIndex = 129;
-            this.label16.Text = "RBC";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(267, 692);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 128;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(85, 727);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(60, 13);
-            this.label44.TabIndex = 132;
-            this.label44.Text = "BACTERIA";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(267, 724);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(100, 20);
-            this.textBox25.TabIndex = 131;
+            this.tableAdapterManager.adminJLATableAdapter = null;
+            this.tableAdapterManager.ancillaryResultTableAdapter = null;
+            this.tableAdapterManager.assessmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
+            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = this.clinic_MicroscopyTableAdapter;
+            this.tableAdapterManager.HematologyTableAdapter = null;
+            this.tableAdapterManager.historyTableAdapter = null;
+            this.tableAdapterManager.ofwTableAdapter = null;
+            this.tableAdapterManager.SerologyTableAdapter = null;
+            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
+            this.tableAdapterManager.summaryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userAccTableAdapter = null;
             // 
             // UrinalysisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(835, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -904,12 +965,15 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Urinalysis";
+            this.Load += new System.EventHandler(this.UrinalysisForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clinic_MicroscopyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -994,5 +1058,10 @@
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox23;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource clinic_MicroscopyBindingSource;
+        private DatabaseDataSetTableAdapters.Clinic_MicroscopyTableAdapter clinic_MicroscopyTableAdapter;
+        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox macroColorTextBox;
     }
 }

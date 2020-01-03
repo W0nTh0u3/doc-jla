@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SouthJLAInformationSystemC
 {
@@ -70,6 +71,16 @@ namespace SouthJLAInformationSystemC
         {
             StoolForm stoolForm = new StoolForm();
             stoolForm.Show();
+        }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (id, lastName, givenName, middleName, age, address) VALUES('2','" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressTextbox.Text + "')", conn);
+            conn.Open();
+            sda.ExecuteNonQuery();
+            conn.Close();
+            System.Diagnostics.Debug.WriteLine("okay na");
         }
     }
 }

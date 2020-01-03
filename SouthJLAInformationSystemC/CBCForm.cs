@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SouthJLAInformationSystemC
 {
@@ -29,7 +30,11 @@ namespace SouthJLAInformationSystemC
         {
             // TODO: This line of code loads data into the 'databaseDataSet.Hematology' table. You can move, or remove it, as needed.
             this.hematologyTableAdapter.Fill(this.databaseDataSet.Hematology);
+        }
 
+        private void SubmitCBC_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

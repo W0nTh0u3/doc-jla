@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ComboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Label11 = new System.Windows.Forms.Label();
@@ -50,11 +51,20 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.colorTextBox = new System.Windows.Forms.TextBox();
+            this.stool_ExaminationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
+            this.consistencyTextBox = new System.Windows.Forms.TextBox();
+            this.pusTextBox = new System.Windows.Forms.TextBox();
+            this.rbcTextBox = new System.Windows.Forms.TextBox();
+            this.othersComboBox = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -62,16 +72,13 @@
             this.label42 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.stool_ExaminationTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.Stool_ExaminationTableAdapter();
+            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stool_ExaminationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,7 +117,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 202);
+            this.panel1.Size = new System.Drawing.Size(818, 202);
             this.panel1.TabIndex = 7;
             // 
             // Label11
@@ -319,18 +326,18 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.colorTextBox);
+            this.panel2.Controls.Add(this.consistencyTextBox);
+            this.panel2.Controls.Add(this.pusTextBox);
+            this.panel2.Controls.Add(this.rbcTextBox);
+            this.panel2.Controls.Add(this.othersComboBox);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label45);
             this.panel2.Controls.Add(this.label46);
-            this.panel2.Controls.Add(this.textBox20);
             this.panel2.Controls.Add(this.label47);
-            this.panel2.Controls.Add(this.textBox21);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label36);
-            this.panel2.Controls.Add(this.textBox14);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.textBox13);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label30);
             this.panel2.Controls.Add(this.label39);
@@ -339,8 +346,99 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.Size = new System.Drawing.Size(818, 308);
             this.panel2.TabIndex = 9;
+            // 
+            // colorTextBox
+            // 
+            this.colorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stool_ExaminationBindingSource, "color", true));
+            this.colorTextBox.Location = new System.Drawing.Point(267, 111);
+            this.colorTextBox.Name = "colorTextBox";
+            this.colorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.colorTextBox.TabIndex = 145;
+            // 
+            // stool_ExaminationBindingSource
+            // 
+            this.stool_ExaminationBindingSource.DataMember = "Stool_Examination";
+            this.stool_ExaminationBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // consistencyTextBox
+            // 
+            this.consistencyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stool_ExaminationBindingSource, "consistency", true));
+            this.consistencyTextBox.Location = new System.Drawing.Point(267, 146);
+            this.consistencyTextBox.Name = "consistencyTextBox";
+            this.consistencyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.consistencyTextBox.TabIndex = 144;
+            // 
+            // pusTextBox
+            // 
+            this.pusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stool_ExaminationBindingSource, "pus", true));
+            this.pusTextBox.Location = new System.Drawing.Point(267, 209);
+            this.pusTextBox.Name = "pusTextBox";
+            this.pusTextBox.Size = new System.Drawing.Size(100, 20);
+            this.pusTextBox.TabIndex = 143;
+            // 
+            // rbcTextBox
+            // 
+            this.rbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stool_ExaminationBindingSource, "rbc", true));
+            this.rbcTextBox.Location = new System.Drawing.Point(267, 242);
+            this.rbcTextBox.Name = "rbcTextBox";
+            this.rbcTextBox.Size = new System.Drawing.Size(100, 20);
+            this.rbcTextBox.TabIndex = 142;
+            // 
+            // othersComboBox
+            // 
+            this.othersComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stool_ExaminationBindingSource, "others", true));
+            this.othersComboBox.FormattingEnabled = true;
+            this.othersComboBox.Items.AddRange(new object[] {
+            "NO OVA OR PARASITE SEEN",
+            "OTHER"});
+            this.othersComboBox.Location = new System.Drawing.Point(88, 309);
+            this.othersComboBox.Name = "othersComboBox";
+            this.othersComboBox.Size = new System.Drawing.Size(279, 21);
+            this.othersComboBox.TabIndex = 141;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(85, 278);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 13);
+            this.label15.TabIndex = 139;
+            this.label15.Text = "OTHERS";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(85, 183);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(181, 13);
+            this.label45.TabIndex = 137;
+            this.label45.Text = "MICROSCOPIC EXAMINATION";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(85, 245);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(29, 13);
+            this.label46.TabIndex = 136;
+            this.label46.Text = "RBC";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(85, 212);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(29, 13);
+            this.label47.TabIndex = 134;
+            this.label47.Text = "PUS";
             // 
             // label40
             // 
@@ -361,13 +459,6 @@
             this.label36.TabIndex = 84;
             this.label36.Text = "CONSISTENCY";
             // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(267, 146);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 83;
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -376,13 +467,6 @@
             this.label33.Size = new System.Drawing.Size(44, 13);
             this.label33.TabIndex = 82;
             this.label33.Text = "COLOR";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(267, 113);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 81;
             // 
             // label26
             // 
@@ -434,9 +518,9 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Location = new System.Drawing.Point(0, 510);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.Size = new System.Drawing.Size(818, 45);
             this.panel3.TabIndex = 8;
             // 
             // SubmitCBC
@@ -447,72 +531,35 @@
             this.SubmitCBC.TabIndex = 0;
             this.SubmitCBC.Text = "Submit";
             this.SubmitCBC.UseVisualStyleBackColor = true;
+            this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
-            // label15
+            // stool_ExaminationTableAdapter
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(85, 278);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 13);
-            this.label15.TabIndex = 139;
-            this.label15.Text = "OTHERS";
+            this.stool_ExaminationTableAdapter.ClearBeforeFill = true;
             // 
-            // label45
+            // tableAdapterManager
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(85, 183);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(181, 13);
-            this.label45.TabIndex = 137;
-            this.label45.Text = "MICROSCOPIC EXAMINATION";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(85, 245);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(29, 13);
-            this.label46.TabIndex = 136;
-            this.label46.Text = "RBC";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(267, 242);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 135;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(85, 212);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(29, 13);
-            this.label47.TabIndex = 134;
-            this.label47.Text = "PUS";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(267, 209);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 133;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(88, 304);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(279, 21);
-            this.comboBox3.TabIndex = 140;
+            this.tableAdapterManager.adminJLATableAdapter = null;
+            this.tableAdapterManager.ancillaryResultTableAdapter = null;
+            this.tableAdapterManager.assessmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
+            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
+            this.tableAdapterManager.HematologyTableAdapter = null;
+            this.tableAdapterManager.historyTableAdapter = null;
+            this.tableAdapterManager.ofwTableAdapter = null;
+            this.tableAdapterManager.SerologyTableAdapter = null;
+            this.tableAdapterManager.Stool_ExaminationTableAdapter = this.stool_ExaminationTableAdapter;
+            this.tableAdapterManager.summaryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userAccTableAdapter = null;
             // 
             // StoolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(818, 555);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -521,11 +568,14 @@
             this.MinimizeBox = false;
             this.Name = "StoolForm";
             this.Text = "Stool Examination";
+            this.Load += new System.EventHandler(this.StoolForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stool_ExaminationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -556,9 +606,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label39;
@@ -566,12 +614,18 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button SubmitCBC;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox21;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource stool_ExaminationBindingSource;
+        private DatabaseDataSetTableAdapters.Stool_ExaminationTableAdapter stool_ExaminationTableAdapter;
+        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ComboBox othersComboBox;
+        private System.Windows.Forms.TextBox colorTextBox;
+        private System.Windows.Forms.TextBox consistencyTextBox;
+        private System.Windows.Forms.TextBox pusTextBox;
+        private System.Windows.Forms.TextBox rbcTextBox;
     }
 }
