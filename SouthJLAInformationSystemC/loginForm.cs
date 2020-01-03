@@ -32,7 +32,7 @@ namespace SouthJLAInformationSystemC
         {
             if (TextBox4.Text == "admin" && TextBox3.Text == "admin")
             {
-                MainMenu mainMenu = new MainMenu();
+                MainMenuV2 mainMenu = new MainMenuV2();
                 Hide();
                 mainMenu.Show();
             }

@@ -85,6 +85,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.FBSClickableLabel = new System.Windows.Forms.Label();
+            this.ECGClickableLabel = new System.Windows.Forms.Label();
+            this.XrayClickableLabel = new System.Windows.Forms.Label();
+            this.MedExClickableLabel = new System.Windows.Forms.Label();
+            this.UriClickableLabel = new System.Windows.Forms.Label();
+            this.CBCClickableLabel = new System.Windows.Forms.Label();
             this.ContentTitlePanel = new System.Windows.Forms.Panel();
             this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.MenuClickedLabel = new System.Windows.Forms.Label();
@@ -125,6 +131,7 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
+            this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -931,6 +938,13 @@
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.Controls.Add(this.PAPSClickedLabel);
+            this.ContentPanel.Controls.Add(this.FBSClickableLabel);
+            this.ContentPanel.Controls.Add(this.ECGClickableLabel);
+            this.ContentPanel.Controls.Add(this.XrayClickableLabel);
+            this.ContentPanel.Controls.Add(this.MedExClickableLabel);
+            this.ContentPanel.Controls.Add(this.UriClickableLabel);
+            this.ContentPanel.Controls.Add(this.CBCClickableLabel);
             this.ContentPanel.Controls.Add(this.ContentTitlePanel);
             this.ContentPanel.Controls.Add(this.Label19);
             this.ContentPanel.Controls.Add(this.textBox14);
@@ -975,6 +989,78 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(878, 705);
             this.ContentPanel.TabIndex = 10;
+            // 
+            // FBSClickableLabel
+            // 
+            this.FBSClickableLabel.AutoSize = true;
+            this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBSClickableLabel.Location = new System.Drawing.Point(259, 563);
+            this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FBSClickableLabel.Name = "FBSClickableLabel";
+            this.FBSClickableLabel.Size = new System.Drawing.Size(85, 13);
+            this.FBSClickableLabel.TabIndex = 43;
+            this.FBSClickableLabel.Text = "FBS, Cholesterol";
+            this.FBSClickableLabel.Click += new System.EventHandler(this.FBSClickableLabel_Click);
+            // 
+            // ECGClickableLabel
+            // 
+            this.ECGClickableLabel.AutoSize = true;
+            this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ECGClickableLabel.Location = new System.Drawing.Point(259, 520);
+            this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ECGClickableLabel.Name = "ECGClickableLabel";
+            this.ECGClickableLabel.Size = new System.Drawing.Size(29, 13);
+            this.ECGClickableLabel.TabIndex = 42;
+            this.ECGClickableLabel.Text = "ECG";
+            this.ECGClickableLabel.Click += new System.EventHandler(this.ECGClickableLabel_Click);
+            // 
+            // XrayClickableLabel
+            // 
+            this.XrayClickableLabel.AutoSize = true;
+            this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XrayClickableLabel.Location = new System.Drawing.Point(261, 480);
+            this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.XrayClickableLabel.Name = "XrayClickableLabel";
+            this.XrayClickableLabel.Size = new System.Drawing.Size(33, 13);
+            this.XrayClickableLabel.TabIndex = 41;
+            this.XrayClickableLabel.Text = "XRay";
+            this.XrayClickableLabel.Click += new System.EventHandler(this.XrayClickableLabel_Click);
+            // 
+            // MedExClickableLabel
+            // 
+            this.MedExClickableLabel.AutoSize = true;
+            this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedExClickableLabel.Location = new System.Drawing.Point(261, 440);
+            this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MedExClickableLabel.Name = "MedExClickableLabel";
+            this.MedExClickableLabel.Size = new System.Drawing.Size(104, 13);
+            this.MedExClickableLabel.TabIndex = 40;
+            this.MedExClickableLabel.Text = "Medical Examination";
+            this.MedExClickableLabel.Click += new System.EventHandler(this.MedExClickableLabel_Click);
+            // 
+            // UriClickableLabel
+            // 
+            this.UriClickableLabel.AutoSize = true;
+            this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UriClickableLabel.Location = new System.Drawing.Point(259, 396);
+            this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UriClickableLabel.Name = "UriClickableLabel";
+            this.UriClickableLabel.Size = new System.Drawing.Size(128, 13);
+            this.UriClickableLabel.TabIndex = 39;
+            this.UriClickableLabel.Text = "Urinalysis and Stool Exam";
+            this.UriClickableLabel.Click += new System.EventHandler(this.UriClickableLabel_Click);
+            // 
+            // CBCClickableLabel
+            // 
+            this.CBCClickableLabel.AutoSize = true;
+            this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBCClickableLabel.Location = new System.Drawing.Point(259, 352);
+            this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CBCClickableLabel.Name = "CBCClickableLabel";
+            this.CBCClickableLabel.Size = new System.Drawing.Size(28, 13);
+            this.CBCClickableLabel.TabIndex = 38;
+            this.CBCClickableLabel.Text = "CBC";
+            this.CBCClickableLabel.Click += new System.EventHandler(this.CBCClickableLabel_Click);
             // 
             // ContentTitlePanel
             // 
@@ -1049,6 +1135,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(42, 20);
             this.textBox13.TabIndex = 33;
+            this.textBox13.Text = "ENT";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label17
@@ -1083,10 +1170,10 @@
             this.Label15.Location = new System.Drawing.Point(259, 441);
             this.Label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(477, 13);
+            this.Label15.Size = new System.Drawing.Size(478, 13);
             this.Label15.TabIndex = 29;
-            this.Label15.Text = "Stool Exam                                                                       " +
-    "                                                                    ";
+            this.Label15.Text = "                                                                                 " +
+    "                                                                            ";
             // 
             // Label14
             // 
@@ -1095,10 +1182,10 @@
             this.Label14.Location = new System.Drawing.Point(259, 398);
             this.Label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(477, 13);
+            this.Label14.Size = new System.Drawing.Size(475, 13);
             this.Label14.TabIndex = 28;
-            this.Label14.Text = "Urinalysis                                                                       " +
-    "                                                                       ";
+            this.Label14.Text = "                                                                                 " +
+    "                                                                           ";
             // 
             // Label13
             // 
@@ -1107,10 +1194,10 @@
             this.Label13.Location = new System.Drawing.Point(259, 353);
             this.Label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(475, 13);
+            this.Label13.Size = new System.Drawing.Size(472, 13);
             this.Label13.TabIndex = 27;
-            this.Label13.Text = "CBC                                                                              " +
-    "                                                                       ";
+            this.Label13.Text = "                                                                                 " +
+    "                                                                          ";
             // 
             // TextBox12
             // 
@@ -1119,6 +1206,7 @@
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Size = new System.Drawing.Size(42, 20);
             this.TextBox12.TabIndex = 26;
+            this.TextBox12.Text = "ENT";
             this.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBox11
@@ -1128,6 +1216,7 @@
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.Size = new System.Drawing.Size(42, 20);
             this.TextBox11.TabIndex = 25;
+            this.TextBox11.Text = "ENT";
             this.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBox10
@@ -1137,6 +1226,7 @@
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.Size = new System.Drawing.Size(42, 20);
             this.TextBox10.TabIndex = 25;
+            this.TextBox10.Text = "ENT";
             this.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBox9
@@ -1146,6 +1236,7 @@
             this.TextBox9.Name = "TextBox9";
             this.TextBox9.Size = new System.Drawing.Size(42, 20);
             this.TextBox9.TabIndex = 24;
+            this.TextBox9.Text = "ENT";
             this.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label12
@@ -1395,6 +1486,18 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
             // 
+            // PAPSClickedLabel
+            // 
+            this.PAPSClickedLabel.AutoSize = true;
+            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(259, 608);
+            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
+            this.PAPSClickedLabel.Size = new System.Drawing.Size(37, 13);
+            this.PAPSClickedLabel.TabIndex = 44;
+            this.PAPSClickedLabel.Text = "PAP\'S";
+            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
+            // 
             // MainMenuV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1533,5 +1636,12 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
+        internal System.Windows.Forms.Label UriClickableLabel;
+        internal System.Windows.Forms.Label CBCClickableLabel;
+        internal System.Windows.Forms.Label FBSClickableLabel;
+        internal System.Windows.Forms.Label ECGClickableLabel;
+        internal System.Windows.Forms.Label XrayClickableLabel;
+        internal System.Windows.Forms.Label MedExClickableLabel;
+        internal System.Windows.Forms.Label PAPSClickedLabel;
     }
 }

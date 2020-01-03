@@ -67,6 +67,18 @@
     <Compile Include="FBSCholeForm.Designer.cs">
       <DependentUpon>FBSCholeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ECGForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECGForm.Designer.cs">
+      <DependentUpon>ECGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XrayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XrayForm.Designer.cs">
+      <DependentUpon>XrayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedExamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FBSCholeForm.resx">
       <DependentUpon>FBSCholeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGForm.resx">
+      <DependentUpon>ECGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XrayForm.resx">
+      <DependentUpon>XrayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MedExamForm.resx">
       <DependentUpon>MedExamForm.cs</DependentUpon>

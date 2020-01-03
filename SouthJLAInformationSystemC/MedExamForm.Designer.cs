@@ -291,6 +291,8 @@
             this.label113 = new System.Windows.Forms.Label();
             this.textBox65 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -1162,6 +1164,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.richTextBox2);
             this.panel2.Controls.Add(this.label112);
             this.panel2.Controls.Add(this.richTextBox1);
@@ -3127,6 +3131,24 @@
             this.panel1.Size = new System.Drawing.Size(800, 215);
             this.panel1.TabIndex = 7;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(21, 1316);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 13);
+            this.label14.TabIndex = 315;
+            this.label14.Text = "Examining Physician";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(149, 1313);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(208, 21);
+            this.comboBox3.TabIndex = 316;
+            // 
             // MedExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3486,5 +3508,7 @@
         internal System.Windows.Forms.Label label113;
         internal System.Windows.Forms.TextBox textBox65;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

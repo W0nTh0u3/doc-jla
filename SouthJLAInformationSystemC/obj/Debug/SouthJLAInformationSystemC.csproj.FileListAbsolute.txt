@@ -37,3 +37,5 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJ
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinStoolForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.FBSCholeForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources

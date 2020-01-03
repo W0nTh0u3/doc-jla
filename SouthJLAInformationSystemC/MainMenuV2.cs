@@ -222,5 +222,49 @@ namespace SouthJLAInformationSystemC
             if (e.KeyCode == Keys.NumPad8)
                 MisceBtn.PerformClick();
         }
+        #region labelsclick
+        private void CBCClickableLabel_Click(object sender, EventArgs e)
+        {
+            CBCForm cBC = new CBCForm();
+            cBC.Show();
+        }
+
+        private void UriClickableLabel_Click(object sender, EventArgs e)
+        {
+            UrinStoolForm urinStoolForm = new UrinStoolForm();
+            urinStoolForm.Show();
+        }
+
+        private void MedExClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedExamForm medExamForm = new MedExamForm();
+            medExamForm.Show();
+        }
+
+        private void XrayClickableLabel_Click(object sender, EventArgs e)
+        {
+            XrayForm xrayForm = new XrayForm();
+            xrayForm.Show();
+        }
+
+        private void ECGClickableLabel_Click(object sender, EventArgs e)
+        {
+            ECGForm eCGForm = new ECGForm();
+            eCGForm.Show();
+        }
+
+        private void FBSClickableLabel_Click(object sender, EventArgs e)
+        {
+            FBSCholeForm fBSCholeForm = new FBSCholeForm();
+            fBSCholeForm.Show();
+        }
+        
+
+        private void PAPSClickedLabel_Click(object sender, EventArgs e)
+        {
+            PAPForm pAPForm = new PAPForm();
+            pAPForm.Show();
+        }
+        #endregion
     }
 }
