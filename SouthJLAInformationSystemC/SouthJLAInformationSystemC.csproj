@@ -73,6 +73,12 @@
     <Compile Include="ECGForm.Designer.cs">
       <DependentUpon>ECGForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormV2.Designer.cs">
+      <DependentUpon>LoginFormV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="PAPForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <EmbeddedResource Include="ECGForm.resx">
       <DependentUpon>ECGForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormV2.resx">
+      <DependentUpon>LoginFormV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PAPForm.resx">
       <DependentUpon>PAPForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UrinStoolForm.resx">
       <DependentUpon>UrinStoolForm.cs</DependentUpon>
@@ -179,6 +189,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

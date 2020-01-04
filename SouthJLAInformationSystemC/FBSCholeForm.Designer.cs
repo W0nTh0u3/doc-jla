@@ -941,6 +941,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FBSCholeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBS, Cholesterol";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -30,8 +30,6 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSyst
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
-E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinalysisForm.resources
-E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.StoolForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
@@ -40,3 +38,10 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJ
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.FBSCholeForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginFormV2.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinStoolForm.resources
