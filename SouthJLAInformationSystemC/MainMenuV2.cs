@@ -223,10 +223,16 @@ namespace SouthJLAInformationSystemC
                 MisceBtn.PerformClick();
         }
         #region labelsclick
+        private CBCForm cBC = new CBCForm();
         private void CBCClickableLabel_Click(object sender, EventArgs e)
         {
-            CBCForm cBC = new CBCForm();
-            cBC.Show();
+            if (cBC != ActiveForm)
+            {
+                if (cBC.IsDisposed)
+                    cBC = new CBCForm();
+                cBC.Show();
+            }
+                
         }
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
