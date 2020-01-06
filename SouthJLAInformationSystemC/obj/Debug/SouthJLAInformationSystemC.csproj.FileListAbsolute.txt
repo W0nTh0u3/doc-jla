@@ -29,7 +29,6 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSyst
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
-E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenuV2.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
@@ -40,7 +39,6 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJ
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.FBSCholeForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
-E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginFormV2.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
@@ -64,3 +62,5 @@ C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.config
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.pdb
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldMainMenu.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldLoginForm.resources
