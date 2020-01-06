@@ -255,61 +255,61 @@
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="TextBox3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="passBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="TextBox3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="passBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 73</value>
   </data>
-  <data name="TextBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="passBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="TextBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="passBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 26</value>
   </data>
-  <data name="TextBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="passBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="TextBox3.Text" xml:space="preserve">
+  <data name="passBox.Text" xml:space="preserve">
     <value>password</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Name" xml:space="preserve">
-    <value>TextBox3</value>
+  <data name="&gt;&gt;passBox.Name" xml:space="preserve">
+    <value>passBox</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;passBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;passBox.Parent" xml:space="preserve">
     <value>pnl_login</value>
   </data>
-  <data name="&gt;&gt;TextBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;passBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="TextBox4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="userBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="TextBox4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="userBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 32</value>
   </data>
-  <data name="TextBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="userBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="TextBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="userBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 26</value>
   </data>
-  <data name="TextBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="userBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Name" xml:space="preserve">
-    <value>TextBox4</value>
+  <data name="&gt;&gt;userBox.Name" xml:space="preserve">
+    <value>userBox</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;userBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userBox.Parent" xml:space="preserve">
     <value>pnl_login</value>
   </data>
-  <data name="&gt;&gt;TextBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;userBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="pnl_login.Location" type="System.Drawing.Point, System.Drawing">

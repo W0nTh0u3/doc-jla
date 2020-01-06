@@ -33,5 +33,17 @@ namespace SouthJLAInformationSystemC.Properties {
                 return ((string)(this["DatabaseConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=C:\\REPOS\\DOC-JLA\\APP_DATA\\DATA" +
+            "BASE.MDF;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCe" +
+            "rtificate=False")]
+        public string C__REPOS_DOC_JLA_APP_DATA_DATABASE_MDFConnectionString {
+            get {
+                return ((string)(this["C__REPOS_DOC_JLA_APP_DATA_DATABASE_MDFConnectionString"]));
+            }
+        }
     }
 }

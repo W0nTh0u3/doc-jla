@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ComboBox2 = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
@@ -52,35 +53,30 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.hematologyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
             this.label40 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -89,11 +85,22 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.hematologyTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.HematologyTableAdapter();
+            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
+            this.wbcTextBox1 = new System.Windows.Forms.TextBox();
+            this.rbcTextBox = new System.Windows.Forms.TextBox();
+            this.hgbTextBox = new System.Windows.Forms.TextBox();
+            this.hctTextBox = new System.Windows.Forms.TextBox();
+            this.plateletsTextBox = new System.Windows.Forms.TextBox();
+            this.neutrophilTextBox = new System.Windows.Forms.TextBox();
+            this.lymphocytesTextBox = new System.Windows.Forms.TextBox();
+            this.monocyteTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -121,7 +128,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 202);
+            this.panel1.Size = new System.Drawing.Size(817, 202);
             this.panel1.TabIndex = 0;
             // 
             // ComboBox2
@@ -340,9 +347,9 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Location = new System.Drawing.Point(0, 581);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.Size = new System.Drawing.Size(817, 45);
             this.panel3.TabIndex = 2;
             // 
             // SubmitCBC
@@ -351,42 +358,44 @@
             this.SubmitCBC.Name = "SubmitCBC";
             this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
             this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Verify";
+            this.SubmitCBC.Text = "Submit";
             this.SubmitCBC.UseVisualStyleBackColor = true;
+            this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.monocyteTextBox);
+            this.panel2.Controls.Add(this.lymphocytesTextBox);
+            this.panel2.Controls.Add(this.neutrophilTextBox);
+            this.panel2.Controls.Add(this.plateletsTextBox);
+            this.panel2.Controls.Add(this.hctTextBox);
+            this.panel2.Controls.Add(this.hgbTextBox);
+            this.panel2.Controls.Add(this.rbcTextBox);
+            this.panel2.Controls.Add(this.wbcTextBox1);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.label39);
-            this.panel2.Controls.Add(this.textBox15);
             this.panel2.Controls.Add(this.label34);
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.label36);
-            this.panel2.Controls.Add(this.textBox14);
             this.panel2.Controls.Add(this.label31);
             this.panel2.Controls.Add(this.label32);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.textBox13);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label30);
-            this.panel2.Controls.Add(this.textBox12);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.textBox11);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.textBox10);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.textBox9);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label16);
@@ -395,12 +404,21 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.Size = new System.Drawing.Size(817, 379);
             this.panel2.TabIndex = 6;
+            // 
+            // hematologyBindingSource
+            // 
+            this.hematologyBindingSource.DataMember = "Hematology";
+            this.hematologyBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label40
             // 
@@ -439,13 +457,6 @@
             this.label39.TabIndex = 34;
             this.label39.Text = "MONOCYTE";
             // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(268, 358);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 33;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -472,13 +483,6 @@
             this.label36.Size = new System.Drawing.Size(87, 13);
             this.label36.TabIndex = 30;
             this.label36.Text = "LYMPHOCYTES";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(268, 326);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 29;
             // 
             // label31
             // 
@@ -507,13 +511,6 @@
             this.label33.TabIndex = 26;
             this.label33.Text = "NEUTROPHIL";
             // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(268, 293);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 25;
-            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -540,13 +537,6 @@
             this.label30.Size = new System.Drawing.Size(61, 13);
             this.label30.TabIndex = 22;
             this.label30.Text = "PLATELET";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(268, 227);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 21;
             // 
             // label25
             // 
@@ -575,13 +565,6 @@
             this.label27.TabIndex = 18;
             this.label27.Text = "HCT";
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(268, 196);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 17;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -609,13 +592,6 @@
             this.label24.TabIndex = 14;
             this.label24.Text = "HGB";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(268, 167);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 13;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -642,13 +618,6 @@
             this.label21.Size = new System.Drawing.Size(29, 13);
             this.label21.TabIndex = 10;
             this.label21.Text = "RBC";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(268, 137);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 9;
             // 
             // label18
             // 
@@ -723,12 +692,90 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "WBC";
             // 
-            // textBox8
+            // hematologyTableAdapter
             // 
-            this.textBox8.Location = new System.Drawing.Point(268, 107);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 0;
+            this.hematologyTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.adminJLATableAdapter = null;
+            this.tableAdapterManager.ancillaryResultTableAdapter = null;
+            this.tableAdapterManager.assessmentTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
+            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
+            this.tableAdapterManager.HematologyTableAdapter = this.hematologyTableAdapter;
+            this.tableAdapterManager.historyTableAdapter = null;
+            this.tableAdapterManager.ofwTableAdapter = null;
+            this.tableAdapterManager.SerologyTableAdapter = null;
+            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
+            this.tableAdapterManager.summaryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userAccTableAdapter = null;
+            // 
+            // wbcTextBox1
+            // 
+            this.wbcTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "wbc", true));
+            this.wbcTextBox1.Location = new System.Drawing.Point(268, 107);
+            this.wbcTextBox1.Name = "wbcTextBox1";
+            this.wbcTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.wbcTextBox1.TabIndex = 40;
+            // 
+            // rbcTextBox
+            // 
+            this.rbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "rbc", true));
+            this.rbcTextBox.Location = new System.Drawing.Point(268, 137);
+            this.rbcTextBox.Name = "rbcTextBox";
+            this.rbcTextBox.Size = new System.Drawing.Size(100, 20);
+            this.rbcTextBox.TabIndex = 41;
+            // 
+            // hgbTextBox
+            // 
+            this.hgbTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hgb", true));
+            this.hgbTextBox.Location = new System.Drawing.Point(268, 167);
+            this.hgbTextBox.Name = "hgbTextBox";
+            this.hgbTextBox.Size = new System.Drawing.Size(100, 20);
+            this.hgbTextBox.TabIndex = 42;
+            // 
+            // hctTextBox
+            // 
+            this.hctTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hct", true));
+            this.hctTextBox.Location = new System.Drawing.Point(268, 196);
+            this.hctTextBox.Name = "hctTextBox";
+            this.hctTextBox.Size = new System.Drawing.Size(100, 20);
+            this.hctTextBox.TabIndex = 43;
+            // 
+            // plateletsTextBox
+            // 
+            this.plateletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "platelets", true));
+            this.plateletsTextBox.Location = new System.Drawing.Point(268, 227);
+            this.plateletsTextBox.Name = "plateletsTextBox";
+            this.plateletsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.plateletsTextBox.TabIndex = 44;
+            // 
+            // neutrophilTextBox
+            // 
+            this.neutrophilTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "neutrophil", true));
+            this.neutrophilTextBox.Location = new System.Drawing.Point(268, 293);
+            this.neutrophilTextBox.Name = "neutrophilTextBox";
+            this.neutrophilTextBox.Size = new System.Drawing.Size(100, 20);
+            this.neutrophilTextBox.TabIndex = 45;
+            // 
+            // lymphocytesTextBox
+            // 
+            this.lymphocytesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "lymphocytes", true));
+            this.lymphocytesTextBox.Location = new System.Drawing.Point(268, 326);
+            this.lymphocytesTextBox.Name = "lymphocytesTextBox";
+            this.lymphocytesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lymphocytesTextBox.TabIndex = 46;
+            // 
+            // monocyteTextBox
+            // 
+            this.monocyteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "monocyte", true));
+            this.monocyteTextBox.Location = new System.Drawing.Point(268, 358);
+            this.monocyteTextBox.Name = "monocyteTextBox";
+            this.monocyteTextBox.Size = new System.Drawing.Size(100, 20);
+            this.monocyteTextBox.TabIndex = 47;
             // 
             // CBCForm
             // 
@@ -736,7 +783,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(817, 626);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -747,12 +794,15 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CBC";
+            this.Load += new System.EventHandler(this.CBCForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -787,31 +837,24 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -820,6 +863,17 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource hematologyBindingSource;
+        private DatabaseDataSetTableAdapters.HematologyTableAdapter hematologyTableAdapter;
+        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox monocyteTextBox;
+        private System.Windows.Forms.TextBox lymphocytesTextBox;
+        private System.Windows.Forms.TextBox neutrophilTextBox;
+        private System.Windows.Forms.TextBox plateletsTextBox;
+        private System.Windows.Forms.TextBox hctTextBox;
+        private System.Windows.Forms.TextBox hgbTextBox;
+        private System.Windows.Forms.TextBox rbcTextBox;
+        private System.Windows.Forms.TextBox wbcTextBox1;
     }
 }
