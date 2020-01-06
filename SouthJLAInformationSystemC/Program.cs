@@ -16,7 +16,7 @@ namespace SouthJLAInformationSystemC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFormV2());
+            Application.Run(new LoginForm());
         }
     }
 }

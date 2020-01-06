@@ -77,11 +77,11 @@
     <Compile Include="ECGForm.Designer.cs">
       <DependentUpon>ECGForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginFormV2.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginFormV2.Designer.cs">
-      <DependentUpon>LoginFormV2.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PAPForm.cs">
       <SubType>Form</SubType>
@@ -101,23 +101,23 @@
     <Compile Include="MedExamForm.Designer.cs">
       <DependentUpon>MedExamForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OldMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldMainMenu.Designer.cs">
+      <DependentUpon>OldMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldLoginForm.Designer.cs">
+      <DependentUpon>OldLoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenuV2.Designer.cs">
-      <DependentUpon>MainMenuV2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,8 +136,8 @@
     <EmbeddedResource Include="ECGForm.resx">
       <DependentUpon>ECGForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginFormV2.resx">
-      <DependentUpon>LoginFormV2.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PAPForm.resx">
       <DependentUpon>PAPForm.cs</DependentUpon>
@@ -148,14 +148,14 @@
     <EmbeddedResource Include="MedExamForm.resx">
       <DependentUpon>MedExamForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OldMainMenu.resx">
+      <DependentUpon>OldMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldLoginForm.resx">
+      <DependentUpon>OldLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuV2.resx">
-      <DependentUpon>MainMenuV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
