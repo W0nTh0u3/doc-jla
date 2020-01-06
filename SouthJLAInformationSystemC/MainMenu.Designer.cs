@@ -362,8 +362,6 @@
             this.Panel5.Controls.Add(this.Label4);
             this.Panel5.Controls.Add(this.Label3);
             this.Panel5.Controls.Add(this.Label2);
-            this.Panel5.Controls.Add(this.label20);
-            this.Panel5.Controls.Add(this.label21);
             this.Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel5.Location = new System.Drawing.Point(191, 81);
             this.Panel5.Margin = new System.Windows.Forms.Padding(2);
