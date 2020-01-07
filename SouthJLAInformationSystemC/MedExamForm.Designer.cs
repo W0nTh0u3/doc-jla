@@ -286,10 +286,6 @@
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
             this.textBox65 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -3049,50 +3045,6 @@
             this.ComboBox2.Size = new System.Drawing.Size(140, 21);
             this.ComboBox2.TabIndex = 43;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(419, 146);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 44;
-            this.label1.Text = "Civil Status";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(503, 144);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.MaxLength = 3;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(76, 20);
-            this.textBox8.TabIndex = 45;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(419, 179);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 13);
-            this.label12.TabIndex = 46;
-            this.label12.Text = "Gender";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(503, 177);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.MaxLength = 3;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(76, 20);
-            this.textBox9.TabIndex = 47;
-            // 
             // label113
             // 
             this.label113.AutoSize = true;
@@ -3119,10 +3071,6 @@
             // 
             this.panel1.Controls.Add(this.textBox65);
             this.panel1.Controls.Add(this.label113);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ComboBox2);
             this.panel1.Controls.Add(this.Label11);
             this.panel1.Controls.Add(this.PictureBox1);
@@ -3481,6 +3429,8 @@
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox comboBox3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label4;
@@ -3501,14 +3451,8 @@
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.ComboBox ComboBox2;
-        internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.TextBox textBox8;
-        internal System.Windows.Forms.Label label12;
-        internal System.Windows.Forms.TextBox textBox9;
         internal System.Windows.Forms.Label label113;
         internal System.Windows.Forms.TextBox textBox65;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

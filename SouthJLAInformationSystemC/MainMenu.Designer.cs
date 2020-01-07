@@ -85,6 +85,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.genderBox = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.submit = new System.Windows.Forms.Button();
+            this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.FBSClickableLabel = new System.Windows.Forms.Label();
             this.ECGClickableLabel = new System.Windows.Forms.Label();
             this.XrayClickableLabel = new System.Windows.Forms.Label();
@@ -109,29 +113,30 @@
             this.TextBox9 = new System.Windows.Forms.TextBox();
             this.Label12 = new System.Windows.Forms.Label();
             this.TextBox8 = new System.Windows.Forms.TextBox();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.companyBox = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.packageBox = new System.Windows.Forms.ComboBox();
             this.Label10 = new System.Windows.Forms.Label();
             this.Button1 = new System.Windows.Forms.Button();
             this.TextBox7 = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.PAPSClickedLabel = new System.Windows.Forms.Label();
+            this.civilBox = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -938,6 +943,11 @@
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.Controls.Add(this.label20);
+            this.ContentPanel.Controls.Add(this.civilBox);
+            this.ContentPanel.Controls.Add(this.genderBox);
+            this.ContentPanel.Controls.Add(this.label21);
+            this.ContentPanel.Controls.Add(this.submit);
             this.ContentPanel.Controls.Add(this.PAPSClickedLabel);
             this.ContentPanel.Controls.Add(this.FBSClickableLabel);
             this.ContentPanel.Controls.Add(this.ECGClickableLabel);
@@ -961,23 +971,23 @@
             this.ContentPanel.Controls.Add(this.TextBox9);
             this.ContentPanel.Controls.Add(this.Label12);
             this.ContentPanel.Controls.Add(this.TextBox8);
-            this.ContentPanel.Controls.Add(this.ComboBox2);
+            this.ContentPanel.Controls.Add(this.companyBox);
             this.ContentPanel.Controls.Add(this.Label11);
             this.ContentPanel.Controls.Add(this.LinkLabel1);
             this.ContentPanel.Controls.Add(this.pictureBox2);
-            this.ContentPanel.Controls.Add(this.ComboBox1);
+            this.ContentPanel.Controls.Add(this.packageBox);
             this.ContentPanel.Controls.Add(this.Label10);
             this.ContentPanel.Controls.Add(this.Button1);
             this.ContentPanel.Controls.Add(this.TextBox7);
             this.ContentPanel.Controls.Add(this.Label9);
             this.ContentPanel.Controls.Add(this.Label8);
-            this.ContentPanel.Controls.Add(this.TextBox6);
-            this.ContentPanel.Controls.Add(this.TextBox5);
+            this.ContentPanel.Controls.Add(this.ageBox);
+            this.ContentPanel.Controls.Add(this.addressBox);
             this.ContentPanel.Controls.Add(this.Label7);
             this.ContentPanel.Controls.Add(this.TextBox4);
-            this.ContentPanel.Controls.Add(this.TextBox3);
-            this.ContentPanel.Controls.Add(this.TextBox2);
-            this.ContentPanel.Controls.Add(this.TextBox1);
+            this.ContentPanel.Controls.Add(this.middleBox);
+            this.ContentPanel.Controls.Add(this.firstBox);
+            this.ContentPanel.Controls.Add(this.lastBox);
             this.ContentPanel.Controls.Add(this.Label6);
             this.ContentPanel.Controls.Add(this.Label5);
             this.ContentPanel.Controls.Add(this.Label4);
@@ -989,6 +999,47 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(878, 705);
             this.ContentPanel.TabIndex = 10;
+            // 
+            // genderBox
+            // 
+            this.genderBox.FormattingEnabled = true;
+            this.genderBox.Location = new System.Drawing.Point(99, 238);
+            this.genderBox.Name = "genderBox";
+            this.genderBox.Size = new System.Drawing.Size(121, 21);
+            this.genderBox.TabIndex = 51;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(453, 226);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(71, 13);
+            this.label21.TabIndex = 48;
+            this.label21.Text = "Civil Status";
+            // 
+            // submit
+            // 
+            this.submit.Location = new System.Drawing.Point(538, 281);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(75, 23);
+            this.submit.TabIndex = 45;
+            this.submit.Text = "Submit";
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // PAPSClickedLabel
+            // 
+            this.PAPSClickedLabel.AutoSize = true;
+            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(259, 608);
+            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
+            this.PAPSClickedLabel.Size = new System.Drawing.Size(37, 13);
+            this.PAPSClickedLabel.TabIndex = 44;
+            this.PAPSClickedLabel.Text = "PAP\'S";
+            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
             // 
             // FBSClickableLabel
             // 
@@ -1260,14 +1311,14 @@
             this.TextBox8.Text = "ENT";
             this.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // ComboBox2
+            // companyBox
             // 
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(538, 180);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 21;
+            this.companyBox.FormattingEnabled = true;
+            this.companyBox.Location = new System.Drawing.Point(538, 180);
+            this.companyBox.Margin = new System.Windows.Forms.Padding(2);
+            this.companyBox.Name = "companyBox";
+            this.companyBox.Size = new System.Drawing.Size(140, 21);
+            this.companyBox.TabIndex = 21;
             // 
             // Label11
             // 
@@ -1301,14 +1352,14 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // ComboBox1
+            // packageBox
             // 
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(538, 139);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 17;
+            this.packageBox.FormattingEnabled = true;
+            this.packageBox.Location = new System.Drawing.Point(538, 139);
+            this.packageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.packageBox.Name = "packageBox";
+            this.packageBox.Size = new System.Drawing.Size(140, 21);
+            this.packageBox.TabIndex = 17;
             // 
             // Label10
             // 
@@ -1364,25 +1415,25 @@
             this.Label8.TabIndex = 12;
             this.Label8.Text = "Address";
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.Location = new System.Drawing.Point(99, 200);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 11;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Location = new System.Drawing.Point(99, 200);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 11;
             // 
-            // TextBox5
+            // addressBox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.Location = new System.Drawing.Point(239, 201);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 10;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Location = new System.Drawing.Point(239, 201);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 54);
+            this.addressBox.TabIndex = 10;
             // 
             // Label7
             // 
@@ -1404,32 +1455,32 @@
             this.TextBox4.Size = new System.Drawing.Size(195, 20);
             this.TextBox4.TabIndex = 8;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Location = new System.Drawing.Point(338, 145);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 7;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Location = new System.Drawing.Point(338, 145);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 7;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Location = new System.Drawing.Point(210, 144);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 6;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Location = new System.Drawing.Point(210, 144);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 6;
             // 
-            // TextBox1
+            // lastBox
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Location = new System.Drawing.Point(99, 144);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 5;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Location = new System.Drawing.Point(99, 144);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 5;
             // 
             // Label6
             // 
@@ -1486,19 +1537,32 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
             // 
-            // PAPSClickedLabel
+            // civilBox
             // 
-            this.PAPSClickedLabel.AutoSize = true;
-            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PAPSClickedLabel.Location = new System.Drawing.Point(259, 608);
-            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
-            this.PAPSClickedLabel.Size = new System.Drawing.Size(37, 13);
-            this.PAPSClickedLabel.TabIndex = 44;
-            this.PAPSClickedLabel.Text = "PAP\'S";
-            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
+            this.civilBox.FormattingEnabled = true;
+            this.civilBox.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Widowed",
+            "Divorced",
+            "Separated"});
+            this.civilBox.Location = new System.Drawing.Point(538, 223);
+            this.civilBox.Name = "civilBox";
+            this.civilBox.Size = new System.Drawing.Size(121, 21);
+            this.civilBox.TabIndex = 52;
             // 
-            // MainMenuV2
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(43, 242);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.TabIndex = 53;
+            this.label20.Text = "Gender";
+            // 
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1511,7 +1575,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainMenuV2";
+            this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenuV2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenuV2_FormClosed);
@@ -1614,23 +1678,23 @@
         internal System.Windows.Forms.TextBox TextBox9;
         internal System.Windows.Forms.Label Label12;
         internal System.Windows.Forms.TextBox TextBox8;
-        internal System.Windows.Forms.ComboBox ComboBox2;
+        internal System.Windows.Forms.ComboBox companyBox;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.LinkLabel LinkLabel1;
         internal System.Windows.Forms.PictureBox pictureBox2;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.ComboBox packageBox;
         internal System.Windows.Forms.Label Label10;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.TextBox TextBox7;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        internal System.Windows.Forms.TextBox ageBox;
+        internal System.Windows.Forms.TextBox addressBox;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox lastBox;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
@@ -1643,5 +1707,10 @@
         internal System.Windows.Forms.Label XrayClickableLabel;
         internal System.Windows.Forms.Label MedExClickableLabel;
         internal System.Windows.Forms.Label PAPSClickedLabel;
+        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.ComboBox genderBox;
+        internal System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox civilBox;
+        internal System.Windows.Forms.Label label20;
     }
 }
