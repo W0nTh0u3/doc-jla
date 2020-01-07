@@ -131,7 +131,7 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
-            PatientIDPanel.Hide();
+            PatientIDPanel.Enabled = false;
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -215,21 +215,20 @@ namespace SouthJLAInformationSystemC
         private void DisableAllBoxes()
         {
             MajorelPanel.Enabled = false;
-            PatientInfoPanel.Enabled = false;
-            PatientIDPanel.Show();
+            PatientInfoPanel.Enabled = false;
         }
         private void EnableOnlyPatientInfo()
         {
             MajorelPanel.Enabled = false;
             PatientInfoPanel.Enabled = true;
-            PatientIDPanel.Show();
+            PatientIDPanel.Enabled = true;
 
         }
         private void EnableOnlyPatientResults()
         {
             MajorelPanel.Enabled = true;
             PatientInfoPanel.Enabled = false;
-            PatientIDPanel.Show();
+            PatientIDPanel.Enabled = true;
 
         }
         private void MainMenuV2_KeyDown(object sender, KeyEventArgs e)
@@ -303,22 +302,8 @@ namespace SouthJLAInformationSystemC
         #endregion
 
         private void submit_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            sda.ExecuteNonQuery();
-            conn.Close();
-            System.Diagnostics.Debug.WriteLine("okay na");
-            lastBox.Text = String.Empty;
-            firstBox.Text = String.Empty;
-            middleBox.Text = String.Empty;
-            ageBox.Text = String.Empty;
-            addressBox.Text = String.Empty;
-            civilBox.SelectedIndex = -1;
-            genderBox.SelectedIndex = -1;
-        }
-
-        
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
-            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + ""+ dateFiledBox.Value.ToString("dd") + "')", conn);
+        {            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + "" + dateFiledBox.Value.ToString("dd") + "')", conn);            conn.Open();            sda.ExecuteNonQuery();            conn.Close();            System.Diagnostics.Debug.WriteLine("okay na");            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+        }
     }
 }
