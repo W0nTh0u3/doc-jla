@@ -17,7 +17,7 @@ namespace SouthJLAInformationSystemC
         {
             InitializeComponent();
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";
+            SubMenuLabelClicked.Text = "";
             dateFiledBox.Value = DateTime.Now;
         }
         protected override CreateParams CreateParams
@@ -30,7 +30,7 @@ namespace SouthJLAInformationSystemC
             }
         }
         private void MainMenuV2_Load(object sender, EventArgs e)
-        {
+        {
             this.KeyPreview = true;
             SidePanel.Dock = DockStyle.Fill;
             SubPanelsHide();
@@ -68,6 +68,7 @@ namespace SouthJLAInformationSystemC
         #region MainMenuPanel
         private void GeneralClinicBtn_Click(object sender, EventArgs e)
         {
+            DisableAllBoxes();
             ContentPanel.Show();
             SidePanel.Dock = DockStyle.Left;
             ShowSubPanel(MenuPanel1);
@@ -129,6 +130,8 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
+            PatientIDPanel.Hide();
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -136,6 +139,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -143,6 +147,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
         }
 
         private void GenEnterResuBtn_Click(object sender, EventArgs e)
@@ -150,6 +155,8 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
+
         }
 
         private void GenEditResuBtn_Click(object sender, EventArgs e)
@@ -157,6 +164,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
         }
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
@@ -164,6 +172,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
         }
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
@@ -203,7 +212,26 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = PhysicalBtn.Text;
         }
         #endregion
-
+        private void DisableAllBoxes()
+        {
+            MajorelPanel.Enabled = false;
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Show();
+        }
+        private void EnableOnlyPatientInfo()
+        {
+            MajorelPanel.Enabled = false;
+            PatientInfoPanel.Enabled = true;
+            PatientIDPanel.Show();
+
+        }
+        private void EnableOnlyPatientResults()
+        {
+            MajorelPanel.Enabled = true;
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Show();
+
+        }
         private void MainMenuV2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad1)
@@ -222,75 +250,75 @@ namespace SouthJLAInformationSystemC
                 DrugTBtn.PerformClick();
             if (e.KeyCode == Keys.NumPad8)
                 MisceBtn.PerformClick();
-        }
-        #region labelsclick
-        private CBCForm cBC = new CBCForm();
-        private void CBCClickableLabel_Click(object sender, EventArgs e)
-        {
-            if (cBC != ActiveForm)
-            {
-                if (cBC.IsDisposed)
-                    cBC = new CBCForm();
-                cBC.Show();
-            }
-                
-        }
-
-        private void UriClickableLabel_Click(object sender, EventArgs e)
-        {
-            UrinStoolForm urinStoolForm = new UrinStoolForm();
-            urinStoolForm.Show();
-        }
-
-        private void MedExClickableLabel_Click(object sender, EventArgs e)
-        {
-            MedExamForm medExamForm = new MedExamForm();
-            medExamForm.Show();
-        }
-
-        private void XrayClickableLabel_Click(object sender, EventArgs e)
-        {
-            XrayForm xrayForm = new XrayForm();
-            xrayForm.Show();
-        }
-
-        private void ECGClickableLabel_Click(object sender, EventArgs e)
-        {
-            ECGForm eCGForm = new ECGForm();
-            eCGForm.Show();
-        }
-
-        private void FBSClickableLabel_Click(object sender, EventArgs e)
-        {
-            FBSCholeForm fBSCholeForm = new FBSCholeForm();
-            fBSCholeForm.Show();
-        }
-        
-
-        private void PAPSClickedLabel_Click(object sender, EventArgs e)
-        {
-            PAPForm pAPForm = new PAPForm();
-            pAPForm.Show();
-        }
-        #endregion
-
-        private void submit_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
-            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + ""+ dateFiledBox.Value.ToString("dd") + "')", conn);
-            conn.Open();
-            sda.ExecuteNonQuery();
-            conn.Close();
-            System.Diagnostics.Debug.WriteLine("okay na");
-            lastBox.Text = String.Empty;
-            firstBox.Text = String.Empty;
-            middleBox.Text = String.Empty;
-            ageBox.Text = String.Empty;
-            addressBox.Text = String.Empty;
-            civilBox.SelectedIndex = -1;
-            genderBox.SelectedIndex = -1;
-        }
-
-        
+        }
+        #region labelsclick
+        private CBCForm cBC = new CBCForm();
+        private void CBCClickableLabel_Click(object sender, EventArgs e)
+        {
+            if (cBC != ActiveForm)
+            {
+                if (cBC.IsDisposed)
+                    cBC = new CBCForm();
+                cBC.Show();
+            }
+                
+        }
+
+        private void UriClickableLabel_Click(object sender, EventArgs e)
+        {
+            UrinStoolForm urinStoolForm = new UrinStoolForm();
+            urinStoolForm.Show();
+        }
+
+        private void MedExClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedExamForm medExamForm = new MedExamForm();
+            medExamForm.Show();
+        }
+
+        private void XrayClickableLabel_Click(object sender, EventArgs e)
+        {
+            XrayForm xrayForm = new XrayForm();
+            xrayForm.Show();
+        }
+
+        private void ECGClickableLabel_Click(object sender, EventArgs e)
+        {
+            ECGForm eCGForm = new ECGForm();
+            eCGForm.Show();
+        }
+
+        private void FBSClickableLabel_Click(object sender, EventArgs e)
+        {
+            FBSCholeForm fBSCholeForm = new FBSCholeForm();
+            fBSCholeForm.Show();
+        }
+        
+
+        private void PAPSClickedLabel_Click(object sender, EventArgs e)
+        {
+            PAPForm pAPForm = new PAPForm();
+            pAPForm.Show();
+        }
+        #endregion
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            sda.ExecuteNonQuery();
+            conn.Close();
+            System.Diagnostics.Debug.WriteLine("okay na");
+            lastBox.Text = String.Empty;
+            firstBox.Text = String.Empty;
+            middleBox.Text = String.Empty;
+            ageBox.Text = String.Empty;
+            addressBox.Text = String.Empty;
+            civilBox.SelectedIndex = -1;
+            genderBox.SelectedIndex = -1;
+        }
+
+        
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + ""+ dateFiledBox.Value.ToString("dd") + "')", conn);
     }
 }

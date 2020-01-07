@@ -122,11 +122,11 @@
             // 
             // SignInBtn
             // 
-            this.SignInBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
+            this.SignInBtn.BackColor = System.Drawing.Color.AliceBlue;
             this.SignInBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInBtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInBtn.ForeColor = System.Drawing.Color.White;
+            this.SignInBtn.ForeColor = System.Drawing.Color.Black;
             this.SignInBtn.Location = new System.Drawing.Point(33, 335);
             this.SignInBtn.Name = "SignInBtn";
             this.SignInBtn.Size = new System.Drawing.Size(261, 37);
