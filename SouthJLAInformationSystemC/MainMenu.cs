@@ -272,5 +272,24 @@ namespace SouthJLAInformationSystemC
             pAPForm.Show();
         }
         #endregion
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (id, lastName, givenName, middleName, age, address) VALUES('2','" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.Text + "','" + genderBox.Text + "')", conn);
+            conn.Open();
+            sda.ExecuteNonQuery();
+            conn.Close();
+            System.Diagnostics.Debug.WriteLine("okay na");
+            lastBox.Text = String.Empty;
+            firstBox.Text = String.Empty;
+            middleBox.Text = String.Empty;
+            ageBox.Text = String.Empty;
+            addressBox.Text = String.Empty;
+            civilBox.SelectedIndex = -1;
+            genderBox.SelectedIndex = -1;
+        }
+
+        
     }
 }
