@@ -66,6 +66,7 @@
             this.UsernameBox.Name = "UsernameBox";
             this.UsernameBox.Size = new System.Drawing.Size(225, 22);
             this.UsernameBox.TabIndex = 3;
+            this.UsernameBox.Text = "admin";
             this.UsernameBox.Click += new System.EventHandler(this.UsernameBox_Click);
             this.UsernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UsernameBox_KeyDown);
             // 
@@ -78,7 +79,7 @@
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(225, 22);
             this.PasswordBox.TabIndex = 4;
-            this.PasswordBox.Text = "Password";
+            this.PasswordBox.Text = "admin";
             this.PasswordBox.UseSystemPasswordChar = true;
             this.PasswordBox.Click += new System.EventHandler(this.PasswordBox_Click);
             this.PasswordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UsernameBox_KeyDown);
@@ -164,7 +165,7 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Password";
             // 
-            // LoginFormV2
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +185,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LoginFormV2";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginFormV2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

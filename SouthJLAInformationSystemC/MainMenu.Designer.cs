@@ -85,6 +85,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.civilBox = new System.Windows.Forms.ComboBox();
             this.genderBox = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
@@ -120,7 +122,6 @@
             this.packageBox = new System.Windows.Forms.ComboBox();
             this.Label10 = new System.Windows.Forms.Label();
             this.Button1 = new System.Windows.Forms.Button();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.ageBox = new System.Windows.Forms.TextBox();
@@ -135,8 +136,7 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.civilBox = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.dateFiledBox = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -943,6 +943,7 @@
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.Controls.Add(this.dateFiledBox);
             this.ContentPanel.Controls.Add(this.label20);
             this.ContentPanel.Controls.Add(this.civilBox);
             this.ContentPanel.Controls.Add(this.genderBox);
@@ -978,7 +979,6 @@
             this.ContentPanel.Controls.Add(this.packageBox);
             this.ContentPanel.Controls.Add(this.Label10);
             this.ContentPanel.Controls.Add(this.Button1);
-            this.ContentPanel.Controls.Add(this.TextBox7);
             this.ContentPanel.Controls.Add(this.Label9);
             this.ContentPanel.Controls.Add(this.Label8);
             this.ContentPanel.Controls.Add(this.ageBox);
@@ -1000,9 +1000,39 @@
             this.ContentPanel.Size = new System.Drawing.Size(878, 705);
             this.ContentPanel.TabIndex = 10;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(43, 242);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.TabIndex = 53;
+            this.label20.Text = "Gender";
+            // 
+            // civilBox
+            // 
+            this.civilBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.civilBox.FormattingEnabled = true;
+            this.civilBox.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Widowed",
+            "Divorced",
+            "Separated"});
+            this.civilBox.Location = new System.Drawing.Point(538, 223);
+            this.civilBox.Name = "civilBox";
+            this.civilBox.Size = new System.Drawing.Size(121, 21);
+            this.civilBox.TabIndex = 52;
+            // 
             // genderBox
             // 
+            this.genderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderBox.FormattingEnabled = true;
+            this.genderBox.Items.AddRange(new object[] {
+            "MALE",
+            "FEMALE"});
             this.genderBox.Location = new System.Drawing.Point(99, 238);
             this.genderBox.Name = "genderBox";
             this.genderBox.Size = new System.Drawing.Size(121, 21);
@@ -1313,6 +1343,7 @@
             // 
             // companyBox
             // 
+            this.companyBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.companyBox.FormattingEnabled = true;
             this.companyBox.Location = new System.Drawing.Point(538, 180);
             this.companyBox.Margin = new System.Windows.Forms.Padding(2);
@@ -1354,7 +1385,10 @@
             // 
             // packageBox
             // 
+            this.packageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.packageBox.FormattingEnabled = true;
+            this.packageBox.Items.AddRange(new object[] {
+            "MAJOREL"});
             this.packageBox.Location = new System.Drawing.Point(538, 139);
             this.packageBox.Margin = new System.Windows.Forms.Padding(2);
             this.packageBox.Name = "packageBox";
@@ -1383,21 +1417,11 @@
             this.Button1.Text = "Search";
             this.Button1.UseVisualStyleBackColor = true;
             // 
-            // TextBox7
-            // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(580, 92);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(97, 20);
-            this.TextBox7.TabIndex = 14;
-            // 
             // Label9
             // 
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(536, 94);
+            this.Label9.Location = new System.Drawing.Point(453, 95);
             this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(34, 13);
@@ -1537,30 +1561,13 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Patient ID";
             // 
-            // civilBox
+            // dateFiledBox
             // 
-            this.civilBox.FormattingEnabled = true;
-            this.civilBox.Items.AddRange(new object[] {
-            "Single",
-            "Married",
-            "Widowed",
-            "Divorced",
-            "Separated"});
-            this.civilBox.Location = new System.Drawing.Point(538, 223);
-            this.civilBox.Name = "civilBox";
-            this.civilBox.Size = new System.Drawing.Size(121, 21);
-            this.civilBox.TabIndex = 52;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(43, 242);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 13);
-            this.label20.TabIndex = 53;
-            this.label20.Text = "Gender";
+            this.dateFiledBox.Enabled = false;
+            this.dateFiledBox.Location = new System.Drawing.Point(519, 91);
+            this.dateFiledBox.Name = "dateFiledBox";
+            this.dateFiledBox.Size = new System.Drawing.Size(200, 20);
+            this.dateFiledBox.TabIndex = 54;
             // 
             // MainMenu
             // 
@@ -1685,7 +1692,6 @@
         internal System.Windows.Forms.ComboBox packageBox;
         internal System.Windows.Forms.Label Label10;
         internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.TextBox TextBox7;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.TextBox ageBox;
@@ -1712,5 +1718,6 @@
         internal System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox civilBox;
         internal System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DateTimePicker dateFiledBox;
     }
 }
