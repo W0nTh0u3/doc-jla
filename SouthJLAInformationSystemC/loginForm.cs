@@ -47,7 +47,7 @@ namespace SouthJLAInformationSystemC
             //{
             //    WrongLabel.Show();
             //}
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
             SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM dbo.adminJLA WHERE username = '" + UsernameBox.Text + "' AND pass = '" + PasswordBox.Text + "'", con);
             /* in above line the program is selecting the whole data from table and the matching it with the user name and password provided by user. */
             DataTable dt = new DataTable(); //this is creating a virtual table  
