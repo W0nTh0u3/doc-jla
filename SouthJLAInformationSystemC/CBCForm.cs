@@ -13,9 +13,37 @@ namespace SouthJLAInformationSystemC
 {
     public partial class CBCForm : Form
     {
-        public CBCForm()
+        public string passID;
+        public CBCForm(string uniqueID, string idPass)
         {
             InitializeComponent();
+
+            wbcTextBox.Text = "";
+            rbcTextBox.Text = "";
+            hgbTextBox.Text = "";
+            hctTextBox.Text = "";
+            plateletsTextBox.Text = "";
+            neutrophilTextBox.Text = "";
+            monocyteTextBox.Text = "";
+
+            string idUnique = uniqueID;
+            Console.WriteLine("patient unique ID: " + idUnique);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + idUnique + "'", conn);
+            DataTable dt1 = new DataTable(); //this is creating a virtual table  
+            sdaSearch.Fill(dt1);
+
+            idBox.Text = dt1.Rows[0][19].ToString();
+            lastBox.Text = dt1.Rows[0][1].ToString();
+            firstBox.Text = dt1.Rows[0][2].ToString();
+            middleBox.Text = dt1.Rows[0][3].ToString();
+            ageBox.Text = dt1.Rows[0][4].ToString();
+            addressBox.Text = dt1.Rows[0][10].ToString();
+
+            passID = idPass;
+
+            
+
         }
 
         private void hematologyBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -34,7 +62,9 @@ namespace SouthJLAInformationSystemC
 
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
-            
+            string sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
+            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString);
+            verifyPopUp.Show();
         }
     }
 }

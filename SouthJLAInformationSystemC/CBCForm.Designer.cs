@@ -38,13 +38,13 @@
             this.TextBox7 = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
@@ -53,8 +53,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.monocyteTextBox = new System.Windows.Forms.TextBox();
             this.hematologyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
+            this.lymphocytesTextBox = new System.Windows.Forms.TextBox();
+            this.neutrophilTextBox = new System.Windows.Forms.TextBox();
+            this.plateletsTextBox = new System.Windows.Forms.TextBox();
+            this.hctTextBox = new System.Windows.Forms.TextBox();
+            this.hgbTextBox = new System.Windows.Forms.TextBox();
+            this.rbcTextBox = new System.Windows.Forms.TextBox();
+            this.wbcTextBox = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -87,14 +95,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.hematologyTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.HematologyTableAdapter();
             this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
-            this.wbcTextBox1 = new System.Windows.Forms.TextBox();
-            this.rbcTextBox = new System.Windows.Forms.TextBox();
-            this.hgbTextBox = new System.Windows.Forms.TextBox();
-            this.hctTextBox = new System.Windows.Forms.TextBox();
-            this.plateletsTextBox = new System.Windows.Forms.TextBox();
-            this.neutrophilTextBox = new System.Windows.Forms.TextBox();
-            this.lymphocytesTextBox = new System.Windows.Forms.TextBox();
-            this.monocyteTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -113,13 +113,13 @@
             this.panel1.Controls.Add(this.TextBox7);
             this.panel1.Controls.Add(this.Label9);
             this.panel1.Controls.Add(this.Label8);
-            this.panel1.Controls.Add(this.TextBox6);
-            this.panel1.Controls.Add(this.TextBox5);
+            this.panel1.Controls.Add(this.ageBox);
+            this.panel1.Controls.Add(this.addressBox);
             this.panel1.Controls.Add(this.Label7);
-            this.panel1.Controls.Add(this.TextBox4);
-            this.panel1.Controls.Add(this.TextBox3);
-            this.panel1.Controls.Add(this.TextBox2);
-            this.panel1.Controls.Add(this.TextBox1);
+            this.panel1.Controls.Add(this.idBox);
+            this.panel1.Controls.Add(this.middleBox);
+            this.panel1.Controls.Add(this.firstBox);
+            this.panel1.Controls.Add(this.lastBox);
             this.panel1.Controls.Add(this.Label6);
             this.panel1.Controls.Add(this.Label5);
             this.panel1.Controls.Add(this.Label4);
@@ -215,27 +215,27 @@
             this.Label8.TabIndex = 34;
             this.Label8.Text = "Address";
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.Enabled = false;
-            this.TextBox6.Location = new System.Drawing.Point(63, 129);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 33;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Enabled = false;
+            this.ageBox.Location = new System.Drawing.Point(63, 129);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 33;
             // 
-            // TextBox5
+            // addressBox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.Enabled = false;
-            this.TextBox5.Location = new System.Drawing.Point(203, 130);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 32;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Enabled = false;
+            this.addressBox.Location = new System.Drawing.Point(203, 130);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 54);
+            this.addressBox.TabIndex = 32;
             // 
             // Label7
             // 
@@ -248,45 +248,45 @@
             this.Label7.TabIndex = 31;
             this.Label7.Text = "Age";
             // 
-            // TextBox4
+            // idBox
             // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Enabled = false;
-            this.TextBox4.Location = new System.Drawing.Point(81, 22);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 30;
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(81, 22);
+            this.idBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(195, 20);
+            this.idBox.TabIndex = 30;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Enabled = false;
-            this.TextBox3.Location = new System.Drawing.Point(302, 74);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 29;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Enabled = false;
+            this.middleBox.Location = new System.Drawing.Point(302, 74);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 29;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Enabled = false;
-            this.TextBox2.Location = new System.Drawing.Point(174, 73);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 28;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Enabled = false;
+            this.firstBox.Location = new System.Drawing.Point(174, 73);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 28;
             // 
-            // TextBox1
+            // lastBox
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Enabled = false;
-            this.TextBox1.Location = new System.Drawing.Point(63, 73);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 27;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Enabled = false;
+            this.lastBox.Location = new System.Drawing.Point(63, 73);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 27;
             // 
             // Label6
             // 
@@ -358,7 +358,7 @@
             this.SubmitCBC.Name = "SubmitCBC";
             this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
             this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Submit";
+            this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
             this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
@@ -373,7 +373,7 @@
             this.panel2.Controls.Add(this.hctTextBox);
             this.panel2.Controls.Add(this.hgbTextBox);
             this.panel2.Controls.Add(this.rbcTextBox);
-            this.panel2.Controls.Add(this.wbcTextBox1);
+            this.panel2.Controls.Add(this.wbcTextBox);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.label38);
@@ -410,6 +410,14 @@
             this.panel2.Size = new System.Drawing.Size(817, 379);
             this.panel2.TabIndex = 6;
             // 
+            // monocyteTextBox
+            // 
+            this.monocyteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "monocyte", true));
+            this.monocyteTextBox.Location = new System.Drawing.Point(268, 358);
+            this.monocyteTextBox.Name = "monocyteTextBox";
+            this.monocyteTextBox.Size = new System.Drawing.Size(100, 20);
+            this.monocyteTextBox.TabIndex = 47;
+            // 
             // hematologyBindingSource
             // 
             this.hematologyBindingSource.DataMember = "Hematology";
@@ -419,6 +427,62 @@
             // 
             this.databaseDataSet.DataSetName = "DatabaseDataSet";
             this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lymphocytesTextBox
+            // 
+            this.lymphocytesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "lymphocytes", true));
+            this.lymphocytesTextBox.Location = new System.Drawing.Point(268, 326);
+            this.lymphocytesTextBox.Name = "lymphocytesTextBox";
+            this.lymphocytesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lymphocytesTextBox.TabIndex = 46;
+            // 
+            // neutrophilTextBox
+            // 
+            this.neutrophilTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "neutrophil", true));
+            this.neutrophilTextBox.Location = new System.Drawing.Point(268, 293);
+            this.neutrophilTextBox.Name = "neutrophilTextBox";
+            this.neutrophilTextBox.Size = new System.Drawing.Size(100, 20);
+            this.neutrophilTextBox.TabIndex = 45;
+            // 
+            // plateletsTextBox
+            // 
+            this.plateletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "platelets", true));
+            this.plateletsTextBox.Location = new System.Drawing.Point(268, 227);
+            this.plateletsTextBox.Name = "plateletsTextBox";
+            this.plateletsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.plateletsTextBox.TabIndex = 44;
+            // 
+            // hctTextBox
+            // 
+            this.hctTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hct", true));
+            this.hctTextBox.Location = new System.Drawing.Point(268, 196);
+            this.hctTextBox.Name = "hctTextBox";
+            this.hctTextBox.Size = new System.Drawing.Size(100, 20);
+            this.hctTextBox.TabIndex = 43;
+            // 
+            // hgbTextBox
+            // 
+            this.hgbTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hgb", true));
+            this.hgbTextBox.Location = new System.Drawing.Point(268, 167);
+            this.hgbTextBox.Name = "hgbTextBox";
+            this.hgbTextBox.Size = new System.Drawing.Size(100, 20);
+            this.hgbTextBox.TabIndex = 42;
+            // 
+            // rbcTextBox
+            // 
+            this.rbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "rbc", true));
+            this.rbcTextBox.Location = new System.Drawing.Point(268, 137);
+            this.rbcTextBox.Name = "rbcTextBox";
+            this.rbcTextBox.Size = new System.Drawing.Size(100, 20);
+            this.rbcTextBox.TabIndex = 41;
+            // 
+            // wbcTextBox
+            // 
+            this.wbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "wbc", true));
+            this.wbcTextBox.Location = new System.Drawing.Point(268, 107);
+            this.wbcTextBox.Name = "wbcTextBox";
+            this.wbcTextBox.Size = new System.Drawing.Size(100, 20);
+            this.wbcTextBox.TabIndex = 40;
             // 
             // label40
             // 
@@ -713,70 +777,6 @@
             this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userAccTableAdapter = null;
             // 
-            // wbcTextBox1
-            // 
-            this.wbcTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "wbc", true));
-            this.wbcTextBox1.Location = new System.Drawing.Point(268, 107);
-            this.wbcTextBox1.Name = "wbcTextBox1";
-            this.wbcTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.wbcTextBox1.TabIndex = 40;
-            // 
-            // rbcTextBox
-            // 
-            this.rbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "rbc", true));
-            this.rbcTextBox.Location = new System.Drawing.Point(268, 137);
-            this.rbcTextBox.Name = "rbcTextBox";
-            this.rbcTextBox.Size = new System.Drawing.Size(100, 20);
-            this.rbcTextBox.TabIndex = 41;
-            // 
-            // hgbTextBox
-            // 
-            this.hgbTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hgb", true));
-            this.hgbTextBox.Location = new System.Drawing.Point(268, 167);
-            this.hgbTextBox.Name = "hgbTextBox";
-            this.hgbTextBox.Size = new System.Drawing.Size(100, 20);
-            this.hgbTextBox.TabIndex = 42;
-            // 
-            // hctTextBox
-            // 
-            this.hctTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hct", true));
-            this.hctTextBox.Location = new System.Drawing.Point(268, 196);
-            this.hctTextBox.Name = "hctTextBox";
-            this.hctTextBox.Size = new System.Drawing.Size(100, 20);
-            this.hctTextBox.TabIndex = 43;
-            // 
-            // plateletsTextBox
-            // 
-            this.plateletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "platelets", true));
-            this.plateletsTextBox.Location = new System.Drawing.Point(268, 227);
-            this.plateletsTextBox.Name = "plateletsTextBox";
-            this.plateletsTextBox.Size = new System.Drawing.Size(100, 20);
-            this.plateletsTextBox.TabIndex = 44;
-            // 
-            // neutrophilTextBox
-            // 
-            this.neutrophilTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "neutrophil", true));
-            this.neutrophilTextBox.Location = new System.Drawing.Point(268, 293);
-            this.neutrophilTextBox.Name = "neutrophilTextBox";
-            this.neutrophilTextBox.Size = new System.Drawing.Size(100, 20);
-            this.neutrophilTextBox.TabIndex = 45;
-            // 
-            // lymphocytesTextBox
-            // 
-            this.lymphocytesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "lymphocytes", true));
-            this.lymphocytesTextBox.Location = new System.Drawing.Point(268, 326);
-            this.lymphocytesTextBox.Name = "lymphocytesTextBox";
-            this.lymphocytesTextBox.Size = new System.Drawing.Size(100, 20);
-            this.lymphocytesTextBox.TabIndex = 46;
-            // 
-            // monocyteTextBox
-            // 
-            this.monocyteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "monocyte", true));
-            this.monocyteTextBox.Location = new System.Drawing.Point(268, 358);
-            this.monocyteTextBox.Name = "monocyteTextBox";
-            this.monocyteTextBox.Size = new System.Drawing.Size(100, 20);
-            this.monocyteTextBox.TabIndex = 47;
-            // 
             // CBCForm
             // 
             this.AcceptButton = this.SubmitCBC;
@@ -818,13 +818,13 @@
         internal System.Windows.Forms.TextBox TextBox7;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        internal System.Windows.Forms.TextBox ageBox;
+        internal System.Windows.Forms.TextBox addressBox;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox idBox;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox lastBox;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
@@ -874,6 +874,6 @@
         private System.Windows.Forms.TextBox hctTextBox;
         private System.Windows.Forms.TextBox hgbTextBox;
         private System.Windows.Forms.TextBox rbcTextBox;
-        private System.Windows.Forms.TextBox wbcTextBox1;
+        private System.Windows.Forms.TextBox wbcTextBox;
     }
 }

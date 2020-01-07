@@ -87,10 +87,6 @@
             this.ContentPanel = new System.Windows.Forms.Panel();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
             this.dateFiledBox = new System.Windows.Forms.DateTimePicker();
-            this.PatientIDPanel = new System.Windows.Forms.Panel();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.Label2 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.civilBox = new System.Windows.Forms.ComboBox();
             this.genderBox = new System.Windows.Forms.ComboBox();
@@ -114,6 +110,10 @@
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
+            this.PatientIDPanel = new System.Windows.Forms.Panel();
+            this.search = new System.Windows.Forms.Button();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.Label2 = new System.Windows.Forms.Label();
             this.MajorelPanel = new System.Windows.Forms.Panel();
             this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.FBSClickableLabel = new System.Windows.Forms.Label();
@@ -155,8 +155,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContentPanel.SuspendLayout();
             this.PatientInfoPanel.SuspendLayout();
-            this.PatientIDPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PatientIDPanel.SuspendLayout();
             this.MajorelPanel.SuspendLayout();
             this.ContentTitlePanel.SuspendLayout();
             this.SuspendLayout();
@@ -987,6 +987,7 @@
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContentPanel.Controls.Add(this.PatientInfoPanel);
+            this.ContentPanel.Controls.Add(this.PatientIDPanel);
             this.ContentPanel.Controls.Add(this.MajorelPanel);
             this.ContentPanel.Controls.Add(this.ContentTitlePanel);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -999,7 +1000,6 @@
             // PatientInfoPanel
             // 
             this.PatientInfoPanel.Controls.Add(this.dateFiledBox);
-            this.PatientInfoPanel.Controls.Add(this.PatientIDPanel);
             this.PatientInfoPanel.Controls.Add(this.label20);
             this.PatientInfoPanel.Controls.Add(this.civilBox);
             this.PatientInfoPanel.Controls.Add(this.genderBox);
@@ -1024,9 +1024,9 @@
             this.PatientInfoPanel.Controls.Add(this.Label4);
             this.PatientInfoPanel.Controls.Add(this.Label3);
             this.PatientInfoPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PatientInfoPanel.Location = new System.Drawing.Point(0, 60);
+            this.PatientInfoPanel.Location = new System.Drawing.Point(0, 107);
             this.PatientInfoPanel.Name = "PatientInfoPanel";
-            this.PatientInfoPanel.Size = new System.Drawing.Size(878, 249);
+            this.PatientInfoPanel.Size = new System.Drawing.Size(878, 190);
             this.PatientInfoPanel.TabIndex = 55;
             // 
             // dateFiledBox
@@ -1037,52 +1037,11 @@
             this.dateFiledBox.Size = new System.Drawing.Size(200, 20);
             this.dateFiledBox.TabIndex = 82;
             // 
-            // PatientIDPanel
-            // 
-            this.PatientIDPanel.Controls.Add(this.Button1);
-            this.PatientIDPanel.Controls.Add(this.TextBox4);
-            this.PatientIDPanel.Controls.Add(this.Label2);
-            this.PatientIDPanel.Location = new System.Drawing.Point(46, 13);
-            this.PatientIDPanel.Name = "PatientIDPanel";
-            this.PatientIDPanel.Size = new System.Drawing.Size(355, 59);
-            this.PatientIDPanel.TabIndex = 81;
-            // 
-            // Button1
-            // 
-            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button1.Location = new System.Drawing.Point(279, 15);
-            this.Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(66, 30);
-            this.Button1.TabIndex = 72;
-            this.Button1.Text = "Search";
-            this.Button1.UseVisualStyleBackColor = true;
-            // 
-            // TextBox4
-            // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Location = new System.Drawing.Point(78, 22);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 71;
-            // 
-            // Label2
-            // 
-            this.Label2.AutoSize = true;
-            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(4, 23);
-            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(64, 13);
-            this.Label2.TabIndex = 70;
-            this.Label2.Text = "Patient ID";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(48, 177);
+            this.label20.Location = new System.Drawing.Point(58, 124);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(48, 13);
@@ -1099,7 +1058,7 @@
             "Widowed",
             "Divorced",
             "Separated"});
-            this.civilBox.Location = new System.Drawing.Point(543, 158);
+            this.civilBox.Location = new System.Drawing.Point(143, 157);
             this.civilBox.Name = "civilBox";
             this.civilBox.Size = new System.Drawing.Size(121, 21);
             this.civilBox.TabIndex = 79;
@@ -1111,7 +1070,7 @@
             this.genderBox.Items.AddRange(new object[] {
             "MALE",
             "FEMALE"});
-            this.genderBox.Location = new System.Drawing.Point(104, 173);
+            this.genderBox.Location = new System.Drawing.Point(114, 120);
             this.genderBox.Name = "genderBox";
             this.genderBox.Size = new System.Drawing.Size(121, 21);
             this.genderBox.TabIndex = 78;
@@ -1120,7 +1079,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(458, 161);
+            this.label21.Location = new System.Drawing.Point(58, 160);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 13);
@@ -1129,11 +1088,11 @@
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(543, 204);
+            this.submit.Location = new System.Drawing.Point(608, 157);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 76;
-            this.submit.Text = "Submit";
+            this.submit.Text = "Save";
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
@@ -1219,7 +1178,7 @@
             // 
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(184, 136);
+            this.Label8.Location = new System.Drawing.Point(194, 83);
             this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(52, 13);
@@ -1229,7 +1188,7 @@
             // ageBox
             // 
             this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ageBox.Location = new System.Drawing.Point(104, 135);
+            this.ageBox.Location = new System.Drawing.Point(114, 82);
             this.ageBox.Margin = new System.Windows.Forms.Padding(2);
             this.ageBox.MaxLength = 3;
             this.ageBox.Name = "ageBox";
@@ -1239,7 +1198,7 @@
             // addressBox
             // 
             this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addressBox.Location = new System.Drawing.Point(244, 136);
+            this.addressBox.Location = new System.Drawing.Point(254, 83);
             this.addressBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
@@ -1250,7 +1209,7 @@
             // 
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(62, 136);
+            this.Label7.Location = new System.Drawing.Point(72, 83);
             this.Label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(29, 13);
@@ -1260,7 +1219,7 @@
             // middleBox
             // 
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleBox.Location = new System.Drawing.Point(343, 80);
+            this.middleBox.Location = new System.Drawing.Point(353, 27);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.Name = "middleBox";
             this.middleBox.Size = new System.Drawing.Size(47, 20);
@@ -1269,7 +1228,7 @@
             // firstBox
             // 
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.firstBox.Location = new System.Drawing.Point(215, 79);
+            this.firstBox.Location = new System.Drawing.Point(225, 26);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
             this.firstBox.Size = new System.Drawing.Size(101, 20);
@@ -1278,7 +1237,7 @@
             // lastBox
             // 
             this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lastBox.Location = new System.Drawing.Point(104, 79);
+            this.lastBox.Location = new System.Drawing.Point(114, 26);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
             this.lastBox.Size = new System.Drawing.Size(92, 20);
@@ -1288,7 +1247,7 @@
             // 
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(355, 102);
+            this.Label6.Location = new System.Drawing.Point(365, 49);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1299,7 +1258,7 @@
             // 
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(233, 101);
+            this.Label5.Location = new System.Drawing.Point(243, 48);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -1310,7 +1269,7 @@
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(119, 100);
+            this.Label4.Location = new System.Drawing.Point(129, 47);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(61, 13);
@@ -1321,12 +1280,55 @@
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(53, 82);
+            this.Label3.Location = new System.Drawing.Point(63, 29);
             this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(39, 13);
             this.Label3.TabIndex = 55;
             this.Label3.Text = "Name";
+            // 
+            // PatientIDPanel
+            // 
+            this.PatientIDPanel.Controls.Add(this.search);
+            this.PatientIDPanel.Controls.Add(this.searchBox);
+            this.PatientIDPanel.Controls.Add(this.Label2);
+            this.PatientIDPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PatientIDPanel.Location = new System.Drawing.Point(0, 60);
+            this.PatientIDPanel.Name = "PatientIDPanel";
+            this.PatientIDPanel.Size = new System.Drawing.Size(878, 47);
+            this.PatientIDPanel.TabIndex = 81;
+            // 
+            // search
+            // 
+            this.search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search.Location = new System.Drawing.Point(324, 10);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(66, 30);
+            this.search.TabIndex = 72;
+            this.search.Text = "Search";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // searchBox
+            // 
+            this.searchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchBox.Location = new System.Drawing.Point(109, 15);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(2);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(195, 20);
+            this.searchBox.TabIndex = 71;
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label2.Location = new System.Drawing.Point(37, 19);
+            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(64, 13);
+            this.Label2.TabIndex = 70;
+            this.Label2.Text = "Patient ID";
             // 
             // MajorelPanel
             // 
@@ -1675,9 +1677,9 @@
             this.ContentPanel.ResumeLayout(false);
             this.PatientInfoPanel.ResumeLayout(false);
             this.PatientInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PatientIDPanel.ResumeLayout(false);
             this.PatientIDPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.MajorelPanel.ResumeLayout(false);
             this.MajorelPanel.PerformLayout();
             this.ContentTitlePanel.ResumeLayout(false);
@@ -1793,8 +1795,8 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         private System.Windows.Forms.Panel PatientIDPanel;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.TextBox TextBox4;
+        internal System.Windows.Forms.Button search;
+        internal System.Windows.Forms.TextBox searchBox;
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.DateTimePicker dateFiledBox;
     }

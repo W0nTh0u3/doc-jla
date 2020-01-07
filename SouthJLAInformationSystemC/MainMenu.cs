@@ -9,10 +9,14 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
 namespace SouthJLAInformationSystemC
 {
     public partial class MainMenu : Form
     {
+        public string uniquePass = "";
+        public string idPass = "";
+
         public MainMenu()
         {
             InitializeComponent();
@@ -132,6 +136,10 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
             PatientIDPanel.Enabled = false;
+
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+
+            submit.Text = "Enter";
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -140,6 +148,10 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
+
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+
+            submit.Text = "Save changes";
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -148,6 +160,10 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
+
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+
+            submit.Text = "Enter/Edit";
         }
 
         private void GenEnterResuBtn_Click(object sender, EventArgs e)
@@ -157,6 +173,8 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
 
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+
         }
 
         private void GenEditResuBtn_Click(object sender, EventArgs e)
@@ -165,6 +183,8 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
+
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
         }
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
@@ -173,6 +193,8 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
+
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
         }
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
@@ -215,13 +237,16 @@ namespace SouthJLAInformationSystemC
         private void DisableAllBoxes()
         {
             MajorelPanel.Enabled = false;
-            PatientInfoPanel.Enabled = false;
+            PatientInfoPanel.Enabled = false;
+
+            PatientIDPanel.Enabled = false;
         }
         private void EnableOnlyPatientInfo()
         {
-            MajorelPanel.Enabled = false;
+           
             PatientInfoPanel.Enabled = true;
-            PatientIDPanel.Enabled = true;
+            PatientIDPanel.Enabled = true;            
+            MajorelPanel.Enabled = false;
 
         }
         private void EnableOnlyPatientResults()
@@ -249,18 +274,17 @@ namespace SouthJLAInformationSystemC
                 DrugTBtn.PerformClick();
             if (e.KeyCode == Keys.NumPad8)
                 MisceBtn.PerformClick();
-        }
-        #region labelsclick
-        private CBCForm cBC = new CBCForm();
+        }
+
+
+        
+        #region labelsclick
+        
         private void CBCClickableLabel_Click(object sender, EventArgs e)
-        {
-            if (cBC != ActiveForm)
-            {
-                if (cBC.IsDisposed)
-                    cBC = new CBCForm();
-                cBC.Show();
-            }
-                
+        {
+            CBCForm cBC = new CBCForm(uniquePass, idPass);
+
+            cBC.Show();        
         }
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
@@ -302,8 +326,52 @@ namespace SouthJLAInformationSystemC
         #endregion
 
         private void submit_Click(object sender, EventArgs e)
-        {            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
-            SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + "" + dateFiledBox.Value.ToString("dd") + "')", conn);            conn.Open();            sda.ExecuteNonQuery();            conn.Close();            System.Diagnostics.Debug.WriteLine("okay na");            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+        {            if(submit.Text == "Enter")
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + "" + dateFiledBox.Value.ToString("dd") + "')", conn);
+                conn.Open();
+                sda.ExecuteNonQuery();
+                conn.Close();
+
+                SqlDataAdapter sda1 = new SqlDataAdapter("SELECT MAX(id) FROM dbo.ofw", conn);
+                DataTable dt = new DataTable(); //this is creating a virtual table  
+                sda1.Fill(dt);
+                var patientID = dt.Rows[0][0].ToString();
+                string unique = "MJRL-" + patientID;
+
+                SqlCommand sda2 = new SqlCommand("UPDATE dbo.ofw SET patientID = '" + unique + "' WHERE id = '" + patientID + "'", conn);
+                conn.Open();
+                sda2.ExecuteNonQuery();
+                conn.Close();
+
+                System.Diagnostics.Debug.WriteLine("okay na");
+                lastBox.Text = String.Empty;
+                firstBox.Text = String.Empty;
+                middleBox.Text = String.Empty;
+                ageBox.Text = String.Empty;
+                addressBox.Text = String.Empty;
+                civilBox.SelectedIndex = -1;
+                genderBox.SelectedIndex = -1;
+                MessageBox.Show("Succesful! This is your Patient ID: MJRL-" + patientID);
+            }            else if (submit.Text == "Save changes")
+            {
+
+            }
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
+            sdaSearch.Fill(dt);            
+            lastBox.Text = dt.Rows[0][1].ToString();            firstBox.Text = dt.Rows[0][2].ToString();            middleBox.Text = dt.Rows[0][3].ToString();            ageBox.Text = dt.Rows[0][4].ToString();            addressBox.Text = dt.Rows[0][10].ToString();            genderBox.SelectedItem = dt.Rows[0][7].ToString();            civilBox.SelectedItem = dt.Rows[0][8].ToString();
+            uniquePass = dt.Rows[0][19].ToString();
+            idPass = dt.Rows[0][0].ToString();
+
+
+
         }
     }
 }

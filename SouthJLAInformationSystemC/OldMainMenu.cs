@@ -57,8 +57,7 @@ namespace SouthJLAInformationSystemC
 
         private void Label13_Click(object sender, EventArgs e)
         {
-            CBCForm cBC = new CBCForm();
-            cBC.Show();
+            
         }
 
         private void Label14_Click(object sender, EventArgs e)
