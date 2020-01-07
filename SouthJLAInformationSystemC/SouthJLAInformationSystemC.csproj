@@ -89,6 +89,12 @@
     <Compile Include="PAPForm.Designer.cs">
       <DependentUpon>PAPForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerifyPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyPopUp.Designer.cs">
+      <DependentUpon>VerifyPopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="XrayForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PAPForm.resx">
       <DependentUpon>PAPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPopUp.resx">
+      <DependentUpon>VerifyPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XrayForm.resx">
       <DependentUpon>XrayForm.cs</DependentUpon>

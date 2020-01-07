@@ -66,6 +66,7 @@
             this.UsernameBox.Name = "UsernameBox";
             this.UsernameBox.Size = new System.Drawing.Size(225, 22);
             this.UsernameBox.TabIndex = 3;
+            this.UsernameBox.Text = "admin";
             this.UsernameBox.Click += new System.EventHandler(this.UsernameBox_Click);
             this.UsernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UsernameBox_KeyDown);
             // 
@@ -78,7 +79,7 @@
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(225, 22);
             this.PasswordBox.TabIndex = 4;
-            this.PasswordBox.Text = "Password";
+            this.PasswordBox.Text = "admin";
             this.PasswordBox.UseSystemPasswordChar = true;
             this.PasswordBox.Click += new System.EventHandler(this.PasswordBox_Click);
             this.PasswordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UsernameBox_KeyDown);
@@ -121,11 +122,11 @@
             // 
             // SignInBtn
             // 
-            this.SignInBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(157)))), ((int)(((byte)(192)))));
+            this.SignInBtn.BackColor = System.Drawing.Color.AliceBlue;
             this.SignInBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInBtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInBtn.ForeColor = System.Drawing.Color.White;
+            this.SignInBtn.ForeColor = System.Drawing.Color.Black;
             this.SignInBtn.Location = new System.Drawing.Point(33, 335);
             this.SignInBtn.Name = "SignInBtn";
             this.SignInBtn.Size = new System.Drawing.Size(261, 37);
@@ -164,7 +165,7 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Password";
             // 
-            // LoginFormV2
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +185,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LoginFormV2";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginFormV2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

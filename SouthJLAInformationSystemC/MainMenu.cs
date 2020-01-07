@@ -67,6 +67,7 @@ namespace SouthJLAInformationSystemC
         #region MainMenuPanel
         private void GeneralClinicBtn_Click(object sender, EventArgs e)
         {
+            DisableAllBoxes();
             ContentPanel.Show();
             SidePanel.Dock = DockStyle.Left;
             ShowSubPanel(MenuPanel1);
@@ -128,6 +129,8 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
+            PatientIDPanel.Hide();
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -135,6 +138,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -142,6 +146,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientInfo();
         }
 
         private void GenEnterResuBtn_Click(object sender, EventArgs e)
@@ -149,6 +154,8 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
+
         }
 
         private void GenEditResuBtn_Click(object sender, EventArgs e)
@@ -156,6 +163,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
         }
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
@@ -163,6 +171,7 @@ namespace SouthJLAInformationSystemC
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
+            EnableOnlyPatientResults();
         }
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
@@ -202,7 +211,26 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = PhysicalBtn.Text;
         }
         #endregion
+        private void DisableAllBoxes()
+        {
+            MajorelPanel.Enabled = false;
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Show();
+        }
+        private void EnableOnlyPatientInfo()
+        {
+            MajorelPanel.Enabled = false;
+            PatientInfoPanel.Enabled = true;
+            PatientIDPanel.Show();
 
+        }
+        private void EnableOnlyPatientResults()
+        {
+            MajorelPanel.Enabled = true;
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Show();
+
+        }
         private void MainMenuV2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumPad1)
@@ -275,7 +303,7 @@ namespace SouthJLAInformationSystemC
 
         private void submit_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\jupper\source\repos\doc-jla\App_Data\Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (id, lastName, givenName, middleName, age, address) VALUES('2','" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.Text + "','" + genderBox.Text + "')", conn);
             conn.Open();
             sda.ExecuteNonQuery();
