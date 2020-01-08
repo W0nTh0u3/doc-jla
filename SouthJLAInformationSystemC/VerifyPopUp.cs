@@ -14,11 +14,14 @@ namespace SouthJLAInformationSystemC
     public partial class VerifyPopUp : Form
     {
         public string thisSql;
-        public VerifyPopUp(string thisSqlpass)
+        public string[] valuesTest, patientInfoValue;
+        public VerifyPopUp(string thisSqlpass, string[] valuesTest, string[] patientInfoValue)
         {
             InitializeComponent();
             thisSql = thisSqlpass;
             Console.WriteLine(thisSql);
+            this.valuesTest = valuesTest;
+            this.patientInfoValue = patientInfoValue;
         }
 
         private void FileBtn_Click(object sender, EventArgs e)
@@ -38,7 +41,7 @@ namespace SouthJLAInformationSystemC
 
         private void IntPrintBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

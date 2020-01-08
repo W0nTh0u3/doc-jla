@@ -41,7 +41,7 @@ namespace SouthJLAInformationSystemC
             System.Diagnostics.Debug.WriteLine("cell 0,0: " + dt.Rows[0][0].ToString());
             if (dt.Rows[0][0].ToString() == "1")
             {
-                MainMenu mainMenu = new MainMenu();
+                MainMenu mainMenu = new MainMenu("3");
                 Hide();
                 mainMenu.Show();
             }

@@ -57,7 +57,11 @@ namespace SouthJLAInformationSystemC
             System.Diagnostics.Debug.WriteLine("cell 0,0: " + dt.Rows[0][0].ToString());
             if (dt.Rows[0][0].ToString() == "1")
             {
-                MainMenu mainMenu = new MainMenu();
+                SqlDataAdapter sda1 = new SqlDataAdapter("SELECT userClass FROM dbo.adminJLA WHERE username = '" + UsernameBox.Text + "'", con);
+                /* in above line the program is selecting the whole data from table and the matching it with the user name and password provided by user. */
+                DataTable dt1 = new DataTable(); //this is creating a virtual table  
+                sda1.Fill(dt1);
+                MainMenu mainMenu = new MainMenu(dt1.Rows[0][0].ToString());
                 Hide();
                 mainMenu.Show();
             }

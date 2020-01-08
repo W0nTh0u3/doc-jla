@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ComboBox2 = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
@@ -54,8 +53,6 @@
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.monocyteTextBox = new System.Windows.Forms.TextBox();
-            this.hematologyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
             this.lymphocytesTextBox = new System.Windows.Forms.TextBox();
             this.neutrophilTextBox = new System.Windows.Forms.TextBox();
             this.plateletsTextBox = new System.Windows.Forms.TextBox();
@@ -93,14 +90,10 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.hematologyTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.HematologyTableAdapter();
-            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -412,25 +405,13 @@
             // 
             // monocyteTextBox
             // 
-            this.monocyteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "monocyte", true));
             this.monocyteTextBox.Location = new System.Drawing.Point(268, 358);
             this.monocyteTextBox.Name = "monocyteTextBox";
             this.monocyteTextBox.Size = new System.Drawing.Size(100, 20);
             this.monocyteTextBox.TabIndex = 47;
             // 
-            // hematologyBindingSource
-            // 
-            this.hematologyBindingSource.DataMember = "Hematology";
-            this.hematologyBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lymphocytesTextBox
             // 
-            this.lymphocytesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "lymphocytes", true));
             this.lymphocytesTextBox.Location = new System.Drawing.Point(268, 326);
             this.lymphocytesTextBox.Name = "lymphocytesTextBox";
             this.lymphocytesTextBox.Size = new System.Drawing.Size(100, 20);
@@ -438,7 +419,6 @@
             // 
             // neutrophilTextBox
             // 
-            this.neutrophilTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "neutrophil", true));
             this.neutrophilTextBox.Location = new System.Drawing.Point(268, 293);
             this.neutrophilTextBox.Name = "neutrophilTextBox";
             this.neutrophilTextBox.Size = new System.Drawing.Size(100, 20);
@@ -446,7 +426,6 @@
             // 
             // plateletsTextBox
             // 
-            this.plateletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "platelets", true));
             this.plateletsTextBox.Location = new System.Drawing.Point(268, 227);
             this.plateletsTextBox.Name = "plateletsTextBox";
             this.plateletsTextBox.Size = new System.Drawing.Size(100, 20);
@@ -454,7 +433,6 @@
             // 
             // hctTextBox
             // 
-            this.hctTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hct", true));
             this.hctTextBox.Location = new System.Drawing.Point(268, 196);
             this.hctTextBox.Name = "hctTextBox";
             this.hctTextBox.Size = new System.Drawing.Size(100, 20);
@@ -462,7 +440,6 @@
             // 
             // hgbTextBox
             // 
-            this.hgbTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "hgb", true));
             this.hgbTextBox.Location = new System.Drawing.Point(268, 167);
             this.hgbTextBox.Name = "hgbTextBox";
             this.hgbTextBox.Size = new System.Drawing.Size(100, 20);
@@ -470,7 +447,6 @@
             // 
             // rbcTextBox
             // 
-            this.rbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "rbc", true));
             this.rbcTextBox.Location = new System.Drawing.Point(268, 137);
             this.rbcTextBox.Name = "rbcTextBox";
             this.rbcTextBox.Size = new System.Drawing.Size(100, 20);
@@ -478,7 +454,6 @@
             // 
             // wbcTextBox
             // 
-            this.wbcTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hematologyBindingSource, "wbc", true));
             this.wbcTextBox.Location = new System.Drawing.Point(268, 107);
             this.wbcTextBox.Name = "wbcTextBox";
             this.wbcTextBox.Size = new System.Drawing.Size(100, 20);
@@ -756,27 +731,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "WBC";
             // 
-            // hematologyTableAdapter
-            // 
-            this.hematologyTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.adminJLATableAdapter = null;
-            this.tableAdapterManager.ancillaryResultTableAdapter = null;
-            this.tableAdapterManager.assessmentTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
-            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
-            this.tableAdapterManager.HematologyTableAdapter = this.hematologyTableAdapter;
-            this.tableAdapterManager.historyTableAdapter = null;
-            this.tableAdapterManager.ofwTableAdapter = null;
-            this.tableAdapterManager.SerologyTableAdapter = null;
-            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
-            this.tableAdapterManager.summaryTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userAccTableAdapter = null;
-            // 
             // CBCForm
             // 
             this.AcceptButton = this.SubmitCBC;
@@ -794,15 +748,12 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CBC";
-            this.Load += new System.EventHandler(this.CBCForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hematologyBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -863,10 +814,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private DatabaseDataSet databaseDataSet;
-        private System.Windows.Forms.BindingSource hematologyBindingSource;
-        private DatabaseDataSetTableAdapters.HematologyTableAdapter hematologyTableAdapter;
-        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox monocyteTextBox;
         private System.Windows.Forms.TextBox lymphocytesTextBox;
         private System.Windows.Forms.TextBox neutrophilTextBox;

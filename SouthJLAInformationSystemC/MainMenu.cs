@@ -16,13 +16,34 @@ namespace SouthJLAInformationSystemC
     {
         public string uniquePass = "";
         public string idPass = "";
+        public string userClass = "";
+        public bool userEnter = false;
+        public bool userEdit = false;
+        public bool userSuper = false;
 
-        public MainMenu()
+        public MainMenu(string type)
         {
             InitializeComponent();
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";
+            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            if(type == "3")
+            {
+                userEnter = true;
+                userEdit = true;
+                userSuper = true;
+            }            else if (type == "2")
+            {
+                userEnter = false;
+                userEdit = true;
+                userSuper = false;
+            }            else if (type == "1")
+            {
+                userEnter = true;
+                userEdit = false;
+                userSuper = false;
+            }
             dateFiledBox.Value = DateTime.Now;
+
+            clearAll.Enabled = false;
         }
         protected override CreateParams CreateParams
         {
@@ -137,7 +158,7 @@ namespace SouthJLAInformationSystemC
             EnableOnlyPatientInfo();
             PatientIDPanel.Enabled = false;
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
 
             submit.Text = "Enter";
         }
@@ -149,9 +170,10 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
 
             submit.Text = "Save changes";
+            Console.WriteLine("edit req");
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -161,9 +183,9 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientInfo();
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
 
-            submit.Text = "Enter/Edit";
+            submit.Text = "Enter";
         }
 
         private void GenEnterResuBtn_Click(object sender, EventArgs e)
@@ -173,7 +195,7 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
 
         }
 
@@ -184,7 +206,7 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
         }
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
@@ -194,7 +216,7 @@ namespace SouthJLAInformationSystemC
             SubMenuLabelClicked.Text = btn.Text;
             EnableOnlyPatientResults();
 
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            clearAllfields();
         }
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
@@ -276,13 +298,19 @@ namespace SouthJLAInformationSystemC
                 MisceBtn.PerformClick();
         }
 
+        private void clearAllfields()
+        {
+            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            searchBox.Text = String.Empty;
+        }
+
 
         
         #region labelsclick
         
         private void CBCClickableLabel_Click(object sender, EventArgs e)
         {
-            CBCForm cBC = new CBCForm(uniquePass, idPass);
+            CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);
 
             cBC.Show();        
         }
@@ -326,7 +354,37 @@ namespace SouthJLAInformationSystemC
         #endregion
 
         private void submit_Click(object sender, EventArgs e)
-        {            if(submit.Text == "Enter")
+        { 
+            
+
+        }
+
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
+            sdaSearch.Fill(dt);
+
+
+            lastBox.Text = dt.Rows[0][1].ToString();            firstBox.Text = dt.Rows[0][2].ToString();            middleBox.Text = dt.Rows[0][3].ToString();            ageBox.Text = dt.Rows[0][4].ToString();            addressBox.Text = dt.Rows[0][10].ToString();            genderBox.SelectedItem = dt.Rows[0][7].ToString();            civilBox.SelectedItem = dt.Rows[0][8].ToString();
+            uniquePass = dt.Rows[0][19].ToString();
+            idPass = dt.Rows[0][0].ToString();
+
+            submit.Text = "Save changes";
+            clearAll.Enabled = true;
+        }
+
+        private void clearAll_Click(object sender, EventArgs e)
+        {
+            clearAllfields();
+            submit.Text = "Enter";
+            clearAll.Enabled = false;
+        }
+
+        private void submit_Click_1(object sender, EventArgs e)
+        {
+            if (submit.Text == "Enter")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + "" + dateFiledBox.Value.ToString("dd") + "')", conn);
@@ -354,24 +412,15 @@ namespace SouthJLAInformationSystemC
                 civilBox.SelectedIndex = -1;
                 genderBox.SelectedIndex = -1;
                 MessageBox.Show("Succesful! This is your Patient ID: MJRL-" + patientID);
-            }            else if (submit.Text == "Save changes")
+            }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
-
-            }
-
-        }
-
-
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchTextBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
-            sdaSearch.Fill(dt);
-
-
-            lastBox.Text = dt.Rows[0][1].ToString();            firstBox.Text = dt.Rows[0][2].ToString();            middleBox.Text = dt.Rows[0][3].ToString();            ageBox.Text = dt.Rows[0][4].ToString();            addressBox.Text = dt.Rows[0][10].ToString();            genderBox.SelectedItem = dt.Rows[0][7].ToString();            civilBox.SelectedItem = dt.Rows[0][8].ToString();
-            uniquePass = dt.Rows[0][19].ToString();
-            idPass = dt.Rows[0][0].ToString();
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "' WHERE id = '" + idPass + "'", conn);
+                conn.Open();
+                sda.ExecuteNonQuery();
+                Console.WriteLine("Nagsave na");
+                conn.Close();
+            }
         }
     }
 }
