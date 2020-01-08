@@ -52,9 +52,11 @@
             this.TitleSidePanel = new System.Windows.Forms.Panel();
             this.MainMenuLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AudiometRepsBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PsychRepsBtn = new System.Windows.Forms.Button();
             this.PsychEntEdtResBtn = new System.Windows.Forms.Button();
             this.XrayBtn = new System.Windows.Forms.Button();
@@ -82,8 +84,11 @@
             this.MenuPanel5 = new System.Windows.Forms.Panel();
             this.AudiometEntEdtResBtn = new System.Windows.Forms.Button();
             this.AudiometEntResBtn = new System.Windows.Forms.Button();
-            this.CloseBtn = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.EditPacBtn = new System.Windows.Forms.Button();
+            this.ViewPacBtn = new System.Windows.Forms.Button();
+            this.ViewDicBtn = new System.Windows.Forms.Button();
+            this.EditDicBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -92,13 +97,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuPanel2.SuspendLayout();
             this.MenuPanel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.TitleSidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MenuPanel3.SuspendLayout();
             this.SidePanel.SuspendLayout();
             this.MenuPanel8.SuspendLayout();
@@ -106,7 +111,6 @@
             this.MenuPanel6.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
             this.ContentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // XrayRepsBtn
@@ -225,6 +229,7 @@
             this.PhysicalBtn.TabIndex = 6;
             this.PhysicalBtn.Text = "Physical Examination";
             this.PhysicalBtn.UseVisualStyleBackColor = false;
+            this.PhysicalBtn.Click += new System.EventHandler(this.PhysicalBtn_Click);
             // 
             // MenuPanel1
             // 
@@ -304,6 +309,7 @@
             this.GenEntEdtResuBtn.Text = "Enter / Edit Results";
             this.GenEntEdtResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtResuBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtResuBtn.Click += new System.EventHandler(this.GenEntEdtResuBtn_Click);
             // 
             // GenEditResuBtn
             // 
@@ -319,6 +325,7 @@
             this.GenEditResuBtn.Text = "Edit Results";
             this.GenEditResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditResuBtn.UseVisualStyleBackColor = false;
+            this.GenEditResuBtn.Click += new System.EventHandler(this.GenEditResuBtn_Click);
             // 
             // GenEnterResuBtn
             // 
@@ -334,6 +341,7 @@
             this.GenEnterResuBtn.Text = "Enter Results";
             this.GenEnterResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterResuBtn.UseVisualStyleBackColor = false;
+            this.GenEnterResuBtn.Click += new System.EventHandler(this.GenEnterResuBtn_Click);
             // 
             // GenEntEdtReqBtn
             // 
@@ -349,6 +357,7 @@
             this.GenEntEdtReqBtn.Text = "Enter / Edit Requisition";
             this.GenEntEdtReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtReqBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtReqBtn.Click += new System.EventHandler(this.GenEntEdtReqBtn_Click);
             // 
             // GenEditReqBtn
             // 
@@ -364,6 +373,7 @@
             this.GenEditReqBtn.Text = "Edit Requisition";
             this.GenEditReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditReqBtn.UseVisualStyleBackColor = false;
+            this.GenEditReqBtn.Click += new System.EventHandler(this.GenEditReqBtn_Click);
             // 
             // GenEnterReqBtn
             // 
@@ -379,6 +389,7 @@
             this.GenEnterReqBtn.Text = "Enter Requisition";
             this.GenEnterReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterReqBtn.UseVisualStyleBackColor = false;
+            this.GenEnterReqBtn.Click += new System.EventHandler(this.GenEnterReqBtn_Click);
             // 
             // MenuPanel4
             // 
@@ -406,6 +417,7 @@
             this.GeneralClinicBtn.TabIndex = 4;
             this.GeneralClinicBtn.Text = "General Clinic";
             this.GeneralClinicBtn.UseVisualStyleBackColor = false;
+            this.GeneralClinicBtn.Click += new System.EventHandler(this.GeneralClinicBtn_Click);
             // 
             // TitleSidePanel
             // 
@@ -440,6 +452,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(579, 36);
             this.panel1.TabIndex = 18;
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Red;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
+            this.CloseBtn.Location = new System.Drawing.Point(534, 0);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click_1);
             // 
             // label1
             // 
@@ -478,6 +506,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 120);
             this.panel2.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // PsychRepsBtn
             // 
@@ -522,6 +561,7 @@
             this.XrayBtn.TabIndex = 10;
             this.XrayBtn.Text = "X-RAY";
             this.XrayBtn.UseVisualStyleBackColor = false;
+            this.XrayBtn.Click += new System.EventHandler(this.XrayBtn_Click_1);
             // 
             // PsychEntResBtn
             // 
@@ -551,6 +591,7 @@
             this.AudiometBtn.TabIndex = 12;
             this.AudiometBtn.Text = "Audiometry";
             this.AudiometBtn.UseVisualStyleBackColor = false;
+            this.AudiometBtn.Click += new System.EventHandler(this.AudiometBtn_Click);
             // 
             // MenuPanel3
             // 
@@ -578,6 +619,7 @@
             this.PsychBtn.TabIndex = 8;
             this.PsychBtn.Text = "Psychological Examination";
             this.PsychBtn.UseVisualStyleBackColor = false;
+            this.PsychBtn.Click += new System.EventHandler(this.PsychBtn_Click_1);
             // 
             // SidePanel
             // 
@@ -696,6 +738,7 @@
             this.MisceBtn.TabIndex = 18;
             this.MisceBtn.Text = "Miscellaneous";
             this.MisceBtn.UseVisualStyleBackColor = false;
+            this.MisceBtn.Click += new System.EventHandler(this.MisceBtn_Click);
             // 
             // MenuPanel7
             // 
@@ -768,6 +811,7 @@
             this.DrugTBtn.TabIndex = 16;
             this.DrugTBtn.Text = "Drugtest";
             this.DrugTBtn.UseVisualStyleBackColor = false;
+            this.DrugTBtn.Click += new System.EventHandler(this.DrugTBtn_Click);
             // 
             // MenuPanel6
             // 
@@ -840,6 +884,7 @@
             this.LaborBtn.TabIndex = 14;
             this.LaborBtn.Text = "Laboratory";
             this.LaborBtn.UseVisualStyleBackColor = false;
+            this.LaborBtn.Click += new System.EventHandler(this.LaborBtn_Click);
             // 
             // MenuPanel5
             // 
@@ -884,27 +929,16 @@
             this.AudiometEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometEntResBtn.UseVisualStyleBackColor = false;
             // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
-            this.CloseBtn.Location = new System.Drawing.Point(534, 0);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            // 
             // ContentPanel
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
             this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContentPanel.Controls.Add(this.EditPacBtn);
+            this.ContentPanel.Controls.Add(this.ViewPacBtn);
+            this.ContentPanel.Controls.Add(this.ViewDicBtn);
+            this.ContentPanel.Controls.Add(this.EditDicBtn);
             this.ContentPanel.Controls.Add(this.label5);
             this.ContentPanel.Controls.Add(this.richTextBox2);
             this.ContentPanel.Controls.Add(this.label4);
@@ -919,6 +953,46 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(579, 450);
             this.ContentPanel.TabIndex = 19;
+            // 
+            // EditPacBtn
+            // 
+            this.EditPacBtn.Location = new System.Drawing.Point(406, 42);
+            this.EditPacBtn.Name = "EditPacBtn";
+            this.EditPacBtn.Size = new System.Drawing.Size(119, 23);
+            this.EditPacBtn.TabIndex = 32;
+            this.EditPacBtn.Text = "Edit Packages";
+            this.EditPacBtn.UseVisualStyleBackColor = true;
+            this.EditPacBtn.Click += new System.EventHandler(this.EditPacBtn_Click);
+            // 
+            // ViewPacBtn
+            // 
+            this.ViewPacBtn.Location = new System.Drawing.Point(281, 42);
+            this.ViewPacBtn.Name = "ViewPacBtn";
+            this.ViewPacBtn.Size = new System.Drawing.Size(119, 23);
+            this.ViewPacBtn.TabIndex = 31;
+            this.ViewPacBtn.Text = "View Packages";
+            this.ViewPacBtn.UseVisualStyleBackColor = true;
+            this.ViewPacBtn.Click += new System.EventHandler(this.ViewPacBtn_Click);
+            // 
+            // ViewDicBtn
+            // 
+            this.ViewDicBtn.Location = new System.Drawing.Point(31, 42);
+            this.ViewDicBtn.Name = "ViewDicBtn";
+            this.ViewDicBtn.Size = new System.Drawing.Size(119, 23);
+            this.ViewDicBtn.TabIndex = 30;
+            this.ViewDicBtn.Text = "View Dictionary";
+            this.ViewDicBtn.UseVisualStyleBackColor = true;
+            this.ViewDicBtn.Click += new System.EventHandler(this.ViewDicBtn_Click);
+            // 
+            // EditDicBtn
+            // 
+            this.EditDicBtn.Location = new System.Drawing.Point(156, 42);
+            this.EditDicBtn.Name = "EditDicBtn";
+            this.EditDicBtn.Size = new System.Drawing.Size(119, 23);
+            this.EditDicBtn.TabIndex = 29;
+            this.EditDicBtn.Text = "Edit Dictionary";
+            this.EditDicBtn.UseVisualStyleBackColor = true;
+            this.EditDicBtn.Click += new System.EventHandler(this.EditDicBtn_Click_1);
             // 
             // label5
             // 
@@ -989,17 +1063,6 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // DictionaryViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1018,6 +1081,7 @@
             this.TitleSidePanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MenuPanel3.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
@@ -1027,7 +1091,6 @@
             this.MenuPanel5.ResumeLayout(false);
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1098,5 +1161,9 @@
         private System.Windows.Forms.Button AudiometEntResBtn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button EditPacBtn;
+        private System.Windows.Forms.Button ViewPacBtn;
+        private System.Windows.Forms.Button ViewDicBtn;
+        private System.Windows.Forms.Button EditDicBtn;
     }
 }

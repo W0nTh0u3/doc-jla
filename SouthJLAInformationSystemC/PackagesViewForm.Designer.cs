@@ -32,6 +32,7 @@
             this.GenBillBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PsychRepsBtn = new System.Windows.Forms.Button();
             this.PsychEntEdtResBtn = new System.Windows.Forms.Button();
             this.XrayBtn = new System.Windows.Forms.Button();
@@ -82,16 +83,20 @@
             this.TitleSidePanel = new System.Windows.Forms.Panel();
             this.MainMenuLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.EditPacBtn = new System.Windows.Forms.Button();
+            this.ViewPacBtn = new System.Windows.Forms.Button();
+            this.ViewDicBtn = new System.Windows.Forms.Button();
+            this.EditDicBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CloseBtn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MenuPanel3.SuspendLayout();
             this.SidePanel.SuspendLayout();
             this.MenuPanel8.SuspendLayout();
@@ -104,7 +109,6 @@
             this.TitleSidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.ContentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GenBillBtn
@@ -139,6 +143,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 120);
             this.panel2.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // PsychRepsBtn
             // 
@@ -183,6 +198,7 @@
             this.XrayBtn.TabIndex = 10;
             this.XrayBtn.Text = "X-RAY";
             this.XrayBtn.UseVisualStyleBackColor = false;
+            this.XrayBtn.Click += new System.EventHandler(this.XrayBtn_Click);
             // 
             // PsychEntResBtn
             // 
@@ -212,6 +228,7 @@
             this.AudiometBtn.TabIndex = 12;
             this.AudiometBtn.Text = "Audiometry";
             this.AudiometBtn.UseVisualStyleBackColor = false;
+            this.AudiometBtn.Click += new System.EventHandler(this.AudiometBtn_Click);
             // 
             // MenuPanel3
             // 
@@ -239,6 +256,7 @@
             this.PsychBtn.TabIndex = 8;
             this.PsychBtn.Text = "Psychological Examination";
             this.PsychBtn.UseVisualStyleBackColor = false;
+            this.PsychBtn.Click += new System.EventHandler(this.PsychBtn_Click);
             // 
             // SidePanel
             // 
@@ -357,6 +375,7 @@
             this.MisceBtn.TabIndex = 18;
             this.MisceBtn.Text = "Miscellaneous";
             this.MisceBtn.UseVisualStyleBackColor = false;
+            this.MisceBtn.Click += new System.EventHandler(this.MisceBtn_Click);
             // 
             // MenuPanel7
             // 
@@ -429,6 +448,7 @@
             this.DrugTBtn.TabIndex = 16;
             this.DrugTBtn.Text = "Drugtest";
             this.DrugTBtn.UseVisualStyleBackColor = false;
+            this.DrugTBtn.Click += new System.EventHandler(this.DrugTBtn_Click);
             // 
             // MenuPanel6
             // 
@@ -501,6 +521,7 @@
             this.LaborBtn.TabIndex = 14;
             this.LaborBtn.Text = "Laboratory";
             this.LaborBtn.UseVisualStyleBackColor = false;
+            this.LaborBtn.Click += new System.EventHandler(this.LaborBtn_Click);
             // 
             // MenuPanel5
             // 
@@ -689,6 +710,7 @@
             this.PhysicalBtn.TabIndex = 6;
             this.PhysicalBtn.Text = "Physical Examination";
             this.PhysicalBtn.UseVisualStyleBackColor = false;
+            this.PhysicalBtn.Click += new System.EventHandler(this.PhysicalBtn_Click);
             // 
             // MenuPanel1
             // 
@@ -753,6 +775,7 @@
             this.GenEntEdtResuBtn.Text = "Enter / Edit Results";
             this.GenEntEdtResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtResuBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtResuBtn.Click += new System.EventHandler(this.GenEntEdtResuBtn_Click);
             // 
             // GenEditResuBtn
             // 
@@ -768,6 +791,7 @@
             this.GenEditResuBtn.Text = "Edit Results";
             this.GenEditResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditResuBtn.UseVisualStyleBackColor = false;
+            this.GenEditResuBtn.Click += new System.EventHandler(this.GenEditResuBtn_Click);
             // 
             // GenEnterResuBtn
             // 
@@ -783,6 +807,7 @@
             this.GenEnterResuBtn.Text = "Enter Results";
             this.GenEnterResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterResuBtn.UseVisualStyleBackColor = false;
+            this.GenEnterResuBtn.Click += new System.EventHandler(this.GenEnterResuBtn_Click);
             // 
             // GenEntEdtReqBtn
             // 
@@ -798,6 +823,7 @@
             this.GenEntEdtReqBtn.Text = "Enter / Edit Requisition";
             this.GenEntEdtReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEntEdtReqBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtReqBtn.Click += new System.EventHandler(this.GenEntEdtReqBtn_Click);
             // 
             // GenEditReqBtn
             // 
@@ -813,6 +839,7 @@
             this.GenEditReqBtn.Text = "Edit Requisition";
             this.GenEditReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEditReqBtn.UseVisualStyleBackColor = false;
+            this.GenEditReqBtn.Click += new System.EventHandler(this.GenEditReqBtn_Click);
             // 
             // GenEnterReqBtn
             // 
@@ -828,6 +855,7 @@
             this.GenEnterReqBtn.Text = "Enter Requisition";
             this.GenEnterReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GenEnterReqBtn.UseVisualStyleBackColor = false;
+            this.GenEnterReqBtn.Click += new System.EventHandler(this.GenEnterReqBtn_Click);
             // 
             // GeneralClinicBtn
             // 
@@ -842,6 +870,7 @@
             this.GeneralClinicBtn.TabIndex = 4;
             this.GeneralClinicBtn.Text = "General Clinic";
             this.GeneralClinicBtn.UseVisualStyleBackColor = false;
+            this.GeneralClinicBtn.Click += new System.EventHandler(this.GeneralClinicBtn_Click);
             // 
             // TitleSidePanel
             // 
@@ -877,6 +906,22 @@
             this.panel1.Size = new System.Drawing.Size(800, 36);
             this.panel1.TabIndex = 15;
             // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Red;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
+            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
@@ -894,7 +939,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(238, 56);
+            this.label3.Location = new System.Drawing.Point(238, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 6;
@@ -916,7 +961,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(512, 244);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // ContentPanel
             // 
@@ -924,6 +968,10 @@
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
             this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContentPanel.Controls.Add(this.EditPacBtn);
+            this.ContentPanel.Controls.Add(this.ViewPacBtn);
+            this.ContentPanel.Controls.Add(this.ViewDicBtn);
+            this.ContentPanel.Controls.Add(this.EditDicBtn);
             this.ContentPanel.Controls.Add(this.label4);
             this.ContentPanel.Controls.Add(this.comboBox1);
             this.ContentPanel.Controls.Add(this.label9);
@@ -936,15 +984,46 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(800, 450);
             this.ContentPanel.TabIndex = 16;
-            this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
-            // comboBox1
+            // EditPacBtn
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(336, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(417, 21);
-            this.comboBox1.TabIndex = 18;
+            this.EditPacBtn.Location = new System.Drawing.Point(619, 38);
+            this.EditPacBtn.Name = "EditPacBtn";
+            this.EditPacBtn.Size = new System.Drawing.Size(119, 23);
+            this.EditPacBtn.TabIndex = 32;
+            this.EditPacBtn.Text = "Edit Packages";
+            this.EditPacBtn.UseVisualStyleBackColor = true;
+            this.EditPacBtn.Click += new System.EventHandler(this.EditPacBtn_Click);
+            // 
+            // ViewPacBtn
+            // 
+            this.ViewPacBtn.Location = new System.Drawing.Point(494, 38);
+            this.ViewPacBtn.Name = "ViewPacBtn";
+            this.ViewPacBtn.Size = new System.Drawing.Size(119, 23);
+            this.ViewPacBtn.TabIndex = 31;
+            this.ViewPacBtn.Text = "View Packages";
+            this.ViewPacBtn.UseVisualStyleBackColor = true;
+            this.ViewPacBtn.Click += new System.EventHandler(this.ViewPacBtn_Click);
+            // 
+            // ViewDicBtn
+            // 
+            this.ViewDicBtn.Location = new System.Drawing.Point(244, 38);
+            this.ViewDicBtn.Name = "ViewDicBtn";
+            this.ViewDicBtn.Size = new System.Drawing.Size(119, 23);
+            this.ViewDicBtn.TabIndex = 30;
+            this.ViewDicBtn.Text = "View Dictionary";
+            this.ViewDicBtn.UseVisualStyleBackColor = true;
+            this.ViewDicBtn.Click += new System.EventHandler(this.ViewDicBtn_Click);
+            // 
+            // EditDicBtn
+            // 
+            this.EditDicBtn.Location = new System.Drawing.Point(369, 38);
+            this.EditDicBtn.Name = "EditDicBtn";
+            this.EditDicBtn.Size = new System.Drawing.Size(119, 23);
+            this.EditDicBtn.TabIndex = 29;
+            this.EditDicBtn.Text = "Edit Dictionary";
+            this.EditDicBtn.UseVisualStyleBackColor = true;
+            this.EditDicBtn.Click += new System.EventHandler(this.EditDicBtn_Click);
             // 
             // label4
             // 
@@ -955,31 +1034,13 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Total Price:";
             // 
-            // pictureBox1
+            // comboBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
-            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.UseVisualStyleBackColor = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(336, 64);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(417, 21);
+            this.comboBox1.TabIndex = 18;
             // 
             // PackagesViewForm
             // 
@@ -993,6 +1054,7 @@
             this.Name = "PackagesViewForm";
             this.Text = "View Packages";
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MenuPanel3.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
@@ -1007,7 +1069,6 @@
             this.panel1.ResumeLayout(false);
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1076,5 +1137,9 @@
         internal System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button EditPacBtn;
+        private System.Windows.Forms.Button ViewPacBtn;
+        private System.Windows.Forms.Button ViewDicBtn;
+        private System.Windows.Forms.Button EditDicBtn;
     }
 }
