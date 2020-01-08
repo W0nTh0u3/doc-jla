@@ -66,6 +66,31 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJ
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.VerifyPopUp.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldMainMenu.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldLoginForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.config
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.pdb
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.DictionaryViewForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.FBSCholeForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.DictionaryEditForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.BillingForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesViewForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.VerifyPopUp.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldMainMenu.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OldLoginForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenu.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Properties.Resources.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinStoolForm.resources
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.GenerateResource.cache
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesEditForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.ResolveComReference.cache
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportSource.dll

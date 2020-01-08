@@ -486,6 +486,7 @@
             this.MisceDictBtn.Text = "Dictionaries";
             this.MisceDictBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceDictBtn.UseVisualStyleBackColor = false;
+            this.MisceDictBtn.Click += new System.EventHandler(this.MisceDictBtn_Click);
             // 
             // MisceBillBtn
             // 
@@ -501,6 +502,7 @@
             this.MisceBillBtn.Text = "Billing";
             this.MisceBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceBillBtn.UseVisualStyleBackColor = false;
+            this.MisceBillBtn.Click += new System.EventHandler(this.MisceBillBtn_Click);
             // 
             // SidePanel
             // 
