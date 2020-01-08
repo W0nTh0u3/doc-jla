@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PackagesViewForm));
             this.GenBillBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PsychRepsBtn = new System.Windows.Forms.Button();
             this.PsychEntEdtResBtn = new System.Windows.Forms.Button();
@@ -83,7 +82,6 @@
             this.TitleSidePanel = new System.Windows.Forms.Panel();
             this.MainMenuLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CloseBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -91,7 +89,8 @@
             this.ContentPanel = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.MenuPanel3.SuspendLayout();
             this.SidePanel.SuspendLayout();
@@ -105,6 +104,7 @@
             this.TitleSidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.ContentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // GenBillBtn
@@ -130,17 +130,6 @@
             this.label9.Size = new System.Drawing.Size(42, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "<price>";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -888,23 +877,9 @@
             this.panel1.Size = new System.Drawing.Size(800, 36);
             this.panel1.TabIndex = 15;
             // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
-            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -947,6 +922,8 @@
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
+            this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ContentPanel.Controls.Add(this.label4);
             this.ContentPanel.Controls.Add(this.comboBox1);
             this.ContentPanel.Controls.Add(this.label9);
@@ -978,6 +955,32 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Total Price:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Red;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
+            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            // 
             // PackagesViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -986,9 +989,9 @@
             this.Controls.Add(this.SidePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ContentPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PackagesViewForm";
             this.Text = "View Packages";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.MenuPanel3.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
@@ -1004,6 +1007,7 @@
             this.panel1.ResumeLayout(false);
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

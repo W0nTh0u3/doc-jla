@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DictionaryViewForm));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.XrayRepsBtn = new System.Windows.Forms.Button();
             this.XrayEntEdtResBtn = new System.Windows.Forms.Button();
             this.XrayEntResBtn = new System.Windows.Forms.Button();
@@ -53,19 +52,9 @@
             this.TitleSidePanel = new System.Windows.Forms.Panel();
             this.MainMenuLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CloseBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.AudiometRepsBtn = new System.Windows.Forms.Button();
-            this.ContentPanel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PsychRepsBtn = new System.Windows.Forms.Button();
             this.PsychEntEdtResBtn = new System.Windows.Forms.Button();
             this.XrayBtn = new System.Windows.Forms.Button();
@@ -93,29 +82,32 @@
             this.MenuPanel5 = new System.Windows.Forms.Panel();
             this.AudiometEntEdtResBtn = new System.Windows.Forms.Button();
             this.AudiometEntResBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Button();
+            this.ContentPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MenuPanel2.SuspendLayout();
             this.MenuPanel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.TitleSidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.ContentPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MenuPanel3.SuspendLayout();
             this.SidePanel.SuspendLayout();
             this.MenuPanel8.SuspendLayout();
             this.MenuPanel7.SuspendLayout();
             this.MenuPanel6.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
+            this.ContentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(128, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(417, 21);
-            this.comboBox1.TabIndex = 18;
             // 
             // XrayRepsBtn
             // 
@@ -449,23 +441,9 @@
             this.panel1.Size = new System.Drawing.Size(579, 36);
             this.panel1.TabIndex = 18;
             // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
-            this.CloseBtn.Location = new System.Drawing.Point(534, 0);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -476,41 +454,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "SOUTH JLA DIAGNOSTICS INC.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Choose Test:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Contents of the Test";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(33, 132);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(327, 244);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(368, 396);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Price:";
             // 
             // AudiometRepsBtn
             // 
@@ -527,51 +470,6 @@
             this.AudiometRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometRepsBtn.UseVisualStyleBackColor = false;
             // 
-            // ContentPanel
-            // 
-            this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
-            this.ContentPanel.Controls.Add(this.label5);
-            this.ContentPanel.Controls.Add(this.richTextBox2);
-            this.ContentPanel.Controls.Add(this.label4);
-            this.ContentPanel.Controls.Add(this.comboBox1);
-            this.ContentPanel.Controls.Add(this.label9);
-            this.ContentPanel.Controls.Add(this.label3);
-            this.ContentPanel.Controls.Add(this.label2);
-            this.ContentPanel.Controls.Add(this.richTextBox1);
-            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(221, 0);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Size = new System.Drawing.Size(579, 450);
-            this.ContentPanel.TabIndex = 19;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(368, 116);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Normal Values";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(366, 132);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(201, 244);
-            this.richTextBox2.TabIndex = 20;
-            this.richTextBox2.Text = "";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(503, 396);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "<price>";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
@@ -580,17 +478,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 120);
             this.panel2.TabIndex = 20;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // PsychRepsBtn
             // 
@@ -997,14 +884,132 @@
             this.AudiometEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AudiometEntResBtn.UseVisualStyleBackColor = false;
             // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Red;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
+            this.CloseBtn.Location = new System.Drawing.Point(534, 0);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
+            this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ContentPanel.Controls.Add(this.label5);
+            this.ContentPanel.Controls.Add(this.richTextBox2);
+            this.ContentPanel.Controls.Add(this.label4);
+            this.ContentPanel.Controls.Add(this.comboBox1);
+            this.ContentPanel.Controls.Add(this.label9);
+            this.ContentPanel.Controls.Add(this.label3);
+            this.ContentPanel.Controls.Add(this.label2);
+            this.ContentPanel.Controls.Add(this.richTextBox1);
+            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentPanel.Location = new System.Drawing.Point(221, 0);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ContentPanel.Name = "ContentPanel";
+            this.ContentPanel.Size = new System.Drawing.Size(579, 450);
+            this.ContentPanel.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(368, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Normal Values";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(366, 132);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(201, 244);
+            this.richTextBox2.TabIndex = 20;
+            this.richTextBox2.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(368, 396);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Price:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(128, 68);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(417, 21);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(503, 396);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "<price>";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(30, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Choose Test:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Contents of the Test";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(33, 132);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(327, 244);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // DictionaryViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.SidePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DictionaryViewForm";
             this.Text = "View Dictionary";
             this.MenuPanel2.ResumeLayout(false);
@@ -1012,10 +1017,7 @@
             this.MenuPanel4.ResumeLayout(false);
             this.TitleSidePanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MenuPanel3.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
@@ -1023,6 +1025,9 @@
             this.MenuPanel7.ResumeLayout(false);
             this.MenuPanel6.ResumeLayout(false);
             this.MenuPanel5.ResumeLayout(false);
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

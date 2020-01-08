@@ -73,6 +73,16 @@ namespace SouthJLAInformationSystemC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap soutjla_LOGOblur {
+            get {
+                object obj = ResourceManager.GetObject("soutjla_LOGOblur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_64px {
             get {
                 object obj = ResourceManager.GetObject("user_64px", resourceCulture);

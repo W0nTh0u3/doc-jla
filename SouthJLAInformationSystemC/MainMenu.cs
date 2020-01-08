@@ -373,5 +373,19 @@ namespace SouthJLAInformationSystemC
 
 
         }
+
+        private void MisceDictBtn_Click(object sender, EventArgs e)
+        {
+           DictionaryViewForm  DictionaryViewForm = new DictionaryViewForm();
+            ActiveForm.Hide();
+            DictionaryViewForm.Show();
+        }
+
+        private void MisceBillBtn_Click(object sender, EventArgs e)
+        {
+            BillingForm BillingForm = new BillingForm();
+            ActiveForm.Hide();
+            BillingForm.Show();
+        }
     }
 }

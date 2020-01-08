@@ -79,8 +79,8 @@
             this.PsychEntResBtn = new System.Windows.Forms.Button();
             this.XrayBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -99,11 +99,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.CloseBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CloseBtn = new System.Windows.Forms.Button();
             this.MenuPanel8.SuspendLayout();
             this.MenuPanel7.SuspendLayout();
             this.MenuPanel6.SuspendLayout();
@@ -114,10 +114,10 @@
             this.MenuPanel1.SuspendLayout();
             this.MenuPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContentPanel.SuspendLayout();
             this.SidePanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MisceBtn
@@ -840,21 +840,12 @@
             this.panel2.Size = new System.Drawing.Size(204, 120);
             this.panel2.TabIndex = 20;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // ContentPanel
             // 
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
+            this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ContentPanel.Controls.Add(this.button5);
             this.ContentPanel.Controls.Add(this.label10);
             this.ContentPanel.Controls.Add(this.label9);
@@ -880,6 +871,15 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(579, 414);
             this.ContentPanel.TabIndex = 13;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(419, 148);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(131, 23);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "Remove from Package";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -1037,23 +1037,9 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
-            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1106,16 +1092,33 @@
             this.panel1.Size = new System.Drawing.Size(800, 36);
             this.panel1.TabIndex = 12;
             // 
-            // button5
+            // pictureBox1
             // 
-            this.button5.Location = new System.Drawing.Point(419, 148);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 23);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Remove from Package";
-            this.button5.UseVisualStyleBackColor = true;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // PackagesForm
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Red;
+            this.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.White;
+            this.CloseBtn.Image = ((System.Drawing.Image)(resources.GetObject("CloseBtn.Image")));
+            this.CloseBtn.Location = new System.Drawing.Point(755, 0);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.CloseBtn.Size = new System.Drawing.Size(43, 34);
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.UseVisualStyleBackColor = false;
+            // 
+            // PackagesCreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1123,7 +1126,8 @@
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.SidePanel);
             this.Controls.Add(this.panel1);
-            this.Name = "PackagesForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "PackagesCreateForm";
             this.Text = "Create Package";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.MenuPanel8.ResumeLayout(false);
@@ -1136,12 +1140,12 @@
             this.MenuPanel1.ResumeLayout(false);
             this.MenuPanel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
