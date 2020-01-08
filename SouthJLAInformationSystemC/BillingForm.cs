@@ -12,7 +12,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class BillingForm : Form
     {
-        MainMenu main = new MainMenu();
+        MainMenu main = new MainMenu("3");
         public BillingForm()
         {
             InitializeComponent();
