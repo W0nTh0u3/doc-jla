@@ -166,5 +166,11 @@ namespace SouthJLAInformationSystemC
             main.Show();
         }
 
+        private void MisceBillBtn_Click(object sender, EventArgs e)
+        {
+            BillingForm billingForm = new BillingForm();
+            ActiveForm.Hide();
+            billingForm.Show();
+        }
     }
 }

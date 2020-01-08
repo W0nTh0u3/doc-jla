@@ -77,7 +77,6 @@ C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLA
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.DictionaryEditForm.resources
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.BillingForm.resources
-C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesCreateForm.resources
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginForm.resources
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesViewForm.resources
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PAPForm.resources
@@ -92,3 +91,4 @@ C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLA
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.GenerateResource.cache
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
+C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesEditForm.resources

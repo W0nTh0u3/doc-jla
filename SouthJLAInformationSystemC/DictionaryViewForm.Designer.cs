@@ -724,6 +724,7 @@
             this.MisceBillBtn.Text = "Billing";
             this.MisceBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MisceBillBtn.UseVisualStyleBackColor = false;
+            this.MisceBillBtn.Click += new System.EventHandler(this.MisceBillBtn_Click);
             // 
             // MisceBtn
             // 
