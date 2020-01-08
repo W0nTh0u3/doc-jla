@@ -42,6 +42,8 @@ namespace SouthJLAInformationSystemC
             middleBox.Text = dt1.Rows[0][3].ToString();
             ageBox.Text = dt1.Rows[0][4].ToString();
             addressBox.Text = dt1.Rows[0][10].ToString();
+            gender = dt1.Rows[0][7].ToString();
+            civilStat = dt1.Rows[0][8].ToString();
 
 
             gender = dt1.Rows[0][7].ToString();

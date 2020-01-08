@@ -41,7 +41,7 @@ namespace SouthJLAInformationSystemC
 
         private void IntPrintBtn_Click(object sender, EventArgs e)
         {
-            
+            new PrintPreviewForm(valuesTest,patientInfoValue).Show(); 
         }
     }
 }

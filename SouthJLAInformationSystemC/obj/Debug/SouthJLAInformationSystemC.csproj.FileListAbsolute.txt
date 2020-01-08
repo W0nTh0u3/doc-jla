@@ -11,7 +11,6 @@ C:\Users\jupper\source\repos\SouthJLAInformationSystemC\SouthJLAInformationSyste
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.config
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.pdb
-C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MainMenu.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.LoginForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Properties.Resources.resources
@@ -84,7 +83,6 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\Crysta
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\stdole.dll
-C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Form2.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Form3.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.ResolveComReference.cache
@@ -104,3 +102,8 @@ C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportApp
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\stdole.dll
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PrintPreviewForm.resources

@@ -77,6 +77,7 @@
             this.Controls.Add(this.IntPrintBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "VerifyPopUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verify";
             this.ResumeLayout(false);
 

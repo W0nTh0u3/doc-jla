@@ -422,5 +422,11 @@ namespace SouthJLAInformationSystemC
                 conn.Close();
             }
         }
+
+        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                searchButton_Click(this, new EventArgs());
+        }
     }
 }
