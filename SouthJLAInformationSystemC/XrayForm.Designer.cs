@@ -315,7 +315,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.Size = new System.Drawing.Size(800, 423);
             this.panel2.TabIndex = 8;
             // 
             // richTextBox2
@@ -368,7 +368,7 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Location = new System.Drawing.Point(0, 625);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 45);
             this.panel3.TabIndex = 7;
@@ -387,7 +387,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(800, 670);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

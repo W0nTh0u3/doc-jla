@@ -31,8 +31,9 @@ namespace SouthJLAInformationSystemC
 
         private void MainMenuTree_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            string x = "in";
             lbl_title.Text = MainMenuTree.SelectedNode.Text;
-            if (MainMenuTree.SelectedNode.Tag == "in")
+            if (x == "in") //if (MainMenuTree.SelectedNode.Tag == "in")
             {
                 Panel2.Location = new Point(0, 81);
                 Panel5.Show();

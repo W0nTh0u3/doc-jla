@@ -128,7 +128,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(817, 202);
+            this.panel1.Size = new System.Drawing.Size(800, 202);
             this.panel1.TabIndex = 0;
             // 
             // ComboBox2
@@ -347,9 +347,9 @@
             // 
             this.panel3.Controls.Add(this.SubmitCBC);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 581);
+            this.panel3.Location = new System.Drawing.Point(0, 625);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(817, 45);
+            this.panel3.Size = new System.Drawing.Size(800, 45);
             this.panel3.TabIndex = 2;
             // 
             // SubmitCBC
@@ -407,7 +407,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 202);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(817, 379);
+            this.panel2.Size = new System.Drawing.Size(800, 423);
             this.panel2.TabIndex = 6;
             // 
             // monocyteTextBox
@@ -783,7 +783,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(817, 626);
+            this.ClientSize = new System.Drawing.Size(800, 670);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);

@@ -373,5 +373,11 @@ namespace SouthJLAInformationSystemC
             uniquePass = dt.Rows[0][19].ToString();
             idPass = dt.Rows[0][0].ToString();
         }
+
+        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                searchButton_Click(this, new EventArgs());
+        }
     }
 }

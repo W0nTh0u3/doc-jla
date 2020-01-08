@@ -13,7 +13,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class CBCForm : Form
     {
-        public string passID;
+        public string passID, gender, civilStat;
         public CBCForm(string uniqueID, string idPass)
         {
             InitializeComponent();
@@ -39,6 +39,8 @@ namespace SouthJLAInformationSystemC
             middleBox.Text = dt1.Rows[0][3].ToString();
             ageBox.Text = dt1.Rows[0][4].ToString();
             addressBox.Text = dt1.Rows[0][10].ToString();
+            gender = dt1.Rows[0][7].ToString();
+            civilStat = dt1.Rows[0][8].ToString();
 
             passID = idPass;
 
@@ -63,7 +65,9 @@ namespace SouthJLAInformationSystemC
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
-            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString);
+            string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+            string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text ,monocyteTextBox.Text };
+            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
             verifyPopUp.Show();
         }
     }
