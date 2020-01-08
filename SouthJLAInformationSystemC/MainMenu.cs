@@ -361,17 +361,17 @@ namespace SouthJLAInformationSystemC
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+
+        private void searchButton_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
-            sdaSearch.Fill(dt);            
+            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchTextBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
+            sdaSearch.Fill(dt);
+
+
             lastBox.Text = dt.Rows[0][1].ToString();            firstBox.Text = dt.Rows[0][2].ToString();            middleBox.Text = dt.Rows[0][3].ToString();            ageBox.Text = dt.Rows[0][4].ToString();            addressBox.Text = dt.Rows[0][10].ToString();            genderBox.SelectedItem = dt.Rows[0][7].ToString();            civilBox.SelectedItem = dt.Rows[0][8].ToString();
             uniquePass = dt.Rows[0][19].ToString();
             idPass = dt.Rows[0][0].ToString();
-
-
-
         }
     }
 }
