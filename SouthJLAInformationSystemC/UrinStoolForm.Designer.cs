@@ -31,7 +31,7 @@
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FormNBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -154,7 +154,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.FormNBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label3);
@@ -184,14 +184,14 @@
             this.panel1.Size = new System.Drawing.Size(800, 202);
             this.panel1.TabIndex = 3;
             // 
-            // textBox1
+            // FormNBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(678, 147);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 38);
-            this.textBox1.TabIndex = 118;
+            this.FormNBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.FormNBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormNBox.Location = new System.Drawing.Point(678, 147);
+            this.FormNBox.Name = "FormNBox";
+            this.FormNBox.Size = new System.Drawing.Size(59, 38);
+            this.FormNBox.TabIndex = 118;
             // 
             // label2
             // 
@@ -1225,7 +1225,7 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox consistencyBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FormNBox;
         internal System.Windows.Forms.Label label2;
         internal System.Windows.Forms.TextBox textBox2;
         internal System.Windows.Forms.Label label3;
