@@ -371,7 +371,7 @@ namespace SouthJLAInformationSystemC
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
         {
-            UrinStoolForm urinStoolForm = new UrinStoolForm();
+            UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
             urinStoolForm.Show();
         }
 

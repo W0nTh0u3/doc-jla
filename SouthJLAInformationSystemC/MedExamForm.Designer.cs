@@ -212,12 +212,12 @@
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.hospitiizationsBox = new System.Windows.Forms.TextBox();
+            this.surgeriesBox = new System.Windows.Forms.TextBox();
+            this.presentBox2 = new System.Windows.Forms.TextBox();
+            this.presentBox1 = new System.Windows.Forms.TextBox();
+            this.pastBox = new System.Windows.Forms.TextBox();
+            this.childBox = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -235,7 +235,7 @@
             this.radioButton56 = new System.Windows.Forms.RadioButton();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.smokeBox = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -245,8 +245,8 @@
             this.radioButton35 = new System.Windows.Forms.RadioButton();
             this.radioButton36 = new System.Windows.Forms.RadioButton();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.radioButton37 = new System.Windows.Forms.RadioButton();
-            this.radioButton38 = new System.Windows.Forms.RadioButton();
+            this.smokeY = new System.Windows.Forms.RadioButton();
+            this.smokeN = new System.Windows.Forms.RadioButton();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -1234,12 +1234,12 @@
             this.panel2.Controls.Add(this.textBox43);
             this.panel2.Controls.Add(this.label82);
             this.panel2.Controls.Add(this.label81);
-            this.panel2.Controls.Add(this.textBox42);
-            this.panel2.Controls.Add(this.textBox41);
-            this.panel2.Controls.Add(this.textBox40);
-            this.panel2.Controls.Add(this.textBox39);
-            this.panel2.Controls.Add(this.textBox32);
-            this.panel2.Controls.Add(this.textBox31);
+            this.panel2.Controls.Add(this.hospitiizationsBox);
+            this.panel2.Controls.Add(this.surgeriesBox);
+            this.panel2.Controls.Add(this.presentBox2);
+            this.panel2.Controls.Add(this.presentBox1);
+            this.panel2.Controls.Add(this.pastBox);
+            this.panel2.Controls.Add(this.childBox);
             this.panel2.Controls.Add(this.label80);
             this.panel2.Controls.Add(this.label75);
             this.panel2.Controls.Add(this.label76);
@@ -1255,7 +1255,7 @@
             this.panel2.Controls.Add(this.panel31);
             this.panel2.Controls.Add(this.textBox29);
             this.panel2.Controls.Add(this.label69);
-            this.panel2.Controls.Add(this.textBox28);
+            this.panel2.Controls.Add(this.smokeBox);
             this.panel2.Controls.Add(this.label68);
             this.panel2.Controls.Add(this.label67);
             this.panel2.Controls.Add(this.label52);
@@ -2310,59 +2310,59 @@
             this.label81.TabIndex = 245;
             this.label81.Text = "V. PHYSICAL EXAMINATION";
             // 
-            // textBox42
+            // hospitiizationsBox
             // 
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox42.Location = new System.Drawing.Point(118, 181);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(547, 20);
-            this.textBox42.TabIndex = 244;
+            this.hospitiizationsBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hospitiizationsBox.Location = new System.Drawing.Point(118, 181);
+            this.hospitiizationsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.hospitiizationsBox.Name = "hospitiizationsBox";
+            this.hospitiizationsBox.Size = new System.Drawing.Size(547, 20);
+            this.hospitiizationsBox.TabIndex = 244;
             // 
-            // textBox41
+            // surgeriesBox
             // 
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox41.Location = new System.Drawing.Point(118, 157);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(547, 20);
-            this.textBox41.TabIndex = 243;
+            this.surgeriesBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.surgeriesBox.Location = new System.Drawing.Point(118, 157);
+            this.surgeriesBox.Margin = new System.Windows.Forms.Padding(2);
+            this.surgeriesBox.Name = "surgeriesBox";
+            this.surgeriesBox.Size = new System.Drawing.Size(547, 20);
+            this.surgeriesBox.TabIndex = 243;
             // 
-            // textBox40
+            // presentBox2
             // 
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox40.Location = new System.Drawing.Point(469, 131);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(196, 20);
-            this.textBox40.TabIndex = 242;
+            this.presentBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.presentBox2.Location = new System.Drawing.Point(469, 131);
+            this.presentBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.presentBox2.Name = "presentBox2";
+            this.presentBox2.Size = new System.Drawing.Size(196, 20);
+            this.presentBox2.TabIndex = 242;
             // 
-            // textBox39
+            // presentBox1
             // 
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox39.Location = new System.Drawing.Point(118, 131);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(263, 20);
-            this.textBox39.TabIndex = 241;
+            this.presentBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.presentBox1.Location = new System.Drawing.Point(118, 131);
+            this.presentBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.presentBox1.Name = "presentBox1";
+            this.presentBox1.Size = new System.Drawing.Size(263, 20);
+            this.presentBox1.TabIndex = 241;
             // 
-            // textBox32
+            // pastBox
             // 
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox32.Location = new System.Drawing.Point(118, 105);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(547, 20);
-            this.textBox32.TabIndex = 240;
+            this.pastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pastBox.Location = new System.Drawing.Point(118, 105);
+            this.pastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pastBox.Name = "pastBox";
+            this.pastBox.Size = new System.Drawing.Size(547, 20);
+            this.pastBox.TabIndex = 240;
             // 
-            // textBox31
+            // childBox
             // 
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(118, 79);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(547, 20);
-            this.textBox31.TabIndex = 239;
+            this.childBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.childBox.Location = new System.Drawing.Point(118, 79);
+            this.childBox.Margin = new System.Windows.Forms.Padding(2);
+            this.childBox.Name = "childBox";
+            this.childBox.Size = new System.Drawing.Size(547, 20);
+            this.childBox.TabIndex = 239;
             // 
             // label80
             // 
@@ -2523,14 +2523,14 @@
             this.label69.TabIndex = 224;
             this.label69.Text = "bottle per";
             // 
-            // textBox28
+            // smokeBox
             // 
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Location = new System.Drawing.Point(364, 257);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(60, 20);
-            this.textBox28.TabIndex = 223;
+            this.smokeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.smokeBox.Location = new System.Drawing.Point(364, 257);
+            this.smokeBox.Margin = new System.Windows.Forms.Padding(2);
+            this.smokeBox.Name = "smokeBox";
+            this.smokeBox.Size = new System.Drawing.Size(60, 20);
+            this.smokeBox.TabIndex = 223;
             // 
             // label68
             // 
@@ -2614,34 +2614,34 @@
             // panel22
             // 
             this.panel22.AutoSize = true;
-            this.panel22.Controls.Add(this.radioButton37);
-            this.panel22.Controls.Add(this.radioButton38);
+            this.panel22.Controls.Add(this.smokeY);
+            this.panel22.Controls.Add(this.smokeN);
             this.panel22.Location = new System.Drawing.Point(210, 257);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(99, 23);
             this.panel22.TabIndex = 216;
             // 
-            // radioButton37
+            // smokeY
             // 
-            this.radioButton37.AutoSize = true;
-            this.radioButton37.Location = new System.Drawing.Point(3, 3);
-            this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(46, 17);
-            this.radioButton37.TabIndex = 97;
-            this.radioButton37.TabStop = true;
-            this.radioButton37.Text = "YES";
-            this.radioButton37.UseVisualStyleBackColor = true;
+            this.smokeY.AutoSize = true;
+            this.smokeY.Location = new System.Drawing.Point(3, 3);
+            this.smokeY.Name = "smokeY";
+            this.smokeY.Size = new System.Drawing.Size(46, 17);
+            this.smokeY.TabIndex = 97;
+            this.smokeY.TabStop = true;
+            this.smokeY.Text = "YES";
+            this.smokeY.UseVisualStyleBackColor = true;
             // 
-            // radioButton38
+            // smokeN
             // 
-            this.radioButton38.AutoSize = true;
-            this.radioButton38.Location = new System.Drawing.Point(55, 3);
-            this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(41, 17);
-            this.radioButton38.TabIndex = 98;
-            this.radioButton38.TabStop = true;
-            this.radioButton38.Text = "NO";
-            this.radioButton38.UseVisualStyleBackColor = true;
+            this.smokeN.AutoSize = true;
+            this.smokeN.Location = new System.Drawing.Point(55, 3);
+            this.smokeN.Name = "smokeN";
+            this.smokeN.Size = new System.Drawing.Size(41, 17);
+            this.smokeN.TabIndex = 98;
+            this.smokeN.TabStop = true;
+            this.smokeN.Text = "NO";
+            this.smokeN.UseVisualStyleBackColor = true;
             // 
             // textBox27
             // 
@@ -3310,8 +3310,8 @@
         private System.Windows.Forms.RadioButton radioButton35;
         private System.Windows.Forms.RadioButton radioButton36;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.RadioButton radioButton37;
-        private System.Windows.Forms.RadioButton radioButton38;
+        private System.Windows.Forms.RadioButton smokeY;
+        private System.Windows.Forms.RadioButton smokeN;
         internal System.Windows.Forms.TextBox textBox27;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
@@ -3331,7 +3331,7 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.RadioButton radioButton33;
         private System.Windows.Forms.RadioButton radioButton34;
-        internal System.Windows.Forms.TextBox textBox28;
+        internal System.Windows.Forms.TextBox smokeBox;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label67;
         internal System.Windows.Forms.TextBox textBox29;
@@ -3350,13 +3350,13 @@
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label74;
-        internal System.Windows.Forms.TextBox textBox40;
-        internal System.Windows.Forms.TextBox textBox39;
-        internal System.Windows.Forms.TextBox textBox32;
-        internal System.Windows.Forms.TextBox textBox31;
+        internal System.Windows.Forms.TextBox presentBox2;
+        internal System.Windows.Forms.TextBox presentBox1;
+        internal System.Windows.Forms.TextBox pastBox;
+        internal System.Windows.Forms.TextBox childBox;
         private System.Windows.Forms.Label label80;
-        internal System.Windows.Forms.TextBox textBox42;
-        internal System.Windows.Forms.TextBox textBox41;
+        internal System.Windows.Forms.TextBox hospitiizationsBox;
+        internal System.Windows.Forms.TextBox surgeriesBox;
         internal System.Windows.Forms.TextBox textBox46;
         private System.Windows.Forms.Label label85;
         internal System.Windows.Forms.TextBox textBox47;
