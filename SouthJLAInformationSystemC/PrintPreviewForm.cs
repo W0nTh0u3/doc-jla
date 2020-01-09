@@ -20,7 +20,11 @@ namespace SouthJLAInformationSystemC
             this.values = values;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void PrintPreviewForm_Load(object sender, EventArgs e)
+        {
+            CBCFormPreview();   
+        }
+        private void CBCFormPreview()
         {
             CBCFormDoc cBCFormDoc = new CBCFormDoc();
             cBCFormDoc.SetParameterValue("IDVal", patientInfoValue[0]);
