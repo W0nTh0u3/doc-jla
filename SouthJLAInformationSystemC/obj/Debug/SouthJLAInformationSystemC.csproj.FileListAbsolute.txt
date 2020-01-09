@@ -109,7 +109,6 @@ C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\Crysta
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\stdole.dll
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
-C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Form3.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.ResolveComReference.cache
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.Form3.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\stdole.dll
@@ -126,3 +125,8 @@ C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PrintPreviewForm.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesViewForm.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.DictionaryEditForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.BillingForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesEditForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.PackagesViewForm.resources
+C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.DictionaryForm.resources

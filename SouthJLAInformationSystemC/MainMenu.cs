@@ -95,6 +95,8 @@ namespace SouthJLAInformationSystemC
         {
             DisableAllBoxes();
             ContentPanel.Show();
+            GenClinicPanel.Show();
+            CloseChildForm();
             SidePanel.Dock = DockStyle.Left;
             ShowSubPanel(MenuPanel1);
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
@@ -144,6 +146,8 @@ namespace SouthJLAInformationSystemC
 
         private void MisceBtn_Click(object sender, EventArgs e)
         {
+            ContentPanel.Show();
+            GenClinicPanel.Hide();
             SidePanel.Dock = DockStyle.Left;
             ShowSubPanel(MenuPanel8);
             MenuClickedLabel.Text = MisceBtn.Text;
@@ -152,6 +156,8 @@ namespace SouthJLAInformationSystemC
         #region SubMenuGeneralClinic
         private void GenEnterReqBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -165,6 +171,8 @@ namespace SouthJLAInformationSystemC
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -178,6 +186,8 @@ namespace SouthJLAInformationSystemC
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -190,6 +200,8 @@ namespace SouthJLAInformationSystemC
 
         private void GenEnterResuBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -201,6 +213,8 @@ namespace SouthJLAInformationSystemC
 
         private void GenEditResuBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -211,6 +225,8 @@ namespace SouthJLAInformationSystemC
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
+            GenClinicPanel.Show();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -221,6 +237,7 @@ namespace SouthJLAInformationSystemC
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -228,6 +245,7 @@ namespace SouthJLAInformationSystemC
 
         private void GenBillBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -235,6 +253,7 @@ namespace SouthJLAInformationSystemC
 
         private void GenQualBtn_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             Button btn = sender as Button;
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
@@ -256,27 +275,45 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = PhysicalBtn.Text;
         }
         #endregion
-        private void DisableAllBoxes()
-        {
-            MajorelPanel.Enabled = false;
-            PatientInfoPanel.Enabled = false;
+        #region SubMenuMisc
+        private void MisceDictBtn_Click(object sender, EventArgs e)
+        {
+            //DictionaryViewForm  DictionaryViewForm = new DictionaryViewForm();
+            //ActiveForm.Hide();
+            //DictionaryViewForm.Show();
+            GenClinicPanel.Hide();
+            OpenChildForm(new DictionaryForm());
+            MenuClickedLabel.Text = MisceBtn.Text;
+            SubMenuLabelClicked.Text = MisceDictBtn.Text;
+        }
 
-            PatientIDPanel.Enabled = false;
+        private void MisceBillBtn_Click(object sender, EventArgs e)
+        {
+            //BillingForm BillingForm = new BillingForm();
+            //ActiveForm.Hide();
+            //BillingForm.Show();
+            GenClinicPanel.Hide();
+            OpenChildForm(new BillingForm());
+            MenuClickedLabel.Text = MisceBtn.Text;
+            SubMenuLabelClicked.Text = MisceBillBtn.Text;
         }
-        private void EnableOnlyPatientInfo()
-        {
-           
-            PatientInfoPanel.Enabled = true;
-            PatientIDPanel.Enabled = true;            
+        #endregion
+        private void DisableAllBoxes()
+        {
             MajorelPanel.Enabled = false;
-
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Enabled = false;
         }
-        private void EnableOnlyPatientResults()
-        {
-            MajorelPanel.Enabled = true;
-            PatientInfoPanel.Enabled = false;
-            PatientIDPanel.Enabled = true;
-
+        private void EnableOnlyPatientInfo()
+        {                PatientInfoPanel.Enabled = true;
+            PatientIDPanel.Enabled = true;         
+            MajorelPanel.Enabled = false;
+        }
+        private void EnableOnlyPatientResults()
+        {
+            MajorelPanel.Enabled = true;
+            PatientInfoPanel.Enabled = false;
+            PatientIDPanel.Enabled = true;
         }
         private void MainMenuV2_KeyDown(object sender, KeyEventArgs e)
         {
@@ -351,13 +388,7 @@ namespace SouthJLAInformationSystemC
             PAPForm pAPForm = new PAPForm();
             pAPForm.Show();
         }
-        #endregion
-
-        private void submit_Click(object sender, EventArgs e)
-        { 
-            
-
-        }
+        #endregion
 
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -382,7 +413,7 @@ namespace SouthJLAInformationSystemC
             clearAll.Enabled = false;
         }
 
-        private void submit_Click_1(object sender, EventArgs e)
+        private void submit_Click(object sender, EventArgs e)
         {
             if (submit.Text == "Enter")
             {
@@ -428,19 +459,23 @@ namespace SouthJLAInformationSystemC
             if (e.KeyCode == Keys.Enter)
                 searchButton_Click(this, new EventArgs());
         }
-
-        private void MisceDictBtn_Click(object sender, EventArgs e)
+        private Form activeSubForm = null;
+        private void OpenChildForm(Form childForm)
         {
-           DictionaryViewForm  DictionaryViewForm = new DictionaryViewForm();
-            ActiveForm.Hide();
-            DictionaryViewForm.Show();
+            CloseChildForm();
+            activeSubForm = childForm;
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            ChildContentPanel.Controls.Add(childForm);
+            ChildContentPanel.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();   
         }
 
-        private void MisceBillBtn_Click(object sender, EventArgs e)
+        private void CloseChildForm()
         {
-            BillingForm BillingForm = new BillingForm();
-            ActiveForm.Hide();
-            BillingForm.Show();
+            if (activeSubForm != null)
+                activeSubForm.Close();
         }
     }
 }
