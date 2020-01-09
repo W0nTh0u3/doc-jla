@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ViewDictPanel = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.fieldCombo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.contentBox = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.testCombo = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.valuesBox = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.ViewPackPanel = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -68,25 +79,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.ViewDictPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.EditPacBtn = new System.Windows.Forms.Button();
-            this.ViewPacBtn = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ViewDicBtn = new System.Windows.Forms.Button();
             this.EditDicBtn = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.ViewPacBtn = new System.Windows.Forms.Button();
+            this.EditPacBtn = new System.Windows.Forms.Button();
             this.ContentPanel.SuspendLayout();
+            this.ViewDictPanel.SuspendLayout();
             this.ViewPackPanel.SuspendLayout();
             this.AddPackPanel.SuspendLayout();
             this.EditDictPanel.SuspendLayout();
-            this.ViewDictPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,10 +97,10 @@
             this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ContentPanel.Controls.Add(this.ViewDictPanel);
             this.ContentPanel.Controls.Add(this.ViewPackPanel);
             this.ContentPanel.Controls.Add(this.AddPackPanel);
             this.ContentPanel.Controls.Add(this.EditDictPanel);
-            this.ContentPanel.Controls.Add(this.ViewDictPanel);
             this.ContentPanel.Controls.Add(this.tableLayoutPanel1);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPanel.Location = new System.Drawing.Point(0, 0);
@@ -106,6 +108,114 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(866, 453);
             this.ContentPanel.TabIndex = 19;
+            // 
+            // ViewDictPanel
+            // 
+            this.ViewDictPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ViewDictPanel.Controls.Add(this.label24);
+            this.ViewDictPanel.Controls.Add(this.fieldCombo);
+            this.ViewDictPanel.Controls.Add(this.label3);
+            this.ViewDictPanel.Controls.Add(this.contentBox);
+            this.ViewDictPanel.Controls.Add(this.label2);
+            this.ViewDictPanel.Controls.Add(this.label9);
+            this.ViewDictPanel.Controls.Add(this.testCombo);
+            this.ViewDictPanel.Controls.Add(this.label4);
+            this.ViewDictPanel.Controls.Add(this.valuesBox);
+            this.ViewDictPanel.Controls.Add(this.label5);
+            this.ViewDictPanel.Location = new System.Drawing.Point(21, 60);
+            this.ViewDictPanel.Name = "ViewDictPanel";
+            this.ViewDictPanel.Size = new System.Drawing.Size(755, 378);
+            this.ViewDictPanel.TabIndex = 44;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(580, 23);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(32, 13);
+            this.label24.TabIndex = 23;
+            this.label24.Text = "Field:";
+            // 
+            // fieldCombo
+            // 
+            this.fieldCombo.FormattingEnabled = true;
+            this.fieldCombo.Location = new System.Drawing.Point(618, 20);
+            this.fieldCombo.Name = "fieldCombo";
+            this.fieldCombo.Size = new System.Drawing.Size(121, 21);
+            this.fieldCombo.TabIndex = 22;
+            this.fieldCombo.SelectedValueChanged += new System.EventHandler(this.ChangeField);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Choose Test:";
+            // 
+            // contentBox
+            // 
+            this.contentBox.Location = new System.Drawing.Point(35, 84);
+            this.contentBox.Name = "contentBox";
+            this.contentBox.ReadOnly = true;
+            this.contentBox.Size = new System.Drawing.Size(327, 244);
+            this.contentBox.TabIndex = 0;
+            this.contentBox.Text = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Contents of the Test";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(505, 348);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "<price>";
+            // 
+            // testCombo
+            // 
+            this.testCombo.FormattingEnabled = true;
+            this.testCombo.Location = new System.Drawing.Point(130, 20);
+            this.testCombo.Name = "testCombo";
+            this.testCombo.Size = new System.Drawing.Size(417, 21);
+            this.testCombo.TabIndex = 18;
+            this.testCombo.SelectedValueChanged += new System.EventHandler(this.ChangeTest);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(370, 348);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Price:";
+            // 
+            // valuesBox
+            // 
+            this.valuesBox.Location = new System.Drawing.Point(368, 84);
+            this.valuesBox.Name = "valuesBox";
+            this.valuesBox.ReadOnly = true;
+            this.valuesBox.Size = new System.Drawing.Size(201, 244);
+            this.valuesBox.TabIndex = 20;
+            this.valuesBox.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(370, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Normal Values";
             // 
             // ViewPackPanel
             // 
@@ -115,7 +225,7 @@
             this.ViewPackPanel.Controls.Add(this.richTextBox6);
             this.ViewPackPanel.Controls.Add(this.label21);
             this.ViewPackPanel.Controls.Add(this.label23);
-            this.ViewPackPanel.Location = new System.Drawing.Point(335, 298);
+            this.ViewPackPanel.Location = new System.Drawing.Point(618, 254);
             this.ViewPackPanel.Name = "ViewPackPanel";
             this.ViewPackPanel.Size = new System.Drawing.Size(200, 100);
             this.ViewPackPanel.TabIndex = 47;
@@ -193,7 +303,7 @@
             this.AddPackPanel.Controls.Add(this.button6);
             this.AddPackPanel.Controls.Add(this.label15);
             this.AddPackPanel.Controls.Add(this.textBox3);
-            this.AddPackPanel.Location = new System.Drawing.Point(583, 137);
+            this.AddPackPanel.Location = new System.Drawing.Point(697, 93);
             this.AddPackPanel.Name = "AddPackPanel";
             this.AddPackPanel.Size = new System.Drawing.Size(200, 100);
             this.AddPackPanel.TabIndex = 46;
@@ -375,7 +485,7 @@
             this.EditDictPanel.Controls.Add(this.label1);
             this.EditDictPanel.Controls.Add(this.label6);
             this.EditDictPanel.Controls.Add(this.richTextBox3);
-            this.EditDictPanel.Location = new System.Drawing.Point(325, 137);
+            this.EditDictPanel.Location = new System.Drawing.Point(386, 77);
             this.EditDictPanel.Name = "EditDictPanel";
             this.EditDictPanel.Size = new System.Drawing.Size(200, 100);
             this.EditDictPanel.TabIndex = 45;
@@ -474,112 +584,24 @@
             this.richTextBox3.TabIndex = 39;
             this.richTextBox3.Text = "";
             // 
-            // ViewDictPanel
+            // tableLayoutPanel1
             // 
-            this.ViewDictPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ViewDictPanel.Controls.Add(this.label3);
-            this.ViewDictPanel.Controls.Add(this.richTextBox1);
-            this.ViewDictPanel.Controls.Add(this.label2);
-            this.ViewDictPanel.Controls.Add(this.label9);
-            this.ViewDictPanel.Controls.Add(this.comboBox1);
-            this.ViewDictPanel.Controls.Add(this.label4);
-            this.ViewDictPanel.Controls.Add(this.richTextBox2);
-            this.ViewDictPanel.Controls.Add(this.label5);
-            this.ViewDictPanel.Location = new System.Drawing.Point(67, 112);
-            this.ViewDictPanel.Name = "ViewDictPanel";
-            this.ViewDictPanel.Size = new System.Drawing.Size(200, 100);
-            this.ViewDictPanel.TabIndex = 44;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Choose Test:";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(35, 84);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(327, 244);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Contents of the Test";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(505, 348);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "<price>";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(130, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(417, 21);
-            this.comboBox1.TabIndex = 18;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(370, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Price:";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(368, 84);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(201, 244);
-            this.richTextBox2.TabIndex = 20;
-            this.richTextBox2.Text = "";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(370, 68);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Normal Values";
-            // 
-            // EditPacBtn
-            // 
-            this.EditPacBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditPacBtn.Location = new System.Drawing.Point(651, 3);
-            this.EditPacBtn.Name = "EditPacBtn";
-            this.EditPacBtn.Size = new System.Drawing.Size(212, 48);
-            this.EditPacBtn.TabIndex = 32;
-            this.EditPacBtn.Text = "Edit Packages";
-            this.EditPacBtn.UseVisualStyleBackColor = true;
-            this.EditPacBtn.Click += new System.EventHandler(this.EditPacBtn_Click);
-            // 
-            // ViewPacBtn
-            // 
-            this.ViewPacBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPacBtn.Location = new System.Drawing.Point(435, 3);
-            this.ViewPacBtn.Name = "ViewPacBtn";
-            this.ViewPacBtn.Size = new System.Drawing.Size(210, 48);
-            this.ViewPacBtn.TabIndex = 31;
-            this.ViewPacBtn.Text = "View Packages";
-            this.ViewPacBtn.UseVisualStyleBackColor = true;
-            this.ViewPacBtn.Click += new System.EventHandler(this.ViewPacBtn_Click);
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.ViewDicBtn, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EditDicBtn, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ViewPacBtn, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EditPacBtn, 3, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 54);
+            this.tableLayoutPanel1.TabIndex = 48;
             // 
             // ViewDicBtn
             // 
@@ -603,24 +625,27 @@
             this.EditDicBtn.UseVisualStyleBackColor = true;
             this.EditDicBtn.Click += new System.EventHandler(this.EditDicBtn_Click);
             // 
-            // tableLayoutPanel1
+            // ViewPacBtn
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.ViewDicBtn, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.EditDicBtn, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.ViewPacBtn, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.EditPacBtn, 3, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(866, 54);
-            this.tableLayoutPanel1.TabIndex = 48;
+            this.ViewPacBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ViewPacBtn.Location = new System.Drawing.Point(435, 3);
+            this.ViewPacBtn.Name = "ViewPacBtn";
+            this.ViewPacBtn.Size = new System.Drawing.Size(210, 48);
+            this.ViewPacBtn.TabIndex = 31;
+            this.ViewPacBtn.Text = "View Packages";
+            this.ViewPacBtn.UseVisualStyleBackColor = true;
+            this.ViewPacBtn.Click += new System.EventHandler(this.ViewPacBtn_Click);
+            // 
+            // EditPacBtn
+            // 
+            this.EditPacBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditPacBtn.Location = new System.Drawing.Point(651, 3);
+            this.EditPacBtn.Name = "EditPacBtn";
+            this.EditPacBtn.Size = new System.Drawing.Size(212, 48);
+            this.EditPacBtn.TabIndex = 32;
+            this.EditPacBtn.Text = "Edit Packages";
+            this.EditPacBtn.UseVisualStyleBackColor = true;
+            this.EditPacBtn.Click += new System.EventHandler(this.EditPacBtn_Click);
             // 
             // DictionaryForm
             // 
@@ -637,14 +662,14 @@
             this.Name = "DictionaryForm";
             this.Text = "View Dictionary";
             this.ContentPanel.ResumeLayout(false);
+            this.ViewDictPanel.ResumeLayout(false);
+            this.ViewDictPanel.PerformLayout();
             this.ViewPackPanel.ResumeLayout(false);
             this.ViewPackPanel.PerformLayout();
             this.AddPackPanel.ResumeLayout(false);
             this.AddPackPanel.PerformLayout();
             this.EditDictPanel.ResumeLayout(false);
             this.EditDictPanel.PerformLayout();
-            this.ViewDictPanel.ResumeLayout(false);
-            this.ViewDictPanel.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -652,15 +677,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox testCombo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox contentBox;
         private System.Windows.Forms.Label label4;
         internal System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox valuesBox;
         private System.Windows.Forms.Button EditPacBtn;
         private System.Windows.Forms.Button ViewPacBtn;
         private System.Windows.Forms.Button ViewDicBtn;
@@ -706,5 +731,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox fieldCombo;
     }
 }
