@@ -354,7 +354,7 @@ namespace SouthJLAInformationSystemC
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
         {
-            UrinStoolForm urinStoolForm = new UrinStoolForm();
+            UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
             urinStoolForm.Show();
         }
 
@@ -403,6 +403,8 @@ namespace SouthJLAInformationSystemC
             idPass = dt.Rows[0][0].ToString();
 
             submit.Text = "Save changes";
+            if (SubMenuLabelClicked.Text == "Enter Results")
+                submit.Text = "Enter";
             clearAll.Enabled = true;
         }
 
