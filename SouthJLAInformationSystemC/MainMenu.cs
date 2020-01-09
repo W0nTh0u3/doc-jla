@@ -351,13 +351,7 @@ namespace SouthJLAInformationSystemC
             PAPForm pAPForm = new PAPForm();
             pAPForm.Show();
         }
-        #endregion
-
-        private void submit_Click(object sender, EventArgs e)
-        { 
-            
-
-        }
+        #endregion
 
 
         private void searchButton_Click(object sender, EventArgs e)

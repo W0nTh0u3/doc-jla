@@ -961,7 +961,7 @@
             this.EditPacBtn.Name = "EditPacBtn";
             this.EditPacBtn.Size = new System.Drawing.Size(119, 23);
             this.EditPacBtn.TabIndex = 32;
-            this.EditPacBtn.Text = "Edit Packages";
+            this.EditPacBtn.Text = "Add Packages";
             this.EditPacBtn.UseVisualStyleBackColor = true;
             this.EditPacBtn.Click += new System.EventHandler(this.EditPacBtn_Click);
             // 

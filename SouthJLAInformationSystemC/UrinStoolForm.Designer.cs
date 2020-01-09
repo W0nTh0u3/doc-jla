@@ -36,88 +36,88 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.companyBox = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.packageBox = new System.Windows.Forms.ComboBox();
             this.Label10 = new System.Windows.Forms.Label();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
+            this.dateBox = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.othersBox = new System.Windows.Forms.ComboBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.bacteriaBox = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.rbcBox = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.rbcStoolBox = new System.Windows.Forms.TextBox();
+            this.pusCellsBox = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.amorphousMaterialBox = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.pusStoolBox = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.colorStoolBox = new System.Windows.Forms.TextBox();
+            this.mucousThreadsBox = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.epithelialCellsBox = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.consistencyBox = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.glucoseBox = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.bilirubinBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.ketoneBox = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.specificGravityBox = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.bloodBox = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.phBox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.proteinBox = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.urobilinogenBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.nitriteBox = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.leukocyteBox = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.transparencyBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.colorBox = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -125,7 +125,7 @@
             this.label42 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,6 +137,7 @@
             this.SubmitCBC.TabIndex = 0;
             this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
+            this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
             // panel3
             // 
@@ -204,21 +205,21 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.ComboBox2);
+            this.panel1.Controls.Add(this.companyBox);
             this.panel1.Controls.Add(this.Label11);
-            this.panel1.Controls.Add(this.PictureBox1);
-            this.panel1.Controls.Add(this.ComboBox1);
+            this.panel1.Controls.Add(this.pictureBox);
+            this.panel1.Controls.Add(this.packageBox);
             this.panel1.Controls.Add(this.Label10);
-            this.panel1.Controls.Add(this.TextBox7);
+            this.panel1.Controls.Add(this.dateBox);
             this.panel1.Controls.Add(this.Label9);
             this.panel1.Controls.Add(this.Label8);
-            this.panel1.Controls.Add(this.TextBox6);
-            this.panel1.Controls.Add(this.TextBox5);
+            this.panel1.Controls.Add(this.ageBox);
+            this.panel1.Controls.Add(this.addressBox);
             this.panel1.Controls.Add(this.Label7);
-            this.panel1.Controls.Add(this.TextBox4);
-            this.panel1.Controls.Add(this.TextBox3);
-            this.panel1.Controls.Add(this.TextBox2);
-            this.panel1.Controls.Add(this.TextBox1);
+            this.panel1.Controls.Add(this.idBox);
+            this.panel1.Controls.Add(this.middleBox);
+            this.panel1.Controls.Add(this.firstBox);
+            this.panel1.Controls.Add(this.lastBox);
             this.panel1.Controls.Add(this.Label6);
             this.panel1.Controls.Add(this.Label5);
             this.panel1.Controls.Add(this.Label4);
@@ -230,15 +231,15 @@
             this.panel1.Size = new System.Drawing.Size(800, 202);
             this.panel1.TabIndex = 3;
             // 
-            // ComboBox2
+            // companyBox
             // 
-            this.ComboBox2.Enabled = false;
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(502, 109);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 43;
+            this.companyBox.Enabled = false;
+            this.companyBox.FormattingEnabled = true;
+            this.companyBox.Location = new System.Drawing.Point(502, 109);
+            this.companyBox.Margin = new System.Windows.Forms.Padding(2);
+            this.companyBox.Name = "companyBox";
+            this.companyBox.Size = new System.Drawing.Size(140, 21);
+            this.companyBox.TabIndex = 43;
             // 
             // Label11
             // 
@@ -251,25 +252,25 @@
             this.Label11.TabIndex = 42;
             this.Label11.Text = "Company";
             // 
-            // PictureBox1
+            // pictureBox
             // 
-            this.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox1.Location = new System.Drawing.Point(673, 41);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(102, 102);
-            this.PictureBox1.TabIndex = 40;
-            this.PictureBox1.TabStop = false;
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox.Location = new System.Drawing.Point(673, 41);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(102, 102);
+            this.pictureBox.TabIndex = 40;
+            this.pictureBox.TabStop = false;
             // 
-            // ComboBox1
+            // packageBox
             // 
-            this.ComboBox1.Enabled = false;
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(502, 68);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 39;
+            this.packageBox.Enabled = false;
+            this.packageBox.FormattingEnabled = true;
+            this.packageBox.Location = new System.Drawing.Point(502, 68);
+            this.packageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.packageBox.Name = "packageBox";
+            this.packageBox.Size = new System.Drawing.Size(140, 21);
+            this.packageBox.TabIndex = 39;
             // 
             // Label10
             // 
@@ -282,15 +283,15 @@
             this.Label10.TabIndex = 38;
             this.Label10.Text = "Package";
             // 
-            // TextBox7
+            // dateBox
             // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(544, 21);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(97, 20);
-            this.TextBox7.TabIndex = 36;
+            this.dateBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dateBox.Enabled = false;
+            this.dateBox.Location = new System.Drawing.Point(544, 21);
+            this.dateBox.Margin = new System.Windows.Forms.Padding(2);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(97, 20);
+            this.dateBox.TabIndex = 36;
             // 
             // Label9
             // 
@@ -314,27 +315,27 @@
             this.Label8.TabIndex = 34;
             this.Label8.Text = "Address";
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.Enabled = false;
-            this.TextBox6.Location = new System.Drawing.Point(63, 129);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 33;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Enabled = false;
+            this.ageBox.Location = new System.Drawing.Point(63, 129);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 33;
             // 
-            // TextBox5
+            // addressBox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.Enabled = false;
-            this.TextBox5.Location = new System.Drawing.Point(203, 130);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 32;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Enabled = false;
+            this.addressBox.Location = new System.Drawing.Point(203, 130);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 54);
+            this.addressBox.TabIndex = 32;
             // 
             // Label7
             // 
@@ -347,116 +348,116 @@
             this.Label7.TabIndex = 31;
             this.Label7.Text = "Age";
             // 
-            // TextBox4
+            // idBox
             // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Enabled = false;
-            this.TextBox4.Location = new System.Drawing.Point(81, 22);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 30;
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(81, 22);
+            this.idBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(195, 20);
+            this.idBox.TabIndex = 30;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Enabled = false;
-            this.TextBox3.Location = new System.Drawing.Point(302, 74);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 29;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Enabled = false;
+            this.middleBox.Location = new System.Drawing.Point(302, 74);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 29;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Enabled = false;
-            this.TextBox2.Location = new System.Drawing.Point(174, 73);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 28;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Enabled = false;
+            this.firstBox.Location = new System.Drawing.Point(174, 73);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 28;
             // 
-            // TextBox1
+            // lastBox
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Enabled = false;
-            this.TextBox1.Location = new System.Drawing.Point(63, 73);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 27;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Enabled = false;
+            this.lastBox.Location = new System.Drawing.Point(63, 73);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 27;
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.othersBox);
             this.panel2.Controls.Add(this.label44);
-            this.panel2.Controls.Add(this.textBox25);
+            this.panel2.Controls.Add(this.bacteriaBox);
             this.panel2.Controls.Add(this.label43);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label58);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label57);
-            this.panel2.Controls.Add(this.textBox24);
+            this.panel2.Controls.Add(this.rbcBox);
             this.panel2.Controls.Add(this.label49);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label56);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox26);
-            this.panel2.Controls.Add(this.textBox22);
+            this.panel2.Controls.Add(this.rbcStoolBox);
+            this.panel2.Controls.Add(this.pusCellsBox);
             this.panel2.Controls.Add(this.label55);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label50);
-            this.panel2.Controls.Add(this.textBox23);
+            this.panel2.Controls.Add(this.amorphousMaterialBox);
             this.panel2.Controls.Add(this.label54);
             this.panel2.Controls.Add(this.label45);
-            this.panel2.Controls.Add(this.textBox27);
+            this.panel2.Controls.Add(this.pusStoolBox);
             this.panel2.Controls.Add(this.label46);
-            this.panel2.Controls.Add(this.textBox29);
-            this.panel2.Controls.Add(this.textBox20);
+            this.panel2.Controls.Add(this.colorStoolBox);
+            this.panel2.Controls.Add(this.mucousThreadsBox);
             this.panel2.Controls.Add(this.label51);
             this.panel2.Controls.Add(this.label47);
             this.panel2.Controls.Add(this.label53);
-            this.panel2.Controls.Add(this.textBox21);
+            this.panel2.Controls.Add(this.epithelialCellsBox);
             this.panel2.Controls.Add(this.label52);
             this.panel2.Controls.Add(this.label34);
-            this.panel2.Controls.Add(this.textBox28);
+            this.panel2.Controls.Add(this.consistencyBox);
             this.panel2.Controls.Add(this.label35);
             this.panel2.Controls.Add(this.label37);
-            this.panel2.Controls.Add(this.textBox18);
+            this.panel2.Controls.Add(this.glucoseBox);
             this.panel2.Controls.Add(this.label38);
-            this.panel2.Controls.Add(this.textBox19);
+            this.panel2.Controls.Add(this.bilirubinBox);
             this.panel2.Controls.Add(this.label29);
             this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.textBox16);
+            this.panel2.Controls.Add(this.ketoneBox);
             this.panel2.Controls.Add(this.label32);
-            this.panel2.Controls.Add(this.textBox17);
+            this.panel2.Controls.Add(this.specificGravityBox);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.textBox12);
+            this.panel2.Controls.Add(this.bloodBox);
             this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.textBox15);
+            this.panel2.Controls.Add(this.phBox);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.proteinBox);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.textBox11);
+            this.panel2.Controls.Add(this.urobilinogenBox);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.nitriteBox);
             this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.leukocyteBox);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label36);
-            this.panel2.Controls.Add(this.textBox14);
+            this.panel2.Controls.Add(this.transparencyBox);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.textBox13);
+            this.panel2.Controls.Add(this.colorBox);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label30);
             this.panel2.Controls.Add(this.label39);
@@ -468,13 +469,13 @@
             this.panel2.Size = new System.Drawing.Size(800, 423);
             this.panel2.TabIndex = 6;
             // 
-            // comboBox3
+            // othersBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(90, 1060);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(279, 21);
-            this.comboBox3.TabIndex = 157;
+            this.othersBox.FormattingEnabled = true;
+            this.othersBox.Location = new System.Drawing.Point(90, 1060);
+            this.othersBox.Name = "othersBox";
+            this.othersBox.Size = new System.Drawing.Size(279, 21);
+            this.othersBox.TabIndex = 157;
             // 
             // label44
             // 
@@ -485,12 +486,12 @@
             this.label44.TabIndex = 132;
             this.label44.Text = "BACTERIA";
             // 
-            // textBox25
+            // bacteriaBox
             // 
-            this.textBox25.Location = new System.Drawing.Point(267, 724);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(100, 20);
-            this.textBox25.TabIndex = 131;
+            this.bacteriaBox.Location = new System.Drawing.Point(267, 724);
+            this.bacteriaBox.Name = "bacteriaBox";
+            this.bacteriaBox.Size = new System.Drawing.Size(100, 20);
+            this.bacteriaBox.TabIndex = 131;
             // 
             // label43
             // 
@@ -548,12 +549,12 @@
             this.label57.TabIndex = 142;
             this.label57.Text = "Test Name";
             // 
-            // textBox24
+            // rbcBox
             // 
-            this.textBox24.Location = new System.Drawing.Point(267, 692);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 128;
+            this.rbcBox.Location = new System.Drawing.Point(267, 692);
+            this.rbcBox.Name = "rbcBox";
+            this.rbcBox.Size = new System.Drawing.Size(100, 20);
+            this.rbcBox.TabIndex = 128;
             // 
             // label49
             // 
@@ -591,19 +592,19 @@
             this.label14.TabIndex = 125;
             this.label14.Text = "PUS CELLS";
             // 
-            // textBox26
+            // rbcStoolBox
             // 
-            this.textBox26.Location = new System.Drawing.Point(269, 998);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(100, 20);
-            this.textBox26.TabIndex = 153;
+            this.rbcStoolBox.Location = new System.Drawing.Point(269, 998);
+            this.rbcStoolBox.Name = "rbcStoolBox";
+            this.rbcStoolBox.Size = new System.Drawing.Size(100, 20);
+            this.rbcStoolBox.TabIndex = 153;
             // 
-            // textBox22
+            // pusCellsBox
             // 
-            this.textBox22.Location = new System.Drawing.Point(267, 661);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 124;
+            this.pusCellsBox.Location = new System.Drawing.Point(267, 661);
+            this.pusCellsBox.Name = "pusCellsBox";
+            this.pusCellsBox.Size = new System.Drawing.Size(100, 20);
+            this.pusCellsBox.TabIndex = 124;
             // 
             // label55
             // 
@@ -632,12 +633,12 @@
             this.label50.TabIndex = 152;
             this.label50.Text = "PUS";
             // 
-            // textBox23
+            // amorphousMaterialBox
             // 
-            this.textBox23.Location = new System.Drawing.Point(267, 628);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
-            this.textBox23.TabIndex = 122;
+            this.amorphousMaterialBox.Location = new System.Drawing.Point(267, 628);
+            this.amorphousMaterialBox.Name = "amorphousMaterialBox";
+            this.amorphousMaterialBox.Size = new System.Drawing.Size(100, 20);
+            this.amorphousMaterialBox.TabIndex = 122;
             // 
             // label54
             // 
@@ -658,12 +659,12 @@
             this.label45.TabIndex = 119;
             this.label45.Text = "MICROSCOPIC EXAMINATION";
             // 
-            // textBox27
+            // pusStoolBox
             // 
-            this.textBox27.Location = new System.Drawing.Point(269, 965);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(100, 20);
-            this.textBox27.TabIndex = 151;
+            this.pusStoolBox.Location = new System.Drawing.Point(269, 965);
+            this.pusStoolBox.Name = "pusStoolBox";
+            this.pusStoolBox.Size = new System.Drawing.Size(100, 20);
+            this.pusStoolBox.TabIndex = 151;
             // 
             // label46
             // 
@@ -674,19 +675,19 @@
             this.label46.TabIndex = 118;
             this.label46.Text = "MUCOUS THREADS";
             // 
-            // textBox29
+            // colorStoolBox
             // 
-            this.textBox29.Location = new System.Drawing.Point(269, 869);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(100, 20);
-            this.textBox29.TabIndex = 146;
+            this.colorStoolBox.Location = new System.Drawing.Point(269, 869);
+            this.colorStoolBox.Name = "colorStoolBox";
+            this.colorStoolBox.Size = new System.Drawing.Size(100, 20);
+            this.colorStoolBox.TabIndex = 146;
             // 
-            // textBox20
+            // mucousThreadsBox
             // 
-            this.textBox20.Location = new System.Drawing.Point(267, 595);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 117;
+            this.mucousThreadsBox.Location = new System.Drawing.Point(267, 595);
+            this.mucousThreadsBox.Name = "mucousThreadsBox";
+            this.mucousThreadsBox.Size = new System.Drawing.Size(100, 20);
+            this.mucousThreadsBox.TabIndex = 117;
             // 
             // label51
             // 
@@ -716,12 +717,12 @@
             this.label53.TabIndex = 147;
             this.label53.Text = "COLOR";
             // 
-            // textBox21
+            // epithelialCellsBox
             // 
-            this.textBox21.Location = new System.Drawing.Point(267, 562);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 115;
+            this.epithelialCellsBox.Location = new System.Drawing.Point(267, 562);
+            this.epithelialCellsBox.Name = "epithelialCellsBox";
+            this.epithelialCellsBox.Size = new System.Drawing.Size(100, 20);
+            this.epithelialCellsBox.TabIndex = 115;
             // 
             // label52
             // 
@@ -741,12 +742,12 @@
             this.label34.TabIndex = 114;
             this.label34.Text = "(NEGATIVE)";
             // 
-            // textBox28
+            // consistencyBox
             // 
-            this.textBox28.Location = new System.Drawing.Point(269, 902);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(100, 20);
-            this.textBox28.TabIndex = 148;
+            this.consistencyBox.Location = new System.Drawing.Point(269, 902);
+            this.consistencyBox.Name = "consistencyBox";
+            this.consistencyBox.Size = new System.Drawing.Size(100, 20);
+            this.consistencyBox.TabIndex = 148;
             // 
             // label35
             // 
@@ -766,12 +767,12 @@
             this.label37.TabIndex = 112;
             this.label37.Text = "GLUCOSE";
             // 
-            // textBox18
+            // glucoseBox
             // 
-            this.textBox18.Location = new System.Drawing.Point(267, 501);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 111;
+            this.glucoseBox.Location = new System.Drawing.Point(267, 501);
+            this.glucoseBox.Name = "glucoseBox";
+            this.glucoseBox.Size = new System.Drawing.Size(100, 20);
+            this.glucoseBox.TabIndex = 111;
             // 
             // label38
             // 
@@ -782,12 +783,12 @@
             this.label38.TabIndex = 110;
             this.label38.Text = "BILIRUBIN";
             // 
-            // textBox19
+            // bilirubinBox
             // 
-            this.textBox19.Location = new System.Drawing.Point(267, 468);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 109;
+            this.bilirubinBox.Location = new System.Drawing.Point(267, 468);
+            this.bilirubinBox.Name = "bilirubinBox";
+            this.bilirubinBox.Size = new System.Drawing.Size(100, 20);
+            this.bilirubinBox.TabIndex = 109;
             // 
             // label29
             // 
@@ -807,12 +808,12 @@
             this.label31.TabIndex = 107;
             this.label31.Text = "KETONE";
             // 
-            // textBox16
+            // ketoneBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(267, 435);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 106;
+            this.ketoneBox.Location = new System.Drawing.Point(267, 435);
+            this.ketoneBox.Name = "ketoneBox";
+            this.ketoneBox.Size = new System.Drawing.Size(100, 20);
+            this.ketoneBox.TabIndex = 106;
             // 
             // label32
             // 
@@ -823,12 +824,12 @@
             this.label32.TabIndex = 105;
             this.label32.Text = "SPECIFIC GRAVITY";
             // 
-            // textBox17
+            // specificGravityBox
             // 
-            this.textBox17.Location = new System.Drawing.Point(267, 402);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 104;
+            this.specificGravityBox.Location = new System.Drawing.Point(267, 402);
+            this.specificGravityBox.Name = "specificGravityBox";
+            this.specificGravityBox.Size = new System.Drawing.Size(100, 20);
+            this.specificGravityBox.TabIndex = 104;
             // 
             // label25
             // 
@@ -848,12 +849,12 @@
             this.label27.TabIndex = 102;
             this.label27.Text = "BLOOD";
             // 
-            // textBox12
+            // bloodBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(267, 369);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 101;
+            this.bloodBox.Location = new System.Drawing.Point(267, 369);
+            this.bloodBox.Name = "bloodBox";
+            this.bloodBox.Size = new System.Drawing.Size(100, 20);
+            this.bloodBox.TabIndex = 101;
             // 
             // label28
             // 
@@ -864,12 +865,12 @@
             this.label28.TabIndex = 100;
             this.label28.Text = "PH";
             // 
-            // textBox15
+            // phBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(267, 336);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 99;
+            this.phBox.Location = new System.Drawing.Point(267, 336);
+            this.phBox.Name = "phBox";
+            this.phBox.Size = new System.Drawing.Size(100, 20);
+            this.phBox.TabIndex = 99;
             // 
             // label21
             // 
@@ -898,12 +899,12 @@
             this.label23.TabIndex = 96;
             this.label23.Text = "PROTEIN";
             // 
-            // textBox10
+            // proteinBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(267, 306);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 95;
+            this.proteinBox.Location = new System.Drawing.Point(267, 306);
+            this.proteinBox.Name = "proteinBox";
+            this.proteinBox.Size = new System.Drawing.Size(100, 20);
+            this.proteinBox.TabIndex = 95;
             // 
             // label24
             // 
@@ -914,12 +915,12 @@
             this.label24.TabIndex = 94;
             this.label24.Text = "UROBILINOGEN";
             // 
-            // textBox11
+            // urobilinogenBox
             // 
-            this.textBox11.Location = new System.Drawing.Point(267, 273);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 93;
+            this.urobilinogenBox.Location = new System.Drawing.Point(267, 273);
+            this.urobilinogenBox.Name = "urobilinogenBox";
+            this.urobilinogenBox.Size = new System.Drawing.Size(100, 20);
+            this.urobilinogenBox.TabIndex = 93;
             // 
             // label20
             // 
@@ -958,12 +959,12 @@
             this.label17.TabIndex = 89;
             this.label17.Text = "NITRITE";
             // 
-            // textBox8
+            // nitriteBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(267, 240);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 88;
+            this.nitriteBox.Location = new System.Drawing.Point(267, 240);
+            this.nitriteBox.Name = "nitriteBox";
+            this.nitriteBox.Size = new System.Drawing.Size(100, 20);
+            this.nitriteBox.TabIndex = 88;
             // 
             // label18
             // 
@@ -974,12 +975,12 @@
             this.label18.TabIndex = 87;
             this.label18.Text = "LEUKOCYTE";
             // 
-            // textBox9
+            // leukocyteBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(267, 207);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 86;
+            this.leukocyteBox.Location = new System.Drawing.Point(267, 207);
+            this.leukocyteBox.Name = "leukocyteBox";
+            this.leukocyteBox.Size = new System.Drawing.Size(100, 20);
+            this.leukocyteBox.TabIndex = 86;
             // 
             // label40
             // 
@@ -1000,12 +1001,12 @@
             this.label36.TabIndex = 84;
             this.label36.Text = "TRANSPARENCY";
             // 
-            // textBox14
+            // transparencyBox
             // 
-            this.textBox14.Location = new System.Drawing.Point(267, 146);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 83;
+            this.transparencyBox.Location = new System.Drawing.Point(267, 146);
+            this.transparencyBox.Name = "transparencyBox";
+            this.transparencyBox.Size = new System.Drawing.Size(100, 20);
+            this.transparencyBox.TabIndex = 83;
             // 
             // label33
             // 
@@ -1016,12 +1017,12 @@
             this.label33.TabIndex = 82;
             this.label33.Text = "COLOR";
             // 
-            // textBox13
+            // colorBox
             // 
-            this.textBox13.Location = new System.Drawing.Point(267, 113);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 81;
+            this.colorBox.Location = new System.Drawing.Point(267, 113);
+            this.colorBox.Name = "colorBox";
+            this.colorBox.Size = new System.Drawing.Size(100, 20);
+            this.colorBox.TabIndex = 81;
             // 
             // label26
             // 
@@ -1088,7 +1089,7 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -1105,92 +1106,92 @@
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Panel panel1;
-        internal System.Windows.Forms.ComboBox ComboBox2;
+        internal System.Windows.Forms.ComboBox companyBox;
         internal System.Windows.Forms.Label Label11;
-        internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.PictureBox pictureBox;
+        internal System.Windows.Forms.ComboBox packageBox;
         internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.TextBox TextBox7;
+        internal System.Windows.Forms.TextBox dateBox;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        internal System.Windows.Forms.TextBox ageBox;
+        internal System.Windows.Forms.TextBox addressBox;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox idBox;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox lastBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox mucousThreadsBox;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox epithelialCellsBox;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox glucoseBox;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox bilirubinBox;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox ketoneBox;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox specificGravityBox;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox bloodBox;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox phBox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox proteinBox;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox urobilinogenBox;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox nitriteBox;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox leukocyteBox;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox transparencyBox;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox colorBox;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox bacteriaBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox rbcBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox pusCellsBox;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox amorphousMaterialBox;
+        private System.Windows.Forms.ComboBox othersBox;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox rbcStoolBox;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox pusStoolBox;
+        private System.Windows.Forms.TextBox colorStoolBox;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox consistencyBox;
     }
 }
