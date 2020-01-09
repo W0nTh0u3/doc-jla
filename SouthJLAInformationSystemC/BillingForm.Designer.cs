@@ -84,7 +84,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ContentPanel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datePicker = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -897,7 +897,7 @@
             this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
             this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ContentPanel.Controls.Add(this.button4);
-            this.ContentPanel.Controls.Add(this.dateTimePicker1);
+            this.ContentPanel.Controls.Add(this.datePicker);
             this.ContentPanel.Controls.Add(this.label2);
             this.ContentPanel.Controls.Add(this.button3);
             this.ContentPanel.Controls.Add(this.button2);
@@ -919,12 +919,12 @@
             this.button4.Text = "Print";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // datePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(246, 15);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.datePicker.Location = new System.Drawing.Point(246, 15);
+            this.datePicker.Name = "datePicker";
+            this.datePicker.Size = new System.Drawing.Size(200, 20);
+            this.datePicker.TabIndex = 5;
             // 
             // label2
             // 
@@ -1113,7 +1113,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datePicker;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

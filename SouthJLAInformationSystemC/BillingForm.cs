@@ -18,6 +18,8 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
             SubPanelsHide();
 
+            string dateSelected = datePicker.Value.ToString();
+
         }
         public void SubPanelsHide()
         {

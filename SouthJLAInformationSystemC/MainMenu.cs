@@ -197,6 +197,8 @@ namespace SouthJLAInformationSystemC
 
             clearAllfields();
 
+            submit.Text = "Enter Results";
+
         }
 
         private void GenEditResuBtn_Click(object sender, EventArgs e)
@@ -207,6 +209,8 @@ namespace SouthJLAInformationSystemC
             EnableOnlyPatientResults();
 
             clearAllfields();
+
+            submit.Text = "Save Results";
         }
 
         private void GenEntEdtResuBtn_Click(object sender, EventArgs e)
@@ -317,31 +321,31 @@ namespace SouthJLAInformationSystemC
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
         {
-            UrinStoolForm urinStoolForm = new UrinStoolForm();
+            UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
             urinStoolForm.Show();
         }
 
         private void MedExClickableLabel_Click(object sender, EventArgs e)
         {
-            MedExamForm medExamForm = new MedExamForm();
+            MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
             medExamForm.Show();
         }
 
         private void XrayClickableLabel_Click(object sender, EventArgs e)
         {
-            XrayForm xrayForm = new XrayForm();
+            XrayForm xrayForm = new XrayForm(uniquePass, idPass, submit.Text);
             xrayForm.Show();
         }
 
         private void ECGClickableLabel_Click(object sender, EventArgs e)
         {
-            ECGForm eCGForm = new ECGForm();
+            ECGForm eCGForm = new ECGForm(uniquePass, idPass, submit.Text);
             eCGForm.Show();
         }
 
         private void FBSClickableLabel_Click(object sender, EventArgs e)
         {
-            FBSCholeForm fBSCholeForm = new FBSCholeForm();
+            FBSCholeForm fBSCholeForm = new FBSCholeForm(uniquePass, idPass, submit.Text);
             fBSCholeForm.Show();
         }
         
@@ -352,12 +356,7 @@ namespace SouthJLAInformationSystemC
             pAPForm.Show();
         }
         #endregion
-
-        private void submit_Click(object sender, EventArgs e)
-        { 
-            
 
-        }
 
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -372,6 +371,10 @@ namespace SouthJLAInformationSystemC
             idPass = dt.Rows[0][0].ToString();
 
             submit.Text = "Save changes";
+
+            if(SubMenuLabelClicked.Text == "Enter Results")
+                submit.Text = "Enter";
+
             clearAll.Enabled = true;
         }
 

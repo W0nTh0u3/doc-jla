@@ -37,21 +37,21 @@
             this.TextBox7 = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.remarksBox = new System.Windows.Forms.RichTextBox();
+            this.viewBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -73,13 +73,13 @@
             this.panel1.Controls.Add(this.TextBox7);
             this.panel1.Controls.Add(this.Label9);
             this.panel1.Controls.Add(this.Label8);
-            this.panel1.Controls.Add(this.TextBox6);
-            this.panel1.Controls.Add(this.TextBox5);
+            this.panel1.Controls.Add(this.ageBox);
+            this.panel1.Controls.Add(this.addressBox);
             this.panel1.Controls.Add(this.Label7);
-            this.panel1.Controls.Add(this.TextBox4);
-            this.panel1.Controls.Add(this.TextBox3);
-            this.panel1.Controls.Add(this.TextBox2);
-            this.panel1.Controls.Add(this.TextBox1);
+            this.panel1.Controls.Add(this.idBox);
+            this.panel1.Controls.Add(this.middleBox);
+            this.panel1.Controls.Add(this.firstBox);
+            this.panel1.Controls.Add(this.lastBox);
             this.panel1.Controls.Add(this.Label6);
             this.panel1.Controls.Add(this.Label5);
             this.panel1.Controls.Add(this.Label4);
@@ -175,27 +175,27 @@
             this.Label8.TabIndex = 34;
             this.Label8.Text = "Address";
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.Enabled = false;
-            this.TextBox6.Location = new System.Drawing.Point(63, 129);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 33;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Enabled = false;
+            this.ageBox.Location = new System.Drawing.Point(63, 129);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 33;
             // 
-            // TextBox5
+            // addressBox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.Enabled = false;
-            this.TextBox5.Location = new System.Drawing.Point(203, 130);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 32;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Enabled = false;
+            this.addressBox.Location = new System.Drawing.Point(203, 130);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 54);
+            this.addressBox.TabIndex = 32;
             // 
             // Label7
             // 
@@ -208,45 +208,45 @@
             this.Label7.TabIndex = 31;
             this.Label7.Text = "Age";
             // 
-            // TextBox4
+            // idBox
             // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Enabled = false;
-            this.TextBox4.Location = new System.Drawing.Point(81, 22);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 30;
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(81, 22);
+            this.idBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(195, 20);
+            this.idBox.TabIndex = 30;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Enabled = false;
-            this.TextBox3.Location = new System.Drawing.Point(302, 74);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 29;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Enabled = false;
+            this.middleBox.Location = new System.Drawing.Point(302, 74);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 29;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Enabled = false;
-            this.TextBox2.Location = new System.Drawing.Point(174, 73);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 28;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Enabled = false;
+            this.firstBox.Location = new System.Drawing.Point(174, 73);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 28;
             // 
-            // TextBox1
+            // lastBox
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Enabled = false;
-            this.TextBox1.Location = new System.Drawing.Point(63, 73);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 27;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Enabled = false;
+            this.lastBox.Location = new System.Drawing.Point(63, 73);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 27;
             // 
             // Label6
             // 
@@ -307,8 +307,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.richTextBox2);
-            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Controls.Add(this.remarksBox);
+            this.panel2.Controls.Add(this.viewBox);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label42);
@@ -318,21 +318,21 @@
             this.panel2.Size = new System.Drawing.Size(800, 423);
             this.panel2.TabIndex = 8;
             // 
-            // richTextBox2
+            // remarksBox
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(137, 297);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(519, 39);
-            this.richTextBox2.TabIndex = 92;
-            this.richTextBox2.Text = "";
+            this.remarksBox.Location = new System.Drawing.Point(137, 297);
+            this.remarksBox.Name = "remarksBox";
+            this.remarksBox.Size = new System.Drawing.Size(519, 39);
+            this.remarksBox.TabIndex = 92;
+            this.remarksBox.Text = "";
             // 
-            // richTextBox1
+            // viewBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(137, 113);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(519, 141);
-            this.richTextBox1.TabIndex = 91;
-            this.richTextBox1.Text = "";
+            this.viewBox.Location = new System.Drawing.Point(137, 113);
+            this.viewBox.Name = "viewBox";
+            this.viewBox.Size = new System.Drawing.Size(519, 141);
+            this.viewBox.TabIndex = 91;
+            this.viewBox.Text = "";
             // 
             // label1
             // 
@@ -381,6 +381,7 @@
             this.SubmitCBC.TabIndex = 0;
             this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
+            this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
             // XrayForm
             // 
@@ -418,13 +419,13 @@
         internal System.Windows.Forms.TextBox TextBox7;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        internal System.Windows.Forms.TextBox ageBox;
+        internal System.Windows.Forms.TextBox addressBox;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox idBox;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox lastBox;
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
@@ -436,7 +437,7 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button SubmitCBC;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox remarksBox;
+        private System.Windows.Forms.RichTextBox viewBox;
     }
 }
