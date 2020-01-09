@@ -35,15 +35,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.kidneyY = new System.Windows.Forms.RadioButton();
+            this.kidneyN = new System.Windows.Forms.RadioButton();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.diabetesY = new System.Windows.Forms.RadioButton();
+            this.diabetesN = new System.Windows.Forms.RadioButton();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.othersBox = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -212,12 +212,12 @@
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.hospitilizationsBox = new System.Windows.Forms.TextBox();
+            this.surgeriesBox = new System.Windows.Forms.TextBox();
+            this.presentBox2 = new System.Windows.Forms.TextBox();
+            this.presentBox1 = new System.Windows.Forms.TextBox();
+            this.pastBox = new System.Windows.Forms.TextBox();
+            this.childBox = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -227,67 +227,67 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.lastingBox = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.radioButton55 = new System.Windows.Forms.RadioButton();
-            this.radioButton56 = new System.Windows.Forms.RadioButton();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.pregnantY = new System.Windows.Forms.RadioButton();
+            this.pregnantN = new System.Windows.Forms.RadioButton();
+            this.alcoholBox = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.smokeBox = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.radioButton35 = new System.Windows.Forms.RadioButton();
-            this.radioButton36 = new System.Windows.Forms.RadioButton();
+            this.alcoholY = new System.Windows.Forms.RadioButton();
+            this.alcoholN = new System.Windows.Forms.RadioButton();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.radioButton37 = new System.Windows.Forms.RadioButton();
-            this.radioButton38 = new System.Windows.Forms.RadioButton();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.smokeY = new System.Windows.Forms.RadioButton();
+            this.smokeN = new System.Windows.Forms.RadioButton();
+            this.menstrualBox = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.radioButton39 = new System.Windows.Forms.RadioButton();
-            this.radioButton40 = new System.Windows.Forms.RadioButton();
+            this.allergyY = new System.Windows.Forms.RadioButton();
+            this.allergyN = new System.Windows.Forms.RadioButton();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.radioButton41 = new System.Windows.Forms.RadioButton();
-            this.radioButton42 = new System.Windows.Forms.RadioButton();
+            this.drugY = new System.Windows.Forms.RadioButton();
+            this.drugN = new System.Windows.Forms.RadioButton();
             this.label51 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.radioButton31 = new System.Windows.Forms.RadioButton();
-            this.radioButton32 = new System.Windows.Forms.RadioButton();
+            this.heartY = new System.Windows.Forms.RadioButton();
+            this.heartN = new System.Windows.Forms.RadioButton();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.radioButton33 = new System.Windows.Forms.RadioButton();
-            this.radioButton34 = new System.Windows.Forms.RadioButton();
+            this.hypertensionY = new System.Windows.Forms.RadioButton();
+            this.hypertensionN = new System.Windows.Forms.RadioButton();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.idBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
             this.Label8 = new System.Windows.Forms.Label();
             this.Label9 = new System.Windows.Forms.Label();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
+            this.dateBox = new System.Windows.Forms.TextBox();
             this.Label10 = new System.Windows.Forms.Label();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.packageBox = new System.Windows.Forms.ComboBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.Label11 = new System.Windows.Forms.Label();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.companyBox = new System.Windows.Forms.ComboBox();
             this.label113 = new System.Windows.Forms.Label();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.birthBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -326,7 +326,7 @@
             this.panel24.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -389,66 +389,66 @@
             // panel10
             // 
             this.panel10.AutoSize = true;
-            this.panel10.Controls.Add(this.radioButton13);
-            this.panel10.Controls.Add(this.radioButton14);
+            this.panel10.Controls.Add(this.kidneyY);
+            this.panel10.Controls.Add(this.kidneyN);
             this.panel10.Location = new System.Drawing.Point(210, 498);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(99, 23);
             this.panel10.TabIndex = 132;
             // 
-            // radioButton13
+            // kidneyY
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(3, 3);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(46, 17);
-            this.radioButton13.TabIndex = 97;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "YES";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.kidneyY.AutoSize = true;
+            this.kidneyY.Location = new System.Drawing.Point(3, 3);
+            this.kidneyY.Name = "kidneyY";
+            this.kidneyY.Size = new System.Drawing.Size(46, 17);
+            this.kidneyY.TabIndex = 97;
+            this.kidneyY.TabStop = true;
+            this.kidneyY.Text = "YES";
+            this.kidneyY.UseVisualStyleBackColor = true;
             // 
-            // radioButton14
+            // kidneyN
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(55, 3);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(41, 17);
-            this.radioButton14.TabIndex = 98;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "NO";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.kidneyN.AutoSize = true;
+            this.kidneyN.Location = new System.Drawing.Point(55, 3);
+            this.kidneyN.Name = "kidneyN";
+            this.kidneyN.Size = new System.Drawing.Size(41, 17);
+            this.kidneyN.TabIndex = 98;
+            this.kidneyN.TabStop = true;
+            this.kidneyN.Text = "NO";
+            this.kidneyN.UseVisualStyleBackColor = true;
             // 
             // panel9
             // 
             this.panel9.AutoSize = true;
-            this.panel9.Controls.Add(this.radioButton11);
-            this.panel9.Controls.Add(this.radioButton12);
+            this.panel9.Controls.Add(this.diabetesY);
+            this.panel9.Controls.Add(this.diabetesN);
             this.panel9.Location = new System.Drawing.Point(210, 524);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(99, 23);
             this.panel9.TabIndex = 133;
             // 
-            // radioButton11
+            // diabetesY
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(3, 3);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(46, 17);
-            this.radioButton11.TabIndex = 97;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "YES";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.diabetesY.AutoSize = true;
+            this.diabetesY.Location = new System.Drawing.Point(3, 3);
+            this.diabetesY.Name = "diabetesY";
+            this.diabetesY.Size = new System.Drawing.Size(46, 17);
+            this.diabetesY.TabIndex = 97;
+            this.diabetesY.TabStop = true;
+            this.diabetesY.Text = "YES";
+            this.diabetesY.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // diabetesN
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(55, 3);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(41, 17);
-            this.radioButton12.TabIndex = 98;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "NO";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.diabetesN.AutoSize = true;
+            this.diabetesN.Location = new System.Drawing.Point(55, 3);
+            this.diabetesN.Name = "diabetesN";
+            this.diabetesN.Size = new System.Drawing.Size(41, 17);
+            this.diabetesN.TabIndex = 98;
+            this.diabetesN.TabStop = true;
+            this.diabetesN.Text = "NO";
+            this.diabetesN.UseVisualStyleBackColor = true;
             // 
             // label34
             // 
@@ -477,14 +477,14 @@
             this.label31.TabIndex = 139;
             this.label31.Text = "Others:";
             // 
-            // textBox20
+            // othersBox
             // 
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox20.Location = new System.Drawing.Point(213, 549);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(413, 20);
-            this.textBox20.TabIndex = 140;
+            this.othersBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.othersBox.Location = new System.Drawing.Point(213, 549);
+            this.othersBox.Margin = new System.Windows.Forms.Padding(2);
+            this.othersBox.Name = "othersBox";
+            this.othersBox.Size = new System.Drawing.Size(413, 20);
+            this.othersBox.TabIndex = 140;
             // 
             // label43
             // 
@@ -831,9 +831,9 @@
             this.label66.AutoSize = true;
             this.label66.Location = new System.Drawing.Point(411, 633);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(30, 13);
+            this.label66.Size = new System.Drawing.Size(83, 13);
             this.label66.TabIndex = 184;
-            this.label66.Text = "Eyes";
+            this.label66.Text = "Musculoskeletal";
             // 
             // panel30
             // 
@@ -968,27 +968,27 @@
             this.label65.AutoSize = true;
             this.label65.Location = new System.Drawing.Point(411, 659);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(64, 13);
+            this.label65.Size = new System.Drawing.Size(63, 13);
             this.label65.TabIndex = 189;
-            this.label65.Text = "ENT/Mouth";
+            this.label65.Text = "Skin/Breast";
             // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.Location = new System.Drawing.Point(411, 685);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(77, 13);
+            this.label64.Size = new System.Drawing.Size(66, 13);
             this.label64.TabIndex = 190;
-            this.label64.Text = "Cardiovascular";
+            this.label64.Text = "Neurological";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
             this.label63.Location = new System.Drawing.Point(411, 711);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(60, 13);
+            this.label63.Size = new System.Drawing.Size(58, 13);
             this.label63.TabIndex = 191;
-            this.label63.Text = "Respiratory";
+            this.label63.Text = "Endoctrine";
             // 
             // label62
             // 
@@ -1079,18 +1079,18 @@
             this.label60.AutoSize = true;
             this.label60.Location = new System.Drawing.Point(411, 737);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(79, 13);
+            this.label60.Size = new System.Drawing.Size(74, 13);
             this.label60.TabIndex = 196;
-            this.label60.Text = "Gastrointestinal";
+            this.label60.Text = "Hematological";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
             this.label59.Location = new System.Drawing.Point(411, 763);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(69, 13);
+            this.label59.Size = new System.Drawing.Size(38, 13);
             this.label59.TabIndex = 197;
-            this.label59.Text = "Genitourinary";
+            this.label59.Text = "Others";
             // 
             // textBox38
             // 
@@ -1232,12 +1232,12 @@
             this.panel2.Controls.Add(this.textBox43);
             this.panel2.Controls.Add(this.label82);
             this.panel2.Controls.Add(this.label81);
-            this.panel2.Controls.Add(this.textBox42);
-            this.panel2.Controls.Add(this.textBox41);
-            this.panel2.Controls.Add(this.textBox40);
-            this.panel2.Controls.Add(this.textBox39);
-            this.panel2.Controls.Add(this.textBox32);
-            this.panel2.Controls.Add(this.textBox31);
+            this.panel2.Controls.Add(this.hospitilizationsBox);
+            this.panel2.Controls.Add(this.surgeriesBox);
+            this.panel2.Controls.Add(this.presentBox2);
+            this.panel2.Controls.Add(this.presentBox1);
+            this.panel2.Controls.Add(this.pastBox);
+            this.panel2.Controls.Add(this.childBox);
             this.panel2.Controls.Add(this.label80);
             this.panel2.Controls.Add(this.label75);
             this.panel2.Controls.Add(this.label76);
@@ -1247,13 +1247,13 @@
             this.panel2.Controls.Add(this.label74);
             this.panel2.Controls.Add(this.label73);
             this.panel2.Controls.Add(this.label72);
-            this.panel2.Controls.Add(this.textBox30);
+            this.panel2.Controls.Add(this.lastingBox);
             this.panel2.Controls.Add(this.label71);
             this.panel2.Controls.Add(this.label70);
             this.panel2.Controls.Add(this.panel31);
-            this.panel2.Controls.Add(this.textBox29);
+            this.panel2.Controls.Add(this.alcoholBox);
             this.panel2.Controls.Add(this.label69);
-            this.panel2.Controls.Add(this.textBox28);
+            this.panel2.Controls.Add(this.smokeBox);
             this.panel2.Controls.Add(this.label68);
             this.panel2.Controls.Add(this.label67);
             this.panel2.Controls.Add(this.label52);
@@ -1261,7 +1261,7 @@
             this.panel2.Controls.Add(this.label54);
             this.panel2.Controls.Add(this.panel21);
             this.panel2.Controls.Add(this.panel22);
-            this.panel2.Controls.Add(this.textBox27);
+            this.panel2.Controls.Add(this.menstrualBox);
             this.panel2.Controls.Add(this.label55);
             this.panel2.Controls.Add(this.label56);
             this.panel2.Controls.Add(this.label57);
@@ -1315,7 +1315,7 @@
             this.panel2.Controls.Add(this.panel16);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.textBox20);
+            this.panel2.Controls.Add(this.othersBox);
             this.panel2.Controls.Add(this.label31);
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.label34);
@@ -2308,59 +2308,59 @@
             this.label81.TabIndex = 245;
             this.label81.Text = "V. PHYSICAL EXAMINATION";
             // 
-            // textBox42
+            // hospitilizationsBox
             // 
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox42.Location = new System.Drawing.Point(118, 181);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(547, 20);
-            this.textBox42.TabIndex = 244;
+            this.hospitilizationsBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hospitilizationsBox.Location = new System.Drawing.Point(118, 181);
+            this.hospitilizationsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.hospitilizationsBox.Name = "hospitilizationsBox";
+            this.hospitilizationsBox.Size = new System.Drawing.Size(547, 20);
+            this.hospitilizationsBox.TabIndex = 244;
             // 
-            // textBox41
+            // surgeriesBox
             // 
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox41.Location = new System.Drawing.Point(118, 157);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(547, 20);
-            this.textBox41.TabIndex = 243;
+            this.surgeriesBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.surgeriesBox.Location = new System.Drawing.Point(118, 157);
+            this.surgeriesBox.Margin = new System.Windows.Forms.Padding(2);
+            this.surgeriesBox.Name = "surgeriesBox";
+            this.surgeriesBox.Size = new System.Drawing.Size(547, 20);
+            this.surgeriesBox.TabIndex = 243;
             // 
-            // textBox40
+            // presentBox2
             // 
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox40.Location = new System.Drawing.Point(469, 131);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(196, 20);
-            this.textBox40.TabIndex = 242;
+            this.presentBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.presentBox2.Location = new System.Drawing.Point(469, 131);
+            this.presentBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.presentBox2.Name = "presentBox2";
+            this.presentBox2.Size = new System.Drawing.Size(196, 20);
+            this.presentBox2.TabIndex = 242;
             // 
-            // textBox39
+            // presentBox1
             // 
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox39.Location = new System.Drawing.Point(118, 131);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(263, 20);
-            this.textBox39.TabIndex = 241;
+            this.presentBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.presentBox1.Location = new System.Drawing.Point(118, 131);
+            this.presentBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.presentBox1.Name = "presentBox1";
+            this.presentBox1.Size = new System.Drawing.Size(263, 20);
+            this.presentBox1.TabIndex = 241;
             // 
-            // textBox32
+            // pastBox
             // 
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox32.Location = new System.Drawing.Point(118, 105);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(547, 20);
-            this.textBox32.TabIndex = 240;
+            this.pastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pastBox.Location = new System.Drawing.Point(118, 105);
+            this.pastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pastBox.Name = "pastBox";
+            this.pastBox.Size = new System.Drawing.Size(547, 20);
+            this.pastBox.TabIndex = 240;
             // 
-            // textBox31
+            // childBox
             // 
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox31.Location = new System.Drawing.Point(118, 79);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(547, 20);
-            this.textBox31.TabIndex = 239;
+            this.childBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.childBox.Location = new System.Drawing.Point(118, 79);
+            this.childBox.Margin = new System.Windows.Forms.Padding(2);
+            this.childBox.Name = "childBox";
+            this.childBox.Size = new System.Drawing.Size(547, 20);
+            this.childBox.TabIndex = 239;
             // 
             // label80
             // 
@@ -2444,14 +2444,14 @@
             this.label72.TabIndex = 230;
             this.label72.Text = "Lasting:";
             // 
-            // textBox30
+            // lastingBox
             // 
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox30.Location = new System.Drawing.Point(530, 360);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(70, 20);
-            this.textBox30.TabIndex = 229;
+            this.lastingBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastingBox.Location = new System.Drawing.Point(530, 360);
+            this.lastingBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastingBox.Name = "lastingBox";
+            this.lastingBox.Size = new System.Drawing.Size(70, 20);
+            this.lastingBox.TabIndex = 229;
             // 
             // label71
             // 
@@ -2474,43 +2474,43 @@
             // panel31
             // 
             this.panel31.AutoSize = true;
-            this.panel31.Controls.Add(this.radioButton55);
-            this.panel31.Controls.Add(this.radioButton56);
+            this.panel31.Controls.Add(this.pregnantY);
+            this.panel31.Controls.Add(this.pregnantN);
             this.panel31.Location = new System.Drawing.Point(334, 383);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(99, 23);
             this.panel31.TabIndex = 226;
             // 
-            // radioButton55
+            // pregnantY
             // 
-            this.radioButton55.AutoSize = true;
-            this.radioButton55.Location = new System.Drawing.Point(3, 3);
-            this.radioButton55.Name = "radioButton55";
-            this.radioButton55.Size = new System.Drawing.Size(46, 17);
-            this.radioButton55.TabIndex = 97;
-            this.radioButton55.Text = "YES";
-            this.radioButton55.UseVisualStyleBackColor = true;
+            this.pregnantY.AutoSize = true;
+            this.pregnantY.Location = new System.Drawing.Point(3, 3);
+            this.pregnantY.Name = "pregnantY";
+            this.pregnantY.Size = new System.Drawing.Size(46, 17);
+            this.pregnantY.TabIndex = 97;
+            this.pregnantY.Text = "YES";
+            this.pregnantY.UseVisualStyleBackColor = true;
             // 
-            // radioButton56
+            // pregnantN
             // 
-            this.radioButton56.AutoSize = true;
-            this.radioButton56.Checked = true;
-            this.radioButton56.Location = new System.Drawing.Point(55, 3);
-            this.radioButton56.Name = "radioButton56";
-            this.radioButton56.Size = new System.Drawing.Size(41, 17);
-            this.radioButton56.TabIndex = 98;
-            this.radioButton56.TabStop = true;
-            this.radioButton56.Text = "NO";
-            this.radioButton56.UseVisualStyleBackColor = true;
+            this.pregnantN.AutoSize = true;
+            this.pregnantN.Checked = true;
+            this.pregnantN.Location = new System.Drawing.Point(55, 3);
+            this.pregnantN.Name = "pregnantN";
+            this.pregnantN.Size = new System.Drawing.Size(41, 17);
+            this.pregnantN.TabIndex = 98;
+            this.pregnantN.TabStop = true;
+            this.pregnantN.Text = "NO";
+            this.pregnantN.UseVisualStyleBackColor = true;
             // 
-            // textBox29
+            // alcoholBox
             // 
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox29.Location = new System.Drawing.Point(364, 286);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(60, 20);
-            this.textBox29.TabIndex = 225;
+            this.alcoholBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.alcoholBox.Location = new System.Drawing.Point(364, 286);
+            this.alcoholBox.Margin = new System.Windows.Forms.Padding(2);
+            this.alcoholBox.Name = "alcoholBox";
+            this.alcoholBox.Size = new System.Drawing.Size(60, 20);
+            this.alcoholBox.TabIndex = 225;
             // 
             // label69
             // 
@@ -2521,14 +2521,14 @@
             this.label69.TabIndex = 224;
             this.label69.Text = "bottle per";
             // 
-            // textBox28
+            // smokeBox
             // 
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox28.Location = new System.Drawing.Point(364, 257);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(60, 20);
-            this.textBox28.TabIndex = 223;
+            this.smokeBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.smokeBox.Location = new System.Drawing.Point(364, 257);
+            this.smokeBox.Margin = new System.Windows.Forms.Padding(2);
+            this.smokeBox.Name = "smokeBox";
+            this.smokeBox.Size = new System.Drawing.Size(60, 20);
+            this.smokeBox.TabIndex = 223;
             // 
             // label68
             // 
@@ -2580,75 +2580,75 @@
             // panel21
             // 
             this.panel21.AutoSize = true;
-            this.panel21.Controls.Add(this.radioButton35);
-            this.panel21.Controls.Add(this.radioButton36);
+            this.panel21.Controls.Add(this.alcoholY);
+            this.panel21.Controls.Add(this.alcoholN);
             this.panel21.Location = new System.Drawing.Point(210, 283);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(99, 23);
             this.panel21.TabIndex = 217;
             // 
-            // radioButton35
+            // alcoholY
             // 
-            this.radioButton35.AutoSize = true;
-            this.radioButton35.Location = new System.Drawing.Point(3, 3);
-            this.radioButton35.Name = "radioButton35";
-            this.radioButton35.Size = new System.Drawing.Size(46, 17);
-            this.radioButton35.TabIndex = 97;
-            this.radioButton35.TabStop = true;
-            this.radioButton35.Text = "YES";
-            this.radioButton35.UseVisualStyleBackColor = true;
+            this.alcoholY.AutoSize = true;
+            this.alcoholY.Location = new System.Drawing.Point(3, 3);
+            this.alcoholY.Name = "alcoholY";
+            this.alcoholY.Size = new System.Drawing.Size(46, 17);
+            this.alcoholY.TabIndex = 97;
+            this.alcoholY.TabStop = true;
+            this.alcoholY.Text = "YES";
+            this.alcoholY.UseVisualStyleBackColor = true;
             // 
-            // radioButton36
+            // alcoholN
             // 
-            this.radioButton36.AutoSize = true;
-            this.radioButton36.Location = new System.Drawing.Point(55, 3);
-            this.radioButton36.Name = "radioButton36";
-            this.radioButton36.Size = new System.Drawing.Size(41, 17);
-            this.radioButton36.TabIndex = 98;
-            this.radioButton36.TabStop = true;
-            this.radioButton36.Text = "NO";
-            this.radioButton36.UseVisualStyleBackColor = true;
+            this.alcoholN.AutoSize = true;
+            this.alcoholN.Location = new System.Drawing.Point(55, 3);
+            this.alcoholN.Name = "alcoholN";
+            this.alcoholN.Size = new System.Drawing.Size(41, 17);
+            this.alcoholN.TabIndex = 98;
+            this.alcoholN.TabStop = true;
+            this.alcoholN.Text = "NO";
+            this.alcoholN.UseVisualStyleBackColor = true;
             // 
             // panel22
             // 
             this.panel22.AutoSize = true;
-            this.panel22.Controls.Add(this.radioButton37);
-            this.panel22.Controls.Add(this.radioButton38);
+            this.panel22.Controls.Add(this.smokeY);
+            this.panel22.Controls.Add(this.smokeN);
             this.panel22.Location = new System.Drawing.Point(210, 257);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(99, 23);
             this.panel22.TabIndex = 216;
             // 
-            // radioButton37
+            // smokeY
             // 
-            this.radioButton37.AutoSize = true;
-            this.radioButton37.Location = new System.Drawing.Point(3, 3);
-            this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(46, 17);
-            this.radioButton37.TabIndex = 97;
-            this.radioButton37.TabStop = true;
-            this.radioButton37.Text = "YES";
-            this.radioButton37.UseVisualStyleBackColor = true;
+            this.smokeY.AutoSize = true;
+            this.smokeY.Location = new System.Drawing.Point(3, 3);
+            this.smokeY.Name = "smokeY";
+            this.smokeY.Size = new System.Drawing.Size(46, 17);
+            this.smokeY.TabIndex = 97;
+            this.smokeY.TabStop = true;
+            this.smokeY.Text = "YES";
+            this.smokeY.UseVisualStyleBackColor = true;
             // 
-            // radioButton38
+            // smokeN
             // 
-            this.radioButton38.AutoSize = true;
-            this.radioButton38.Location = new System.Drawing.Point(55, 3);
-            this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(41, 17);
-            this.radioButton38.TabIndex = 98;
-            this.radioButton38.TabStop = true;
-            this.radioButton38.Text = "NO";
-            this.radioButton38.UseVisualStyleBackColor = true;
+            this.smokeN.AutoSize = true;
+            this.smokeN.Location = new System.Drawing.Point(55, 3);
+            this.smokeN.Name = "smokeN";
+            this.smokeN.Size = new System.Drawing.Size(41, 17);
+            this.smokeN.TabIndex = 98;
+            this.smokeN.TabStop = true;
+            this.smokeN.Text = "NO";
+            this.smokeN.UseVisualStyleBackColor = true;
             // 
-            // textBox27
+            // menstrualBox
             // 
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox27.Location = new System.Drawing.Point(325, 360);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(150, 20);
-            this.textBox27.TabIndex = 215;
+            this.menstrualBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.menstrualBox.Location = new System.Drawing.Point(325, 360);
+            this.menstrualBox.Margin = new System.Windows.Forms.Padding(2);
+            this.menstrualBox.Name = "menstrualBox";
+            this.menstrualBox.Size = new System.Drawing.Size(150, 20);
+            this.menstrualBox.TabIndex = 215;
             // 
             // label55
             // 
@@ -2680,66 +2680,66 @@
             // panel23
             // 
             this.panel23.AutoSize = true;
-            this.panel23.Controls.Add(this.radioButton39);
-            this.panel23.Controls.Add(this.radioButton40);
+            this.panel23.Controls.Add(this.allergyY);
+            this.panel23.Controls.Add(this.allergyN);
             this.panel23.Location = new System.Drawing.Point(210, 335);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(99, 23);
             this.panel23.TabIndex = 211;
             // 
-            // radioButton39
+            // allergyY
             // 
-            this.radioButton39.AutoSize = true;
-            this.radioButton39.Location = new System.Drawing.Point(3, 3);
-            this.radioButton39.Name = "radioButton39";
-            this.radioButton39.Size = new System.Drawing.Size(46, 17);
-            this.radioButton39.TabIndex = 97;
-            this.radioButton39.TabStop = true;
-            this.radioButton39.Text = "YES";
-            this.radioButton39.UseVisualStyleBackColor = true;
+            this.allergyY.AutoSize = true;
+            this.allergyY.Location = new System.Drawing.Point(3, 3);
+            this.allergyY.Name = "allergyY";
+            this.allergyY.Size = new System.Drawing.Size(46, 17);
+            this.allergyY.TabIndex = 97;
+            this.allergyY.TabStop = true;
+            this.allergyY.Text = "YES";
+            this.allergyY.UseVisualStyleBackColor = true;
             // 
-            // radioButton40
+            // allergyN
             // 
-            this.radioButton40.AutoSize = true;
-            this.radioButton40.Location = new System.Drawing.Point(55, 3);
-            this.radioButton40.Name = "radioButton40";
-            this.radioButton40.Size = new System.Drawing.Size(41, 17);
-            this.radioButton40.TabIndex = 98;
-            this.radioButton40.TabStop = true;
-            this.radioButton40.Text = "NO";
-            this.radioButton40.UseVisualStyleBackColor = true;
+            this.allergyN.AutoSize = true;
+            this.allergyN.Location = new System.Drawing.Point(55, 3);
+            this.allergyN.Name = "allergyN";
+            this.allergyN.Size = new System.Drawing.Size(41, 17);
+            this.allergyN.TabIndex = 98;
+            this.allergyN.TabStop = true;
+            this.allergyN.Text = "NO";
+            this.allergyN.UseVisualStyleBackColor = true;
             // 
             // panel24
             // 
             this.panel24.AutoSize = true;
-            this.panel24.Controls.Add(this.radioButton41);
-            this.panel24.Controls.Add(this.radioButton42);
+            this.panel24.Controls.Add(this.drugY);
+            this.panel24.Controls.Add(this.drugN);
             this.panel24.Location = new System.Drawing.Point(210, 309);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(99, 23);
             this.panel24.TabIndex = 210;
             // 
-            // radioButton41
+            // drugY
             // 
-            this.radioButton41.AutoSize = true;
-            this.radioButton41.Location = new System.Drawing.Point(3, 3);
-            this.radioButton41.Name = "radioButton41";
-            this.radioButton41.Size = new System.Drawing.Size(46, 17);
-            this.radioButton41.TabIndex = 97;
-            this.radioButton41.TabStop = true;
-            this.radioButton41.Text = "YES";
-            this.radioButton41.UseVisualStyleBackColor = true;
+            this.drugY.AutoSize = true;
+            this.drugY.Location = new System.Drawing.Point(3, 3);
+            this.drugY.Name = "drugY";
+            this.drugY.Size = new System.Drawing.Size(46, 17);
+            this.drugY.TabIndex = 97;
+            this.drugY.TabStop = true;
+            this.drugY.Text = "YES";
+            this.drugY.UseVisualStyleBackColor = true;
             // 
-            // radioButton42
+            // drugN
             // 
-            this.radioButton42.AutoSize = true;
-            this.radioButton42.Location = new System.Drawing.Point(55, 3);
-            this.radioButton42.Name = "radioButton42";
-            this.radioButton42.Size = new System.Drawing.Size(41, 17);
-            this.radioButton42.TabIndex = 98;
-            this.radioButton42.TabStop = true;
-            this.radioButton42.Text = "NO";
-            this.radioButton42.UseVisualStyleBackColor = true;
+            this.drugN.AutoSize = true;
+            this.drugN.Location = new System.Drawing.Point(55, 3);
+            this.drugN.Name = "drugN";
+            this.drugN.Size = new System.Drawing.Size(41, 17);
+            this.drugN.TabIndex = 98;
+            this.drugN.TabStop = true;
+            this.drugN.Text = "NO";
+            this.drugN.UseVisualStyleBackColor = true;
             // 
             // label51
             // 
@@ -2772,66 +2772,66 @@
             // panel19
             // 
             this.panel19.AutoSize = true;
-            this.panel19.Controls.Add(this.radioButton31);
-            this.panel19.Controls.Add(this.radioButton32);
+            this.panel19.Controls.Add(this.heartY);
+            this.panel19.Controls.Add(this.heartN);
             this.panel19.Location = new System.Drawing.Point(210, 472);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(99, 23);
             this.panel19.TabIndex = 206;
             // 
-            // radioButton31
+            // heartY
             // 
-            this.radioButton31.AutoSize = true;
-            this.radioButton31.Location = new System.Drawing.Point(3, 3);
-            this.radioButton31.Name = "radioButton31";
-            this.radioButton31.Size = new System.Drawing.Size(46, 17);
-            this.radioButton31.TabIndex = 97;
-            this.radioButton31.TabStop = true;
-            this.radioButton31.Text = "YES";
-            this.radioButton31.UseVisualStyleBackColor = true;
+            this.heartY.AutoSize = true;
+            this.heartY.Location = new System.Drawing.Point(3, 3);
+            this.heartY.Name = "heartY";
+            this.heartY.Size = new System.Drawing.Size(46, 17);
+            this.heartY.TabIndex = 97;
+            this.heartY.TabStop = true;
+            this.heartY.Text = "YES";
+            this.heartY.UseVisualStyleBackColor = true;
             // 
-            // radioButton32
+            // heartN
             // 
-            this.radioButton32.AutoSize = true;
-            this.radioButton32.Location = new System.Drawing.Point(55, 3);
-            this.radioButton32.Name = "radioButton32";
-            this.radioButton32.Size = new System.Drawing.Size(41, 17);
-            this.radioButton32.TabIndex = 98;
-            this.radioButton32.TabStop = true;
-            this.radioButton32.Text = "NO";
-            this.radioButton32.UseVisualStyleBackColor = true;
+            this.heartN.AutoSize = true;
+            this.heartN.Location = new System.Drawing.Point(55, 3);
+            this.heartN.Name = "heartN";
+            this.heartN.Size = new System.Drawing.Size(41, 17);
+            this.heartN.TabIndex = 98;
+            this.heartN.TabStop = true;
+            this.heartN.Text = "NO";
+            this.heartN.UseVisualStyleBackColor = true;
             // 
             // panel20
             // 
             this.panel20.AutoSize = true;
-            this.panel20.Controls.Add(this.radioButton33);
-            this.panel20.Controls.Add(this.radioButton34);
+            this.panel20.Controls.Add(this.hypertensionY);
+            this.panel20.Controls.Add(this.hypertensionN);
             this.panel20.Location = new System.Drawing.Point(210, 446);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(99, 23);
             this.panel20.TabIndex = 205;
             // 
-            // radioButton33
+            // hypertensionY
             // 
-            this.radioButton33.AutoSize = true;
-            this.radioButton33.Location = new System.Drawing.Point(3, 3);
-            this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(46, 17);
-            this.radioButton33.TabIndex = 97;
-            this.radioButton33.TabStop = true;
-            this.radioButton33.Text = "YES";
-            this.radioButton33.UseVisualStyleBackColor = true;
+            this.hypertensionY.AutoSize = true;
+            this.hypertensionY.Location = new System.Drawing.Point(3, 3);
+            this.hypertensionY.Name = "hypertensionY";
+            this.hypertensionY.Size = new System.Drawing.Size(46, 17);
+            this.hypertensionY.TabIndex = 97;
+            this.hypertensionY.TabStop = true;
+            this.hypertensionY.Text = "YES";
+            this.hypertensionY.UseVisualStyleBackColor = true;
             // 
-            // radioButton34
+            // hypertensionN
             // 
-            this.radioButton34.AutoSize = true;
-            this.radioButton34.Location = new System.Drawing.Point(55, 3);
-            this.radioButton34.Name = "radioButton34";
-            this.radioButton34.Size = new System.Drawing.Size(41, 17);
-            this.radioButton34.TabIndex = 98;
-            this.radioButton34.TabStop = true;
-            this.radioButton34.Text = "NO";
-            this.radioButton34.UseVisualStyleBackColor = true;
+            this.hypertensionN.AutoSize = true;
+            this.hypertensionN.Location = new System.Drawing.Point(55, 3);
+            this.hypertensionN.Name = "hypertensionN";
+            this.hypertensionN.Size = new System.Drawing.Size(41, 17);
+            this.hypertensionN.TabIndex = 98;
+            this.hypertensionN.TabStop = true;
+            this.hypertensionN.Text = "NO";
+            this.hypertensionN.UseVisualStyleBackColor = true;
             // 
             // Label2
             // 
@@ -2888,45 +2888,45 @@
             this.Label6.TabIndex = 26;
             this.Label6.Text = "M.I";
             // 
-            // TextBox1
+            // lastBox
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Enabled = false;
-            this.TextBox1.Location = new System.Drawing.Point(63, 73);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 27;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Enabled = false;
+            this.lastBox.Location = new System.Drawing.Point(63, 73);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.TabIndex = 27;
             // 
-            // TextBox2
+            // firstBox
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Enabled = false;
-            this.TextBox2.Location = new System.Drawing.Point(174, 73);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 28;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Enabled = false;
+            this.firstBox.Location = new System.Drawing.Point(174, 73);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(101, 20);
+            this.firstBox.TabIndex = 28;
             // 
-            // TextBox3
+            // middleBox
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Enabled = false;
-            this.TextBox3.Location = new System.Drawing.Point(302, 74);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 29;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Enabled = false;
+            this.middleBox.Location = new System.Drawing.Point(302, 74);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 29;
             // 
-            // TextBox4
+            // idBox
             // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Enabled = false;
-            this.TextBox4.Location = new System.Drawing.Point(81, 22);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 30;
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(81, 22);
+            this.idBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(195, 20);
+            this.idBox.TabIndex = 30;
             // 
             // Label7
             // 
@@ -2939,27 +2939,27 @@
             this.Label7.TabIndex = 31;
             this.Label7.Text = "Age";
             // 
-            // TextBox5
+            // addressBox
             // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.Enabled = false;
-            this.TextBox5.Location = new System.Drawing.Point(203, 130);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 32;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Enabled = false;
+            this.addressBox.Location = new System.Drawing.Point(203, 130);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 54);
+            this.addressBox.TabIndex = 32;
             // 
-            // TextBox6
+            // ageBox
             // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.Enabled = false;
-            this.TextBox6.Location = new System.Drawing.Point(63, 129);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 33;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Enabled = false;
+            this.ageBox.Location = new System.Drawing.Point(63, 129);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 33;
             // 
             // Label8
             // 
@@ -2983,15 +2983,15 @@
             this.Label9.TabIndex = 35;
             this.Label9.Text = "Date";
             // 
-            // TextBox7
+            // dateBox
             // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(544, 21);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(97, 20);
-            this.TextBox7.TabIndex = 36;
+            this.dateBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dateBox.Enabled = false;
+            this.dateBox.Location = new System.Drawing.Point(544, 21);
+            this.dateBox.Margin = new System.Windows.Forms.Padding(2);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(97, 20);
+            this.dateBox.TabIndex = 36;
             // 
             // Label10
             // 
@@ -3004,25 +3004,25 @@
             this.Label10.TabIndex = 38;
             this.Label10.Text = "Package";
             // 
-            // ComboBox1
+            // packageBox
             // 
-            this.ComboBox1.Enabled = false;
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(502, 68);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 39;
+            this.packageBox.Enabled = false;
+            this.packageBox.FormattingEnabled = true;
+            this.packageBox.Location = new System.Drawing.Point(502, 68);
+            this.packageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.packageBox.Name = "packageBox";
+            this.packageBox.Size = new System.Drawing.Size(140, 21);
+            this.packageBox.TabIndex = 39;
             // 
-            // PictureBox1
+            // pictureBox
             // 
-            this.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox1.Location = new System.Drawing.Point(673, 41);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(102, 102);
-            this.PictureBox1.TabIndex = 40;
-            this.PictureBox1.TabStop = false;
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox.Location = new System.Drawing.Point(673, 41);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(102, 102);
+            this.pictureBox.TabIndex = 40;
+            this.pictureBox.TabStop = false;
             // 
             // Label11
             // 
@@ -3035,15 +3035,15 @@
             this.Label11.TabIndex = 42;
             this.Label11.Text = "Company";
             // 
-            // ComboBox2
+            // companyBox
             // 
-            this.ComboBox2.Enabled = false;
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(502, 109);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 43;
+            this.companyBox.Enabled = false;
+            this.companyBox.FormattingEnabled = true;
+            this.companyBox.Location = new System.Drawing.Point(502, 109);
+            this.companyBox.Margin = new System.Windows.Forms.Padding(2);
+            this.companyBox.Name = "companyBox";
+            this.companyBox.Size = new System.Drawing.Size(140, 21);
+            this.companyBox.TabIndex = 43;
             // 
             // label113
             // 
@@ -3056,36 +3056,36 @@
             this.label113.TabIndex = 48;
             this.label113.Text = "Birth Date:";
             // 
-            // textBox65
+            // birthBox
             // 
-            this.textBox65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox65.Enabled = false;
-            this.textBox65.Location = new System.Drawing.Point(93, 169);
-            this.textBox65.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox65.MaxLength = 3;
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(87, 20);
-            this.textBox65.TabIndex = 49;
+            this.birthBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.birthBox.Enabled = false;
+            this.birthBox.Location = new System.Drawing.Point(93, 169);
+            this.birthBox.Margin = new System.Windows.Forms.Padding(2);
+            this.birthBox.MaxLength = 3;
+            this.birthBox.Name = "birthBox";
+            this.birthBox.Size = new System.Drawing.Size(87, 20);
+            this.birthBox.TabIndex = 49;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox65);
+            this.panel1.Controls.Add(this.birthBox);
             this.panel1.Controls.Add(this.label113);
-            this.panel1.Controls.Add(this.ComboBox2);
+            this.panel1.Controls.Add(this.companyBox);
             this.panel1.Controls.Add(this.Label11);
-            this.panel1.Controls.Add(this.PictureBox1);
-            this.panel1.Controls.Add(this.ComboBox1);
+            this.panel1.Controls.Add(this.pictureBox);
+            this.panel1.Controls.Add(this.packageBox);
             this.panel1.Controls.Add(this.Label10);
-            this.panel1.Controls.Add(this.TextBox7);
+            this.panel1.Controls.Add(this.dateBox);
             this.panel1.Controls.Add(this.Label9);
             this.panel1.Controls.Add(this.Label8);
-            this.panel1.Controls.Add(this.TextBox6);
-            this.panel1.Controls.Add(this.TextBox5);
+            this.panel1.Controls.Add(this.ageBox);
+            this.panel1.Controls.Add(this.addressBox);
             this.panel1.Controls.Add(this.Label7);
-            this.panel1.Controls.Add(this.TextBox4);
-            this.panel1.Controls.Add(this.TextBox3);
-            this.panel1.Controls.Add(this.TextBox2);
-            this.panel1.Controls.Add(this.TextBox1);
+            this.panel1.Controls.Add(this.idBox);
+            this.panel1.Controls.Add(this.middleBox);
+            this.panel1.Controls.Add(this.firstBox);
+            this.panel1.Controls.Add(this.lastBox);
             this.panel1.Controls.Add(this.Label6);
             this.panel1.Controls.Add(this.Label5);
             this.panel1.Controls.Add(this.Label4);
@@ -3185,7 +3185,7 @@
             this.panel19.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -3200,15 +3200,15 @@
         private System.Windows.Forms.Label label13;
         internal System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton kidneyY;
+        private System.Windows.Forms.RadioButton kidneyN;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton diabetesY;
+        private System.Windows.Forms.RadioButton diabetesN;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label31;
-        internal System.Windows.Forms.TextBox textBox20;
+        internal System.Windows.Forms.TextBox othersBox;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Panel panel16;
@@ -3281,56 +3281,56 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.RadioButton radioButton35;
-        private System.Windows.Forms.RadioButton radioButton36;
+        private System.Windows.Forms.RadioButton alcoholY;
+        private System.Windows.Forms.RadioButton alcoholN;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.RadioButton radioButton37;
-        private System.Windows.Forms.RadioButton radioButton38;
-        internal System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.RadioButton smokeY;
+        private System.Windows.Forms.RadioButton smokeN;
+        internal System.Windows.Forms.TextBox menstrualBox;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.RadioButton radioButton39;
-        private System.Windows.Forms.RadioButton radioButton40;
+        private System.Windows.Forms.RadioButton allergyY;
+        private System.Windows.Forms.RadioButton allergyN;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.RadioButton radioButton41;
-        private System.Windows.Forms.RadioButton radioButton42;
+        private System.Windows.Forms.RadioButton drugY;
+        private System.Windows.Forms.RadioButton drugN;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.RadioButton radioButton31;
-        private System.Windows.Forms.RadioButton radioButton32;
+        private System.Windows.Forms.RadioButton heartY;
+        private System.Windows.Forms.RadioButton heartN;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.RadioButton radioButton33;
-        private System.Windows.Forms.RadioButton radioButton34;
-        internal System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.RadioButton hypertensionY;
+        private System.Windows.Forms.RadioButton hypertensionN;
+        internal System.Windows.Forms.TextBox smokeBox;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label67;
-        internal System.Windows.Forms.TextBox textBox29;
+        internal System.Windows.Forms.TextBox alcoholBox;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label72;
-        internal System.Windows.Forms.TextBox textBox30;
+        internal System.Windows.Forms.TextBox lastingBox;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.RadioButton radioButton55;
-        private System.Windows.Forms.RadioButton radioButton56;
+        private System.Windows.Forms.RadioButton pregnantY;
+        private System.Windows.Forms.RadioButton pregnantN;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label74;
-        internal System.Windows.Forms.TextBox textBox40;
-        internal System.Windows.Forms.TextBox textBox39;
-        internal System.Windows.Forms.TextBox textBox32;
-        internal System.Windows.Forms.TextBox textBox31;
+        internal System.Windows.Forms.TextBox presentBox2;
+        internal System.Windows.Forms.TextBox presentBox1;
+        internal System.Windows.Forms.TextBox pastBox;
+        internal System.Windows.Forms.TextBox childBox;
         private System.Windows.Forms.Label label80;
-        internal System.Windows.Forms.TextBox textBox42;
-        internal System.Windows.Forms.TextBox textBox41;
+        internal System.Windows.Forms.TextBox hospitilizationsBox;
+        internal System.Windows.Forms.TextBox surgeriesBox;
         internal System.Windows.Forms.TextBox textBox46;
         private System.Windows.Forms.Label label85;
         internal System.Windows.Forms.TextBox textBox47;
@@ -3436,23 +3436,23 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.TextBox TextBox1;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox4;
+        internal System.Windows.Forms.TextBox lastBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.TextBox idBox;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox TextBox5;
-        internal System.Windows.Forms.TextBox TextBox6;
+        internal System.Windows.Forms.TextBox addressBox;
+        internal System.Windows.Forms.TextBox ageBox;
         internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.TextBox TextBox7;
+        internal System.Windows.Forms.TextBox dateBox;
         internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.ComboBox ComboBox1;
-        internal System.Windows.Forms.PictureBox PictureBox1;
+        internal System.Windows.Forms.ComboBox packageBox;
+        internal System.Windows.Forms.PictureBox pictureBox;
         internal System.Windows.Forms.Label Label11;
-        internal System.Windows.Forms.ComboBox ComboBox2;
+        internal System.Windows.Forms.ComboBox companyBox;
         internal System.Windows.Forms.Label label113;
-        internal System.Windows.Forms.TextBox textBox65;
+        internal System.Windows.Forms.TextBox birthBox;
         private System.Windows.Forms.Panel panel1;
     }
 }

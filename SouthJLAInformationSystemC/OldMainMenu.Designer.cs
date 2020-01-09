@@ -459,7 +459,6 @@
             this.Label14.Size = new System.Drawing.Size(128, 13);
             this.Label14.TabIndex = 28;
             this.Label14.Text = "Urinalysis and Stool Exam";
-            this.Label14.Click += new System.EventHandler(this.Label14_Click);
             // 
             // Label13
             // 

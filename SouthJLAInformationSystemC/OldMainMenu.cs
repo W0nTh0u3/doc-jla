@@ -13,6 +13,9 @@ namespace SouthJLAInformationSystemC
 {
     public partial class OldMainMenu : Form
     {
+        public string uniquePass = "";
+        public string idPass = "";
+        public string userClass = "";
         public OldMainMenu()
         {
             InitializeComponent();
@@ -61,11 +64,7 @@ namespace SouthJLAInformationSystemC
             
         }
 
-        private void Label14_Click(object sender, EventArgs e)
-        {
-            UrinStoolForm urinalysisForm = new UrinStoolForm();
-            urinalysisForm.Show();
-        }
+      
 
         private void Label15_Click(object sender, EventArgs e)
         {

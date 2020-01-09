@@ -358,7 +358,6 @@ namespace SouthJLAInformationSystemC
         #endregion
 
 
-
         private void searchButton_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
