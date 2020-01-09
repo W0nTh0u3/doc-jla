@@ -171,17 +171,25 @@ namespace SouthJLAInformationSystemC
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
         {
-            CloseChildForm();
-            GenClinicPanel.Show();
-            Button btn = sender as Button;
-            MenuClickedLabel.Text = GeneralClinicBtn.Text;
-            SubMenuLabelClicked.Text = btn.Text;
-            EnableOnlyPatientInfo();
+            try
+            {
+                CloseChildForm();
+                GenClinicPanel.Show();
+                Button btn = sender as Button;
+                MenuClickedLabel.Text = GeneralClinicBtn.Text;
+                SubMenuLabelClicked.Text = btn.Text;
+                EnableOnlyPatientInfo();
 
-            clearAllfields();
+                clearAllfields();
 
-            submit.Text = "Save changes";
-            Console.WriteLine("edit req");
+                submit.Text = "Save changes";
+                Console.WriteLine("edit req");
+            }
+            catch (Exception en)
+            {
+                Console.WriteLine(en.Message);
+            }
+            
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -347,9 +355,18 @@ namespace SouthJLAInformationSystemC
         
         private void CBCClickableLabel_Click(object sender, EventArgs e)
         {
-            CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);
+            try
+            {
+                CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);
 
-            cBC.Show();        
+                cBC.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+                   
         }
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
@@ -365,21 +382,48 @@ namespace SouthJLAInformationSystemC
         }
 
         private void XrayClickableLabel_Click(object sender, EventArgs e)
-        {
-            XrayForm xrayForm = new XrayForm();
-            xrayForm.Show();
+        {            try
+            {
+                XrayForm xrayForm = new XrayForm(uniquePass, idPass, submit.Text);
+
+                xrayForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+            
         }
 
         private void ECGClickableLabel_Click(object sender, EventArgs e)
-        {
-            ECGForm eCGForm = new ECGForm();
-            eCGForm.Show();
+        {            try
+            {
+                ECGForm eCGForm = new ECGForm(uniquePass, idPass, submit.Text);
+
+                eCGForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+            
         }
 
         private void FBSClickableLabel_Click(object sender, EventArgs e)
-        {
-            FBSCholeForm fBSCholeForm = new FBSCholeForm();
-            fBSCholeForm.Show();
+        {            try
+            {
+                FBSCholeForm fBSCholeForm = new FBSCholeForm(uniquePass, idPass, submit.Text);
+
+                fBSCholeForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+            
         }
         
 
@@ -393,17 +437,36 @@ namespace SouthJLAInformationSystemC
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-            SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);            DataTable dt = new DataTable(); //this is creating a virtual table  
-            sdaSearch.Fill(dt);
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);
+                DataTable dt = new DataTable(); //this is creating a virtual table  
+                sdaSearch.Fill(dt);
 
 
-            lastBox.Text = dt.Rows[0][1].ToString();            firstBox.Text = dt.Rows[0][2].ToString();            middleBox.Text = dt.Rows[0][3].ToString();            ageBox.Text = dt.Rows[0][4].ToString();            addressBox.Text = dt.Rows[0][10].ToString();            genderBox.SelectedItem = dt.Rows[0][7].ToString();            civilBox.SelectedItem = dt.Rows[0][8].ToString();
-            uniquePass = dt.Rows[0][19].ToString();
-            idPass = dt.Rows[0][0].ToString();
+                lastBox.Text = dt.Rows[0][1].ToString();
+                firstBox.Text = dt.Rows[0][2].ToString();
+                middleBox.Text = dt.Rows[0][3].ToString();
+                ageBox.Text = dt.Rows[0][4].ToString();
+                addressBox.Text = dt.Rows[0][10].ToString();
+                genderBox.SelectedItem = dt.Rows[0][7].ToString();
+                civilBox.SelectedItem = dt.Rows[0][8].ToString();
+                uniquePass = dt.Rows[0][19].ToString();
+                idPass = dt.Rows[0][0].ToString();
 
-            submit.Text = "Save changes";
-            clearAll.Enabled = true;
+                submit.Text = "Save changes";
+                if (SubMenuLabelClicked.Text == "Enter Results")
+                    submit.Text = "Enter";
+
+                clearAll.Enabled = true;
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No matching record found.");
+                Console.WriteLine(en.Message);
+            }
+            
         }
 
         private void clearAll_Click(object sender, EventArgs e)

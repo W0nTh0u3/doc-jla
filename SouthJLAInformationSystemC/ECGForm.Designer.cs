@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.SubmitCBC = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -59,10 +53,16 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ecgBox = new System.Windows.Forms.RichTextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,65 +96,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 202);
             this.panel1.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Controls.Add(this.label40);
-            this.panel2.Controls.Add(this.label42);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 202);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 298);
-            this.panel2.TabIndex = 8;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(122, 121);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(519, 96);
-            this.richTextBox1.TabIndex = 86;
-            this.richTextBox1.Text = "";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(85, 87);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(91, 18);
-            this.label40.TabIndex = 85;
-            this.label40.Text = "Impression";
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(779, 43);
-            this.label42.TabIndex = 76;
-            this.label42.Text = "ELECTROCARDIOGRAM REPORT";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.SubmitCBC);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 500);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
-            this.panel3.TabIndex = 7;
-            // 
-            // SubmitCBC
-            // 
-            this.SubmitCBC.Location = new System.Drawing.Point(713, 10);
-            this.SubmitCBC.Name = "SubmitCBC";
-            this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
-            this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Verify";
-            this.SubmitCBC.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -412,6 +353,65 @@
             this.Label2.TabIndex = 95;
             this.Label2.Text = "Patient ID";
             // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.ecgBox);
+            this.panel2.Controls.Add(this.label40);
+            this.panel2.Controls.Add(this.label42);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 202);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 298);
+            this.panel2.TabIndex = 8;
+            // 
+            // ecgBox
+            // 
+            this.ecgBox.Location = new System.Drawing.Point(122, 121);
+            this.ecgBox.Name = "ecgBox";
+            this.ecgBox.Size = new System.Drawing.Size(519, 96);
+            this.ecgBox.TabIndex = 86;
+            this.ecgBox.Text = "";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(85, 87);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(91, 18);
+            this.label40.TabIndex = 85;
+            this.label40.Text = "Impression";
+            // 
+            // label42
+            // 
+            this.label42.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(2, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(779, 43);
+            this.label42.TabIndex = 76;
+            this.label42.Text = "ELECTROCARDIOGRAM REPORT";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.SubmitCBC);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 500);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.TabIndex = 7;
+            // 
+            // SubmitCBC
+            // 
+            this.SubmitCBC.Location = new System.Drawing.Point(713, 10);
+            this.SubmitCBC.Name = "SubmitCBC";
+            this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
+            this.SubmitCBC.TabIndex = 0;
+            this.SubmitCBC.Text = "Verify";
+            this.SubmitCBC.UseVisualStyleBackColor = true;
+            // 
             // ECGForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,10 +429,10 @@
             this.Text = "ECG";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,7 +445,7 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button SubmitCBC;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox ecgBox;
         private System.Windows.Forms.TextBox textBox1;
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.TextBox textBox2;

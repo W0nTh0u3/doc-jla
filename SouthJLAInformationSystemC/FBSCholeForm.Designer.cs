@@ -29,22 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.SubmitCBC = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -69,10 +53,26 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.SubmitCBC = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.cholBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.fbsBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,161 +106,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 202);
             this.panel1.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.SubmitCBC);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 460);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 45);
-            this.panel3.TabIndex = 9;
-            // 
-            // SubmitCBC
-            // 
-            this.SubmitCBC.Location = new System.Drawing.Point(713, 10);
-            this.SubmitCBC.Name = "SubmitCBC";
-            this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
-            this.SubmitCBC.TabIndex = 0;
-            this.SubmitCBC.Text = "Verify";
-            this.SubmitCBC.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.label44);
-            this.panel2.Controls.Add(this.label45);
-            this.panel2.Controls.Add(this.textBox17);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 202);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 258);
-            this.panel2.TabIndex = 10;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(626, 145);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(37, 13);
-            this.label43.TabIndex = 28;
-            this.label43.Text = "(0-5.2)";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(469, 145);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(42, 13);
-            this.label44.TabIndex = 27;
-            this.label44.Text = "mmol/L";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(86, 145);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(124, 13);
-            this.label45.TabIndex = 26;
-            this.label45.Text = "TOTAL CHOLESTEROL";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(268, 142);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 25;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(626, 117);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 13);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "(3.89-6.40)";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(469, 117);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(42, 13);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "mmol/L";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(86, 117);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(27, 13);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "FBS";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(268, 114);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 13;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(626, 60);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 13);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Normal Range";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(469, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(31, 13);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Units";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(265, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 13);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Result";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(84, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 13);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Test Name";
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(779, 43);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "BLOOD CHEMISTRY";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
@@ -518,6 +363,161 @@
             this.label56.TabIndex = 95;
             this.label56.Text = "Patient ID";
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.SubmitCBC);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 460);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 45);
+            this.panel3.TabIndex = 9;
+            // 
+            // SubmitCBC
+            // 
+            this.SubmitCBC.Location = new System.Drawing.Point(713, 10);
+            this.SubmitCBC.Name = "SubmitCBC";
+            this.SubmitCBC.Size = new System.Drawing.Size(75, 23);
+            this.SubmitCBC.TabIndex = 0;
+            this.SubmitCBC.Text = "Verify";
+            this.SubmitCBC.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.label43);
+            this.panel2.Controls.Add(this.label44);
+            this.panel2.Controls.Add(this.label45);
+            this.panel2.Controls.Add(this.cholBox);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.fbsBox);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 202);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 258);
+            this.panel2.TabIndex = 10;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(626, 145);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(37, 13);
+            this.label43.TabIndex = 28;
+            this.label43.Text = "(0-5.2)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(469, 145);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(42, 13);
+            this.label44.TabIndex = 27;
+            this.label44.Text = "mmol/L";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(86, 145);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(124, 13);
+            this.label45.TabIndex = 26;
+            this.label45.Text = "TOTAL CHOLESTEROL";
+            // 
+            // cholBox
+            // 
+            this.cholBox.Location = new System.Drawing.Point(268, 142);
+            this.cholBox.Name = "cholBox";
+            this.cholBox.Size = new System.Drawing.Size(100, 20);
+            this.cholBox.TabIndex = 25;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(626, 117);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(58, 13);
+            this.label22.TabIndex = 16;
+            this.label22.Text = "(3.89-6.40)";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(469, 117);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(42, 13);
+            this.label23.TabIndex = 15;
+            this.label23.Text = "mmol/L";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(86, 117);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(27, 13);
+            this.label24.TabIndex = 14;
+            this.label24.Text = "FBS";
+            // 
+            // fbsBox
+            // 
+            this.fbsBox.Location = new System.Drawing.Point(268, 114);
+            this.fbsBox.Name = "fbsBox";
+            this.fbsBox.Size = new System.Drawing.Size(100, 20);
+            this.fbsBox.TabIndex = 13;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(626, 60);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(75, 13);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Normal Range";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(469, 60);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Units";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(265, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(37, 13);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Result";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(84, 60);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Test Name";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(779, 43);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "BLOOD CHEMISTRY";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FBSCholeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,10 +535,10 @@
             this.Text = "FBS, Cholesterol";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -552,11 +552,11 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox cholBox;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox fbsBox;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

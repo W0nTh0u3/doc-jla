@@ -15,7 +15,9 @@ namespace SouthJLAInformationSystemC
         public BillingForm()
         {
             InitializeComponent();
-
+            dateFiledBox.Value = DateTime.Now;
         }
+
+     
     }
 }
