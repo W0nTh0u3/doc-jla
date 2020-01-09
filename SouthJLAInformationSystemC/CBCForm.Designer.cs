@@ -29,6 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.FormNBox = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.Label11 = new System.Windows.Forms.Label();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.Label10 = new System.Windows.Forms.Label();
+            this.TextBox7 = new System.Windows.Forms.TextBox();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.ageBox = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.lastBox = new System.Windows.Forms.TextBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -70,39 +94,15 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
-            this.lastBox = new System.Windows.Forms.TextBox();
-            this.firstBox = new System.Windows.Forms.TextBox();
-            this.middleBox = new System.Windows.Forms.TextBox();
-            this.idBox = new System.Windows.Forms.TextBox();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.ageBox = new System.Windows.Forms.TextBox();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
-            this.Label10 = new System.Windows.Forms.Label();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Label11 = new System.Windows.Forms.Label();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.addressBox = new System.Windows.Forms.TextBox();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.FormNBox);
             this.panel1.Controls.Add(this.label42);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label41);
@@ -131,6 +131,262 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 202);
             this.panel1.TabIndex = 0;
+            // 
+            // FormNBox
+            // 
+            this.FormNBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.FormNBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormNBox.Location = new System.Drawing.Point(678, 148);
+            this.FormNBox.MaxLength = 4;
+            this.FormNBox.Name = "FormNBox";
+            this.FormNBox.Size = new System.Drawing.Size(59, 38);
+            this.FormNBox.TabIndex = 94;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(615, 160);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(58, 13);
+            this.label42.TabIndex = 93;
+            this.label42.Text = "Form No.";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Location = new System.Drawing.Point(489, 105);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(140, 20);
+            this.textBox2.TabIndex = 92;
+            // 
+            // label41
+            // 
+            this.label41.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(416, 107);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(54, 13);
+            this.label41.TabIndex = 91;
+            this.label41.Text = "Account";
+            // 
+            // ComboBox2
+            // 
+            this.ComboBox2.Enabled = false;
+            this.ComboBox2.FormattingEnabled = true;
+            this.ComboBox2.Location = new System.Drawing.Point(489, 80);
+            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboBox2.Name = "ComboBox2";
+            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
+            this.ComboBox2.TabIndex = 43;
+            // 
+            // Label11
+            // 
+            this.Label11.AutoSize = true;
+            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label11.Location = new System.Drawing.Point(416, 83);
+            this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label11.Name = "Label11";
+            this.Label11.Size = new System.Drawing.Size(58, 13);
+            this.Label11.TabIndex = 42;
+            this.Label11.Text = "Company";
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox1.Location = new System.Drawing.Point(678, 21);
+            this.PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(102, 102);
+            this.PictureBox1.TabIndex = 40;
+            this.PictureBox1.TabStop = false;
+            // 
+            // ComboBox1
+            // 
+            this.ComboBox1.Enabled = false;
+            this.ComboBox1.FormattingEnabled = true;
+            this.ComboBox1.Location = new System.Drawing.Point(489, 55);
+            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboBox1.Name = "ComboBox1";
+            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
+            this.ComboBox1.TabIndex = 39;
+            // 
+            // Label10
+            // 
+            this.Label10.AutoSize = true;
+            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label10.Location = new System.Drawing.Point(417, 58);
+            this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label10.Name = "Label10";
+            this.Label10.Size = new System.Drawing.Size(57, 13);
+            this.Label10.TabIndex = 38;
+            this.Label10.Text = "Package";
+            // 
+            // TextBox7
+            // 
+            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox7.Enabled = false;
+            this.TextBox7.Location = new System.Drawing.Point(489, 21);
+            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox7.Name = "TextBox7";
+            this.TextBox7.Size = new System.Drawing.Size(140, 20);
+            this.TextBox7.TabIndex = 36;
+            // 
+            // Label9
+            // 
+            this.Label9.AutoSize = true;
+            this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label9.Location = new System.Drawing.Point(417, 23);
+            this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(34, 13);
+            this.Label9.TabIndex = 35;
+            this.Label9.Text = "Date";
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label8.Location = new System.Drawing.Point(141, 96);
+            this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(52, 13);
+            this.Label8.TabIndex = 34;
+            this.Label8.Text = "Address";
+            // 
+            // ageBox
+            // 
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Enabled = false;
+            this.ageBox.Location = new System.Drawing.Point(62, 94);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 33;
+            // 
+            // addressBox
+            // 
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Enabled = false;
+            this.addressBox.Location = new System.Drawing.Point(201, 96);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(146, 34);
+            this.addressBox.TabIndex = 32;
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.Location = new System.Drawing.Point(21, 96);
+            this.Label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(29, 13);
+            this.Label7.TabIndex = 31;
+            this.Label7.Text = "Age";
+            // 
+            // idBox
+            // 
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(89, 19);
+            this.idBox.Margin = new System.Windows.Forms.Padding(2);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(195, 20);
+            this.idBox.TabIndex = 30;
+            // 
+            // middleBox
+            // 
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Enabled = false;
+            this.middleBox.Location = new System.Drawing.Point(331, 56);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 29;
+            // 
+            // firstBox
+            // 
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Enabled = false;
+            this.firstBox.Location = new System.Drawing.Point(183, 56);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(144, 20);
+            this.firstBox.TabIndex = 28;
+            // 
+            // lastBox
+            // 
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Enabled = false;
+            this.lastBox.Location = new System.Drawing.Point(62, 56);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(117, 20);
+            this.lastBox.TabIndex = 27;
+            // 
+            // Label6
+            // 
+            this.Label6.AutoSize = true;
+            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.Location = new System.Drawing.Point(343, 78);
+            this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(25, 13);
+            this.Label6.TabIndex = 26;
+            this.Label6.Text = "M.I";
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label5.Location = new System.Drawing.Point(223, 78);
+            this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(61, 13);
+            this.Label5.TabIndex = 25;
+            this.Label5.Text = "Firstname";
+            // 
+            // Label4
+            // 
+            this.Label4.AutoSize = true;
+            this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label4.Location = new System.Drawing.Point(84, 78);
+            this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(61, 13);
+            this.Label4.TabIndex = 24;
+            this.Label4.Text = "Lastname";
+            // 
+            // Label3
+            // 
+            this.Label3.AutoSize = true;
+            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.Location = new System.Drawing.Point(21, 58);
+            this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(39, 13);
+            this.Label3.TabIndex = 23;
+            this.Label3.Text = "Name";
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label2.Location = new System.Drawing.Point(21, 21);
+            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(64, 13);
+            this.Label2.TabIndex = 22;
+            this.Label2.Text = "Patient ID";
             // 
             // panel3
             // 
@@ -527,262 +783,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "WBC";
             // 
-            // Label2
-            // 
-            this.Label2.AutoSize = true;
-            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(21, 21);
-            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(64, 13);
-            this.Label2.TabIndex = 22;
-            this.Label2.Text = "Patient ID";
-            // 
-            // Label3
-            // 
-            this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(21, 58);
-            this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(39, 13);
-            this.Label3.TabIndex = 23;
-            this.Label3.Text = "Name";
-            // 
-            // Label4
-            // 
-            this.Label4.AutoSize = true;
-            this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(84, 78);
-            this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(61, 13);
-            this.Label4.TabIndex = 24;
-            this.Label4.Text = "Lastname";
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(223, 78);
-            this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(61, 13);
-            this.Label5.TabIndex = 25;
-            this.Label5.Text = "Firstname";
-            // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(343, 78);
-            this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(25, 13);
-            this.Label6.TabIndex = 26;
-            this.Label6.Text = "M.I";
-            // 
-            // lastBox
-            // 
-            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lastBox.Enabled = false;
-            this.lastBox.Location = new System.Drawing.Point(62, 56);
-            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
-            this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(117, 20);
-            this.lastBox.TabIndex = 27;
-            // 
-            // firstBox
-            // 
-            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.firstBox.Enabled = false;
-            this.firstBox.Location = new System.Drawing.Point(183, 56);
-            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
-            this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(144, 20);
-            this.firstBox.TabIndex = 28;
-            // 
-            // middleBox
-            // 
-            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleBox.Enabled = false;
-            this.middleBox.Location = new System.Drawing.Point(331, 56);
-            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
-            this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(47, 20);
-            this.middleBox.TabIndex = 29;
-            // 
-            // idBox
-            // 
-            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.idBox.Enabled = false;
-            this.idBox.Location = new System.Drawing.Point(89, 19);
-            this.idBox.Margin = new System.Windows.Forms.Padding(2);
-            this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(195, 20);
-            this.idBox.TabIndex = 30;
-            // 
-            // Label7
-            // 
-            this.Label7.AutoSize = true;
-            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(21, 96);
-            this.Label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(29, 13);
-            this.Label7.TabIndex = 31;
-            this.Label7.Text = "Age";
-            // 
-            // ageBox
-            // 
-            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ageBox.Enabled = false;
-            this.ageBox.Location = new System.Drawing.Point(62, 94);
-            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ageBox.MaxLength = 3;
-            this.ageBox.Name = "ageBox";
-            this.ageBox.Size = new System.Drawing.Size(58, 20);
-            this.ageBox.TabIndex = 33;
-            // 
-            // Label9
-            // 
-            this.Label9.AutoSize = true;
-            this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(417, 23);
-            this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(34, 13);
-            this.Label9.TabIndex = 35;
-            this.Label9.Text = "Date";
-            // 
-            // TextBox7
-            // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(489, 21);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(140, 20);
-            this.TextBox7.TabIndex = 36;
-            // 
-            // Label10
-            // 
-            this.Label10.AutoSize = true;
-            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(417, 58);
-            this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(57, 13);
-            this.Label10.TabIndex = 38;
-            this.Label10.Text = "Package";
-            // 
-            // ComboBox1
-            // 
-            this.ComboBox1.Enabled = false;
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(489, 55);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 39;
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox1.Location = new System.Drawing.Point(678, 21);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(102, 102);
-            this.PictureBox1.TabIndex = 40;
-            this.PictureBox1.TabStop = false;
-            // 
-            // Label11
-            // 
-            this.Label11.AutoSize = true;
-            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(416, 83);
-            this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(58, 13);
-            this.Label11.TabIndex = 42;
-            this.Label11.Text = "Company";
-            // 
-            // ComboBox2
-            // 
-            this.ComboBox2.Enabled = false;
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(489, 80);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 43;
-            // 
-            // addressBox
-            // 
-            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addressBox.Enabled = false;
-            this.addressBox.Location = new System.Drawing.Point(201, 96);
-            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
-            this.addressBox.Multiline = true;
-            this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(146, 34);
-            this.addressBox.TabIndex = 32;
-            // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(141, 96);
-            this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(52, 13);
-            this.Label8.TabIndex = 34;
-            this.Label8.Text = "Address";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(489, 105);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.MaxLength = 3;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 92;
-            // 
-            // label41
-            // 
-            this.label41.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(416, 107);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(54, 13);
-            this.label41.TabIndex = 91;
-            this.label41.Text = "Account";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(678, 148);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 38);
-            this.textBox1.TabIndex = 94;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(615, 160);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(58, 13);
-            this.label42.TabIndex = 93;
-            this.label42.Text = "Form No.";
-            // 
             // CBCForm
             // 
             this.AcceptButton = this.SubmitCBC;
@@ -802,10 +802,10 @@
             this.Text = "CBC";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -876,7 +876,7 @@
         internal System.Windows.Forms.TextBox addressBox;
         internal System.Windows.Forms.TextBox textBox2;
         internal System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FormNBox;
         internal System.Windows.Forms.Label label42;
     }
 }

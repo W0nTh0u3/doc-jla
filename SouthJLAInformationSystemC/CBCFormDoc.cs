@@ -162,7 +162,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_LastNameVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_FullNameVal {
             get {
                 return this.DataDefinition.ParameterFields[9];
             }
@@ -170,7 +170,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_FirstNameVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_AgeVal {
             get {
                 return this.DataDefinition.ParameterFields[10];
             }
@@ -178,7 +178,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_MiddleNameVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_GenderVal {
             get {
                 return this.DataDefinition.ParameterFields[11];
             }
@@ -186,7 +186,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_AgeVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_CivilVal {
             get {
                 return this.DataDefinition.ParameterFields[12];
             }
@@ -194,7 +194,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GenderVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_PackageVal {
             get {
                 return this.DataDefinition.ParameterFields[13];
             }
@@ -202,7 +202,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CivilVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_CompanyVal {
             get {
                 return this.DataDefinition.ParameterFields[14];
             }
@@ -210,7 +210,7 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PackageVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_DateVal {
             get {
                 return this.DataDefinition.ParameterFields[15];
             }
@@ -218,9 +218,17 @@ namespace SouthJLAInformationSystemC {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CompanyVal {
+        public CrystalDecisions.Shared.IParameterField Parameter_FormNVal {
             get {
                 return this.DataDefinition.ParameterFields[16];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_AccountVal {
+            get {
+                return this.DataDefinition.ParameterFields[17];
             }
         }
     }

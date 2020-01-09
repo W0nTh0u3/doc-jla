@@ -1532,6 +1532,7 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.Location = new System.Drawing.Point(185, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
             this.middleBox.Size = new System.Drawing.Size(47, 20);
             this.middleBox.TabIndex = 62;
@@ -1589,7 +1590,6 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(596, 144);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.MaxLength = 3;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(164, 20);
             this.textBox2.TabIndex = 90;
@@ -1714,6 +1714,7 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(115, 13);
+            this.textBox1.MaxLength = 4;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(59, 38);
             this.textBox1.TabIndex = 88;

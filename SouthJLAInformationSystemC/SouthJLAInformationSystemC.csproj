@@ -80,12 +80,6 @@
       <DependentUpon>CBCFormDoc.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="XrayFormDoc.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>XrayFormDoc.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DatabaseDataSet.cs">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
@@ -206,10 +200,6 @@
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XrayFormDoc.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>XrayFormDoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DictionaryForm.resx">
       <DependentUpon>DictionaryForm.cs</DependentUpon>

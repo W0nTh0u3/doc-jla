@@ -28,12 +28,14 @@ namespace SouthJLAInformationSystemC
         {
             CBCFormDoc cBCFormDoc = new CBCFormDoc();
             cBCFormDoc.SetParameterValue("IDVal", patientInfoValue[0]);
-            cBCFormDoc.SetParameterValue("LastNameVal", patientInfoValue[1]);
-            cBCFormDoc.SetParameterValue("FirstNameVal", patientInfoValue[2]);
-            cBCFormDoc.SetParameterValue("MiddleNameVal", patientInfoValue[3]);
+            //cBCFormDoc.SetParameterValue("LastNameVal", patientInfoValue[1]);
+            //cBCFormDoc.SetParameterValue("FirstNameVal", patientInfoValue[2]);
+            //cBCFormDoc.SetParameterValue("MiddleNameVal", patientInfoValue[3]);
+            cBCFormDoc.SetParameterValue("FullNameVal", patientInfoValue[1] + " ," + patientInfoValue[2] + " " + patientInfoValue[3] + ".");
             cBCFormDoc.SetParameterValue("AgeVal", patientInfoValue[4]);
             cBCFormDoc.SetParameterValue("GenderVal", patientInfoValue[5]);
             cBCFormDoc.SetParameterValue("CivilVal", patientInfoValue[6]);
+            cBCFormDoc.SetParameterValue("FormNVal", patientInfoValue[7]);
             cBCFormDoc.SetParameterValue("WBCVal", values[0]);
             cBCFormDoc.SetParameterValue("RBCVal", values[1]);
             cBCFormDoc.SetParameterValue("HGBVal", values[2]);
