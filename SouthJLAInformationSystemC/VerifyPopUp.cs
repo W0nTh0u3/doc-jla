@@ -32,6 +32,7 @@ namespace SouthJLAInformationSystemC
             conn.Open();
             sda.ExecuteNonQuery();
             conn.Close();
+            MessageBox.Show("Filed succesfully!");
         }
 
         private void ExtPrintBtn_Click(object sender, EventArgs e)

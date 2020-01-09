@@ -370,9 +370,18 @@ namespace SouthJLAInformationSystemC
         }
 
         private void UriClickableLabel_Click(object sender, EventArgs e)
-        {
-            UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
-            urinStoolForm.Show();
+        {            try
+            {
+                UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
+
+                urinStoolForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+            
         }
 
         private void MedExClickableLabel_Click(object sender, EventArgs e)
