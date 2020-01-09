@@ -66,7 +66,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "INSERT INTO dbo.Blood_Chemistrty ( fbs, totalCholesterol, ofw_id) VALUES('" + fbsBox.Text + "', '" + cholBox.Text + "', '" + passID + "')";
                 string[] valueString = { fbsBox.Text, cholBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }
@@ -74,7 +74,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "UPDATE dbo.Blood_Chemistrty SET fbs = '" + fbsBox.Text + "', totalCholesterol = '" + cholBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { fbsBox.Text, cholBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }

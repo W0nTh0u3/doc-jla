@@ -37,12 +37,13 @@ namespace SouthJLAInformationSystemC
 
         private void ExtPrintBtn_Click(object sender, EventArgs e)
         {
-
+            //new PrintPreviewForm(valuesTest, patientInfoValue);
         }
 
         private void IntPrintBtn_Click(object sender, EventArgs e)
         {
-            new PrintPreviewForm(valuesTest,patientInfoValue).Show(); 
+            PrintPreviewForm printPreviewForm = new PrintPreviewForm(valuesTest, patientInfoValue);
+            printPreviewForm.Show(); 
         }
     }
 }

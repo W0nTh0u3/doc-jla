@@ -23,7 +23,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "INSERT INTO dbo.xray ( viewPA, impression, ofw_id) VALUES('" + viewBox.Text + "', '" + remarksBox.Text + "', '" + passID + "')";
                 string[] valueString = { viewBox.Text, remarksBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }
@@ -31,7 +31,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "UPDATE dbo.xray SET viewPA = '" + viewBox.Text + "', impression = '" + remarksBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { viewBox.Text, remarksBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text};
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }
