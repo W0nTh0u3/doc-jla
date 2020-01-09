@@ -327,7 +327,7 @@ namespace SouthJLAInformationSystemC
 
         private void MedExClickableLabel_Click(object sender, EventArgs e)
         {
-            MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
+            MedExamForm medExamForm = new MedExamForm();
             medExamForm.Show();
         }
 

@@ -22,26 +22,26 @@ namespace SouthJLAInformationSystemC
 
             if (type == "Enter")
             {
-                sqlString =  "INSERT INTO dbo.Clinic_Microscopy (MacroColor, MacroTransparency, Leukocyte, Nitrite, Urobilinogen, Protein, PH, Blood,SpecificGravity, Ketone, Bilirubin, Glucose, MicroEpithelial, MucousThreads, AmorphousMaterial, PusCells, rbc, bacteria ) VALUES('" + colorBox.Text + "','" + transparencyBox.Text + "','" + leukocyteBox.Text + "','" + nitriteBox.Text + "','" + urobilinogenBox.Text + "','" + proteinBox.Text + "','" + phBox.Text + "','" + bloodBox.Text + "','" + specificGravityBox.Text + "','" + ketoneBox.Text + "','" + bilirubinBox.Text + "','" + glucoseBox.Text + "','" + epithelialCellsBox.Text + "','" + mucousThreadsBox.Text + "','" + amorphousMaterialBox.Text + "','" + pusCellsBox.Text + "','" + rbcBox.Text + "','" + bacteriaBox.Text + "')";
+                sqlString = "INSERT INTO dbo.Clinic_Microscopy (MacroColor, MacroTransparency, Leukocyte, Nitrite, Urobilinogen, Protein, PH, Blood,SpecificGravity, Ketone, Bilirubin, Glucose, MicroEpithelial, MucousThreads, AmorphousMaterial, PusCells, rbc, bacteria, ofw_id ) VALUES('" + colorBox.Text + "','" + transparencyBox.Text + "','" + leukocyteBox.Text + "','" + nitriteBox.Text + "','" + urobilinogenBox.Text + "','" + proteinBox.Text + "','" + phBox.Text + "','" + bloodBox.Text + "','" + specificGravityBox.Text + "','" + ketoneBox.Text + "','" + bilirubinBox.Text + "','" + glucoseBox.Text + "','" + epithelialCellsBox.Text + "','" + mucousThreadsBox.Text + "','" + amorphousMaterialBox.Text + "','" + pusCellsBox.Text + "','" + rbcBox.Text + "','" + bacteriaBox.Text + "', '" + passID + "')";
                 string[] valueString = { colorBox.Text,transparencyBox.Text,leukocyteBox.Text,nitriteBox.Text,urobilinogenBox.Text,proteinBox.Text ,phBox.Text,bloodBox.Text,specificGravityBox.Text,ketoneBox.Text,bilirubinBox.Text,glucoseBox.Text,epithelialCellsBox.Text,mucousThreadsBox.Text,amorphousMaterialBox.Text,pusCellsBox.Text,rbcBox.Text,bacteriaBox.Text};
                 string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
 
-                sqlString2 = "INSERT INTO dbo.Stool_Examination (color, consistency, pus, rbc, others) VALUES('" + colorStoolBox.Text + "','" + consistencyBox.Text + "','" + pusStoolBox.Text + "','" + rbcStoolBox.Text + "','" + othersBox.Text + "')";
+                sqlString2 = "INSERT INTO dbo.Stool_Examination (color, consistency, pus, rbc, others, ofw_id) VALUES('" + colorStoolBox.Text + "','" + consistencyBox.Text + "','" + pusStoolBox.Text + "','" + rbcStoolBox.Text + "','" + othersBox.Text + "', '" + passID + "')";
                 string[] valueString2 = {colorStoolBox.Text,consistencyBox.Text,pusStoolBox.Text,rbcStoolBox.Text,othersBox.Text};
                 VerifyPopUp verifyPopUp2 = new VerifyPopUp(sqlString2, valueString2, patientInfoValue);
                 verifyPopUp2.Show();
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.Clinic_Microscopy SET MacroColor = '" + colorBox.Text + "', MacroTransparency = '" + transparencyBox.Text + "', Leukocyte = '" + leukocyteBox.Text + "', Nitrite = '" + nitriteBox.Text + "', Urobilinogen = '" + urobilinogenBox.Text + "', Protein = '" + proteinBox.Text + "', PH = '" + phBox.Text + "', Blood = '" + bloodBox.Text + "',SpecificGravity = '" + specificGravityBox.Text + "', Ketone = '" + ketoneBox.Text + "', Bilirubin = '"+ bilirubinBox.Text+ "', Glucose = '" + glucoseBox.Text + "', MicroEpithelial = '" + epithelialCellsBox.Text + "', MucousThreads = '" + mucousThreadsBox.Text + "', AmorphousMaterial = '" + amorphousMaterialBox.Text + "', PusCells = '" + pusCellsBox.Text + "', rbc = '" + rbcBox.Text + "', bacteria = '" + bacteriaBox.Text + "'";
+                sqlString = "UPDATE dbo.Clinic_Microscopy SET MacroColor = '" + colorBox.Text + "', MacroTransparency = '" + transparencyBox.Text + "', Leukocyte = '" + leukocyteBox.Text + "', Nitrite = '" + nitriteBox.Text + "', Urobilinogen = '" + urobilinogenBox.Text + "', Protein = '" + proteinBox.Text + "', PH = '" + phBox.Text + "', Blood = '" + bloodBox.Text + "',SpecificGravity = '" + specificGravityBox.Text + "', Ketone = '" + ketoneBox.Text + "', Bilirubin = '"+ bilirubinBox.Text+ "', Glucose = '" + glucoseBox.Text + "', MicroEpithelial = '" + epithelialCellsBox.Text + "', MucousThreads = '" + mucousThreadsBox.Text + "', AmorphousMaterial = '" + amorphousMaterialBox.Text + "', PusCells = '" + pusCellsBox.Text + "', rbc = '" + rbcBox.Text + "', bacteria = '" + bacteriaBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { colorBox.Text, transparencyBox.Text, leukocyteBox.Text, nitriteBox.Text, urobilinogenBox.Text, proteinBox.Text, phBox.Text, bloodBox.Text, specificGravityBox.Text, ketoneBox.Text, bilirubinBox.Text, glucoseBox.Text, epithelialCellsBox.Text, mucousThreadsBox.Text, amorphousMaterialBox.Text, pusCellsBox.Text, rbcBox.Text, bacteriaBox.Text };
                 string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
 
-                sqlString2 = "UPDATE dbo.Stool_Examination SET color= '" + colorStoolBox.Text + "', consistency= '" + consistencyBox.Text + "', pus= '" + pusStoolBox.Text + "', rbc= '" + rbcStoolBox.Text + "', others= '" + othersBox.Text + "'";
+                sqlString2 = "UPDATE dbo.Stool_Examination SET color= '" + colorStoolBox.Text + "', consistency= '" + consistencyBox.Text + "', pus= '" + pusStoolBox.Text + "', rbc= '" + rbcStoolBox.Text + "', others= '" + othersBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString2 = { colorStoolBox.Text, consistencyBox.Text, pusStoolBox.Text, rbcStoolBox.Text, othersBox.Text };
                 VerifyPopUp verifyPopUp2 = new VerifyPopUp(sqlString2, valueString2, patientInfoValue);
                 verifyPopUp2.Show();
@@ -102,7 +102,7 @@ namespace SouthJLAInformationSystemC
             if (type == "Save changes")
             {
                 SqlConnection conn1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlDataAdapter sdaFill = new SqlDataAdapter("SELECT FROM dbo.Clinic_Microscopy WHERE ofw_id= '" + idBox.Text + "'", conn1);
+                SqlDataAdapter sdaFill = new SqlDataAdapter("SELECT * FROM dbo.Clinic_Microscopy WHERE ofw_id= '" + passID + "'", conn1);
                 DataTable dt2 = new DataTable(); //this is creating a virtual table  
                 sdaFill.Fill(dt2);
 
