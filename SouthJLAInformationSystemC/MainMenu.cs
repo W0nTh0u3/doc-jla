@@ -390,10 +390,17 @@ namespace SouthJLAInformationSystemC
         }
 
         private void MedExClickableLabel_Click(object sender, EventArgs e)
-        {
-            MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
-            medExamForm.Show();
-        }
+        {            try             { 
+                MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
+                medExamForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+}
 
         private void XrayClickableLabel_Click(object sender, EventArgs e)
         {            try
