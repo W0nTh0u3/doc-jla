@@ -14,6 +14,7 @@ namespace SouthJLAInformationSystemC
     public partial class CBCForm : Form
     {
         public string passID, type, gender, civilStat;
+        private string[] vMin, vMax, vUnits;
         public CBCForm(string uniqueID, string idPass, string type)
         {
             InitializeComponent();
@@ -52,22 +53,31 @@ namespace SouthJLAInformationSystemC
 
             passID = idPass;
 
+            MinMaxStorage(dtDic);
             wbcUnit.Text = dtDic.Rows[0][0].ToString();
-            wbcRange.Text = "(" + dtDic.Rows[0][1].ToString() + " - " + dtDic.Rows[0][2].ToString() + ")";
+            //wbcRange.Text = "(" + dtDic.Rows[0][1].ToString() + " - " + dtDic.Rows[0][2].ToString() + ")";
+            wbcRange.Text = "(" + vMin[0] + " - " + vMax[0] + ")";
             rbcUnit.Text = dtDic.Rows[1][0].ToString();
-            rbcRange.Text = "(" + dtDic.Rows[1][1].ToString() + " - " + dtDic.Rows[1][2].ToString() + ")";
+            //rbcRange.Text = "(" + dtDic.Rows[1][1].ToString() + " - " + dtDic.Rows[1][2].ToString() + ")";
+            rbcRange.Text = "(" + vMin[1] + " - " + vMax[1] + ")";
             hgbUnit.Text = dtDic.Rows[2][0].ToString();
-            hgbRange.Text = "(" + dtDic.Rows[2][1].ToString() + " - " + dtDic.Rows[2][2].ToString() + ")";
+            //hgbRange.Text = "(" + dtDic.Rows[2][1].ToString() + " - " + dtDic.Rows[2][2].ToString() + ")"; 
+            hgbRange.Text = "(" + vMin[2] + " - " + vMax[2] + ")";
             hctUnit.Text = dtDic.Rows[3][0].ToString();
-            hctRange.Text = "(" + dtDic.Rows[3][1].ToString() + " - " + dtDic.Rows[3][2].ToString() + ")";
+            //hctRange.Text = "(" + dtDic.Rows[3][1].ToString() + " - " + dtDic.Rows[3][2].ToString() + ")"; 
+            hctRange.Text = "(" + vMin[3] + " - " + vMax[3] + ")";
             plateletUnit.Text = dtDic.Rows[4][0].ToString();
-            plateletRange.Text = "(" + dtDic.Rows[4][1].ToString() + " - " + dtDic.Rows[4][2].ToString() + ")";
+            //plateletRange.Text = "(" + dtDic.Rows[4][1].ToString() + " - " + dtDic.Rows[4][2].ToString() + ")";
+            plateletRange.Text = "(" + vMin[4] + " - " + vMax[4] + ")";
             neutrophilUnit.Text = dtDic.Rows[5][0].ToString();
-            neutrophilRange.Text = "(" + dtDic.Rows[5][1].ToString() + " - " + dtDic.Rows[5][2].ToString() + ")";
+            //neutrophilRange.Text = "(" + dtDic.Rows[5][1].ToString() + " - " + dtDic.Rows[5][2].ToString() + ")"; 
+            neutrophilRange.Text = "(" + vMin[5] + " - " + vMax[5] + ")";
             lymphUnit.Text = dtDic.Rows[6][0].ToString();
-            lymphRange.Text = "(" + dtDic.Rows[6][1].ToString() + " - " + dtDic.Rows[6][2].ToString() + ")";
+            //lymphRange.Text = "(" + dtDic.Rows[6][1].ToString() + " - " + dtDic.Rows[6][2].ToString() + ")"; 
+            lymphRange.Text = "(" + vMin[6] + " - " + vMax[6] + ")";
             monoUnit.Text = dtDic.Rows[7][0].ToString();
-            monoRange.Text = "(" + dtDic.Rows[7][1].ToString() + " - " + dtDic.Rows[7][2].ToString() + ")";
+            //monoRange.Text = "(" + dtDic.Rows[7][1].ToString() + " - " + dtDic.Rows[7][2].ToString() + ")"; 
+            monoRange.Text = "(" + vMin[7] + " - " + vMax[7] + ")";
 
             if (type == "Save changes")
             {
@@ -93,13 +103,13 @@ namespace SouthJLAInformationSystemC
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
-
+            vUnits = new string []{ wbcUnit.Text, rbcUnit.Text, hgbUnit.Text, hctUnit.Text, plateletUnit.Text, neutrophilUnit.Text, lymphUnit.Text, monoUnit.Text};
             if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat , FormNBox.Text};
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
             else if (type == "Save changes")
@@ -107,9 +117,32 @@ namespace SouthJLAInformationSystemC
                 sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat , FormNBox.Text};
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
+        }
+
+        private void MinMaxStorage(DataTable dtDic)
+        {
+            int x = dtDic.Rows.Count;
+            vMin = new string[x];
+            vMax = new string[x];
+            vMin[0] = dtDic.Rows[0][1].ToString(); 
+            vMax[0] = dtDic.Rows[0][2].ToString();
+            vMin[1] = dtDic.Rows[1][1].ToString(); 
+            vMax[1] = dtDic.Rows[1][2].ToString();
+            vMin[2] = dtDic.Rows[2][1].ToString(); 
+            vMax[2] = dtDic.Rows[2][2].ToString();
+            vMin[3] = dtDic.Rows[3][1].ToString(); 
+            vMax[3] = dtDic.Rows[3][2].ToString();
+            vMin[4] = dtDic.Rows[4][1].ToString(); 
+            vMax[4] = dtDic.Rows[4][2].ToString();
+            vMin[5] = dtDic.Rows[5][1].ToString(); 
+            vMax[5] = dtDic.Rows[5][2].ToString();
+            vMin[6] = dtDic.Rows[6][1].ToString(); 
+            vMax[6] = dtDic.Rows[6][2].ToString();
+            vMin[7] = dtDic.Rows[7][1].ToString(); 
+            vMax[7] = dtDic.Rows[7][2].ToString();
         }
     }
 }

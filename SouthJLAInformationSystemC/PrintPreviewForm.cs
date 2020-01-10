@@ -12,12 +12,15 @@ namespace SouthJLAInformationSystemC
 {
     public partial class PrintPreviewForm : Form
     {
-        private readonly string[] values,patientInfoValue;
-        public PrintPreviewForm(string[] values, string[] patientInfoValue)
+        private readonly string[] values,patientInfoValue, vMin, vMax, vUnits;
+        public PrintPreviewForm(string[] values, string[] patientInfoValue, string[] vMin, string[] vMax, string[] vUnits)
         {
             InitializeComponent();
             this.patientInfoValue = patientInfoValue;
             this.values = values;
+            this.vMin = vMin;
+            this.vMax = vMax;
+            this.vUnits = vUnits;
         }
 
         private void PrintPreviewForm_Load(object sender, EventArgs e)
@@ -56,6 +59,42 @@ namespace SouthJLAInformationSystemC
             cBCFormDoc.SetParameterValue("NEUTROPHILVal", values[5]);
             cBCFormDoc.SetParameterValue("LYMPHOCYTESVal", values[6]);
             cBCFormDoc.SetParameterValue("MONOCYTEVal", values[7]);
+
+            cBCFormDoc.SetParameterValue("WBCUnit", vUnits[0]);
+            cBCFormDoc.SetParameterValue("RBCUnit", vUnits[1]);
+            cBCFormDoc.SetParameterValue("HGBUnit", vUnits[2]);
+            cBCFormDoc.SetParameterValue("HCTUnit", vUnits[3]);
+            cBCFormDoc.SetParameterValue("PLATELETUnit", vUnits[4]);
+            cBCFormDoc.SetParameterValue("NEUTROPHILUnit", vUnits[5]);
+            cBCFormDoc.SetParameterValue("LYMPHOCYTESUnit", vUnits[6]);
+            cBCFormDoc.SetParameterValue("MONOCYTEUnit", vUnits[7]);
+
+            cBCFormDoc.SetParameterValue("WBCMin", vMin[0]);
+            cBCFormDoc.SetParameterValue("RBCMin", vMin[1]);
+            cBCFormDoc.SetParameterValue("HGBMin", vMin[2]);
+            cBCFormDoc.SetParameterValue("HCTMin", vMin[3]);
+            cBCFormDoc.SetParameterValue("PLATELETMin", vMin[4]);
+            cBCFormDoc.SetParameterValue("NEUTROPHILMin", vMin[5]);
+            cBCFormDoc.SetParameterValue("LYMPHOCYTESMin", vMin[6]);
+            cBCFormDoc.SetParameterValue("MONOCYTEMin", vMin[7]);
+
+            cBCFormDoc.SetParameterValue("WBCMax", vMax[0]);
+            cBCFormDoc.SetParameterValue("RBCMax", vMax[1]);
+            cBCFormDoc.SetParameterValue("HGBMax", vMax[2]);
+            cBCFormDoc.SetParameterValue("HCTMax", vMax[3]);
+            cBCFormDoc.SetParameterValue("PLATELETMax", vMax[4]);
+            cBCFormDoc.SetParameterValue("NEUTROPHILMax", vMax[5]);
+            cBCFormDoc.SetParameterValue("LYMPHOCYTESMax", vMax[6]);
+            cBCFormDoc.SetParameterValue("MONOCYTEMax", vMax[7]);
+
+            cBCFormDoc.SetParameterValue("WBCRange", "(" + vMin[0] + " - " + vMax[0] + ")");
+            cBCFormDoc.SetParameterValue("RBCRange", "(" + vMin[1] + " - " + vMax[1] + ")");
+            cBCFormDoc.SetParameterValue("HGBRange", "(" + vMin[2] + " - " + vMax[2] + ")");
+            cBCFormDoc.SetParameterValue("HCTRange", "(" + vMin[3] + " - " + vMax[3] + ")");
+            cBCFormDoc.SetParameterValue("PLATELETRange", "(" + vMin[4] + " - " + vMax[4] + ")");
+            cBCFormDoc.SetParameterValue("NEUTROPHILRange", "(" + vMin[5] + " - " + vMax[5] + ")");
+            cBCFormDoc.SetParameterValue("LYMPHOCYTESRange", "(" + vMin[6] + " - " + vMax[6] + ")");
+            cBCFormDoc.SetParameterValue("MONOCYTERange", "(" + vMin[7] + " - " + vMax[7] + ")");
 
             InternalPrintViewer.ReportSource = cBCFormDoc;
             InternalPrintViewer.Refresh();
@@ -210,7 +249,10 @@ namespace SouthJLAInformationSystemC
             medExamFormDoc.SetParameterValue("recommendations", values[47]);
             //medExamFormDoc.SetParameterValue("physician", values[48]);
 
-            
+            for (int i = 0; i < 35; i++)
+            {
+                medExamFormDoc.SetParameterValue("yn" + i.ToString(), values[0][i]);
+            }
 
             InternalPrintViewer.ReportSource = medExamFormDoc;
             InternalPrintViewer.Refresh();

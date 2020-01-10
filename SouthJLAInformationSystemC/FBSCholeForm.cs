@@ -65,17 +65,23 @@ namespace SouthJLAInformationSystemC
             if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.Blood_Chemistrty ( fbs, totalCholesterol, ofw_id) VALUES('" + fbsBox.Text + "', '" + cholBox.Text + "', '" + passID + "')";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { fbsBox.Text, cholBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
             else if (type == "Save changes")
             {
                 sqlString = "UPDATE dbo.Blood_Chemistrty SET fbs = '" + fbsBox.Text + "', totalCholesterol = '" + cholBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { fbsBox.Text, cholBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
         }

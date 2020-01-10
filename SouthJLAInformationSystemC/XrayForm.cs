@@ -22,17 +22,23 @@ namespace SouthJLAInformationSystemC
             if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.xray ( viewPA, impression, ofw_id) VALUES('" + viewBox.Text + "', '" + remarksBox.Text + "', '" + passID + "')";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { viewBox.Text, remarksBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
             else if (type == "Save changes")
             {
                 sqlString = "UPDATE dbo.xray SET viewPA = '" + viewBox.Text + "', impression = '" + remarksBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { viewBox.Text, remarksBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text};
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
         }

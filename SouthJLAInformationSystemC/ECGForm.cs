@@ -22,17 +22,23 @@ namespace SouthJLAInformationSystemC
             if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.ecg (impression, ofw_id) VALUES('" + ecgBox.Text + "','" + passID + "')";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { ecgBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
             else if (type == "Save changes")
             {
                 sqlString = "UPDATE dbo.ecg SET impression = '" + ecgBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                string[] vMin = { "" };
+                string[] vMax = { "" };
+                string[] vUnits = { "" };
                 string[] valueString = { ecgBox.Text };
                 string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
         }
