@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.contentBox = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
             this.testCombo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.valuesBox = new System.Windows.Forms.RichTextBox();
@@ -117,7 +117,7 @@
             this.ViewDictPanel.Controls.Add(this.label3);
             this.ViewDictPanel.Controls.Add(this.contentBox);
             this.ViewDictPanel.Controls.Add(this.label2);
-            this.ViewDictPanel.Controls.Add(this.label9);
+            this.ViewDictPanel.Controls.Add(this.priceLabel);
             this.ViewDictPanel.Controls.Add(this.testCombo);
             this.ViewDictPanel.Controls.Add(this.label4);
             this.ViewDictPanel.Controls.Add(this.valuesBox);
@@ -138,6 +138,7 @@
             // 
             // fieldCombo
             // 
+            this.fieldCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fieldCombo.FormattingEnabled = true;
             this.fieldCombo.Location = new System.Drawing.Point(618, 20);
             this.fieldCombo.Name = "fieldCombo";
@@ -172,14 +173,14 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Contents of the Test";
             // 
-            // label9
+            // priceLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(505, 348);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "<price>";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Location = new System.Drawing.Point(505, 348);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(42, 13);
+            this.priceLabel.TabIndex = 17;
+            this.priceLabel.Text = "<price>";
             // 
             // testCombo
             // 
@@ -683,7 +684,7 @@
         private System.Windows.Forms.RichTextBox contentBox;
         private System.Windows.Forms.Label label4;
         internal System.Windows.Forms.Panel ContentPanel;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label priceLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox valuesBox;
         private System.Windows.Forms.Button EditPacBtn;

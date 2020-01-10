@@ -26,7 +26,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table 
             sda.Fill(dt);
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 4; i++)
             {
                 testCombo.Items.Add(dt.Rows[i][0].ToString());
             }
@@ -71,14 +71,63 @@ namespace SouthJLAInformationSystemC
         {
 
             Console.WriteLine("Selected dictionary: "+ testCombo.SelectedItem);
-            
-            if( testCombo.SelectedItem.ToString() == "Hematology")
-            {
-                testDic = "HematologyDictionary";
-                Console.WriteLine("okay Hema");
-            }
 
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
+
+            if ( testCombo.SelectedItem.ToString() == "Hematology")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + testCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+
+                testDic = "HematologyDictionary";
+                Console.WriteLine("okay Hema");
+                priceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+
+
+            else if (testCombo.SelectedItem.ToString() == "Blood Chemistry")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + testCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+
+                testDic = "BloodChemistryDictionary";
+                Console.WriteLine("okay" + testCombo.SelectedItem.ToString());
+                priceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+
+            else if (testCombo.SelectedItem.ToString() == "Stool Exam")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + testCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+
+                testDic = "StoolDictionary";
+                Console.WriteLine("okay" + testCombo.SelectedItem.ToString());
+                priceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+
+            else if (testCombo.SelectedItem.ToString() == "Urinalysis")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + testCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+
+                testDic = "MicroscopyDictionary";
+                Console.WriteLine("okay " + testCombo.SelectedItem.ToString());
+                priceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+
+
             string sqlstring = "SELECT DISTINCT field FROM dbo." + testDic;
             SqlDataAdapter sda1 = new SqlDataAdapter(sqlstring, conn);
             DataTable dt1 = new DataTable(); //this is creating a virtual table 
@@ -94,12 +143,20 @@ namespace SouthJLAInformationSystemC
 
             int rows = System.Convert.ToInt32(num);
 
+            
+
             fieldCombo.Items.Clear();
 
             for (int i = 0; i < rows; i++)
             {
                 fieldCombo.Items.Add(dt1.Rows[i][0].ToString());
             }
+
+            fieldCombo.SelectedIndex = -1;
+
+            valuesBox.Clear();
+            contentBox.Clear();
+
         }
 
         private void ChangeField(object sender, EventArgs e)
