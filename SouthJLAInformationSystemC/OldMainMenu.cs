@@ -69,8 +69,8 @@ namespace SouthJLAInformationSystemC
 
         private void Label15_Click(object sender, EventArgs e)
         {
-            MedExamForm stoolForm = new MedExamForm();
-            stoolForm.Show();
+            //MedExamForm stoolForm = new MedExamForm();
+            //stoolForm.Show();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
