@@ -14,7 +14,7 @@ namespace SouthJLAInformationSystemC
     public partial class MedExamForm : Form
     {
         public string passID, type, gender, civilStat,medHolder;
-        public float med;
+        public double med=0;
 
 
         private void SubmitCBC_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace SouthJLAInformationSystemC
             {
                 encodeBinary();
                 medHolder = $"{med}";
-                sqlString = "UPDATE dbo.history SET med='" + med + "',child='" + childBox.Text + "',past='" + pastBox.Text + "',present1='" + presentBox1.Text + "',present2='" + presentBox2.Text + "',surgeries='" + surgeriesBox.Text + "',hospitizations='" + hospitizationsBox.Text + "',smoke='" + smokeBox.Text + "',alcohol='" + alcoholBox.Text + "',mens='" + mensBox.Text + "',last='" + lastBox.Text + "',others='" + othersBox.Text + "',eyes='" + eyesBox.Text + "',mouth='" + mouthBox.Text + "',cardio='" + cardioBox.Text + "',respiratory='" + respiratoryBox.Text + "',genitourinary='" + genitourinaryBox.Text + "',muskoskeletal='" + musculoskeletalBox.Text + "',skin='" + skinBox.Text + "',neurological='" + neurologicalBox.Text + "',endocrine='" + endocrineBox.Text + "',hema='" + hemaBox.Text + "',others2='" + othersBox2.Text + "',height='" + heightBox.Text + "',bp='" + bpBox.Text + "',weight='" + weightBox.Text + "',pr='" + prBox.Text + "',pmi='" + bmiBox.Text + "',rr='" + rrBox.Text + "',rightE='" + rightBox.Text + "',leftE='" + leftBox.Text + "',general='" + generalBox.Text + "',reviewSkin='" + reviewSkinBox.Text + "',headNeck='" + headNeckBox.Text + "',EEN='" + EENBox.Text + "',mouthThroat='" + mouthThroatBox.Text + "',chestLungs='" + chestLungsBox.Text + "',breast='" + breastBox.Text + "',back='" + backBox.Text + "',heartReview='" + heartReviewBox.Text + "',abdomen='" + abdomenBox.Text + "',extremities='" + extremitiesBox.Text + "',neurologicalReview='" + neurlogicalReviewBox.Text + "',rectal='" + rectalBox.Text + "',genitalia='" + genitaliaBox.Text + "',impression='" + impressionBox.Text + "',recommendations='" + recommendationBox.Text + "',ofw_id='" + passID + "'";
+                sqlString = "UPDATE dbo.history SET med='" + medHolder+ "',child='" + childBox.Text + "',past='" + pastBox.Text + "',present1='" + presentBox1.Text + "',present2='" + presentBox2.Text + "',surgeries='" + surgeriesBox.Text + "',hospitizations='" + hospitizationsBox.Text + "',smoke='" + smokeBox.Text + "',alcohol='" + alcoholBox.Text + "',mens='" + mensBox.Text + "',last='" + lastBox.Text + "',others='" + othersBox.Text + "',eyes='" + eyesBox.Text + "',mouth='" + mouthBox.Text + "',cardio='" + cardioBox.Text + "',respiratory='" + respiratoryBox.Text + "',genitourinary='" + genitourinaryBox.Text + "',muskoskeletal='" + musculoskeletalBox.Text + "',skin='" + skinBox.Text + "',neurological='" + neurologicalBox.Text + "',endocrine='" + endocrineBox.Text + "',hema='" + hemaBox.Text + "',others2='" + othersBox2.Text + "',height='" + heightBox.Text + "',bp='" + bpBox.Text + "',weight='" + weightBox.Text + "',pr='" + prBox.Text + "',pmi='" + bmiBox.Text + "',rr='" + rrBox.Text + "',rightE='" + rightBox.Text + "',leftE='" + leftBox.Text + "',general='" + generalBox.Text + "',reviewSkin='" + reviewSkinBox.Text + "',headNeck='" + headNeckBox.Text + "',EEN='" + EENBox.Text + "',mouthThroat='" + mouthThroatBox.Text + "',chestLungs='" + chestLungsBox.Text + "',breast='" + breastBox.Text + "',back='" + backBox.Text + "',heartReview='" + heartReviewBox.Text + "',abdomen='" + abdomenBox.Text + "',extremities='" + extremitiesBox.Text + "',neurologicalReview='" + neurlogicalReviewBox.Text + "',rectal='" + rectalBox.Text + "',genitalia='" + genitaliaBox.Text + "',impression='" + impressionBox.Text + "',recommendations='" + recommendationBox.Text + "',ofw_id='" + passID + "'";
                 string[] valueString = { medHolder, childBox.Text, pastBox.Text, presentBox1.Text, presentBox2.Text, surgeriesBox.Text, hospitizationsBox.Text, smokeBox.Text, alcoholBox.Text, mensBox.Text, lastBox.Text, othersBox.Text, eyesBox.Text, mouthBox.Text, cardioBox.Text, respiratoryBox.Text, genitourinaryBox.Text, musculoskeletalBox.Text, skinBox.Text, neurologicalBox.Text, endocrineBox.Text, endocrineBox.Text, hemaBox.Text, othersBox2.Text, heightBox.Text, bpBox.Text, weightBox.Text, prBox.Text, bmiBox.Text, rrBox.Text, rightBox.Text, leftBox.Text, generalBox.Text, reviewSkinBox.Text, headNeckBox.Text, EENBox.Text, mouthThroatBox.Text, chestLungsBox.Text, breastBox.Text, backBox.Text, heartReviewBox.Text, abdomenBox.Text, extremitiesBox.Text, neurlogicalReviewBox.Text, rectalBox.Text, genitaliaBox.Text, impressionBox.Text, recommendationBox.Text };
                 string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
                            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
@@ -108,7 +108,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
-            idBox.Text = dt1.Rows[0][0].ToString();
+            idBox.Text = dt1.Rows[0][19].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
             middleBox.Text = dt1.Rows[0][3].ToString();
@@ -130,7 +130,11 @@ namespace SouthJLAInformationSystemC
                 sdaFill.Fill(dt2);
 
                 medHolder = dt2.Rows[0][1].ToString();
-                med = float.Parse(medHolder);
+                if (medHolder != "") { 
+                    med = Convert.ToDouble(medHolder);
+            }
+                Console.Write("ito na oh ");
+                Console.Write(med);
                 decryptBinary();
                 childBox.Text = dt2.Rows[0][2].ToString();
                 pastBox.Text = dt2.Rows[0][3].ToString();
@@ -242,48 +246,48 @@ namespace SouthJLAInformationSystemC
                     holder = $"y{i.ToString()}.Checked == true";
                     if (ComputeCondition(holder))
                     {
-                        med += 10 ^ (i-1);
+                        med += Math.Pow(10, (i-1);
                     }
                 }
              To the future programmer: This is the logic for this function, all that is needed is the
              correct syntax and you can delete whats below
                 */
-
+            med = 0;
             if (y1.Checked == true) med += 1;
             if (y2.Checked == true) med += 10;
-            if (y3.Checked == true) med += 10 ^ 2;
-            if (y4.Checked == true) med += 10 ^ 3;
-            if (y5.Checked == true) med += 10 ^ 4;
-            if (y6.Checked == true) med += 10 ^ 5;
-            if (y7.Checked == true) med += 10 ^ 6;
-            if (y8.Checked == true) med += 10 ^ 7;
-            if (y9.Checked == true) med += 10 ^ 8;
-            if (y10.Checked == true) med += 10 ^ 9;
-            if (y11.Checked == true) med += 10 ^ 10;
-            if (y12.Checked == true) med += 10 ^ 11;
-            if (y13.Checked == true) med += 10 ^ 12;
-            if (y14.Checked == true) med += 10 ^ 13;
-            if (y15.Checked == true) med += 10 ^ 14;
-            if (y16.Checked == true) med += 10 ^ 15;
-            if (y17.Checked == true) med += 10 ^ 16;
-            if (y18.Checked == true) med += 10 ^ 17;
-            if (y19.Checked == true) med += 10 ^ 18;
-            if (y20.Checked == true) med += 10 ^ 19;
-            if (y21.Checked == true) med += 10 ^ 20;
-            if (y22.Checked == true) med += 10 ^ 21;
-            if (y23.Checked == true) med += 10 ^ 22;
-            if (y24.Checked == true) med += 10 ^ 23;
-            if (y25.Checked == true) med += 10 ^ 24;
-            if (y26.Checked == true) med += 10 ^ 25;
-            if (y27.Checked == true) med += 10 ^ 26;
-            if (y28.Checked == true) med += 10 ^ 27;
-            if (y29.Checked == true) med += 10 ^ 28;
-            if (y30.Checked == true) med += 10 ^ 29;
-            if (y31.Checked == true) med += 10 ^ 30;
-            if (y32.Checked == true) med += 10 ^ 31;
-            if (y33.Checked == true) med += 10 ^ 32;
-            if (y34.Checked == true) med += 10 ^ 33;
-            if (y35.Checked == true) med += 10 ^ 34;
+            if (y3.Checked == true) med = med +  Math.Pow(10, 2);
+            if (y4.Checked == true) med = med +  Math.Pow(10, 3);
+            if (y5.Checked == true) med = med +  Math.Pow(10, 4);
+            if (y6.Checked == true) med = med +  Math.Pow(10, 5);
+            if (y7.Checked == true) med = med +  Math.Pow(10, 6);
+            if (y8.Checked == true) med = med +  Math.Pow(10, 7);
+            if (y9.Checked == true) med = med +  Math.Pow(10, 8);
+            if (y10.Checked == true) med = med +  Math.Pow(10, 9);
+            if (y11.Checked == true) med = med +  Math.Pow(10, 10);
+            if (y12.Checked == true) med = med +  Math.Pow(10, 11);
+            if (y13.Checked == true) med = med +  Math.Pow(10, 12);
+            if (y14.Checked == true) med = med +  Math.Pow(10, 13);
+            if (y15.Checked == true) med = med +  Math.Pow(10, 14);
+            if (y16.Checked == true) med = med +  Math.Pow(10, 15);
+            if (y17.Checked == true) med = med +  Math.Pow(10, 16);
+            if (y18.Checked == true) med = med +  Math.Pow(10, 17);
+            if (y19.Checked == true) med = med +  Math.Pow(10, 18);
+            if (y20.Checked == true) med = med +  Math.Pow(10, 19);
+            if (y21.Checked == true) med = med +  Math.Pow(10, 20);
+            if (y22.Checked == true) med = med +  Math.Pow(10, 21);
+            if (y23.Checked == true) med = med +  Math.Pow(10, 22);
+            if (y24.Checked == true) med = med +  Math.Pow(10, 23);
+            if (y25.Checked == true) med = med +  Math.Pow(10, 24);
+            if (y26.Checked == true) med = med +  Math.Pow(10, 25);
+            if (y27.Checked == true) med = med +  Math.Pow(10, 26);
+            if (y28.Checked == true) med = med +  Math.Pow(10, 27);
+            if (y29.Checked == true) med = med +  Math.Pow(10, 28);
+            if (y30.Checked == true) med = med +  Math.Pow(10, 29);
+            if (y31.Checked == true) med = med +  Math.Pow(10, 30);
+            if (y32.Checked == true) med = med +  Math.Pow(10, 31);
+            if (y33.Checked == true) med = med +  Math.Pow(10, 32);
+            if (y34.Checked == true) med = med +  Math.Pow(10, 33);
+            if (y35.Checked == true) med = med +  Math.Pow(10, 34);
 
         }
         /*  this is part of the encode binary without the correct syntax
