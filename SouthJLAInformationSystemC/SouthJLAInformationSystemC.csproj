@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MedExamFormDoc.cs">
+      <DependentUpon>MedExamFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="FBSCholeFormDoc.cs">
       <DependentUpon>FBSCholeFormDoc.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -224,6 +230,10 @@
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedExamFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MedExamFormDoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="FBSCholeFormDoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

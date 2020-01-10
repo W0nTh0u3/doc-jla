@@ -85,7 +85,10 @@ namespace SouthJLAInformationSystemC
 
             gender = dt1.Rows[0][7].ToString();
             civilStat = dt1.Rows[0][8].ToString();
-
+            /*
+            RadioButton tbx = this.Controls.Find("idBox", true).FirstOrDefault() as RadioButton;
+            if (tbx.Checked == true)
+            */
             passID = idPass;
 
             if (type == "Save changes")
