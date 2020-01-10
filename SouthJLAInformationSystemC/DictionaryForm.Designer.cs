@@ -163,6 +163,7 @@
             // 
             this.editContentBox.Location = new System.Drawing.Point(36, 64);
             this.editContentBox.Name = "editContentBox";
+            this.editContentBox.ReadOnly = true;
             this.editContentBox.Size = new System.Drawing.Size(327, 244);
             this.editContentBox.TabIndex = 33;
             this.editContentBox.Text = "";
@@ -175,6 +176,7 @@
             this.saveBtn.TabIndex = 43;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // label10
             // 

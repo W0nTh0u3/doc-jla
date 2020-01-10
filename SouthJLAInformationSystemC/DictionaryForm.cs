@@ -322,6 +322,41 @@ namespace SouthJLAInformationSystemC
 
         private void modifyPrice_Click(object sender, EventArgs e)
         {
+            editPriceLabel.Text = priceBox.Text;
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
+
+            //edit price
+            if(priceBox.Text != "")
+            {
+                string sqlString = "UPDATE dbo.tests SET price = '" + editPriceLabel.Text + "'  WHERE tests = '" + editTestCombo.SelectedItem + "'";
+                SqlCommand sda = new SqlCommand(sqlString, conn);
+                conn.Open();
+                sda.ExecuteNonQuery();
+                conn.Close();
+            }
+
+            //edit 
+            string[] vs = editValueBox.Lines;
+
+            for(int i = 0; i < 7; i++)
+            {
+                Console.WriteLine("vs[" + i + "]: " + vs[i]);
+            }
+
+            string sqlString1 = "UPDATE dbo." + testDic + " SET field = '" + vs[0] + "',  units = '" + vs[1] + "',  age = '" + vs[2] + "',  gender = '" + vs[3] + "',  normal = '" + vs[4] + "',  min = '" + vs[5] + "',  max = '" + vs[6] + "' WHERE field = '" + editFieldCombo.SelectedItem +"'";
+            SqlCommand sda1 = new SqlCommand(sqlString1, conn);
+            conn.Open();
+            sda1.ExecuteNonQuery();
+            conn.Close();
+
+
+            MessageBox.Show("Edit Successfully!");
+
+
 
         }
     }

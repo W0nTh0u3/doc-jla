@@ -167,6 +167,7 @@ namespace SouthJLAInformationSystemC
             clearAllfields();
 
             submit.Text = "Enter";
+            submit.Enabled = true;
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -184,6 +185,8 @@ namespace SouthJLAInformationSystemC
 
                 submit.Text = "Save changes";
                 Console.WriteLine("edit req");
+
+                submit.Enabled = false;
             }
             catch (Exception en)
             {
@@ -241,6 +244,8 @@ namespace SouthJLAInformationSystemC
             EnableOnlyPatientResults();
 
             clearAllfields();
+
+            submit.Enabled = true;
         }
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
@@ -469,6 +474,8 @@ namespace SouthJLAInformationSystemC
                     submit.Text = "Enter";
 
                 clearAll.Enabled = true;
+
+                submit.Enabled = true;
             }
             catch (Exception en)
             {
@@ -490,7 +497,7 @@ namespace SouthJLAInformationSystemC
             if (submit.Text == "Enter")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM") + "" + dateFiledBox.Value.ToString("dd") + "')", conn);
+                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "')", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 conn.Close();
@@ -498,10 +505,12 @@ namespace SouthJLAInformationSystemC
                 SqlDataAdapter sda1 = new SqlDataAdapter("SELECT MAX(id) FROM dbo.ofw", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sda1.Fill(dt);
-                var patientID = dt.Rows[0][0].ToString();
-                string unique = "MJRL-" + patientID;
+                string patientID = dateFiledBox.Value.ToString("MM") + dateFiledBox.Value.ToString("dd");
+                string unique = "MJRL-" + dt.Rows[0][0].ToString();
 
-                SqlCommand sda2 = new SqlCommand("UPDATE dbo.ofw SET patientID = '" + unique + "' WHERE id = '" + patientID + "'", conn);
+                Console.WriteLine("unique id:" + unique);
+
+                SqlCommand sda2 = new SqlCommand("UPDATE dbo.ofw SET patientID = '" + unique + "' WHERE id = '" + dt.Rows[0][0].ToString() + "'", conn);
                 conn.Open();
                 sda2.ExecuteNonQuery();
                 conn.Close();
@@ -514,7 +523,7 @@ namespace SouthJLAInformationSystemC
                 addressBox.Text = String.Empty;
                 civilBox.SelectedIndex = -1;
                 genderBox.SelectedIndex = -1;
-                MessageBox.Show("Succesful! This is your Patient ID: MJRL-" + patientID);
+                MessageBox.Show("Successful! This is your Patient ID: " + unique);
             }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
@@ -523,6 +532,7 @@ namespace SouthJLAInformationSystemC
                 sda.ExecuteNonQuery();
                 Console.WriteLine("Nagsave na");
                 conn.Close();
+                MessageBox.Show("Edit Successful!");
             }
         }
 
