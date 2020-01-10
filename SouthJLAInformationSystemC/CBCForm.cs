@@ -45,7 +45,7 @@ namespace SouthJLAInformationSystemC
             gender = dt1.Rows[0][6].ToString();
             civilStat = dt1.Rows[0][7].ToString();
 
-
+            //PULLOUT DICTIONARY
             SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.HematologyDictionary WHERE gender = '" + gender + "'", conn); //logic to find the right normal values
             DataTable dtDic = new DataTable(); //this is creating a virtual table  
             sdaDic.Fill(dtDic);

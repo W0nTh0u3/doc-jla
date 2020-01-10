@@ -31,14 +31,14 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
-            idBox.Text = dt1.Rows[0][19].ToString();
+            idBox.Text = dt1.Rows[0][11].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
             middleBox.Text = dt1.Rows[0][3].ToString();
             ageBox.Text = dt1.Rows[0][4].ToString();
-            addressBox.Text = dt1.Rows[0][10].ToString();
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
+            addressBox.Text = dt1.Rows[0][8].ToString();
+            gender = dt1.Rows[0][6].ToString();
+            civilStat = dt1.Rows[0][7].ToString();
 
 
             gender = dt1.Rows[0][7].ToString();

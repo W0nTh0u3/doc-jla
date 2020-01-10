@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listCombo = new System.Windows.Forms.ComboBox();
+            this.typeCombo = new System.Windows.Forms.ComboBox();
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.dateFiledBox = new System.Windows.Forms.DateTimePicker();
@@ -36,9 +39,6 @@
             this.monthlyBtn = new System.Windows.Forms.Button();
             this.weeklyBtn = new System.Windows.Forms.Button();
             this.dailyBtn = new System.Windows.Forms.Button();
-            this.typeCombo = new System.Windows.Forms.ComboBox();
-            this.listCombo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ContentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,37 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(1230, 500);
             this.ContentPanel.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(518, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Type:";
+            // 
+            // listCombo
+            // 
+            this.listCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.listCombo.FormattingEnabled = true;
+            this.listCombo.Location = new System.Drawing.Point(705, 15);
+            this.listCombo.Name = "listCombo";
+            this.listCombo.Size = new System.Drawing.Size(121, 21);
+            this.listCombo.TabIndex = 9;
+            // 
+            // typeCombo
+            // 
+            this.typeCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.typeCombo.FormattingEnabled = true;
+            this.typeCombo.Items.AddRange(new object[] {
+            "TESTS",
+            "PACKAGES"});
+            this.typeCombo.Location = new System.Drawing.Point(558, 15);
+            this.typeCombo.Name = "typeCombo";
+            this.typeCombo.Size = new System.Drawing.Size(121, 21);
+            this.typeCombo.TabIndex = 8;
+            this.typeCombo.SelectedValueChanged += new System.EventHandler(this.TypeChange);
             // 
             // dataGrid
             // 
@@ -126,35 +157,6 @@
             this.dailyBtn.Text = "Daily";
             this.dailyBtn.UseVisualStyleBackColor = true;
             this.dailyBtn.Click += new System.EventHandler(this.dailyBtn_Click);
-            // 
-            // typeCombo
-            // 
-            this.typeCombo.FormattingEnabled = true;
-            this.typeCombo.Items.AddRange(new object[] {
-            "TESTS",
-            "PACKAGES"});
-            this.typeCombo.Location = new System.Drawing.Point(558, 15);
-            this.typeCombo.Name = "typeCombo";
-            this.typeCombo.Size = new System.Drawing.Size(121, 21);
-            this.typeCombo.TabIndex = 8;
-            this.typeCombo.SelectedValueChanged += new System.EventHandler(this.TypeChange);
-            // 
-            // listCombo
-            // 
-            this.listCombo.FormattingEnabled = true;
-            this.listCombo.Location = new System.Drawing.Point(705, 15);
-            this.listCombo.Name = "listCombo";
-            this.listCombo.Size = new System.Drawing.Size(121, 21);
-            this.listCombo.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(518, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Type:";
             // 
             // BillingForm
             // 

@@ -41,7 +41,6 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSyst
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.XrayForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.UrinStoolForm.resources
-C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.CBCForm.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.FBSCholeForm.resources
 C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.ECGForm.resources

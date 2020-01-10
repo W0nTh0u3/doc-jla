@@ -401,7 +401,7 @@ namespace SouthJLAInformationSystemC
                 conn.Close();
             }
 
-            if(editFieldCombo.SelectedItem != "XRAY" ||  editFieldCombo.SelectedItem != "ECG")
+            if(editFieldCombo.SelectedItem.ToString() != "XRAY" ||  editFieldCombo.SelectedItem.ToString() != "ECG")
             {
                 //edit 
                 string[] vs = editValueBox.Lines;

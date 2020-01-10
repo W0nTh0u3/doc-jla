@@ -128,7 +128,7 @@
             this.EditDictPanel.Controls.Add(this.editValueBox);
             this.EditDictPanel.Location = new System.Drawing.Point(12, 60);
             this.EditDictPanel.Name = "EditDictPanel";
-            this.EditDictPanel.Size = new System.Drawing.Size(765, 385);
+            this.EditDictPanel.Size = new System.Drawing.Size(322, 134);
             this.EditDictPanel.TabIndex = 45;
             // 
             // label9
@@ -215,6 +215,7 @@
             // 
             // editTestCombo
             // 
+            this.editTestCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.editTestCombo.FormattingEnabled = true;
             this.editTestCombo.Location = new System.Drawing.Point(131, 20);
             this.editTestCombo.Name = "editTestCombo";
@@ -261,9 +262,9 @@
             this.ViewDictPanel.Controls.Add(this.label4);
             this.ViewDictPanel.Controls.Add(this.viewValueBox);
             this.ViewDictPanel.Controls.Add(this.label5);
-            this.ViewDictPanel.Location = new System.Drawing.Point(437, 81);
+            this.ViewDictPanel.Location = new System.Drawing.Point(90, 219);
             this.ViewDictPanel.Name = "ViewDictPanel";
-            this.ViewDictPanel.Size = new System.Drawing.Size(208, 106);
+            this.ViewDictPanel.Size = new System.Drawing.Size(339, 163);
             this.ViewDictPanel.TabIndex = 44;
             // 
             // label24
@@ -323,6 +324,7 @@
             // 
             // viewTestCombo
             // 
+            this.viewTestCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.viewTestCombo.FormattingEnabled = true;
             this.viewTestCombo.Location = new System.Drawing.Point(130, 20);
             this.viewTestCombo.Name = "viewTestCombo";
