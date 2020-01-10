@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.dateFiledBox = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.monthlyBtn = new System.Windows.Forms.Button();
             this.weeklyBtn = new System.Windows.Forms.Button();
             this.dailyBtn = new System.Windows.Forms.Button();
-            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.typeCombo = new System.Windows.Forms.ComboBox();
+            this.listCombo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.ContentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +49,9 @@
             this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
             this.ContentPanel.BackgroundImage = global::SouthJLAInformationSystemC.Properties.Resources.soutjla_LOGOblur;
             this.ContentPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ContentPanel.Controls.Add(this.label1);
+            this.ContentPanel.Controls.Add(this.listCombo);
+            this.ContentPanel.Controls.Add(this.typeCombo);
             this.ContentPanel.Controls.Add(this.dataGrid);
             this.ContentPanel.Controls.Add(this.button4);
             this.ContentPanel.Controls.Add(this.dateFiledBox);
@@ -59,6 +65,14 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(1230, 500);
             this.ContentPanel.TabIndex = 22;
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Location = new System.Drawing.Point(29, 81);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.Size = new System.Drawing.Size(939, 398);
+            this.dataGrid.TabIndex = 7;
             // 
             // button4
             // 
@@ -113,13 +127,34 @@
             this.dailyBtn.UseVisualStyleBackColor = true;
             this.dailyBtn.Click += new System.EventHandler(this.dailyBtn_Click);
             // 
-            // dataGrid
+            // typeCombo
             // 
-            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid.Location = new System.Drawing.Point(29, 81);
-            this.dataGrid.Name = "dataGrid";
-            this.dataGrid.Size = new System.Drawing.Size(939, 398);
-            this.dataGrid.TabIndex = 7;
+            this.typeCombo.FormattingEnabled = true;
+            this.typeCombo.Items.AddRange(new object[] {
+            "TESTS",
+            "PACKAGES"});
+            this.typeCombo.Location = new System.Drawing.Point(558, 15);
+            this.typeCombo.Name = "typeCombo";
+            this.typeCombo.Size = new System.Drawing.Size(121, 21);
+            this.typeCombo.TabIndex = 8;
+            this.typeCombo.SelectedValueChanged += new System.EventHandler(this.TypeChange);
+            // 
+            // listCombo
+            // 
+            this.listCombo.FormattingEnabled = true;
+            this.listCombo.Location = new System.Drawing.Point(705, 15);
+            this.listCombo.Name = "listCombo";
+            this.listCombo.Size = new System.Drawing.Size(121, 21);
+            this.listCombo.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(518, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Type:";
             // 
             // BillingForm
             // 
@@ -147,5 +182,8 @@
         private System.Windows.Forms.Button weeklyBtn;
         private System.Windows.Forms.Button dailyBtn;
         private System.Windows.Forms.DataGridView dataGrid;
+        private System.Windows.Forms.ComboBox listCombo;
+        private System.Windows.Forms.ComboBox typeCombo;
+        private System.Windows.Forms.Label label1;
     }
 }

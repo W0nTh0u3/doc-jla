@@ -65,29 +65,29 @@
             this.rbcTextBox = new System.Windows.Forms.TextBox();
             this.wbcTextBox = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.monoRange = new System.Windows.Forms.Label();
+            this.monoUnit = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.lymphRange = new System.Windows.Forms.Label();
+            this.lymphUnit = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.neutrophilRange = new System.Windows.Forms.Label();
+            this.neutrophilUnit = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.plateletRange = new System.Windows.Forms.Label();
+            this.plateletUnit = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.hctRange = new System.Windows.Forms.Label();
+            this.hctUnit = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.hgbRange = new System.Windows.Forms.Label();
+            this.hgbUnit = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.rbcRange = new System.Windows.Forms.Label();
+            this.rbcUnit = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.wbcRange = new System.Windows.Forms.Label();
+            this.wbcUnit = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -421,29 +421,29 @@
             this.panel2.Controls.Add(this.rbcTextBox);
             this.panel2.Controls.Add(this.wbcTextBox);
             this.panel2.Controls.Add(this.label40);
-            this.panel2.Controls.Add(this.label37);
-            this.panel2.Controls.Add(this.label38);
+            this.panel2.Controls.Add(this.monoRange);
+            this.panel2.Controls.Add(this.monoUnit);
             this.panel2.Controls.Add(this.label39);
-            this.panel2.Controls.Add(this.label34);
-            this.panel2.Controls.Add(this.label35);
+            this.panel2.Controls.Add(this.lymphRange);
+            this.panel2.Controls.Add(this.lymphUnit);
             this.panel2.Controls.Add(this.label36);
-            this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.label32);
+            this.panel2.Controls.Add(this.neutrophilRange);
+            this.panel2.Controls.Add(this.neutrophilUnit);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.label29);
+            this.panel2.Controls.Add(this.plateletRange);
+            this.panel2.Controls.Add(this.plateletUnit);
             this.panel2.Controls.Add(this.label30);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.label26);
+            this.panel2.Controls.Add(this.hctRange);
+            this.panel2.Controls.Add(this.hctUnit);
             this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.hgbRange);
+            this.panel2.Controls.Add(this.hgbUnit);
             this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.rbcRange);
+            this.panel2.Controls.Add(this.rbcUnit);
             this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.wbcRange);
+            this.panel2.Controls.Add(this.wbcUnit);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
@@ -522,23 +522,23 @@
             this.label40.TabIndex = 37;
             this.label40.Text = "DIFFERENTIAL COUNT";
             // 
-            // label37
+            // monoRange
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(626, 361);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(58, 13);
-            this.label37.TabIndex = 36;
-            this.label37.Text = "(2.0 - 10.0)";
+            this.monoRange.AutoSize = true;
+            this.monoRange.Location = new System.Drawing.Point(626, 361);
+            this.monoRange.Name = "monoRange";
+            this.monoRange.Size = new System.Drawing.Size(58, 13);
+            this.monoRange.TabIndex = 36;
+            this.monoRange.Text = "(2.0 - 10.0)";
             // 
-            // label38
+            // monoUnit
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(469, 361);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(15, 13);
-            this.label38.TabIndex = 35;
-            this.label38.Text = "%";
+            this.monoUnit.AutoSize = true;
+            this.monoUnit.Location = new System.Drawing.Point(469, 361);
+            this.monoUnit.Name = "monoUnit";
+            this.monoUnit.Size = new System.Drawing.Size(15, 13);
+            this.monoUnit.TabIndex = 35;
+            this.monoUnit.Text = "%";
             // 
             // label39
             // 
@@ -549,23 +549,23 @@
             this.label39.TabIndex = 34;
             this.label39.Text = "MONOCYTE";
             // 
-            // label34
+            // lymphRange
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(626, 329);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(46, 13);
-            this.label34.TabIndex = 32;
-            this.label34.Text = "(25 - 50)";
+            this.lymphRange.AutoSize = true;
+            this.lymphRange.Location = new System.Drawing.Point(626, 329);
+            this.lymphRange.Name = "lymphRange";
+            this.lymphRange.Size = new System.Drawing.Size(46, 13);
+            this.lymphRange.TabIndex = 32;
+            this.lymphRange.Text = "(25 - 50)";
             // 
-            // label35
+            // lymphUnit
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(469, 329);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(15, 13);
-            this.label35.TabIndex = 31;
-            this.label35.Text = "%";
+            this.lymphUnit.AutoSize = true;
+            this.lymphUnit.Location = new System.Drawing.Point(469, 329);
+            this.lymphUnit.Name = "lymphUnit";
+            this.lymphUnit.Size = new System.Drawing.Size(15, 13);
+            this.lymphUnit.TabIndex = 31;
+            this.lymphUnit.Text = "%";
             // 
             // label36
             // 
@@ -576,23 +576,23 @@
             this.label36.TabIndex = 30;
             this.label36.Text = "LYMPHOCYTES";
             // 
-            // label31
+            // neutrophilRange
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(626, 296);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(46, 13);
-            this.label31.TabIndex = 28;
-            this.label31.Text = "(50 - 85)";
+            this.neutrophilRange.AutoSize = true;
+            this.neutrophilRange.Location = new System.Drawing.Point(626, 296);
+            this.neutrophilRange.Name = "neutrophilRange";
+            this.neutrophilRange.Size = new System.Drawing.Size(46, 13);
+            this.neutrophilRange.TabIndex = 28;
+            this.neutrophilRange.Text = "(50 - 85)";
             // 
-            // label32
+            // neutrophilUnit
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(469, 296);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(15, 13);
-            this.label32.TabIndex = 27;
-            this.label32.Text = "%";
+            this.neutrophilUnit.AutoSize = true;
+            this.neutrophilUnit.Location = new System.Drawing.Point(469, 296);
+            this.neutrophilUnit.Name = "neutrophilUnit";
+            this.neutrophilUnit.Size = new System.Drawing.Size(15, 13);
+            this.neutrophilUnit.TabIndex = 27;
+            this.neutrophilUnit.Text = "%";
             // 
             // label33
             // 
@@ -603,23 +603,23 @@
             this.label33.TabIndex = 26;
             this.label33.Text = "NEUTROPHIL";
             // 
-            // label28
+            // plateletRange
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(626, 230);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(58, 13);
-            this.label28.TabIndex = 24;
-            this.label28.Text = "(150 - 500)";
+            this.plateletRange.AutoSize = true;
+            this.plateletRange.Location = new System.Drawing.Point(626, 230);
+            this.plateletRange.Name = "plateletRange";
+            this.plateletRange.Size = new System.Drawing.Size(58, 13);
+            this.plateletRange.TabIndex = 24;
+            this.plateletRange.Text = "(150 - 500)";
             // 
-            // label29
+            // plateletUnit
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(469, 230);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(19, 13);
-            this.label29.TabIndex = 23;
-            this.label29.Text = "uL";
+            this.plateletUnit.AutoSize = true;
+            this.plateletUnit.Location = new System.Drawing.Point(469, 230);
+            this.plateletUnit.Name = "plateletUnit";
+            this.plateletUnit.Size = new System.Drawing.Size(19, 13);
+            this.plateletUnit.TabIndex = 23;
+            this.plateletUnit.Text = "uL";
             // 
             // label30
             // 
@@ -630,23 +630,23 @@
             this.label30.TabIndex = 22;
             this.label30.Text = "PLATELET";
             // 
-            // label25
+            // hctRange
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(626, 199);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(64, 13);
-            this.label25.TabIndex = 20;
-            this.label25.Text = "(37.0 - 47.0)";
+            this.hctRange.AutoSize = true;
+            this.hctRange.Location = new System.Drawing.Point(626, 199);
+            this.hctRange.Name = "hctRange";
+            this.hctRange.Size = new System.Drawing.Size(64, 13);
+            this.hctRange.TabIndex = 20;
+            this.hctRange.Text = "(37.0 - 47.0)";
             // 
-            // label26
+            // hctUnit
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(469, 199);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(15, 13);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "%";
+            this.hctUnit.AutoSize = true;
+            this.hctUnit.Location = new System.Drawing.Point(469, 199);
+            this.hctUnit.Name = "hctUnit";
+            this.hctUnit.Size = new System.Drawing.Size(15, 13);
+            this.hctUnit.TabIndex = 19;
+            this.hctUnit.Text = "%";
             // 
             // label27
             // 
@@ -657,23 +657,23 @@
             this.label27.TabIndex = 18;
             this.label27.Text = "HCT";
             // 
-            // label22
+            // hgbRange
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(626, 170);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 13);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "(11.5 - 16.0)";
+            this.hgbRange.AutoSize = true;
+            this.hgbRange.Location = new System.Drawing.Point(626, 170);
+            this.hgbRange.Name = "hgbRange";
+            this.hgbRange.Size = new System.Drawing.Size(64, 13);
+            this.hgbRange.TabIndex = 16;
+            this.hgbRange.Text = "(11.5 - 16.0)";
             // 
-            // label23
+            // hgbUnit
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(469, 170);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(26, 13);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "g/dl";
+            this.hgbUnit.AutoSize = true;
+            this.hgbUnit.Location = new System.Drawing.Point(469, 170);
+            this.hgbUnit.Name = "hgbUnit";
+            this.hgbUnit.Size = new System.Drawing.Size(26, 13);
+            this.hgbUnit.TabIndex = 15;
+            this.hgbUnit.Text = "g/dl";
             // 
             // label24
             // 
@@ -684,23 +684,23 @@
             this.label24.TabIndex = 14;
             this.label24.Text = "HGB";
             // 
-            // label19
+            // rbcRange
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(626, 140);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 13);
-            this.label19.TabIndex = 12;
-            this.label19.Text = "(3.80 - 5.80)";
+            this.rbcRange.AutoSize = true;
+            this.rbcRange.Location = new System.Drawing.Point(626, 140);
+            this.rbcRange.Name = "rbcRange";
+            this.rbcRange.Size = new System.Drawing.Size(64, 13);
+            this.rbcRange.TabIndex = 12;
+            this.rbcRange.Text = "(3.80 - 5.80)";
             // 
-            // label20
+            // rbcUnit
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(469, 140);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(19, 13);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "uL";
+            this.rbcUnit.AutoSize = true;
+            this.rbcUnit.Location = new System.Drawing.Point(469, 140);
+            this.rbcUnit.Name = "rbcUnit";
+            this.rbcUnit.Size = new System.Drawing.Size(19, 13);
+            this.rbcUnit.TabIndex = 11;
+            this.rbcUnit.Text = "uL";
             // 
             // label21
             // 
@@ -711,23 +711,23 @@
             this.label21.TabIndex = 10;
             this.label21.Text = "RBC";
             // 
-            // label18
+            // wbcRange
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(626, 110);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(58, 13);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "(4.0 - 10.0)";
+            this.wbcRange.AutoSize = true;
+            this.wbcRange.Location = new System.Drawing.Point(626, 110);
+            this.wbcRange.Name = "wbcRange";
+            this.wbcRange.Size = new System.Drawing.Size(31, 13);
+            this.wbcRange.TabIndex = 8;
+            this.wbcRange.Text = "none";
             // 
-            // label17
+            // wbcUnit
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(469, 110);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 13);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "uL";
+            this.wbcUnit.AutoSize = true;
+            this.wbcUnit.Location = new System.Drawing.Point(469, 110);
+            this.wbcUnit.Name = "wbcUnit";
+            this.wbcUnit.Size = new System.Drawing.Size(19, 13);
+            this.wbcUnit.TabIndex = 7;
+            this.wbcUnit.Text = "uL";
             // 
             // label16
             // 
@@ -818,29 +818,29 @@
         private System.Windows.Forms.Button SubmitCBC;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label monoRange;
+        private System.Windows.Forms.Label monoUnit;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label lymphRange;
+        private System.Windows.Forms.Label lymphUnit;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label neutrophilRange;
+        private System.Windows.Forms.Label neutrophilUnit;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label plateletRange;
+        private System.Windows.Forms.Label plateletUnit;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label hctRange;
+        private System.Windows.Forms.Label hctUnit;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label hgbRange;
+        private System.Windows.Forms.Label hgbUnit;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label rbcRange;
+        private System.Windows.Forms.Label rbcUnit;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label wbcRange;
+        private System.Windows.Forms.Label wbcUnit;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

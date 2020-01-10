@@ -36,20 +36,38 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
-            idBox.Text = dt1.Rows[0][19].ToString();
+            idBox.Text = dt1.Rows[0][11].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
             middleBox.Text = dt1.Rows[0][3].ToString();
             ageBox.Text = dt1.Rows[0][4].ToString();
-            addressBox.Text = dt1.Rows[0][10].ToString();
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
+            addressBox.Text = dt1.Rows[0][8].ToString();
+            gender = dt1.Rows[0][6].ToString();
+            civilStat = dt1.Rows[0][7].ToString();
 
 
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
+            SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.HematologyDictionary WHERE gender = '" + gender + "'", conn); //logic to find the right normal values
+            DataTable dtDic = new DataTable(); //this is creating a virtual table  
+            sdaDic.Fill(dtDic);
 
             passID = idPass;
+
+            wbcUnit.Text = dtDic.Rows[0][0].ToString();
+            wbcRange.Text = "(" + dtDic.Rows[0][1].ToString() + " - " + dtDic.Rows[0][2].ToString() + ")";
+            rbcUnit.Text = dtDic.Rows[1][0].ToString();
+            rbcRange.Text = "(" + dtDic.Rows[1][1].ToString() + " - " + dtDic.Rows[1][2].ToString() + ")";
+            hgbUnit.Text = dtDic.Rows[2][0].ToString();
+            hgbRange.Text = "(" + dtDic.Rows[2][1].ToString() + " - " + dtDic.Rows[2][2].ToString() + ")";
+            hctUnit.Text = dtDic.Rows[3][0].ToString();
+            hctRange.Text = "(" + dtDic.Rows[3][1].ToString() + " - " + dtDic.Rows[3][2].ToString() + ")";
+            plateletUnit.Text = dtDic.Rows[4][0].ToString();
+            plateletRange.Text = "(" + dtDic.Rows[4][1].ToString() + " - " + dtDic.Rows[4][2].ToString() + ")";
+            neutrophilUnit.Text = dtDic.Rows[5][0].ToString();
+            neutrophilRange.Text = "(" + dtDic.Rows[5][1].ToString() + " - " + dtDic.Rows[5][2].ToString() + ")";
+            lymphUnit.Text = dtDic.Rows[6][0].ToString();
+            lymphRange.Text = "(" + dtDic.Rows[6][1].ToString() + " - " + dtDic.Rows[6][2].ToString() + ")";
+            monoUnit.Text = dtDic.Rows[7][0].ToString();
+            monoRange.Text = "(" + dtDic.Rows[7][1].ToString() + " - " + dtDic.Rows[7][2].ToString() + ")";
 
             if (type == "Save changes")
             {
@@ -67,9 +85,6 @@ namespace SouthJLAInformationSystemC
                 lymphocytesTextBox.Text = dt2.Rows[0][7].ToString();
                 monocyteTextBox.Text = dt2.Rows[0][8].ToString();
             }
-
-
-
 
 
         }

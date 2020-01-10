@@ -27,7 +27,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table 
             sda.Fill(dt);
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 6; i++)
             {
                 viewTestCombo.Items.Add(dt.Rows[i][0].ToString());
                 editTestCombo.Items.Add(dt.Rows[i][0].ToString());
@@ -72,11 +72,11 @@ namespace SouthJLAInformationSystemC
         private void ChangeTestView(object sender, EventArgs e)
         {
 
-            Console.WriteLine("Selected dictionary: "+ viewTestCombo.SelectedItem);
-
+            Console.WriteLine("Selected dictionary: " + viewTestCombo.SelectedItem);
+            viewFieldCombo.Items.Clear();
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
 
-            if ( viewTestCombo.SelectedItem.ToString() == "Hematology")
+            if (viewTestCombo.SelectedItem.ToString() == "Hematology")
             {
                 string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + viewTestCombo.SelectedItem.ToString() + "'";
                 SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
@@ -87,6 +87,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay Hema");
                 viewPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFielditems(conn);
             }
 
 
@@ -101,6 +103,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay" + viewTestCombo.SelectedItem.ToString());
                 viewPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFielditems(conn);
             }
 
             else if (viewTestCombo.SelectedItem.ToString() == "Stool Exam")
@@ -114,6 +118,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay" + viewTestCombo.SelectedItem.ToString());
                 viewPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFielditems(conn);
             }
 
             else if (viewTestCombo.SelectedItem.ToString() == "Urinalysis")
@@ -127,9 +133,40 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay " + viewTestCombo.SelectedItem.ToString());
                 viewPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFielditems(conn);
             }
 
+            else if (viewTestCombo.SelectedItem.ToString() == "ECG")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + viewTestCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+                viewPriceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+            else if (viewTestCombo.SelectedItem.ToString() == "XRAY")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + viewTestCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+                viewPriceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
 
+            
+
+            viewFieldCombo.SelectedIndex = -1;
+
+            viewValueBox.Clear();
+            viewContentBox.Clear();
+
+        }
+
+        private void addFielditems(SqlConnection conn)
+        {
             string sqlstring = "SELECT DISTINCT field FROM dbo." + testDic;
             SqlDataAdapter sda1 = new SqlDataAdapter(sqlstring, conn);
             DataTable dt1 = new DataTable(); //this is creating a virtual table 
@@ -145,20 +182,14 @@ namespace SouthJLAInformationSystemC
 
             int rows = System.Convert.ToInt32(num);
 
-            
 
-            viewFieldCombo.Items.Clear();
+
+
 
             for (int i = 0; i < rows; i++)
             {
                 viewFieldCombo.Items.Add(dt1.Rows[i][0].ToString());
             }
-
-            viewFieldCombo.SelectedIndex = -1;
-
-            viewValueBox.Clear();
-            viewContentBox.Clear();
-
         }
 
         private void ChangeFieldView(object sender, EventArgs e)
@@ -212,6 +243,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay Hema");
                 editPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFieldsEdit(conn);
             }
 
 
@@ -226,6 +259,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay" + editTestCombo.SelectedItem.ToString());
                 editPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFieldsEdit(conn);
             }
 
             else if (editTestCombo.SelectedItem.ToString() == "Stool Exam")
@@ -239,6 +274,8 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay" + editTestCombo.SelectedItem.ToString());
                 editPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFieldsEdit(conn);
             }
 
             else if (editTestCombo.SelectedItem.ToString() == "Urinalysis")
@@ -252,9 +289,40 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine("okay " + editTestCombo.SelectedItem.ToString());
                 editPriceLabel.Text = dtP.Rows[0][0].ToString();
                 Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+
+                addFieldsEdit(conn);
+            }
+
+            else if (editTestCombo.SelectedItem.ToString() == "ECG")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + editTestCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+                editPriceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
+            }
+            else if (editTestCombo.SelectedItem.ToString() == "XRAY")
+            {
+                string sqlprice = "SELECT price FROM dbo.tests WHERE tests = '" + editTestCombo.SelectedItem.ToString() + "'";
+                SqlDataAdapter sdaprice = new SqlDataAdapter(sqlprice, conn);
+                DataTable dtP = new DataTable(); //this is creating a virtual table 
+                sdaprice.Fill(dtP);
+                editPriceLabel.Text = dtP.Rows[0][0].ToString();
+                Console.WriteLine("Price: " + dtP.Rows[0][0].ToString());
             }
 
 
+
+            editFieldCombo.SelectedIndex = -1;
+
+            editValueBox.Clear();
+            editContentBox.Clear();
+
+        }
+
+        private void addFieldsEdit(SqlConnection conn)
+        {
             string sqlstring = "SELECT DISTINCT field FROM dbo." + testDic;
             SqlDataAdapter sda1 = new SqlDataAdapter(sqlstring, conn);
             DataTable dt1 = new DataTable(); //this is creating a virtual table 
@@ -278,12 +346,6 @@ namespace SouthJLAInformationSystemC
             {
                 editFieldCombo.Items.Add(dt1.Rows[i][0].ToString());
             }
-
-            editFieldCombo.SelectedIndex = -1;
-
-            editValueBox.Clear();
-            editContentBox.Clear();
-
         }
 
         private void ChangeFieldEdit(object sender, EventArgs e)
@@ -339,19 +401,22 @@ namespace SouthJLAInformationSystemC
                 conn.Close();
             }
 
-            //edit 
-            string[] vs = editValueBox.Lines;
-
-            for(int i = 0; i < 7; i++)
+            if(editFieldCombo.SelectedItem != "XRAY" ||  editFieldCombo.SelectedItem != "ECG")
             {
-                Console.WriteLine("vs[" + i + "]: " + vs[i]);
-            }
+                //edit 
+                string[] vs = editValueBox.Lines;
 
-            string sqlString1 = "UPDATE dbo." + testDic + " SET field = '" + vs[0] + "',  units = '" + vs[1] + "',  age = '" + vs[2] + "',  gender = '" + vs[3] + "',  normal = '" + vs[4] + "',  min = '" + vs[5] + "',  max = '" + vs[6] + "' WHERE field = '" + editFieldCombo.SelectedItem +"'";
-            SqlCommand sda1 = new SqlCommand(sqlString1, conn);
-            conn.Open();
-            sda1.ExecuteNonQuery();
-            conn.Close();
+                for (int i = 0; i < 7; i++)
+                {
+                    Console.WriteLine("vs[" + i + "]: " + vs[i]);
+                }
+
+                string sqlString1 = "UPDATE dbo." + testDic + " SET field = '" + vs[0] + "',  units = '" + vs[1] + "',  age = '" + vs[2] + "',  gender = '" + vs[3] + "',  normal = '" + vs[4] + "',  min = '" + vs[5] + "',  max = '" + vs[6] + "' WHERE field = '" + editFieldCombo.SelectedItem + "'";
+                SqlCommand sda1 = new SqlCommand(sqlString1, conn);
+                conn.Open();
+                sda1.ExecuteNonQuery();
+                conn.Close();
+            }
 
 
             MessageBox.Show("Edit Successfully!");

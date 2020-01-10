@@ -44,6 +44,16 @@ namespace SouthJLAInformationSystemC
             dateFiledBox.Value = DateTime.Now;
 
             clearAll.Enabled = false;
+
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT DISTINCT packageName FROM dbo.Packages", conn);
+            DataTable dt = new DataTable(); //this is creating a virtual table 
+            sda.Fill(dt);
+
+            for (int i = 0; i < 1; i++)
+            {
+                packageBox.Items.Add(dt.Rows[i][0].ToString());
+            }
         }
         protected override CreateParams CreateParams
         {
@@ -463,10 +473,10 @@ namespace SouthJLAInformationSystemC
                 firstBox.Text = dt.Rows[0][2].ToString();
                 middleBox.Text = dt.Rows[0][3].ToString();
                 ageBox.Text = dt.Rows[0][4].ToString();
-                addressBox.Text = dt.Rows[0][10].ToString();
-                genderBox.SelectedItem = dt.Rows[0][7].ToString();
-                civilBox.SelectedItem = dt.Rows[0][8].ToString();
-                uniquePass = dt.Rows[0][19].ToString();
+                addressBox.Text = dt.Rows[0][8].ToString();
+                genderBox.SelectedItem = dt.Rows[0][6].ToString();
+                civilBox.SelectedItem = dt.Rows[0][7].ToString();
+                uniquePass = dt.Rows[0][11].ToString();
                 idPass = dt.Rows[0][0].ToString();
 
                 submit.Text = "Save changes";
