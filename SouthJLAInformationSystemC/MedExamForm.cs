@@ -13,8 +13,8 @@ namespace SouthJLAInformationSystemC
 {
     public partial class MedExamForm : Form
     {
-        public string passID, type, gender, civilStat;
-        public int med;
+        public string passID, type, gender, civilStat,medHolder;
+        public float med;
 
 
         private void SubmitCBC_Click(object sender, EventArgs e)
@@ -23,19 +23,23 @@ namespace SouthJLAInformationSystemC
 
             if (type == "Enter")
             {
-                //             sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
-                //             string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
-                //            string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
-                //            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
-                //           verifyPopUp.Show();
+                encodeBinary();
+                medHolder = $"{med}";           
+                sqlString = "INSERT INTO dbo.history (med,child,past,present1,present2,surgeries,hospitizations,smoke,alcohol,mens,last,others,eyes,mouth,cardio,respiratory,genitourinary,muskoskeletal,skin, neurological, endocrine,hema,others2,height,bp, weight,pr,pmi,rr,rightE,leftE,general,reviewSkin, headNeck,EEN,mouthThroat,chestLungs,breast,back,heartReview,abdomen,extremities, neurologicalReview,rectal,genitalia,impression,recommendations, ofw_id) VALUES('" + med + "','" +childBox.Text + "','" + pastBox.Text + "','" + presentBox1.Text+ "','" + presentBox2.Text + "','" + surgeriesBox.Text + "', '"+hospitizationsBox.Text+"','" + smokeBox.Text + "','" + alcoholBox.Text + "','" + mensBox.Text + "','" +lastBox.Text+ "','"+othersBox.Text+ "','"+eyesBox.Text+ "','"+mouthBox.Text+ "','"+cardioBox.Text+ "','"+respiratoryBox.Text+ "','"+genitourinaryBox.Text+ "','"+musculoskeletalBox.Text+ "', '"+skinBox.Text+"','"+neurologicalBox.Text+ "','"+endocrineBox.Text+ "','"+hemaBox.Text+ "','"+othersBox2.Text+ "','"+heightBox.Text+ "','"+bpBox.Text+ "','"+weightBox.Text+ "','"+prBox.Text+ "','"+bmiBox.Text+ "','"+rrBox.Text+ "','"+rightBox.Text+ "','"+leftBox.Text+ "','"+generalBox.Text+ "','"+reviewSkinBox.Text+ "','"+headNeckBox.Text+ "','"+EENBox.Text+ "','"+mouthThroatBox.Text+ "','"+chestLungsBox.Text+ "','"+breastBox.Text+ "','"+backBox.Text+ "','"+heartReviewBox.Text+ "','"+abdomenBox.Text+ "','"+extremitiesBox.Text+ "','"+neurlogicalReviewBox.Text+ "','"+rectalBox.Text+ "','"+genitaliaBox.Text+ "','"+impressionBox.Text+ "','"+recommendationBox.Text+ "','"+passID+"')";
+                             string[] valueString = { medHolder , childBox.Text , pastBox.Text , presentBox1.Text , presentBox2.Text , surgeriesBox.Text,hospitizationsBox.Text , smokeBox.Text , alcoholBox.Text , mensBox.Text , lastBox.Text , othersBox.Text , eyesBox.Text , mouthBox.Text , cardioBox.Text , respiratoryBox.Text , genitourinaryBox.Text , musculoskeletalBox.Text, skinBox.Text , neurologicalBox.Text , endocrineBox.Text , endocrineBox.Text , hemaBox.Text , othersBox2.Text , heightBox.Text , bpBox.Text , weightBox.Text , prBox.Text , bmiBox.Text , rrBox.Text , rightBox.Text , leftBox.Text , generalBox.Text , reviewSkinBox.Text , headNeckBox.Text , EENBox.Text , mouthThroatBox.Text , chestLungsBox.Text , breastBox.Text , backBox.Text , heartReviewBox.Text , abdomenBox.Text , extremitiesBox.Text , neurlogicalReviewBox.Text , rectalBox.Text , genitaliaBox.Text , impressionBox.Text , recommendationBox.Text};
+                            string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                            VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                           verifyPopUp.Show();
             }
             else if (type == "Save changes")
             {
-                //           sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "' WHERE ofw_id = '" + passID + "'";
-                //           string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
-                //           string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
-                //           VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
-                //            verifyPopUp.Show();
+                encodeBinary();
+                medHolder = $"{med}";
+                sqlString = "UPDATE dbo.history SET med='" + med + "',child='" + childBox.Text + "',past='" + pastBox.Text + "',present1='" + presentBox1.Text + "',present2='" + presentBox2.Text + "',surgeries='" + surgeriesBox.Text + "',hospitizations='" + hospitizationsBox.Text + "',smoke='" + smokeBox.Text + "',alcohol='" + alcoholBox.Text + "',mens='" + mensBox.Text + "',last='" + lastBox.Text + "',others='" + othersBox.Text + "',eyes='" + eyesBox.Text + "',mouth='" + mouthBox.Text + "',cardio='" + cardioBox.Text + "',respiratory='" + respiratoryBox.Text + "',genitourinary='" + genitourinaryBox.Text + "',muskoskeletal='" + musculoskeletalBox.Text + "',skin='" + skinBox.Text + "',neurological='" + neurologicalBox.Text + "',endocrine='" + endocrineBox.Text + "',hema='" + hemaBox.Text + "',others2='" + othersBox2.Text + "',height='" + heightBox.Text + "',bp='" + bpBox.Text + "',weight='" + weightBox.Text + "',pr='" + prBox.Text + "',pmi='" + bmiBox.Text + "',rr='" + rrBox.Text + "',rightE='" + rightBox.Text + "',leftE='" + leftBox.Text + "',general='" + generalBox.Text + "',reviewSkin'" + reviewSkinBox.Text + "',headNeck'" + headNeckBox.Text + "',EEN='" + EENBox.Text + "',mouthThroat='" + mouthThroatBox.Text + "',chestLungs='" + chestLungsBox.Text + "',breast='" + breastBox.Text + "',back='" + backBox.Text + "',heartReview='" + heartReviewBox.Text + "',abdomen='" + abdomenBox.Text + "',extremities='" + extremitiesBox.Text + "',neurologicalReview='" + neurlogicalReviewBox.Text + "',rectal='" + rectalBox.Text + "',genitalia='" + genitaliaBox.Text + "',impression='" + impressionBox.Text + "',recommendations='" + recommendationBox.Text + "',ofw_id='" + passID + "'";
+                string[] valueString = { medHolder, childBox.Text, pastBox.Text, presentBox1.Text, presentBox2.Text, surgeriesBox.Text, hospitizationsBox.Text, smokeBox.Text, alcoholBox.Text, mensBox.Text, lastBox.Text, othersBox.Text, eyesBox.Text, mouthBox.Text, cardioBox.Text, respiratoryBox.Text, genitourinaryBox.Text, musculoskeletalBox.Text, skinBox.Text, neurologicalBox.Text, endocrineBox.Text, endocrineBox.Text, hemaBox.Text, othersBox2.Text, heightBox.Text, bpBox.Text, weightBox.Text, prBox.Text, bmiBox.Text, rrBox.Text, rightBox.Text, leftBox.Text, generalBox.Text, reviewSkinBox.Text, headNeckBox.Text, EENBox.Text, mouthThroatBox.Text, chestLungsBox.Text, breastBox.Text, backBox.Text, heartReviewBox.Text, abdomenBox.Text, extremitiesBox.Text, neurlogicalReviewBox.Text, rectalBox.Text, genitaliaBox.Text, impressionBox.Text, recommendationBox.Text };
+                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                           VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
+                            verifyPopUp.Show();
             }
         }
 
@@ -104,7 +108,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
-            idBox.Text = dt1.Rows[0][19].ToString();
+            idBox.Text = dt1.Rows[0][0].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
             middleBox.Text = dt1.Rows[0][3].ToString();
@@ -125,62 +129,55 @@ namespace SouthJLAInformationSystemC
                 DataTable dt2 = new DataTable(); //this is creating a virtual table  
                 sdaFill.Fill(dt2);
 
-                //          med1 = dt2.Rows[0][1].ToString;
-                //         med2 = dt2.Rows[0][2].ToString;
-                impressionBox.Text = dt2.Rows[0][3].ToString();
-                recommendationBox.Text = dt2.Rows[0][4].ToString();
-                heightBox.Text = dt2.Rows[0][5].ToString();
-                weightBox.Text = dt2.Rows[0][6].ToString();
-
-                respiratoryBox.Text = dt2.Rows[0][11].ToString();
-                bmiBox.Text = dt2.Rows[0][12].ToString();
-
-                skinBox.Text = dt2.Rows[0][25].ToString();
-
-                eyesBox.Text = dt2.Rows[0][27].ToString();
-
-                mouthBox.Text = dt2.Rows[0][31].ToString();
-
-
-
-                childBox.Text = dt2.Rows[0][1].ToString();
-                pastBox.Text = dt2.Rows[0][1].ToString();
-                presentBox1.Text = dt2.Rows[0][1].ToString();
-                presentBox2.Text = dt2.Rows[0][1].ToString();
-                surgeriesBox.Text = dt2.Rows[0][1].ToString();
-                hospitizationsBox.Text = dt2.Rows[0][1].ToString();
-                smokeBox.Text = dt2.Rows[0][1].ToString();
-                alcoholBox.Text = dt2.Rows[0][1].ToString();
-                mensBox.Text = dt2.Rows[0][1].ToString();
-                lastBox.Text = dt2.Rows[0][1].ToString();
-                othersBox.Text = dt2.Rows[0][1].ToString();
-                cardioBox.Text = dt2.Rows[0][1].ToString();
-                genitourinaryBox.Text = dt2.Rows[0][1].ToString();
-                musculoskeletalBox.Text = dt2.Rows[0][1].ToString();
-                neurologicalBox.Text = dt2.Rows[0][1].ToString();
-                endocrineBox.Text = dt2.Rows[0][1].ToString();
-                hemaBox.Text = dt2.Rows[0][1].ToString();
-                othersBox2.Text = dt2.Rows[0][1].ToString();
-                bpBox.Text = dt2.Rows[0][1].ToString();
-                prBox.Text = dt2.Rows[0][1].ToString();
-                rrBox.Text = dt2.Rows[0][1].ToString();
-                rightBox.Text = dt2.Rows[0][1].ToString();
-                leftBox.Text = dt2.Rows[0][1].ToString();
-                generalBox.Text = dt2.Rows[0][1].ToString();
-                reviewSkinBox.Text = dt2.Rows[0][1].ToString();
-                headNeckBox.Text = dt2.Rows[0][1].ToString();
-                EENBox.Text = dt2.Rows[0][1].ToString();
-                mouthThroatBox.Text = dt2.Rows[0][1].ToString();
-                chestLungsBox.Text = dt2.Rows[0][1].ToString();
-                breastBox.Text = dt2.Rows[0][1].ToString();
-                backBox.Text = dt2.Rows[0][1].ToString();
-                heartReviewBox.Text = dt2.Rows[0][1].ToString();
-                abdomenBox.Text = dt2.Rows[0][1].ToString();
-                extremitiesBox.Text = dt2.Rows[0][1].ToString();
-                neurlogicalReviewBox.Text = dt2.Rows[0][1].ToString();
-                rectalBox.Text = dt2.Rows[0][1].ToString();
-                genitaliaBox.Text = dt2.Rows[0][1].ToString();
-
+                medHolder = dt2.Rows[0][1].ToString();
+                med = float.Parse(medHolder);
+                decryptBinary();
+                childBox.Text = dt2.Rows[0][2].ToString();
+                pastBox.Text = dt2.Rows[0][3].ToString();
+                presentBox1.Text = dt2.Rows[0][4].ToString();
+                presentBox2.Text = dt2.Rows[0][5].ToString();
+                surgeriesBox.Text = dt2.Rows[0][6].ToString();
+                hospitizationsBox.Text = dt2.Rows[0][7].ToString();
+                smokeBox.Text = dt2.Rows[0][8].ToString();
+                alcoholBox.Text = dt2.Rows[0][9].ToString();
+                mensBox.Text = dt2.Rows[0][10].ToString();
+                lastBox.Text = dt2.Rows[0][11].ToString();
+                othersBox.Text = dt2.Rows[0][12].ToString();
+                eyesBox.Text = dt2.Rows[0][13].ToString();
+                mouthBox.Text = dt2.Rows[0][14].ToString();
+                cardioBox.Text = dt2.Rows[0][15].ToString();
+                respiratoryBox.Text = dt2.Rows[0][16].ToString();
+                genitourinaryBox.Text = dt2.Rows[0][17].ToString();
+                musculoskeletalBox.Text = dt2.Rows[0][18].ToString();
+                skinBox.Text = dt2.Rows[0][19].ToString();
+                neurologicalBox.Text = dt2.Rows[0][20].ToString();
+                endocrineBox.Text = dt2.Rows[0][21].ToString();
+                hemaBox.Text = dt2.Rows[0][22].ToString();
+                othersBox2.Text = dt2.Rows[0][23].ToString();
+                heightBox.Text = dt2.Rows[0][24].ToString();
+                bpBox.Text = dt2.Rows[0][25].ToString();
+                weightBox.Text = dt2.Rows[0][26].ToString();
+                prBox.Text = dt2.Rows[0][27].ToString();
+                bmiBox.Text = dt2.Rows[0][28].ToString();
+                rrBox.Text = dt2.Rows[0][29].ToString();
+                rightBox.Text = dt2.Rows[0][30].ToString();
+                leftBox.Text = dt2.Rows[0][31].ToString();
+                generalBox.Text = dt2.Rows[0][32].ToString();
+                reviewSkinBox.Text = dt2.Rows[0][33].ToString();
+                headNeckBox.Text = dt2.Rows[0][34].ToString();
+                EENBox.Text = dt2.Rows[0][35].ToString();
+                mouthThroatBox.Text = dt2.Rows[0][36].ToString();
+                chestLungsBox.Text = dt2.Rows[0][37].ToString();
+                breastBox.Text = dt2.Rows[0][38].ToString();
+                backBox.Text = dt2.Rows[0][39].ToString();
+                heartReviewBox.Text = dt2.Rows[0][40].ToString();
+                abdomenBox.Text = dt2.Rows[0][41].ToString();
+                extremitiesBox.Text = dt2.Rows[0][42].ToString();
+                neurlogicalReviewBox.Text = dt2.Rows[0][43].ToString();
+                rectalBox.Text = dt2.Rows[0][44].ToString();
+                genitaliaBox.Text = dt2.Rows[0][45].ToString();
+                impressionBox.Text = dt2.Rows[0][46].ToString();
+                recommendationBox.Text = dt2.Rows[0][47].ToString();
 
             }
 
@@ -189,14 +186,13 @@ namespace SouthJLAInformationSystemC
         private void decryptBinary()
         {
             int[] medArray = new int[35];
-            int counter = 0;
-            for (counter = 35; counter > 0; counter--)
+            for (int counter = 35; counter > 0; counter--)
             {
                 if (med >= Math.Pow(10, counter - 1))
                     medArray[counter - 1] = 1;
             }
 
-            for (int counter2 = 0; counter < 35; counter++)
+            for (int counter2 = 0; counter2 < 35; counter2++)
             {
                 if (medArray[counter2] == 1){y1.Checked = true;n1.Checked = false;}else{n1.Checked = true;y1.Checked = false;}
                 if (medArray[counter2] == 1) { y2.Checked = true; n2.Checked = false; } else { n1.Checked = true; y1.Checked = false; }
