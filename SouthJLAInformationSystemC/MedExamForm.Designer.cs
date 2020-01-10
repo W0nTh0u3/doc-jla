@@ -267,7 +267,7 @@
             this.y6 = new System.Windows.Forms.RadioButton();
             this.n6 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FormNBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -2370,9 +2370,9 @@
             this.label80.AutoSize = true;
             this.label80.Location = new System.Drawing.Point(386, 133);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(78, 13);
+            this.label80.Size = new System.Drawing.Size(71, 13);
             this.label80.TabIndex = 238;
-            this.label80.Text = "Present Illness:";
+            this.label80.Text = "Supplements:";
             // 
             // label75
             // 
@@ -2838,7 +2838,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.FormNBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label2);
@@ -2868,14 +2868,14 @@
             this.panel1.Size = new System.Drawing.Size(800, 215);
             this.panel1.TabIndex = 7;
             // 
-            // textBox1
+            // FormNBox
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(678, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 38);
-            this.textBox1.TabIndex = 118;
+            this.FormNBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.FormNBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormNBox.Location = new System.Drawing.Point(678, 153);
+            this.FormNBox.Name = "FormNBox";
+            this.FormNBox.Size = new System.Drawing.Size(59, 38);
+            this.FormNBox.TabIndex = 118;
             // 
             // label1
             // 
@@ -3456,7 +3456,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox physicianBox;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FormNBox;
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.TextBox textBox2;
         internal System.Windows.Forms.Label label2;
