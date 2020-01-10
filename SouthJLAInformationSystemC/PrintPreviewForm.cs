@@ -54,7 +54,7 @@ namespace SouthJLAInformationSystemC
             cBCFormDoc.SetParameterValue("NEUTROPHILVal", values[5]);
             cBCFormDoc.SetParameterValue("LYMPHOCYTESVal", values[6]);
             cBCFormDoc.SetParameterValue("MONOCYTEVal", values[7]);
-            
+
             InternalPrintViewer.ReportSource = cBCFormDoc;
             InternalPrintViewer.Refresh();
         }
@@ -141,6 +141,9 @@ namespace SouthJLAInformationSystemC
 
             fBSCholeFormDoc.SetParameterValue("fbs", values[0]);
             fBSCholeFormDoc.SetParameterValue("totalCholesterol", values[1]);
+
+            fBSCholeFormDoc.SetParameterValue("fbsMin", 3);
+            fBSCholeFormDoc.SetParameterValue("fbsMax", 5);
 
             InternalPrintViewer.ReportSource = fBSCholeFormDoc;
             InternalPrintViewer.Refresh();
