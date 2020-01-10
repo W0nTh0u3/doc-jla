@@ -74,6 +74,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MedExamFormDoc.cs">
+      <DependentUpon>MedExamFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FBSCholeFormDoc.cs">
+      <DependentUpon>FBSCholeFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ECGFormDoc.cs">
+      <DependentUpon>ECGFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="XrayFormDoc.cs">
+      <DependentUpon>XrayFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UrinStoolFormDoc.cs">
+      <DependentUpon>UrinStoolFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="CBCFormDoc.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +230,26 @@
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedExamFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MedExamFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBSCholeFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FBSCholeFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ECGFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XrayFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XrayFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrinStoolFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UrinStoolFormDoc.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DictionaryForm.resx">
       <DependentUpon>DictionaryForm.cs</DependentUpon>

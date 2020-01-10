@@ -23,7 +23,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "INSERT INTO dbo.ecg (impression, ofw_id) VALUES('" + ecgBox.Text + "','" + passID + "')";
                 string[] valueString = { ecgBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }
@@ -31,7 +31,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "UPDATE dbo.ecg SET impression = '" + ecgBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { ecgBox.Text };
-                string[] patientInfoValue = { idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat };
+                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue);
                 verifyPopUp.Show();
             }
