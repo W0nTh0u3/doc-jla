@@ -167,7 +167,6 @@ C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalD
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\stdole.dll
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\John Paul\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
-C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\AxShockwaveFlashObjects.dll
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\CrystalDecisions.ReportSource.dll
