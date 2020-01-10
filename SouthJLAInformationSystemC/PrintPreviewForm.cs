@@ -32,6 +32,8 @@ namespace SouthJLAInformationSystemC
                 ECGFormPreview();
             else if (patientInfoValue[0] == "FBSCholeForm")
                 FBSChloreFormPreview();
+            else if (patientInfoValue[0] == "MedExamForm")
+                MedExamFormPreview();
             else
                 MessageBox.Show("Work in Progress");
         }
@@ -151,7 +153,67 @@ namespace SouthJLAInformationSystemC
 
         private void MedExamFormPreview()
         {
+            MedExamFormDoc medExamFormDoc = new MedExamFormDoc();
+            medExamFormDoc.SetParameterValue("IDVal", patientInfoValue[1]);
+            medExamFormDoc.SetParameterValue("FullNameVal", patientInfoValue[2] + " ," + patientInfoValue[3] + " " + patientInfoValue[4] + ".");
+            medExamFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
+            medExamFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
+            medExamFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
+            medExamFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
 
+            medExamFormDoc.SetParameterValue("child", values[1]);
+            medExamFormDoc.SetParameterValue("past", values[2]);
+            medExamFormDoc.SetParameterValue("present1", values[3]);
+            medExamFormDoc.SetParameterValue("present2", values[4]);
+            medExamFormDoc.SetParameterValue("surgeries", values[5]);
+            medExamFormDoc.SetParameterValue("hospitization", values[6]);
+            medExamFormDoc.SetParameterValue("smoke", values[7]);
+            medExamFormDoc.SetParameterValue("alcohol", values[8]);
+            medExamFormDoc.SetParameterValue("mens", values[9]);
+            medExamFormDoc.SetParameterValue("lasting", values[10]);
+            medExamFormDoc.SetParameterValue("others", values[11]);
+            medExamFormDoc.SetParameterValue("eyes", values[12]);
+            medExamFormDoc.SetParameterValue("mouth", values[13]);
+            medExamFormDoc.SetParameterValue("cardio", values[14]);
+            medExamFormDoc.SetParameterValue("respiratory", values[15]);
+            medExamFormDoc.SetParameterValue("genitourinary", values[16]);
+            medExamFormDoc.SetParameterValue("genitourinary", values[17]);
+            medExamFormDoc.SetParameterValue("muskoskeleta", values[18]);
+            medExamFormDoc.SetParameterValue("skin", values[19]);
+            medExamFormDoc.SetParameterValue("neurological", values[20]);
+            medExamFormDoc.SetParameterValue("endocrine", values[21]);
+            medExamFormDoc.SetParameterValue("hema", values[22]);
+            medExamFormDoc.SetParameterValue("others2", values[23]);
+            medExamFormDoc.SetParameterValue("height", values[24]);
+            medExamFormDoc.SetParameterValue("bp", values[25]);
+            medExamFormDoc.SetParameterValue("weight", values[26]);
+            medExamFormDoc.SetParameterValue("pr", values[27]);
+            medExamFormDoc.SetParameterValue("pmi", values[28]);
+            medExamFormDoc.SetParameterValue("rr", values[29]);
+            medExamFormDoc.SetParameterValue("rightE", values[30]);
+            medExamFormDoc.SetParameterValue("leftE", values[31]);
+            medExamFormDoc.SetParameterValue("general", values[32]);
+            medExamFormDoc.SetParameterValue("reviewSkin", values[33]);
+            medExamFormDoc.SetParameterValue("headNeck", values[34]);
+            medExamFormDoc.SetParameterValue("EEN", values[35]);
+            medExamFormDoc.SetParameterValue("mouthThroat", values[36]);
+            medExamFormDoc.SetParameterValue("chestLungs", values[37]);
+            medExamFormDoc.SetParameterValue("breast", values[38]);
+            medExamFormDoc.SetParameterValue("back", values[39]);
+            medExamFormDoc.SetParameterValue("heartReview", values[40]);
+            medExamFormDoc.SetParameterValue("abdomen", values[41]);
+            medExamFormDoc.SetParameterValue("extremities", values[42]);
+            medExamFormDoc.SetParameterValue("neurologicalReview", values[43]);
+            medExamFormDoc.SetParameterValue("rectal", values[44]);
+            medExamFormDoc.SetParameterValue("genitalia", values[45]);
+            medExamFormDoc.SetParameterValue("impression", values[46]);
+            medExamFormDoc.SetParameterValue("recommendations", values[47]);
+            //medExamFormDoc.SetParameterValue("physician", values[48]);
+
+            
+
+            InternalPrintViewer.ReportSource = medExamFormDoc;
+            InternalPrintViewer.Refresh();
         }
 
     }
