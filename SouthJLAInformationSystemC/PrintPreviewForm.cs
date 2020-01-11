@@ -270,11 +270,21 @@ namespace SouthJLAInformationSystemC
 
             for (int i = 0; i < values[0].Length; i++)
             {
-                medExamFormDoc.SetParameterValue("yn" + (i + 1).ToString(), (values[0][i] == '1')? "Y" : "N" );
+                medExamFormDoc.SetParameterValue("yn" + (i + 1).ToString(), CheckBinary(i)) ;
             }
 
             InternalPrintViewer.ReportSource = medExamFormDoc;
             InternalPrintViewer.Refresh();
+        }
+
+        private string CheckBinary(int i)
+        {
+            if (values[0][i] == '1')
+                return "Y";
+            else if (values[0][i] == '0')
+                return "N";
+            else
+                return ""; 
         }
 
     }
