@@ -2252,6 +2252,7 @@
             this.bmiBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bmiBox.Location = new System.Drawing.Point(528, 827);
             this.bmiBox.Margin = new System.Windows.Forms.Padding(2);
+            this.bmiBox.MaxLength = 5;
             this.bmiBox.Name = "bmiBox";
             this.bmiBox.Size = new System.Drawing.Size(120, 20);
             this.bmiBox.TabIndex = 251;
@@ -2270,9 +2271,11 @@
             this.weightBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.weightBox.Location = new System.Drawing.Point(300, 827);
             this.weightBox.Margin = new System.Windows.Forms.Padding(2);
+            this.weightBox.MaxLength = 5;
             this.weightBox.Name = "weightBox";
             this.weightBox.Size = new System.Drawing.Size(120, 20);
             this.weightBox.TabIndex = 249;
+            this.weightBox.TextChanged += new System.EventHandler(this.weightBox_TextChanged);
             // 
             // label83
             // 
@@ -2288,9 +2291,11 @@
             this.heightBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.heightBox.Location = new System.Drawing.Point(108, 827);
             this.heightBox.Margin = new System.Windows.Forms.Padding(2);
+            this.heightBox.MaxLength = 5;
             this.heightBox.Name = "heightBox";
             this.heightBox.Size = new System.Drawing.Size(120, 20);
             this.heightBox.TabIndex = 247;
+            this.heightBox.TextChanged += new System.EventHandler(this.heightBox_TextChanged);
             // 
             // label82
             // 
