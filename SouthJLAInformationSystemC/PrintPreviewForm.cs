@@ -49,7 +49,11 @@ namespace SouthJLAInformationSystemC
             cBCFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             cBCFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             cBCFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            cBCFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
+            cBCFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            cBCFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            cBCFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            cBCFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            cBCFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
             
             cBCFormDoc.SetParameterValue("WBCVal", values[0]);
             cBCFormDoc.SetParameterValue("RBCVal", values[1]);
@@ -108,8 +112,12 @@ namespace SouthJLAInformationSystemC
             uriStoolFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             uriStoolFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             uriStoolFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            uriStoolFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
-            
+            uriStoolFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            uriStoolFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            uriStoolFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            uriStoolFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            uriStoolFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
+
             uriStoolFormDoc.SetParameterValue("MacroColor",values[0]);
             uriStoolFormDoc.SetParameterValue("MacroTransparency", values[1]);
             uriStoolFormDoc.SetParameterValue("Leukocyte", values[2]);
@@ -156,7 +164,11 @@ namespace SouthJLAInformationSystemC
             xrayFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             xrayFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             xrayFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            xrayFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
+            xrayFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            xrayFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            xrayFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            xrayFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            xrayFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
 
             xrayFormDoc.SetParameterValue("viewPA", values[0]);
             xrayFormDoc.SetParameterValue("impression", values[1]);
@@ -173,7 +185,11 @@ namespace SouthJLAInformationSystemC
             eCGFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             eCGFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             eCGFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            eCGFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
+            eCGFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            eCGFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            eCGFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            eCGFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            eCGFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
 
             eCGFormDoc.SetParameterValue("impression", values[0]);
 
@@ -189,7 +205,11 @@ namespace SouthJLAInformationSystemC
             fBSCholeFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             fBSCholeFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             fBSCholeFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            fBSCholeFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
+            fBSCholeFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            fBSCholeFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            fBSCholeFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            fBSCholeFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            fBSCholeFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
 
             fBSCholeFormDoc.SetParameterValue("fbsUnit", vUnits[0]);
             fBSCholeFormDoc.SetParameterValue("totalCholesterolUnit", vUnits[1]);
@@ -217,7 +237,11 @@ namespace SouthJLAInformationSystemC
             medExamFormDoc.SetParameterValue("AgeVal", patientInfoValue[5]);
             medExamFormDoc.SetParameterValue("GenderVal", patientInfoValue[6]);
             medExamFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
-            medExamFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
+            medExamFormDoc.SetParameterValue("PackageVal", patientInfoValue[8]);
+            medExamFormDoc.SetParameterValue("CompanyVal", patientInfoValue[9]);
+            medExamFormDoc.SetParameterValue("AccountVal", patientInfoValue[10]);
+            medExamFormDoc.SetParameterValue("DateVal", patientInfoValue[11]);
+            medExamFormDoc.SetParameterValue("FormNVal", patientInfoValue[12]);
 
             medExamFormDoc.SetParameterValue("child", values[1]);
             medExamFormDoc.SetParameterValue("past", values[2]);

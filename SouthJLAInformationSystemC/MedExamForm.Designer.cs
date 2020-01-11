@@ -269,14 +269,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.FormNBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.accBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.companyBox = new System.Windows.Forms.ComboBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.packageBox = new System.Windows.Forms.ComboBox();
             this.Label10 = new System.Windows.Forms.Label();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
+            this.DateBox = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.ageBox = new System.Windows.Forms.TextBox();
@@ -2845,14 +2845,14 @@
             // 
             this.panel1.Controls.Add(this.FormNBox);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.accBox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.ComboBox2);
+            this.panel1.Controls.Add(this.companyBox);
             this.panel1.Controls.Add(this.Label11);
             this.panel1.Controls.Add(this.PictureBox1);
-            this.panel1.Controls.Add(this.ComboBox1);
+            this.panel1.Controls.Add(this.packageBox);
             this.panel1.Controls.Add(this.Label10);
-            this.panel1.Controls.Add(this.TextBox7);
+            this.panel1.Controls.Add(this.DateBox);
             this.panel1.Controls.Add(this.Label9);
             this.panel1.Controls.Add(this.Label8);
             this.panel1.Controls.Add(this.ageBox);
@@ -2894,16 +2894,16 @@
             this.label1.TabIndex = 117;
             this.label1.Text = "Form No.";
             // 
-            // textBox2
+            // accBox
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(489, 110);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 116;
+            this.accBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.accBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accBox.Enabled = false;
+            this.accBox.Location = new System.Drawing.Point(489, 110);
+            this.accBox.Margin = new System.Windows.Forms.Padding(2);
+            this.accBox.Name = "accBox";
+            this.accBox.Size = new System.Drawing.Size(140, 20);
+            this.accBox.TabIndex = 116;
             // 
             // label2
             // 
@@ -2917,15 +2917,15 @@
             this.label2.TabIndex = 115;
             this.label2.Text = "Account";
             // 
-            // ComboBox2
+            // companyBox
             // 
-            this.ComboBox2.Enabled = false;
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(489, 85);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 114;
+            this.companyBox.Enabled = false;
+            this.companyBox.FormattingEnabled = true;
+            this.companyBox.Location = new System.Drawing.Point(489, 85);
+            this.companyBox.Margin = new System.Windows.Forms.Padding(2);
+            this.companyBox.Name = "companyBox";
+            this.companyBox.Size = new System.Drawing.Size(140, 21);
+            this.companyBox.TabIndex = 114;
             // 
             // Label11
             // 
@@ -2948,15 +2948,15 @@
             this.PictureBox1.TabIndex = 112;
             this.PictureBox1.TabStop = false;
             // 
-            // ComboBox1
+            // packageBox
             // 
-            this.ComboBox1.Enabled = false;
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(489, 60);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 111;
+            this.packageBox.Enabled = false;
+            this.packageBox.FormattingEnabled = true;
+            this.packageBox.Location = new System.Drawing.Point(489, 60);
+            this.packageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.packageBox.Name = "packageBox";
+            this.packageBox.Size = new System.Drawing.Size(140, 21);
+            this.packageBox.TabIndex = 111;
             // 
             // Label10
             // 
@@ -2969,15 +2969,15 @@
             this.Label10.TabIndex = 110;
             this.Label10.Text = "Package";
             // 
-            // TextBox7
+            // DateBox
             // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(489, 26);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(140, 20);
-            this.TextBox7.TabIndex = 109;
+            this.DateBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DateBox.Enabled = false;
+            this.DateBox.Location = new System.Drawing.Point(489, 26);
+            this.DateBox.Margin = new System.Windows.Forms.Padding(2);
+            this.DateBox.Name = "DateBox";
+            this.DateBox.Size = new System.Drawing.Size(140, 20);
+            this.DateBox.TabIndex = 109;
             // 
             // Label9
             // 
@@ -3463,14 +3463,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox FormNBox;
         internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.TextBox textBox2;
+        internal System.Windows.Forms.TextBox accBox;
         internal System.Windows.Forms.Label label2;
-        internal System.Windows.Forms.ComboBox ComboBox2;
+        internal System.Windows.Forms.ComboBox companyBox;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.ComboBox packageBox;
         internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.TextBox TextBox7;
+        internal System.Windows.Forms.TextBox DateBox;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.TextBox ageBox;
