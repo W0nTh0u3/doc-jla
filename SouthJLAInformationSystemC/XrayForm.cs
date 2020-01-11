@@ -26,7 +26,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
                 string[] valueString = { viewBox.Text, remarksBox.Text };
-                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text }; 
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
@@ -37,7 +37,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
                 string[] valueString = { viewBox.Text, remarksBox.Text };
-                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text};
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text }; 
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }

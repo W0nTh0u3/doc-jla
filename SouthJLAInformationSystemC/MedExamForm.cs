@@ -13,7 +13,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class MedExamForm : Form
     {
-        public string passID, type, gender, civilStat,medHolder;
+        public string passID, type, gender, civilStat,medHolder,bday;
         public string med;
 
         private void weightBox_TextChanged(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
                 string[] valueString = { medHolder , childBox.Text , pastBox.Text , presentBox1.Text , presentBox2.Text , surgeriesBox.Text,hospitizationsBox.Text , smokeBox.Text , alcoholBox.Text , mensBox.Text , lastingBox.Text , othersBox.Text , eyesBox.Text , mouthBox.Text , cardioBox.Text , respiratoryBox.Text ,gastroBox.Text, genitourinaryBox.Text , musculoskeletalBox.Text, skinBox.Text , neurologicalBox.Text , endocrineBox.Text , hemaBox.Text , othersBox2.Text , heightBox.Text , bpBox.Text , weightBox.Text , prBox.Text , bmiBox.Text , rrBox.Text , rightBox.Text , leftBox.Text , generalBox.Text , reviewSkinBox.Text , headNeckBox.Text , EENBox.Text , mouthThroatBox.Text , chestLungsBox.Text , breastBox.Text , backBox.Text , heartReviewBox.Text , abdomenBox.Text , extremitiesBox.Text , neurlogicalReviewBox.Text , rectalBox.Text , genitaliaBox.Text , impressionBox.Text , recommendationBox.Text, physicianBox.Text};
-                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text ,FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
@@ -81,8 +81,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
                 string[] valueString = { medHolder, childBox.Text, pastBox.Text, presentBox1.Text, presentBox2.Text, surgeriesBox.Text, hospitizationsBox.Text, smokeBox.Text, alcoholBox.Text, mensBox.Text, lastingBox.Text, othersBox.Text, eyesBox.Text, mouthBox.Text, cardioBox.Text, respiratoryBox.Text, gastroBox.Text, genitourinaryBox.Text, musculoskeletalBox.Text, skinBox.Text, neurologicalBox.Text, endocrineBox.Text, hemaBox.Text, othersBox2.Text, heightBox.Text, bpBox.Text, weightBox.Text, prBox.Text, bmiBox.Text, rrBox.Text, rightBox.Text, leftBox.Text, generalBox.Text, reviewSkinBox.Text, headNeckBox.Text, EENBox.Text, mouthThroatBox.Text, chestLungsBox.Text, breastBox.Text, backBox.Text, heartReviewBox.Text, abdomenBox.Text, extremitiesBox.Text, neurlogicalReviewBox.Text, rectalBox.Text, genitaliaBox.Text, impressionBox.Text, recommendationBox.Text, physicianBox.Text };
-                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
-                VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text }; VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
         }
@@ -162,6 +161,14 @@ namespace SouthJLAInformationSystemC
             addressBox.Text = dt1.Rows[0][8].ToString();
             gender = dt1.Rows[0][6].ToString();
             civilStat = dt1.Rows[0][7].ToString();
+            bday = dt1.Rows[0][5].ToString();
+
+            packageBox.Items.Clear();
+            packageBox.Items.Add(dt1.Rows[0][10].ToString());
+            packageBox.SelectedItem = dt1.Rows[0][10].ToString();
+            companyBox.Text = dt1.Rows[0][14].ToString();
+            accBox.Text = dt1.Rows[0][15].ToString();
+            DateBox.Text = dt1.Rows[0][9].ToString();
 
             passID = idPass;
 

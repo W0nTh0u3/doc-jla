@@ -116,7 +116,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
-                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat , FormNBox.Text};
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
@@ -124,7 +124,7 @@ namespace SouthJLAInformationSystemC
             {
                 sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
-                string[] patientInfoValue = {Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat , FormNBox.Text};
+                string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
