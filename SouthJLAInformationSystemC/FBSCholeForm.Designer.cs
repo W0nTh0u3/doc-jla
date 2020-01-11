@@ -56,12 +56,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.cholRange = new System.Windows.Forms.Label();
+            this.cholUnit = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.cholBox = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.fbsRange = new System.Windows.Forms.Label();
+            this.fbsUnit = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.fbsBox = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -386,12 +386,12 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
-            this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.label44);
+            this.panel2.Controls.Add(this.cholRange);
+            this.panel2.Controls.Add(this.cholUnit);
             this.panel2.Controls.Add(this.label45);
             this.panel2.Controls.Add(this.cholBox);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.fbsRange);
+            this.panel2.Controls.Add(this.fbsUnit);
             this.panel2.Controls.Add(this.label24);
             this.panel2.Controls.Add(this.fbsBox);
             this.panel2.Controls.Add(this.label16);
@@ -405,23 +405,23 @@
             this.panel2.Size = new System.Drawing.Size(800, 258);
             this.panel2.TabIndex = 10;
             // 
-            // label43
+            // cholRange
             // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(626, 145);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(37, 13);
-            this.label43.TabIndex = 28;
-            this.label43.Text = "(0-5.2)";
+            this.cholRange.AutoSize = true;
+            this.cholRange.Location = new System.Drawing.Point(626, 145);
+            this.cholRange.Name = "cholRange";
+            this.cholRange.Size = new System.Drawing.Size(31, 13);
+            this.cholRange.TabIndex = 28;
+            this.cholRange.Text = "none";
             // 
-            // label44
+            // cholUnit
             // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(469, 145);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(42, 13);
-            this.label44.TabIndex = 27;
-            this.label44.Text = "mmol/L";
+            this.cholUnit.AutoSize = true;
+            this.cholUnit.Location = new System.Drawing.Point(469, 145);
+            this.cholUnit.Name = "cholUnit";
+            this.cholUnit.Size = new System.Drawing.Size(31, 13);
+            this.cholUnit.TabIndex = 27;
+            this.cholUnit.Text = "none";
             // 
             // label45
             // 
@@ -439,23 +439,23 @@
             this.cholBox.Size = new System.Drawing.Size(100, 20);
             this.cholBox.TabIndex = 25;
             // 
-            // label22
+            // fbsRange
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(626, 117);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 13);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "(3.89-6.40)";
+            this.fbsRange.AutoSize = true;
+            this.fbsRange.Location = new System.Drawing.Point(626, 117);
+            this.fbsRange.Name = "fbsRange";
+            this.fbsRange.Size = new System.Drawing.Size(31, 13);
+            this.fbsRange.TabIndex = 16;
+            this.fbsRange.Text = "none";
             // 
-            // label23
+            // fbsUnit
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(469, 117);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(42, 13);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "mmol/L";
+            this.fbsUnit.AutoSize = true;
+            this.fbsUnit.Location = new System.Drawing.Point(469, 117);
+            this.fbsUnit.Name = "fbsUnit";
+            this.fbsUnit.Size = new System.Drawing.Size(31, 13);
+            this.fbsUnit.TabIndex = 15;
+            this.fbsUnit.Text = "none";
             // 
             // label24
             // 
@@ -550,12 +550,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button SubmitCBC;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label cholRange;
+        private System.Windows.Forms.Label cholUnit;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox cholBox;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label fbsRange;
+        private System.Windows.Forms.Label fbsUnit;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox fbsBox;
         private System.Windows.Forms.Label label16;

@@ -1071,6 +1071,7 @@
             // 
             // colorBox
             // 
+            this.colorBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.colorBox.Location = new System.Drawing.Point(267, 113);
             this.colorBox.Name = "colorBox";
             this.colorBox.Size = new System.Drawing.Size(100, 20);
