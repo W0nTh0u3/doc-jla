@@ -13,7 +13,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class UrinStoolForm : Form
     {
-        public string passID, type, gender, civilStat;
+        public string passID, type, gender, civilStat, bday;
         public string[] vUnits;
 
         private void SubmitCBC_Click(object sender, EventArgs e)
