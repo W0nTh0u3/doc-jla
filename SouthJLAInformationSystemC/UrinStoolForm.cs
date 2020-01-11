@@ -14,17 +14,18 @@ namespace SouthJLAInformationSystemC
     public partial class UrinStoolForm : Form
     {
         public string passID, type, gender, civilStat;
+        public string[] vUnits;
 
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
+            vUnits = new string[] { leukoLabel.Text, nitriteLabel.Text, uroLabel.Text, proteinLabel.Text, bloodLabel.Text, ketoneLabel.Text, bilirLabel.Text, glucoseLabel.Text, pusCellsLabel.Text, rbcLabel.Text};
 
             if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.urineStool (MacroColor, MacroTransparency, Leukocyte, Nitrite, Urobilinogen, Protein, PH, Blood,SpecificGravity, Ketone, Bilirubin, Glucose, MicroEpithelial, MucousThreads, AmorphousMaterial, PusCells, rbcU, bacteria,color,consistency,pus,rbcS,others, ofw_id ) VALUES('" + colorBox.Text + "','" + transparencyBox.Text + "','" + leukocyteBox.Text + "','" + nitriteBox.Text + "','" + urobilinogenBox.Text + "','" + proteinBox.Text + "','" + phBox.Text + "','" + bloodBox.Text + "','" + specificGravityBox.Text + "','" + ketoneBox.Text + "','" + bilirubinBox.Text + "','" + glucoseBox.Text + "','" + epithelialCellsBox.Text + "','" + mucousThreadsBox.Text + "','" + amorphousMaterialBox.Text + "','" + pusCellsBox.Text + "','" + rbcBox.Text + "','" + bacteriaBox.Text + "','" + colorStoolBox.Text + "','" + consistencyBox.Text + "','" + pusStoolBox.Text + "','" + rbcStoolBox.Text + "','" + othersBox.Text + "', '" + passID + "')";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
-                string[] vUnits = { "" };
                 string[] valueString = { colorBox.Text, transparencyBox.Text, leukocyteBox.Text, nitriteBox.Text, urobilinogenBox.Text, proteinBox.Text, phBox.Text, bloodBox.Text, specificGravityBox.Text, ketoneBox.Text, bilirubinBox.Text, glucoseBox.Text, epithelialCellsBox.Text, mucousThreadsBox.Text, amorphousMaterialBox.Text, pusCellsBox.Text, rbcBox.Text, bacteriaBox.Text, colorStoolBox.Text, consistencyBox.Text, pusStoolBox.Text, rbcStoolBox.Text, othersBox.Text };
                 string[] patientInfoValue = { Name ,idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat ,FormNBox.Text};
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
@@ -35,7 +36,6 @@ namespace SouthJLAInformationSystemC
                 sqlString = "UPDATE dbo.urineStool SET MacroColor = '" + colorBox.Text + "', MacroTransparency = '" + transparencyBox.Text + "', Leukocyte = '" + leukocyteBox.Text + "', Nitrite = '" + nitriteBox.Text + "', Urobilinogen = '" + urobilinogenBox.Text + "', Protein = '" + proteinBox.Text + "', PH = '" + phBox.Text + "', Blood = '" + bloodBox.Text + "',SpecificGravity = '" + specificGravityBox.Text + "', Ketone = '" + ketoneBox.Text + "', Bilirubin = '" + bilirubinBox.Text + "', Glucose = '" + glucoseBox.Text + "', MicroEpithelial = '" + epithelialCellsBox.Text + "', MucousThreads = '" + mucousThreadsBox.Text + "', AmorphousMaterial = '" + amorphousMaterialBox.Text + "', PusCells = '" + pusCellsBox.Text + "', rbcU = '" + rbcBox.Text + "', bacteria = '" + bacteriaBox.Text + "', color = '"+ colorStoolBox.Text+"', consistency = '"+ consistencyBox.Text+"', pus = '"+pusStoolBox.Text+"', rbcS = '"+ rbcStoolBox.Text+"', others = '"+othersBox.Text+"' WHERE ofw_id = '" + passID + "'";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
-                string[] vUnits = { "" };
                 string[] valueString = { colorBox.Text, transparencyBox.Text, leukocyteBox.Text, nitriteBox.Text, urobilinogenBox.Text, proteinBox.Text, phBox.Text, bloodBox.Text, specificGravityBox.Text, ketoneBox.Text, bilirubinBox.Text, glucoseBox.Text, epithelialCellsBox.Text, mucousThreadsBox.Text, amorphousMaterialBox.Text, pusCellsBox.Text, rbcBox.Text, bacteriaBox.Text, colorStoolBox.Text, consistencyBox.Text, pusStoolBox.Text, rbcStoolBox.Text, othersBox.Text };
                 string[] patientInfoValue = { Name ,idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat , FormNBox.Text};
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);

@@ -29,7 +29,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
-                string[] valueString = { medHolder , childBox.Text , pastBox.Text , presentBox1.Text , presentBox2.Text , surgeriesBox.Text,hospitizationsBox.Text , smokeBox.Text , alcoholBox.Text , mensBox.Text , lastingBox.Text , othersBox.Text , eyesBox.Text , mouthBox.Text , cardioBox.Text , respiratoryBox.Text ,gastroBox.Text, genitourinaryBox.Text , musculoskeletalBox.Text, skinBox.Text , neurologicalBox.Text , endocrineBox.Text , endocrineBox.Text , hemaBox.Text , othersBox2.Text , heightBox.Text , bpBox.Text , weightBox.Text , prBox.Text , bmiBox.Text , rrBox.Text , rightBox.Text , leftBox.Text , generalBox.Text , reviewSkinBox.Text , headNeckBox.Text , EENBox.Text , mouthThroatBox.Text , chestLungsBox.Text , breastBox.Text , backBox.Text , heartReviewBox.Text , abdomenBox.Text , extremitiesBox.Text , neurlogicalReviewBox.Text , rectalBox.Text , genitaliaBox.Text , impressionBox.Text , recommendationBox.Text, physicianBox.Text};
+                string[] valueString = { medHolder , childBox.Text , pastBox.Text , presentBox1.Text , presentBox2.Text , surgeriesBox.Text,hospitizationsBox.Text , smokeBox.Text , alcoholBox.Text , mensBox.Text , lastingBox.Text , othersBox.Text , eyesBox.Text , mouthBox.Text , cardioBox.Text , respiratoryBox.Text ,gastroBox.Text, genitourinaryBox.Text , musculoskeletalBox.Text, skinBox.Text , neurologicalBox.Text , endocrineBox.Text , hemaBox.Text , othersBox2.Text , heightBox.Text , bpBox.Text , weightBox.Text , prBox.Text , bmiBox.Text , rrBox.Text , rightBox.Text , leftBox.Text , generalBox.Text , reviewSkinBox.Text , headNeckBox.Text , EENBox.Text , mouthThroatBox.Text , chestLungsBox.Text , breastBox.Text , backBox.Text , heartReviewBox.Text , abdomenBox.Text , extremitiesBox.Text , neurlogicalReviewBox.Text , rectalBox.Text , genitaliaBox.Text , impressionBox.Text , recommendationBox.Text, physicianBox.Text};
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
@@ -42,7 +42,7 @@ namespace SouthJLAInformationSystemC
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
-                string[] valueString = { medHolder, childBox.Text, pastBox.Text, presentBox1.Text, presentBox2.Text, surgeriesBox.Text, hospitizationsBox.Text, smokeBox.Text, alcoholBox.Text, mensBox.Text, lastingBox.Text, othersBox.Text, eyesBox.Text, mouthBox.Text, cardioBox.Text, respiratoryBox.Text, gastroBox.Text, genitourinaryBox.Text, musculoskeletalBox.Text, skinBox.Text, neurologicalBox.Text, endocrineBox.Text, endocrineBox.Text, hemaBox.Text, othersBox2.Text, heightBox.Text, bpBox.Text, weightBox.Text, prBox.Text, bmiBox.Text, rrBox.Text, rightBox.Text, leftBox.Text, generalBox.Text, reviewSkinBox.Text, headNeckBox.Text, EENBox.Text, mouthThroatBox.Text, chestLungsBox.Text, breastBox.Text, backBox.Text, heartReviewBox.Text, abdomenBox.Text, extremitiesBox.Text, neurlogicalReviewBox.Text, rectalBox.Text, genitaliaBox.Text, impressionBox.Text, recommendationBox.Text };
+                string[] valueString = { medHolder, childBox.Text, pastBox.Text, presentBox1.Text, presentBox2.Text, surgeriesBox.Text, hospitizationsBox.Text, smokeBox.Text, alcoholBox.Text, mensBox.Text, lastingBox.Text, othersBox.Text, eyesBox.Text, mouthBox.Text, cardioBox.Text, respiratoryBox.Text, gastroBox.Text, genitourinaryBox.Text, musculoskeletalBox.Text, skinBox.Text, neurologicalBox.Text, endocrineBox.Text, hemaBox.Text, othersBox2.Text, heightBox.Text, bpBox.Text, weightBox.Text, prBox.Text, bmiBox.Text, rrBox.Text, rightBox.Text, leftBox.Text, generalBox.Text, reviewSkinBox.Text, headNeckBox.Text, EENBox.Text, mouthThroatBox.Text, chestLungsBox.Text, breastBox.Text, backBox.Text, heartReviewBox.Text, abdomenBox.Text, extremitiesBox.Text, neurlogicalReviewBox.Text, rectalBox.Text, genitaliaBox.Text, impressionBox.Text, recommendationBox.Text, physicianBox.Text };
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
@@ -116,17 +116,14 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
-            idBox.Text = dt1.Rows[0][19].ToString();
+            idBox.Text = dt1.Rows[0][11].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
             middleBox.Text = dt1.Rows[0][3].ToString();
             ageBox.Text = dt1.Rows[0][4].ToString();
-            addressBox.Text = dt1.Rows[0][10].ToString();
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
-
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
+            addressBox.Text = dt1.Rows[0][8].ToString();
+            gender = dt1.Rows[0][6].ToString();
+            civilStat = dt1.Rows[0][7].ToString();
 
             passID = idPass;
 
@@ -187,8 +184,8 @@ namespace SouthJLAInformationSystemC
                 rectalBox.Text = dt2.Rows[0][45].ToString();
                 genitaliaBox.Text = dt2.Rows[0][46].ToString();
                 impressionBox.Text = dt2.Rows[0][47].ToString();
-                recommendationBox.Text = dt2.Rows[0][48].ToString();
-                physicianBox.Text = dt2.Rows[0][49].ToString();
+                physicianBox.Text = dt2.Rows[0][48].ToString();
+                recommendationBox.Text = dt2.Rows[0][49].ToString();
 
             }
 

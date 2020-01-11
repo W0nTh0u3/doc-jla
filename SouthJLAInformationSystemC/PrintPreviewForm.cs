@@ -133,7 +133,18 @@ namespace SouthJLAInformationSystemC
             uriStoolFormDoc.SetParameterValue("pus", values[20]);
             uriStoolFormDoc.SetParameterValue("rbcS", values[21]);
             uriStoolFormDoc.SetParameterValue("others", values[22]);
-            
+
+            uriStoolFormDoc.SetParameterValue("LeukocyteRange", vUnits[0]);
+            uriStoolFormDoc.SetParameterValue("NitriteRange", vUnits[1]);
+            uriStoolFormDoc.SetParameterValue("UrobilinogenRange", vUnits[2]);
+            uriStoolFormDoc.SetParameterValue("ProteinRange", vUnits[3]);
+            uriStoolFormDoc.SetParameterValue("BloodRange", vUnits[4]);
+            uriStoolFormDoc.SetParameterValue("KetoneRange", vUnits[5]);
+            uriStoolFormDoc.SetParameterValue("BilirubinRange", vUnits[6]);
+            uriStoolFormDoc.SetParameterValue("GlucoseRange", vUnits[7]);
+            uriStoolFormDoc.SetParameterValue("PusCellsRange", vUnits[8]);
+            uriStoolFormDoc.SetParameterValue("rbcURange", vUnits[9]);
+
             InternalPrintViewer.ReportSource = uriStoolFormDoc;
             InternalPrintViewer.Refresh();
         }
@@ -180,11 +191,19 @@ namespace SouthJLAInformationSystemC
             fBSCholeFormDoc.SetParameterValue("CivilVal", patientInfoValue[7]);
             fBSCholeFormDoc.SetParameterValue("FormNVal", patientInfoValue[8]);
 
+            fBSCholeFormDoc.SetParameterValue("fbsUnit", vUnits[0]);
+            fBSCholeFormDoc.SetParameterValue("totalCholesterolUnit", vUnits[1]);
+
             fBSCholeFormDoc.SetParameterValue("fbs", values[0]);
             fBSCholeFormDoc.SetParameterValue("totalCholesterol", values[1]);
 
-            fBSCholeFormDoc.SetParameterValue("fbsMin", 3);
-            fBSCholeFormDoc.SetParameterValue("fbsMax", 5);
+            fBSCholeFormDoc.SetParameterValue("fbsMin", vMin[0]);
+            fBSCholeFormDoc.SetParameterValue("fbsMax", vMax[0]);
+            fBSCholeFormDoc.SetParameterValue("totalCholesterolMin", vMin[1]);
+            fBSCholeFormDoc.SetParameterValue("totalCholesterolMax", vMax[1]);
+
+            fBSCholeFormDoc.SetParameterValue("fbsRange", "(" + vMin[0] + " - " + vMax[0] + ")");
+            fBSCholeFormDoc.SetParameterValue("totalCholesterolRange", "(" + vMin[1] + " - " + vMax[1] + ")");
 
             InternalPrintViewer.ReportSource = fBSCholeFormDoc;
             InternalPrintViewer.Refresh();
@@ -205,7 +224,7 @@ namespace SouthJLAInformationSystemC
             medExamFormDoc.SetParameterValue("present1", values[3]);
             medExamFormDoc.SetParameterValue("present2", values[4]);
             medExamFormDoc.SetParameterValue("surgeries", values[5]);
-            medExamFormDoc.SetParameterValue("hospitization", values[6]);
+            medExamFormDoc.SetParameterValue("hospitalizations", values[6]);
             medExamFormDoc.SetParameterValue("smoke", values[7]);
             medExamFormDoc.SetParameterValue("alcohol", values[8]);
             medExamFormDoc.SetParameterValue("mens", values[9]);
@@ -215,7 +234,7 @@ namespace SouthJLAInformationSystemC
             medExamFormDoc.SetParameterValue("mouth", values[13]);
             medExamFormDoc.SetParameterValue("cardio", values[14]);
             medExamFormDoc.SetParameterValue("respiratory", values[15]);
-            medExamFormDoc.SetParameterValue("genitourinary", values[16]);
+            medExamFormDoc.SetParameterValue("gastro", values[16]);
             medExamFormDoc.SetParameterValue("genitourinary", values[17]);
             medExamFormDoc.SetParameterValue("muskoskeleta", values[18]);
             medExamFormDoc.SetParameterValue("skin", values[19]);
@@ -247,11 +266,11 @@ namespace SouthJLAInformationSystemC
             medExamFormDoc.SetParameterValue("genitalia", values[45]);
             medExamFormDoc.SetParameterValue("impression", values[46]);
             medExamFormDoc.SetParameterValue("recommendations", values[47]);
-            //medExamFormDoc.SetParameterValue("physician", values[48]);
+            medExamFormDoc.SetParameterValue("physician", values[48]);
 
-            for (int i = 0; i < 35; i++)
+            for (int i = 0; i < values[0].Length; i++)
             {
-                medExamFormDoc.SetParameterValue("yn" + i.ToString(), values[0][i]);
+                medExamFormDoc.SetParameterValue("yn" + (i + 1).ToString(), (values[0][i] == '1')? "Y" : "N" );
             }
 
             InternalPrintViewer.ReportSource = medExamFormDoc;
