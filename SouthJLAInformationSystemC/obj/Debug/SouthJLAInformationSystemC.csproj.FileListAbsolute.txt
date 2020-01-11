@@ -237,3 +237,4 @@ C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInfo
 C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
 C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
 C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache

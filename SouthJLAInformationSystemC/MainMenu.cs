@@ -366,6 +366,12 @@ namespace SouthJLAInformationSystemC
         {
             lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
             searchBox.Text = String.Empty;
+            bdayBox.Value = DateTime.Now;
+            packageBox.SelectedIndex = -1;
+            companyBox.Text = String.Empty;
+            accBox.Text = String.Empty;
+            paymentStatusBox.SelectedIndex = -1;
+
         }
 
 
