@@ -29,7 +29,7 @@ namespace SouthJLAInformationSystemC
             Console.WriteLine("terminal: " + terminal);
 
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            if(type == "3")
+            SubMenuLabelClicked.Text = "";                        userClass = type;            Console.WriteLine("User classification type: " + userClass);            if(type == "3")
             {
                 userEnter = true;
                 userEdit = true;
@@ -588,3 +588,23 @@ namespace SouthJLAInformationSystemC
         }
     }
 }
+
+
+/* for combining databases
+  SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+  SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);
+
+    string tableNames[] = 
+    string columnNames[] = 
+    string dbTarget,dbSource;
+
+        *****NEEDS TO PING OTHER DEVICE FIRST AND ALLOCATE WHICH IS dbTarget and dbSource********** #ComNet4Lyfe
+
+    for (int counter=0;counter<10;counter++)
+   {  SqlDataAdapter sdaSearch = new SqlDataAdapter("MERGE "+dbTarget+".dbo."+tableNames[counter]+" T USING "dbSource".dbo."+tableNames[counter]+" S ON (S.* = T.*) WHEN NOT MATCHED BY TARGET THEN INSERT INTO "+tableNames[counter]+"", conn);
+     
+}
+    *******END PINGING HERE********
+
+     
+     */

@@ -56,18 +56,18 @@
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.othersBox = new System.Windows.Forms.ComboBox();
+            this.othersBox = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.bacteriaBox = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.rbcLabel = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.rbcBox = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.pusCellsLabel = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.rbcStoolBox = new System.Windows.Forms.TextBox();
@@ -87,31 +87,31 @@
             this.label53 = new System.Windows.Forms.Label();
             this.epithelialCellsBox = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.glucoseLabel = new System.Windows.Forms.Label();
             this.consistencyBox = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
+            this.bilirLabel = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.glucoseBox = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.bilirubinBox = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
+            this.ketoneLabel = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.ketoneBox = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.specificGravityBox = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
+            this.bloodLabel = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.bloodBox = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.phBox = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.proteinLabel = new System.Windows.Forms.Label();
+            this.uroLabel = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.proteinBox = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.urobilinogenBox = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.nitriteLabel = new System.Windows.Forms.Label();
+            this.leukoLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.nitriteBox = new System.Windows.Forms.TextBox();
@@ -448,14 +448,14 @@
             this.panel2.Controls.Add(this.label44);
             this.panel2.Controls.Add(this.bacteriaBox);
             this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.rbcLabel);
             this.panel2.Controls.Add(this.label58);
             this.panel2.Controls.Add(this.label48);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label57);
             this.panel2.Controls.Add(this.rbcBox);
             this.panel2.Controls.Add(this.label49);
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.pusCellsLabel);
             this.panel2.Controls.Add(this.label56);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.rbcStoolBox);
@@ -475,31 +475,31 @@
             this.panel2.Controls.Add(this.label53);
             this.panel2.Controls.Add(this.epithelialCellsBox);
             this.panel2.Controls.Add(this.label52);
-            this.panel2.Controls.Add(this.label34);
+            this.panel2.Controls.Add(this.glucoseLabel);
             this.panel2.Controls.Add(this.consistencyBox);
-            this.panel2.Controls.Add(this.label35);
+            this.panel2.Controls.Add(this.bilirLabel);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.glucoseBox);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.bilirubinBox);
-            this.panel2.Controls.Add(this.label29);
+            this.panel2.Controls.Add(this.ketoneLabel);
             this.panel2.Controls.Add(this.label31);
             this.panel2.Controls.Add(this.ketoneBox);
             this.panel2.Controls.Add(this.label32);
             this.panel2.Controls.Add(this.specificGravityBox);
-            this.panel2.Controls.Add(this.label25);
+            this.panel2.Controls.Add(this.bloodLabel);
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.bloodBox);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Controls.Add(this.phBox);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.proteinLabel);
+            this.panel2.Controls.Add(this.uroLabel);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.proteinBox);
             this.panel2.Controls.Add(this.label24);
             this.panel2.Controls.Add(this.urobilinogenBox);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.nitriteLabel);
+            this.panel2.Controls.Add(this.leukoLabel);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.nitriteBox);
@@ -523,11 +523,11 @@
             // 
             // othersBox
             // 
-            this.othersBox.FormattingEnabled = true;
-            this.othersBox.Location = new System.Drawing.Point(90, 1060);
+            this.othersBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.othersBox.Location = new System.Drawing.Point(90, 1059);
             this.othersBox.Name = "othersBox";
-            this.othersBox.Size = new System.Drawing.Size(279, 21);
-            this.othersBox.TabIndex = 157;
+            this.othersBox.Size = new System.Drawing.Size(279, 20);
+            this.othersBox.TabIndex = 158;
             // 
             // label44
             // 
@@ -540,6 +540,7 @@
             // 
             // bacteriaBox
             // 
+            this.bacteriaBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.bacteriaBox.Location = new System.Drawing.Point(267, 724);
             this.bacteriaBox.Name = "bacteriaBox";
             this.bacteriaBox.Size = new System.Drawing.Size(100, 20);
@@ -554,14 +555,14 @@
             this.label43.TabIndex = 156;
             this.label43.Text = "OTHERS";
             // 
-            // label13
+            // rbcLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(627, 695);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 13);
-            this.label13.TabIndex = 130;
-            this.label13.Text = "(NONE)";
+            this.rbcLabel.AutoSize = true;
+            this.rbcLabel.Location = new System.Drawing.Point(627, 695);
+            this.rbcLabel.Name = "rbcLabel";
+            this.rbcLabel.Size = new System.Drawing.Size(44, 13);
+            this.rbcLabel.TabIndex = 130;
+            this.rbcLabel.Text = "(NONE)";
             // 
             // label58
             // 
@@ -603,6 +604,7 @@
             // 
             // rbcBox
             // 
+            this.rbcBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.rbcBox.Location = new System.Drawing.Point(267, 692);
             this.rbcBox.Name = "rbcBox";
             this.rbcBox.Size = new System.Drawing.Size(100, 20);
@@ -617,14 +619,14 @@
             this.label49.TabIndex = 154;
             this.label49.Text = "RBC";
             // 
-            // label12
+            // pusCellsLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(627, 664);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 13);
-            this.label12.TabIndex = 127;
-            this.label12.Text = "(NONE)";
+            this.pusCellsLabel.AutoSize = true;
+            this.pusCellsLabel.Location = new System.Drawing.Point(627, 664);
+            this.pusCellsLabel.Name = "pusCellsLabel";
+            this.pusCellsLabel.Size = new System.Drawing.Size(44, 13);
+            this.pusCellsLabel.TabIndex = 127;
+            this.pusCellsLabel.Text = "(NONE)";
             // 
             // label56
             // 
@@ -646,6 +648,7 @@
             // 
             // rbcStoolBox
             // 
+            this.rbcStoolBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.rbcStoolBox.Location = new System.Drawing.Point(269, 998);
             this.rbcStoolBox.Name = "rbcStoolBox";
             this.rbcStoolBox.Size = new System.Drawing.Size(100, 20);
@@ -653,6 +656,7 @@
             // 
             // pusCellsBox
             // 
+            this.pusCellsBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.pusCellsBox.Location = new System.Drawing.Point(267, 661);
             this.pusCellsBox.Name = "pusCellsBox";
             this.pusCellsBox.Size = new System.Drawing.Size(100, 20);
@@ -687,6 +691,7 @@
             // 
             // amorphousMaterialBox
             // 
+            this.amorphousMaterialBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.amorphousMaterialBox.Location = new System.Drawing.Point(267, 628);
             this.amorphousMaterialBox.Name = "amorphousMaterialBox";
             this.amorphousMaterialBox.Size = new System.Drawing.Size(100, 20);
@@ -713,6 +718,7 @@
             // 
             // pusStoolBox
             // 
+            this.pusStoolBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.pusStoolBox.Location = new System.Drawing.Point(269, 965);
             this.pusStoolBox.Name = "pusStoolBox";
             this.pusStoolBox.Size = new System.Drawing.Size(100, 20);
@@ -729,6 +735,7 @@
             // 
             // colorStoolBox
             // 
+            this.colorStoolBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.colorStoolBox.Location = new System.Drawing.Point(269, 869);
             this.colorStoolBox.Name = "colorStoolBox";
             this.colorStoolBox.Size = new System.Drawing.Size(100, 20);
@@ -736,6 +743,7 @@
             // 
             // mucousThreadsBox
             // 
+            this.mucousThreadsBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.mucousThreadsBox.Location = new System.Drawing.Point(267, 595);
             this.mucousThreadsBox.Name = "mucousThreadsBox";
             this.mucousThreadsBox.Size = new System.Drawing.Size(100, 20);
@@ -771,6 +779,7 @@
             // 
             // epithelialCellsBox
             // 
+            this.epithelialCellsBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.epithelialCellsBox.Location = new System.Drawing.Point(267, 562);
             this.epithelialCellsBox.Name = "epithelialCellsBox";
             this.epithelialCellsBox.Size = new System.Drawing.Size(100, 20);
@@ -785,30 +794,31 @@
             this.label52.TabIndex = 149;
             this.label52.Text = "CONSISTENCY";
             // 
-            // label34
+            // glucoseLabel
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(627, 504);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(67, 13);
-            this.label34.TabIndex = 114;
-            this.label34.Text = "(NEGATIVE)";
+            this.glucoseLabel.AutoSize = true;
+            this.glucoseLabel.Location = new System.Drawing.Point(627, 504);
+            this.glucoseLabel.Name = "glucoseLabel";
+            this.glucoseLabel.Size = new System.Drawing.Size(67, 13);
+            this.glucoseLabel.TabIndex = 114;
+            this.glucoseLabel.Text = "(NEGATIVE)";
             // 
             // consistencyBox
             // 
+            this.consistencyBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.consistencyBox.Location = new System.Drawing.Point(269, 902);
             this.consistencyBox.Name = "consistencyBox";
             this.consistencyBox.Size = new System.Drawing.Size(100, 20);
             this.consistencyBox.TabIndex = 148;
             // 
-            // label35
+            // bilirLabel
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(627, 471);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(67, 13);
-            this.label35.TabIndex = 113;
-            this.label35.Text = "(NEGATIVE)";
+            this.bilirLabel.AutoSize = true;
+            this.bilirLabel.Location = new System.Drawing.Point(627, 471);
+            this.bilirLabel.Name = "bilirLabel";
+            this.bilirLabel.Size = new System.Drawing.Size(67, 13);
+            this.bilirLabel.TabIndex = 113;
+            this.bilirLabel.Text = "(NEGATIVE)";
             // 
             // label37
             // 
@@ -821,6 +831,7 @@
             // 
             // glucoseBox
             // 
+            this.glucoseBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.glucoseBox.Location = new System.Drawing.Point(267, 501);
             this.glucoseBox.Name = "glucoseBox";
             this.glucoseBox.Size = new System.Drawing.Size(100, 20);
@@ -837,19 +848,20 @@
             // 
             // bilirubinBox
             // 
+            this.bilirubinBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.bilirubinBox.Location = new System.Drawing.Point(267, 468);
             this.bilirubinBox.Name = "bilirubinBox";
             this.bilirubinBox.Size = new System.Drawing.Size(100, 20);
             this.bilirubinBox.TabIndex = 109;
             // 
-            // label29
+            // ketoneLabel
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(627, 438);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 13);
-            this.label29.TabIndex = 108;
-            this.label29.Text = "(NEGATIVE)";
+            this.ketoneLabel.AutoSize = true;
+            this.ketoneLabel.Location = new System.Drawing.Point(627, 438);
+            this.ketoneLabel.Name = "ketoneLabel";
+            this.ketoneLabel.Size = new System.Drawing.Size(67, 13);
+            this.ketoneLabel.TabIndex = 108;
+            this.ketoneLabel.Text = "(NEGATIVE)";
             // 
             // label31
             // 
@@ -862,6 +874,7 @@
             // 
             // ketoneBox
             // 
+            this.ketoneBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.ketoneBox.Location = new System.Drawing.Point(267, 435);
             this.ketoneBox.Name = "ketoneBox";
             this.ketoneBox.Size = new System.Drawing.Size(100, 20);
@@ -878,19 +891,20 @@
             // 
             // specificGravityBox
             // 
+            this.specificGravityBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.specificGravityBox.Location = new System.Drawing.Point(267, 402);
             this.specificGravityBox.Name = "specificGravityBox";
             this.specificGravityBox.Size = new System.Drawing.Size(100, 20);
             this.specificGravityBox.TabIndex = 104;
             // 
-            // label25
+            // bloodLabel
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(627, 372);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(44, 13);
-            this.label25.TabIndex = 103;
-            this.label25.Text = "(NONE)";
+            this.bloodLabel.AutoSize = true;
+            this.bloodLabel.Location = new System.Drawing.Point(627, 372);
+            this.bloodLabel.Name = "bloodLabel";
+            this.bloodLabel.Size = new System.Drawing.Size(44, 13);
+            this.bloodLabel.TabIndex = 103;
+            this.bloodLabel.Text = "(NONE)";
             // 
             // label27
             // 
@@ -903,6 +917,7 @@
             // 
             // bloodBox
             // 
+            this.bloodBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.bloodBox.Location = new System.Drawing.Point(267, 369);
             this.bloodBox.Name = "bloodBox";
             this.bloodBox.Size = new System.Drawing.Size(100, 20);
@@ -919,28 +934,29 @@
             // 
             // phBox
             // 
+            this.phBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.phBox.Location = new System.Drawing.Point(267, 336);
             this.phBox.Name = "phBox";
             this.phBox.Size = new System.Drawing.Size(100, 20);
             this.phBox.TabIndex = 99;
             // 
-            // label21
+            // proteinLabel
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(627, 309);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(67, 13);
-            this.label21.TabIndex = 98;
-            this.label21.Text = "(NEGATIVE)";
+            this.proteinLabel.AutoSize = true;
+            this.proteinLabel.Location = new System.Drawing.Point(627, 309);
+            this.proteinLabel.Name = "proteinLabel";
+            this.proteinLabel.Size = new System.Drawing.Size(67, 13);
+            this.proteinLabel.TabIndex = 98;
+            this.proteinLabel.Text = "(NEGATIVE)";
             // 
-            // label22
+            // uroLabel
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(627, 276);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(59, 13);
-            this.label22.TabIndex = 97;
-            this.label22.Text = "(NORMAL)";
+            this.uroLabel.AutoSize = true;
+            this.uroLabel.Location = new System.Drawing.Point(627, 276);
+            this.uroLabel.Name = "uroLabel";
+            this.uroLabel.Size = new System.Drawing.Size(59, 13);
+            this.uroLabel.TabIndex = 97;
+            this.uroLabel.Text = "(NORMAL)";
             // 
             // label23
             // 
@@ -953,6 +969,7 @@
             // 
             // proteinBox
             // 
+            this.proteinBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.proteinBox.Location = new System.Drawing.Point(267, 306);
             this.proteinBox.Name = "proteinBox";
             this.proteinBox.Size = new System.Drawing.Size(100, 20);
@@ -969,28 +986,29 @@
             // 
             // urobilinogenBox
             // 
+            this.urobilinogenBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.urobilinogenBox.Location = new System.Drawing.Point(267, 273);
             this.urobilinogenBox.Name = "urobilinogenBox";
             this.urobilinogenBox.Size = new System.Drawing.Size(100, 20);
             this.urobilinogenBox.TabIndex = 93;
             // 
-            // label20
+            // nitriteLabel
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(627, 243);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 13);
-            this.label20.TabIndex = 92;
-            this.label20.Text = "(NEGATIVE)";
+            this.nitriteLabel.AutoSize = true;
+            this.nitriteLabel.Location = new System.Drawing.Point(627, 243);
+            this.nitriteLabel.Name = "nitriteLabel";
+            this.nitriteLabel.Size = new System.Drawing.Size(67, 13);
+            this.nitriteLabel.TabIndex = 92;
+            this.nitriteLabel.Text = "(NEGATIVE)";
             // 
-            // label19
+            // leukoLabel
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(627, 210);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 13);
-            this.label19.TabIndex = 91;
-            this.label19.Text = "(NONE)";
+            this.leukoLabel.AutoSize = true;
+            this.leukoLabel.Location = new System.Drawing.Point(627, 210);
+            this.leukoLabel.Name = "leukoLabel";
+            this.leukoLabel.Size = new System.Drawing.Size(44, 13);
+            this.leukoLabel.TabIndex = 91;
+            this.leukoLabel.Text = "(NONE)";
             // 
             // label1
             // 
@@ -1013,6 +1031,7 @@
             // 
             // nitriteBox
             // 
+            this.nitriteBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.nitriteBox.Location = new System.Drawing.Point(267, 240);
             this.nitriteBox.Name = "nitriteBox";
             this.nitriteBox.Size = new System.Drawing.Size(100, 20);
@@ -1029,6 +1048,7 @@
             // 
             // leukocyteBox
             // 
+            this.leukocyteBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.leukocyteBox.Location = new System.Drawing.Point(267, 207);
             this.leukocyteBox.Name = "leukocyteBox";
             this.leukocyteBox.Size = new System.Drawing.Size(100, 20);
@@ -1055,6 +1075,7 @@
             // 
             // transparencyBox
             // 
+            this.transparencyBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.transparencyBox.Location = new System.Drawing.Point(267, 146);
             this.transparencyBox.Name = "transparencyBox";
             this.transparencyBox.Size = new System.Drawing.Size(100, 20);
@@ -1160,30 +1181,30 @@
         private System.Windows.Forms.TextBox mucousThreadsBox;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.TextBox epithelialCellsBox;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label glucoseLabel;
+        private System.Windows.Forms.Label bilirLabel;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox glucoseBox;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.TextBox bilirubinBox;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label ketoneLabel;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox ketoneBox;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox specificGravityBox;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label bloodLabel;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox bloodBox;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox phBox;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label proteinLabel;
+        private System.Windows.Forms.Label uroLabel;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox proteinBox;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox urobilinogenBox;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label nitriteLabel;
+        private System.Windows.Forms.Label leukoLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox nitriteBox;
@@ -1201,15 +1222,14 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox bacteriaBox;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label rbcLabel;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox rbcBox;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label pusCellsLabel;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox pusCellsBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox amorphousMaterialBox;
-        private System.Windows.Forms.ComboBox othersBox;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label48;
@@ -1250,5 +1270,6 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label label59;
         internal System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox othersBox;
     }
 }
