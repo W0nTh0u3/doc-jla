@@ -14,7 +14,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class FBSCholeForm : Form
     {
-        public string passID, type, gender, civilStat;
+        public string passID, type, gender, civilStat, bday;
         private string[] vMin, vMax, vUnits;
 
         public FBSCholeForm(string uniqueID, string idPass, string type)
@@ -41,6 +41,14 @@ namespace SouthJLAInformationSystemC
             addressBox.Text = dt1.Rows[0][8].ToString();
             gender = dt1.Rows[0][6].ToString();
             civilStat = dt1.Rows[0][7].ToString();
+            bday = dt1.Rows[0][5].ToString();
+
+            packageBox.Items.Clear();
+            packageBox.Items.Add(dt1.Rows[0][10].ToString());
+            packageBox.SelectedItem = dt1.Rows[0][10].ToString();
+            companyBox.Text = dt1.Rows[0][14].ToString();
+            accBox.Text = dt1.Rows[0][15].ToString();
+            DateBox.Text = dt1.Rows[0][9].ToString();
 
             //PULLOUT DICTIONARY
             SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.BloodChemistryDictionary WHERE gender = '" + gender + "'", conn); //logic to find the right normal values

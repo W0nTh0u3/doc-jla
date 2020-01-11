@@ -20,10 +20,14 @@ namespace SouthJLAInformationSystemC
         public bool userEnter = false;
         public bool userEdit = false;
         public bool userSuper = false;
+        public string terminal = System.Environment.MachineName;
 
         public MainMenu(string type)
         {
             InitializeComponent();
+
+            Console.WriteLine("terminal: " + terminal);
+
             MenuClickedLabel.Text = "";
             SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            if(type == "3")
             {
@@ -475,6 +479,7 @@ namespace SouthJLAInformationSystemC
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sdaSearch.Fill(dt);
 
+                DateTime date1 = Convert.ToDateTime(dt.Rows[0][5].ToString());
 
                 lastBox.Text = dt.Rows[0][1].ToString();
                 firstBox.Text = dt.Rows[0][2].ToString();
@@ -485,6 +490,11 @@ namespace SouthJLAInformationSystemC
                 civilBox.SelectedItem = dt.Rows[0][7].ToString();
                 uniquePass = dt.Rows[0][11].ToString();
                 idPass = dt.Rows[0][0].ToString();
+                bdayBox.Value = date1;
+                packageBox.SelectedItem = dt.Rows[0][10].ToString();
+                paymentStatusBox.SelectedItem = dt.Rows[0][12].ToString();
+                companyBox.Text = dt.Rows[0][14].ToString();
+                accBox.Text = dt.Rows[0][15].ToString();
 
                 submit.Text = "Save changes";
                 if (SubMenuLabelClicked.Text == "Enter Results")
@@ -514,7 +524,7 @@ namespace SouthJLAInformationSystemC
             if (submit.Text == "Enter")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "')", conn);
+                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled, paid, terminal, package, agency, account, birthDate) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "','" + paymentStatusBox.SelectedItem + "','" + terminal + "','" + packageBox.SelectedItem + "','" + companyBox.Text + "','" + accBox.Text + "', '" + bdayBox.Value.Date.ToString() + "')", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 conn.Close();
@@ -544,7 +554,7 @@ namespace SouthJLAInformationSystemC
             }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "' WHERE id = '" + idPass + "'", conn);
+                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" + bdayBox.Value.Date.ToString()+ "' WHERE id = '" + idPass + "'", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 Console.WriteLine("Nagsave na");

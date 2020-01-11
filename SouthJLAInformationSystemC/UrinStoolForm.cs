@@ -13,7 +13,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class UrinStoolForm : Form
     {
-        public string passID, type, gender, civilStat;
+        public string passID, type, gender, civilStat, bday;
 
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
@@ -88,9 +88,14 @@ namespace SouthJLAInformationSystemC
             addressBox.Text = dt1.Rows[0][8].ToString();
             gender = dt1.Rows[0][6].ToString();
             civilStat = dt1.Rows[0][7].ToString();
+            bday = dt1.Rows[0][5].ToString();
 
-            gender = dt1.Rows[0][7].ToString();
-            civilStat = dt1.Rows[0][8].ToString();
+            packageBox.Items.Clear();
+            packageBox.Items.Add(dt1.Rows[0][10].ToString());
+            packageBox.SelectedItem = dt1.Rows[0][10].ToString();
+            companyBox.Text = dt1.Rows[0][14].ToString();
+            accBox.Text = dt1.Rows[0][15].ToString();
+            DateBox.Text = dt1.Rows[0][9].ToString();
             /*
             RadioButton tbx = this.Controls.Find("idBox", true).FirstOrDefault() as RadioButton;
             if (tbx.Checked == true)
