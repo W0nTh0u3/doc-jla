@@ -16,12 +16,32 @@ namespace SouthJLAInformationSystemC
         public string passID, type, gender, civilStat,medHolder,bday;
         public string med;
 
-        private void weightBox_TextChanged(object sender, EventArgs e)
+        private void heightBox_ValueChanged(object sender, EventArgs e)
         {
             if (weightBox.Text != "" && heightBox.Text != "")
             {
-                float height = Int64.Parse(heightBox.Text);
-                float weight = Int64.Parse(weightBox.Text);
+                float height = Convert.ToInt64(heightBox.Value);
+                float weight = Convert.ToInt64(weightBox.Value);
+                double bmi;
+                if (height >= 100)
+                {
+                    height = height / 100;
+                    bmi = weight / Math.Pow(height, 2);
+                }
+                else
+                    bmi = 0;
+
+                bmiBox.Text = Convert.ToString(Math.Round(bmi, 1));
+            }
+
+        }
+
+        private void weightBox_ValueChanged(object sender, EventArgs e)
+        {
+            if (weightBox.Text != "" && heightBox.Text != "")
+            {
+                float height = Convert.ToInt64(heightBox.Value);
+                float weight = Convert.ToInt64(weightBox.Value);
                 double bmi;
                 if (height >= 100)
                 {
@@ -33,25 +53,6 @@ namespace SouthJLAInformationSystemC
                 bmiBox.Text = Convert.ToString(Math.Round(bmi, 1));
 
 
-            }
-        }
-
-        private void heightBox_TextChanged(object sender, EventArgs e)
-        {
-            if (weightBox.Text != "" && heightBox.Text != "")
-            {
-                float height = Int64.Parse(heightBox.Text);
-                float weight = Int64.Parse(weightBox.Text);
-                double bmi;
-                if (height >= 100)
-                {
-                    height = height / 100;
-                    bmi = weight / Math.Pow(height, 2);
-                }
-                else
-                    bmi = 0;
-
-                bmiBox.Text = Convert.ToString(Math.Round(bmi,1));
             }
         }
 
