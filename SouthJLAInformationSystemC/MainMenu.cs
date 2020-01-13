@@ -95,6 +95,7 @@ namespace SouthJLAInformationSystemC
             MenuPanel6.Hide();
             MenuPanel7.Hide();
             MenuPanel8.Hide();
+            SubMenuPanel1.Hide();
         }
         public void ShowSubPanel(Panel subPanel)
         {
@@ -285,6 +286,35 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
             SubMenuLabelClicked.Text = btn.Text;
         }
+        private void OffsiteBtn_Click(object sender, EventArgs e)
+        {
+            CloseChildForm();
+            Button btn = sender as Button;
+            MenuClickedLabel.Text = GeneralClinicBtn.Text + " (" + btn.Text + ")";
+            SubMenuLabelClicked.Text = String.Empty;
+            GenClinicPanel.Hide();
+            ShowSubPanel(SubMenuPanel1);
+        }
+        #endregion
+        #region SubSubMenuOffsite
+        private void OffsiteEntEdtReq_Click(object sender, EventArgs e)
+        {
+            GenClinicPanel.Hide();
+            OpenChildForm(new OffsiteEntEdtForm());
+            Button btn = sender as Button;
+            MenuClickedLabel.Text = GeneralClinicBtn.Text + " (" + OffsiteBtn.Text + ")";
+            SubMenuLabelClicked.Text = btn.Text;
+        }
+
+        private void OffsiteReps_Click(object sender, EventArgs e)
+        {
+            GenClinicPanel.Hide();
+            OpenChildForm(new OffsiteReportsForm());
+            Button btn = sender as Button;
+            MenuClickedLabel.Text = GeneralClinicBtn.Text + " (" + OffsiteBtn.Text + ")";
+            SubMenuLabelClicked.Text = btn.Text;
+        }
+
         #endregion
         #region SubMenuPhysical
         private void PhysicalEntResBtn_Click(object sender, EventArgs e)
@@ -324,6 +354,115 @@ namespace SouthJLAInformationSystemC
             MenuClickedLabel.Text = MisceBtn.Text;
             SubMenuLabelClicked.Text = MisceBillBtn.Text;
         }
+        #endregion
+        #region labelsclickGenClinic
+
+
+        private void CBCClickableLabel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);
+
+                cBC.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+
+        }
+
+        private void UriClickableLabel_Click(object sender, EventArgs e)
+        {            try
+            {
+                UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
+
+                urinStoolForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+
+        }
+
+        private void MedExClickableLabel_Click(object sender, EventArgs e)
+        {            try
+            {
+
+                MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
+                medExamForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+        }
+
+        private void XrayClickableLabel_Click(object sender, EventArgs e)
+        {            try
+            {
+                XrayForm xrayForm = new XrayForm(uniquePass, idPass, submit.Text);
+
+                xrayForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+
+        }
+
+        private void ECGClickableLabel_Click(object sender, EventArgs e)
+        {            try
+            {
+                ECGForm eCGForm = new ECGForm(uniquePass, idPass, submit.Text);
+
+                eCGForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+
+        }
+
+        private void FBSClickableLabel_Click(object sender, EventArgs e)
+        {            try
+            {
+                FBSCholeForm fBSCholeForm = new FBSCholeForm(uniquePass, idPass, submit.Text);
+
+                fBSCholeForm.Show();
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No existing record to edit.");
+                Console.WriteLine(en.Message);
+            }
+
+
+        }
+
+
+
+
+
+        private void PAPSClickedLabel_Click(object sender, EventArgs e)
+        {
+            PAPForm pAPForm = new PAPForm();
+            pAPForm.Show();
+        }
         #endregion
         private void DisableAllBoxes()
         {
@@ -376,104 +515,7 @@ namespace SouthJLAInformationSystemC
 
 
         
-        #region labelsclick
-        
-        private void CBCClickableLabel_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);
-
-                cBC.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-                   
-        }
-
-        private void UriClickableLabel_Click(object sender, EventArgs e)
-        {            try
-            {
-                UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
-
-                urinStoolForm.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-            
-        }
-
-        private void MedExClickableLabel_Click(object sender, EventArgs e)
-        {            try             { 
-                MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
-                medExamForm.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-
-}
-
-        private void XrayClickableLabel_Click(object sender, EventArgs e)
-        {            try
-            {
-                XrayForm xrayForm = new XrayForm(uniquePass, idPass, submit.Text);
-
-                xrayForm.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-            
-        }
-
-        private void ECGClickableLabel_Click(object sender, EventArgs e)
-        {            try
-            {
-                ECGForm eCGForm = new ECGForm(uniquePass, idPass, submit.Text);
-
-                eCGForm.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-            
-        }
-
-        private void FBSClickableLabel_Click(object sender, EventArgs e)
-        {            try
-            {
-                FBSCholeForm fBSCholeForm = new FBSCholeForm(uniquePass, idPass, submit.Text);
-
-                fBSCholeForm.Show();
-            }
-            catch (Exception en)
-            {
-                MessageBox.Show("No existing record to edit.");
-                Console.WriteLine(en.Message);
-            }
-            
-        }
-        
-
-        private void PAPSClickedLabel_Click(object sender, EventArgs e)
-        {
-            PAPForm pAPForm = new PAPForm();
-            pAPForm.Show();
-        }
-        #endregion
+        
 
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -592,6 +634,8 @@ namespace SouthJLAInformationSystemC
             if (activeSubForm != null)
                 activeSubForm.Close();
         }
+
+
     }
 }
 
