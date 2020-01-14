@@ -15,7 +15,6 @@ namespace SouthJLAInformationSystemC
     {
         public string passID, type, gender, civilStat,medHolder,bday;
         public string med;
-
         private void heightBox_ValueChanged(object sender, EventArgs e)
         {
             if (weightBox.Text != "" && heightBox.Text != "")
@@ -59,12 +58,12 @@ namespace SouthJLAInformationSystemC
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
-
+            checkStatus();
             if (type == "Enter")
             {
                 EncodeBinary();
                 medHolder = med;           
-                sqlString = "INSERT INTO dbo.history (med,child,past,present1,present2,surgeries,hospitizations,smoke,alcohol,mens,last,others,eyes,mouth,cardio,respiratory,gastro,genitourinary,muskoskeletal,skin, neurological, endocrine,hema,others2,height,bp, weight,pr,pmi,rr,rightE,leftE,general,reviewSkin, headNeck,EEN,mouthThroat,chestLungs,breast,back,heartReview,abdomen,extremities, neurologicalReview,rectal,genitalia,impression,recommendations, physician, ofw_id) VALUES('" + med + "','" +childBox.Text + "','" + pastBox.Text + "','" + presentBox1.Text+ "','" + presentBox2.Text + "','" + surgeriesBox.Text + "', '"+hospitizationsBox.Text+"','" + smokeBox.Text + "','" + alcoholBox.Text + "','" + mensBox.Text + "','" +lastingBox.Text+ "','"+othersBox.Text+ "','"+eyesBox.Text+ "','"+mouthBox.Text+ "','"+cardioBox.Text+ "','"+respiratoryBox.Text+ "','"+gastroBox.Text+"','"+genitourinaryBox.Text+ "','"+musculoskeletalBox.Text+ "', '"+skinBox.Text+"','"+neurologicalBox.Text+ "','"+endocrineBox.Text+ "','"+hemaBox.Text+ "','"+othersBox2.Text+ "','"+heightBox.Text+ "','"+bpBox.Text+ "','"+weightBox.Text+ "','"+prBox.Text+ "','"+bmiBox.Text+ "','"+rrBox.Text+ "','"+rightBox.Text+ "','"+leftBox.Text+ "','"+generalBox.Text+ "','"+reviewSkinBox.Text+ "','"+headNeckBox.Text+ "','"+EENBox.Text+ "','"+mouthThroatBox.Text+ "','"+chestLungsBox.Text+ "','"+breastBox.Text+ "','"+backBox.Text+ "','"+heartReviewBox.Text+ "','"+abdomenBox.Text+ "','"+extremitiesBox.Text+ "','"+neurlogicalReviewBox.Text+ "','"+rectalBox.Text+ "','"+genitaliaBox.Text+ "','"+impressionBox.Text+ "','"+recommendationBox.Text+ "','"+ physicianBox.Text + "','"+passID+"')";
+                sqlString = "INSERT INTO dbo.history (med,child,past,present1,present2,surgeries,hospitizations,smoke,alcohol,mens,last,others,eyes,mouth,cardio,respiratory,gastro,genitourinary,muskoskeletal,skin, neurological, endocrine,hema,others2,height,bp, weight,pr,pmi,rr,rightE,leftE,general,reviewSkin, headNeck,EEN,mouthThroat,chestLungs,breast,back,heartReview,abdomen,extremities, neurologicalReview,rectal,genitalia,impression,physician,recommendations, status, ofw_id) VALUES('" + med + "','" +childBox.Text + "','" + pastBox.Text + "','" + presentBox1.Text+ "','" + presentBox2.Text + "','" + surgeriesBox.Text + "', '"+hospitizationsBox.Text+"','" + smokeBox.Text + "','" + alcoholBox.Text + "','" + mensBox.Text + "','" +lastingBox.Text+ "','"+othersBox.Text+ "','"+eyesBox.Text+ "','"+mouthBox.Text+ "','"+cardioBox.Text+ "','"+respiratoryBox.Text+ "','"+gastroBox.Text+"','"+genitourinaryBox.Text+ "','"+musculoskeletalBox.Text+ "', '"+skinBox.Text+"','"+neurologicalBox.Text+ "','"+endocrineBox.Text+ "','"+hemaBox.Text+ "','"+othersBox2.Text+ "','"+heightBox.Text+ "','"+bpBox.Text+ "','"+weightBox.Text+ "','"+prBox.Text+ "','"+bmiBox.Text+ "','"+rrBox.Text+ "','"+rightBox.Text+ "','"+leftBox.Text+ "','"+generalBox.Text+ "','"+reviewSkinBox.Text+ "','"+headNeckBox.Text+ "','"+EENBox.Text+ "','"+mouthThroatBox.Text+ "','"+chestLungsBox.Text+ "','"+breastBox.Text+ "','"+backBox.Text+ "','"+heartReviewBox.Text+ "','"+abdomenBox.Text+ "','"+extremitiesBox.Text+ "','"+neurlogicalReviewBox.Text+ "','"+rectalBox.Text+ "','"+genitaliaBox.Text+ "','"+impressionBox.Text+ "','" + physicianBox.Text + "','" + recommendationBox.Text+ "', '"+ MainMenu.statusMed + "','" + passID+"')";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -77,7 +76,7 @@ namespace SouthJLAInformationSystemC
             {
                 EncodeBinary();
                 medHolder = med;
-                sqlString = "UPDATE dbo.history SET med='" + medHolder+ "',child='" + childBox.Text + "',past='" + pastBox.Text + "',present1='" + presentBox1.Text + "',present2='" + presentBox2.Text + "',surgeries='" + surgeriesBox.Text + "',hospitizations='" + hospitizationsBox.Text + "',smoke='" + smokeBox.Text + "',alcohol='" + alcoholBox.Text + "',mens='" + mensBox.Text + "',last='" + lastingBox.Text + "',others='" + othersBox.Text + "',eyes='" + eyesBox.Text + "',mouth='" + mouthBox.Text + "',cardio='" + cardioBox.Text + "',respiratory='" + respiratoryBox.Text + "',gastro='"+gastroBox.Text+"',genitourinary='" + genitourinaryBox.Text + "',muskoskeletal='" + musculoskeletalBox.Text + "',skin='" + skinBox.Text + "',neurological='" + neurologicalBox.Text + "',endocrine='" + endocrineBox.Text + "',hema='" + hemaBox.Text + "',others2='" + othersBox2.Text + "',height='" + heightBox.Text + "',bp='" + bpBox.Text + "',weight='" + weightBox.Text + "',pr='" + prBox.Text + "',pmi='" + bmiBox.Text + "',rr='" + rrBox.Text + "',rightE='" + rightBox.Text + "',leftE='" + leftBox.Text + "',general='" + generalBox.Text + "',reviewSkin='" + reviewSkinBox.Text + "',headNeck='" + headNeckBox.Text + "',EEN='" + EENBox.Text + "',mouthThroat='" + mouthThroatBox.Text + "',chestLungs='" + chestLungsBox.Text + "',breast='" + breastBox.Text + "',back='" + backBox.Text + "',heartReview='" + heartReviewBox.Text + "',abdomen='" + abdomenBox.Text + "',extremities='" + extremitiesBox.Text + "',neurologicalReview='" + neurlogicalReviewBox.Text + "',rectal='" + rectalBox.Text + "',genitalia='" + genitaliaBox.Text + "',impression='" + impressionBox.Text + "',recommendations='" + recommendationBox.Text + "',physician='"+ physicianBox.Text+ "'  WHERE ofw_id='" + passID + "'";
+                sqlString = "UPDATE dbo.history SET med='" + medHolder+ "',child='" + childBox.Text + "',past='" + pastBox.Text + "',present1='" + presentBox1.Text + "',present2='" + presentBox2.Text + "',surgeries='" + surgeriesBox.Text + "',hospitizations='" + hospitizationsBox.Text + "',smoke='" + smokeBox.Text + "',alcohol='" + alcoholBox.Text + "',mens='" + mensBox.Text + "',last='" + lastingBox.Text + "',others='" + othersBox.Text + "',eyes='" + eyesBox.Text + "',mouth='" + mouthBox.Text + "',cardio='" + cardioBox.Text + "',respiratory='" + respiratoryBox.Text + "',gastro='"+gastroBox.Text+"',genitourinary='" + genitourinaryBox.Text + "',muskoskeletal='" + musculoskeletalBox.Text + "',skin='" + skinBox.Text + "',neurological='" + neurologicalBox.Text + "',endocrine='" + endocrineBox.Text + "',hema='" + hemaBox.Text + "',others2='" + othersBox2.Text + "',height='" + heightBox.Text + "',bp='" + bpBox.Text + "',weight='" + weightBox.Text + "',pr='" + prBox.Text + "',pmi='" + bmiBox.Text + "',rr='" + rrBox.Text + "',rightE='" + rightBox.Text + "',leftE='" + leftBox.Text + "',general='" + generalBox.Text + "',reviewSkin='" + reviewSkinBox.Text + "',headNeck='" + headNeckBox.Text + "',EEN='" + EENBox.Text + "',mouthThroat='" + mouthThroatBox.Text + "',chestLungs='" + chestLungsBox.Text + "',breast='" + breastBox.Text + "',back='" + backBox.Text + "',heartReview='" + heartReviewBox.Text + "',abdomen='" + abdomenBox.Text + "',extremities='" + extremitiesBox.Text + "',neurologicalReview='" + neurlogicalReviewBox.Text + "',rectal='" + rectalBox.Text + "',genitalia='" + genitaliaBox.Text + "',impression='" + impressionBox.Text + "',physician='" + physicianBox.Text + "',recommendations='" + recommendationBox.Text + "',status= '"+ MainMenu.statusMed + "'  WHERE ofw_id='" + passID + "'";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -98,6 +97,7 @@ namespace SouthJLAInformationSystemC
 
             this.type = type;
 
+            MainMenu.statusMed = "ENT";
             childBox.Text = "";
             pastBox.Text = "";
             presentBox1.Text = "";
@@ -232,6 +232,7 @@ namespace SouthJLAInformationSystemC
                 impressionBox.Text = dt2.Rows[0][47].ToString();
                 physicianBox.Text = dt2.Rows[0][48].ToString();
                 recommendationBox.Text = dt2.Rows[0][49].ToString();
+                MainMenu.statusMed = dt2.Rows[0][50].ToString();
 
             }
 
@@ -277,6 +278,16 @@ if (tbx.Checked == true)
                     medS[i] = '0';
             }
             med = new string(medS);
+        }
+
+        private void checkStatus()
+        {
+            if (childBox.Text != "" && pastBox.Text != "" && presentBox1.Text != "" && presentBox2.Text != "" && surgeriesBox.Text != "" && hospitizationsBox.Text != "" && smokeBox.Text != "" && alcoholBox.Text != "" && mensBox.Text != "" && lastingBox.Text != "" && othersBox.Text != "" && eyesBox.Text != "" && mouthBox.Text != "" && cardioBox.Text != "" && respiratoryBox.Text != "" && gastroBox.Text != "" && genitourinaryBox.Text != "" && musculoskeletalBox.Text != "" && skinBox.Text != "" && neurologicalBox.Text != "" && endocrineBox.Text != "" && hemaBox.Text != "" && othersBox2.Text != "" && heightBox.Text != "" && bpBox.Text != "" && weightBox.Text != "" && prBox.Text != "" && bmiBox.Text != "" && rrBox.Text != "" && rightBox.Text != "" && leftBox.Text != "" && generalBox.Text != "" && reviewSkinBox.Text != "" && headNeckBox.Text != "" && EENBox.Text != "" && mouthBox.Text != "" && chestLungsBox.Text != "" && breastBox.Text != "" && backBox.Text != "" && heartReviewBox.Text != "" && abdomenBox.Text != "" && extremitiesBox.Text != "" && neurlogicalReviewBox.Text != "" && rectalBox.Text != "" && genitaliaBox.Text != "" && impressionBox.Text != "")
+                MainMenu.statusMed = "COM";
+            else if (childBox.Text != "" || pastBox.Text != "" || presentBox1.Text != "" || presentBox2.Text != "" || surgeriesBox.Text != "" || hospitizationsBox.Text != "" || smokeBox.Text != "" || alcoholBox.Text != "" || mensBox.Text != "" || lastingBox.Text != "" || othersBox.Text != "" || eyesBox.Text != "" || mouthBox.Text != "" || cardioBox.Text != "" || respiratoryBox.Text != "" || gastroBox.Text != "" || genitourinaryBox.Text != "" || musculoskeletalBox.Text != "" || skinBox.Text != "" || neurologicalBox.Text != "" || endocrineBox.Text != "" || hemaBox.Text != "" || othersBox2.Text != "" || heightBox.Text != "" || bpBox.Text != "" || weightBox.Text != "" || prBox.Text != "" || bmiBox.Text != "" || rrBox.Text != "" || rightBox.Text != "" || leftBox.Text != "" || generalBox.Text != "" || reviewSkinBox.Text != "" || headNeckBox.Text != "" || EENBox.Text != "" || mouthBox.Text != "" || chestLungsBox.Text != "" || breastBox.Text != "" || backBox.Text != "" || heartReviewBox.Text != "" || abdomenBox.Text != "" || extremitiesBox.Text != "" || neurlogicalReviewBox.Text != "" || rectalBox.Text != "" || genitaliaBox.Text != "" || impressionBox.Text != "")
+                MainMenu.statusMed = "RES";
+            else
+                MainMenu.statusMed = "ENT";
         }
 
     } 

@@ -18,10 +18,10 @@ namespace SouthJLAInformationSystemC
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
-
+            checkStatus();
             if (type == "Enter")
             {
-                sqlString = "INSERT INTO dbo.xray ( viewPA, impression, ofw_id) VALUES('" + viewBox.Text + "', '" + remarksBox.Text + "', '" + passID + "')";
+                sqlString = "INSERT INTO dbo.xray ( viewPA, impression, status,ofw_id) VALUES('" + viewBox.Text + "', '" + remarksBox.Text + "','"+ MainMenu.statusXray + "', '" + passID + "')";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -32,7 +32,7 @@ namespace SouthJLAInformationSystemC
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.xray SET viewPA = '" + viewBox.Text + "', impression = '" + remarksBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                sqlString = "UPDATE dbo.xray SET viewPA = '" + viewBox.Text + "', impression = '" + remarksBox.Text + "', status = '"+ MainMenu.statusXray + "' WHERE ofw_id = '" + passID + "'";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -51,7 +51,7 @@ namespace SouthJLAInformationSystemC
 
             viewBox.Text = "";
             remarksBox.Text = "";
-
+            MainMenu.statusXray = "ENT";
             string idUnique = uniqueID;
             Console.WriteLine("patient unique ID: " + idUnique);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
@@ -87,7 +87,17 @@ namespace SouthJLAInformationSystemC
 
                 viewBox.Text = dt2.Rows[0][1].ToString();
                 remarksBox.Text = dt2.Rows[0][2].ToString();
+                MainMenu.statusXray = dt2.Rows[0][4].ToString();
             }
+        }
+        private void checkStatus()
+        {
+            if (viewBox.Text != "" && remarksBox.Text != "")
+                MainMenu.statusXray = "COM";
+            else if (viewBox.Text != "" || remarksBox.Text != "")
+                MainMenu.statusXray = "RES";
+            else
+                MainMenu.statusXray = "ENT";
         }
     }
 }

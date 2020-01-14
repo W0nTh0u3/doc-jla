@@ -20,10 +20,10 @@ namespace SouthJLAInformationSystemC
         {
             string sqlString;
             vUnits = new string[] { leukoLabel.Text, nitriteLabel.Text, uroLabel.Text, proteinLabel.Text, bloodLabel.Text, ketoneLabel.Text, bilirLabel.Text, glucoseLabel.Text, pusCellsLabel.Text, rbcLabel.Text};
-
+            checkStatus();
             if (type == "Enter")
             {
-                sqlString = "INSERT INTO dbo.urineStool (MacroColor, MacroTransparency, Leukocyte, Nitrite, Urobilinogen, Protein, PH, Blood,SpecificGravity, Ketone, Bilirubin, Glucose, MicroEpithelial, MucousThreads, AmorphousMaterial, PusCells, rbcU, bacteria,color,consistency,pus,rbcS,others, ofw_id ) VALUES('" + colorBox.Text + "','" + transparencyBox.Text + "','" + leukocyteBox.Text + "','" + nitriteBox.Text + "','" + urobilinogenBox.Text + "','" + proteinBox.Text + "','" + phBox.Text + "','" + bloodBox.Text + "','" + specificGravityBox.Text + "','" + ketoneBox.Text + "','" + bilirubinBox.Text + "','" + glucoseBox.Text + "','" + epithelialCellsBox.Text + "','" + mucousThreadsBox.Text + "','" + amorphousMaterialBox.Text + "','" + pusCellsBox.Text + "','" + rbcBox.Text + "','" + bacteriaBox.Text + "','" + colorStoolBox.Text + "','" + consistencyBox.Text + "','" + pusStoolBox.Text + "','" + rbcStoolBox.Text + "','" + othersBox.Text + "', '" + passID + "')";
+                sqlString = "INSERT INTO dbo.urineStool (MacroColor, MacroTransparency, Leukocyte, Nitrite, Urobilinogen, Protein, PH, Blood,SpecificGravity, Ketone, Bilirubin, Glucose, MicroEpithelial, MucousThreads, AmorphousMaterial, PusCells, rbcU, bacteria,color,consistency,pus,rbcS,others, status,ofw_id ) VALUES('" + colorBox.Text + "','" + transparencyBox.Text + "','" + leukocyteBox.Text + "','" + nitriteBox.Text + "','" + urobilinogenBox.Text + "','" + proteinBox.Text + "','" + phBox.Text + "','" + bloodBox.Text + "','" + specificGravityBox.Text + "','" + ketoneBox.Text + "','" + bilirubinBox.Text + "','" + glucoseBox.Text + "','" + epithelialCellsBox.Text + "','" + mucousThreadsBox.Text + "','" + amorphousMaterialBox.Text + "','" + pusCellsBox.Text + "','" + rbcBox.Text + "','" + bacteriaBox.Text + "','" + colorStoolBox.Text + "','" + consistencyBox.Text + "','" + pusStoolBox.Text + "','" + rbcStoolBox.Text + "','" + othersBox.Text + "', '"+MainMenu.statusUrineStool+"', '" + passID + "')";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] valueString = { colorBox.Text, transparencyBox.Text, leukocyteBox.Text, nitriteBox.Text, urobilinogenBox.Text, proteinBox.Text, phBox.Text, bloodBox.Text, specificGravityBox.Text, ketoneBox.Text, bilirubinBox.Text, glucoseBox.Text, epithelialCellsBox.Text, mucousThreadsBox.Text, amorphousMaterialBox.Text, pusCellsBox.Text, rbcBox.Text, bacteriaBox.Text, colorStoolBox.Text, consistencyBox.Text, pusStoolBox.Text, rbcStoolBox.Text, othersBox.Text };
@@ -33,7 +33,7 @@ namespace SouthJLAInformationSystemC
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.urineStool SET MacroColor = '" + colorBox.Text + "', MacroTransparency = '" + transparencyBox.Text + "', Leukocyte = '" + leukocyteBox.Text + "', Nitrite = '" + nitriteBox.Text + "', Urobilinogen = '" + urobilinogenBox.Text + "', Protein = '" + proteinBox.Text + "', PH = '" + phBox.Text + "', Blood = '" + bloodBox.Text + "',SpecificGravity = '" + specificGravityBox.Text + "', Ketone = '" + ketoneBox.Text + "', Bilirubin = '" + bilirubinBox.Text + "', Glucose = '" + glucoseBox.Text + "', MicroEpithelial = '" + epithelialCellsBox.Text + "', MucousThreads = '" + mucousThreadsBox.Text + "', AmorphousMaterial = '" + amorphousMaterialBox.Text + "', PusCells = '" + pusCellsBox.Text + "', rbcU = '" + rbcBox.Text + "', bacteria = '" + bacteriaBox.Text + "', color = '"+ colorStoolBox.Text+"', consistency = '"+ consistencyBox.Text+"', pus = '"+pusStoolBox.Text+"', rbcS = '"+ rbcStoolBox.Text+"', others = '"+othersBox.Text+"' WHERE ofw_id = '" + passID + "'";
+                sqlString = "UPDATE dbo.urineStool SET MacroColor = '" + colorBox.Text + "', MacroTransparency = '" + transparencyBox.Text + "', Leukocyte = '" + leukocyteBox.Text + "', Nitrite = '" + nitriteBox.Text + "', Urobilinogen = '" + urobilinogenBox.Text + "', Protein = '" + proteinBox.Text + "', PH = '" + phBox.Text + "', Blood = '" + bloodBox.Text + "',SpecificGravity = '" + specificGravityBox.Text + "', Ketone = '" + ketoneBox.Text + "', Bilirubin = '" + bilirubinBox.Text + "', Glucose = '" + glucoseBox.Text + "', MicroEpithelial = '" + epithelialCellsBox.Text + "', MucousThreads = '" + mucousThreadsBox.Text + "', AmorphousMaterial = '" + amorphousMaterialBox.Text + "', PusCells = '" + pusCellsBox.Text + "', rbcU = '" + rbcBox.Text + "', bacteria = '" + bacteriaBox.Text + "', color = '"+ colorStoolBox.Text+"', consistency = '"+ consistencyBox.Text+"', pus = '"+pusStoolBox.Text+"', rbcS = '"+ rbcStoolBox.Text+"', others = '"+othersBox.Text+"', status = '"+MainMenu.statusUrineStool+"' WHERE ofw_id = '" + passID + "'";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] valueString = { colorBox.Text, transparencyBox.Text, leukocyteBox.Text, nitriteBox.Text, urobilinogenBox.Text, proteinBox.Text, phBox.Text, bloodBox.Text, specificGravityBox.Text, ketoneBox.Text, bilirubinBox.Text, glucoseBox.Text, epithelialCellsBox.Text, mucousThreadsBox.Text, amorphousMaterialBox.Text, pusCellsBox.Text, rbcBox.Text, bacteriaBox.Text, colorStoolBox.Text, consistencyBox.Text, pusStoolBox.Text, rbcStoolBox.Text, othersBox.Text };
@@ -48,7 +48,7 @@ namespace SouthJLAInformationSystemC
         {
             InitializeComponent();
             this.type = type;
-
+            MainMenu.statusUrineStool = "ENT";
             colorBox.Text = "";
             transparencyBox.Text = "";
             leukocyteBox.Text = "";
@@ -132,8 +132,18 @@ namespace SouthJLAInformationSystemC
                 consistencyBox.Text = dt2.Rows[0][20].ToString();
                 pusStoolBox.Text = dt2.Rows[0][21].ToString();
                 rbcStoolBox.Text = dt2.Rows[0][22].ToString();
-                othersBox.Text = dt2.Rows[0][23].ToString();
+                othersBox.Text = dt2.Rows[0][23].ToString();                MainMenu.statusUrineStool = dt2.Rows[0][24].ToString();
             }
+        }
+
+        private void checkStatus()
+        {
+            if (colorBox.Text != "" && transparencyBox.Text != "" && leukocyteBox.Text != "" && nitriteBox.Text != "" && urobilinogenBox.Text != "" && proteinBox.Text != "" && phBox.Text != "" && bloodBox.Text != "" && specificGravityBox.Text != "" && ketoneBox.Text != "" && bilirubinBox.Text != "" && glucoseBox.Text != "" && epithelialCellsBox.Text != "" && mucousThreadsBox.Text != "" && amorphousMaterialBox.Text != "" && pusCellsBox.Text != "" && rbcBox.Text != "" && bacteriaBox.Text != "" && colorStoolBox.Text != "" && consistencyBox.Text != "" && pusStoolBox.Text != "" && rbcStoolBox.Text != "" && othersBox.Text != "")
+                MainMenu.statusUrineStool = "COM";
+            else if (colorBox.Text != "" || transparencyBox.Text != "" || leukocyteBox.Text != "" || nitriteBox.Text != "" || urobilinogenBox.Text != "" || proteinBox.Text != "" || phBox.Text != "" || bloodBox.Text != "" || specificGravityBox.Text != "" || ketoneBox.Text != "" || bilirubinBox.Text != "" || glucoseBox.Text != "" || epithelialCellsBox.Text != "" || mucousThreadsBox.Text != "" || amorphousMaterialBox.Text != "" || pusCellsBox.Text != "" || rbcBox.Text != "" || bacteriaBox.Text != "" || colorStoolBox.Text != "" || consistencyBox.Text != "" || pusStoolBox.Text != "" || rbcStoolBox.Text != "" || othersBox.Text != "")
+                MainMenu.statusUrineStool = "RES";
+            else
+                MainMenu.statusUrineStool = "ENT";
         }
     }
 }

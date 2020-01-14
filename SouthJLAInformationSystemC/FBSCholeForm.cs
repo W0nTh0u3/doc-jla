@@ -22,7 +22,7 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
 
             this.type = type;
-
+            MainMenu.statusFbs = "ENT";
             fbsBox.Text = "";
             cholBox.Text = "";
 
@@ -74,16 +74,18 @@ namespace SouthJLAInformationSystemC
 
                 fbsBox.Text = dt2.Rows[0][2].ToString();
                 cholBox.Text = dt2.Rows[0][5].ToString();
+                MainMenu.statusFbs = dt2.Rows[0][21].ToString();
             }
         }
 
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
+            checkStatus();
             vUnits = new string[] { fbsUnit.Text, cholUnit.Text };
             if (type == "Enter")
             {
-                sqlString = "INSERT INTO dbo.Blood_Chemistrty ( fbs, totalCholesterol, ofw_id) VALUES('" + fbsBox.Text + "', '" + cholBox.Text + "', '" + passID + "')";
+                sqlString = "INSERT INTO dbo.Blood_Chemistrty ( fbs, totalCholesterol, status,ofw_id) VALUES('" + fbsBox.Text + "', '" + cholBox.Text + "','"+ MainMenu.statusFbs + "', '" + passID + "')";
                 string[] valueString = { fbsBox.Text, cholBox.Text };
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
@@ -91,7 +93,7 @@ namespace SouthJLAInformationSystemC
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.Blood_Chemistrty SET fbs = '" + fbsBox.Text + "', totalCholesterol = '" + cholBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                sqlString = "UPDATE dbo.Blood_Chemistrty SET fbs = '" + fbsBox.Text + "', totalCholesterol = '" + cholBox.Text + "',status = '"+ MainMenu.statusFbs + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { fbsBox.Text, cholBox.Text };
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
@@ -109,5 +111,17 @@ namespace SouthJLAInformationSystemC
             vMin[1] = dtDic.Rows[1][1].ToString();
             vMax[1] = dtDic.Rows[1][2].ToString();
         }
+
+        private void checkStatus()
+        {
+            if(fbsBox.Text != "" && cholBox.Text != "" )
+                MainMenu.statusFbs = "COM";
+            else if (fbsBox.Text != "" || cholBox.Text != "")
+                MainMenu.statusFbs = "RES";
+            else
+                MainMenu.statusFbs = "ENT";
+        }
+
+
     }
 }

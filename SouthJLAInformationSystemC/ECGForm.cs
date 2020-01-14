@@ -18,10 +18,10 @@ namespace SouthJLAInformationSystemC
         private void SubmitCBC_Click(object sender, EventArgs e)
         {
             string sqlString;
-
+            checkStatus();
             if (type == "Enter")
             {
-                sqlString = "INSERT INTO dbo.ecg (impression, ofw_id) VALUES('" + ecgBox.Text + "','" + passID + "')";
+                sqlString = "INSERT INTO dbo.ecg (impression,status, ofw_id) VALUES('" + ecgBox.Text + "','" +MainMenu.statusEcg +"','" + passID + "')";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -32,7 +32,7 @@ namespace SouthJLAInformationSystemC
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.ecg SET impression = '" + ecgBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                sqlString = "UPDATE dbo.ecg SET impression = '" + ecgBox.Text + "',status = '" + MainMenu.statusEcg + "' WHERE ofw_id = '" + passID + "'";
                 string[] vMin = { "" };
                 string[] vMax = { "" };
                 string[] vUnits = { "" };
@@ -48,7 +48,7 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
 
             this.type = type;
-
+            MainMenu.statusEcg = "ENT";
             ecgBox.Text = "";
 
             string idUnique = uniqueID;
@@ -85,7 +85,15 @@ namespace SouthJLAInformationSystemC
                 sdaFill.Fill(dt2);
 
                 ecgBox.Text = dt2.Rows[0][1].ToString();
+                MainMenu.statusEcg = dt2.Rows[0][3].ToString();
             }
+        }
+        private void checkStatus()
+        {
+            if (ecgBox.Text != "")
+                MainMenu.statusEcg = "COM";
+            else
+                MainMenu.statusEcg = "ENT";
         }
     }
 }
