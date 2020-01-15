@@ -21,7 +21,7 @@ namespace SouthJLAInformationSystemC
         public bool userEdit = false;
         public bool userSuper = false;
         public string terminal = System.Environment.MachineName;
-
+        public static string statusCbc = "", statusUrineStool = "", statusMed = "", statusXray = "", statusEcg = "", statusFbs = "", statusPaps = "";
         public MainMenu(string type)
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace SouthJLAInformationSystemC
             Console.WriteLine("terminal: " + terminal);
 
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";                        userClass = type;            Console.WriteLine("User classification type: " + userClass);            if(type == "3")
+            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            if (type == "3")
             {
                 userEnter = true;
                 userEdit = true;
@@ -207,7 +207,7 @@ namespace SouthJLAInformationSystemC
             {
                 Console.WriteLine(en.Message);
             }
-            
+
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -557,7 +557,7 @@ namespace SouthJLAInformationSystemC
                 MessageBox.Show("No matching record found.");
                 Console.WriteLine(en.Message);
             }
-            
+
         }
 
         private void clearAll_Click(object sender, EventArgs e)
@@ -602,7 +602,7 @@ namespace SouthJLAInformationSystemC
             }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" + bdayBox.Value.Date.ToString()+ "' WHERE id = '" + idPass + "'", conn);
+                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" + bdayBox.Value.Date.ToString() + "' WHERE id = '" + idPass + "'", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 Console.WriteLine("Nagsave na");
@@ -626,7 +626,7 @@ namespace SouthJLAInformationSystemC
             ChildContentPanel.Controls.Add(childForm);
             ChildContentPanel.Tag = childForm;
             childForm.BringToFront();
-            childForm.Show();   
+            childForm.Show();
         }
 
         private void CloseChildForm()

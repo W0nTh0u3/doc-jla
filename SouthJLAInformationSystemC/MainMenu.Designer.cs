@@ -91,6 +91,13 @@
             this.ChildContentPanel = new System.Windows.Forms.Panel();
             this.GenClinicPanel = new System.Windows.Forms.Panel();
             this.MajorelPanel = new System.Windows.Forms.Panel();
+            this.papsStatusBox = new System.Windows.Forms.ComboBox();
+            this.fbsStatusBox = new System.Windows.Forms.ComboBox();
+            this.ecgStatusBox = new System.Windows.Forms.ComboBox();
+            this.xrayStatusBox = new System.Windows.Forms.ComboBox();
+            this.medStatusBox = new System.Windows.Forms.ComboBox();
+            this.urineStoolStatusBox = new System.Windows.Forms.ComboBox();
+            this.cbcStatusBox = new System.Windows.Forms.ComboBox();
             this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.FBSClickableLabel = new System.Windows.Forms.Label();
             this.ECGClickableLabel = new System.Windows.Forms.Label();
@@ -1115,6 +1122,90 @@
             this.MajorelPanel.Name = "MajorelPanel";
             this.MajorelPanel.Size = new System.Drawing.Size(1133, 316);
             this.MajorelPanel.TabIndex = 82;
+            // 
+            // papsStatusBox
+            // 
+            this.papsStatusBox.FormattingEnabled = true;
+            this.papsStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.papsStatusBox.Location = new System.Drawing.Point(478, 303);
+            this.papsStatusBox.Name = "papsStatusBox";
+            this.papsStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.papsStatusBox.TabIndex = 73;
+            // 
+            // fbsStatusBox
+            // 
+            this.fbsStatusBox.FormattingEnabled = true;
+            this.fbsStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.fbsStatusBox.Location = new System.Drawing.Point(478, 257);
+            this.fbsStatusBox.Name = "fbsStatusBox";
+            this.fbsStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.fbsStatusBox.TabIndex = 72;
+            // 
+            // ecgStatusBox
+            // 
+            this.ecgStatusBox.FormattingEnabled = true;
+            this.ecgStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.ecgStatusBox.Location = new System.Drawing.Point(478, 214);
+            this.ecgStatusBox.Name = "ecgStatusBox";
+            this.ecgStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.ecgStatusBox.TabIndex = 71;
+            // 
+            // xrayStatusBox
+            // 
+            this.xrayStatusBox.FormattingEnabled = true;
+            this.xrayStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.xrayStatusBox.Location = new System.Drawing.Point(478, 174);
+            this.xrayStatusBox.Name = "xrayStatusBox";
+            this.xrayStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.xrayStatusBox.TabIndex = 70;
+            // 
+            // medStatusBox
+            // 
+            this.medStatusBox.FormattingEnabled = true;
+            this.medStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.medStatusBox.Location = new System.Drawing.Point(478, 134);
+            this.medStatusBox.Name = "medStatusBox";
+            this.medStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.medStatusBox.TabIndex = 69;
+            // 
+            // urineStoolStatusBox
+            // 
+            this.urineStoolStatusBox.FormattingEnabled = true;
+            this.urineStoolStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.urineStoolStatusBox.Location = new System.Drawing.Point(478, 93);
+            this.urineStoolStatusBox.Name = "urineStoolStatusBox";
+            this.urineStoolStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.urineStoolStatusBox.TabIndex = 68;
+            // 
+            // cbcStatusBox
+            // 
+            this.cbcStatusBox.FormattingEnabled = true;
+            this.cbcStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.cbcStatusBox.Location = new System.Drawing.Point(478, 49);
+            this.cbcStatusBox.Name = "cbcStatusBox";
+            this.cbcStatusBox.Size = new System.Drawing.Size(47, 21);
+            this.cbcStatusBox.TabIndex = 67;
             // 
             // PAPSClickedLabel
             // 
