@@ -82,7 +82,7 @@
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(272, 31);
             this.label40.TabIndex = 85;
-            this.label40.Text = "See seperate report";
+            this.label40.Text = "See separate report";
             // 
             // label42
             // 
@@ -399,7 +399,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PAPForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PAP\'S";

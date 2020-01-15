@@ -92,6 +92,18 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="OffsiteReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OffsiteReportsForm.Designer.cs">
+      <DependentUpon>OffsiteReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OffsiteEntEdtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OffsiteEntEdtForm.Designer.cs">
+      <DependentUpon>OffsiteEntEdtForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XrayFormDoc.cs">
       <DependentUpon>XrayFormDoc.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -242,6 +254,12 @@
     <EmbeddedResource Include="ECGFormDoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ECGFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffsiteReportsForm.resx">
+      <DependentUpon>OffsiteReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffsiteEntEdtForm.resx">
+      <DependentUpon>OffsiteEntEdtForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XrayFormDoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

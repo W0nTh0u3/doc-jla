@@ -21,6 +21,7 @@ namespace SouthJLAInformationSystemC
 
             this.type = type;
 
+            MainMenu.statusCbc = "ENT";
             wbcTextBox.Text = "";
             rbcTextBox.Text = "";
             hgbTextBox.Text = "";
@@ -102,6 +103,7 @@ namespace SouthJLAInformationSystemC
                 neutrophilTextBox.Text = dt2.Rows[0][6].ToString();
                 lymphocytesTextBox.Text = dt2.Rows[0][7].ToString();
                 monocyteTextBox.Text = dt2.Rows[0][8].ToString();
+                MainMenu.statusCbc = dt2.Rows[0][9].ToString();
             }
 
 
@@ -112,9 +114,10 @@ namespace SouthJLAInformationSystemC
         {
             string sqlString;
             vUnits = new string []{ wbcUnit.Text, rbcUnit.Text, hgbUnit.Text, hctUnit.Text, plateletUnit.Text, neutrophilUnit.Text, lymphUnit.Text, monoUnit.Text};
+            checkStatus();
             if (type == "Enter")
             {
-                sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','" + passID + "')";
+                sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte,status, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','"+MainMenu.statusCbc+"','" + passID + "')";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
@@ -122,7 +125,7 @@ namespace SouthJLAInformationSystemC
             }
             else if (type == "Save changes")
             {
-                sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "' WHERE ofw_id = '" + passID + "'";
+                sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "', status = '"+ MainMenu.statusCbc + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
                 string[] patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
@@ -151,6 +154,15 @@ namespace SouthJLAInformationSystemC
             vMax[6] = dtDic.Rows[6][2].ToString();
             vMin[7] = dtDic.Rows[7][1].ToString(); 
             vMax[7] = dtDic.Rows[7][2].ToString();
+        }
+        private void checkStatus()
+        {
+            if (wbcTextBox.Text != "" && rbcTextBox.Text != "" && hgbTextBox.Text != "" && hctTextBox.Text != "" && plateletsTextBox.Text != "" && neutrophilTextBox.Text != "" && lymphocytesTextBox.Text != "" && monocyteTextBox.Text != "")
+            MainMenu.statusCbc = "COM"; 
+            else if (wbcTextBox.Text != "" || rbcTextBox.Text != "" || hgbTextBox.Text != "" || hctTextBox.Text != "" || plateletsTextBox.Text != "" || neutrophilTextBox.Text != "" || lymphocytesTextBox.Text != "" || monocyteTextBox.Text != "")
+                MainMenu.statusCbc = "RES";
+            else
+                MainMenu.statusCbc = "ENT";
         }
     }
 }

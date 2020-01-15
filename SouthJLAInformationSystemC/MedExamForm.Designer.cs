@@ -112,6 +112,8 @@
             this.othersBox2 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.heightBox = new System.Windows.Forms.NumericUpDown();
+            this.weightBox = new System.Windows.Forms.NumericUpDown();
             this.physicianBox = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.recommendationBox = new System.Windows.Forms.RichTextBox();
@@ -207,9 +209,7 @@
             this.label87 = new System.Windows.Forms.Label();
             this.bmiBox = new System.Windows.Forms.TextBox();
             this.label84 = new System.Windows.Forms.Label();
-            this.weightBox = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
-            this.heightBox = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.hospitizationsBox = new System.Windows.Forms.TextBox();
@@ -307,6 +307,8 @@
             this.panel26.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.heightBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightBox)).BeginInit();
             this.panel44.SuspendLayout();
             this.panel45.SuspendLayout();
             this.panel32.SuspendLayout();
@@ -1163,6 +1165,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.heightBox);
+            this.panel2.Controls.Add(this.weightBox);
             this.panel2.Controls.Add(this.physicianBox);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.recommendationBox);
@@ -1230,9 +1234,7 @@
             this.panel2.Controls.Add(this.label87);
             this.panel2.Controls.Add(this.bmiBox);
             this.panel2.Controls.Add(this.label84);
-            this.panel2.Controls.Add(this.weightBox);
             this.panel2.Controls.Add(this.label83);
-            this.panel2.Controls.Add(this.heightBox);
             this.panel2.Controls.Add(this.label82);
             this.panel2.Controls.Add(this.label81);
             this.panel2.Controls.Add(this.hospitizationsBox);
@@ -1333,6 +1335,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 410);
             this.panel2.TabIndex = 9;
+            // 
+            // heightBox
+            // 
+            this.heightBox.DecimalPlaces = 1;
+            this.heightBox.Location = new System.Drawing.Point(108, 827);
+            this.heightBox.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.heightBox.Name = "heightBox";
+            this.heightBox.Size = new System.Drawing.Size(120, 20);
+            this.heightBox.TabIndex = 318;
+            this.heightBox.ValueChanged += new System.EventHandler(this.heightBox_ValueChanged);
+            // 
+            // weightBox
+            // 
+            this.weightBox.DecimalPlaces = 1;
+            this.weightBox.Location = new System.Drawing.Point(300, 827);
+            this.weightBox.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.weightBox.Name = "weightBox";
+            this.weightBox.Size = new System.Drawing.Size(120, 20);
+            this.weightBox.TabIndex = 317;
+            this.weightBox.ValueChanged += new System.EventHandler(this.weightBox_ValueChanged);
             // 
             // physicianBox
             // 
@@ -2266,17 +2296,6 @@
             this.label84.TabIndex = 250;
             this.label84.Text = "Body Mass Index:";
             // 
-            // weightBox
-            // 
-            this.weightBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.weightBox.Location = new System.Drawing.Point(300, 827);
-            this.weightBox.Margin = new System.Windows.Forms.Padding(2);
-            this.weightBox.MaxLength = 5;
-            this.weightBox.Name = "weightBox";
-            this.weightBox.Size = new System.Drawing.Size(120, 20);
-            this.weightBox.TabIndex = 249;
-            this.weightBox.TextChanged += new System.EventHandler(this.weightBox_TextChanged);
-            // 
             // label83
             // 
             this.label83.AutoSize = true;
@@ -2285,17 +2304,6 @@
             this.label83.Size = new System.Drawing.Size(65, 13);
             this.label83.TabIndex = 248;
             this.label83.Text = "Weight: (kg)";
-            // 
-            // heightBox
-            // 
-            this.heightBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.heightBox.Location = new System.Drawing.Point(108, 827);
-            this.heightBox.Margin = new System.Windows.Forms.Padding(2);
-            this.heightBox.MaxLength = 5;
-            this.heightBox.Name = "heightBox";
-            this.heightBox.Size = new System.Drawing.Size(120, 20);
-            this.heightBox.TabIndex = 247;
-            this.heightBox.TextChanged += new System.EventHandler(this.heightBox_TextChanged);
             // 
             // label82
             // 
@@ -3138,7 +3146,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MedExamForm";
@@ -3175,6 +3183,8 @@
             this.panel25.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.heightBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightBox)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             this.panel45.ResumeLayout(false);
@@ -3368,9 +3378,7 @@
         private System.Windows.Forms.Label label87;
         internal System.Windows.Forms.TextBox bmiBox;
         private System.Windows.Forms.Label label84;
-        internal System.Windows.Forms.TextBox weightBox;
         private System.Windows.Forms.Label label83;
-        internal System.Windows.Forms.TextBox heightBox;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label81;
         internal System.Windows.Forms.TextBox genitaliaBox;
@@ -3488,5 +3496,7 @@
         private System.Windows.Forms.RadioButton n9;
         internal System.Windows.Forms.TextBox endocrineBox;
         private System.Windows.Forms.RadioButton y14;
+        private System.Windows.Forms.NumericUpDown weightBox;
+        private System.Windows.Forms.NumericUpDown heightBox;
     }
 }
