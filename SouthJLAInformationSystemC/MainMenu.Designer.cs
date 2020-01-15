@@ -99,20 +99,13 @@
             this.UriClickableLabel = new System.Windows.Forms.Label();
             this.CBCClickableLabel = new System.Windows.Forms.Label();
             this.Label19 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.Label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.Label17 = new System.Windows.Forms.Label();
             this.Label16 = new System.Windows.Forms.Label();
             this.Label15 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
             this.Label13 = new System.Windows.Forms.Label();
-            this.TextBox12 = new System.Windows.Forms.TextBox();
-            this.TextBox11 = new System.Windows.Forms.TextBox();
-            this.TextBox10 = new System.Windows.Forms.TextBox();
-            this.TextBox9 = new System.Windows.Forms.TextBox();
             this.Label12 = new System.Windows.Forms.Label();
-            this.TextBox8 = new System.Windows.Forms.TextBox();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPnl = new System.Windows.Forms.TableLayoutPanel();
             this.civilBox = new System.Windows.Forms.ComboBox();
@@ -158,6 +151,13 @@
             this.ContentTitlePanel = new System.Windows.Forms.Panel();
             this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.MenuClickedLabel = new System.Windows.Forms.Label();
+            this.xrayStatusBox = new System.Windows.Forms.ComboBox();
+            this.cbcStatusBox = new System.Windows.Forms.ComboBox();
+            this.urineStoolStatusBox = new System.Windows.Forms.ComboBox();
+            this.medStatusBox = new System.Windows.Forms.ComboBox();
+            this.ecgStatusBox = new System.Windows.Forms.ComboBox();
+            this.fbsStatusBox = new System.Windows.Forms.ComboBox();
+            this.papsStatusBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -1088,6 +1088,13 @@
             // MajorelPanel
             // 
             this.MajorelPanel.AutoScroll = true;
+            this.MajorelPanel.Controls.Add(this.xrayStatusBox);
+            this.MajorelPanel.Controls.Add(this.cbcStatusBox);
+            this.MajorelPanel.Controls.Add(this.urineStoolStatusBox);
+            this.MajorelPanel.Controls.Add(this.medStatusBox);
+            this.MajorelPanel.Controls.Add(this.ecgStatusBox);
+            this.MajorelPanel.Controls.Add(this.fbsStatusBox);
+            this.MajorelPanel.Controls.Add(this.papsStatusBox);
             this.MajorelPanel.Controls.Add(this.PAPSClickedLabel);
             this.MajorelPanel.Controls.Add(this.FBSClickableLabel);
             this.MajorelPanel.Controls.Add(this.ECGClickableLabel);
@@ -1096,20 +1103,13 @@
             this.MajorelPanel.Controls.Add(this.UriClickableLabel);
             this.MajorelPanel.Controls.Add(this.CBCClickableLabel);
             this.MajorelPanel.Controls.Add(this.Label19);
-            this.MajorelPanel.Controls.Add(this.textBox14);
             this.MajorelPanel.Controls.Add(this.Label18);
-            this.MajorelPanel.Controls.Add(this.textBox13);
             this.MajorelPanel.Controls.Add(this.Label17);
             this.MajorelPanel.Controls.Add(this.Label16);
             this.MajorelPanel.Controls.Add(this.Label15);
             this.MajorelPanel.Controls.Add(this.Label14);
             this.MajorelPanel.Controls.Add(this.Label13);
-            this.MajorelPanel.Controls.Add(this.TextBox12);
-            this.MajorelPanel.Controls.Add(this.TextBox11);
-            this.MajorelPanel.Controls.Add(this.TextBox10);
-            this.MajorelPanel.Controls.Add(this.TextBox9);
             this.MajorelPanel.Controls.Add(this.Label12);
-            this.MajorelPanel.Controls.Add(this.TextBox8);
             this.MajorelPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MajorelPanel.Location = new System.Drawing.Point(0, 321);
             this.MajorelPanel.Name = "MajorelPanel";
@@ -1212,15 +1212,6 @@
             this.Label19.Text = "                                                                                 " +
     "                                                                            ";
             // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(479, 303);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(42, 20);
-            this.textBox14.TabIndex = 58;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label18
             // 
             this.Label18.AutoSize = true;
@@ -1232,16 +1223,6 @@
             this.Label18.TabIndex = 57;
             this.Label18.Text = "                                                                                 " +
     "                                                                            ";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(479, 257);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(42, 20);
-            this.textBox13.TabIndex = 56;
-            this.textBox13.Text = "ENT";
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label17
             // 
@@ -1304,46 +1285,6 @@
             this.Label13.Text = "                                                                                 " +
     "                                                                           ";
             // 
-            // TextBox12
-            // 
-            this.TextBox12.Location = new System.Drawing.Point(479, 214);
-            this.TextBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox12.Name = "TextBox12";
-            this.TextBox12.Size = new System.Drawing.Size(42, 20);
-            this.TextBox12.TabIndex = 50;
-            this.TextBox12.Text = "ENT";
-            this.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox11
-            // 
-            this.TextBox11.Location = new System.Drawing.Point(479, 134);
-            this.TextBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox11.Name = "TextBox11";
-            this.TextBox11.Size = new System.Drawing.Size(42, 20);
-            this.TextBox11.TabIndex = 49;
-            this.TextBox11.Text = "ENT";
-            this.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox10
-            // 
-            this.TextBox10.Location = new System.Drawing.Point(479, 174);
-            this.TextBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox10.Name = "TextBox10";
-            this.TextBox10.Size = new System.Drawing.Size(42, 20);
-            this.TextBox10.TabIndex = 48;
-            this.TextBox10.Text = "ENT";
-            this.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox9
-            // 
-            this.TextBox9.Location = new System.Drawing.Point(479, 92);
-            this.TextBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox9.Name = "TextBox9";
-            this.TextBox9.Size = new System.Drawing.Size(42, 20);
-            this.TextBox9.TabIndex = 47;
-            this.TextBox9.Text = "ENT";
-            this.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Label12
             // 
             this.Label12.AutoSize = true;
@@ -1354,16 +1295,6 @@
             this.Label12.Size = new System.Drawing.Size(43, 13);
             this.Label12.TabIndex = 46;
             this.Label12.Text = "Status";
-            // 
-            // TextBox8
-            // 
-            this.TextBox8.Location = new System.Drawing.Point(479, 48);
-            this.TextBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Size = new System.Drawing.Size(42, 20);
-            this.TextBox8.TabIndex = 45;
-            this.TextBox8.Text = "ENT";
-            this.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PatientInfoPanel
             // 
@@ -1384,7 +1315,7 @@
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.205129F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.07692F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.29349F));
-            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
             this.tableLayoutPnl.Controls.Add(this.civilBox, 2, 4);
             this.tableLayoutPnl.Controls.Add(this.label21, 1, 4);
             this.tableLayoutPnl.Controls.Add(this.label20, 1, 3);
@@ -1433,7 +1364,7 @@
             "Widowed",
             "Divorced",
             "Separated"});
-            this.civilBox.Location = new System.Drawing.Point(161, 124);
+            this.civilBox.Location = new System.Drawing.Point(160, 124);
             this.civilBox.Name = "civilBox";
             this.civilBox.Size = new System.Drawing.Size(163, 21);
             this.civilBox.TabIndex = 92;
@@ -1470,7 +1401,7 @@
             this.genderBox.Items.AddRange(new object[] {
             "MALE",
             "FEMALE"});
-            this.genderBox.Location = new System.Drawing.Point(161, 96);
+            this.genderBox.Location = new System.Drawing.Point(160, 96);
             this.genderBox.Name = "genderBox";
             this.genderBox.Size = new System.Drawing.Size(163, 21);
             this.genderBox.TabIndex = 93;
@@ -1479,7 +1410,7 @@
             // 
             this.ageBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ageBox.Location = new System.Drawing.Point(160, 70);
+            this.ageBox.Location = new System.Drawing.Point(159, 70);
             this.ageBox.Margin = new System.Windows.Forms.Padding(2);
             this.ageBox.MaxLength = 3;
             this.ageBox.Name = "ageBox";
@@ -1515,7 +1446,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1523,12 +1454,12 @@
             this.tableLayoutPanel2.Controls.Add(this.middleBox, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.Label6, 2, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(161, 15);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(160, 15);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(220, 49);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(219, 49);
             this.tableLayoutPanel2.TabIndex = 100;
             // 
             // Label5
@@ -1536,7 +1467,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(68, 30);
+            this.Label5.Location = new System.Drawing.Point(67, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -1562,24 +1493,24 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(62, 20);
+            this.lastBox.Size = new System.Drawing.Size(61, 20);
             this.lastBox.TabIndex = 60;
             // 
             // firstBox
             // 
             this.firstBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.firstBox.Location = new System.Drawing.Point(68, 2);
+            this.firstBox.Location = new System.Drawing.Point(67, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(62, 20);
+            this.firstBox.Size = new System.Drawing.Size(61, 20);
             this.firstBox.TabIndex = 61;
             // 
             // middleBox
             // 
             this.middleBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleBox.Location = new System.Drawing.Point(152, 2);
+            this.middleBox.Location = new System.Drawing.Point(151, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
@@ -1591,7 +1522,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(163, 30);
+            this.Label6.Location = new System.Drawing.Point(162, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1602,7 +1533,7 @@
             // 
             this.dateFiledBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dateFiledBox.Enabled = false;
-            this.dateFiledBox.Location = new System.Drawing.Point(540, 29);
+            this.dateFiledBox.Location = new System.Drawing.Point(538, 29);
             this.dateFiledBox.Name = "dateFiledBox";
             this.dateFiledBox.Size = new System.Drawing.Size(176, 20);
             this.dateFiledBox.TabIndex = 84;
@@ -1612,7 +1543,7 @@
             this.packageBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.packageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.packageBox.FormattingEnabled = true;
-            this.packageBox.Location = new System.Drawing.Point(539, 69);
+            this.packageBox.Location = new System.Drawing.Point(537, 69);
             this.packageBox.Margin = new System.Windows.Forms.Padding(2);
             this.packageBox.Name = "packageBox";
             this.packageBox.Size = new System.Drawing.Size(164, 21);
@@ -1622,7 +1553,7 @@
             // 
             this.accBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.accBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.accBox.Location = new System.Drawing.Point(539, 124);
+            this.accBox.Location = new System.Drawing.Point(537, 124);
             this.accBox.Margin = new System.Windows.Forms.Padding(2);
             this.accBox.Name = "accBox";
             this.accBox.Size = new System.Drawing.Size(164, 20);
@@ -1633,7 +1564,7 @@
             this.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(445, 33);
+            this.Label9.Location = new System.Drawing.Point(443, 33);
             this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(34, 13);
@@ -1645,7 +1576,7 @@
             this.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label10.AutoSize = true;
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(445, 73);
+            this.Label10.Location = new System.Drawing.Point(443, 73);
             this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(57, 13);
@@ -1657,7 +1588,7 @@
             this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label11.AutoSize = true;
             this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(445, 100);
+            this.Label11.Location = new System.Drawing.Point(443, 100);
             this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(58, 13);
@@ -1669,7 +1600,7 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(445, 128);
+            this.label22.Location = new System.Drawing.Point(443, 128);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(54, 13);
@@ -1680,11 +1611,11 @@
             // 
             this.addressBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addressBox.Location = new System.Drawing.Point(160, 179);
+            this.addressBox.Location = new System.Drawing.Point(159, 179);
             this.addressBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(222, 78);
+            this.addressBox.Size = new System.Drawing.Size(221, 78);
             this.addressBox.TabIndex = 97;
             // 
             // Label8
@@ -1702,7 +1633,7 @@
             // submit
             // 
             this.submit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.submit.Location = new System.Drawing.Point(567, 235);
+            this.submit.Location = new System.Drawing.Point(565, 235);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(122, 23);
             this.submit.TabIndex = 101;
@@ -1716,14 +1647,14 @@
             this.paymentStatusBox.Items.AddRange(new object[] {
             "PAID",
             "BILLED"});
-            this.paymentStatusBox.Location = new System.Drawing.Point(540, 152);
+            this.paymentStatusBox.Location = new System.Drawing.Point(538, 152);
             this.paymentStatusBox.Name = "paymentStatusBox";
             this.paymentStatusBox.Size = new System.Drawing.Size(163, 21);
             this.paymentStatusBox.TabIndex = 102;
             // 
             // bdayBox
             // 
-            this.bdayBox.Location = new System.Drawing.Point(161, 152);
+            this.bdayBox.Location = new System.Drawing.Point(160, 152);
             this.bdayBox.Name = "bdayBox";
             this.bdayBox.Size = new System.Drawing.Size(200, 20);
             this.bdayBox.TabIndex = 103;
@@ -1745,7 +1676,7 @@
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(445, 149);
+            this.label25.Location = new System.Drawing.Point(443, 149);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(59, 26);
@@ -1754,7 +1685,7 @@
             // 
             // companyBox
             // 
-            this.companyBox.Location = new System.Drawing.Point(540, 96);
+            this.companyBox.Location = new System.Drawing.Point(538, 96);
             this.companyBox.Name = "companyBox";
             this.companyBox.Size = new System.Drawing.Size(163, 20);
             this.companyBox.TabIndex = 106;
@@ -1926,6 +1857,69 @@
             this.MenuClickedLabel.Text = "MenuTitle";
             this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // xrayStatusBox
+            // 
+            this.xrayStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.xrayStatusBox.FormattingEnabled = true;
+            this.xrayStatusBox.Location = new System.Drawing.Point(448, 174);
+            this.xrayStatusBox.Name = "xrayStatusBox";
+            this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.xrayStatusBox.TabIndex = 73;
+            // 
+            // cbcStatusBox
+            // 
+            this.cbcStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.cbcStatusBox.FormattingEnabled = true;
+            this.cbcStatusBox.Location = new System.Drawing.Point(448, 46);
+            this.cbcStatusBox.Name = "cbcStatusBox";
+            this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.cbcStatusBox.TabIndex = 67;
+            // 
+            // urineStoolStatusBox
+            // 
+            this.urineStoolStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.urineStoolStatusBox.FormattingEnabled = true;
+            this.urineStoolStatusBox.Location = new System.Drawing.Point(448, 90);
+            this.urineStoolStatusBox.Name = "urineStoolStatusBox";
+            this.urineStoolStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.urineStoolStatusBox.TabIndex = 68;
+            // 
+            // medStatusBox
+            // 
+            this.medStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.medStatusBox.FormattingEnabled = true;
+            this.medStatusBox.Location = new System.Drawing.Point(448, 134);
+            this.medStatusBox.Name = "medStatusBox";
+            this.medStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.medStatusBox.TabIndex = 69;
+            // 
+            // ecgStatusBox
+            // 
+            this.ecgStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ecgStatusBox.FormattingEnabled = true;
+            this.ecgStatusBox.Location = new System.Drawing.Point(448, 214);
+            this.ecgStatusBox.Name = "ecgStatusBox";
+            this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.ecgStatusBox.TabIndex = 72;
+            // 
+            // fbsStatusBox
+            // 
+            this.fbsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.fbsStatusBox.FormattingEnabled = true;
+            this.fbsStatusBox.Location = new System.Drawing.Point(448, 257);
+            this.fbsStatusBox.Name = "fbsStatusBox";
+            this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.fbsStatusBox.TabIndex = 71;
+            // 
+            // papsStatusBox
+            // 
+            this.papsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.papsStatusBox.FormattingEnabled = true;
+            this.papsStatusBox.Location = new System.Drawing.Point(448, 302);
+            this.papsStatusBox.Name = "papsStatusBox";
+            this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.papsStatusBox.TabIndex = 70;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2051,20 +2045,13 @@
         internal System.Windows.Forms.Label UriClickableLabel;
         internal System.Windows.Forms.Label CBCClickableLabel;
         internal System.Windows.Forms.Label Label19;
-        internal System.Windows.Forms.TextBox textBox14;
         internal System.Windows.Forms.Label Label18;
-        internal System.Windows.Forms.TextBox textBox13;
         internal System.Windows.Forms.Label Label17;
         internal System.Windows.Forms.Label Label16;
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.Label Label14;
         internal System.Windows.Forms.Label Label13;
-        internal System.Windows.Forms.TextBox TextBox12;
-        internal System.Windows.Forms.TextBox TextBox11;
-        internal System.Windows.Forms.TextBox TextBox10;
-        internal System.Windows.Forms.TextBox TextBox9;
         internal System.Windows.Forms.Label Label12;
-        internal System.Windows.Forms.TextBox TextBox8;
         private System.Windows.Forms.Panel PatientInfoPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPnl;
         private System.Windows.Forms.ComboBox civilBox;
@@ -2113,5 +2100,12 @@
         private System.Windows.Forms.Panel SubMenuPanel1;
         private System.Windows.Forms.Button OffsiteReps;
         private System.Windows.Forms.Button OffsiteEntEdtReq;
+        private System.Windows.Forms.ComboBox xrayStatusBox;
+        private System.Windows.Forms.ComboBox cbcStatusBox;
+        private System.Windows.Forms.ComboBox urineStoolStatusBox;
+        private System.Windows.Forms.ComboBox medStatusBox;
+        private System.Windows.Forms.ComboBox ecgStatusBox;
+        private System.Windows.Forms.ComboBox fbsStatusBox;
+        private System.Windows.Forms.ComboBox papsStatusBox;
     }
 }
