@@ -75,17 +75,22 @@ namespace SouthJLAInformationSystemC
 
         private void submit_Click(object sender, EventArgs e)
         {
+            DateCompletedForm dateCompletedForm = new DateCompletedForm();
+            dateCompletedForm.Show();
+        }
+
+        private void NewMethod()
+        {
             checkRemarks();
             string sqlString;
-            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '"+vitalSignStatusBox.SelectedItem+ "',CBC = '" + cbcStatusBox.SelectedItem + "',FBS = '" + fbsStatusBox.SelectedItem + "',Cholesterol = '" + fbsStatusBox.SelectedItem + "',Physical_Examination = '" + medStatusBox.SelectedItem + "', ECG = '" + ecgStatusBox.SelectedItem + "', PAP_Smear = '" + papsStatusBox.SelectedItem + "',Eye_Check_up = '" + eyeStatusBox.SelectedItem + "', Chest_Xray = '" + xrayStatusBox.SelectedItem + "',Urine_Exam = '" + UriStatusBox.SelectedItem + "',Stool_Exam = '" + StoolStatusBox.SelectedItem + "', Remarks = '"+remarks+"'       WHERE id = '" + idPass + "'";
-           Console.WriteLine(sqlString);
+            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '" + vitalSignStatusBox.SelectedItem + "',CBC = '" + cbcStatusBox.SelectedItem + "',FBS = '" + fbsStatusBox.SelectedItem + "',Cholesterol = '" + fbsStatusBox.SelectedItem + "',Physical_Examination = '" + medStatusBox.SelectedItem + "', ECG = '" + ecgStatusBox.SelectedItem + "', PAP_Smear = '" + papsStatusBox.SelectedItem + "',Eye_Check_up = '" + eyeStatusBox.SelectedItem + "', Chest_Xray = '" + xrayStatusBox.SelectedItem + "',Urine_Exam = '" + UriStatusBox.SelectedItem + "',Stool_Exam = '" + StoolStatusBox.SelectedItem + "', Remarks = '" + remarks + "'       WHERE id = '" + idPass + "'";
+            Console.WriteLine(sqlString);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sda = new SqlCommand(sqlString, conn);
             conn.Open();
             sda.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("Saved succesfully!");
-
         }
 
         private string checkerNull(string stringValue)
