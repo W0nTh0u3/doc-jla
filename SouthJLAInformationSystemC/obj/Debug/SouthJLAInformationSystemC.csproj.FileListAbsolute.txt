@@ -286,3 +286,5 @@ C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInfo
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csprojAssemblyReference.cache
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteReportsForm.resources
 C:\Users\jupper\source\repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteEntEdtForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteReportsForm.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteEntEdtForm.resources

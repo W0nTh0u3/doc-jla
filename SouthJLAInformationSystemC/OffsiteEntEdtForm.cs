@@ -19,7 +19,8 @@ namespace SouthJLAInformationSystemC
 
         public OffsiteEntEdtForm()
         {
-            InitializeComponent();
+            InitializeComponent();
+            InitializeDropDowns();
             Console.WriteLine("terminal: " + terminal);
 
         }
@@ -65,7 +66,7 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine(en.Message);
             }
         }
-            InitializeDropDowns();
+           
         private void InitializeDropDowns()
         {
             vitalSignStatusBox.SelectedIndex = cbcStatusBox.SelectedIndex = fbsStatusBox.SelectedIndex = medStatusBox.SelectedIndex = ecgStatusBox.SelectedIndex = papsStatusBox.SelectedIndex = eyeStatusBox.SelectedIndex = xrayStatusBox.SelectedIndex = UriStatusBox.SelectedIndex = StoolStatusBox.SelectedIndex = 0;
