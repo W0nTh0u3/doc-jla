@@ -17,13 +17,15 @@ namespace SouthJLAInformationSystemC
         public string idPass = "";
         public string uniquePass = "";
         public string remarks = "";
-
+        public string[] statusHolder = new string[10];
+    
 
         public OffsiteEntEdtForm()
         {
             InitializeComponent();
             InitializeDropDowns();
             Console.WriteLine("terminal: " + terminal);
+            vitalSignStatusBox.SelectedItem = "PENDING";
         }
         private void searchButton_Click(object sender, EventArgs e)
         {
@@ -55,7 +57,44 @@ namespace SouthJLAInformationSystemC
                 eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
                 xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
                 UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
-                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+                if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateVital.Enabled = false;
+                    vitalSignStatusBox.Enabled = false;
+                }
+
+                if (cbcStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateCBC.Enabled = false;
+                    cbcStatusBox.Enabled = false;
+                }
+                if (medStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateMedCert.Enabled = false;
+                    medStatusBox.Enabled = false;
+                }
+                if (eyeStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateEye.Enabled = false;
+                    eyeStatusBox.Enabled = false;
+                }
+                if (xrayStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateXRAY.Enabled = false;
+                    xrayStatusBox.Enabled = false;
+                }
+
+                if (UriStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateUrine.Enabled = false;
+                    UriStatusBox.Enabled = false;
+                }
+                if (StoolStatusBox.SelectedItem.ToString() == "DONE")
+                {
+                    dateStool.Enabled = false;
+                    StoolStatusBox.Enabled = false;
+                }
                 //        bdayBox.Value = date1;
                 packageBox.SelectedItem = dt.Rows[0][11].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
@@ -115,8 +154,8 @@ namespace SouthJLAInformationSystemC
         private void submit_Click(object sender, EventArgs e)
         {
             checkRemarks();
-            string sqlString;
-            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '" + vitalSignStatusBox.SelectedItem + "',CBC = '" + cbcStatusBox.SelectedItem + "',FBS = '" + fbsStatusBox.SelectedItem + "',Cholesterol = '" + fbsStatusBox.SelectedItem + "',Physical_Examination = '" + medStatusBox.SelectedItem + "', ECG = '" + ecgStatusBox.SelectedItem + "', PAP_Smear = '" + papsStatusBox.SelectedItem + "',Eye_Check_up = '" + eyeStatusBox.SelectedItem + "', Chest_Xray = '" + xrayStatusBox.SelectedItem + "',Urine_Exam = '" + UriStatusBox.SelectedItem + "',Stool_Exam = '" + StoolStatusBox.SelectedItem + "', Remarks = '" + remarks + "'       WHERE id = '" + idPass + "'";
+            string sqlString = "";
+            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '" + statusHolder[0] + "',CBC = '" + statusHolder[1] + "',FBS = '" + statusHolder[2] + "',Cholesterol = '" + statusHolder[0] + "',Physical_Examination = '" + statusHolder[3] + "', ECG = '" + statusHolder[4] + "', PAP_Smear = '" + statusHolder[5] + "',Eye_Check_up = '" + statusHolder[6] + "', Chest_Xray = '" + statusHolder[7] + "',Urine_Exam = '" + statusHolder[8] + "',Stool_Exam = '" + statusHolder[9] + "', Remarks = '" + remarks + "'       WHERE id = '" + idPass + "'";
             Console.WriteLine(sqlString);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sda = new SqlCommand(sqlString, conn);
@@ -131,6 +170,12 @@ namespace SouthJLAInformationSystemC
         {
             if (stringValue == "" || stringValue == null)
                 return ("PENDING");
+            else if (stringValue.Contains("DONE"))
+            {
+            //   string[] s = stringValue.Split(' ');
+              //  Console.WriteLine(s[1]);
+                return ("DONE");
+            }
             else
                 return (stringValue);
         }
@@ -138,10 +183,14 @@ namespace SouthJLAInformationSystemC
         private void checkRemarks()
         {
             if (vitalSignStatusBox.SelectedItem.ToString() == "PENDING" || cbcStatusBox.SelectedItem.ToString() == "PENDING" || fbsStatusBox.SelectedItem.ToString() == "PENDING" || medStatusBox.SelectedItem.ToString() == "PENDING" || ecgStatusBox.SelectedItem.ToString() == "PENDING" || papsStatusBox.SelectedItem.ToString() == "PENDING" || eyeStatusBox.SelectedItem.ToString() == "PENDING" || xrayStatusBox.SelectedItem.ToString() == "PENDING" || UriStatusBox.SelectedItem.ToString() == "PENDING" || StoolStatusBox.SelectedItem.ToString() == "PENDING")
+            {
                 remarks = "INCOMPLETE";
+            }
             else
+            { 
                 remarks = "COMPLETE";
-                
+            }
+
         }
 
         private void OffsiteEntEdtForm_Load(object sender, EventArgs e)
@@ -220,6 +269,43 @@ namespace SouthJLAInformationSystemC
             UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
             StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
 
+            if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateVital.Enabled = false;
+                vitalSignStatusBox.Enabled = false;
+            }
+
+            if (cbcStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateCBC.Enabled = false;
+                cbcStatusBox.Enabled = false;
+            }
+            if (medStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateMedCert.Enabled = false;
+                medStatusBox.Enabled = false;
+            }
+            if (eyeStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateEye.Enabled = false;
+                eyeStatusBox.Enabled = false;
+            }
+            if (xrayStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateXRAY.Enabled = false;
+                xrayStatusBox.Enabled = false;
+            }
+
+            if (UriStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateUrine.Enabled = false;
+                UriStatusBox.Enabled = false;
+            }
+            if (StoolStatusBox.SelectedItem.ToString() == "DONE")
+            {
+                dateStool.Enabled = false;
+                StoolStatusBox.Enabled = false;
+            }
 
             if (Convert.ToInt32(ageBox.Text) < 30)
             {
@@ -249,6 +335,7 @@ namespace SouthJLAInformationSystemC
                 ecgStatusBox.Enabled = true;
 
             }
+
 
 
         }
@@ -281,5 +368,157 @@ namespace SouthJLAInformationSystemC
             fbsStatusBox.Enabled = true;
         }
 
+       /*  private void dateHolder()
+        {
+            if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[0] = vitalSignStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[0] = vitalSignStatusBox.SelectedItem.ToString();
+            if (cbcStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[1] = cbcStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[1] = cbcStatusBox.SelectedItem.ToString();
+            if (fbsStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[2] = fbsStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[2] = fbsStatusBox.SelectedItem.ToString();
+            if (medStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[3] = medStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[3] = medStatusBox.SelectedItem.ToString();
+            if (ecgStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[4] = ecgStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[4] = ecgStatusBox.SelectedItem.ToString();
+            if (papsStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[5] = papsStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[5] = papsStatusBox.SelectedItem.ToString();
+            if (eyeStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[6] = eyeStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[6] = eyeStatusBox.SelectedItem.ToString();
+            if (xrayStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[7] = xrayStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[7] = xrayStatusBox.SelectedItem.ToString();
+            if (UriStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[8] = UriStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[8] = UriStatusBox.SelectedItem.ToString();
+            if (StoolStatusBox.SelectedItem.ToString() == "DONE")
+                statusHolder[9] = StoolStatusBox.SelectedItem.ToString() + dateVital.Value.Date.ToString();
+            else
+                statusHolder[9] = StoolStatusBox.SelectedItem.ToString();
+
+
+
+       }
+     */
+        private void dateEnablerEX(object sender, EventArgs e)
+        {
+            if (vitalSignStatusBox.Text.ToString() != "DONE")
+            { statusHolder[0] = vitalSignStatusBox.Text.ToString();
+                Console.WriteLine(statusHolder[0]);
+                dateVital.Enabled = false; }
+            else
+            { dateVital.Enabled = true;
+                statusHolder[0] = vitalSignStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy"); }
+            if (cbcStatusBox.Text.ToString() != "DONE")
+            { dateCBC.Enabled = false;
+                statusHolder[1] = cbcStatusBox.Text.ToString(); }
+            else
+            { dateCBC.Enabled = true;
+                statusHolder[1] = cbcStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy"); }
+            if (fbsStatusBox.Text.ToString() != "DONE")
+            {
+                dateFBS.Enabled = false;
+                statusHolder[2] = fbsStatusBox.Text.ToString() ;
+            }
+            else
+                {
+                    dateFBS.Enabled = true;
+                statusHolder[2] = fbsStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            }
+            if (medStatusBox.Text.ToString() != "DONE")
+                    {
+                        dateMedCert.Enabled = false;
+            statusHolder[3] = medStatusBox.Text.ToString();
+            }
+            else
+                        {
+                            dateMedCert.Enabled = true;
+            statusHolder[3] = medStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+
+            }
+            if (ecgStatusBox.Text.ToString() != "DONE")
+                            {
+                                dateECG.Enabled = false;
+            statusHolder[4] = ecgStatusBox.Text.ToString();
+            }
+            else
+                                {
+                                    dateECG.Enabled = true;
+            statusHolder[4] = ecgStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+
+            }
+            if (papsStatusBox.Text.ToString() != "DONE")
+                                    {
+                                        datePAPS.Enabled = false;
+            statusHolder[5] = papsStatusBox.Text.ToString();
+            }
+            else
+                                        {
+                                            datePAPS.Enabled = true;
+            statusHolder[5] = papsStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+
+            }
+            if (eyeStatusBox.Text.ToString() != "DONE")
+                                            {
+                                                dateEye.Enabled = false;
+            statusHolder[6] = eyeStatusBox.Text.ToString();
+            }
+            else
+                                                {
+                                                    dateEye.Enabled = true;
+            statusHolder[6] = eyeStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+
+            }
+            if (xrayStatusBox.Text.ToString() != "DONE")
+                                                    {
+                                                        dateXRAY.Enabled = false;
+                statusHolder[7] = xrayStatusBox.Text.ToString();
+            }
+            else
+                                                        {
+                                                            dateXRAY.Enabled = true;
+            statusHolder[7] = xrayStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+
+            }
+            if (UriStatusBox.Text.ToString() != "DONE")
+                                                            {
+                                                                dateUrine.Enabled = false;
+            statusHolder[8] = UriStatusBox.Text.ToString();
+            }
+            else
+                                                                {
+                                                                    dateUrine.Enabled = true;
+            statusHolder[8] = UriStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            }
+            if (StoolStatusBox.Text.ToString() != "DONE")
+                                                                    {
+                                                                        dateStool.Enabled = false;
+                statusHolder[9] = StoolStatusBox.Text.ToString();
+            }
+            else
+                                                                        {
+                                                                            dateStool.Enabled = true;
+            statusHolder[9] = StoolStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            }
+
+
+
+
+        }
     }
 }

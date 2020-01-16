@@ -32,6 +32,7 @@
             this.OffsitePanel = new System.Windows.Forms.Panel();
             this.MajorelPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.StoolStatusBox = new System.Windows.Forms.ComboBox();
             this.UriStatusBox = new System.Windows.Forms.ComboBox();
@@ -75,8 +76,8 @@
             this.dateStool = new System.Windows.Forms.DateTimePicker();
             this.StooClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateComplete = new System.Windows.Forms.DateTimePicker();
             this.submit = new System.Windows.Forms.Button();
+            this.dateComplete = new System.Windows.Forms.DateTimePicker();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPnl = new System.Windows.Forms.TableLayoutPanel();
             this.civilBox = new System.Windows.Forms.ComboBox();
@@ -176,6 +177,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.label1, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel16, 2, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,6 +189,18 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1117, 362);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(895, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.TabIndex = 107;
+            this.label1.Text = "Date Completed";
             // 
             // tableLayoutPanel5
             // 
@@ -245,6 +259,7 @@
             this.StoolStatusBox.Name = "StoolStatusBox";
             this.StoolStatusBox.Size = new System.Drawing.Size(93, 21);
             this.StoolStatusBox.TabIndex = 103;
+            this.StoolStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // UriStatusBox
             // 
@@ -259,6 +274,7 @@
             this.UriStatusBox.Name = "UriStatusBox";
             this.UriStatusBox.Size = new System.Drawing.Size(93, 21);
             this.UriStatusBox.TabIndex = 73;
+            this.UriStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // vitalSignStatusBox
             // 
@@ -268,12 +284,14 @@
             this.vitalSignStatusBox.FormattingEnabled = true;
             this.vitalSignStatusBox.Items.AddRange(new object[] {
             "PENDING",
-            "DONE"});
+            "DONE",
+            ""});
             this.vitalSignStatusBox.Location = new System.Drawing.Point(19, 31);
             this.vitalSignStatusBox.Name = "vitalSignStatusBox";
             this.vitalSignStatusBox.Size = new System.Drawing.Size(93, 21);
             this.vitalSignStatusBox.TabIndex = 49;
             this.vitalSignStatusBox.ValueMember = "(none)";
+            this.vitalSignStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // StatusLabel
             // 
@@ -301,6 +319,7 @@
             this.ecgStatusBox.Name = "ecgStatusBox";
             this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
             this.ecgStatusBox.TabIndex = 54;
+            this.ecgStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // eyeStatusBox
             // 
@@ -314,6 +333,7 @@
             this.eyeStatusBox.Name = "eyeStatusBox";
             this.eyeStatusBox.Size = new System.Drawing.Size(93, 21);
             this.eyeStatusBox.TabIndex = 71;
+            this.eyeStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // xrayStatusBox
             // 
@@ -328,6 +348,7 @@
             this.xrayStatusBox.Name = "xrayStatusBox";
             this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
             this.xrayStatusBox.TabIndex = 55;
+            this.xrayStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // papsStatusBox
             // 
@@ -342,6 +363,7 @@
             this.papsStatusBox.Name = "papsStatusBox";
             this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.papsStatusBox.TabIndex = 52;
+            this.papsStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // medStatusBox
             // 
@@ -355,6 +377,7 @@
             this.medStatusBox.Name = "medStatusBox";
             this.medStatusBox.Size = new System.Drawing.Size(93, 21);
             this.medStatusBox.TabIndex = 50;
+            this.medStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // fbsStatusBox
             // 
@@ -369,6 +392,7 @@
             this.fbsStatusBox.Name = "fbsStatusBox";
             this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.fbsStatusBox.TabIndex = 53;
+            this.fbsStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // cbcStatusBox
             // 
@@ -382,6 +406,7 @@
             this.cbcStatusBox.Name = "cbcStatusBox";
             this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
             this.cbcStatusBox.TabIndex = 48;
+            this.cbcStatusBox.SelectedValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // tableLayoutPanel6
             // 
@@ -420,6 +445,7 @@
             this.dateVital.Name = "dateVital";
             this.dateVital.Size = new System.Drawing.Size(258, 20);
             this.dateVital.TabIndex = 104;
+            this.dateVital.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // tableLayoutPanel7
             // 
@@ -445,6 +471,7 @@
             this.dateCBC.Name = "dateCBC";
             this.dateCBC.Size = new System.Drawing.Size(258, 20);
             this.dateCBC.TabIndex = 103;
+            this.dateCBC.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // CBCClickableLabel
             // 
@@ -483,6 +510,7 @@
             this.dateFBS.Name = "dateFBS";
             this.dateFBS.Size = new System.Drawing.Size(258, 20);
             this.dateFBS.TabIndex = 103;
+            this.dateFBS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // FBSClickableLabel
             // 
@@ -521,6 +549,7 @@
             this.dateMedCert.Name = "dateMedCert";
             this.dateMedCert.Size = new System.Drawing.Size(258, 20);
             this.dateMedCert.TabIndex = 103;
+            this.dateMedCert.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // MedExClickableLabel
             // 
@@ -559,6 +588,7 @@
             this.dateECG.Name = "dateECG";
             this.dateECG.Size = new System.Drawing.Size(258, 20);
             this.dateECG.TabIndex = 103;
+            this.dateECG.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // ECGClickableLabel
             // 
@@ -597,6 +627,7 @@
             this.datePAPS.Name = "datePAPS";
             this.datePAPS.Size = new System.Drawing.Size(258, 20);
             this.datePAPS.TabIndex = 103;
+            this.datePAPS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // PAPSClickedLabel
             // 
@@ -635,6 +666,7 @@
             this.dateEye.Name = "dateEye";
             this.dateEye.Size = new System.Drawing.Size(258, 20);
             this.dateEye.TabIndex = 103;
+            this.dateEye.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // EyeExamClickableLabel
             // 
@@ -673,6 +705,7 @@
             this.dateXRAY.Name = "dateXRAY";
             this.dateXRAY.Size = new System.Drawing.Size(258, 20);
             this.dateXRAY.TabIndex = 103;
+            this.dateXRAY.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // XrayClickableLabel
             // 
@@ -711,6 +744,7 @@
             this.dateUrine.Name = "dateUrine";
             this.dateUrine.Size = new System.Drawing.Size(258, 20);
             this.dateUrine.TabIndex = 103;
+            this.dateUrine.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // UriClickableLabel
             // 
@@ -749,6 +783,7 @@
             this.dateStool.Name = "dateStool";
             this.dateStool.Size = new System.Drawing.Size(258, 20);
             this.dateStool.TabIndex = 103;
+            this.dateStool.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
             // StooClickableLabel
             // 
@@ -768,8 +803,8 @@
             // 
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.submit, 0, 1);
+            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(896, 21);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
@@ -778,14 +813,6 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(218, 319);
             this.tableLayoutPanel16.TabIndex = 104;
-            // 
-            // dateComplete
-            // 
-            this.dateComplete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.dateComplete.Location = new System.Drawing.Point(9, 257);
-            this.dateComplete.Name = "dateComplete";
-            this.dateComplete.Size = new System.Drawing.Size(200, 20);
-            this.dateComplete.TabIndex = 103;
             // 
             // submit
             // 
@@ -797,6 +824,14 @@
             this.submit.Text = "Save";
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // dateComplete
+            // 
+            this.dateComplete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateComplete.Location = new System.Drawing.Point(3, 3);
+            this.dateComplete.Name = "dateComplete";
+            this.dateComplete.Size = new System.Drawing.Size(212, 20);
+            this.dateComplete.TabIndex = 103;
             // 
             // PatientInfoPanel
             // 
@@ -950,7 +985,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -971,7 +1006,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(92, 30);
+            this.Label5.Location = new System.Drawing.Point(77, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -983,7 +1018,7 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(7, 30);
+            this.Label4.Location = new System.Drawing.Point(2, 30);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(61, 13);
@@ -1000,7 +1035,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(71, 20);
+            this.lastBox.Size = new System.Drawing.Size(62, 20);
             this.lastBox.TabIndex = 60;
             this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
@@ -1011,10 +1046,10 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(77, 2);
+            this.firstBox.Location = new System.Drawing.Point(68, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(91, 20);
+            this.firstBox.Size = new System.Drawing.Size(80, 20);
             this.firstBox.TabIndex = 61;
             this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
@@ -1023,11 +1058,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(172, 2);
+            this.middleBox.Location = new System.Drawing.Point(152, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(94, 20);
+            this.middleBox.Size = new System.Drawing.Size(114, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1035,7 +1070,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(206, 30);
+            this.Label6.Location = new System.Drawing.Point(196, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1082,9 +1117,9 @@
             this.Label9.Location = new System.Drawing.Point(465, 33);
             this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(34, 13);
+            this.Label9.Size = new System.Drawing.Size(99, 13);
             this.Label9.TabIndex = 83;
-            this.Label9.Text = "Date";
+            this.Label9.Text = "Date Registered";
             // 
             // Label10
             // 
@@ -1373,6 +1408,7 @@
             this.OffsitePanel.ResumeLayout(false);
             this.MajorelPanel.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1507,5 +1543,6 @@
         internal System.Windows.Forms.TextBox lastBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.DateTimePicker dateComplete;
+        internal System.Windows.Forms.Label label1;
     }
 }
