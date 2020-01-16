@@ -43,7 +43,19 @@ namespace SouthJLAInformationSystemC
                 genderBox.SelectedItem = dt.Rows[0][7].ToString().ToUpper();
                 civilBox.SelectedItem = dt.Rows[0][6].ToString();
                 uniquePass = dt.Rows[0][15].ToString();
-                idPass = dt.Rows[0][0].ToString();
+                idPass = searchBox.Text = dt.Rows[0][0].ToString();
+                employeeNum.Text = dt.Rows[0][16].ToString();
+                packageBox.SelectedItem = dt.Rows[0][11].ToString();
+                paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
+                companyBox.Text = dt.Rows[0][12].ToString();
+                accBox.Text = dt.Rows[0][13].ToString();
+                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());
+                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());
+                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
+                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
+                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
+                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
                 //        bdayBox.Value = date1;
                 packageBox.SelectedItem = dt.Rows[0][11].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
@@ -68,6 +80,10 @@ namespace SouthJLAInformationSystemC
                 {
                     papsStatusBox.SelectedItem = "N/A";
                     papsStatusBox.Enabled = false;
+                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                    fbsStatusBox.Enabled = true;
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                    ecgStatusBox.Enabled = true;
                 }
                 else
                 {
@@ -218,6 +234,10 @@ namespace SouthJLAInformationSystemC
             {
                 papsStatusBox.SelectedItem = "N/A";
                 papsStatusBox.Enabled = false;
+                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                fbsStatusBox.Enabled = true;
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                ecgStatusBox.Enabled = true;
             }
             else
             {
@@ -255,6 +275,10 @@ namespace SouthJLAInformationSystemC
             paymentStatusBox.SelectedIndex = -1;
             employeeNum.Text = String.Empty;
             searchBox.Text = String.Empty;
+            InitializeDropDowns();
+            papsStatusBox.Enabled = true;
+            ecgStatusBox.Enabled = true;
+            fbsStatusBox.Enabled = true;
         }
 
     }
