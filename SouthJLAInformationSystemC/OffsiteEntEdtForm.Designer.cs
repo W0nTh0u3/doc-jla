@@ -770,6 +770,7 @@
             this.submit.TabIndex = 102;
             this.submit.Text = "Save";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // PatientInfoPanel
             // 
@@ -959,7 +960,7 @@
             this.Label4.Location = new System.Drawing.Point(9, 30);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(61, 13);
+            this.Label4.Size = new System.Drawing.Size(54, 25);
             this.Label4.TabIndex = 63;
             this.Label4.Text = "Lastname";
             // 
