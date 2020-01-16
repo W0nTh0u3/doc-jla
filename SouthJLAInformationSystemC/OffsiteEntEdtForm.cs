@@ -15,7 +15,9 @@ namespace SouthJLAInformationSystemC
     {
         public string terminal = System.Environment.MachineName;
         public string idPass = "";
-        public string uniquePass = "";
+        public string uniquePass = "";
+        public string remarks = "";
+
 
         public OffsiteEntEdtForm()
         {
@@ -57,6 +59,7 @@ namespace SouthJLAInformationSystemC
                 UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
                 StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
 
+
                 clearAll.Enabled = true;
 
                 submit.Enabled = true;
@@ -75,8 +78,9 @@ namespace SouthJLAInformationSystemC
 
         private void submit_Click(object sender, EventArgs e)
         {
+            checkRemarks();
             string sqlString;
-            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '"+vitalSignStatusBox.SelectedItem+ "',CBC = '" + cbcStatusBox.SelectedItem + "',FBS = '" + fbsStatusBox.SelectedItem + "',Cholesterol = '" + fbsStatusBox.SelectedItem + "',Physical_Examination = '" + medStatusBox.SelectedItem + "', ECG = '" + ecgStatusBox.SelectedItem + "', PAP_Smear = '" + papsStatusBox.SelectedItem + "',Eye_Check_up = '" + eyeStatusBox.SelectedItem + "', Chest_Xray = '" + xrayStatusBox.SelectedItem + "',Urine_Exam = '" + UriStatusBox.SelectedItem + "',Stool_Exam = '" + StoolStatusBox.SelectedItem + "'       WHERE id = '" + idPass + "'";
+            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '"+vitalSignStatusBox.SelectedItem+ "',CBC = '" + cbcStatusBox.SelectedItem + "',FBS = '" + fbsStatusBox.SelectedItem + "',Cholesterol = '" + fbsStatusBox.SelectedItem + "',Physical_Examination = '" + medStatusBox.SelectedItem + "', ECG = '" + ecgStatusBox.SelectedItem + "', PAP_Smear = '" + papsStatusBox.SelectedItem + "',Eye_Check_up = '" + eyeStatusBox.SelectedItem + "', Chest_Xray = '" + xrayStatusBox.SelectedItem + "',Urine_Exam = '" + UriStatusBox.SelectedItem + "',Stool_Exam = '" + StoolStatusBox.SelectedItem + "', Remarks = '"+remarks+"'       WHERE id = '" + idPass + "'";
            Console.WriteLine(sqlString);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sda = new SqlCommand(sqlString, conn);
@@ -93,6 +97,14 @@ namespace SouthJLAInformationSystemC
                 return ("PENDING");
             else
                 return (stringValue);
+        }
+
+        private void checkRemarks()
+        {
+            if (vitalSignStatusBox.SelectedItem.ToString() == "PENDING" || cbcStatusBox.SelectedItem.ToString() == "PENDING" || fbsStatusBox.SelectedItem.ToString() == "PENDING" || medStatusBox.SelectedItem.ToString() == "PENDING" || ecgStatusBox.SelectedItem.ToString() == "PENDING" || papsStatusBox.SelectedItem.ToString() == "PENDING" || eyeStatusBox.SelectedItem.ToString() == "PENDING" || xrayStatusBox.SelectedItem.ToString() == "PENDING" || UriStatusBox.SelectedItem.ToString() == "PENDING" || StoolStatusBox.SelectedItem.ToString() == "PENDING")
+                remarks = "INCOMPLETE";
+            else
+                remarks = "COMPLETE";
         }
     }
 }
