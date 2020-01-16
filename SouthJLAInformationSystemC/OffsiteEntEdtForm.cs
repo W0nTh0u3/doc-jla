@@ -23,16 +23,12 @@ namespace SouthJLAInformationSystemC
         {
             InitializeComponent();
             InitializeDropDowns();
-
-            Console.WriteLine("terminal: " + terminal);            
-
-        }
-            
-
-        private void searchButton_Click(object sender, EventArgs e)
-        {
-           try
-            {            
+            Console.WriteLine("terminal: " + terminal);
+        }
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+           try
+            {            
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE id = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
@@ -49,10 +45,10 @@ namespace SouthJLAInformationSystemC
                 uniquePass = dt.Rows[0][15].ToString();
                 idPass = dt.Rows[0][0].ToString();
                 //        bdayBox.Value = date1;
-                packageBox.SelectedItem = checkerNull(dt.Rows[0][11].ToString());
-                paymentStatusBox.SelectedItem = checkerNull(dt.Rows[0][9].ToString());
-                companyBox.Text = checkerNull(dt.Rows[0][12].ToString());
-                accBox.Text = checkerNull(dt.Rows[0][13].ToString());                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                packageBox.SelectedItem = dt.Rows[0][11].ToString();
+                paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
+                companyBox.Text = dt.Rows[0][12].ToString();
+                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
                 medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
                 ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
                 papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
@@ -62,19 +58,19 @@ namespace SouthJLAInformationSystemC
                 StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
 
 
-                clearAll.Enabled = true;
-                submit.Enabled = true;
-            }
-           catch (Exception en)
-            {
+                clearAll.Enabled = true;
+                submit.Enabled = true;
+            }
+           catch (Exception en)
+            {
                 MessageBox.Show("No matching record found.");
-                Console.WriteLine(en.Message);
-            }
+                Console.WriteLine(en.Message);
+            }
         }
            
-        private void InitializeDropDowns()
-        {
-            vitalSignStatusBox.SelectedIndex = cbcStatusBox.SelectedIndex = fbsStatusBox.SelectedIndex = medStatusBox.SelectedIndex = ecgStatusBox.SelectedIndex = papsStatusBox.SelectedIndex = eyeStatusBox.SelectedIndex = xrayStatusBox.SelectedIndex = UriStatusBox.SelectedIndex = StoolStatusBox.SelectedIndex = 0;
+        private void InitializeDropDowns()
+        {
+            vitalSignStatusBox.SelectedIndex = cbcStatusBox.SelectedIndex = fbsStatusBox.SelectedIndex = medStatusBox.SelectedIndex = ecgStatusBox.SelectedIndex = papsStatusBox.SelectedIndex = eyeStatusBox.SelectedIndex = xrayStatusBox.SelectedIndex = UriStatusBox.SelectedIndex = StoolStatusBox.SelectedIndex = 0;
         }
 
         private void submit_Click(object sender, EventArgs e)
@@ -111,7 +107,6 @@ namespace SouthJLAInformationSystemC
         private void OffsiteEntEdtForm_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-
             SqlCommand sdaLast = new SqlCommand("SELECT lastName FROM dbo.mjrl2020", conn);
             SqlCommand sdaFirst = new SqlCommand("SELECT givenName FROM dbo.mjrl2020 WHERE lastName ='" + lastBox.Text + "'", conn);
 
@@ -164,7 +159,6 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt);
             //    DateTime date1 = Convert.ToDateTime(dt.Rows[0][14].ToString()); Not needed yet
-
             
             middleBox.Text = dt.Rows[0][3].ToString();
             ageBox.Text = dt.Rows[0][4].ToString();
@@ -197,7 +191,6 @@ namespace SouthJLAInformationSystemC
             companyBox.Text = String.Empty;
             accBox.Text = String.Empty;
             paymentStatusBox.SelectedIndex = -1;
-
             employeeNum.Text = String.Empty;
             searchBox.Text = String.Empty;
         }
