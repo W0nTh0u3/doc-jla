@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.generateBtn = new System.Windows.Forms.Button();
             this.exportBtn = new System.Windows.Forms.Button();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -145,5 +146,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button generateBtn;
         private System.Windows.Forms.Button exportBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
