@@ -281,3 +281,5 @@ C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInfo
 C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.csproj.CopyComplete
 C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe
 C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.pdb
+C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteReportsForm.resources
+C:\Users\juppe\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteEntEdtForm.resources
