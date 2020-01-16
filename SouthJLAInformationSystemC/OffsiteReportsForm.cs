@@ -19,7 +19,6 @@ namespace SouthJLAInformationSystemC
 
         private void generateBtn_Click(object sender, EventArgs e)
         {
-            dataGrid.DataSource = dt;
         }
     }
 }

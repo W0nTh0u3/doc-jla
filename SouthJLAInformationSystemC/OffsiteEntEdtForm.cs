@@ -40,7 +40,7 @@ namespace SouthJLAInformationSystemC
                 middleBox.Text = dt.Rows[0][3].ToString();
                 ageBox.Text = dt.Rows[0][4].ToString();
                 addressBox.Text = dt.Rows[0][5].ToString();
-                genderBox.SelectedItem = dt.Rows[0][7].ToString();
+                genderBox.SelectedItem = dt.Rows[0][7].ToString().ToUpper();
                 civilBox.SelectedItem = dt.Rows[0][6].ToString();
                 uniquePass = dt.Rows[0][15].ToString();
                 idPass = dt.Rows[0][0].ToString();
@@ -48,14 +48,37 @@ namespace SouthJLAInformationSystemC
                 packageBox.SelectedItem = dt.Rows[0][11].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
                 companyBox.Text = dt.Rows[0][12].ToString();
-                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
-                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
-                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
-                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
                 eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
                 xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
                 UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
                 StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+
+               
+            if (Convert.ToInt32(ageBox.Text) < 30)
+                    {
+                    papsStatusBox.SelectedItem = "N/A";
+                    papsStatusBox.Enabled = false;
+                    fbsStatusBox.SelectedItem = "N/A";
+                    fbsStatusBox.Enabled = false;
+                    ecgStatusBox.SelectedItem = "N/A";
+                    ecgStatusBox.Enabled = false;
+                }
+               else if (genderBox.SelectedItem.ToString().ToUpper() == "MALE")
+                {
+                    papsStatusBox.SelectedItem = "N/A";
+                    papsStatusBox.Enabled = false;
+                }
+                else
+                {
+                    papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                    papsStatusBox.Enabled = true;
+                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                    fbsStatusBox.Enabled = true;
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                    ecgStatusBox.Enabled = true;
+
+                }
 
 
                 clearAll.Enabled = true;
@@ -169,6 +192,44 @@ namespace SouthJLAInformationSystemC
             uniquePass = dt.Rows[0][15].ToString();
             idPass = searchBox.Text = dt.Rows[0][0].ToString();
             employeeNum.Text = dt.Rows[0][16].ToString();
+            packageBox.SelectedItem = dt.Rows[0][11].ToString();
+            paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
+            companyBox.Text = dt.Rows[0][12].ToString();
+            accBox.Text = dt.Rows[0][13].ToString();
+            vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());
+            cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());
+            medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
+            eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+            xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
+            UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
+            StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+
+
+            if (Convert.ToInt32(ageBox.Text) < 30)
+            {
+                papsStatusBox.SelectedItem = "N/A";
+                papsStatusBox.Enabled = false;
+                fbsStatusBox.SelectedItem = "N/A";
+                fbsStatusBox.Enabled = false;
+                ecgStatusBox.SelectedItem = "N/A";
+                ecgStatusBox.Enabled = false;
+            }
+            else if (genderBox.SelectedItem.ToString().ToUpper() == "MALE")
+            {
+                papsStatusBox.SelectedItem = "N/A";
+                papsStatusBox.Enabled = false;
+            }
+            else
+            {
+                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                papsStatusBox.Enabled = true;
+                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                fbsStatusBox.Enabled = true;
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                ecgStatusBox.Enabled = true;
+
+            }
+
 
         }
 
@@ -195,5 +256,6 @@ namespace SouthJLAInformationSystemC
             employeeNum.Text = String.Empty;
             searchBox.Text = String.Empty;
         }
+
     }
 }
