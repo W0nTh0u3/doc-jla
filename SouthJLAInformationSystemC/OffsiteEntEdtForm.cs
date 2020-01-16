@@ -15,6 +15,11 @@ namespace SouthJLAInformationSystemC
         public OffsiteEntEdtForm()
         {
             InitializeComponent();
+            InitializeDropDowns();
+        }
+        private void InitializeDropDowns()
+        {
+            vitalSignStatusBox.SelectedIndex = cbcStatusBox.SelectedIndex = fbsStatusBox.SelectedIndex = medStatusBox.SelectedIndex = ecgStatusBox.SelectedIndex = papsStatusBox.SelectedIndex = eyeStatusBox.SelectedIndex = xrayStatusBox.SelectedIndex = UriStatusBox.SelectedIndex = StoolStatusBox.SelectedIndex = 0;
         }
     }
 }
