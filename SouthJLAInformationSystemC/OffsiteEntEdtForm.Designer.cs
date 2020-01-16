@@ -80,7 +80,6 @@
             this.civilBox = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.searchButton = new System.Windows.Forms.Button();
             this.genderBox = new System.Windows.Forms.ComboBox();
             this.ageBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
@@ -116,6 +115,7 @@
             this.employeeNum = new System.Windows.Forms.TextBox();
             this.employeeLabel = new System.Windows.Forms.Label();
             this.clearAll = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.offsiteReportsFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -786,15 +786,14 @@
             this.tableLayoutPnl.ColumnCount = 7;
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.05757F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.593298F));
-            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.8149F));
-            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.88262F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.92551F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.772009F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.85102F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.63883F));
             this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.02709F));
             this.tableLayoutPnl.Controls.Add(this.civilBox, 2, 4);
             this.tableLayoutPnl.Controls.Add(this.label21, 1, 4);
             this.tableLayoutPnl.Controls.Add(this.label20, 1, 3);
-            this.tableLayoutPnl.Controls.Add(this.searchButton, 3, 1);
             this.tableLayoutPnl.Controls.Add(this.genderBox, 2, 3);
             this.tableLayoutPnl.Controls.Add(this.ageBox, 2, 2);
             this.tableLayoutPnl.Controls.Add(this.Label7, 1, 2);
@@ -869,19 +868,6 @@
             this.label20.TabIndex = 94;
             this.label20.Text = "Gender";
             // 
-            // searchButton
-            // 
-            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.searchButton.BackColor = System.Drawing.Color.Transparent;
-            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchButton.Location = new System.Drawing.Point(357, 28);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(89, 23);
-            this.searchButton.TabIndex = 72;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = false;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
             // genderBox
             // 
             this.genderBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -937,7 +923,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -950,7 +936,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(205, 49);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(268, 49);
             this.tableLayoutPanel2.TabIndex = 100;
             // 
             // Label5
@@ -958,7 +944,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(75, 30);
+            this.Label5.Location = new System.Drawing.Point(98, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -970,7 +956,7 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(2, 30);
+            this.Label4.Location = new System.Drawing.Point(9, 30);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(61, 13);
@@ -979,33 +965,42 @@
             // 
             // lastBox
             // 
+            this.lastBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.lastBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.lastBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(61, 20);
+            this.lastBox.Size = new System.Drawing.Size(75, 20);
             this.lastBox.TabIndex = 60;
+            this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
             // firstBox
             // 
+            this.firstBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.firstBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(67, 2);
+            this.firstBox.Location = new System.Drawing.Point(81, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(78, 20);
+            this.firstBox.Size = new System.Drawing.Size(95, 20);
             this.firstBox.TabIndex = 61;
+            this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
             // middleBox
             // 
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(149, 2);
+            this.middleBox.Location = new System.Drawing.Point(180, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(54, 20);
+            this.middleBox.Size = new System.Drawing.Size(86, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1013,7 +1008,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(163, 30);
+            this.Label6.Location = new System.Drawing.Point(210, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1260,6 +1255,7 @@
             this.PatientIDPanel.Controls.Add(this.employeeNum);
             this.PatientIDPanel.Controls.Add(this.employeeLabel);
             this.PatientIDPanel.Controls.Add(this.clearAll);
+            this.PatientIDPanel.Controls.Add(this.searchButton);
             this.PatientIDPanel.Controls.Add(this.searchBox);
             this.PatientIDPanel.Controls.Add(this.Label2);
             this.PatientIDPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1295,6 +1291,20 @@
             this.clearAll.TabIndex = 73;
             this.clearAll.Text = "Clear all";
             this.clearAll.UseVisualStyleBackColor = true;
+            this.clearAll.Click += new System.EventHandler(this.clearAll_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.searchButton.BackColor = System.Drawing.Color.Transparent;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.Location = new System.Drawing.Point(506, 17);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(54, 23);
+            this.searchButton.TabIndex = 72;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchBox
             // 
@@ -1332,6 +1342,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OffsiteEntEdtForm";
             this.Text = "OffsiteForm";
+            this.Load += new System.EventHandler(this.OffsiteEntEdtForm_Load);
             this.OffsitePanel.ResumeLayout(false);
             this.MajorelPanel.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -1389,7 +1400,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.TextBox lastBox;
         internal System.Windows.Forms.TextBox firstBox;
         internal System.Windows.Forms.TextBox middleBox;
         internal System.Windows.Forms.Label Label6;
@@ -1465,6 +1475,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker8;
         private System.Windows.Forms.DateTimePicker dateTimePicker9;
         private System.Windows.Forms.DateTimePicker dateTimePicker10;
-        private System.Windows.Forms.BindingSource offsiteReportsFormBindingSource;
+        private System.Windows.Forms.BindingSource offsiteReportsFormBindingSource;
+        internal System.Windows.Forms.TextBox lastBox;
     }
 }
