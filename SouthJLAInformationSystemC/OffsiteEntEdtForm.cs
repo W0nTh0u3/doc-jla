@@ -15,6 +15,7 @@ namespace SouthJLAInformationSystemC
     {
         public string terminal = System.Environment.MachineName;
         public string idPass = "";
+        public string uniquePass = "";
 
         public OffsiteEntEdtForm()
         {
@@ -28,52 +29,42 @@ namespace SouthJLAInformationSystemC
 
         }
 
-        private void submit_Click(object sender, EventArgs e)
-        {
-            if (submit.Text == "Enter")
-            {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled, paid, terminal, package, agency, account, birthDate) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "','" + paymentStatusBox.SelectedItem + "','" + terminal + "','" + packageBox.SelectedItem + "','" + companyBox.Text + "','" + accBox.Text + "', '" + bdayBox.Value.Date.ToString() + "')", conn);
-                conn.Open();
-                sda.ExecuteNonQuery();
-                conn.Close();
-
-                SqlDataAdapter sda1 = new SqlDataAdapter("SELECT MAX(id) FROM dbo.ofw", conn);
-                DataTable dt = new DataTable(); //this is creating a virtual table  
-                sda1.Fill(dt);
-                string patientID = dateFiledBox.Value.ToString("MM") + dateFiledBox.Value.ToString("dd");
-                string unique = "MJRL-" + dt.Rows[0][0].ToString();
-
-                Console.WriteLine("unique id:" + unique);
-
-                SqlCommand sda2 = new SqlCommand("UPDATE dbo.ofw SET patientID = '" + unique + "' WHERE id = '" + dt.Rows[0][0].ToString() + "'", conn);
-                conn.Open();
-                sda2.ExecuteNonQuery();
-                conn.Close();
-
-                lastBox.Text = String.Empty;
-                firstBox.Text = String.Empty;
-                middleBox.Text = String.Empty;
-                ageBox.Text = String.Empty;
-                addressBox.Text = String.Empty;
-                civilBox.SelectedIndex = -1;
-                genderBox.SelectedIndex = -1;
-                MessageBox.Show("Successful! This is your Patient ID: " + unique);
-            }            else if (submit.Text == "Save" || submit.Text == "Save changes")
-            {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" + bdayBox.Value.Date.ToString() + "' WHERE id = '" + idPass + "'", conn);
-                conn.Open();
-                sda.ExecuteNonQuery();
-                Console.WriteLine("Nagsave na");
-                conn.Close();
-                MessageBox.Show("Edit Successful!");
-            }
-        }
-
         private void searchButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE patientID = '" + searchBox.Text + "'", conn);
+                DataTable dt = new DataTable(); //this is creating a virtual table  
+                sdaSearch.Fill(dt);
 
+                DateTime date1 = Convert.ToDateTime(dt.Rows[0][5].ToString());
+
+                lastBox.Text = dt.Rows[0][1].ToString();
+                firstBox.Text = dt.Rows[0][2].ToString();
+                middleBox.Text = dt.Rows[0][3].ToString();
+                ageBox.Text = dt.Rows[0][4].ToString();
+                addressBox.Text = dt.Rows[0][8].ToString();
+                genderBox.SelectedItem = dt.Rows[0][6].ToString();
+                civilBox.SelectedItem = dt.Rows[0][7].ToString();
+                uniquePass = dt.Rows[0][11].ToString();
+                idPass = dt.Rows[0][0].ToString();
+                bdayBox.Value = date1;
+                packageBox.SelectedItem = dt.Rows[0][10].ToString();
+                paymentStatusBox.SelectedItem = dt.Rows[0][12].ToString();
+                companyBox.Text = dt.Rows[0][14].ToString();
+                accBox.Text = dt.Rows[0][15].ToString();
+
+
+                clearAll.Enabled = true;
+
+                submit.Enabled = true;
+            }
+            catch (Exception en)
+            {
+                MessageBox.Show("No matching record found.");
+                Console.WriteLine(en.Message);
+            }
         }
     }
 }
