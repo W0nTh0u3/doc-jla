@@ -46,33 +46,33 @@
             this.cbcStatusBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.vitalSignClickableLabel = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateVital = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateCBC = new System.Windows.Forms.DateTimePicker();
             this.CBCClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateFBS = new System.Windows.Forms.DateTimePicker();
             this.FBSClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateMedCert = new System.Windows.Forms.DateTimePicker();
             this.MedExClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dateECG = new System.Windows.Forms.DateTimePicker();
             this.ECGClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.datePAPS = new System.Windows.Forms.DateTimePicker();
             this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.dateEye = new System.Windows.Forms.DateTimePicker();
             this.EyeExamClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
+            this.dateXRAY = new System.Windows.Forms.DateTimePicker();
             this.XrayClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.dateUrine = new System.Windows.Forms.DateTimePicker();
             this.UriClickableLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
+            this.dateStool = new System.Windows.Forms.DateTimePicker();
             this.StooClickableLabel = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
@@ -118,9 +118,9 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.offsiteReportsFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
+            this.dateComplete = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.offsiteReportsFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.OffsitePanel.SuspendLayout();
             this.MajorelPanel.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -142,8 +142,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.PatientIDPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).BeginInit();
             this.tableLayoutPanel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // OffsitePanel
@@ -389,7 +389,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Controls.Add(this.vitalSignClickableLabel, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dateTimePicker1, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dateVital, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(134, 31);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -412,21 +412,21 @@
             this.vitalSignClickableLabel.Text = "Vital Signs";
             this.vitalSignClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // dateVital
             // 
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker1.TabIndex = 104;
+            this.dateVital.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateVital.Enabled = false;
+            this.dateVital.Location = new System.Drawing.Point(266, 3);
+            this.dateVital.Name = "dateVital";
+            this.dateVital.Size = new System.Drawing.Size(258, 20);
+            this.dateVital.TabIndex = 104;
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.dateTimePicker2, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.dateCBC, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.CBCClickableLabel, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(134, 59);
@@ -437,14 +437,14 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel7.TabIndex = 106;
             // 
-            // dateTimePicker2
+            // dateCBC
             // 
-            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker2.TabIndex = 103;
+            this.dateCBC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateCBC.Enabled = false;
+            this.dateCBC.Location = new System.Drawing.Point(266, 3);
+            this.dateCBC.Name = "dateCBC";
+            this.dateCBC.Size = new System.Drawing.Size(258, 20);
+            this.dateCBC.TabIndex = 103;
             // 
             // CBCClickableLabel
             // 
@@ -465,7 +465,7 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.dateTimePicker3, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.dateFBS, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.FBSClickableLabel, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(134, 87);
@@ -475,14 +475,14 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel8.TabIndex = 107;
             // 
-            // dateTimePicker3
+            // dateFBS
             // 
-            this.dateTimePicker3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker3.TabIndex = 103;
+            this.dateFBS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateFBS.Enabled = false;
+            this.dateFBS.Location = new System.Drawing.Point(266, 3);
+            this.dateFBS.Name = "dateFBS";
+            this.dateFBS.Size = new System.Drawing.Size(258, 20);
+            this.dateFBS.TabIndex = 103;
             // 
             // FBSClickableLabel
             // 
@@ -503,7 +503,7 @@
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.dateTimePicker4, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.dateMedCert, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.MedExClickableLabel, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(134, 115);
@@ -513,14 +513,14 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel9.TabIndex = 108;
             // 
-            // dateTimePicker4
+            // dateMedCert
             // 
-            this.dateTimePicker4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker4.Enabled = false;
-            this.dateTimePicker4.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker4.TabIndex = 103;
+            this.dateMedCert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateMedCert.Enabled = false;
+            this.dateMedCert.Location = new System.Drawing.Point(266, 3);
+            this.dateMedCert.Name = "dateMedCert";
+            this.dateMedCert.Size = new System.Drawing.Size(258, 20);
+            this.dateMedCert.TabIndex = 103;
             // 
             // MedExClickableLabel
             // 
@@ -541,7 +541,7 @@
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.dateTimePicker5, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.dateECG, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.ECGClickableLabel, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(134, 143);
@@ -551,14 +551,14 @@
             this.tableLayoutPanel10.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel10.TabIndex = 109;
             // 
-            // dateTimePicker5
+            // dateECG
             // 
-            this.dateTimePicker5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker5.Enabled = false;
-            this.dateTimePicker5.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker5.TabIndex = 103;
+            this.dateECG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateECG.Enabled = false;
+            this.dateECG.Location = new System.Drawing.Point(266, 3);
+            this.dateECG.Name = "dateECG";
+            this.dateECG.Size = new System.Drawing.Size(258, 20);
+            this.dateECG.TabIndex = 103;
             // 
             // ECGClickableLabel
             // 
@@ -579,7 +579,7 @@
             this.tableLayoutPanel11.ColumnCount = 2;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.dateTimePicker6, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.datePAPS, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.PAPSClickedLabel, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(134, 171);
@@ -589,14 +589,14 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel11.TabIndex = 110;
             // 
-            // dateTimePicker6
+            // datePAPS
             // 
-            this.dateTimePicker6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker6.Enabled = false;
-            this.dateTimePicker6.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker6.TabIndex = 103;
+            this.datePAPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datePAPS.Enabled = false;
+            this.datePAPS.Location = new System.Drawing.Point(266, 3);
+            this.datePAPS.Name = "datePAPS";
+            this.datePAPS.Size = new System.Drawing.Size(258, 20);
+            this.datePAPS.TabIndex = 103;
             // 
             // PAPSClickedLabel
             // 
@@ -617,7 +617,7 @@
             this.tableLayoutPanel12.ColumnCount = 2;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.dateTimePicker7, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.dateEye, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.EyeExamClickableLabel, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(134, 199);
@@ -627,14 +627,14 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel12.TabIndex = 111;
             // 
-            // dateTimePicker7
+            // dateEye
             // 
-            this.dateTimePicker7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker7.Enabled = false;
-            this.dateTimePicker7.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker7.TabIndex = 103;
+            this.dateEye.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateEye.Enabled = false;
+            this.dateEye.Location = new System.Drawing.Point(266, 3);
+            this.dateEye.Name = "dateEye";
+            this.dateEye.Size = new System.Drawing.Size(258, 20);
+            this.dateEye.TabIndex = 103;
             // 
             // EyeExamClickableLabel
             // 
@@ -655,7 +655,7 @@
             this.tableLayoutPanel13.ColumnCount = 2;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Controls.Add(this.dateTimePicker8, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.dateXRAY, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.XrayClickableLabel, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(134, 227);
@@ -665,14 +665,14 @@
             this.tableLayoutPanel13.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel13.TabIndex = 112;
             // 
-            // dateTimePicker8
+            // dateXRAY
             // 
-            this.dateTimePicker8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker8.Enabled = false;
-            this.dateTimePicker8.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker8.TabIndex = 103;
+            this.dateXRAY.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateXRAY.Enabled = false;
+            this.dateXRAY.Location = new System.Drawing.Point(266, 3);
+            this.dateXRAY.Name = "dateXRAY";
+            this.dateXRAY.Size = new System.Drawing.Size(258, 20);
+            this.dateXRAY.TabIndex = 103;
             // 
             // XrayClickableLabel
             // 
@@ -693,7 +693,7 @@
             this.tableLayoutPanel14.ColumnCount = 2;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Controls.Add(this.dateTimePicker9, 1, 0);
+            this.tableLayoutPanel14.Controls.Add(this.dateUrine, 1, 0);
             this.tableLayoutPanel14.Controls.Add(this.UriClickableLabel, 0, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(134, 255);
@@ -703,14 +703,14 @@
             this.tableLayoutPanel14.Size = new System.Drawing.Size(527, 22);
             this.tableLayoutPanel14.TabIndex = 113;
             // 
-            // dateTimePicker9
+            // dateUrine
             // 
-            this.dateTimePicker9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker9.Enabled = false;
-            this.dateTimePicker9.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker9.TabIndex = 103;
+            this.dateUrine.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateUrine.Enabled = false;
+            this.dateUrine.Location = new System.Drawing.Point(266, 3);
+            this.dateUrine.Name = "dateUrine";
+            this.dateUrine.Size = new System.Drawing.Size(258, 20);
+            this.dateUrine.TabIndex = 103;
             // 
             // UriClickableLabel
             // 
@@ -731,7 +731,7 @@
             this.tableLayoutPanel15.ColumnCount = 2;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Controls.Add(this.dateTimePicker10, 1, 0);
+            this.tableLayoutPanel15.Controls.Add(this.dateStool, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.StooClickableLabel, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(134, 283);
@@ -741,14 +741,14 @@
             this.tableLayoutPanel15.Size = new System.Drawing.Size(527, 33);
             this.tableLayoutPanel15.TabIndex = 114;
             // 
-            // dateTimePicker10
+            // dateStool
             // 
-            this.dateTimePicker10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker10.Enabled = false;
-            this.dateTimePicker10.Location = new System.Drawing.Point(266, 3);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(258, 20);
-            this.dateTimePicker10.TabIndex = 103;
+            this.dateStool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateStool.Enabled = false;
+            this.dateStool.Location = new System.Drawing.Point(266, 3);
+            this.dateStool.Name = "dateStool";
+            this.dateStool.Size = new System.Drawing.Size(258, 20);
+            this.dateStool.TabIndex = 103;
             // 
             // StooClickableLabel
             // 
@@ -927,7 +927,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -948,7 +948,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(96, 30);
+            this.Label5.Location = new System.Drawing.Point(95, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -977,7 +977,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(74, 20);
+            this.lastBox.Size = new System.Drawing.Size(73, 20);
             this.lastBox.TabIndex = 60;
             this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
@@ -988,10 +988,10 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(80, 2);
+            this.firstBox.Location = new System.Drawing.Point(79, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(94, 20);
+            this.firstBox.Size = new System.Drawing.Size(93, 20);
             this.firstBox.TabIndex = 61;
             this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
@@ -1000,11 +1000,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(178, 2);
+            this.middleBox.Location = new System.Drawing.Point(176, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(88, 20);
+            this.middleBox.Size = new System.Drawing.Size(90, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1012,7 +1012,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(209, 30);
+            this.Label6.Location = new System.Drawing.Point(208, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1329,23 +1329,19 @@
             this.Label2.TabIndex = 70;
             this.Label2.Text = "Patient ID";
             // 
-            // offsiteReportsFormBindingSource
+            // dateComplete
             // 
-            this.offsiteReportsFormBindingSource.DataSource = typeof(SouthJLAInformationSystemC.OffsiteReportsForm);
-            // 
-            // dateTimePicker11
-            // 
-            this.dateTimePicker11.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.dateTimePicker11.Location = new System.Drawing.Point(9, 258);
-            this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker11.TabIndex = 103;
+            this.dateComplete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateComplete.Location = new System.Drawing.Point(9, 258);
+            this.dateComplete.Name = "dateComplete";
+            this.dateComplete.Size = new System.Drawing.Size(200, 20);
+            this.dateComplete.TabIndex = 103;
             // 
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.dateTimePicker11, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
             this.tableLayoutPanel16.Controls.Add(this.submit, 0, 1);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(896, 21);
@@ -1355,6 +1351,10 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(218, 319);
             this.tableLayoutPanel16.TabIndex = 104;
+            // 
+            // offsiteReportsFormBindingSource
+            // 
+            this.offsiteReportsFormBindingSource.DataSource = typeof(SouthJLAInformationSystemC.OffsiteReportsForm);
             // 
             // OffsiteEntEdtForm
             // 
@@ -1407,8 +1407,8 @@
             this.tableLayoutPanel3.PerformLayout();
             this.PatientIDPanel.ResumeLayout(false);
             this.PatientIDPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).EndInit();
             this.tableLayoutPanel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1474,7 +1474,7 @@
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.ComboBox StoolStatusBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateVital;
         internal System.Windows.Forms.Label vitalSignClickableLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         internal System.Windows.Forms.Label CBCClickableLabel;
@@ -1494,18 +1494,18 @@
         internal System.Windows.Forms.Label UriClickableLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         internal System.Windows.Forms.Label StooClickableLabel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker10;
+        private System.Windows.Forms.DateTimePicker dateCBC;
+        private System.Windows.Forms.DateTimePicker dateFBS;
+        private System.Windows.Forms.DateTimePicker dateMedCert;
+        private System.Windows.Forms.DateTimePicker dateECG;
+        private System.Windows.Forms.DateTimePicker datePAPS;
+        private System.Windows.Forms.DateTimePicker dateEye;
+        private System.Windows.Forms.DateTimePicker dateXRAY;
+        private System.Windows.Forms.DateTimePicker dateUrine;
+        private System.Windows.Forms.DateTimePicker dateStool;
         private System.Windows.Forms.BindingSource offsiteReportsFormBindingSource;
         internal System.Windows.Forms.TextBox lastBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker11;
+        private System.Windows.Forms.DateTimePicker dateComplete;
     }
 }
