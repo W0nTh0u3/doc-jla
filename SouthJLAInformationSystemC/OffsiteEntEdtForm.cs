@@ -32,10 +32,10 @@ namespace SouthJLAInformationSystemC
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            try
-            {
+           try
+            {            
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE patientID = '" + searchBox.Text + "'", conn);
+                SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE id = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sdaSearch.Fill(dt);
                 //    DateTime date1 = Convert.ToDateTime(dt.Rows[0][14].ToString()); Not needed yet
@@ -60,7 +60,7 @@ namespace SouthJLAInformationSystemC
 
                 submit.Enabled = true;
             }
-            catch (Exception en)
+           catch (Exception en)
             {
                 MessageBox.Show("No matching record found.");
                 Console.WriteLine(en.Message);
