@@ -74,6 +74,8 @@
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.dateStool = new System.Windows.Forms.DateTimePicker();
             this.StooClickableLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.dateComplete = new System.Windows.Forms.DateTimePicker();
             this.submit = new System.Windows.Forms.Button();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPnl = new System.Windows.Forms.TableLayoutPanel();
@@ -118,8 +120,6 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.dateComplete = new System.Windows.Forms.DateTimePicker();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.offsiteReportsFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.OffsitePanel.SuspendLayout();
             this.MajorelPanel.SuspendLayout();
@@ -135,6 +135,7 @@
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
             this.PatientInfoPanel.SuspendLayout();
             this.tableLayoutPnl.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -142,7 +143,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.PatientIDPanel.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -764,6 +764,29 @@
             this.StooClickableLabel.Text = "Stool Exam";
             this.StooClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 1;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.submit, 0, 1);
+            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(896, 21);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 2;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.08778F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(218, 319);
+            this.tableLayoutPanel16.TabIndex = 104;
+            // 
+            // dateComplete
+            // 
+            this.dateComplete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateComplete.Location = new System.Drawing.Point(9, 257);
+            this.dateComplete.Name = "dateComplete";
+            this.dateComplete.Size = new System.Drawing.Size(200, 20);
+            this.dateComplete.TabIndex = 103;
+            // 
             // submit
             // 
             this.submit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -927,7 +950,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -948,7 +971,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(95, 30);
+            this.Label5.Location = new System.Drawing.Point(92, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -960,7 +983,7 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(8, 30);
+            this.Label4.Location = new System.Drawing.Point(7, 30);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(61, 13);
@@ -977,7 +1000,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(73, 20);
+            this.lastBox.Size = new System.Drawing.Size(71, 20);
             this.lastBox.TabIndex = 60;
             this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
@@ -988,10 +1011,10 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(79, 2);
+            this.firstBox.Location = new System.Drawing.Point(77, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(93, 20);
+            this.firstBox.Size = new System.Drawing.Size(91, 20);
             this.firstBox.TabIndex = 61;
             this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
@@ -1000,11 +1023,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(176, 2);
+            this.middleBox.Location = new System.Drawing.Point(172, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(90, 20);
+            this.middleBox.Size = new System.Drawing.Size(94, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1012,7 +1035,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(208, 30);
+            this.Label6.Location = new System.Drawing.Point(206, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1329,29 +1352,6 @@
             this.Label2.TabIndex = 70;
             this.Label2.Text = "Patient ID";
             // 
-            // dateComplete
-            // 
-            this.dateComplete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.dateComplete.Location = new System.Drawing.Point(9, 258);
-            this.dateComplete.Name = "dateComplete";
-            this.dateComplete.Size = new System.Drawing.Size(200, 20);
-            this.dateComplete.TabIndex = 103;
-            // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.ColumnCount = 1;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.submit, 0, 1);
-            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(896, 21);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 2;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.08778F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(218, 319);
-            this.tableLayoutPanel16.TabIndex = 104;
-            // 
             // offsiteReportsFormBindingSource
             // 
             this.offsiteReportsFormBindingSource.DataSource = typeof(SouthJLAInformationSystemC.OffsiteReportsForm);
@@ -1395,6 +1395,7 @@
             this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
+            this.tableLayoutPanel16.ResumeLayout(false);
             this.PatientInfoPanel.ResumeLayout(false);
             this.tableLayoutPnl.ResumeLayout(false);
             this.tableLayoutPnl.PerformLayout();
@@ -1407,7 +1408,6 @@
             this.tableLayoutPanel3.PerformLayout();
             this.PatientIDPanel.ResumeLayout(false);
             this.PatientIDPanel.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.offsiteReportsFormBindingSource)).EndInit();
             this.ResumeLayout(false);
 

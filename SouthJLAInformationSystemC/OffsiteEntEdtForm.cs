@@ -40,7 +40,7 @@ namespace SouthJLAInformationSystemC
                 middleBox.Text = dt.Rows[0][3].ToString();
                 ageBox.Text = dt.Rows[0][4].ToString();
                 addressBox.Text = dt.Rows[0][5].ToString();
-                genderBox.SelectedItem = dt.Rows[0][7].ToString();
+                genderBox.SelectedItem = dt.Rows[0][7].ToString().ToUpper();
                 civilBox.SelectedItem = dt.Rows[0][6].ToString();
                 uniquePass = dt.Rows[0][15].ToString();
                 idPass = dt.Rows[0][0].ToString();
