@@ -25,7 +25,7 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
             InitializeDropDowns();
             Console.WriteLine("terminal: " + terminal);
-            vitalSignStatusBox.SelectedItem = "PENDING";
+            //vitalSignStatusBox.SelectedItem = "PENDING";
         }
         private void searchButton_Click(object sender, EventArgs e)
         {
@@ -34,9 +34,12 @@ namespace SouthJLAInformationSystemC
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE id = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
-                sdaSearch.Fill(dt);
-                //    DateTime date1 = Convert.ToDateTime(dt.Rows[0][14].ToString()); Not needed yet
-
+                sdaSearch.Fill(dt);
+
+                //    DateTime date1 = Convert.ToDateTime(dt.Rows[0][14].ToString()); Not needed yet
+
+
+                dateFiledBox.Value = (dt.Rows[0][8].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][8].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
                 lastBox.Text = dt.Rows[0][1].ToString();
                 firstBox.Text = dt.Rows[0][2].ToString();
                 middleBox.Text = dt.Rows[0][3].ToString();
@@ -51,11 +54,7 @@ namespace SouthJLAInformationSystemC
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
                 companyBox.Text = dt.Rows[0][12].ToString();
                 accBox.Text = dt.Rows[0][13].ToString();
-                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(), vitalSignStatusBox);                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(), cbcStatusBox);                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString(), medStatusBox);
-                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), eyeStatusBox);
-                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString(), xrayStatusBox);
-                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), UriStatusBox);
-                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), StoolStatusBox);
+                
                 /*if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
                 {
                     dateVital.Enabled = false;
@@ -94,18 +93,14 @@ namespace SouthJLAInformationSystemC
                     StoolStatusBox.Enabled = false;
                 }
                 */
-                //        bdayBox.Value = date1;
-                packageBox.SelectedItem = dt.Rows[0][11].ToString();
-                paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
-                companyBox.Text = dt.Rows[0][12].ToString();
-                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(),vitalSignStatusBox);                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(),cbcStatusBox);                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),medStatusBox);
+                //        bdayBox.Value = date1;                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(),vitalSignStatusBox);                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(),cbcStatusBox);                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),medStatusBox);
                 eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(),eyeStatusBox);
                 xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(),xrayStatusBox);
                 UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(),UriStatusBox);
                 StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(),StoolStatusBox);
+                dateComplete.Value = (dt.Rows[0][29].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][29].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
 
-               
-            if (Convert.ToInt32(ageBox.Text) < 30)
+                if (Convert.ToInt32(ageBox.Text) < 30)
                     {
                     papsStatusBox.SelectedItem = "N/A";
                     papsStatusBox.Enabled = false;
@@ -120,16 +115,16 @@ namespace SouthJLAInformationSystemC
                     papsStatusBox.Enabled = false;
                     fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(),fbsStatusBox);
                     fbsStatusBox.Enabled = true;
-                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),ecgStatusBox);
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(),ecgStatusBox);
                     ecgStatusBox.Enabled = true;
                 }
                 else
                 {
-                    papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(),papsStatusBox);
+                    papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString(),papsStatusBox);
                     papsStatusBox.Enabled = true;
                     fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(),fbsStatusBox);
                     fbsStatusBox.Enabled = true;
-                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),ecgStatusBox);
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(),ecgStatusBox);
                     ecgStatusBox.Enabled = true;
 
                 }
@@ -153,8 +148,8 @@ namespace SouthJLAInformationSystemC
         private void submit_Click(object sender, EventArgs e)
         {
             checkRemarks();
-            string sqlString = "";
-            sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '" + statusHolder[0] + "',CBC = '" + statusHolder[1] + "',FBS = '" + statusHolder[2] + "',Cholesterol = '" + statusHolder[0] + "',Physical_Examination = '" + statusHolder[3] + "', ECG = '" + statusHolder[4] + "', PAP_Smear = '" + statusHolder[5] + "',Eye_Check_up = '" + statusHolder[6] + "', Chest_Xray = '" + statusHolder[7] + "',Urine_Exam = '" + statusHolder[8] + "',Stool_Exam = '" + statusHolder[9] + "', Remarks = '" + remarks + "'       WHERE id = '" + idPass + "'";
+            string dateCompleted = (remarks == "COMPLETE") ? dateComplete.Value.Date.ToString("MM-dd-yyyy") : "" ;
+            string sqlString = "UPDATE dbo.mjrl2020 set VITAL_SIGNS = '" + statusHolder[0] + "',CBC = '" + statusHolder[1] + "',FBS = '" + statusHolder[2] + "',Cholesterol = '" + statusHolder[2] + "',Physical_Examination = '" + statusHolder[3] + "', ECG = '" + statusHolder[4] + "', PAP_Smear = '" + statusHolder[5] + "',Eye_Check_up = '" + statusHolder[6] + "', Chest_Xray = '" + statusHolder[7] + "',Urine_Exam = '" + statusHolder[8] + "',Stool_Exam = '" + statusHolder[9] + "', Remarks = '" + remarks + "' , Date_Registered = '"+ dateFiledBox.Value.Date.ToString("MM-dd-yyyy") +"' , Date_Completed = '"+ dateCompleted +"' WHERE id = '" + idPass + "'";
             Console.WriteLine(sqlString);
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sda = new SqlCommand(sqlString, conn);
@@ -196,7 +191,7 @@ namespace SouthJLAInformationSystemC
             else if (stringValue.Contains("DONE"))
             {
                string[] s = stringValue.Split(' ');
-               Console.WriteLine(s[1]);
+               //Console.WriteLine(s[1]);
                 datePick(s[1], theBox);
                 return ("DONE");
             }
@@ -206,22 +201,22 @@ namespace SouthJLAInformationSystemC
 
         private void checkRemarks()
         {
-            if (vitalSignStatusBox.SelectedItem.ToString() == "PENDING" || cbcStatusBox.SelectedItem.ToString() == "PENDING" || fbsStatusBox.SelectedItem.ToString() == "PENDING" || medStatusBox.SelectedItem.ToString() == "PENDING" || ecgStatusBox.SelectedItem.ToString() == "PENDING" || papsStatusBox.SelectedItem.ToString() == "PENDING" || eyeStatusBox.SelectedItem.ToString() == "PENDING" || xrayStatusBox.SelectedItem.ToString() == "PENDING" || UriStatusBox.SelectedItem.ToString() == "PENDING" || StoolStatusBox.SelectedItem.ToString() == "PENDING")
+            /*if (vitalSignStatusBox.SelectedItem.ToString() == "PENDING" || cbcStatusBox.SelectedItem.ToString() == "PENDING" || fbsStatusBox.SelectedItem.ToString() == "PENDING" || medStatusBox.SelectedItem.ToString() == "PENDING" || ecgStatusBox.SelectedItem.ToString() == "PENDING" || papsStatusBox.SelectedItem.ToString() == "PENDING" || eyeStatusBox.SelectedItem.ToString() == "PENDING" || xrayStatusBox.SelectedItem.ToString() == "PENDING" || UriStatusBox.SelectedItem.ToString() == "PENDING" || StoolStatusBox.SelectedItem.ToString() == "PENDING")
             {
                 remarks = "INCOMPLETE";
             }
             else
             { 
                 remarks = "COMPLETE";
-            }
-
+            }*/
+            remarks = (vitalSignStatusBox.SelectedItem.ToString() == "PENDING" || cbcStatusBox.SelectedItem.ToString() == "PENDING" || fbsStatusBox.SelectedItem.ToString() == "PENDING" || medStatusBox.SelectedItem.ToString() == "PENDING" || ecgStatusBox.SelectedItem.ToString() == "PENDING" || papsStatusBox.SelectedItem.ToString() == "PENDING" || eyeStatusBox.SelectedItem.ToString() == "PENDING" || xrayStatusBox.SelectedItem.ToString() == "PENDING" || UriStatusBox.SelectedItem.ToString() == "PENDING" || StoolStatusBox.SelectedItem.ToString() == "PENDING") ? "INCOMPLETE" : "COMPLETE";
         }
 
         private void OffsiteEntEdtForm_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
             SqlCommand sdaLast = new SqlCommand("SELECT lastName FROM dbo.mjrl2020", conn);
-            SqlCommand sdaFirst = new SqlCommand("SELECT givenName FROM dbo.mjrl2020 WHERE lastName ='" + lastBox.Text + "'", conn);
+            //SqlCommand sdaFirst = new SqlCommand("SELECT givenName FROM dbo.mjrl2020 WHERE lastName ='" + lastBox.Text + "'", conn);
 
             conn.Open();
             //last name
@@ -272,7 +267,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt);
             //    DateTime date1 = Convert.ToDateTime(dt.Rows[0][14].ToString()); Not needed yet
-            
+            dateFiledBox.Value = (dt.Rows[0][8].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][8].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
             middleBox.Text = dt.Rows[0][3].ToString();
             ageBox.Text = dt.Rows[0][4].ToString();
             addressBox.Text = dt.Rows[0][5].ToString();
@@ -285,14 +280,6 @@ namespace SouthJLAInformationSystemC
             paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
             companyBox.Text = dt.Rows[0][12].ToString();
             accBox.Text = dt.Rows[0][13].ToString();
-            vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(), vitalSignStatusBox);
-            cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(), cbcStatusBox);
-            medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), medStatusBox);
-            eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), eyeStatusBox);
-            xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), xrayStatusBox);
-            UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(), UriStatusBox);
-            StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(), StoolStatusBox);
-
             /*if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
             {
                 dateVital.Enabled = false;
@@ -331,6 +318,14 @@ namespace SouthJLAInformationSystemC
                 StoolStatusBox.Enabled = false;
             }
             */
+            vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(), vitalSignStatusBox);
+            cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(), cbcStatusBox);
+            medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), medStatusBox);
+            eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), eyeStatusBox);
+            xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), xrayStatusBox);
+            UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(), UriStatusBox);
+            StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(), StoolStatusBox);
+            dateComplete.Value = (dt.Rows[0][29].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][29].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
 
             if (Convert.ToInt32(ageBox.Text) < 30)
             {
@@ -347,16 +342,16 @@ namespace SouthJLAInformationSystemC
                 papsStatusBox.Enabled = false;
                 fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(), fbsStatusBox);
                 fbsStatusBox.Enabled = true;
-                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), ecgStatusBox);
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), ecgStatusBox);
                 ecgStatusBox.Enabled = true;
             }
             else
             {
-                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), papsStatusBox);
+                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString(), papsStatusBox);
                 papsStatusBox.Enabled = true;
                 fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(), fbsStatusBox);
                 fbsStatusBox.Enabled = true;
-                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), ecgStatusBox);
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), ecgStatusBox);
                 ecgStatusBox.Enabled = true;
 
             }
@@ -391,6 +386,7 @@ namespace SouthJLAInformationSystemC
             papsStatusBox.Enabled = true;
             ecgStatusBox.Enabled = true;
             fbsStatusBox.Enabled = true;
+            dateVital.Value = dateCBC.Value = dateFBS.Value = dateMedCert.Value = datePAPS.Value = dateECG.Value = dateEye.Value = dateXRAY.Value = dateUrine.Value = dateStool.Value = dateFiledBox.Value = dateComplete.Value = DateTime.Now;
         }
 
        /*  private void dateHolder()
