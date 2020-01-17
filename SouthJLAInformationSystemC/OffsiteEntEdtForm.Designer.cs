@@ -177,7 +177,6 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.label1, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel16, 2, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -192,10 +191,10 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(895, 2);
+            this.label1.Location = new System.Drawing.Point(60, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
@@ -206,8 +205,8 @@
             // 
             this.tableLayoutPanel5.AutoScroll = true;
             this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.72892F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.27108F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel5.Controls.Add(this.StoolStatusBox, 0, 10);
             this.tableLayoutPanel5.Controls.Add(this.UriStatusBox, 0, 9);
             this.tableLayoutPanel5.Controls.Add(this.vitalSignStatusBox, 0, 1);
@@ -232,18 +231,19 @@
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(226, 21);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(0, 0, 8, 0);
             this.tableLayoutPanel5.RowCount = 11;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(664, 319);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
@@ -255,7 +255,7 @@
             this.StoolStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE"});
-            this.StoolStatusBox.Location = new System.Drawing.Point(19, 289);
+            this.StoolStatusBox.Location = new System.Drawing.Point(17, 313);
             this.StoolStatusBox.Name = "StoolStatusBox";
             this.StoolStatusBox.Size = new System.Drawing.Size(93, 21);
             this.StoolStatusBox.TabIndex = 103;
@@ -270,7 +270,7 @@
             "PENDING",
             "DONE",
             "WITH MENSES"});
-            this.UriStatusBox.Location = new System.Drawing.Point(19, 255);
+            this.UriStatusBox.Location = new System.Drawing.Point(17, 281);
             this.UriStatusBox.Name = "UriStatusBox";
             this.UriStatusBox.Size = new System.Drawing.Size(93, 21);
             this.UriStatusBox.TabIndex = 73;
@@ -286,7 +286,7 @@
             "PENDING",
             "DONE",
             ""});
-            this.vitalSignStatusBox.Location = new System.Drawing.Point(19, 31);
+            this.vitalSignStatusBox.Location = new System.Drawing.Point(17, 25);
             this.vitalSignStatusBox.Name = "vitalSignStatusBox";
             this.vitalSignStatusBox.Size = new System.Drawing.Size(93, 21);
             this.vitalSignStatusBox.TabIndex = 49;
@@ -298,7 +298,7 @@
             this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(44, 7);
+            this.StatusLabel.Location = new System.Drawing.Point(42, 3);
             this.StatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(43, 13);
@@ -315,7 +315,7 @@
             "PENDING",
             "N/A",
             "DONE"});
-            this.ecgStatusBox.Location = new System.Drawing.Point(19, 143);
+            this.ecgStatusBox.Location = new System.Drawing.Point(17, 153);
             this.ecgStatusBox.Name = "ecgStatusBox";
             this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
             this.ecgStatusBox.TabIndex = 54;
@@ -329,7 +329,7 @@
             this.eyeStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE"});
-            this.eyeStatusBox.Location = new System.Drawing.Point(19, 199);
+            this.eyeStatusBox.Location = new System.Drawing.Point(17, 217);
             this.eyeStatusBox.Name = "eyeStatusBox";
             this.eyeStatusBox.Size = new System.Drawing.Size(93, 21);
             this.eyeStatusBox.TabIndex = 71;
@@ -344,7 +344,7 @@
             "PENDING",
             "DONE",
             "WITH RESULTS"});
-            this.xrayStatusBox.Location = new System.Drawing.Point(19, 227);
+            this.xrayStatusBox.Location = new System.Drawing.Point(17, 249);
             this.xrayStatusBox.Name = "xrayStatusBox";
             this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
             this.xrayStatusBox.TabIndex = 55;
@@ -359,7 +359,7 @@
             "PENDING",
             "N/A",
             "DONE"});
-            this.papsStatusBox.Location = new System.Drawing.Point(19, 171);
+            this.papsStatusBox.Location = new System.Drawing.Point(17, 185);
             this.papsStatusBox.Name = "papsStatusBox";
             this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.papsStatusBox.TabIndex = 52;
@@ -373,7 +373,7 @@
             this.medStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE"});
-            this.medStatusBox.Location = new System.Drawing.Point(19, 115);
+            this.medStatusBox.Location = new System.Drawing.Point(17, 121);
             this.medStatusBox.Name = "medStatusBox";
             this.medStatusBox.Size = new System.Drawing.Size(93, 21);
             this.medStatusBox.TabIndex = 50;
@@ -388,7 +388,7 @@
             "PENDING",
             "N/A",
             "DONE"});
-            this.fbsStatusBox.Location = new System.Drawing.Point(19, 87);
+            this.fbsStatusBox.Location = new System.Drawing.Point(17, 89);
             this.fbsStatusBox.Name = "fbsStatusBox";
             this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.fbsStatusBox.TabIndex = 53;
@@ -402,7 +402,7 @@
             this.cbcStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE"});
-            this.cbcStatusBox.Location = new System.Drawing.Point(19, 59);
+            this.cbcStatusBox.Location = new System.Drawing.Point(17, 57);
             this.cbcStatusBox.Name = "cbcStatusBox";
             this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
             this.cbcStatusBox.TabIndex = 48;
@@ -416,11 +416,11 @@
             this.tableLayoutPanel6.Controls.Add(this.vitalSignClickableLabel, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.dateVital, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(134, 31);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(130, 23);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel6.TabIndex = 104;
             // 
             // vitalSignClickableLabel
@@ -428,7 +428,7 @@
             this.vitalSignClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.vitalSignClickableLabel.AutoSize = true;
             this.vitalSignClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vitalSignClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.vitalSignClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.vitalSignClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.vitalSignClickableLabel.Name = "vitalSignClickableLabel";
             this.vitalSignClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -441,9 +441,9 @@
             // 
             this.dateVital.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateVital.Enabled = false;
-            this.dateVital.Location = new System.Drawing.Point(266, 3);
+            this.dateVital.Location = new System.Drawing.Point(256, 3);
             this.dateVital.Name = "dateVital";
-            this.dateVital.Size = new System.Drawing.Size(258, 20);
+            this.dateVital.Size = new System.Drawing.Size(247, 20);
             this.dateVital.TabIndex = 104;
             this.dateVital.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -455,21 +455,21 @@
             this.tableLayoutPanel7.Controls.Add(this.dateCBC, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.CBCClickableLabel, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(134, 59);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(130, 55);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel7.TabIndex = 106;
             // 
             // dateCBC
             // 
             this.dateCBC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateCBC.Enabled = false;
-            this.dateCBC.Location = new System.Drawing.Point(266, 3);
+            this.dateCBC.Location = new System.Drawing.Point(256, 3);
             this.dateCBC.Name = "dateCBC";
-            this.dateCBC.Size = new System.Drawing.Size(258, 20);
+            this.dateCBC.Size = new System.Drawing.Size(247, 20);
             this.dateCBC.TabIndex = 103;
             this.dateCBC.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -478,7 +478,7 @@
             this.CBCClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CBCClickableLabel.AutoSize = true;
             this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBCClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.CBCClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CBCClickableLabel.Name = "CBCClickableLabel";
             this.CBCClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -495,20 +495,20 @@
             this.tableLayoutPanel8.Controls.Add(this.dateFBS, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.FBSClickableLabel, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(134, 87);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(130, 87);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel8.TabIndex = 107;
             // 
             // dateFBS
             // 
             this.dateFBS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateFBS.Enabled = false;
-            this.dateFBS.Location = new System.Drawing.Point(266, 3);
+            this.dateFBS.Location = new System.Drawing.Point(256, 3);
             this.dateFBS.Name = "dateFBS";
-            this.dateFBS.Size = new System.Drawing.Size(258, 20);
+            this.dateFBS.Size = new System.Drawing.Size(247, 20);
             this.dateFBS.TabIndex = 103;
             this.dateFBS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -517,7 +517,7 @@
             this.FBSClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.FBSClickableLabel.AutoSize = true;
             this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FBSClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.FBSClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FBSClickableLabel.Name = "FBSClickableLabel";
             this.FBSClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -534,20 +534,20 @@
             this.tableLayoutPanel9.Controls.Add(this.dateMedCert, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.MedExClickableLabel, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(134, 115);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(130, 119);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel9.TabIndex = 108;
             // 
             // dateMedCert
             // 
             this.dateMedCert.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateMedCert.Enabled = false;
-            this.dateMedCert.Location = new System.Drawing.Point(266, 3);
+            this.dateMedCert.Location = new System.Drawing.Point(256, 3);
             this.dateMedCert.Name = "dateMedCert";
-            this.dateMedCert.Size = new System.Drawing.Size(258, 20);
+            this.dateMedCert.Size = new System.Drawing.Size(247, 20);
             this.dateMedCert.TabIndex = 103;
             this.dateMedCert.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -556,7 +556,7 @@
             this.MedExClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.MedExClickableLabel.AutoSize = true;
             this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedExClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.MedExClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MedExClickableLabel.Name = "MedExClickableLabel";
             this.MedExClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -573,20 +573,20 @@
             this.tableLayoutPanel10.Controls.Add(this.dateECG, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.ECGClickableLabel, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(134, 143);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(130, 151);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel10.TabIndex = 109;
             // 
             // dateECG
             // 
             this.dateECG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateECG.Enabled = false;
-            this.dateECG.Location = new System.Drawing.Point(266, 3);
+            this.dateECG.Location = new System.Drawing.Point(256, 3);
             this.dateECG.Name = "dateECG";
-            this.dateECG.Size = new System.Drawing.Size(258, 20);
+            this.dateECG.Size = new System.Drawing.Size(247, 20);
             this.dateECG.TabIndex = 103;
             this.dateECG.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -595,7 +595,7 @@
             this.ECGClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ECGClickableLabel.AutoSize = true;
             this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ECGClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.ECGClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ECGClickableLabel.Name = "ECGClickableLabel";
             this.ECGClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -612,20 +612,20 @@
             this.tableLayoutPanel11.Controls.Add(this.datePAPS, 1, 0);
             this.tableLayoutPanel11.Controls.Add(this.PAPSClickedLabel, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(134, 171);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(130, 183);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel11.TabIndex = 110;
             // 
             // datePAPS
             // 
             this.datePAPS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datePAPS.Enabled = false;
-            this.datePAPS.Location = new System.Drawing.Point(266, 3);
+            this.datePAPS.Location = new System.Drawing.Point(256, 3);
             this.datePAPS.Name = "datePAPS";
-            this.datePAPS.Size = new System.Drawing.Size(258, 20);
+            this.datePAPS.Size = new System.Drawing.Size(247, 20);
             this.datePAPS.TabIndex = 103;
             this.datePAPS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -634,7 +634,7 @@
             this.PAPSClickedLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PAPSClickedLabel.AutoSize = true;
             this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PAPSClickedLabel.Location = new System.Drawing.Point(2, 4);
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(2, 6);
             this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PAPSClickedLabel.Name = "PAPSClickedLabel";
             this.PAPSClickedLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -651,20 +651,20 @@
             this.tableLayoutPanel12.Controls.Add(this.dateEye, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.EyeExamClickableLabel, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(134, 199);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(130, 215);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel12.TabIndex = 111;
             // 
             // dateEye
             // 
             this.dateEye.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateEye.Enabled = false;
-            this.dateEye.Location = new System.Drawing.Point(266, 3);
+            this.dateEye.Location = new System.Drawing.Point(256, 3);
             this.dateEye.Name = "dateEye";
-            this.dateEye.Size = new System.Drawing.Size(258, 20);
+            this.dateEye.Size = new System.Drawing.Size(247, 20);
             this.dateEye.TabIndex = 103;
             this.dateEye.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -673,7 +673,7 @@
             this.EyeExamClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.EyeExamClickableLabel.AutoSize = true;
             this.EyeExamClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EyeExamClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.EyeExamClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.EyeExamClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EyeExamClickableLabel.Name = "EyeExamClickableLabel";
             this.EyeExamClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -690,20 +690,20 @@
             this.tableLayoutPanel13.Controls.Add(this.dateXRAY, 1, 0);
             this.tableLayoutPanel13.Controls.Add(this.XrayClickableLabel, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(134, 227);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(130, 247);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel13.TabIndex = 112;
             // 
             // dateXRAY
             // 
             this.dateXRAY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateXRAY.Enabled = false;
-            this.dateXRAY.Location = new System.Drawing.Point(266, 3);
+            this.dateXRAY.Location = new System.Drawing.Point(256, 3);
             this.dateXRAY.Name = "dateXRAY";
-            this.dateXRAY.Size = new System.Drawing.Size(258, 20);
+            this.dateXRAY.Size = new System.Drawing.Size(247, 20);
             this.dateXRAY.TabIndex = 103;
             this.dateXRAY.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -712,7 +712,7 @@
             this.XrayClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.XrayClickableLabel.AutoSize = true;
             this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XrayClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.XrayClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.XrayClickableLabel.Name = "XrayClickableLabel";
             this.XrayClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -729,20 +729,20 @@
             this.tableLayoutPanel14.Controls.Add(this.dateUrine, 1, 0);
             this.tableLayoutPanel14.Controls.Add(this.UriClickableLabel, 0, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(134, 255);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(130, 279);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(527, 22);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel14.TabIndex = 113;
             // 
             // dateUrine
             // 
             this.dateUrine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateUrine.Enabled = false;
-            this.dateUrine.Location = new System.Drawing.Point(266, 3);
+            this.dateUrine.Location = new System.Drawing.Point(256, 3);
             this.dateUrine.Name = "dateUrine";
-            this.dateUrine.Size = new System.Drawing.Size(258, 20);
+            this.dateUrine.Size = new System.Drawing.Size(247, 20);
             this.dateUrine.TabIndex = 103;
             this.dateUrine.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -751,7 +751,7 @@
             this.UriClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.UriClickableLabel.AutoSize = true;
             this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UriClickableLabel.Location = new System.Drawing.Point(2, 4);
+            this.UriClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UriClickableLabel.Name = "UriClickableLabel";
             this.UriClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -768,20 +768,20 @@
             this.tableLayoutPanel15.Controls.Add(this.dateStool, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.StooClickableLabel, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(134, 283);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(130, 311);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(527, 33);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(506, 26);
             this.tableLayoutPanel15.TabIndex = 114;
             // 
             // dateStool
             // 
             this.dateStool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateStool.Enabled = false;
-            this.dateStool.Location = new System.Drawing.Point(266, 3);
+            this.dateStool.Location = new System.Drawing.Point(256, 3);
             this.dateStool.Name = "dateStool";
-            this.dateStool.Size = new System.Drawing.Size(258, 20);
+            this.dateStool.Size = new System.Drawing.Size(247, 20);
             this.dateStool.TabIndex = 103;
             this.dateStool.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -790,7 +790,7 @@
             this.StooClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.StooClickableLabel.AutoSize = true;
             this.StooClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StooClickableLabel.Location = new System.Drawing.Point(2, 10);
+            this.StooClickableLabel.Location = new System.Drawing.Point(2, 6);
             this.StooClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StooClickableLabel.Name = "StooClickableLabel";
             this.StooClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
@@ -803,14 +803,16 @@
             // 
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.submit, 0, 1);
-            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.submit, 0, 2);
+            this.tableLayoutPanel16.Controls.Add(this.dateComplete, 0, 1);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel16.Location = new System.Drawing.Point(896, 21);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 2;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.08778F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.91223F));
+            this.tableLayoutPanel16.RowCount = 3;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.90226F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.09775F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(218, 319);
             this.tableLayoutPanel16.TabIndex = 104;
             // 
@@ -827,8 +829,7 @@
             // 
             // dateComplete
             // 
-            this.dateComplete.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateComplete.Location = new System.Drawing.Point(3, 3);
+            this.dateComplete.Location = new System.Drawing.Point(3, 32);
             this.dateComplete.Name = "dateComplete";
             this.dateComplete.Size = new System.Drawing.Size(212, 20);
             this.dateComplete.TabIndex = 103;
@@ -985,7 +986,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1006,7 +1007,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(77, 30);
+            this.Label5.Location = new System.Drawing.Point(75, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -1035,7 +1036,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(62, 20);
+            this.lastBox.Size = new System.Drawing.Size(61, 20);
             this.lastBox.TabIndex = 60;
             this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
@@ -1046,10 +1047,10 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(68, 2);
+            this.firstBox.Location = new System.Drawing.Point(67, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(79, 20);
+            this.firstBox.Size = new System.Drawing.Size(78, 20);
             this.firstBox.TabIndex = 61;
             this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
@@ -1058,11 +1059,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(151, 2);
+            this.middleBox.Location = new System.Drawing.Point(149, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(115, 20);
+            this.middleBox.Size = new System.Drawing.Size(117, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1070,7 +1071,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(196, 30);
+            this.Label6.Location = new System.Drawing.Point(195, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1408,7 +1409,6 @@
             this.OffsitePanel.ResumeLayout(false);
             this.MajorelPanel.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
@@ -1432,6 +1432,7 @@
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
+            this.tableLayoutPanel16.PerformLayout();
             this.PatientInfoPanel.ResumeLayout(false);
             this.tableLayoutPnl.ResumeLayout(false);
             this.tableLayoutPnl.PerformLayout();

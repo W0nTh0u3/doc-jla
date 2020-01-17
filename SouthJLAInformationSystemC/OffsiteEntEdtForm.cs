@@ -56,7 +56,7 @@ namespace SouthJLAInformationSystemC
                 xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString(), xrayStatusBox);
                 UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), UriStatusBox);
                 StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), StoolStatusBox);
-                if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
+                /*if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
                 {
                     dateVital.Enabled = false;
                     vitalSignStatusBox.Enabled = false;
@@ -93,6 +93,7 @@ namespace SouthJLAInformationSystemC
                     dateStool.Enabled = false;
                     StoolStatusBox.Enabled = false;
                 }
+                */
                 //        bdayBox.Value = date1;
                 packageBox.SelectedItem = dt.Rows[0][11].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
@@ -292,7 +293,7 @@ namespace SouthJLAInformationSystemC
             UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(), UriStatusBox);
             StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(), StoolStatusBox);
 
-            if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
+            /*if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
             {
                 dateVital.Enabled = false;
                 vitalSignStatusBox.Enabled = false;
@@ -329,6 +330,7 @@ namespace SouthJLAInformationSystemC
                 dateStool.Enabled = false;
                 StoolStatusBox.Enabled = false;
             }
+            */
 
             if (Convert.ToInt32(ageBox.Text) < 30)
             {
