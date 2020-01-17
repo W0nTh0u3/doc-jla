@@ -110,6 +110,7 @@
             // exportBtn
             // 
             this.exportBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.exportBtn.Enabled = false;
             this.exportBtn.Location = new System.Drawing.Point(877, 15);
             this.exportBtn.Name = "exportBtn";
             this.exportBtn.Size = new System.Drawing.Size(110, 23);

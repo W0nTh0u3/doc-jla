@@ -48,7 +48,7 @@ namespace SouthJLAInformationSystemC
             dt.Columns[19].ColumnName = "Remarks";
             dt.Columns[20].ColumnName = "Date Completed";
             dataGrid.DataSource = dt;
-
+            exportBtn.Enabled = true;
         }
         private void exportBtn_Click(object sender, EventArgs e)
         {
