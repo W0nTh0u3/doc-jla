@@ -51,13 +51,11 @@ namespace SouthJLAInformationSystemC
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
                 companyBox.Text = dt.Rows[0][12].ToString();
                 accBox.Text = dt.Rows[0][13].ToString();
-                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());
-                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());
-                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
-                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
-                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
-                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
-                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(), vitalSignStatusBox);                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(), cbcStatusBox);                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString(), medStatusBox);
+                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), eyeStatusBox);
+                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString(), xrayStatusBox);
+                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), UriStatusBox);
+                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), StoolStatusBox);
                 if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
                 {
                     dateVital.Enabled = false;
@@ -99,11 +97,11 @@ namespace SouthJLAInformationSystemC
                 packageBox.SelectedItem = dt.Rows[0][11].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
                 companyBox.Text = dt.Rows[0][12].ToString();
-                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
-                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
-                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
-                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
-                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+                accBox.Text = dt.Rows[0][13].ToString();                vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(),vitalSignStatusBox);                cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(),cbcStatusBox);                medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),medStatusBox);
+                eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(),eyeStatusBox);
+                xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(),xrayStatusBox);
+                UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(),UriStatusBox);
+                StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(),StoolStatusBox);
 
                
             if (Convert.ToInt32(ageBox.Text) < 30)
@@ -119,18 +117,18 @@ namespace SouthJLAInformationSystemC
                 {
                     papsStatusBox.SelectedItem = "N/A";
                     papsStatusBox.Enabled = false;
-                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(),fbsStatusBox);
                     fbsStatusBox.Enabled = true;
-                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),ecgStatusBox);
                     ecgStatusBox.Enabled = true;
                 }
                 else
                 {
-                    papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                    papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(),papsStatusBox);
                     papsStatusBox.Enabled = true;
-                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                    fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(),fbsStatusBox);
                     fbsStatusBox.Enabled = true;
-                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                    ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(),ecgStatusBox);
                     ecgStatusBox.Enabled = true;
 
                 }
@@ -165,15 +163,40 @@ namespace SouthJLAInformationSystemC
             MessageBox.Show("Saved succesfully!");
         }
 
+        private void datePick(string date,ComboBox theBox)
+        {
+            DateTime dates = DateTime.ParseExact(date, "MM-dd-yyyy" ,null);
+            if (theBox.Name == "vitalSignStatusBox")
+                dateVital.Value = dates;
+            else if (theBox.Name == "cbcStatusBox")
+                dateCBC.Value = dates;
+            else if (theBox.Name == "fbsStatusBox")
+                dateFBS.Value = dates;
+            else if (theBox.Name == "medStatusBox")
+                dateMedCert.Value = dates;
+            else if (theBox.Name == "ecgStatusBox")
+                dateECG.Value = dates;
+            else if (theBox.Name == "papsStatusBox")
+                datePAPS.Value = dates;
+            else if (theBox.Name == "eyeStatusBox")
+                dateEye.Value = dates;
+            else if (theBox.Name == "xrayStatusBox")
+                dateXRAY.Value = dates;
+            else if (theBox.Name == "UriStatusBox")
+                dateUrine.Value = dates;
+            else if (theBox.Name == "StoolStatusBox")
+                dateStool.Value = dates;
+        }
 
-        private string checkerNull(string stringValue)
+        private string checkerNull(string stringValue, ComboBox theBox)
         {
             if (stringValue == "" || stringValue == null)
                 return ("PENDING");
             else if (stringValue.Contains("DONE"))
             {
-            //   string[] s = stringValue.Split(' ');
-              //  Console.WriteLine(s[1]);
+               string[] s = stringValue.Split(' ');
+               Console.WriteLine(s[1]);
+                datePick(s[1], theBox);
                 return ("DONE");
             }
             else
@@ -261,13 +284,13 @@ namespace SouthJLAInformationSystemC
             paymentStatusBox.SelectedItem = dt.Rows[0][9].ToString();
             companyBox.Text = dt.Rows[0][12].ToString();
             accBox.Text = dt.Rows[0][13].ToString();
-            vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString());
-            cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString());
-            medStatusBox.SelectedItem = checkerNull(dt.Rows[0][20].ToString());
-            eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
-            xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][23].ToString());
-            UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString());
-            StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString());
+            vitalSignStatusBox.SelectedItem = checkerNull(dt.Rows[0][17].ToString(), vitalSignStatusBox);
+            cbcStatusBox.SelectedItem = checkerNull(dt.Rows[0][18].ToString(), cbcStatusBox);
+            medStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), medStatusBox);
+            eyeStatusBox.SelectedItem = checkerNull(dt.Rows[0][24].ToString(), eyeStatusBox);
+            xrayStatusBox.SelectedItem = checkerNull(dt.Rows[0][25].ToString(), xrayStatusBox);
+            UriStatusBox.SelectedItem = checkerNull(dt.Rows[0][26].ToString(), UriStatusBox);
+            StoolStatusBox.SelectedItem = checkerNull(dt.Rows[0][27].ToString(), StoolStatusBox);
 
             if (vitalSignStatusBox.SelectedItem.ToString() == "DONE")
             {
@@ -320,18 +343,18 @@ namespace SouthJLAInformationSystemC
             {
                 papsStatusBox.SelectedItem = "N/A";
                 papsStatusBox.Enabled = false;
-                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(), fbsStatusBox);
                 fbsStatusBox.Enabled = true;
-                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), ecgStatusBox);
                 ecgStatusBox.Enabled = true;
             }
             else
             {
-                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString());
+                papsStatusBox.SelectedItem = checkerNull(dt.Rows[0][22].ToString(), papsStatusBox);
                 papsStatusBox.Enabled = true;
-                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString());
+                fbsStatusBox.SelectedItem = checkerNull(dt.Rows[0][19].ToString(), fbsStatusBox);
                 fbsStatusBox.Enabled = true;
-                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString());
+                ecgStatusBox.SelectedItem = checkerNull(dt.Rows[0][21].ToString(), ecgStatusBox);
                 ecgStatusBox.Enabled = true;
 
             }
@@ -429,7 +452,7 @@ namespace SouthJLAInformationSystemC
                 statusHolder[1] = cbcStatusBox.Text.ToString(); }
             else
             { dateCBC.Enabled = true;
-                statusHolder[1] = cbcStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy"); }
+                statusHolder[1] = cbcStatusBox.Text.ToString() + " " + dateCBC.Value.Date.ToString("MM-dd-yyyy"); }
             if (fbsStatusBox.Text.ToString() != "DONE")
             {
                 dateFBS.Enabled = false;
@@ -438,7 +461,7 @@ namespace SouthJLAInformationSystemC
             else
                 {
                     dateFBS.Enabled = true;
-                statusHolder[2] = fbsStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+                statusHolder[2] = fbsStatusBox.Text.ToString() + " " + dateFBS.Value.Date.ToString("MM-dd-yyyy");
             }
             if (medStatusBox.Text.ToString() != "DONE")
                     {
@@ -448,7 +471,7 @@ namespace SouthJLAInformationSystemC
             else
                         {
                             dateMedCert.Enabled = true;
-            statusHolder[3] = medStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[3] = medStatusBox.Text.ToString() + " " + dateMedCert.Value.Date.ToString("MM-dd-yyyy");
 
             }
             if (ecgStatusBox.Text.ToString() != "DONE")
@@ -459,7 +482,7 @@ namespace SouthJLAInformationSystemC
             else
                                 {
                                     dateECG.Enabled = true;
-            statusHolder[4] = ecgStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[4] = ecgStatusBox.Text.ToString() + " " + dateECG.Value.Date.ToString("MM-dd-yyyy");
 
             }
             if (papsStatusBox.Text.ToString() != "DONE")
@@ -470,7 +493,7 @@ namespace SouthJLAInformationSystemC
             else
                                         {
                                             datePAPS.Enabled = true;
-            statusHolder[5] = papsStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[5] = papsStatusBox.Text.ToString() + " " + datePAPS.Value.Date.ToString("MM-dd-yyyy");
 
             }
             if (eyeStatusBox.Text.ToString() != "DONE")
@@ -481,7 +504,7 @@ namespace SouthJLAInformationSystemC
             else
                                                 {
                                                     dateEye.Enabled = true;
-            statusHolder[6] = eyeStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[6] = eyeStatusBox.Text.ToString() + " " + dateEye.Value.Date.ToString("MM-dd-yyyy");
 
             }
             if (xrayStatusBox.Text.ToString() != "DONE")
@@ -492,7 +515,7 @@ namespace SouthJLAInformationSystemC
             else
                                                         {
                                                             dateXRAY.Enabled = true;
-            statusHolder[7] = xrayStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[7] = xrayStatusBox.Text.ToString() + " " + dateXRAY.Value.Date.ToString("MM-dd-yyyy");
 
             }
             if (UriStatusBox.Text.ToString() != "DONE")
@@ -503,7 +526,7 @@ namespace SouthJLAInformationSystemC
             else
                                                                 {
                                                                     dateUrine.Enabled = true;
-            statusHolder[8] = UriStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[8] = UriStatusBox.Text.ToString() + " " + dateUrine.Value.Date.ToString("MM-dd-yyyy");
             }
             if (StoolStatusBox.Text.ToString() != "DONE")
                                                                     {
@@ -513,7 +536,7 @@ namespace SouthJLAInformationSystemC
             else
                                                                         {
                                                                             dateStool.Enabled = true;
-            statusHolder[9] = StoolStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy");
+            statusHolder[9] = StoolStatusBox.Text.ToString() + " " + dateStool.Value.Date.ToString("MM-dd-yyyy");
             }
 
 
