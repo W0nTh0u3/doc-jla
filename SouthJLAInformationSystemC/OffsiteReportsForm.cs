@@ -69,7 +69,7 @@ namespace SouthJLAInformationSystemC
     {
         public static void ToCSV(this DataTable dtDataTable, string strFilePath)
         {
-            StreamWriter sw = new StreamWriter(strFilePath, false);
+            StreamWriter sw = new StreamWriter(strFilePath, false, Encoding.UTF8);
             //headers  
             for (int i = 0; i < dtDataTable.Columns.Count; i++)
             {
