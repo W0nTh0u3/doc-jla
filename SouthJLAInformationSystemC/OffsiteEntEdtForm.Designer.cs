@@ -242,8 +242,9 @@
             this.StoolStatusBox.FormattingEnabled = true;
             this.StoolStatusBox.Items.AddRange(new object[] {
             "PENDING",
-            "DONE"});
-            this.StoolStatusBox.Location = new System.Drawing.Point(17, 313);
+            "DONE",
+            "WAIVED"});
+            this.StoolStatusBox.Location = new System.Drawing.Point(17, 312);
             this.StoolStatusBox.Name = "StoolStatusBox";
             this.StoolStatusBox.Size = new System.Drawing.Size(93, 21);
             this.StoolStatusBox.TabIndex = 103;
@@ -257,8 +258,9 @@
             this.UriStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE",
-            "WITH MENSES"});
-            this.UriStatusBox.Location = new System.Drawing.Point(17, 281);
+            "WITH MENSES",
+            "WAIVED"});
+            this.UriStatusBox.Location = new System.Drawing.Point(17, 280);
             this.UriStatusBox.Name = "UriStatusBox";
             this.UriStatusBox.Size = new System.Drawing.Size(93, 21);
             this.UriStatusBox.TabIndex = 73;
@@ -273,8 +275,8 @@
             this.vitalSignStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE",
-            ""});
-            this.vitalSignStatusBox.Location = new System.Drawing.Point(17, 25);
+            "WAIVED"});
+            this.vitalSignStatusBox.Location = new System.Drawing.Point(17, 24);
             this.vitalSignStatusBox.Name = "vitalSignStatusBox";
             this.vitalSignStatusBox.Size = new System.Drawing.Size(93, 21);
             this.vitalSignStatusBox.TabIndex = 49;
@@ -286,10 +288,10 @@
             this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(42, 3);
+            this.StatusLabel.Location = new System.Drawing.Point(36, 1);
             this.StatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(43, 13);
+            this.StatusLabel.Size = new System.Drawing.Size(54, 17);
             this.StatusLabel.TabIndex = 47;
             this.StatusLabel.Text = "Status";
             this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -302,8 +304,9 @@
             this.ecgStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "N/A",
-            "DONE"});
-            this.ecgStatusBox.Location = new System.Drawing.Point(17, 153);
+            "DONE",
+            "WAIVED"});
+            this.ecgStatusBox.Location = new System.Drawing.Point(17, 152);
             this.ecgStatusBox.Name = "ecgStatusBox";
             this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
             this.ecgStatusBox.TabIndex = 54;
@@ -316,8 +319,9 @@
             this.eyeStatusBox.FormattingEnabled = true;
             this.eyeStatusBox.Items.AddRange(new object[] {
             "PENDING",
-            "DONE"});
-            this.eyeStatusBox.Location = new System.Drawing.Point(17, 217);
+            "DONE",
+            "WAIVED"});
+            this.eyeStatusBox.Location = new System.Drawing.Point(17, 216);
             this.eyeStatusBox.Name = "eyeStatusBox";
             this.eyeStatusBox.Size = new System.Drawing.Size(93, 21);
             this.eyeStatusBox.TabIndex = 71;
@@ -331,8 +335,8 @@
             this.xrayStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "DONE",
-            "WITH RESULTS"});
-            this.xrayStatusBox.Location = new System.Drawing.Point(17, 249);
+            "WAIVED"});
+            this.xrayStatusBox.Location = new System.Drawing.Point(17, 248);
             this.xrayStatusBox.Name = "xrayStatusBox";
             this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
             this.xrayStatusBox.TabIndex = 55;
@@ -346,8 +350,9 @@
             this.papsStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "N/A",
-            "DONE"});
-            this.papsStatusBox.Location = new System.Drawing.Point(17, 185);
+            "DONE",
+            "WAIVED"});
+            this.papsStatusBox.Location = new System.Drawing.Point(17, 184);
             this.papsStatusBox.Name = "papsStatusBox";
             this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.papsStatusBox.TabIndex = 52;
@@ -360,8 +365,9 @@
             this.medStatusBox.FormattingEnabled = true;
             this.medStatusBox.Items.AddRange(new object[] {
             "PENDING",
-            "DONE"});
-            this.medStatusBox.Location = new System.Drawing.Point(17, 121);
+            "DONE",
+            "WAIVED"});
+            this.medStatusBox.Location = new System.Drawing.Point(17, 120);
             this.medStatusBox.Name = "medStatusBox";
             this.medStatusBox.Size = new System.Drawing.Size(93, 21);
             this.medStatusBox.TabIndex = 50;
@@ -375,8 +381,9 @@
             this.fbsStatusBox.Items.AddRange(new object[] {
             "PENDING",
             "N/A",
-            "DONE"});
-            this.fbsStatusBox.Location = new System.Drawing.Point(17, 89);
+            "DONE",
+            "WAIVED"});
+            this.fbsStatusBox.Location = new System.Drawing.Point(17, 88);
             this.fbsStatusBox.Name = "fbsStatusBox";
             this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.fbsStatusBox.TabIndex = 53;
@@ -389,8 +396,9 @@
             this.cbcStatusBox.FormattingEnabled = true;
             this.cbcStatusBox.Items.AddRange(new object[] {
             "PENDING",
-            "DONE"});
-            this.cbcStatusBox.Location = new System.Drawing.Point(17, 57);
+            "DONE",
+            "WAIVED"});
+            this.cbcStatusBox.Location = new System.Drawing.Point(17, 56);
             this.cbcStatusBox.Name = "cbcStatusBox";
             this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
             this.cbcStatusBox.TabIndex = 48;
@@ -408,7 +416,7 @@
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel6.TabIndex = 104;
             // 
             // vitalSignClickableLabel
@@ -416,11 +424,11 @@
             this.vitalSignClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.vitalSignClickableLabel.AutoSize = true;
             this.vitalSignClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vitalSignClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.vitalSignClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.vitalSignClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.vitalSignClickableLabel.Name = "vitalSignClickableLabel";
             this.vitalSignClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.vitalSignClickableLabel.Size = new System.Drawing.Size(120, 13);
+            this.vitalSignClickableLabel.Size = new System.Drawing.Size(138, 17);
             this.vitalSignClickableLabel.TabIndex = 103;
             this.vitalSignClickableLabel.Text = "Vital Signs";
             this.vitalSignClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -429,9 +437,9 @@
             // 
             this.dateVital.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateVital.Enabled = false;
-            this.dateVital.Location = new System.Drawing.Point(256, 3);
+            this.dateVital.Location = new System.Drawing.Point(254, 3);
             this.dateVital.Name = "dateVital";
-            this.dateVital.Size = new System.Drawing.Size(247, 20);
+            this.dateVital.Size = new System.Drawing.Size(245, 20);
             this.dateVital.TabIndex = 104;
             this.dateVital.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -448,16 +456,16 @@
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel7.TabIndex = 106;
             // 
             // dateCBC
             // 
             this.dateCBC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateCBC.Enabled = false;
-            this.dateCBC.Location = new System.Drawing.Point(256, 3);
+            this.dateCBC.Location = new System.Drawing.Point(254, 3);
             this.dateCBC.Name = "dateCBC";
-            this.dateCBC.Size = new System.Drawing.Size(247, 20);
+            this.dateCBC.Size = new System.Drawing.Size(245, 20);
             this.dateCBC.TabIndex = 103;
             this.dateCBC.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -466,11 +474,11 @@
             this.CBCClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CBCClickableLabel.AutoSize = true;
             this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBCClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.CBCClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CBCClickableLabel.Name = "CBCClickableLabel";
             this.CBCClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.CBCClickableLabel.Size = new System.Drawing.Size(92, 13);
+            this.CBCClickableLabel.Size = new System.Drawing.Size(99, 17);
             this.CBCClickableLabel.TabIndex = 105;
             this.CBCClickableLabel.Text = "CBC";
             this.CBCClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -487,16 +495,16 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel8.TabIndex = 107;
             // 
             // dateFBS
             // 
             this.dateFBS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateFBS.Enabled = false;
-            this.dateFBS.Location = new System.Drawing.Point(256, 3);
+            this.dateFBS.Location = new System.Drawing.Point(254, 3);
             this.dateFBS.Name = "dateFBS";
-            this.dateFBS.Size = new System.Drawing.Size(247, 20);
+            this.dateFBS.Size = new System.Drawing.Size(245, 20);
             this.dateFBS.TabIndex = 103;
             this.dateFBS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -505,11 +513,11 @@
             this.FBSClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.FBSClickableLabel.AutoSize = true;
             this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FBSClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.FBSClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FBSClickableLabel.Name = "FBSClickableLabel";
             this.FBSClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.FBSClickableLabel.Size = new System.Drawing.Size(149, 13);
+            this.FBSClickableLabel.Size = new System.Drawing.Size(177, 17);
             this.FBSClickableLabel.TabIndex = 104;
             this.FBSClickableLabel.Text = "FBS, Cholesterol";
             this.FBSClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,16 +534,16 @@
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel9.TabIndex = 108;
             // 
             // dateMedCert
             // 
             this.dateMedCert.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateMedCert.Enabled = false;
-            this.dateMedCert.Location = new System.Drawing.Point(256, 3);
+            this.dateMedCert.Location = new System.Drawing.Point(254, 3);
             this.dateMedCert.Name = "dateMedCert";
-            this.dateMedCert.Size = new System.Drawing.Size(247, 20);
+            this.dateMedCert.Size = new System.Drawing.Size(245, 20);
             this.dateMedCert.TabIndex = 103;
             this.dateMedCert.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -544,11 +552,11 @@
             this.MedExClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.MedExClickableLabel.AutoSize = true;
             this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedExClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.MedExClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MedExClickableLabel.Name = "MedExClickableLabel";
             this.MedExClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.MedExClickableLabel.Size = new System.Drawing.Size(170, 13);
+            this.MedExClickableLabel.Size = new System.Drawing.Size(204, 17);
             this.MedExClickableLabel.TabIndex = 104;
             this.MedExClickableLabel.Text = "Physical Examination";
             this.MedExClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -565,16 +573,16 @@
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel10.TabIndex = 109;
             // 
             // dateECG
             // 
             this.dateECG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateECG.Enabled = false;
-            this.dateECG.Location = new System.Drawing.Point(256, 3);
+            this.dateECG.Location = new System.Drawing.Point(254, 3);
             this.dateECG.Name = "dateECG";
-            this.dateECG.Size = new System.Drawing.Size(247, 20);
+            this.dateECG.Size = new System.Drawing.Size(245, 20);
             this.dateECG.TabIndex = 103;
             this.dateECG.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -583,11 +591,11 @@
             this.ECGClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ECGClickableLabel.AutoSize = true;
             this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ECGClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.ECGClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ECGClickableLabel.Name = "ECGClickableLabel";
             this.ECGClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.ECGClickableLabel.Size = new System.Drawing.Size(93, 13);
+            this.ECGClickableLabel.Size = new System.Drawing.Size(101, 17);
             this.ECGClickableLabel.TabIndex = 103;
             this.ECGClickableLabel.Text = "ECG";
             this.ECGClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -604,16 +612,16 @@
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel11.TabIndex = 110;
             // 
             // datePAPS
             // 
             this.datePAPS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datePAPS.Enabled = false;
-            this.datePAPS.Location = new System.Drawing.Point(256, 3);
+            this.datePAPS.Location = new System.Drawing.Point(254, 3);
             this.datePAPS.Name = "datePAPS";
-            this.datePAPS.Size = new System.Drawing.Size(247, 20);
+            this.datePAPS.Size = new System.Drawing.Size(245, 20);
             this.datePAPS.TabIndex = 103;
             this.datePAPS.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -622,11 +630,11 @@
             this.PAPSClickedLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PAPSClickedLabel.AutoSize = true;
             this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PAPSClickedLabel.Location = new System.Drawing.Point(2, 6);
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(2, 4);
             this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PAPSClickedLabel.Name = "PAPSClickedLabel";
             this.PAPSClickedLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.PAPSClickedLabel.Size = new System.Drawing.Size(101, 13);
+            this.PAPSClickedLabel.Size = new System.Drawing.Size(111, 17);
             this.PAPSClickedLabel.TabIndex = 104;
             this.PAPSClickedLabel.Text = "PAP\'S";
             this.PAPSClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -643,16 +651,16 @@
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel12.TabIndex = 111;
             // 
             // dateEye
             // 
             this.dateEye.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateEye.Enabled = false;
-            this.dateEye.Location = new System.Drawing.Point(256, 3);
+            this.dateEye.Location = new System.Drawing.Point(254, 3);
             this.dateEye.Name = "dateEye";
-            this.dateEye.Size = new System.Drawing.Size(247, 20);
+            this.dateEye.Size = new System.Drawing.Size(245, 20);
             this.dateEye.TabIndex = 103;
             this.dateEye.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -661,11 +669,11 @@
             this.EyeExamClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.EyeExamClickableLabel.AutoSize = true;
             this.EyeExamClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EyeExamClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.EyeExamClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.EyeExamClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EyeExamClickableLabel.Name = "EyeExamClickableLabel";
             this.EyeExamClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.EyeExamClickableLabel.Size = new System.Drawing.Size(118, 13);
+            this.EyeExamClickableLabel.Size = new System.Drawing.Size(134, 17);
             this.EyeExamClickableLabel.TabIndex = 107;
             this.EyeExamClickableLabel.Text = "Eye Exam";
             this.EyeExamClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -682,16 +690,16 @@
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel13.TabIndex = 112;
             // 
             // dateXRAY
             // 
             this.dateXRAY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateXRAY.Enabled = false;
-            this.dateXRAY.Location = new System.Drawing.Point(256, 3);
+            this.dateXRAY.Location = new System.Drawing.Point(254, 3);
             this.dateXRAY.Name = "dateXRAY";
-            this.dateXRAY.Size = new System.Drawing.Size(247, 20);
+            this.dateXRAY.Size = new System.Drawing.Size(245, 20);
             this.dateXRAY.TabIndex = 103;
             this.dateXRAY.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -700,11 +708,11 @@
             this.XrayClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.XrayClickableLabel.AutoSize = true;
             this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XrayClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.XrayClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.XrayClickableLabel.Name = "XrayClickableLabel";
             this.XrayClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.XrayClickableLabel.Size = new System.Drawing.Size(100, 13);
+            this.XrayClickableLabel.Size = new System.Drawing.Size(111, 17);
             this.XrayClickableLabel.TabIndex = 106;
             this.XrayClickableLabel.Text = "X-Ray";
             this.XrayClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -721,16 +729,16 @@
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel14.TabIndex = 113;
             // 
             // dateUrine
             // 
             this.dateUrine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateUrine.Enabled = false;
-            this.dateUrine.Location = new System.Drawing.Point(256, 3);
+            this.dateUrine.Location = new System.Drawing.Point(254, 3);
             this.dateUrine.Name = "dateUrine";
-            this.dateUrine.Size = new System.Drawing.Size(247, 20);
+            this.dateUrine.Size = new System.Drawing.Size(245, 20);
             this.dateUrine.TabIndex = 103;
             this.dateUrine.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -739,11 +747,11 @@
             this.UriClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.UriClickableLabel.AutoSize = true;
             this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UriClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.UriClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UriClickableLabel.Name = "UriClickableLabel";
             this.UriClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.UriClickableLabel.Size = new System.Drawing.Size(125, 13);
+            this.UriClickableLabel.Size = new System.Drawing.Size(144, 17);
             this.UriClickableLabel.TabIndex = 108;
             this.UriClickableLabel.Text = "Urine Exam";
             this.UriClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -760,16 +768,16 @@
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 1;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(506, 26);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(502, 26);
             this.tableLayoutPanel15.TabIndex = 114;
             // 
             // dateStool
             // 
             this.dateStool.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateStool.Enabled = false;
-            this.dateStool.Location = new System.Drawing.Point(256, 3);
+            this.dateStool.Location = new System.Drawing.Point(254, 3);
             this.dateStool.Name = "dateStool";
-            this.dateStool.Size = new System.Drawing.Size(247, 20);
+            this.dateStool.Size = new System.Drawing.Size(245, 20);
             this.dateStool.TabIndex = 103;
             this.dateStool.ValueChanged += new System.EventHandler(this.dateEnablerEX);
             // 
@@ -778,11 +786,11 @@
             this.StooClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.StooClickableLabel.AutoSize = true;
             this.StooClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StooClickableLabel.Location = new System.Drawing.Point(2, 6);
+            this.StooClickableLabel.Location = new System.Drawing.Point(2, 4);
             this.StooClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.StooClickableLabel.Name = "StooClickableLabel";
             this.StooClickableLabel.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.StooClickableLabel.Size = new System.Drawing.Size(124, 13);
+            this.StooClickableLabel.Size = new System.Drawing.Size(142, 17);
             this.StooClickableLabel.TabIndex = 103;
             this.StooClickableLabel.Text = "Stool Exam";
             this.StooClickableLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -809,10 +817,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 8);
+            this.label1.Location = new System.Drawing.Point(47, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(123, 17);
             this.label1.TabIndex = 107;
             this.label1.Text = "Date Completed";
             // 
@@ -902,7 +910,7 @@
             "Widowed",
             "Divorced",
             "Separated"});
-            this.civilBox.Location = new System.Drawing.Point(131, 124);
+            this.civilBox.Location = new System.Drawing.Point(131, 123);
             this.civilBox.Name = "civilBox";
             this.civilBox.Size = new System.Drawing.Size(163, 21);
             this.civilBox.TabIndex = 92;
@@ -912,10 +920,10 @@
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(55, 128);
+            this.label21.Location = new System.Drawing.Point(55, 120);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(71, 13);
+            this.label21.Size = new System.Drawing.Size(54, 29);
             this.label21.TabIndex = 91;
             this.label21.Text = "Civil Status";
             // 
@@ -924,10 +932,10 @@
             this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(55, 100);
+            this.label20.Location = new System.Drawing.Point(55, 98);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.Size = new System.Drawing.Size(62, 17);
             this.label20.TabIndex = 94;
             this.label20.Text = "Gender";
             // 
@@ -962,10 +970,10 @@
             this.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(55, 73);
+            this.Label7.Location = new System.Drawing.Point(55, 71);
             this.Label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(29, 13);
+            this.Label7.Size = new System.Drawing.Size(36, 17);
             this.Label7.TabIndex = 95;
             this.Label7.Text = "Age";
             // 
@@ -974,10 +982,10 @@
             this.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(55, 33);
+            this.Label3.Location = new System.Drawing.Point(55, 31);
             this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(39, 13);
+            this.Label3.Size = new System.Drawing.Size(49, 17);
             this.Label3.TabIndex = 99;
             this.Label3.Text = "Name";
             // 
@@ -986,7 +994,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1007,10 +1015,10 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(133, 30);
+            this.Label5.Location = new System.Drawing.Point(120, 28);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(61, 13);
+            this.Label5.Size = new System.Drawing.Size(79, 17);
             this.Label5.TabIndex = 64;
             this.Label5.Text = "Firstname";
             // 
@@ -1019,10 +1027,10 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(19, 30);
+            this.Label4.Location = new System.Drawing.Point(10, 28);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(61, 13);
+            this.Label4.Size = new System.Drawing.Size(78, 17);
             this.Label4.TabIndex = 63;
             this.Label4.Text = "Lastname";
             // 
@@ -1036,7 +1044,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(96, 20);
+            this.lastBox.Size = new System.Drawing.Size(94, 20);
             this.lastBox.TabIndex = 60;
             this.lastBox.TextChanged += new System.EventHandler(this.lastBox_TextChanged);
             // 
@@ -1047,10 +1055,10 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(102, 2);
+            this.firstBox.Location = new System.Drawing.Point(100, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(123, 20);
+            this.firstBox.Size = new System.Drawing.Size(119, 20);
             this.firstBox.TabIndex = 61;
             this.firstBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.firstBox_KeyDown);
             // 
@@ -1059,11 +1067,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(229, 2);
+            this.middleBox.Location = new System.Drawing.Point(223, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(35, 20);
+            this.middleBox.Size = new System.Drawing.Size(41, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1071,10 +1079,10 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(234, 30);
+            this.Label6.Location = new System.Drawing.Point(229, 28);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(25, 13);
+            this.Label6.Size = new System.Drawing.Size(29, 17);
             this.Label6.TabIndex = 65;
             this.Label6.Text = "M.I";
             // 
@@ -1114,10 +1122,10 @@
             this.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(461, 33);
+            this.Label9.Location = new System.Drawing.Point(461, 22);
             this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(99, 13);
+            this.Label9.Size = new System.Drawing.Size(87, 34);
             this.Label9.TabIndex = 83;
             this.Label9.Text = "Date Registered";
             // 
@@ -1126,10 +1134,10 @@
             this.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label10.AutoSize = true;
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(461, 73);
+            this.Label10.Location = new System.Drawing.Point(461, 71);
             this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(57, 13);
+            this.Label10.Size = new System.Drawing.Size(70, 17);
             this.Label10.TabIndex = 85;
             this.Label10.Text = "Package";
             // 
@@ -1138,10 +1146,10 @@
             this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label11.AutoSize = true;
             this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(461, 100);
+            this.Label11.Location = new System.Drawing.Point(461, 98);
             this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(58, 13);
+            this.Label11.Size = new System.Drawing.Size(74, 17);
             this.Label11.TabIndex = 87;
             this.Label11.Text = "Company";
             // 
@@ -1150,10 +1158,10 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(461, 128);
+            this.label22.Location = new System.Drawing.Point(461, 126);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(54, 13);
+            this.label22.Size = new System.Drawing.Size(66, 17);
             this.label22.TabIndex = 89;
             this.label22.Text = "Account";
             // 
@@ -1174,10 +1182,10 @@
             this.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(55, 213);
+            this.Label8.Location = new System.Drawing.Point(55, 211);
             this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(52, 13);
+            this.Label8.Size = new System.Drawing.Size(67, 17);
             this.Label8.TabIndex = 98;
             this.Label8.Text = "Address";
             // 
@@ -1207,10 +1215,10 @@
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(55, 150);
+            this.label24.Location = new System.Drawing.Point(55, 149);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(53, 26);
+            this.label24.Size = new System.Drawing.Size(66, 29);
             this.label24.TabIndex = 104;
             this.label24.Text = "Date of Birth";
             // 
@@ -1219,10 +1227,10 @@
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(461, 157);
+            this.label25.Location = new System.Drawing.Point(461, 149);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(95, 13);
+            this.label25.Size = new System.Drawing.Size(75, 29);
             this.label25.TabIndex = 105;
             this.label25.Text = "Payment Status";
             // 
@@ -1295,10 +1303,10 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(115, 13);
+            this.textBox1.Location = new System.Drawing.Point(115, 9);
             this.textBox1.MaxLength = 4;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(59, 38);
+            this.textBox1.Size = new System.Drawing.Size(59, 46);
             this.textBox1.TabIndex = 88;
             // 
             // label23
@@ -1306,10 +1314,10 @@
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(52, 25);
+            this.label23.Location = new System.Drawing.Point(36, 23);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(58, 13);
+            this.label23.Size = new System.Drawing.Size(74, 17);
             this.label23.TabIndex = 87;
             this.label23.Text = "Form No.";
             // 
@@ -1342,7 +1350,7 @@
             this.employeeLabel.Location = new System.Drawing.Point(199, 23);
             this.employeeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.employeeLabel.Name = "employeeLabel";
-            this.employeeLabel.Size = new System.Drawing.Size(85, 13);
+            this.employeeLabel.Size = new System.Drawing.Size(108, 17);
             this.employeeLabel.TabIndex = 74;
             this.employeeLabel.Text = "Employee No.";
             // 
@@ -1384,7 +1392,7 @@
             this.Label2.Location = new System.Drawing.Point(18, 23);
             this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(64, 13);
+            this.Label2.Size = new System.Drawing.Size(79, 17);
             this.Label2.TabIndex = 70;
             this.Label2.Text = "Patient ID";
             // 

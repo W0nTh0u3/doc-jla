@@ -195,6 +195,20 @@ namespace SouthJLAInformationSystemC
                 datePick(s[1], theBox);
                 return ("DONE");
             }
+            else if (stringValue.Contains("WAIVED"))
+            {
+                string[] s = stringValue.Split(' ');
+                //Console.WriteLine(s[1]);
+                datePick(s[1], theBox);
+                return ("WAIVED");
+            }
+            else if (stringValue.Contains("WITH MENSES"))
+            {
+                string[] s = stringValue.Split(' ');
+                //Console.WriteLine(s[1]);
+                //datePick(s[2], theBox);
+                return ("WITH MENSES");
+            }
             else
                 return (stringValue);
         }
@@ -438,20 +452,20 @@ namespace SouthJLAInformationSystemC
      */
         private void dateEnablerEX(object sender, EventArgs e)
         {
-            if (vitalSignStatusBox.Text.ToString() != "DONE")
+            if (vitalSignStatusBox.Text.ToString() == "PENDING" || vitalSignStatusBox.Text.ToString() == "N/A"  )
             { statusHolder[0] = vitalSignStatusBox.Text.ToString();
                 Console.WriteLine(statusHolder[0]);
                 dateVital.Enabled = false; }
             else
             { dateVital.Enabled = true;
                 statusHolder[0] = vitalSignStatusBox.Text.ToString() + " " + dateVital.Value.Date.ToString("MM-dd-yyyy"); }
-            if (cbcStatusBox.Text.ToString() != "DONE")
+            if (cbcStatusBox.Text.ToString() == "PENDING" || cbcStatusBox.Text.ToString() == "N/A")
             { dateCBC.Enabled = false;
                 statusHolder[1] = cbcStatusBox.Text.ToString(); }
             else
             { dateCBC.Enabled = true;
                 statusHolder[1] = cbcStatusBox.Text.ToString() + " " + dateCBC.Value.Date.ToString("MM-dd-yyyy"); }
-            if (fbsStatusBox.Text.ToString() != "DONE")
+            if (fbsStatusBox.Text.ToString() == "PENDING" || fbsStatusBox.Text.ToString() == "N/A")
             {
                 dateFBS.Enabled = false;
                 statusHolder[2] = fbsStatusBox.Text.ToString() ;
@@ -461,7 +475,7 @@ namespace SouthJLAInformationSystemC
                     dateFBS.Enabled = true;
                 statusHolder[2] = fbsStatusBox.Text.ToString() + " " + dateFBS.Value.Date.ToString("MM-dd-yyyy");
             }
-            if (medStatusBox.Text.ToString() != "DONE")
+            if (medStatusBox.Text.ToString() == "PENDING" || medStatusBox.Text.ToString() == "N/A")
                     {
                         dateMedCert.Enabled = false;
             statusHolder[3] = medStatusBox.Text.ToString();
@@ -472,7 +486,7 @@ namespace SouthJLAInformationSystemC
             statusHolder[3] = medStatusBox.Text.ToString() + " " + dateMedCert.Value.Date.ToString("MM-dd-yyyy");
 
             }
-            if (ecgStatusBox.Text.ToString() != "DONE")
+            if (ecgStatusBox.Text.ToString() == "PENDING" || ecgStatusBox.Text.ToString() == "N/A")
                             {
                                 dateECG.Enabled = false;
             statusHolder[4] = ecgStatusBox.Text.ToString();
@@ -483,7 +497,7 @@ namespace SouthJLAInformationSystemC
             statusHolder[4] = ecgStatusBox.Text.ToString() + " " + dateECG.Value.Date.ToString("MM-dd-yyyy");
 
             }
-            if (papsStatusBox.Text.ToString() != "DONE")
+            if (papsStatusBox.Text.ToString() == "PENDING" || papsStatusBox.Text.ToString() == "N/A")
                                     {
                                         datePAPS.Enabled = false;
             statusHolder[5] = papsStatusBox.Text.ToString();
@@ -494,7 +508,7 @@ namespace SouthJLAInformationSystemC
             statusHolder[5] = papsStatusBox.Text.ToString() + " " + datePAPS.Value.Date.ToString("MM-dd-yyyy");
 
             }
-            if (eyeStatusBox.Text.ToString() != "DONE")
+            if (eyeStatusBox.Text.ToString() == "PENDING" || eyeStatusBox.Text.ToString() == "N/A")
                                             {
                                                 dateEye.Enabled = false;
             statusHolder[6] = eyeStatusBox.Text.ToString();
@@ -505,7 +519,7 @@ namespace SouthJLAInformationSystemC
             statusHolder[6] = eyeStatusBox.Text.ToString() + " " + dateEye.Value.Date.ToString("MM-dd-yyyy");
 
             }
-            if (xrayStatusBox.Text.ToString() != "DONE")
+            if (xrayStatusBox.Text.ToString() == "PENDING" || xrayStatusBox.Text.ToString() == "N/A")
                                                     {
                                                         dateXRAY.Enabled = false;
                 statusHolder[7] = xrayStatusBox.Text.ToString();
@@ -516,7 +530,7 @@ namespace SouthJLAInformationSystemC
             statusHolder[7] = xrayStatusBox.Text.ToString() + " " + dateXRAY.Value.Date.ToString("MM-dd-yyyy");
 
             }
-            if (UriStatusBox.Text.ToString() != "DONE")
+            if (UriStatusBox.Text.ToString() == "PENDING" || UriStatusBox.Text.ToString() == "N/A")
                                                             {
                                                                 dateUrine.Enabled = false;
             statusHolder[8] = UriStatusBox.Text.ToString();
@@ -526,7 +540,7 @@ namespace SouthJLAInformationSystemC
                                                                     dateUrine.Enabled = true;
             statusHolder[8] = UriStatusBox.Text.ToString() + " " + dateUrine.Value.Date.ToString("MM-dd-yyyy");
             }
-            if (StoolStatusBox.Text.ToString() != "DONE")
+            if (StoolStatusBox.Text.ToString() == "PENDING" || StoolStatusBox.Text.ToString() == "N/A")
                                                                     {
                                                                         dateStool.Enabled = false;
                 statusHolder[9] = StoolStatusBox.Text.ToString();
