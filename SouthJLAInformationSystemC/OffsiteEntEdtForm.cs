@@ -555,5 +555,11 @@ namespace SouthJLAInformationSystemC
 
 
         }
+
+        private void searchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                searchButton_Click(sender, e);
+        }
     }
 }
