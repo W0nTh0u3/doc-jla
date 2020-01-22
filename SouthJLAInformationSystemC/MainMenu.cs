@@ -506,15 +506,16 @@ namespace SouthJLAInformationSystemC
         private void searchButton_Click(object sender, EventArgs e)
         {
             try
-            {
+          {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sdaSearch.Fill(dt);
 
-                DateTime date1 = Convert.ToDateTime(dt.Rows[0][5].ToString());
+            
+            bdayBox.Value = (dt.Rows[0][5].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][5].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
 
-                lastBox.Text = dt.Rows[0][1].ToString();
+            lastBox.Text = dt.Rows[0][1].ToString();
                 firstBox.Text = dt.Rows[0][2].ToString();
                 middleBox.Text = dt.Rows[0][3].ToString();
                 ageBox.Text = dt.Rows[0][4].ToString();
@@ -523,7 +524,7 @@ namespace SouthJLAInformationSystemC
                 civilBox.SelectedItem = dt.Rows[0][7].ToString();
                 uniquePass = dt.Rows[0][11].ToString();
                 idPass = dt.Rows[0][0].ToString();
-                bdayBox.Value = date1;
+                
                 packageBox.SelectedItem = dt.Rows[0][10].ToString();
                 paymentStatusBox.SelectedItem = dt.Rows[0][12].ToString();
                 companyBox.Text = dt.Rows[0][14].ToString();
@@ -536,7 +537,7 @@ namespace SouthJLAInformationSystemC
                 clearAll.Enabled = true;
 
                 submit.Enabled = true;
-            }
+        }
             catch (Exception en)
             {
                 MessageBox.Show("No matching record found.");
