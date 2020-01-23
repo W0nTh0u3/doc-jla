@@ -28,396 +28,1302 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Enter Requisition");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Edit Requisition");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Enter/Edit Requisition");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Edit Results");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Billing");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Quality Control");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("General Clinic", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Physical Examination", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12,
-            treeNode13});
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Psychological Examination", new System.Windows.Forms.TreeNode[] {
-            treeNode15,
-            treeNode16,
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("X-RAY", new System.Windows.Forms.TreeNode[] {
-            treeNode19,
-            treeNode20,
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Audiometry", new System.Windows.Forms.TreeNode[] {
-            treeNode23,
-            treeNode24,
-            treeNode25});
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Laboratory", new System.Windows.Forms.TreeNode[] {
-            treeNode27,
-            treeNode28,
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Enter Results");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Enter/Edit Results");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Reports");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Drugtest", new System.Windows.Forms.TreeNode[] {
-            treeNode31,
-            treeNode32,
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Billing");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Dictionaries");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("ECG");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Quality Control");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Miscellaneous", new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode36,
-            treeNode37,
-            treeNode38});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.MainMenuTree = new System.Windows.Forms.TreeView();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.lbl_title = new System.Windows.Forms.Label();
-            this.Panel1 = new System.Windows.Forms.Panel();
-            this.Panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.MenuPanel4 = new System.Windows.Forms.Panel();
+            this.XrayRepsBtn = new System.Windows.Forms.Button();
+            this.XrayEntEdtResBtn = new System.Windows.Forms.Button();
+            this.XrayEntResBtn = new System.Windows.Forms.Button();
+            this.MenuPanel5 = new System.Windows.Forms.Panel();
+            this.AudiometRepsBtn = new System.Windows.Forms.Button();
+            this.AudiometEntEdtResBtn = new System.Windows.Forms.Button();
+            this.AudiometEntResBtn = new System.Windows.Forms.Button();
+            this.MenuPanel6 = new System.Windows.Forms.Panel();
+            this.LaborRepsBtn = new System.Windows.Forms.Button();
+            this.LaborEntEdtResBtn = new System.Windows.Forms.Button();
+            this.LaborEntResBtn = new System.Windows.Forms.Button();
+            this.MenuPanel7 = new System.Windows.Forms.Panel();
+            this.DrugTRepsBtn = new System.Windows.Forms.Button();
+            this.DrugTEntEdtResBtn = new System.Windows.Forms.Button();
+            this.DrugTEntResBtn = new System.Windows.Forms.Button();
+            this.MenuPanel8 = new System.Windows.Forms.Panel();
+            this.MisceQualBtn = new System.Windows.Forms.Button();
+            this.MisceECGBtn = new System.Windows.Forms.Button();
+            this.MisceDictBtn = new System.Windows.Forms.Button();
+            this.MisceBillBtn = new System.Windows.Forms.Button();
+            this.SidePanel = new System.Windows.Forms.Panel();
+            this.MisceBtn = new System.Windows.Forms.Button();
+            this.DrugTBtn = new System.Windows.Forms.Button();
+            this.LaborBtn = new System.Windows.Forms.Button();
+            this.AudiometBtn = new System.Windows.Forms.Button();
+            this.XrayBtn = new System.Windows.Forms.Button();
+            this.MenuPanel3 = new System.Windows.Forms.Panel();
+            this.PsychRepsBtn = new System.Windows.Forms.Button();
+            this.PsychEntEdtResBtn = new System.Windows.Forms.Button();
+            this.PsychEntResBtn = new System.Windows.Forms.Button();
+            this.PsychBtn = new System.Windows.Forms.Button();
+            this.MenuPanel2 = new System.Windows.Forms.Panel();
+            this.PhysicalRepsBtn = new System.Windows.Forms.Button();
+            this.PhysicalEntEdtResBtn = new System.Windows.Forms.Button();
+            this.PhysicalEntResBtn = new System.Windows.Forms.Button();
+            this.PhysicalBtn = new System.Windows.Forms.Button();
+            this.MenuPanel1 = new System.Windows.Forms.Panel();
+            this.SubMenuPanel1 = new System.Windows.Forms.Panel();
+            this.OffsiteReps = new System.Windows.Forms.Button();
+            this.OffsiteEntEdtReq = new System.Windows.Forms.Button();
+            this.OffsiteBtn = new System.Windows.Forms.Button();
+            this.GenQualBtn = new System.Windows.Forms.Button();
+            this.GenBillBtn = new System.Windows.Forms.Button();
+            this.GenRepsBtn = new System.Windows.Forms.Button();
+            this.GenEntEdtResuBtn = new System.Windows.Forms.Button();
+            this.GenEditResuBtn = new System.Windows.Forms.Button();
+            this.GenEnterResuBtn = new System.Windows.Forms.Button();
+            this.GenEntEdtReqBtn = new System.Windows.Forms.Button();
+            this.GenEditReqBtn = new System.Windows.Forms.Button();
+            this.GenEnterReqBtn = new System.Windows.Forms.Button();
+            this.GeneralClinicBtn = new System.Windows.Forms.Button();
+            this.TitleSidePanel = new System.Windows.Forms.Panel();
+            this.MainMenuLabel = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ChildContentPanel = new System.Windows.Forms.Panel();
+            this.GenClinicPanel = new System.Windows.Forms.Panel();
+            this.MajorelPanel = new System.Windows.Forms.Panel();
+            this.xrayStatusBox = new System.Windows.Forms.ComboBox();
+            this.cbcStatusBox = new System.Windows.Forms.ComboBox();
+            this.urineStoolStatusBox = new System.Windows.Forms.ComboBox();
+            this.medStatusBox = new System.Windows.Forms.ComboBox();
+            this.ecgStatusBox = new System.Windows.Forms.ComboBox();
+            this.fbsStatusBox = new System.Windows.Forms.ComboBox();
+            this.papsStatusBox = new System.Windows.Forms.ComboBox();
+            this.PAPSClickedLabel = new System.Windows.Forms.Label();
+            this.FBSClickableLabel = new System.Windows.Forms.Label();
+            this.ECGClickableLabel = new System.Windows.Forms.Label();
+            this.XrayClickableLabel = new System.Windows.Forms.Label();
+            this.MedExClickableLabel = new System.Windows.Forms.Label();
+            this.UriClickableLabel = new System.Windows.Forms.Label();
+            this.CBCClickableLabel = new System.Windows.Forms.Label();
             this.Label19 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.Label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.Label17 = new System.Windows.Forms.Label();
             this.Label16 = new System.Windows.Forms.Label();
             this.Label15 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
             this.Label13 = new System.Windows.Forms.Label();
-            this.TextBox12 = new System.Windows.Forms.TextBox();
-            this.TextBox11 = new System.Windows.Forms.TextBox();
-            this.TextBox10 = new System.Windows.Forms.TextBox();
-            this.TextBox9 = new System.Windows.Forms.TextBox();
             this.Label12 = new System.Windows.Forms.Label();
-            this.TextBox8 = new System.Windows.Forms.TextBox();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
-            this.Label11 = new System.Windows.Forms.Label();
-            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
-            this.Label10 = new System.Windows.Forms.Label();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.TextBox7 = new System.Windows.Forms.TextBox();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.TextBox6 = new System.Windows.Forms.TextBox();
-            this.ofwBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new SouthJLAInformationSystemC.DatabaseDataSet();
-            this.TextBox5 = new System.Windows.Forms.TextBox();
+            this.PatientInfoPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPnl = new System.Windows.Forms.TableLayoutPanel();
+            this.civilBox = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.genderBox = new System.Windows.Forms.ComboBox();
+            this.ageBox = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
-            this.Label6 = new System.Windows.Forms.Label();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Label5 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
+            this.lastBox = new System.Windows.Forms.TextBox();
+            this.firstBox = new System.Windows.Forms.TextBox();
+            this.middleBox = new System.Windows.Forms.TextBox();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.dateFiledBox = new System.Windows.Forms.DateTimePicker();
+            this.packageBox = new System.Windows.Forms.ComboBox();
+            this.accBox = new System.Windows.Forms.TextBox();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.Label10 = new System.Windows.Forms.Label();
+            this.Label11 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.submit = new System.Windows.Forms.Button();
+            this.paymentStatusBox = new System.Windows.Forms.ComboBox();
+            this.bdayBox = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.companyBox = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.PatientIDPanel = new System.Windows.Forms.Panel();
+            this.clearAll = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.ofwTableAdapter = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.ofwTableAdapter();
-            this.tableAdapterManager = new SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager();
-            this.Panel2.SuspendLayout();
-            this.Panel1.SuspendLayout();
-            this.Panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ofwBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            this.ContentTitlePanel = new System.Windows.Forms.Panel();
+            this.SubMenuLabelClicked = new System.Windows.Forms.Label();
+            this.MenuClickedLabel = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.MenuPanel4.SuspendLayout();
+            this.MenuPanel5.SuspendLayout();
+            this.MenuPanel6.SuspendLayout();
+            this.MenuPanel7.SuspendLayout();
+            this.MenuPanel8.SuspendLayout();
+            this.SidePanel.SuspendLayout();
+            this.MenuPanel3.SuspendLayout();
+            this.MenuPanel2.SuspendLayout();
+            this.MenuPanel1.SuspendLayout();
+            this.SubMenuPanel1.SuspendLayout();
+            this.TitleSidePanel.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ContentPanel.SuspendLayout();
+            this.ChildContentPanel.SuspendLayout();
+            this.GenClinicPanel.SuspendLayout();
+            this.MajorelPanel.SuspendLayout();
+            this.PatientInfoPanel.SuspendLayout();
+            this.tableLayoutPnl.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.PatientIDPanel.SuspendLayout();
+            this.ContentTitlePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MainMenuTree
+            // panel1
             // 
-            this.MainMenuTree.BackColor = System.Drawing.Color.White;
-            this.MainMenuTree.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MainMenuTree.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.MainMenuTree.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuTree.Location = new System.Drawing.Point(0, 36);
-            this.MainMenuTree.Margin = new System.Windows.Forms.Padding(2);
-            this.MainMenuTree.Name = "MainMenuTree";
-            treeNode1.Name = "Node1";
-            treeNode1.Tag = "in";
-            treeNode1.Text = "Enter Requisition";
-            treeNode2.Name = "Node2";
-            treeNode2.Tag = "in";
-            treeNode2.Text = "Edit Requisition";
-            treeNode3.Name = "Node3";
-            treeNode3.Tag = "in";
-            treeNode3.Text = "Enter/Edit Requisition";
-            treeNode4.Name = "Node4";
-            treeNode4.Tag = "in";
-            treeNode4.Text = "Enter Results";
-            treeNode5.Name = "Node5";
-            treeNode5.Tag = "in";
-            treeNode5.Text = "Edit Results";
-            treeNode6.Name = "Node6";
-            treeNode6.Tag = "in";
-            treeNode6.Text = "Enter/Edit Results";
-            treeNode7.Name = "Node7";
-            treeNode7.Tag = "in";
-            treeNode7.Text = "Reports";
-            treeNode8.Name = "Node8";
-            treeNode8.Tag = "in";
-            treeNode8.Text = "Billing";
-            treeNode9.Name = "Node9";
-            treeNode9.Tag = "in";
-            treeNode9.Text = "Quality Control";
-            treeNode10.Name = "Node0";
-            treeNode10.Tag = "out";
-            treeNode10.Text = "General Clinic";
-            treeNode11.Name = "Node11";
-            treeNode11.Text = "Enter Results";
-            treeNode12.Name = "Node12";
-            treeNode12.Text = "Enter/Edit Results";
-            treeNode13.Name = "Node13";
-            treeNode13.Text = "Reports";
-            treeNode14.Name = "Node10";
-            treeNode14.Tag = "out";
-            treeNode14.Text = "Physical Examination";
-            treeNode15.Name = "Node20";
-            treeNode15.Text = "Enter Results";
-            treeNode16.Name = "Node21";
-            treeNode16.Text = "Enter/Edit Results";
-            treeNode17.Name = "Node22";
-            treeNode17.Text = "Reports";
-            treeNode18.Name = "Node14";
-            treeNode18.Text = "Psychological Examination";
-            treeNode19.Name = "Node23";
-            treeNode19.Text = "Enter Results";
-            treeNode20.Name = "Node24";
-            treeNode20.Text = "Enter/Edit Results";
-            treeNode21.Name = "Node25";
-            treeNode21.Text = "Reports";
-            treeNode22.Name = "Node15";
-            treeNode22.Text = "X-RAY";
-            treeNode23.Name = "Node26";
-            treeNode23.Text = "Enter Results";
-            treeNode24.Name = "Node27";
-            treeNode24.Text = "Enter/Edit Results";
-            treeNode25.Name = "Node28";
-            treeNode25.Text = "Reports";
-            treeNode26.Name = "Node16";
-            treeNode26.Text = "Audiometry";
-            treeNode27.Name = "Node29";
-            treeNode27.Text = "Enter Results";
-            treeNode28.Name = "Node30";
-            treeNode28.Text = "Enter/Edit Results";
-            treeNode29.Name = "Node31";
-            treeNode29.Text = "Reports";
-            treeNode30.Name = "Node17";
-            treeNode30.Text = "Laboratory";
-            treeNode31.Name = "Node32";
-            treeNode31.Text = "Enter Results";
-            treeNode32.Name = "Node33";
-            treeNode32.Text = "Enter/Edit Results";
-            treeNode33.Name = "Node34";
-            treeNode33.Text = "Reports";
-            treeNode34.Name = "Node18";
-            treeNode34.Text = "Drugtest";
-            treeNode35.Name = "Node35";
-            treeNode35.Text = "Billing";
-            treeNode36.Name = "Node36";
-            treeNode36.Text = "Dictionaries";
-            treeNode37.Name = "Node40";
-            treeNode37.Text = "ECG";
-            treeNode38.Name = "Node41";
-            treeNode38.Text = "Quality Control";
-            treeNode39.Name = "Node19";
-            treeNode39.Text = "Miscellaneous";
-            this.MainMenuTree.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode14,
-            treeNode18,
-            treeNode22,
-            treeNode26,
-            treeNode30,
-            treeNode34,
-            treeNode39});
-            this.MainMenuTree.Size = new System.Drawing.Size(189, 661);
-            this.MainMenuTree.TabIndex = 5;
-            this.MainMenuTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.MainMenuTree_AfterSelect);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1354, 36);
+            this.panel1.TabIndex = 2;
             // 
-            // Label1
+            // label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(37, 8);
-            this.Label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(119, 26);
-            this.Label1.TabIndex = 1;
-            this.Label1.Text = "Main Menu";
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(1352, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SOUTH JLA DIAGNOSTICS INC.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Panel2
+            // MenuPanel4
             // 
-            this.Panel2.AutoSize = true;
-            this.Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Controls.Add(this.MainMenuTree);
-            this.Panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel2.Location = new System.Drawing.Point(0, 81);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(191, 699);
-            this.Panel2.TabIndex = 8;
+            this.MenuPanel4.AutoSize = true;
+            this.MenuPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel4.Controls.Add(this.XrayRepsBtn);
+            this.MenuPanel4.Controls.Add(this.XrayEntEdtResBtn);
+            this.MenuPanel4.Controls.Add(this.XrayEntResBtn);
+            this.MenuPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel4.Location = new System.Drawing.Point(0, 1006);
+            this.MenuPanel4.Name = "MenuPanel4";
+            this.MenuPanel4.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel4.TabIndex = 11;
             // 
-            // lbl_title
+            // XrayRepsBtn
             // 
-            this.lbl_title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(492, 28);
-            this.lbl_title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(119, 26);
-            this.lbl_title.TabIndex = 0;
-            this.lbl_title.Text = "Main Menu";
+            this.XrayRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.XrayRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.XrayRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.XrayRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.XrayRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.XrayRepsBtn.Name = "XrayRepsBtn";
+            this.XrayRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.XrayRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.XrayRepsBtn.TabIndex = 10;
+            this.XrayRepsBtn.Text = "Reports";
+            this.XrayRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.XrayRepsBtn.UseVisualStyleBackColor = false;
             // 
-            // Panel1
+            // XrayEntEdtResBtn
             // 
-            this.Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel1.Controls.Add(this.lbl_title);
-            this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel1.Location = new System.Drawing.Point(0, 0);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1115, 81);
-            this.Panel1.TabIndex = 7;
+            this.XrayEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.XrayEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.XrayEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.XrayEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.XrayEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.XrayEntEdtResBtn.Name = "XrayEntEdtResBtn";
+            this.XrayEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.XrayEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.XrayEntEdtResBtn.TabIndex = 9;
+            this.XrayEntEdtResBtn.Text = "Enter / Edit Results";
+            this.XrayEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.XrayEntEdtResBtn.UseVisualStyleBackColor = false;
             // 
-            // Panel5
+            // XrayEntResBtn
             // 
-            this.Panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Panel5.BackColor = System.Drawing.Color.Transparent;
-            this.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel5.Controls.Add(this.Label19);
-            this.Panel5.Controls.Add(this.textBox14);
-            this.Panel5.Controls.Add(this.Label18);
-            this.Panel5.Controls.Add(this.textBox13);
-            this.Panel5.Controls.Add(this.Label17);
-            this.Panel5.Controls.Add(this.Label16);
-            this.Panel5.Controls.Add(this.Label15);
-            this.Panel5.Controls.Add(this.Label14);
-            this.Panel5.Controls.Add(this.Label13);
-            this.Panel5.Controls.Add(this.TextBox12);
-            this.Panel5.Controls.Add(this.TextBox11);
-            this.Panel5.Controls.Add(this.TextBox10);
-            this.Panel5.Controls.Add(this.TextBox9);
-            this.Panel5.Controls.Add(this.Label12);
-            this.Panel5.Controls.Add(this.TextBox8);
-            this.Panel5.Controls.Add(this.ComboBox2);
-            this.Panel5.Controls.Add(this.Label11);
-            this.Panel5.Controls.Add(this.LinkLabel1);
-            this.Panel5.Controls.Add(this.PictureBox1);
-            this.Panel5.Controls.Add(this.ComboBox1);
-            this.Panel5.Controls.Add(this.Label10);
-            this.Panel5.Controls.Add(this.Button1);
-            this.Panel5.Controls.Add(this.TextBox7);
-            this.Panel5.Controls.Add(this.Label9);
-            this.Panel5.Controls.Add(this.Label8);
-            this.Panel5.Controls.Add(this.TextBox6);
-            this.Panel5.Controls.Add(this.TextBox5);
-            this.Panel5.Controls.Add(this.Label7);
-            this.Panel5.Controls.Add(this.TextBox4);
-            this.Panel5.Controls.Add(this.TextBox3);
-            this.Panel5.Controls.Add(this.TextBox2);
-            this.Panel5.Controls.Add(this.TextBox1);
-            this.Panel5.Controls.Add(this.Label6);
-            this.Panel5.Controls.Add(this.Label5);
-            this.Panel5.Controls.Add(this.Label4);
-            this.Panel5.Controls.Add(this.Label3);
-            this.Panel5.Controls.Add(this.Label2);
-            this.Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel5.Location = new System.Drawing.Point(191, 81);
-            this.Panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(924, 699);
-            this.Panel5.TabIndex = 9;
+            this.XrayEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.XrayEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.XrayEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.XrayEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.XrayEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.XrayEntResBtn.Name = "XrayEntResBtn";
+            this.XrayEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.XrayEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.XrayEntResBtn.TabIndex = 8;
+            this.XrayEntResBtn.Text = "Enter Results";
+            this.XrayEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.XrayEntResBtn.UseVisualStyleBackColor = false;
+            // 
+            // MenuPanel5
+            // 
+            this.MenuPanel5.AutoSize = true;
+            this.MenuPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel5.Controls.Add(this.AudiometRepsBtn);
+            this.MenuPanel5.Controls.Add(this.AudiometEntEdtResBtn);
+            this.MenuPanel5.Controls.Add(this.AudiometEntResBtn);
+            this.MenuPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel5.Location = new System.Drawing.Point(0, 1160);
+            this.MenuPanel5.Name = "MenuPanel5";
+            this.MenuPanel5.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel5.TabIndex = 13;
+            // 
+            // AudiometRepsBtn
+            // 
+            this.AudiometRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.AudiometRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AudiometRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AudiometRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.AudiometRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.AudiometRepsBtn.Name = "AudiometRepsBtn";
+            this.AudiometRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.AudiometRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.AudiometRepsBtn.TabIndex = 10;
+            this.AudiometRepsBtn.Text = "Reports";
+            this.AudiometRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AudiometRepsBtn.UseVisualStyleBackColor = false;
+            // 
+            // AudiometEntEdtResBtn
+            // 
+            this.AudiometEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.AudiometEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AudiometEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AudiometEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.AudiometEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.AudiometEntEdtResBtn.Name = "AudiometEntEdtResBtn";
+            this.AudiometEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.AudiometEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.AudiometEntEdtResBtn.TabIndex = 9;
+            this.AudiometEntEdtResBtn.Text = "Enter / Edit Results";
+            this.AudiometEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AudiometEntEdtResBtn.UseVisualStyleBackColor = false;
+            // 
+            // AudiometEntResBtn
+            // 
+            this.AudiometEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.AudiometEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AudiometEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AudiometEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.AudiometEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.AudiometEntResBtn.Name = "AudiometEntResBtn";
+            this.AudiometEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.AudiometEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.AudiometEntResBtn.TabIndex = 8;
+            this.AudiometEntResBtn.Text = "Enter Results";
+            this.AudiometEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AudiometEntResBtn.UseVisualStyleBackColor = false;
+            // 
+            // MenuPanel6
+            // 
+            this.MenuPanel6.AutoSize = true;
+            this.MenuPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel6.Controls.Add(this.LaborRepsBtn);
+            this.MenuPanel6.Controls.Add(this.LaborEntEdtResBtn);
+            this.MenuPanel6.Controls.Add(this.LaborEntResBtn);
+            this.MenuPanel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel6.Location = new System.Drawing.Point(0, 1314);
+            this.MenuPanel6.Name = "MenuPanel6";
+            this.MenuPanel6.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel6.TabIndex = 15;
+            // 
+            // LaborRepsBtn
+            // 
+            this.LaborRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.LaborRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LaborRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LaborRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.LaborRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.LaborRepsBtn.Name = "LaborRepsBtn";
+            this.LaborRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.LaborRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.LaborRepsBtn.TabIndex = 10;
+            this.LaborRepsBtn.Text = "Reports";
+            this.LaborRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LaborRepsBtn.UseVisualStyleBackColor = false;
+            // 
+            // LaborEntEdtResBtn
+            // 
+            this.LaborEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.LaborEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LaborEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LaborEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.LaborEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.LaborEntEdtResBtn.Name = "LaborEntEdtResBtn";
+            this.LaborEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.LaborEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.LaborEntEdtResBtn.TabIndex = 9;
+            this.LaborEntEdtResBtn.Text = "Enter / Edit Results";
+            this.LaborEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LaborEntEdtResBtn.UseVisualStyleBackColor = false;
+            // 
+            // LaborEntResBtn
+            // 
+            this.LaborEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.LaborEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LaborEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LaborEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.LaborEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.LaborEntResBtn.Name = "LaborEntResBtn";
+            this.LaborEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.LaborEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.LaborEntResBtn.TabIndex = 8;
+            this.LaborEntResBtn.Text = "Enter Results";
+            this.LaborEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LaborEntResBtn.UseVisualStyleBackColor = false;
+            // 
+            // MenuPanel7
+            // 
+            this.MenuPanel7.AutoSize = true;
+            this.MenuPanel7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel7.Controls.Add(this.DrugTRepsBtn);
+            this.MenuPanel7.Controls.Add(this.DrugTEntEdtResBtn);
+            this.MenuPanel7.Controls.Add(this.DrugTEntResBtn);
+            this.MenuPanel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel7.Location = new System.Drawing.Point(0, 1468);
+            this.MenuPanel7.Name = "MenuPanel7";
+            this.MenuPanel7.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel7.TabIndex = 17;
+            // 
+            // DrugTRepsBtn
+            // 
+            this.DrugTRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.DrugTRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DrugTRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DrugTRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.DrugTRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.DrugTRepsBtn.Name = "DrugTRepsBtn";
+            this.DrugTRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.DrugTRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.DrugTRepsBtn.TabIndex = 10;
+            this.DrugTRepsBtn.Text = "Reports";
+            this.DrugTRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DrugTRepsBtn.UseVisualStyleBackColor = false;
+            // 
+            // DrugTEntEdtResBtn
+            // 
+            this.DrugTEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.DrugTEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DrugTEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DrugTEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.DrugTEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.DrugTEntEdtResBtn.Name = "DrugTEntEdtResBtn";
+            this.DrugTEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.DrugTEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.DrugTEntEdtResBtn.TabIndex = 9;
+            this.DrugTEntEdtResBtn.Text = "Enter / Edit Results";
+            this.DrugTEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DrugTEntEdtResBtn.UseVisualStyleBackColor = false;
+            // 
+            // DrugTEntResBtn
+            // 
+            this.DrugTEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.DrugTEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DrugTEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DrugTEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.DrugTEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.DrugTEntResBtn.Name = "DrugTEntResBtn";
+            this.DrugTEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.DrugTEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.DrugTEntResBtn.TabIndex = 8;
+            this.DrugTEntResBtn.Text = "Enter Results";
+            this.DrugTEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DrugTEntResBtn.UseVisualStyleBackColor = false;
+            // 
+            // MenuPanel8
+            // 
+            this.MenuPanel8.AutoSize = true;
+            this.MenuPanel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel8.Controls.Add(this.MisceQualBtn);
+            this.MenuPanel8.Controls.Add(this.MisceECGBtn);
+            this.MenuPanel8.Controls.Add(this.MisceDictBtn);
+            this.MenuPanel8.Controls.Add(this.MisceBillBtn);
+            this.MenuPanel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel8.Location = new System.Drawing.Point(0, 1622);
+            this.MenuPanel8.Name = "MenuPanel8";
+            this.MenuPanel8.Size = new System.Drawing.Size(204, 132);
+            this.MenuPanel8.TabIndex = 19;
+            // 
+            // MisceQualBtn
+            // 
+            this.MisceQualBtn.BackColor = System.Drawing.Color.Azure;
+            this.MisceQualBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MisceQualBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MisceQualBtn.ForeColor = System.Drawing.Color.Black;
+            this.MisceQualBtn.Location = new System.Drawing.Point(0, 99);
+            this.MisceQualBtn.Name = "MisceQualBtn";
+            this.MisceQualBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MisceQualBtn.Size = new System.Drawing.Size(204, 33);
+            this.MisceQualBtn.TabIndex = 8;
+            this.MisceQualBtn.Text = "Quality Control";
+            this.MisceQualBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MisceQualBtn.UseVisualStyleBackColor = false;
+            // 
+            // MisceECGBtn
+            // 
+            this.MisceECGBtn.BackColor = System.Drawing.Color.Azure;
+            this.MisceECGBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MisceECGBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MisceECGBtn.ForeColor = System.Drawing.Color.Black;
+            this.MisceECGBtn.Location = new System.Drawing.Point(0, 66);
+            this.MisceECGBtn.Name = "MisceECGBtn";
+            this.MisceECGBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MisceECGBtn.Size = new System.Drawing.Size(204, 33);
+            this.MisceECGBtn.TabIndex = 7;
+            this.MisceECGBtn.Text = "ECG";
+            this.MisceECGBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MisceECGBtn.UseVisualStyleBackColor = false;
+            // 
+            // MisceDictBtn
+            // 
+            this.MisceDictBtn.BackColor = System.Drawing.Color.Azure;
+            this.MisceDictBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MisceDictBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MisceDictBtn.ForeColor = System.Drawing.Color.Black;
+            this.MisceDictBtn.Location = new System.Drawing.Point(0, 33);
+            this.MisceDictBtn.Name = "MisceDictBtn";
+            this.MisceDictBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MisceDictBtn.Size = new System.Drawing.Size(204, 33);
+            this.MisceDictBtn.TabIndex = 6;
+            this.MisceDictBtn.Text = "Dictionaries";
+            this.MisceDictBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MisceDictBtn.UseVisualStyleBackColor = false;
+            this.MisceDictBtn.Click += new System.EventHandler(this.MisceDictBtn_Click);
+            // 
+            // MisceBillBtn
+            // 
+            this.MisceBillBtn.BackColor = System.Drawing.Color.Azure;
+            this.MisceBillBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MisceBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MisceBillBtn.ForeColor = System.Drawing.Color.Black;
+            this.MisceBillBtn.Location = new System.Drawing.Point(0, 0);
+            this.MisceBillBtn.Name = "MisceBillBtn";
+            this.MisceBillBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MisceBillBtn.Size = new System.Drawing.Size(204, 33);
+            this.MisceBillBtn.TabIndex = 5;
+            this.MisceBillBtn.Text = "Billing";
+            this.MisceBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MisceBillBtn.UseVisualStyleBackColor = false;
+            this.MisceBillBtn.Click += new System.EventHandler(this.MisceBillBtn_Click);
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.AutoScroll = true;
+            this.SidePanel.BackColor = System.Drawing.Color.Transparent;
+            this.SidePanel.Controls.Add(this.MenuPanel8);
+            this.SidePanel.Controls.Add(this.MisceBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel7);
+            this.SidePanel.Controls.Add(this.DrugTBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel6);
+            this.SidePanel.Controls.Add(this.LaborBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel5);
+            this.SidePanel.Controls.Add(this.AudiometBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel4);
+            this.SidePanel.Controls.Add(this.XrayBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel3);
+            this.SidePanel.Controls.Add(this.PsychBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel2);
+            this.SidePanel.Controls.Add(this.PhysicalBtn);
+            this.SidePanel.Controls.Add(this.MenuPanel1);
+            this.SidePanel.Controls.Add(this.GeneralClinicBtn);
+            this.SidePanel.Controls.Add(this.TitleSidePanel);
+            this.SidePanel.Controls.Add(this.panel2);
+            this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SidePanel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SidePanel.ForeColor = System.Drawing.Color.White;
+            this.SidePanel.Location = new System.Drawing.Point(0, 36);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(221, 697);
+            this.SidePanel.TabIndex = 1;
+            // 
+            // MisceBtn
+            // 
+            this.MisceBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.MisceBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MisceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MisceBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MisceBtn.ForeColor = System.Drawing.Color.Black;
+            this.MisceBtn.Location = new System.Drawing.Point(0, 1567);
+            this.MisceBtn.Name = "MisceBtn";
+            this.MisceBtn.Size = new System.Drawing.Size(204, 55);
+            this.MisceBtn.TabIndex = 18;
+            this.MisceBtn.Text = "Miscellaneous";
+            this.MisceBtn.UseVisualStyleBackColor = false;
+            this.MisceBtn.Click += new System.EventHandler(this.MisceBtn_Click);
+            // 
+            // DrugTBtn
+            // 
+            this.DrugTBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.DrugTBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DrugTBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DrugTBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrugTBtn.ForeColor = System.Drawing.Color.Black;
+            this.DrugTBtn.Location = new System.Drawing.Point(0, 1413);
+            this.DrugTBtn.Name = "DrugTBtn";
+            this.DrugTBtn.Size = new System.Drawing.Size(204, 55);
+            this.DrugTBtn.TabIndex = 16;
+            this.DrugTBtn.Text = "Drugtest";
+            this.DrugTBtn.UseVisualStyleBackColor = false;
+            this.DrugTBtn.Click += new System.EventHandler(this.DrugTBtn_Click);
+            // 
+            // LaborBtn
+            // 
+            this.LaborBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.LaborBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LaborBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LaborBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LaborBtn.ForeColor = System.Drawing.Color.Black;
+            this.LaborBtn.Location = new System.Drawing.Point(0, 1259);
+            this.LaborBtn.Name = "LaborBtn";
+            this.LaborBtn.Size = new System.Drawing.Size(204, 55);
+            this.LaborBtn.TabIndex = 14;
+            this.LaborBtn.Text = "Laboratory";
+            this.LaborBtn.UseVisualStyleBackColor = false;
+            this.LaborBtn.Click += new System.EventHandler(this.LaborBtn_Click);
+            // 
+            // AudiometBtn
+            // 
+            this.AudiometBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.AudiometBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AudiometBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AudiometBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AudiometBtn.ForeColor = System.Drawing.Color.Black;
+            this.AudiometBtn.Location = new System.Drawing.Point(0, 1105);
+            this.AudiometBtn.Name = "AudiometBtn";
+            this.AudiometBtn.Size = new System.Drawing.Size(204, 55);
+            this.AudiometBtn.TabIndex = 12;
+            this.AudiometBtn.Text = "Audiometry";
+            this.AudiometBtn.UseVisualStyleBackColor = false;
+            this.AudiometBtn.Click += new System.EventHandler(this.AudiometBtn_Click);
+            // 
+            // XrayBtn
+            // 
+            this.XrayBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.XrayBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.XrayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.XrayBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XrayBtn.ForeColor = System.Drawing.Color.Black;
+            this.XrayBtn.Location = new System.Drawing.Point(0, 951);
+            this.XrayBtn.Name = "XrayBtn";
+            this.XrayBtn.Size = new System.Drawing.Size(204, 55);
+            this.XrayBtn.TabIndex = 10;
+            this.XrayBtn.Text = "X-RAY";
+            this.XrayBtn.UseVisualStyleBackColor = false;
+            this.XrayBtn.Click += new System.EventHandler(this.XrayBtn_Click);
+            // 
+            // MenuPanel3
+            // 
+            this.MenuPanel3.AutoSize = true;
+            this.MenuPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel3.Controls.Add(this.PsychRepsBtn);
+            this.MenuPanel3.Controls.Add(this.PsychEntEdtResBtn);
+            this.MenuPanel3.Controls.Add(this.PsychEntResBtn);
+            this.MenuPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel3.Location = new System.Drawing.Point(0, 852);
+            this.MenuPanel3.Name = "MenuPanel3";
+            this.MenuPanel3.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel3.TabIndex = 9;
+            // 
+            // PsychRepsBtn
+            // 
+            this.PsychRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.PsychRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PsychRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PsychRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.PsychRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.PsychRepsBtn.Name = "PsychRepsBtn";
+            this.PsychRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PsychRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.PsychRepsBtn.TabIndex = 10;
+            this.PsychRepsBtn.Text = "Reports";
+            this.PsychRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PsychRepsBtn.UseVisualStyleBackColor = false;
+            // 
+            // PsychEntEdtResBtn
+            // 
+            this.PsychEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.PsychEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PsychEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PsychEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.PsychEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.PsychEntEdtResBtn.Name = "PsychEntEdtResBtn";
+            this.PsychEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PsychEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.PsychEntEdtResBtn.TabIndex = 9;
+            this.PsychEntEdtResBtn.Text = "Enter / Edit Results";
+            this.PsychEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PsychEntEdtResBtn.UseVisualStyleBackColor = false;
+            // 
+            // PsychEntResBtn
+            // 
+            this.PsychEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.PsychEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PsychEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PsychEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.PsychEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.PsychEntResBtn.Name = "PsychEntResBtn";
+            this.PsychEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PsychEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.PsychEntResBtn.TabIndex = 8;
+            this.PsychEntResBtn.Text = "Enter Results";
+            this.PsychEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PsychEntResBtn.UseVisualStyleBackColor = false;
+            // 
+            // PsychBtn
+            // 
+            this.PsychBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.PsychBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PsychBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PsychBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PsychBtn.ForeColor = System.Drawing.Color.Black;
+            this.PsychBtn.Location = new System.Drawing.Point(0, 797);
+            this.PsychBtn.Name = "PsychBtn";
+            this.PsychBtn.Size = new System.Drawing.Size(204, 55);
+            this.PsychBtn.TabIndex = 8;
+            this.PsychBtn.Text = "Psychological Examination";
+            this.PsychBtn.UseVisualStyleBackColor = false;
+            this.PsychBtn.Click += new System.EventHandler(this.PsychBtn_Click);
+            // 
+            // MenuPanel2
+            // 
+            this.MenuPanel2.AutoSize = true;
+            this.MenuPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel2.Controls.Add(this.PhysicalRepsBtn);
+            this.MenuPanel2.Controls.Add(this.PhysicalEntEdtResBtn);
+            this.MenuPanel2.Controls.Add(this.PhysicalEntResBtn);
+            this.MenuPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel2.Location = new System.Drawing.Point(0, 698);
+            this.MenuPanel2.Name = "MenuPanel2";
+            this.MenuPanel2.Size = new System.Drawing.Size(204, 99);
+            this.MenuPanel2.TabIndex = 7;
+            // 
+            // PhysicalRepsBtn
+            // 
+            this.PhysicalRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.PhysicalRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PhysicalRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhysicalRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.PhysicalRepsBtn.Location = new System.Drawing.Point(0, 66);
+            this.PhysicalRepsBtn.Name = "PhysicalRepsBtn";
+            this.PhysicalRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PhysicalRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.PhysicalRepsBtn.TabIndex = 7;
+            this.PhysicalRepsBtn.Text = "Reports";
+            this.PhysicalRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PhysicalRepsBtn.UseVisualStyleBackColor = false;
+            this.PhysicalRepsBtn.Click += new System.EventHandler(this.PhysicalRepsBtn_Click);
+            // 
+            // PhysicalEntEdtResBtn
+            // 
+            this.PhysicalEntEdtResBtn.BackColor = System.Drawing.Color.Azure;
+            this.PhysicalEntEdtResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PhysicalEntEdtResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhysicalEntEdtResBtn.ForeColor = System.Drawing.Color.Black;
+            this.PhysicalEntEdtResBtn.Location = new System.Drawing.Point(0, 33);
+            this.PhysicalEntEdtResBtn.Name = "PhysicalEntEdtResBtn";
+            this.PhysicalEntEdtResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PhysicalEntEdtResBtn.Size = new System.Drawing.Size(204, 33);
+            this.PhysicalEntEdtResBtn.TabIndex = 6;
+            this.PhysicalEntEdtResBtn.Text = "Enter / Edit Results";
+            this.PhysicalEntEdtResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PhysicalEntEdtResBtn.UseVisualStyleBackColor = false;
+            this.PhysicalEntEdtResBtn.Click += new System.EventHandler(this.PhysicalEntEdtResBtn_Click);
+            // 
+            // PhysicalEntResBtn
+            // 
+            this.PhysicalEntResBtn.BackColor = System.Drawing.Color.Azure;
+            this.PhysicalEntResBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PhysicalEntResBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhysicalEntResBtn.ForeColor = System.Drawing.Color.Black;
+            this.PhysicalEntResBtn.Location = new System.Drawing.Point(0, 0);
+            this.PhysicalEntResBtn.Name = "PhysicalEntResBtn";
+            this.PhysicalEntResBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PhysicalEntResBtn.Size = new System.Drawing.Size(204, 33);
+            this.PhysicalEntResBtn.TabIndex = 5;
+            this.PhysicalEntResBtn.Text = "Enter Results";
+            this.PhysicalEntResBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PhysicalEntResBtn.UseVisualStyleBackColor = false;
+            this.PhysicalEntResBtn.Click += new System.EventHandler(this.PhysicalEntResBtn_Click);
+            // 
+            // PhysicalBtn
+            // 
+            this.PhysicalBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.PhysicalBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PhysicalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PhysicalBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhysicalBtn.ForeColor = System.Drawing.Color.Black;
+            this.PhysicalBtn.Location = new System.Drawing.Point(0, 643);
+            this.PhysicalBtn.Name = "PhysicalBtn";
+            this.PhysicalBtn.Size = new System.Drawing.Size(204, 55);
+            this.PhysicalBtn.TabIndex = 6;
+            this.PhysicalBtn.Text = "Physical Examination";
+            this.PhysicalBtn.UseVisualStyleBackColor = false;
+            this.PhysicalBtn.Click += new System.EventHandler(this.PhysicalBtn_Click);
+            // 
+            // MenuPanel1
+            // 
+            this.MenuPanel1.AutoSize = true;
+            this.MenuPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MenuPanel1.Controls.Add(this.SubMenuPanel1);
+            this.MenuPanel1.Controls.Add(this.OffsiteBtn);
+            this.MenuPanel1.Controls.Add(this.GenQualBtn);
+            this.MenuPanel1.Controls.Add(this.GenBillBtn);
+            this.MenuPanel1.Controls.Add(this.GenRepsBtn);
+            this.MenuPanel1.Controls.Add(this.GenEntEdtResuBtn);
+            this.MenuPanel1.Controls.Add(this.GenEditResuBtn);
+            this.MenuPanel1.Controls.Add(this.GenEnterResuBtn);
+            this.MenuPanel1.Controls.Add(this.GenEntEdtReqBtn);
+            this.MenuPanel1.Controls.Add(this.GenEditReqBtn);
+            this.MenuPanel1.Controls.Add(this.GenEnterReqBtn);
+            this.MenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuPanel1.Location = new System.Drawing.Point(0, 226);
+            this.MenuPanel1.Name = "MenuPanel1";
+            this.MenuPanel1.Size = new System.Drawing.Size(204, 417);
+            this.MenuPanel1.TabIndex = 5;
+            // 
+            // SubMenuPanel1
+            // 
+            this.SubMenuPanel1.Controls.Add(this.OffsiteReps);
+            this.SubMenuPanel1.Controls.Add(this.OffsiteEntEdtReq);
+            this.SubMenuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SubMenuPanel1.Location = new System.Drawing.Point(0, 352);
+            this.SubMenuPanel1.Name = "SubMenuPanel1";
+            this.SubMenuPanel1.Size = new System.Drawing.Size(204, 65);
+            this.SubMenuPanel1.TabIndex = 67;
+            // 
+            // OffsiteReps
+            // 
+            this.OffsiteReps.Dock = System.Windows.Forms.DockStyle.Top;
+            this.OffsiteReps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OffsiteReps.ForeColor = System.Drawing.Color.Black;
+            this.OffsiteReps.Location = new System.Drawing.Point(0, 32);
+            this.OffsiteReps.Name = "OffsiteReps";
+            this.OffsiteReps.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.OffsiteReps.Size = new System.Drawing.Size(204, 32);
+            this.OffsiteReps.TabIndex = 1;
+            this.OffsiteReps.Text = "Reports";
+            this.OffsiteReps.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OffsiteReps.UseVisualStyleBackColor = true;
+            this.OffsiteReps.Click += new System.EventHandler(this.OffsiteReps_Click);
+            // 
+            // OffsiteEntEdtReq
+            // 
+            this.OffsiteEntEdtReq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.OffsiteEntEdtReq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OffsiteEntEdtReq.ForeColor = System.Drawing.Color.Black;
+            this.OffsiteEntEdtReq.Location = new System.Drawing.Point(0, 0);
+            this.OffsiteEntEdtReq.Name = "OffsiteEntEdtReq";
+            this.OffsiteEntEdtReq.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.OffsiteEntEdtReq.Size = new System.Drawing.Size(204, 32);
+            this.OffsiteEntEdtReq.TabIndex = 0;
+            this.OffsiteEntEdtReq.Text = "Enter/Edit Requisition";
+            this.OffsiteEntEdtReq.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OffsiteEntEdtReq.UseVisualStyleBackColor = true;
+            this.OffsiteEntEdtReq.Click += new System.EventHandler(this.OffsiteEntEdtReq_Click);
+            // 
+            // OffsiteBtn
+            // 
+            this.OffsiteBtn.BackColor = System.Drawing.Color.LightBlue;
+            this.OffsiteBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.OffsiteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OffsiteBtn.ForeColor = System.Drawing.Color.Black;
+            this.OffsiteBtn.Location = new System.Drawing.Point(0, 297);
+            this.OffsiteBtn.Name = "OffsiteBtn";
+            this.OffsiteBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.OffsiteBtn.Size = new System.Drawing.Size(204, 55);
+            this.OffsiteBtn.TabIndex = 67;
+            this.OffsiteBtn.Text = "For Offsite";
+            this.OffsiteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OffsiteBtn.UseVisualStyleBackColor = false;
+            this.OffsiteBtn.Click += new System.EventHandler(this.OffsiteBtn_Click);
+            // 
+            // GenQualBtn
+            // 
+            this.GenQualBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenQualBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenQualBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenQualBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenQualBtn.Location = new System.Drawing.Point(0, 264);
+            this.GenQualBtn.Name = "GenQualBtn";
+            this.GenQualBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenQualBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenQualBtn.TabIndex = 13;
+            this.GenQualBtn.Text = "Quality Control";
+            this.GenQualBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenQualBtn.UseVisualStyleBackColor = false;
+            this.GenQualBtn.Click += new System.EventHandler(this.GenQualBtn_Click);
+            // 
+            // GenBillBtn
+            // 
+            this.GenBillBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenBillBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenBillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenBillBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenBillBtn.Location = new System.Drawing.Point(0, 231);
+            this.GenBillBtn.Name = "GenBillBtn";
+            this.GenBillBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenBillBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenBillBtn.TabIndex = 12;
+            this.GenBillBtn.Text = "Billing";
+            this.GenBillBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenBillBtn.UseVisualStyleBackColor = false;
+            this.GenBillBtn.Click += new System.EventHandler(this.GenBillBtn_Click);
+            // 
+            // GenRepsBtn
+            // 
+            this.GenRepsBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenRepsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenRepsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenRepsBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenRepsBtn.Location = new System.Drawing.Point(0, 198);
+            this.GenRepsBtn.Name = "GenRepsBtn";
+            this.GenRepsBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenRepsBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenRepsBtn.TabIndex = 11;
+            this.GenRepsBtn.Text = "Reports";
+            this.GenRepsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenRepsBtn.UseVisualStyleBackColor = false;
+            this.GenRepsBtn.Click += new System.EventHandler(this.GenRepsBtn_Click);
+            // 
+            // GenEntEdtResuBtn
+            // 
+            this.GenEntEdtResuBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEntEdtResuBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEntEdtResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEntEdtResuBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEntEdtResuBtn.Location = new System.Drawing.Point(0, 165);
+            this.GenEntEdtResuBtn.Name = "GenEntEdtResuBtn";
+            this.GenEntEdtResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEntEdtResuBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEntEdtResuBtn.TabIndex = 10;
+            this.GenEntEdtResuBtn.Text = "Enter / Edit Results";
+            this.GenEntEdtResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEntEdtResuBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtResuBtn.Click += new System.EventHandler(this.GenEntEdtResuBtn_Click);
+            // 
+            // GenEditResuBtn
+            // 
+            this.GenEditResuBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEditResuBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEditResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEditResuBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEditResuBtn.Location = new System.Drawing.Point(0, 132);
+            this.GenEditResuBtn.Name = "GenEditResuBtn";
+            this.GenEditResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEditResuBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEditResuBtn.TabIndex = 9;
+            this.GenEditResuBtn.Text = "Edit Results";
+            this.GenEditResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEditResuBtn.UseVisualStyleBackColor = false;
+            this.GenEditResuBtn.Click += new System.EventHandler(this.GenEditResuBtn_Click);
+            // 
+            // GenEnterResuBtn
+            // 
+            this.GenEnterResuBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEnterResuBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEnterResuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEnterResuBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEnterResuBtn.Location = new System.Drawing.Point(0, 99);
+            this.GenEnterResuBtn.Name = "GenEnterResuBtn";
+            this.GenEnterResuBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEnterResuBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEnterResuBtn.TabIndex = 8;
+            this.GenEnterResuBtn.Text = "Enter Results";
+            this.GenEnterResuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEnterResuBtn.UseVisualStyleBackColor = false;
+            this.GenEnterResuBtn.Click += new System.EventHandler(this.GenEnterResuBtn_Click);
+            // 
+            // GenEntEdtReqBtn
+            // 
+            this.GenEntEdtReqBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEntEdtReqBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEntEdtReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEntEdtReqBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEntEdtReqBtn.Location = new System.Drawing.Point(0, 66);
+            this.GenEntEdtReqBtn.Name = "GenEntEdtReqBtn";
+            this.GenEntEdtReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEntEdtReqBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEntEdtReqBtn.TabIndex = 7;
+            this.GenEntEdtReqBtn.Text = "Enter / Edit Requisition";
+            this.GenEntEdtReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEntEdtReqBtn.UseVisualStyleBackColor = false;
+            this.GenEntEdtReqBtn.Click += new System.EventHandler(this.GenEntEdtReqBtn_Click);
+            // 
+            // GenEditReqBtn
+            // 
+            this.GenEditReqBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEditReqBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEditReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEditReqBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEditReqBtn.Location = new System.Drawing.Point(0, 33);
+            this.GenEditReqBtn.Name = "GenEditReqBtn";
+            this.GenEditReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEditReqBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEditReqBtn.TabIndex = 6;
+            this.GenEditReqBtn.Text = "Edit Requisition";
+            this.GenEditReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEditReqBtn.UseVisualStyleBackColor = false;
+            this.GenEditReqBtn.Click += new System.EventHandler(this.GenEditReqBtn_Click);
+            // 
+            // GenEnterReqBtn
+            // 
+            this.GenEnterReqBtn.BackColor = System.Drawing.Color.Azure;
+            this.GenEnterReqBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GenEnterReqBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenEnterReqBtn.ForeColor = System.Drawing.Color.Black;
+            this.GenEnterReqBtn.Location = new System.Drawing.Point(0, 0);
+            this.GenEnterReqBtn.Name = "GenEnterReqBtn";
+            this.GenEnterReqBtn.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.GenEnterReqBtn.Size = new System.Drawing.Size(204, 33);
+            this.GenEnterReqBtn.TabIndex = 5;
+            this.GenEnterReqBtn.Text = "Enter Requisition";
+            this.GenEnterReqBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GenEnterReqBtn.UseVisualStyleBackColor = false;
+            this.GenEnterReqBtn.Click += new System.EventHandler(this.GenEnterReqBtn_Click);
+            // 
+            // GeneralClinicBtn
+            // 
+            this.GeneralClinicBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.GeneralClinicBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GeneralClinicBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GeneralClinicBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GeneralClinicBtn.ForeColor = System.Drawing.Color.Black;
+            this.GeneralClinicBtn.Location = new System.Drawing.Point(0, 171);
+            this.GeneralClinicBtn.Name = "GeneralClinicBtn";
+            this.GeneralClinicBtn.Size = new System.Drawing.Size(204, 55);
+            this.GeneralClinicBtn.TabIndex = 4;
+            this.GeneralClinicBtn.Text = "General Clinic";
+            this.GeneralClinicBtn.UseVisualStyleBackColor = false;
+            this.GeneralClinicBtn.Click += new System.EventHandler(this.GeneralClinicBtn_Click);
+            // 
+            // TitleSidePanel
+            // 
+            this.TitleSidePanel.BackColor = System.Drawing.Color.Aquamarine;
+            this.TitleSidePanel.Controls.Add(this.MainMenuLabel);
+            this.TitleSidePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TitleSidePanel.ForeColor = System.Drawing.Color.Black;
+            this.TitleSidePanel.Location = new System.Drawing.Point(0, 120);
+            this.TitleSidePanel.Name = "TitleSidePanel";
+            this.TitleSidePanel.Size = new System.Drawing.Size(204, 51);
+            this.TitleSidePanel.TabIndex = 3;
+            // 
+            // MainMenuLabel
+            // 
+            this.MainMenuLabel.BackColor = System.Drawing.Color.Azure;
+            this.MainMenuLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainMenuLabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMenuLabel.Location = new System.Drawing.Point(0, 0);
+            this.MainMenuLabel.Name = "MainMenuLabel";
+            this.MainMenuLabel.Size = new System.Drawing.Size(204, 51);
+            this.MainMenuLabel.TabIndex = 1;
+            this.MainMenuLabel.Text = "Main Menu";
+            this.MainMenuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(204, 120);
+            this.panel2.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(204, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ContentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ContentPanel.Controls.Add(this.ChildContentPanel);
+            this.ContentPanel.Controls.Add(this.ContentTitlePanel);
+            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentPanel.Location = new System.Drawing.Point(221, 36);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ContentPanel.Name = "ContentPanel";
+            this.ContentPanel.Size = new System.Drawing.Size(1133, 697);
+            this.ContentPanel.TabIndex = 10;
+            // 
+            // ChildContentPanel
+            // 
+            this.ChildContentPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ChildContentPanel.Controls.Add(this.GenClinicPanel);
+            this.ChildContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ChildContentPanel.Location = new System.Drawing.Point(0, 60);
+            this.ChildContentPanel.Name = "ChildContentPanel";
+            this.ChildContentPanel.Size = new System.Drawing.Size(1133, 637);
+            this.ChildContentPanel.TabIndex = 39;
+            // 
+            // GenClinicPanel
+            // 
+            this.GenClinicPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.GenClinicPanel.Controls.Add(this.MajorelPanel);
+            this.GenClinicPanel.Controls.Add(this.PatientInfoPanel);
+            this.GenClinicPanel.Controls.Add(this.PatientIDPanel);
+            this.GenClinicPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GenClinicPanel.Location = new System.Drawing.Point(0, 0);
+            this.GenClinicPanel.Name = "GenClinicPanel";
+            this.GenClinicPanel.Size = new System.Drawing.Size(1133, 637);
+            this.GenClinicPanel.TabIndex = 38;
+            // 
+            // MajorelPanel
+            // 
+            this.MajorelPanel.AutoScroll = true;
+            this.MajorelPanel.Controls.Add(this.xrayStatusBox);
+            this.MajorelPanel.Controls.Add(this.cbcStatusBox);
+            this.MajorelPanel.Controls.Add(this.urineStoolStatusBox);
+            this.MajorelPanel.Controls.Add(this.medStatusBox);
+            this.MajorelPanel.Controls.Add(this.ecgStatusBox);
+            this.MajorelPanel.Controls.Add(this.fbsStatusBox);
+            this.MajorelPanel.Controls.Add(this.papsStatusBox);
+            this.MajorelPanel.Controls.Add(this.PAPSClickedLabel);
+            this.MajorelPanel.Controls.Add(this.FBSClickableLabel);
+            this.MajorelPanel.Controls.Add(this.ECGClickableLabel);
+            this.MajorelPanel.Controls.Add(this.XrayClickableLabel);
+            this.MajorelPanel.Controls.Add(this.MedExClickableLabel);
+            this.MajorelPanel.Controls.Add(this.UriClickableLabel);
+            this.MajorelPanel.Controls.Add(this.CBCClickableLabel);
+            this.MajorelPanel.Controls.Add(this.Label19);
+            this.MajorelPanel.Controls.Add(this.Label18);
+            this.MajorelPanel.Controls.Add(this.Label17);
+            this.MajorelPanel.Controls.Add(this.Label16);
+            this.MajorelPanel.Controls.Add(this.Label15);
+            this.MajorelPanel.Controls.Add(this.Label14);
+            this.MajorelPanel.Controls.Add(this.Label13);
+            this.MajorelPanel.Controls.Add(this.Label12);
+            this.MajorelPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MajorelPanel.Location = new System.Drawing.Point(0, 321);
+            this.MajorelPanel.Name = "MajorelPanel";
+            this.MajorelPanel.Size = new System.Drawing.Size(1133, 316);
+            this.MajorelPanel.TabIndex = 82;
+            // 
+            // xrayStatusBox
+            // 
+            this.xrayStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.xrayStatusBox.FormattingEnabled = true;
+            this.xrayStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.xrayStatusBox.Location = new System.Drawing.Point(448, 190);
+            this.xrayStatusBox.Name = "xrayStatusBox";
+            this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.xrayStatusBox.TabIndex = 73;
+            // 
+            // cbcStatusBox
+            // 
+            this.cbcStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.cbcStatusBox.FormattingEnabled = true;
+            this.cbcStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.cbcStatusBox.Location = new System.Drawing.Point(448, 62);
+            this.cbcStatusBox.Name = "cbcStatusBox";
+            this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.cbcStatusBox.TabIndex = 67;
+            // 
+            // urineStoolStatusBox
+            // 
+            this.urineStoolStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.urineStoolStatusBox.FormattingEnabled = true;
+            this.urineStoolStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.urineStoolStatusBox.Location = new System.Drawing.Point(448, 106);
+            this.urineStoolStatusBox.Name = "urineStoolStatusBox";
+            this.urineStoolStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.urineStoolStatusBox.TabIndex = 68;
+            // 
+            // medStatusBox
+            // 
+            this.medStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.medStatusBox.FormattingEnabled = true;
+            this.medStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.medStatusBox.Location = new System.Drawing.Point(448, 150);
+            this.medStatusBox.Name = "medStatusBox";
+            this.medStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.medStatusBox.TabIndex = 69;
+            // 
+            // ecgStatusBox
+            // 
+            this.ecgStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ecgStatusBox.FormattingEnabled = true;
+            this.ecgStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.ecgStatusBox.Location = new System.Drawing.Point(448, 230);
+            this.ecgStatusBox.Name = "ecgStatusBox";
+            this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.ecgStatusBox.TabIndex = 72;
+            // 
+            // fbsStatusBox
+            // 
+            this.fbsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.fbsStatusBox.FormattingEnabled = true;
+            this.fbsStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.fbsStatusBox.Location = new System.Drawing.Point(448, 273);
+            this.fbsStatusBox.Name = "fbsStatusBox";
+            this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.fbsStatusBox.TabIndex = 71;
+            // 
+            // papsStatusBox
+            // 
+            this.papsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.papsStatusBox.FormattingEnabled = true;
+            this.papsStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.papsStatusBox.Location = new System.Drawing.Point(448, 318);
+            this.papsStatusBox.Name = "papsStatusBox";
+            this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.papsStatusBox.TabIndex = 70;
+            // 
+            // PAPSClickedLabel
+            // 
+            this.PAPSClickedLabel.AutoSize = true;
+            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(546, 305);
+            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
+            this.PAPSClickedLabel.Size = new System.Drawing.Size(37, 13);
+            this.PAPSClickedLabel.TabIndex = 66;
+            this.PAPSClickedLabel.Text = "PAP\'S";
+            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
+            // 
+            // FBSClickableLabel
+            // 
+            this.FBSClickableLabel.AutoSize = true;
+            this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBSClickableLabel.Location = new System.Drawing.Point(546, 260);
+            this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FBSClickableLabel.Name = "FBSClickableLabel";
+            this.FBSClickableLabel.Size = new System.Drawing.Size(85, 13);
+            this.FBSClickableLabel.TabIndex = 65;
+            this.FBSClickableLabel.Text = "FBS, Cholesterol";
+            this.FBSClickableLabel.Click += new System.EventHandler(this.FBSClickableLabel_Click);
+            // 
+            // ECGClickableLabel
+            // 
+            this.ECGClickableLabel.AutoSize = true;
+            this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ECGClickableLabel.Location = new System.Drawing.Point(546, 217);
+            this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ECGClickableLabel.Name = "ECGClickableLabel";
+            this.ECGClickableLabel.Size = new System.Drawing.Size(29, 13);
+            this.ECGClickableLabel.TabIndex = 64;
+            this.ECGClickableLabel.Text = "ECG";
+            this.ECGClickableLabel.Click += new System.EventHandler(this.ECGClickableLabel_Click);
+            // 
+            // XrayClickableLabel
+            // 
+            this.XrayClickableLabel.AutoSize = true;
+            this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XrayClickableLabel.Location = new System.Drawing.Point(548, 177);
+            this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.XrayClickableLabel.Name = "XrayClickableLabel";
+            this.XrayClickableLabel.Size = new System.Drawing.Size(36, 13);
+            this.XrayClickableLabel.TabIndex = 63;
+            this.XrayClickableLabel.Text = "X-Ray";
+            this.XrayClickableLabel.Click += new System.EventHandler(this.XrayClickableLabel_Click);
+            // 
+            // MedExClickableLabel
+            // 
+            this.MedExClickableLabel.AutoSize = true;
+            this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedExClickableLabel.Location = new System.Drawing.Point(548, 137);
+            this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MedExClickableLabel.Name = "MedExClickableLabel";
+            this.MedExClickableLabel.Size = new System.Drawing.Size(104, 13);
+            this.MedExClickableLabel.TabIndex = 62;
+            this.MedExClickableLabel.Text = "Medical Examination";
+            this.MedExClickableLabel.Click += new System.EventHandler(this.MedExClickableLabel_Click);
+            // 
+            // UriClickableLabel
+            // 
+            this.UriClickableLabel.AutoSize = true;
+            this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UriClickableLabel.Location = new System.Drawing.Point(546, 93);
+            this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UriClickableLabel.Name = "UriClickableLabel";
+            this.UriClickableLabel.Size = new System.Drawing.Size(128, 13);
+            this.UriClickableLabel.TabIndex = 61;
+            this.UriClickableLabel.Text = "Urinalysis and Stool Exam";
+            this.UriClickableLabel.Click += new System.EventHandler(this.UriClickableLabel_Click);
+            // 
+            // CBCClickableLabel
+            // 
+            this.CBCClickableLabel.AutoSize = true;
+            this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBCClickableLabel.Location = new System.Drawing.Point(546, 49);
+            this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CBCClickableLabel.Name = "CBCClickableLabel";
+            this.CBCClickableLabel.Size = new System.Drawing.Size(28, 13);
+            this.CBCClickableLabel.TabIndex = 60;
+            this.CBCClickableLabel.Text = "CBC";
+            this.CBCClickableLabel.Click += new System.EventHandler(this.CBCClickableLabel_Click);
             // 
             // Label19
             // 
             this.Label19.AutoSize = true;
             this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label19.Location = new System.Drawing.Point(282, 565);
+            this.Label19.Location = new System.Drawing.Point(546, 307);
             this.Label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label19.Name = "Label19";
             this.Label19.Size = new System.Drawing.Size(478, 13);
-            this.Label19.TabIndex = 36;
+            this.Label19.TabIndex = 59;
             this.Label19.Text = "                                                                                 " +
     "                                                                            ";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(215, 561);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(42, 20);
-            this.textBox14.TabIndex = 35;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label18
             // 
             this.Label18.AutoSize = true;
             this.Label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label18.Location = new System.Drawing.Point(282, 519);
+            this.Label18.Location = new System.Drawing.Point(546, 261);
             this.Label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label18.Name = "Label18";
             this.Label18.Size = new System.Drawing.Size(478, 13);
-            this.Label18.TabIndex = 34;
+            this.Label18.TabIndex = 57;
             this.Label18.Text = "                                                                                 " +
     "                                                                            ";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(215, 515);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(42, 20);
-            this.textBox13.TabIndex = 33;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label17
             // 
             this.Label17.AutoSize = true;
             this.Label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label17.Location = new System.Drawing.Point(282, 476);
+            this.Label17.Location = new System.Drawing.Point(546, 218);
             this.Label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label17.Name = "Label17";
             this.Label17.Size = new System.Drawing.Size(478, 13);
-            this.Label17.TabIndex = 31;
+            this.Label17.TabIndex = 55;
             this.Label17.Text = "                                                                                 " +
     "                                                                            ";
             // 
@@ -425,11 +1331,11 @@
             // 
             this.Label16.AutoSize = true;
             this.Label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label16.Location = new System.Drawing.Point(282, 436);
+            this.Label16.Location = new System.Drawing.Point(546, 178);
             this.Label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label16.Name = "Label16";
             this.Label16.Size = new System.Drawing.Size(478, 13);
-            this.Label16.TabIndex = 30;
+            this.Label16.TabIndex = 54;
             this.Label16.Text = "                                                                                 " +
     "                                                                            ";
             // 
@@ -438,359 +1344,609 @@
             this.Label15.AutoSize = true;
             this.Label15.BackColor = System.Drawing.Color.Transparent;
             this.Label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label15.Location = new System.Drawing.Point(282, 396);
+            this.Label15.Location = new System.Drawing.Point(546, 138);
             this.Label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(477, 13);
-            this.Label15.TabIndex = 29;
-            this.Label15.Text = "Stool Exam                                                                       " +
-    "                                                                    ";
-            this.Label15.Click += new System.EventHandler(this.Label15_Click);
+            this.Label15.Size = new System.Drawing.Size(478, 13);
+            this.Label15.TabIndex = 53;
+            this.Label15.Text = "                                                                                 " +
+    "                                                                            ";
             // 
             // Label14
             // 
             this.Label14.AutoSize = true;
             this.Label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label14.Location = new System.Drawing.Point(282, 353);
+            this.Label14.Location = new System.Drawing.Point(546, 95);
             this.Label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(477, 13);
-            this.Label14.TabIndex = 28;
-            this.Label14.Text = "Urinalysis                                                                       " +
-    "                                                                       ";
-            this.Label14.Click += new System.EventHandler(this.Label14_Click);
+            this.Label14.Size = new System.Drawing.Size(475, 13);
+            this.Label14.TabIndex = 52;
+            this.Label14.Text = "                                                                                 " +
+    "                                                                           ";
             // 
             // Label13
             // 
             this.Label13.AutoSize = true;
             this.Label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label13.Location = new System.Drawing.Point(282, 308);
+            this.Label13.Location = new System.Drawing.Point(546, 50);
             this.Label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(475, 13);
-            this.Label13.TabIndex = 27;
-            this.Label13.Text = "CBC                                                                              " +
-    "                                                                       ";
-            this.Label13.Click += new System.EventHandler(this.Label13_Click);
-            // 
-            // TextBox12
-            // 
-            this.TextBox12.Location = new System.Drawing.Point(215, 472);
-            this.TextBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox12.Name = "TextBox12";
-            this.TextBox12.Size = new System.Drawing.Size(42, 20);
-            this.TextBox12.TabIndex = 26;
-            this.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox11
-            // 
-            this.TextBox11.Location = new System.Drawing.Point(215, 392);
-            this.TextBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox11.Name = "TextBox11";
-            this.TextBox11.Size = new System.Drawing.Size(42, 20);
-            this.TextBox11.TabIndex = 25;
-            this.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox10
-            // 
-            this.TextBox10.Location = new System.Drawing.Point(215, 432);
-            this.TextBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox10.Name = "TextBox10";
-            this.TextBox10.Size = new System.Drawing.Size(42, 20);
-            this.TextBox10.TabIndex = 25;
-            this.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TextBox9
-            // 
-            this.TextBox9.Location = new System.Drawing.Point(215, 350);
-            this.TextBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox9.Name = "TextBox9";
-            this.TextBox9.Size = new System.Drawing.Size(42, 20);
-            this.TextBox9.TabIndex = 24;
-            this.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Label13.TabIndex = 51;
+            this.Label13.Text = "                                                                                 " +
+    "                                                                           ";
             // 
             // Label12
             // 
             this.Label12.AutoSize = true;
             this.Label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label12.Location = new System.Drawing.Point(211, 278);
+            this.Label12.Location = new System.Drawing.Point(475, 20);
             this.Label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(43, 13);
-            this.Label12.TabIndex = 23;
+            this.Label12.TabIndex = 46;
             this.Label12.Text = "Status";
             // 
-            // TextBox8
+            // PatientInfoPanel
             // 
-            this.TextBox8.Location = new System.Drawing.Point(215, 306);
-            this.TextBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Size = new System.Drawing.Size(42, 20);
-            this.TextBox8.TabIndex = 22;
-            this.TextBox8.Text = "ENT";
-            this.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PatientInfoPanel.Controls.Add(this.tableLayoutPnl);
+            this.PatientInfoPanel.Controls.Add(this.tableLayoutPanel1);
+            this.PatientInfoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PatientInfoPanel.Location = new System.Drawing.Point(0, 60);
+            this.PatientInfoPanel.Name = "PatientInfoPanel";
+            this.PatientInfoPanel.Size = new System.Drawing.Size(1133, 261);
+            this.PatientInfoPanel.TabIndex = 83;
             // 
-            // ComboBox2
+            // tableLayoutPnl
             // 
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(561, 135);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox2.TabIndex = 21;
+            this.tableLayoutPnl.ColumnCount = 7;
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.081309F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.88279F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.3622F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.205129F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.07692F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.29349F));
+            this.tableLayoutPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
+            this.tableLayoutPnl.Controls.Add(this.civilBox, 2, 4);
+            this.tableLayoutPnl.Controls.Add(this.label21, 1, 4);
+            this.tableLayoutPnl.Controls.Add(this.label20, 1, 3);
+            this.tableLayoutPnl.Controls.Add(this.genderBox, 2, 3);
+            this.tableLayoutPnl.Controls.Add(this.ageBox, 2, 2);
+            this.tableLayoutPnl.Controls.Add(this.Label7, 1, 2);
+            this.tableLayoutPnl.Controls.Add(this.Label3, 1, 1);
+            this.tableLayoutPnl.Controls.Add(this.tableLayoutPanel2, 2, 1);
+            this.tableLayoutPnl.Controls.Add(this.dateFiledBox, 5, 1);
+            this.tableLayoutPnl.Controls.Add(this.packageBox, 5, 2);
+            this.tableLayoutPnl.Controls.Add(this.accBox, 5, 4);
+            this.tableLayoutPnl.Controls.Add(this.Label9, 4, 1);
+            this.tableLayoutPnl.Controls.Add(this.Label10, 4, 2);
+            this.tableLayoutPnl.Controls.Add(this.Label11, 4, 3);
+            this.tableLayoutPnl.Controls.Add(this.label22, 4, 4);
+            this.tableLayoutPnl.Controls.Add(this.addressBox, 2, 6);
+            this.tableLayoutPnl.Controls.Add(this.Label8, 1, 6);
+            this.tableLayoutPnl.Controls.Add(this.submit, 5, 6);
+            this.tableLayoutPnl.Controls.Add(this.paymentStatusBox, 5, 5);
+            this.tableLayoutPnl.Controls.Add(this.bdayBox, 2, 5);
+            this.tableLayoutPnl.Controls.Add(this.label24, 1, 5);
+            this.tableLayoutPnl.Controls.Add(this.label25, 4, 5);
+            this.tableLayoutPnl.Controls.Add(this.companyBox, 5, 3);
+            this.tableLayoutPnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPnl.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPnl.Name = "tableLayoutPnl";
+            this.tableLayoutPnl.RowCount = 7;
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.91045F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.08955F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPnl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85F));
+            this.tableLayoutPnl.Size = new System.Drawing.Size(902, 261);
+            this.tableLayoutPnl.TabIndex = 87;
             // 
-            // Label11
+            // civilBox
             // 
-            this.Label11.AutoSize = true;
-            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(476, 135);
-            this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(58, 13);
-            this.Label11.TabIndex = 20;
-            this.Label11.Text = "Company";
+            this.civilBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.civilBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.civilBox.FormattingEnabled = true;
+            this.civilBox.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Widowed",
+            "Divorced",
+            "Separated"});
+            this.civilBox.Location = new System.Drawing.Point(155, 124);
+            this.civilBox.Name = "civilBox";
+            this.civilBox.Size = new System.Drawing.Size(163, 21);
+            this.civilBox.TabIndex = 92;
             // 
-            // LinkLabel1
+            // label21
             // 
-            this.LinkLabel1.AutoSize = true;
-            this.LinkLabel1.Location = new System.Drawing.Point(763, 156);
-            this.LinkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LinkLabel1.Name = "LinkLabel1";
-            this.LinkLabel1.Size = new System.Drawing.Size(72, 13);
-            this.LinkLabel1.TabIndex = 19;
-            this.LinkLabel1.TabStop = true;
-            this.LinkLabel1.Text = "Upload Photo";
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(65, 128);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(71, 13);
+            this.label21.TabIndex = 91;
+            this.label21.Text = "Civil Status";
             // 
-            // PictureBox1
+            // label20
             // 
-            this.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PictureBox1.Location = new System.Drawing.Point(747, 46);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(102, 108);
-            this.PictureBox1.TabIndex = 18;
-            this.PictureBox1.TabStop = false;
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(65, 100);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.TabIndex = 94;
+            this.label20.Text = "Gender";
             // 
-            // ComboBox1
+            // genderBox
             // 
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(561, 94);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(140, 21);
-            this.ComboBox1.TabIndex = 17;
+            this.genderBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.genderBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderBox.FormattingEnabled = true;
+            this.genderBox.Items.AddRange(new object[] {
+            "MALE",
+            "FEMALE"});
+            this.genderBox.Location = new System.Drawing.Point(155, 96);
+            this.genderBox.Name = "genderBox";
+            this.genderBox.Size = new System.Drawing.Size(163, 21);
+            this.genderBox.TabIndex = 93;
             // 
-            // Label10
+            // ageBox
             // 
-            this.Label10.AutoSize = true;
-            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(476, 94);
-            this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(57, 13);
-            this.Label10.TabIndex = 16;
-            this.Label10.Text = "Package";
-            // 
-            // Button1
-            // 
-            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button1.Location = new System.Drawing.Point(341, 41);
-            this.Button1.Margin = new System.Windows.Forms.Padding(2);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(66, 30);
-            this.Button1.TabIndex = 15;
-            this.Button1.Text = "Search";
-            this.Button1.UseVisualStyleBackColor = true;
-            // 
-            // TextBox7
-            // 
-            this.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox7.Enabled = false;
-            this.TextBox7.Location = new System.Drawing.Point(603, 47);
-            this.TextBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new System.Drawing.Size(97, 20);
-            this.TextBox7.TabIndex = 14;
-            // 
-            // Label9
-            // 
-            this.Label9.AutoSize = true;
-            this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(559, 49);
-            this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(34, 13);
-            this.Label9.TabIndex = 13;
-            this.Label9.Text = "Date";
-            // 
-            // Label8
-            // 
-            this.Label8.AutoSize = true;
-            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(202, 156);
-            this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(52, 13);
-            this.Label8.TabIndex = 12;
-            this.Label8.Text = "Address";
-            // 
-            // TextBox6
-            // 
-            this.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
-            this.TextBox6.Location = new System.Drawing.Point(122, 155);
-            this.TextBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox6.MaxLength = 3;
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new System.Drawing.Size(58, 20);
-            this.TextBox6.TabIndex = 11;
-            // 
-            // ofwBindingSource
-            // 
-            this.ofwBindingSource.DataMember = "ofw";
-            this.ofwBindingSource.DataSource = this.databaseDataSet;
-            this.ofwBindingSource.CurrentChanged += new System.EventHandler(this.ofwBindingSource_CurrentChanged);
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // TextBox5
-            // 
-            this.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "address", true));
-            this.TextBox5.Location = new System.Drawing.Point(262, 156);
-            this.TextBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox5.Multiline = true;
-            this.TextBox5.Name = "TextBox5";
-            this.TextBox5.Size = new System.Drawing.Size(146, 54);
-            this.TextBox5.TabIndex = 10;
+            this.ageBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ageBox.Location = new System.Drawing.Point(154, 70);
+            this.ageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ageBox.MaxLength = 3;
+            this.ageBox.Name = "ageBox";
+            this.ageBox.Size = new System.Drawing.Size(58, 20);
+            this.ageBox.TabIndex = 96;
             // 
             // Label7
             // 
+            this.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(80, 156);
+            this.Label7.Location = new System.Drawing.Point(65, 73);
             this.Label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(29, 13);
-            this.Label7.TabIndex = 9;
+            this.Label7.TabIndex = 95;
             this.Label7.Text = "Age";
             // 
-            // TextBox4
+            // Label3
             // 
-            this.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox4.Location = new System.Drawing.Point(140, 48);
-            this.TextBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(195, 20);
-            this.TextBox4.TabIndex = 8;
+            this.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Label3.AutoSize = true;
+            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.Location = new System.Drawing.Point(65, 33);
+            this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(39, 13);
+            this.Label3.TabIndex = 99;
+            this.Label3.Text = "Name";
             // 
-            // TextBox3
+            // tableLayoutPanel2
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "age", true));
-            this.TextBox3.Location = new System.Drawing.Point(361, 100);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(47, 20);
-            this.TextBox3.TabIndex = 7;
-            // 
-            // TextBox2
-            // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "givenName", true));
-            this.TextBox2.Location = new System.Drawing.Point(233, 99);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(101, 20);
-            this.TextBox2.TabIndex = 6;
-            // 
-            // TextBox1
-            // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ofwBindingSource, "lastName", true));
-            this.TextBox1.Location = new System.Drawing.Point(122, 99);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(92, 20);
-            this.TextBox1.TabIndex = 5;
-            // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(373, 122);
-            this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(25, 13);
-            this.Label6.TabIndex = 4;
-            this.Label6.Text = "M.I";
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.firstBox, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.middleBox, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Label6, 2, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(155, 15);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(212, 49);
+            this.tableLayoutPanel2.TabIndex = 100;
             // 
             // Label5
             // 
+            this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(251, 121);
+            this.Label5.Location = new System.Drawing.Point(60, 24);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(61, 13);
-            this.Label5.TabIndex = 3;
+            this.Label5.Size = new System.Drawing.Size(54, 25);
+            this.Label5.TabIndex = 64;
             this.Label5.Text = "Firstname";
             // 
             // Label4
             // 
+            this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(137, 120);
+            this.Label4.Location = new System.Drawing.Point(2, 24);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(61, 13);
-            this.Label4.TabIndex = 2;
+            this.Label4.Size = new System.Drawing.Size(54, 25);
+            this.Label4.TabIndex = 63;
             this.Label4.Text = "Lastname";
             // 
-            // Label3
+            // lastBox
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(71, 102);
-            this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(39, 13);
-            this.Label3.TabIndex = 1;
-            this.Label3.Text = "Name";
+            this.lastBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lastBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lastBox.Location = new System.Drawing.Point(2, 2);
+            this.lastBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastBox.Name = "lastBox";
+            this.lastBox.Size = new System.Drawing.Size(54, 20);
+            this.lastBox.TabIndex = 60;
+            // 
+            // firstBox
+            // 
+            this.firstBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.firstBox.Location = new System.Drawing.Point(60, 2);
+            this.firstBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstBox.Name = "firstBox";
+            this.firstBox.Size = new System.Drawing.Size(54, 20);
+            this.firstBox.TabIndex = 61;
+            // 
+            // middleBox
+            // 
+            this.middleBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.middleBox.Location = new System.Drawing.Point(140, 2);
+            this.middleBox.Margin = new System.Windows.Forms.Padding(2);
+            this.middleBox.MaxLength = 2;
+            this.middleBox.Name = "middleBox";
+            this.middleBox.Size = new System.Drawing.Size(47, 20);
+            this.middleBox.TabIndex = 62;
+            // 
+            // Label6
+            // 
+            this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label6.AutoSize = true;
+            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label6.Location = new System.Drawing.Point(151, 30);
+            this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label6.Name = "Label6";
+            this.Label6.Size = new System.Drawing.Size(25, 13);
+            this.Label6.TabIndex = 65;
+            this.Label6.Text = "M.I";
+            // 
+            // dateFiledBox
+            // 
+            this.dateFiledBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dateFiledBox.Enabled = false;
+            this.dateFiledBox.Location = new System.Drawing.Point(521, 29);
+            this.dateFiledBox.Name = "dateFiledBox";
+            this.dateFiledBox.Size = new System.Drawing.Size(170, 20);
+            this.dateFiledBox.TabIndex = 84;
+            // 
+            // packageBox
+            // 
+            this.packageBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.packageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.packageBox.FormattingEnabled = true;
+            this.packageBox.Location = new System.Drawing.Point(520, 69);
+            this.packageBox.Margin = new System.Windows.Forms.Padding(2);
+            this.packageBox.Name = "packageBox";
+            this.packageBox.Size = new System.Drawing.Size(164, 21);
+            this.packageBox.TabIndex = 86;
+            // 
+            // accBox
+            // 
+            this.accBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.accBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.accBox.Location = new System.Drawing.Point(520, 124);
+            this.accBox.Margin = new System.Windows.Forms.Padding(2);
+            this.accBox.Name = "accBox";
+            this.accBox.Size = new System.Drawing.Size(164, 20);
+            this.accBox.TabIndex = 90;
+            // 
+            // Label9
+            // 
+            this.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Label9.AutoSize = true;
+            this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label9.Location = new System.Drawing.Point(429, 33);
+            this.Label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(34, 13);
+            this.Label9.TabIndex = 83;
+            this.Label9.Text = "Date";
+            // 
+            // Label10
+            // 
+            this.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Label10.AutoSize = true;
+            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label10.Location = new System.Drawing.Point(429, 73);
+            this.Label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label10.Name = "Label10";
+            this.Label10.Size = new System.Drawing.Size(57, 13);
+            this.Label10.TabIndex = 85;
+            this.Label10.Text = "Package";
+            // 
+            // Label11
+            // 
+            this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Label11.AutoSize = true;
+            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label11.Location = new System.Drawing.Point(429, 100);
+            this.Label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label11.Name = "Label11";
+            this.Label11.Size = new System.Drawing.Size(58, 13);
+            this.Label11.TabIndex = 87;
+            this.Label11.Text = "Company";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(429, 128);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(54, 13);
+            this.label22.TabIndex = 89;
+            this.label22.Text = "Account";
+            // 
+            // addressBox
+            // 
+            this.addressBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.addressBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addressBox.Location = new System.Drawing.Point(154, 179);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(2);
+            this.addressBox.Multiline = true;
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(214, 78);
+            this.addressBox.TabIndex = 97;
+            // 
+            // Label8
+            // 
+            this.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Label8.AutoSize = true;
+            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label8.Location = new System.Drawing.Point(65, 211);
+            this.Label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(52, 13);
+            this.Label8.TabIndex = 98;
+            this.Label8.Text = "Address";
+            // 
+            // submit
+            // 
+            this.submit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.submit.Location = new System.Drawing.Point(545, 235);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(122, 23);
+            this.submit.TabIndex = 101;
+            this.submit.Text = "Save";
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
+            // 
+            // paymentStatusBox
+            // 
+            this.paymentStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.paymentStatusBox.Items.AddRange(new object[] {
+            "PAID",
+            "BILLED"});
+            this.paymentStatusBox.Location = new System.Drawing.Point(521, 152);
+            this.paymentStatusBox.Name = "paymentStatusBox";
+            this.paymentStatusBox.Size = new System.Drawing.Size(163, 21);
+            this.paymentStatusBox.TabIndex = 102;
+            // 
+            // bdayBox
+            // 
+            this.bdayBox.Location = new System.Drawing.Point(155, 152);
+            this.bdayBox.Name = "bdayBox";
+            this.bdayBox.Size = new System.Drawing.Size(200, 20);
+            this.bdayBox.TabIndex = 103;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(65, 155);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 13);
+            this.label24.TabIndex = 104;
+            this.label24.Text = "Date of Birth";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(429, 149);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(59, 26);
+            this.label25.TabIndex = 105;
+            this.label25.Text = "Payment Status";
+            // 
+            // companyBox
+            // 
+            this.companyBox.Location = new System.Drawing.Point(521, 96);
+            this.companyBox.Name = "companyBox";
+            this.companyBox.Size = new System.Drawing.Size(163, 20);
+            this.companyBox.TabIndex = 106;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.LinkLabel1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(902, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.20339F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.79661F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(231, 261);
+            this.tableLayoutPanel1.TabIndex = 88;
+            // 
+            // LinkLabel1
+            // 
+            this.LinkLabel1.AutoSize = true;
+            this.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LinkLabel1.Location = new System.Drawing.Point(2, 218);
+            this.LinkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LinkLabel1.Name = "LinkLabel1";
+            this.LinkLabel1.Size = new System.Drawing.Size(227, 43);
+            this.LinkLabel1.TabIndex = 75;
+            this.LinkLabel1.TabStop = true;
+            this.LinkLabel1.Text = "Upload Photo";
+            this.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(61, 90);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(109, 108);
+            this.pictureBox2.TabIndex = 74;
+            this.pictureBox2.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label23, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(225, 64);
+            this.tableLayoutPanel3.TabIndex = 76;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(115, 13);
+            this.textBox1.MaxLength = 4;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(59, 38);
+            this.textBox1.TabIndex = 88;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(52, 25);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(58, 13);
+            this.label23.TabIndex = 87;
+            this.label23.Text = "Form No.";
+            // 
+            // PatientIDPanel
+            // 
+            this.PatientIDPanel.Controls.Add(this.clearAll);
+            this.PatientIDPanel.Controls.Add(this.searchButton);
+            this.PatientIDPanel.Controls.Add(this.searchBox);
+            this.PatientIDPanel.Controls.Add(this.Label2);
+            this.PatientIDPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PatientIDPanel.Location = new System.Drawing.Point(0, 0);
+            this.PatientIDPanel.Name = "PatientIDPanel";
+            this.PatientIDPanel.Size = new System.Drawing.Size(1133, 60);
+            this.PatientIDPanel.TabIndex = 84;
+            // 
+            // clearAll
+            // 
+            this.clearAll.Location = new System.Drawing.Point(670, 16);
+            this.clearAll.Name = "clearAll";
+            this.clearAll.Size = new System.Drawing.Size(75, 23);
+            this.clearAll.TabIndex = 73;
+            this.clearAll.Text = "Clear all";
+            this.clearAll.UseVisualStyleBackColor = true;
+            this.clearAll.Click += new System.EventHandler(this.clearAll_Click);
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.Transparent;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.Location = new System.Drawing.Point(298, 18);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 72;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchBox
+            // 
+            this.searchBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.searchBox.Location = new System.Drawing.Point(101, 20);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(186, 20);
+            this.searchBox.TabIndex = 71;
+            this.searchBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(66, 49);
+            this.Label2.Location = new System.Drawing.Point(18, 23);
             this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(64, 13);
-            this.Label2.TabIndex = 0;
+            this.Label2.TabIndex = 70;
             this.Label2.Text = "Patient ID";
             // 
-            // ofwTableAdapter
+            // ContentTitlePanel
             // 
-            this.ofwTableAdapter.ClearBeforeFill = true;
+            this.ContentTitlePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ContentTitlePanel.Controls.Add(this.SubMenuLabelClicked);
+            this.ContentTitlePanel.Controls.Add(this.MenuClickedLabel);
+            this.ContentTitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ContentTitlePanel.Location = new System.Drawing.Point(0, 0);
+            this.ContentTitlePanel.Name = "ContentTitlePanel";
+            this.ContentTitlePanel.Size = new System.Drawing.Size(1133, 60);
+            this.ContentTitlePanel.TabIndex = 37;
             // 
-            // tableAdapterManager
+            // SubMenuLabelClicked
             // 
-            this.tableAdapterManager.ancillaryResultTableAdapter = null;
-            this.tableAdapterManager.assessmentTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Blood_ChemistrtyTableAdapter = null;
-            this.tableAdapterManager.Clinic_MicroscopyTableAdapter = null;
-            this.tableAdapterManager.HematologyTableAdapter = null;
-            this.tableAdapterManager.historyTableAdapter = null;
-            this.tableAdapterManager.ofwTableAdapter = this.ofwTableAdapter;
-            this.tableAdapterManager.SerologyTableAdapter = null;
-            this.tableAdapterManager.Stool_ExaminationTableAdapter = null;
-            this.tableAdapterManager.summaryTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = SouthJLAInformationSystemC.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userAccTableAdapter = null;
+            this.SubMenuLabelClicked.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SubMenuLabelClicked.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubMenuLabelClicked.Location = new System.Drawing.Point(0, 30);
+            this.SubMenuLabelClicked.Name = "SubMenuLabelClicked";
+            this.SubMenuLabelClicked.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.SubMenuLabelClicked.Size = new System.Drawing.Size(1131, 28);
+            this.SubMenuLabelClicked.TabIndex = 1;
+            this.SubMenuLabelClicked.Text = "SubMenuTitle";
+            this.SubMenuLabelClicked.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // MenuClickedLabel
+            // 
+            this.MenuClickedLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuClickedLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuClickedLabel.Location = new System.Drawing.Point(0, 0);
+            this.MenuClickedLabel.Name = "MenuClickedLabel";
+            this.MenuClickedLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MenuClickedLabel.Size = new System.Drawing.Size(1131, 30);
+            this.MenuClickedLabel.TabIndex = 0;
+            this.MenuClickedLabel.Text = "MenuTitle";
+            this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainMenu
             // 
@@ -799,79 +1955,184 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1115, 780);
-            this.Controls.Add(this.Panel5);
-            this.Controls.Add(this.Panel2);
-            this.Controls.Add(this.Panel1);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.ContentPanel);
+            this.Controls.Add(this.SidePanel);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenu_FormClosed);
-            this.Load += new System.EventHandler(this.MainMenu_Load);
-            this.Panel2.ResumeLayout(false);
-            this.Panel2.PerformLayout();
-            this.Panel1.ResumeLayout(false);
-            this.Panel1.PerformLayout();
-            this.Panel5.ResumeLayout(false);
-            this.Panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ofwBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenuV2_FormClosed);
+            this.Load += new System.EventHandler(this.MainMenuV2_Load);
+            this.panel1.ResumeLayout(false);
+            this.MenuPanel4.ResumeLayout(false);
+            this.MenuPanel5.ResumeLayout(false);
+            this.MenuPanel6.ResumeLayout(false);
+            this.MenuPanel7.ResumeLayout(false);
+            this.MenuPanel8.ResumeLayout(false);
+            this.SidePanel.ResumeLayout(false);
+            this.SidePanel.PerformLayout();
+            this.MenuPanel3.ResumeLayout(false);
+            this.MenuPanel2.ResumeLayout(false);
+            this.MenuPanel1.ResumeLayout(false);
+            this.SubMenuPanel1.ResumeLayout(false);
+            this.TitleSidePanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ContentPanel.ResumeLayout(false);
+            this.ChildContentPanel.ResumeLayout(false);
+            this.GenClinicPanel.ResumeLayout(false);
+            this.MajorelPanel.ResumeLayout(false);
+            this.MajorelPanel.PerformLayout();
+            this.PatientInfoPanel.ResumeLayout(false);
+            this.tableLayoutPnl.ResumeLayout(false);
+            this.tableLayoutPnl.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.PatientIDPanel.ResumeLayout(false);
+            this.PatientIDPanel.PerformLayout();
+            this.ContentTitlePanel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        internal System.Windows.Forms.TreeView MainMenuTree;
-        internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.Panel Panel2;
-        internal System.Windows.Forms.Label lbl_title;
-        internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.Panel Panel5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel MenuPanel4;
+        private System.Windows.Forms.Panel MenuPanel5;
+        private System.Windows.Forms.Panel MenuPanel6;
+        private System.Windows.Forms.Panel MenuPanel7;
+        private System.Windows.Forms.Panel MenuPanel8;
+        private System.Windows.Forms.Panel SidePanel;
+        private System.Windows.Forms.Panel MenuPanel3;
+        private System.Windows.Forms.Panel MenuPanel2;
+        private System.Windows.Forms.Panel MenuPanel1;
+        private System.Windows.Forms.Panel TitleSidePanel;
+        private System.Windows.Forms.Button XrayRepsBtn;
+        private System.Windows.Forms.Button XrayEntEdtResBtn;
+        private System.Windows.Forms.Button XrayEntResBtn;
+        private System.Windows.Forms.Button AudiometRepsBtn;
+        private System.Windows.Forms.Button AudiometEntEdtResBtn;
+        private System.Windows.Forms.Button AudiometEntResBtn;
+        private System.Windows.Forms.Button LaborRepsBtn;
+        private System.Windows.Forms.Button LaborEntEdtResBtn;
+        private System.Windows.Forms.Button LaborEntResBtn;
+        private System.Windows.Forms.Button DrugTRepsBtn;
+        private System.Windows.Forms.Button DrugTEntEdtResBtn;
+        private System.Windows.Forms.Button DrugTEntResBtn;
+        private System.Windows.Forms.Button MisceQualBtn;
+        private System.Windows.Forms.Button MisceECGBtn;
+        private System.Windows.Forms.Button MisceDictBtn;
+        private System.Windows.Forms.Button MisceBillBtn;
+        private System.Windows.Forms.Button MisceBtn;
+        private System.Windows.Forms.Button DrugTBtn;
+        private System.Windows.Forms.Button LaborBtn;
+        private System.Windows.Forms.Button AudiometBtn;
+        private System.Windows.Forms.Button XrayBtn;
+        private System.Windows.Forms.Button PsychRepsBtn;
+        private System.Windows.Forms.Button PsychEntEdtResBtn;
+        private System.Windows.Forms.Button PsychEntResBtn;
+        private System.Windows.Forms.Button PsychBtn;
+        private System.Windows.Forms.Button PhysicalRepsBtn;
+        private System.Windows.Forms.Button PhysicalEntEdtResBtn;
+        private System.Windows.Forms.Button PhysicalEntResBtn;
+        private System.Windows.Forms.Button PhysicalBtn;
+        private System.Windows.Forms.Button GenQualBtn;
+        private System.Windows.Forms.Button GenBillBtn;
+        private System.Windows.Forms.Button GenRepsBtn;
+        private System.Windows.Forms.Button GenEntEdtResuBtn;
+        private System.Windows.Forms.Button GenEditResuBtn;
+        private System.Windows.Forms.Button GenEnterResuBtn;
+        private System.Windows.Forms.Button GenEntEdtReqBtn;
+        private System.Windows.Forms.Button GenEditReqBtn;
+        private System.Windows.Forms.Button GenEnterReqBtn;
+        private System.Windows.Forms.Button GeneralClinicBtn;
+        private System.Windows.Forms.Label MainMenuLabel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Panel ContentPanel;
+        private System.Windows.Forms.Panel ContentTitlePanel;
+        private System.Windows.Forms.Label SubMenuLabelClicked;
+        private System.Windows.Forms.Label MenuClickedLabel;
+        private System.Windows.Forms.Panel GenClinicPanel;
+        private System.Windows.Forms.Panel MajorelPanel;
+        internal System.Windows.Forms.Label PAPSClickedLabel;
+        internal System.Windows.Forms.Label ECGClickableLabel;
+        internal System.Windows.Forms.Label XrayClickableLabel;
+        internal System.Windows.Forms.Label MedExClickableLabel;
+        internal System.Windows.Forms.Label UriClickableLabel;
+        internal System.Windows.Forms.Label CBCClickableLabel;
         internal System.Windows.Forms.Label Label19;
-        internal System.Windows.Forms.TextBox textBox14;
         internal System.Windows.Forms.Label Label18;
-        internal System.Windows.Forms.TextBox textBox13;
         internal System.Windows.Forms.Label Label17;
         internal System.Windows.Forms.Label Label16;
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.Label Label14;
         internal System.Windows.Forms.Label Label13;
-        internal System.Windows.Forms.TextBox TextBox12;
-        internal System.Windows.Forms.TextBox TextBox11;
-        internal System.Windows.Forms.TextBox TextBox10;
-        internal System.Windows.Forms.TextBox TextBox9;
         internal System.Windows.Forms.Label Label12;
-        internal System.Windows.Forms.TextBox TextBox8;
-        internal System.Windows.Forms.ComboBox ComboBox2;
-        internal System.Windows.Forms.Label Label11;
-        internal System.Windows.Forms.LinkLabel LinkLabel1;
-        internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.ComboBox ComboBox1;
-        internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.TextBox TextBox7;
-        internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.TextBox TextBox6;
-        internal System.Windows.Forms.TextBox TextBox5;
+        private System.Windows.Forms.Panel PatientInfoPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPnl;
+        private System.Windows.Forms.ComboBox civilBox;
+        internal System.Windows.Forms.Label label21;
+        internal System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox genderBox;
+        internal System.Windows.Forms.TextBox ageBox;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox1;
-        internal System.Windows.Forms.Label Label6;
+        internal System.Windows.Forms.TextBox addressBox;
+        internal System.Windows.Forms.Label Label8;
+        internal System.Windows.Forms.Label Label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.Label Label3;
+        internal System.Windows.Forms.TextBox lastBox;
+        internal System.Windows.Forms.TextBox firstBox;
+        internal System.Windows.Forms.TextBox middleBox;
+        internal System.Windows.Forms.Label Label6;
+        private System.Windows.Forms.DateTimePicker dateFiledBox;
+        internal System.Windows.Forms.ComboBox packageBox;
+        internal System.Windows.Forms.TextBox accBox;
+        internal System.Windows.Forms.Label Label9;
+        internal System.Windows.Forms.Label Label10;
+        internal System.Windows.Forms.Label Label11;
+        internal System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        internal System.Windows.Forms.LinkLabel LinkLabel1;
+        internal System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel PatientIDPanel;
+        private System.Windows.Forms.Button clearAll;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.TextBox searchBox;
         internal System.Windows.Forms.Label Label2;
-        private DatabaseDataSet databaseDataSet;
-        private System.Windows.Forms.BindingSource ofwBindingSource;
-        private DatabaseDataSetTableAdapters.ofwTableAdapter ofwTableAdapter;
-        private DatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Panel ChildContentPanel;
+        private System.Windows.Forms.ComboBox paymentStatusBox;
+        private System.Windows.Forms.DateTimePicker bdayBox;
+        internal System.Windows.Forms.Label label24;
+        internal System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox companyBox;
+        private System.Windows.Forms.Button OffsiteBtn;
+        internal System.Windows.Forms.Label FBSClickableLabel;
+        private System.Windows.Forms.Panel SubMenuPanel1;
+        private System.Windows.Forms.Button OffsiteReps;
+        private System.Windows.Forms.Button OffsiteEntEdtReq;
+        private System.Windows.Forms.ComboBox xrayStatusBox;
+        private System.Windows.Forms.ComboBox cbcStatusBox;
+        private System.Windows.Forms.ComboBox urineStoolStatusBox;
+        private System.Windows.Forms.ComboBox medStatusBox;
+        private System.Windows.Forms.ComboBox ecgStatusBox;
+        private System.Windows.Forms.ComboBox fbsStatusBox;
+        private System.Windows.Forms.ComboBox papsStatusBox;
     }
 }

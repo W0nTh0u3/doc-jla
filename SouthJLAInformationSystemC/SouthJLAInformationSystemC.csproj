@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +48,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +74,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MedExamFormDoc.cs">
+      <DependentUpon>MedExamFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FBSCholeFormDoc.cs">
+      <DependentUpon>FBSCholeFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ECGFormDoc.cs">
+      <DependentUpon>ECGFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="OffsiteReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OffsiteReportsForm.Designer.cs">
+      <DependentUpon>OffsiteReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OffsiteEntEdtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OffsiteEntEdtForm.Designer.cs">
+      <DependentUpon>OffsiteEntEdtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XrayFormDoc.cs">
+      <DependentUpon>XrayFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UrinStoolFormDoc.cs">
+      <DependentUpon>UrinStoolFormDoc.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CBCFormDoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CBCFormDoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatabaseDataSet.cs">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -57,17 +136,53 @@
     <Compile Include="CBCForm.Designer.cs">
       <DependentUpon>CBCForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StoolForm.cs">
+    <Compile Include="FBSCholeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StoolForm.Designer.cs">
-      <DependentUpon>StoolForm.cs</DependentUpon>
+    <Compile Include="FBSCholeForm.Designer.cs">
+      <DependentUpon>FBSCholeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="ECGForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <Compile Include="ECGForm.Designer.cs">
+      <DependentUpon>ECGForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictionaryForm.Designer.cs">
+      <DependentUpon>DictionaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictionaryEditForm.Designer.cs">
+      <DependentUpon>DictionaryEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingForm.Designer.cs">
+      <DependentUpon>BillingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackagesEditForm.Designer.cs">
+      <DependentUpon>PackagesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagesViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackagesViewForm.Designer.cs">
+      <DependentUpon>PackagesViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreviewForm.Designer.cs">
+      <DependentUpon>PrintPreviewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -75,34 +190,136 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenuV2.cs">
+    <Compile Include="PAPForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenuV2.Designer.cs">
-      <DependentUpon>MainMenuV2.cs</DependentUpon>
+    <Compile Include="PAPForm.Designer.cs">
+      <DependentUpon>PAPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyPopUp.Designer.cs">
+      <DependentUpon>VerifyPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XrayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XrayForm.Designer.cs">
+      <DependentUpon>XrayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedExamForm.Designer.cs">
+      <DependentUpon>MedExamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldMainMenu.Designer.cs">
+      <DependentUpon>OldMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldLoginForm.Designer.cs">
+      <DependentUpon>OldLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UrinalysisForm.cs">
+    <Compile Include="UrinStoolForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UrinalysisForm.Designer.cs">
-      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    <Compile Include="UrinStoolForm.Designer.cs">
+      <DependentUpon>UrinStoolForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StoolForm.resx">
-      <DependentUpon>StoolForm.cs</DependentUpon>
+    <EmbeddedResource Include="MedExamFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MedExamFormDoc.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FBSCholeFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FBSCholeFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ECGFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffsiteReportsForm.resx">
+      <DependentUpon>OffsiteReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OffsiteEntEdtForm.resx">
+      <DependentUpon>OffsiteEntEdtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XrayFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XrayFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrinStoolFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UrinStoolFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictionaryForm.resx">
+      <DependentUpon>DictionaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CBCFormDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CBCFormDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBSCholeForm.resx">
+      <DependentUpon>FBSCholeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECGForm.resx">
+      <DependentUpon>ECGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictionaryEditForm.resx">
+      <DependentUpon>DictionaryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingForm.resx">
+      <DependentUpon>BillingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackagesEditForm.resx">
+      <DependentUpon>PackagesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreviewForm.resx">
+      <DependentUpon>PrintPreviewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenuV2.resx">
-      <DependentUpon>MainMenuV2.cs</DependentUpon>
+    <EmbeddedResource Include="PackagesViewForm.resx">
+      <DependentUpon>PackagesViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAPForm.resx">
+      <DependentUpon>PAPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPopUp.resx">
+      <DependentUpon>VerifyPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XrayForm.resx">
+      <DependentUpon>XrayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedExamForm.resx">
+      <DependentUpon>MedExamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldMainMenu.resx">
+      <DependentUpon>OldMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldLoginForm.resx">
+      <DependentUpon>OldLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,9 +329,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UrinalysisForm.resx">
-      <DependentUpon>UrinalysisForm.cs</DependentUpon>
+    <EmbeddedResource Include="UrinStoolForm.resx">
+      <DependentUpon>UrinStoolForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
@@ -127,6 +345,7 @@
     <None Include="DatabaseDataSet.xss">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Properties\DataSources\OffsiteReportsForm.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -139,6 +358,71 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soutjla_LOGOblur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soutjla_LOGOblur2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
