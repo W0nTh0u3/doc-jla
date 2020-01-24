@@ -22,28 +22,19 @@ namespace SouthJLAInformationSystemC
         public bool userSuper = false;
         public string terminal = System.Environment.MachineName;
         public static string statusCbc = "", statusUrineStool = "", statusMed = "", statusXray = "", statusEcg = "", statusFbs = "", statusPaps = "";
-        public MainMenu(string type)
+        public MainMenu(string type, string firstName, string lastName)
         {
             InitializeComponent();
 
             Console.WriteLine("terminal: " + terminal);
 
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            if (type == "3")
+            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            Console.WriteLine("First Name of User " + firstName);            Console.WriteLine("Last Name: " + lastName);            if (type == "2")
             {
-                userEnter = true;
-                userEdit = true;
-                userSuper = true;
-            }            else if (type == "2")
-            {
-                userEnter = false;
-                userEdit = true;
-                userSuper = false;
+                EditOnly();
             }            else if (type == "1")
             {
-                userEnter = true;
-                userEdit = false;
-                userSuper = false;
+                EnterOnly();
             }
             dateFiledBox.Value = DateTime.Now;
 
@@ -498,9 +489,26 @@ namespace SouthJLAInformationSystemC
 
         }
 
+        private void EnterOnly()
+        {
+            GenEditReqBtn.Enabled = false;
+            GenEditResuBtn.Enabled = false;
+            GenEntEdtReqBtn.Enabled = false;
+            GenEntEdtResuBtn.Enabled = false;
+            GenBillBtn.Enabled = false;
+        }
+        private void EditOnly()
+        {
+            GenEnterReqBtn.Enabled = false;
+            GenEnterResuBtn.Enabled = false;
+            GenEntEdtReqBtn.Enabled = false;
+            GenEntEdtResuBtn.Enabled = false;
+            GenBillBtn.Enabled = false;
+        }
 
-        
-        
+
+
+
 
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -567,7 +575,7 @@ namespace SouthJLAInformationSystemC
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sda1.Fill(dt);
                 string patientID = dateFiledBox.Value.ToString("MM") + dateFiledBox.Value.ToString("dd");
-                string unique = "MJRL-" + dt.Rows[0][0].ToString();
+                string unique = dt.Rows[0][0].ToString();
 
                 Console.WriteLine("unique id:" + unique);
 

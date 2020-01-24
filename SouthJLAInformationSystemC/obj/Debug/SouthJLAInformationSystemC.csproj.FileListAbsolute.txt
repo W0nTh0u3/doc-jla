@@ -291,3 +291,4 @@ C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC
 C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteReportsForm.resources
 C:\Users\jp19r\Desktop\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.OffsiteEntEdtForm.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MjrlPackage.resources
+C:\Repos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MjrlPackage.resources

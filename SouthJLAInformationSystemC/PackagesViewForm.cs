@@ -12,7 +12,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class PackagesViewForm : Form
     {
-        MainMenu main = new MainMenu("3");
+        MainMenu main = new MainMenu("3", "first", "last");
 
         public PackagesViewForm()
         {

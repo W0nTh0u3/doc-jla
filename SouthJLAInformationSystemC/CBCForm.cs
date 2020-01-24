@@ -115,7 +115,7 @@ namespace SouthJLAInformationSystemC
             string sqlString;
             vUnits = new string []{ wbcUnit.Text, rbcUnit.Text, hgbUnit.Text, hctUnit.Text, plateletUnit.Text, neutrophilUnit.Text, lymphUnit.Text, monoUnit.Text};
             checkStatus();
-            if (type == "Enter")
+            if (type == "Enter Results")
             {
                 sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte,status, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','"+MainMenu.statusCbc+"','" + passID + "')";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
@@ -123,7 +123,7 @@ namespace SouthJLAInformationSystemC
                 VerifyPopUp verifyPopUp = new VerifyPopUp(sqlString, valueString, patientInfoValue, vMin, vMax, vUnits);
                 verifyPopUp.Show();
             }
-            else if (type == "Save changes")
+            else if (type == "Edit Results")
             {
                 sqlString = "UPDATE dbo.Hematology SET wbc = '" + wbcTextBox.Text + "', rbc = '" + rbcTextBox.Text + "', hgb = '" + hgbTextBox.Text + "', hct = '" + hctTextBox.Text + "', platelets = '" + plateletsTextBox.Text + "', neutrophil = '" + neutrophilTextBox.Text + "', lymphocytes = '" + lymphocytesTextBox.Text + "', monocyte = '" + monocyteTextBox.Text + "', status = '"+ MainMenu.statusCbc + "' WHERE ofw_id = '" + passID + "'";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };

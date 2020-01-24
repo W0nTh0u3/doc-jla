@@ -12,7 +12,7 @@ namespace SouthJLAInformationSystemC
 {
     public partial class DictionaryEditForm : Form
     {
-        MainMenu main = new MainMenu("3");
+        MainMenu main = new MainMenu("3", "firstname","lastname");
 
         public DictionaryEditForm()
         {
