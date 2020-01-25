@@ -127,6 +127,8 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.physicianBox = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
@@ -444,6 +446,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.physicianBox);
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.othersBox);
             this.panel2.Controls.Add(this.label44);
             this.panel2.Controls.Add(this.bacteriaBox);
@@ -1144,6 +1148,24 @@
             this.label42.Text = "CLINICAL MICROSCOPY";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // physicianBox
+            // 
+            this.physicianBox.FormattingEnabled = true;
+            this.physicianBox.Location = new System.Drawing.Point(144, 1113);
+            this.physicianBox.Name = "physicianBox";
+            this.physicianBox.Size = new System.Drawing.Size(208, 21);
+            this.physicianBox.TabIndex = 318;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(16, 1116);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(122, 13);
+            this.label12.TabIndex = 317;
+            this.label12.Text = "Examining Physician";
+            // 
             // UrinStoolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1271,5 +1293,7 @@
         internal System.Windows.Forms.Label label59;
         internal System.Windows.Forms.Label label60;
         private System.Windows.Forms.TextBox othersBox;
+        private System.Windows.Forms.ComboBox physicianBox;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -93,9 +93,21 @@
             this.MajorelPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbcStatusBox = new System.Windows.Forms.ComboBox();
-            this.StatusLabel = new System.Windows.Forms.Label();
+            this.PAPSClickedLabel = new System.Windows.Forms.Label();
+            this.FBSClickableLabel = new System.Windows.Forms.Label();
+            this.ECGClickableLabel = new System.Windows.Forms.Label();
+            this.XrayClickableLabel = new System.Windows.Forms.Label();
+            this.MedExClickableLabel = new System.Windows.Forms.Label();
+            this.UriClickableLabel = new System.Windows.Forms.Label();
+            this.fbsStatusBox = new System.Windows.Forms.ComboBox();
             this.papsStatusBox = new System.Windows.Forms.ComboBox();
+            this.ecgStatusBox = new System.Windows.Forms.ComboBox();
+            this.xrayStatusBox = new System.Windows.Forms.ComboBox();
+            this.medStatusBox = new System.Windows.Forms.ComboBox();
+            this.urineStoolStatusBox = new System.Windows.Forms.ComboBox();
+            this.StatusLabel = new System.Windows.Forms.Label();
+            this.cbcStatusBox = new System.Windows.Forms.ComboBox();
+            this.CBCClickableLabel = new System.Windows.Forms.Label();
             this.PatientInfoPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPnl = new System.Windows.Forms.TableLayoutPanel();
             this.civilBox = new System.Windows.Forms.ComboBox();
@@ -141,18 +153,6 @@
             this.ContentTitlePanel = new System.Windows.Forms.Panel();
             this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.MenuClickedLabel = new System.Windows.Forms.Label();
-            this.urineStoolStatusBox = new System.Windows.Forms.ComboBox();
-            this.medStatusBox = new System.Windows.Forms.ComboBox();
-            this.xrayStatusBox = new System.Windows.Forms.ComboBox();
-            this.ecgStatusBox = new System.Windows.Forms.ComboBox();
-            this.fbsStatusBox = new System.Windows.Forms.ComboBox();
-            this.CBCClickableLabel = new System.Windows.Forms.Label();
-            this.UriClickableLabel = new System.Windows.Forms.Label();
-            this.MedExClickableLabel = new System.Windows.Forms.Label();
-            this.XrayClickableLabel = new System.Windows.Forms.Label();
-            this.ECGClickableLabel = new System.Windows.Forms.Label();
-            this.FBSClickableLabel = new System.Windows.Forms.Label();
-            this.PAPSClickedLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -1146,32 +1146,103 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(673, 278);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
-            // cbcStatusBox
+            // PAPSClickedLabel
             // 
-            this.cbcStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.cbcStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbcStatusBox.FormattingEnabled = true;
-            this.cbcStatusBox.Items.AddRange(new object[] {
+            this.PAPSClickedLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.PAPSClickedLabel.AutoSize = true;
+            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PAPSClickedLabel.Location = new System.Drawing.Point(136, 221);
+            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
+            this.PAPSClickedLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.PAPSClickedLabel.Size = new System.Drawing.Size(93, 13);
+            this.PAPSClickedLabel.TabIndex = 110;
+            this.PAPSClickedLabel.Text = "PAP Smear";
+            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
+            // 
+            // FBSClickableLabel
+            // 
+            this.FBSClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.FBSClickableLabel.AutoSize = true;
+            this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBSClickableLabel.Location = new System.Drawing.Point(136, 189);
+            this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FBSClickableLabel.Name = "FBSClickableLabel";
+            this.FBSClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.FBSClickableLabel.Size = new System.Drawing.Size(117, 13);
+            this.FBSClickableLabel.TabIndex = 109;
+            this.FBSClickableLabel.Text = "FBS, Cholesterol";
+            this.FBSClickableLabel.Click += new System.EventHandler(this.FBSClickableLabel_Click);
+            // 
+            // ECGClickableLabel
+            // 
+            this.ECGClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ECGClickableLabel.AutoSize = true;
+            this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ECGClickableLabel.Location = new System.Drawing.Point(136, 157);
+            this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ECGClickableLabel.Name = "ECGClickableLabel";
+            this.ECGClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.ECGClickableLabel.Size = new System.Drawing.Size(61, 13);
+            this.ECGClickableLabel.TabIndex = 108;
+            this.ECGClickableLabel.Text = "ECG";
+            this.ECGClickableLabel.Click += new System.EventHandler(this.ECGClickableLabel_Click);
+            // 
+            // XrayClickableLabel
+            // 
+            this.XrayClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.XrayClickableLabel.AutoSize = true;
+            this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XrayClickableLabel.Location = new System.Drawing.Point(136, 125);
+            this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.XrayClickableLabel.Name = "XrayClickableLabel";
+            this.XrayClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.XrayClickableLabel.Size = new System.Drawing.Size(68, 13);
+            this.XrayClickableLabel.TabIndex = 107;
+            this.XrayClickableLabel.Text = "X-Ray";
+            this.XrayClickableLabel.Click += new System.EventHandler(this.XrayClickableLabel_Click);
+            // 
+            // MedExClickableLabel
+            // 
+            this.MedExClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MedExClickableLabel.AutoSize = true;
+            this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedExClickableLabel.Location = new System.Drawing.Point(136, 93);
+            this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MedExClickableLabel.Name = "MedExClickableLabel";
+            this.MedExClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.MedExClickableLabel.Size = new System.Drawing.Size(136, 13);
+            this.MedExClickableLabel.TabIndex = 106;
+            this.MedExClickableLabel.Text = "Medical Examination";
+            this.MedExClickableLabel.Click += new System.EventHandler(this.MedExClickableLabel_Click);
+            // 
+            // UriClickableLabel
+            // 
+            this.UriClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.UriClickableLabel.AutoSize = true;
+            this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UriClickableLabel.Location = new System.Drawing.Point(136, 61);
+            this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UriClickableLabel.Name = "UriClickableLabel";
+            this.UriClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.UriClickableLabel.Size = new System.Drawing.Size(160, 13);
+            this.UriClickableLabel.TabIndex = 105;
+            this.UriClickableLabel.Text = "Urinalysis and Stool Exam";
+            this.UriClickableLabel.Click += new System.EventHandler(this.UriClickableLabel_Click);
+            // 
+            // fbsStatusBox
+            // 
+            this.fbsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.fbsStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fbsStatusBox.FormattingEnabled = true;
+            this.fbsStatusBox.Items.AddRange(new object[] {
             "ENT",
             "RES",
             "COM"});
-            this.cbcStatusBox.Location = new System.Drawing.Point(38, 25);
-            this.cbcStatusBox.Name = "cbcStatusBox";
-            this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.cbcStatusBox.TabIndex = 111;
-            // 
-            // StatusLabel
-            // 
-            this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.StatusLabel.AutoSize = true;
-            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(45, 3);
-            this.StatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.StatusLabel.Name = "StatusLabel";
-            this.StatusLabel.Size = new System.Drawing.Size(43, 13);
-            this.StatusLabel.TabIndex = 48;
-            this.StatusLabel.Text = "Status";
-            this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fbsStatusBox.Location = new System.Drawing.Point(38, 185);
+            this.fbsStatusBox.Name = "fbsStatusBox";
+            this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.fbsStatusBox.TabIndex = 114;
             // 
             // papsStatusBox
             // 
@@ -1186,6 +1257,103 @@
             this.papsStatusBox.Name = "papsStatusBox";
             this.papsStatusBox.Size = new System.Drawing.Size(93, 21);
             this.papsStatusBox.TabIndex = 70;
+            // 
+            // ecgStatusBox
+            // 
+            this.ecgStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ecgStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ecgStatusBox.FormattingEnabled = true;
+            this.ecgStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.ecgStatusBox.Location = new System.Drawing.Point(38, 153);
+            this.ecgStatusBox.Name = "ecgStatusBox";
+            this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.ecgStatusBox.TabIndex = 115;
+            // 
+            // xrayStatusBox
+            // 
+            this.xrayStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.xrayStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.xrayStatusBox.FormattingEnabled = true;
+            this.xrayStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.xrayStatusBox.Location = new System.Drawing.Point(38, 121);
+            this.xrayStatusBox.Name = "xrayStatusBox";
+            this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.xrayStatusBox.TabIndex = 116;
+            // 
+            // medStatusBox
+            // 
+            this.medStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.medStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.medStatusBox.FormattingEnabled = true;
+            this.medStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.medStatusBox.Location = new System.Drawing.Point(38, 89);
+            this.medStatusBox.Name = "medStatusBox";
+            this.medStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.medStatusBox.TabIndex = 113;
+            // 
+            // urineStoolStatusBox
+            // 
+            this.urineStoolStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.urineStoolStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.urineStoolStatusBox.FormattingEnabled = true;
+            this.urineStoolStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.urineStoolStatusBox.Location = new System.Drawing.Point(38, 57);
+            this.urineStoolStatusBox.Name = "urineStoolStatusBox";
+            this.urineStoolStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.urineStoolStatusBox.TabIndex = 112;
+            // 
+            // StatusLabel
+            // 
+            this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.StatusLabel.AutoSize = true;
+            this.StatusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusLabel.Location = new System.Drawing.Point(45, 3);
+            this.StatusLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.StatusLabel.Name = "StatusLabel";
+            this.StatusLabel.Size = new System.Drawing.Size(43, 13);
+            this.StatusLabel.TabIndex = 48;
+            this.StatusLabel.Text = "Status";
+            this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbcStatusBox
+            // 
+            this.cbcStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.cbcStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbcStatusBox.FormattingEnabled = true;
+            this.cbcStatusBox.Items.AddRange(new object[] {
+            "ENT",
+            "RES",
+            "COM"});
+            this.cbcStatusBox.Location = new System.Drawing.Point(38, 25);
+            this.cbcStatusBox.Name = "cbcStatusBox";
+            this.cbcStatusBox.Size = new System.Drawing.Size(93, 21);
+            this.cbcStatusBox.TabIndex = 111;
+            // 
+            // CBCClickableLabel
+            // 
+            this.CBCClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.CBCClickableLabel.AutoSize = true;
+            this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBCClickableLabel.Location = new System.Drawing.Point(136, 29);
+            this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CBCClickableLabel.Name = "CBCClickableLabel";
+            this.CBCClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.CBCClickableLabel.Size = new System.Drawing.Size(60, 13);
+            this.CBCClickableLabel.TabIndex = 117;
+            this.CBCClickableLabel.Text = "CBC";
+            this.CBCClickableLabel.Click += new System.EventHandler(this.CBCClickableLabel_Click);
             // 
             // PatientInfoPanel
             // 
@@ -1340,7 +1508,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1361,7 +1529,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(127, 30);
+            this.Label5.Location = new System.Drawing.Point(126, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -1373,7 +1541,7 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(18, 30);
+            this.Label4.Location = new System.Drawing.Point(17, 30);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(61, 13);
@@ -1390,7 +1558,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(93, 20);
+            this.lastBox.Size = new System.Drawing.Size(92, 20);
             this.lastBox.TabIndex = 60;
             // 
             // firstBox
@@ -1400,7 +1568,7 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(99, 2);
+            this.firstBox.Location = new System.Drawing.Point(98, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
             this.firstBox.Size = new System.Drawing.Size(118, 20);
@@ -1411,11 +1579,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(221, 2);
+            this.middleBox.Location = new System.Drawing.Point(220, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(48, 20);
+            this.middleBox.Size = new System.Drawing.Size(49, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1764,174 +1932,6 @@
             this.MenuClickedLabel.TabIndex = 0;
             this.MenuClickedLabel.Text = "MenuTitle";
             this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // urineStoolStatusBox
-            // 
-            this.urineStoolStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.urineStoolStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.urineStoolStatusBox.FormattingEnabled = true;
-            this.urineStoolStatusBox.Items.AddRange(new object[] {
-            "ENT",
-            "RES",
-            "COM"});
-            this.urineStoolStatusBox.Location = new System.Drawing.Point(38, 57);
-            this.urineStoolStatusBox.Name = "urineStoolStatusBox";
-            this.urineStoolStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.urineStoolStatusBox.TabIndex = 112;
-            // 
-            // medStatusBox
-            // 
-            this.medStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.medStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.medStatusBox.FormattingEnabled = true;
-            this.medStatusBox.Items.AddRange(new object[] {
-            "ENT",
-            "RES",
-            "COM"});
-            this.medStatusBox.Location = new System.Drawing.Point(38, 89);
-            this.medStatusBox.Name = "medStatusBox";
-            this.medStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.medStatusBox.TabIndex = 113;
-            // 
-            // xrayStatusBox
-            // 
-            this.xrayStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.xrayStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.xrayStatusBox.FormattingEnabled = true;
-            this.xrayStatusBox.Items.AddRange(new object[] {
-            "ENT",
-            "RES",
-            "COM"});
-            this.xrayStatusBox.Location = new System.Drawing.Point(38, 121);
-            this.xrayStatusBox.Name = "xrayStatusBox";
-            this.xrayStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.xrayStatusBox.TabIndex = 116;
-            // 
-            // ecgStatusBox
-            // 
-            this.ecgStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.ecgStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ecgStatusBox.FormattingEnabled = true;
-            this.ecgStatusBox.Items.AddRange(new object[] {
-            "ENT",
-            "RES",
-            "COM"});
-            this.ecgStatusBox.Location = new System.Drawing.Point(38, 153);
-            this.ecgStatusBox.Name = "ecgStatusBox";
-            this.ecgStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.ecgStatusBox.TabIndex = 115;
-            // 
-            // fbsStatusBox
-            // 
-            this.fbsStatusBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.fbsStatusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.fbsStatusBox.FormattingEnabled = true;
-            this.fbsStatusBox.Items.AddRange(new object[] {
-            "ENT",
-            "RES",
-            "COM"});
-            this.fbsStatusBox.Location = new System.Drawing.Point(38, 185);
-            this.fbsStatusBox.Name = "fbsStatusBox";
-            this.fbsStatusBox.Size = new System.Drawing.Size(93, 21);
-            this.fbsStatusBox.TabIndex = 114;
-            // 
-            // CBCClickableLabel
-            // 
-            this.CBCClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.CBCClickableLabel.AutoSize = true;
-            this.CBCClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBCClickableLabel.Location = new System.Drawing.Point(136, 29);
-            this.CBCClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CBCClickableLabel.Name = "CBCClickableLabel";
-            this.CBCClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.CBCClickableLabel.Size = new System.Drawing.Size(60, 13);
-            this.CBCClickableLabel.TabIndex = 117;
-            this.CBCClickableLabel.Text = "CBC";
-            this.CBCClickableLabel.Click += new System.EventHandler(this.CBCClickableLabel_Click);
-            // 
-            // UriClickableLabel
-            // 
-            this.UriClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.UriClickableLabel.AutoSize = true;
-            this.UriClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UriClickableLabel.Location = new System.Drawing.Point(136, 61);
-            this.UriClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.UriClickableLabel.Name = "UriClickableLabel";
-            this.UriClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.UriClickableLabel.Size = new System.Drawing.Size(160, 13);
-            this.UriClickableLabel.TabIndex = 105;
-            this.UriClickableLabel.Text = "Urinalysis and Stool Exam";
-            this.UriClickableLabel.Click += new System.EventHandler(this.UriClickableLabel_Click);
-            // 
-            // MedExClickableLabel
-            // 
-            this.MedExClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.MedExClickableLabel.AutoSize = true;
-            this.MedExClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MedExClickableLabel.Location = new System.Drawing.Point(136, 93);
-            this.MedExClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MedExClickableLabel.Name = "MedExClickableLabel";
-            this.MedExClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.MedExClickableLabel.Size = new System.Drawing.Size(136, 13);
-            this.MedExClickableLabel.TabIndex = 106;
-            this.MedExClickableLabel.Text = "Medical Examination";
-            this.MedExClickableLabel.Click += new System.EventHandler(this.MedExClickableLabel_Click);
-            // 
-            // XrayClickableLabel
-            // 
-            this.XrayClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.XrayClickableLabel.AutoSize = true;
-            this.XrayClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XrayClickableLabel.Location = new System.Drawing.Point(136, 125);
-            this.XrayClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.XrayClickableLabel.Name = "XrayClickableLabel";
-            this.XrayClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.XrayClickableLabel.Size = new System.Drawing.Size(68, 13);
-            this.XrayClickableLabel.TabIndex = 107;
-            this.XrayClickableLabel.Text = "X-Ray";
-            this.XrayClickableLabel.Click += new System.EventHandler(this.XrayClickableLabel_Click);
-            // 
-            // ECGClickableLabel
-            // 
-            this.ECGClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ECGClickableLabel.AutoSize = true;
-            this.ECGClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ECGClickableLabel.Location = new System.Drawing.Point(136, 157);
-            this.ECGClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ECGClickableLabel.Name = "ECGClickableLabel";
-            this.ECGClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.ECGClickableLabel.Size = new System.Drawing.Size(61, 13);
-            this.ECGClickableLabel.TabIndex = 108;
-            this.ECGClickableLabel.Text = "ECG";
-            this.ECGClickableLabel.Click += new System.EventHandler(this.ECGClickableLabel_Click);
-            // 
-            // FBSClickableLabel
-            // 
-            this.FBSClickableLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.FBSClickableLabel.AutoSize = true;
-            this.FBSClickableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FBSClickableLabel.Location = new System.Drawing.Point(136, 189);
-            this.FBSClickableLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.FBSClickableLabel.Name = "FBSClickableLabel";
-            this.FBSClickableLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.FBSClickableLabel.Size = new System.Drawing.Size(117, 13);
-            this.FBSClickableLabel.TabIndex = 109;
-            this.FBSClickableLabel.Text = "FBS, Cholesterol";
-            this.FBSClickableLabel.Click += new System.EventHandler(this.FBSClickableLabel_Click);
-            // 
-            // PAPSClickedLabel
-            // 
-            this.PAPSClickedLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.PAPSClickedLabel.AutoSize = true;
-            this.PAPSClickedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PAPSClickedLabel.Location = new System.Drawing.Point(136, 221);
-            this.PAPSClickedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PAPSClickedLabel.Name = "PAPSClickedLabel";
-            this.PAPSClickedLabel.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.PAPSClickedLabel.Size = new System.Drawing.Size(93, 13);
-            this.PAPSClickedLabel.TabIndex = 110;
-            this.PAPSClickedLabel.Text = "PAP Smear";
-            this.PAPSClickedLabel.Click += new System.EventHandler(this.PAPSClickedLabel_Click);
             // 
             // MainMenu
             // 

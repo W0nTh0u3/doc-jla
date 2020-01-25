@@ -69,6 +69,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.physicianBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -386,6 +388,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.physicianBox);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.cholRange);
             this.panel2.Controls.Add(this.cholUnit);
             this.panel2.Controls.Add(this.label45);
@@ -519,6 +523,24 @@
             this.label12.Text = "BLOOD CHEMISTRY";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // physicianBox
+            // 
+            this.physicianBox.FormattingEnabled = true;
+            this.physicianBox.Location = new System.Drawing.Point(144, 222);
+            this.physicianBox.Name = "physicianBox";
+            this.physicianBox.Size = new System.Drawing.Size(208, 21);
+            this.physicianBox.TabIndex = 318;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 225);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 13);
+            this.label1.TabIndex = 317;
+            this.label1.Text = "Examining Physician";
+            // 
             // FBSCholeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,5 +609,7 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label label55;
         internal System.Windows.Forms.Label label56;
+        private System.Windows.Forms.ComboBox physicianBox;
+        private System.Windows.Forms.Label label1;
     }
 }

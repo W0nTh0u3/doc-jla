@@ -18,6 +18,7 @@ namespace SouthJLAInformationSystemC
             InitializeComponent();
             WrongLabel.Hide();
             AcceptButton = SignInBtn;
+            
         }
 
         private void UsernameBox_Click(object sender, EventArgs e)

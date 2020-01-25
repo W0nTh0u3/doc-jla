@@ -59,6 +59,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
+            this.physicianBox = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -358,6 +360,8 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
+            this.panel2.Controls.Add(this.physicianBox);
+            this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.ecgBox);
             this.panel2.Controls.Add(this.label40);
             this.panel2.Controls.Add(this.label42);
@@ -413,6 +417,24 @@
             this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
             this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
+            // 
+            // physicianBox
+            // 
+            this.physicianBox.FormattingEnabled = true;
+            this.physicianBox.Location = new System.Drawing.Point(144, 260);
+            this.physicianBox.Name = "physicianBox";
+            this.physicianBox.Size = new System.Drawing.Size(208, 21);
+            this.physicianBox.TabIndex = 318;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(16, 263);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 13);
+            this.label14.TabIndex = 317;
+            this.label14.Text = "Examining Physician";
             // 
             // ECGForm
             // 
@@ -472,5 +494,7 @@
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label2;
+        private System.Windows.Forms.ComboBox physicianBox;
+        private System.Windows.Forms.Label label14;
     }
 }

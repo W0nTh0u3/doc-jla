@@ -21,6 +21,8 @@ namespace SouthJLAInformationSystemC
             this.vMin = vMin;
             this.vMax = vMax;
             this.vUnits = vUnits;
+            //Ultimate Cheat para sa image nung resource!:
+            //Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory.Replace("\\bin\\Debug\\","\\Resources\\Signature"));
         }
 
         private void PrintPreviewForm_Load(object sender, EventArgs e)
@@ -99,6 +101,7 @@ namespace SouthJLAInformationSystemC
             cBCFormDoc.SetParameterValue("NEUTROPHILRange", "(" + vMin[5] + " - " + vMax[5] + ")");
             cBCFormDoc.SetParameterValue("LYMPHOCYTESRange", "(" + vMin[6] + " - " + vMax[6] + ")");
             cBCFormDoc.SetParameterValue("MONOCYTERange", "(" + vMin[7] + " - " + vMax[7] + ")");
+
 
             InternalPrintViewer.ReportSource = cBCFormDoc;
             InternalPrintViewer.Refresh();
