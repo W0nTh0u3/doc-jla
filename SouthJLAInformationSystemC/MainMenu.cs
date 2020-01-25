@@ -174,6 +174,7 @@ namespace SouthJLAInformationSystemC
 
             submit.Text = "Enter";
             submit.Enabled = true;
+            EnableEdit();
         }
 
         private void GenEditReqBtn_Click(object sender, EventArgs e)
@@ -198,7 +199,7 @@ namespace SouthJLAInformationSystemC
             {
                 Console.WriteLine(en.Message);
             }
-
+           
         }
 
         private void GenEntEdtReqBtn_Click(object sender, EventArgs e)
@@ -486,7 +487,7 @@ namespace SouthJLAInformationSystemC
             companyBox.Text = String.Empty;
             accBox.Text = String.Empty;
             paymentStatusBox.SelectedIndex = -1;
-
+            DisableEdit();
         }
 
         private void EnterOnly()
@@ -506,22 +507,43 @@ namespace SouthJLAInformationSystemC
             GenBillBtn.Enabled = false;
         }
 
-
-
+        private void EnableEdit()
+        {
+            ageBox.Enabled = true;
+            genderBox.Enabled = true;
+            civilBox.Enabled = true;
+            bdayBox.Enabled = true;
+            addressBox.Enabled = true;
+            packageBox.Enabled = true;
+            companyBox.Enabled = true;
+            accBox.Enabled = true;
+            paymentStatusBox.Enabled = true;
+        }
+        private void DisableEdit()
+        {
+            ageBox.Enabled = false;
+            genderBox.Enabled = false;
+            civilBox.Enabled = false;
+            bdayBox.Enabled = false;
+            addressBox.Enabled = false;
+            packageBox.Enabled = false;
+            companyBox.Enabled = false;
+            accBox.Enabled = false;
+            paymentStatusBox.Enabled = false;
+        }
 
 
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            try
+           try
           {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sdaSearch.Fill(dt);
 
-            
-            bdayBox.Value = (dt.Rows[0][5].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][5].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
+                bdayBox.Value = (dt.Rows[0][5].ToString() != "") ? DateTime.Parse(dt.Rows[0][5].ToString()) : DateTime.Now;
 
             lastBox.Text = dt.Rows[0][1].ToString();
                 firstBox.Text = dt.Rows[0][2].ToString();
@@ -543,9 +565,9 @@ namespace SouthJLAInformationSystemC
                     submit.Text = "Enter";
 
                 clearAll.Enabled = true;
-
+                EnableEdit();
                 submit.Enabled = true;
-        }
+       }
             catch (Exception en)
             {
                 MessageBox.Show("No matching record found.");
