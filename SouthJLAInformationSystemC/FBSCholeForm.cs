@@ -50,12 +50,30 @@ namespace SouthJLAInformationSystemC
             accBox.Text = dt1.Rows[0][15].ToString();
             DateBox.Text = dt1.Rows[0][9].ToString();
 
+            //pullot physician
+            physicianBox.Items.Clear();
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT name, title FROM dbo.physician WHERE cbc = '1'", con);
+            DataTable dt = new DataTable(); //this is creating a virtual table 
+            sda.Fill(dt);
+
+            string full = String.Empty;
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                full = dt.Rows[i][0].ToString() + ", " + dt.Rows[i][1].ToString();
+                physicianBox.Items.Add(full);
+            }
+
             //PULLOUT DICTIONARY
-            SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.BloodChemistryDictionary WHERE gender = '" + gender + "'", conn); //logic to find the right normal values
+            SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.BloodChemistryDictionary", conn); //logic to find the right normal values
             DataTable dtDic = new DataTable(); //this is creating a virtual table  
             sdaDic.Fill(dtDic);
 
             passID = idPass;
+
+            Console.WriteLine(dtDic.Rows[0][0].ToString());
 
             MinMaxStorage(dtDic);
             fbsUnit.Text = dtDic.Rows[0][0].ToString();

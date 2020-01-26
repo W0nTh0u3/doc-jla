@@ -351,6 +351,7 @@ namespace SouthJLAInformationSystemC
 
         private void CBCClickableLabel_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(uniquePass + "/" + idPass + "/" + submit.Text);
             try
             {
                 CBCForm cBC = new CBCForm(uniquePass, idPass, submit.Text);

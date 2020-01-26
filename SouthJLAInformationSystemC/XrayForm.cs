@@ -49,6 +49,22 @@ namespace SouthJLAInformationSystemC
 
             this.type = type;
 
+            //pullot physician
+            physicianBox.Items.Clear();
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT name, title FROM dbo.physician WHERE cbc = '1'", con);
+            DataTable dt = new DataTable(); //this is creating a virtual table 
+            sda.Fill(dt);
+
+            string full = String.Empty;
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                full = dt.Rows[i][0].ToString() + ", " + dt.Rows[i][1].ToString();
+                physicianBox.Items.Add(full);
+            }
+
             viewBox.Text = "";
             remarksBox.Text = "";
             MainMenu.statusXray = "ENT";

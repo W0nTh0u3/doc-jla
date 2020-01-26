@@ -38,6 +38,8 @@ namespace SouthJLAInformationSystemC
             DataTable dt1 = new DataTable(); //this is creating a virtual table  
             sdaSearch.Fill(dt1);
 
+            Console.WriteLine("checkpoint-1");
+
             idBox.Text = dt1.Rows[0][11].ToString();
             lastBox.Text = dt1.Rows[0][1].ToString();
             firstBox.Text = dt1.Rows[0][2].ToString();
@@ -55,11 +57,25 @@ namespace SouthJLAInformationSystemC
             accBox.Text = dt1.Rows[0][15].ToString();
             DateBox.Text = dt1.Rows[0][9].ToString();
 
+            //pullot physician
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT name, title FROM dbo.physician WHERE cbc = '1'", con);
+            DataTable dt = new DataTable(); //this is creating a virtual table 
+            sda.Fill(dt);
+
+            string full = String.Empty;
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                full = dt.Rows[i][0].ToString() + ", " + dt.Rows[i][1].ToString();
+                physicianBox.Items.Add(full);
+            }
+            Console.WriteLine("checkpoint-2");
             //PULLOUT DICTIONARY
-            SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.HematologyDictionary WHERE gender = '" + gender + "'", conn); //logic to find the right normal values
+            SqlDataAdapter sdaDic = new SqlDataAdapter("SELECT units, min, max FROM dbo.HematologyDictionary", conn); //logic to find the right normal values
             DataTable dtDic = new DataTable(); //this is creating a virtual table  
             sdaDic.Fill(dtDic);
-
+            Console.WriteLine("checkpoint-3");
             passID = idPass;
 
             MinMaxStorage(dtDic);
@@ -87,7 +103,7 @@ namespace SouthJLAInformationSystemC
             monoUnit.Text = dtDic.Rows[7][0].ToString();
             //monoRange.Text = "(" + dtDic.Rows[7][1].ToString() + " - " + dtDic.Rows[7][2].ToString() + ")"; 
             monoRange.Text = "(" + vMin[7] + " - " + vMax[7] + ")";
-
+            Console.WriteLine("checkpoint-4; type= "+ type);
             if (type == "Save changes")
             {
                 SqlConnection conn1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
@@ -106,6 +122,8 @@ namespace SouthJLAInformationSystemC
                 MainMenu.statusCbc = dt2.Rows[0][9].ToString();
             }
 
+            Console.WriteLine("checkpoint-5");
+
 
         }
 
@@ -115,7 +133,7 @@ namespace SouthJLAInformationSystemC
             string sqlString;
             vUnits = new string []{ wbcUnit.Text, rbcUnit.Text, hgbUnit.Text, hctUnit.Text, plateletUnit.Text, neutrophilUnit.Text, lymphUnit.Text, monoUnit.Text};
             checkStatus();
-            if (type == "Enter Results")
+            if (type == "Enter")
             {
                 sqlString = "INSERT INTO dbo.Hematology (wbc, rbc, hgb, hct, platelets, neutrophil, lymphocytes, monocyte,status, ofw_id) VALUES('" + wbcTextBox.Text + "','" + rbcTextBox.Text + "','" + hgbTextBox.Text + "','" + hctTextBox.Text + "','" + plateletsTextBox.Text + "','" + neutrophilTextBox.Text + "','" + lymphocytesTextBox.Text + "','" + monocyteTextBox.Text + "','"+MainMenu.statusCbc+"','" + passID + "')";
                 string[] valueString = { wbcTextBox.Text, rbcTextBox.Text, hgbTextBox.Text, hctTextBox.Text, plateletsTextBox.Text, neutrophilTextBox.Text, lymphocytesTextBox.Text, monocyteTextBox.Text };
