@@ -503,5 +503,56 @@ namespace SouthJLAInformationSystemC {
             if (e.KeyCode == Keys.Enter)
                 searchButton_Click (sender, e);
         }
+
+        private void mergeBtn_Click(object sender, EventArgs e)
+        {
+            int rowNum,totalRows;
+            totalRows = 1529; // in the future change this into size of table
+            
+
+            for (rowNum = 1; rowNum <= totalRows; rowNum++)
+            {
+                //database 1
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True");
+                SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE id = '" + rowNum + "'", conn);
+                DataTable dt = new DataTable();
+                //database 2
+                SqlConnection conn2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database2.mdf;Integrated Security=True");
+                SqlDataAdapter sdaSearch2 = new SqlDataAdapter("SELECT * FROM dbo.mjrl2020 WHERE id = '" + rowNum + "'", conn2);
+                DataTable dt2 = new DataTable();
+
+                sdaSearch.Fill(dt);
+                DateTime dateComplete1 = (dt.Rows[0][29].ToString() != "") ? DateTime.Parse(dt.Rows[0][29].ToString()) : DateTime.Now.AddYears(-1000);  
+                sdaSearch2.Fill(dt2);
+                Console.WriteLine("eto mali");
+                Console.WriteLine(dt2.Rows[0][29].ToString());
+                DateTime dateComplete2 = (dt2.Rows[0][29].ToString() != "") ? DateTime.Parse(dt.Rows[0][29].ToString()) : DateTime.Now.AddYears(-1000);
+
+                int compareDate = dateComplete1.CompareTo(dateComplete2);
+                if (compareDate < 1) //if database 1 is earlier than 2, save 2
+                {
+                    SqlCommand sda = new SqlCommand("UPDATE dbo.mjrl2020  SET lastName = '" +  dt2.Rows[0][1].ToString() + "',  givenName =   '" + dt2.Rows[0][2].ToString() + "', middleName = '" + dt2.Rows[0][3].ToString() + "', age = '" + dt2.Rows[0][4].ToString() + "', address = '" + dt2.Rows[0][5].ToString() + "', civilStatus = '" + dt2.Rows[0][6].ToString() + "', gender = '" + dt2.Rows[0][7].ToString() + "',  Date_Registered =   '" + dt2.Rows[0][8].ToString() + "',  paid =   '" + dt2.Rows[0][9].ToString() + "',  terminal =   '" + dt2.Rows[0][10].ToString() + "',  package =   '" + dt2.Rows[0][11].ToString() + "',  agency =   '" + dt2.Rows[0][12].ToString() + "',  account =   '" + dt2.Rows[0][13].ToString() + "',  birthDate =   '" + dt2.Rows[0][14].ToString() + "',  Form_No =   '" + dt2.Rows[0][15].ToString() + "',  Employee_Number =   '" + dt2.Rows[0][16].ToString() + "',  VITAL_SIGNS =   '" + dt2.Rows[0][17].ToString() + "', CBC =   '" + dt2.Rows[0][18].ToString() + "',  FBS =   '" + dt2.Rows[0][19].ToString() + "',  Cholesterol =   '" + dt2.Rows[0][20].ToString() + "',  Physical_Examination =   '" + dt2.Rows[0][21].ToString() + "',  ECG =   '" + dt2.Rows[0][22].ToString() + "',  PAP_Smear =   '" + dt2.Rows[0][23].ToString() + "',  Eye_Check_up =   '" + dt2.Rows[0][24].ToString() + "',  Chest_Xray =   '" + dt2.Rows[0][25].ToString() + "',  Urine_Exam =   '" + dt2.Rows[0][26].ToString() + "',  Stool_Exam =   '" + dt2.Rows[0][27].ToString() + "',  Remarks =   '" + dt2.Rows[0][28].ToString() + "',  Date_Completed =   '" + dt2.Rows[0][29].ToString() + "' WHERE id = '" + rowNum + "'", conn);
+                    conn.Open();
+                    sda.ExecuteNonQuery();
+                    conn.Close();
+                   
+
+                }
+                else if (compareDate == 1) // if database 1 is more recent than 2, save 1
+                {
+                    SqlCommand sda2 = new SqlCommand("UPDATE dbo.mjrl2020  SET lastName = '" + dt.Rows[0][1].ToString() + "',  givenName =   '" + dt.Rows[0][2].ToString() + "', middleName = '" + dt.Rows[0][3].ToString() + "', age = '" + dt.Rows[0][4].ToString() + "', address = '" + dt.Rows[0][5].ToString() + "', civilStatus = '" + dt.Rows[0][6].ToString() + "', gender = '" + dt.Rows[0][7].ToString() + "',  Date_Registered =   '" + dt.Rows[0][8].ToString() + "',  paid =   '" + dt.Rows[0][9].ToString() + "',  terminal =   '" + dt.Rows[0][10].ToString() + "',  package =   '" + dt.Rows[0][11].ToString() + "',  agency =   '" + dt.Rows[0][12].ToString() + "',  account =   '" + dt.Rows[0][13].ToString() + "',  birthDate =   '" + dt.Rows[0][14].ToString() + "',  Form_No =   '" + dt.Rows[0][15].ToString() + "',  Employee_Number =   '" + dt.Rows[0][16].ToString() + "',  VITAL_SIGNS =   '" + dt.Rows[0][17].ToString() + "', CBC =   '" + dt.Rows[0][18].ToString() + "',  FBS =   '" + dt.Rows[0][19].ToString() + "',  Cholesterol =   '" + dt.Rows[0][20].ToString() + "',  Physical_Examination =   '" + dt.Rows[0][21].ToString() + "',  ECG =   '" + dt.Rows[0][22].ToString() + "',  PAP_Smear =   '" + dt.Rows[0][23].ToString() + "',  Eye_Check_up =   '" + dt.Rows[0][24].ToString() + "',  Chest_Xray =   '" + dt.Rows[0][25].ToString() + "',  Urine_Exam =   '" + dt.Rows[0][26].ToString() + "',  Stool_Exam =   '" + dt.Rows[0][27].ToString() + "',  Remarks =   '" + dt.Rows[0][28].ToString() + "',  Date_Completed =   '" + dt.Rows[0][29].ToString() + "' WHERE id = '" + rowNum + "'", conn2);
+                    conn2.Open();
+                    sda2.ExecuteNonQuery();
+                    conn2.Close();
+
+                }// do nothing if equal
+
+
+
+
+            }
+            MessageBox.Show("Merge Successful!");
+
+        }
     }
 }
