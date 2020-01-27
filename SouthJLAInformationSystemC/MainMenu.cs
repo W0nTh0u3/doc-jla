@@ -522,7 +522,7 @@ namespace SouthJLAInformationSystemC
                 sdaSearch.Fill(dt);
 
             
-            bdayBox.Value = (dt.Rows[0][5].ToString() != "") ? DateTime.ParseExact(dt.Rows[0][5].ToString(), "MM-dd-yyyy", null) : DateTime.Now;
+            bdayBox.Value = (dt.Rows[0][5].ToString() != "") ? DateTime.Parse(dt.Rows[0][5].ToString()) : DateTime.Now;
 
             lastBox.Text = dt.Rows[0][1].ToString();
                 firstBox.Text = dt.Rows[0][2].ToString();
@@ -567,7 +567,7 @@ namespace SouthJLAInformationSystemC
             if (submit.Text == "Enter")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled, paid, terminal, package, agency, account, birthDate) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "','" + paymentStatusBox.SelectedItem + "','" + terminal + "','" + packageBox.SelectedItem + "','" + companyBox.Text + "','" + accBox.Text + "', '" + bdayBox.Value.Date.ToString() + "')", conn);
+                SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled, paid, terminal, package, agency, account, birthDate) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "','" + paymentStatusBox.SelectedItem + "','" + terminal + "','" + packageBox.SelectedItem + "','" + companyBox.Text + "','" + accBox.Text + "', '" + bdayBox.Value.Date + "')", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 conn.Close();
@@ -597,7 +597,7 @@ namespace SouthJLAInformationSystemC
             }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
                 SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
-                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" + bdayBox.Value.Date.ToString() + "' WHERE id = '" + idPass + "'", conn);
+                SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" +bdayBox.Value + "' WHERE id = '" + idPass + "'", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
                 Console.WriteLine("Nagsave na");
