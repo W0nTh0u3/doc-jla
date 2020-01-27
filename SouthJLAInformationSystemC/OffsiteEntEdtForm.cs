@@ -99,25 +99,16 @@ namespace SouthJLAInformationSystemC {
 
                 if (Convert.ToInt32 (ageBox.Text) < 30) {
                     papsStatusBox.SelectedItem = "N/A";
-                    papsStatusBox.Enabled = false;
                     fbsStatusBox.SelectedItem = "N/A";
-                    fbsStatusBox.Enabled = false;
                     ecgStatusBox.SelectedItem = "N/A";
-                    ecgStatusBox.Enabled = false;
                 } else if (genderBox.SelectedItem.ToString ().ToUpper () == "MALE") {
                     papsStatusBox.SelectedItem = "N/A";
-                    papsStatusBox.Enabled = false;
                     fbsStatusBox.SelectedItem = checkerNull (dt.Rows[0][19].ToString (), fbsStatusBox);
-                    fbsStatusBox.Enabled = true;
                     ecgStatusBox.SelectedItem = checkerNull (dt.Rows[0][22].ToString (), ecgStatusBox);
-                    ecgStatusBox.Enabled = true;
                 } else {
                     papsStatusBox.SelectedItem = checkerNull (dt.Rows[0][23].ToString (), papsStatusBox);
-                    papsStatusBox.Enabled = true;
                     fbsStatusBox.SelectedItem = checkerNull (dt.Rows[0][19].ToString (), fbsStatusBox);
-                    fbsStatusBox.Enabled = true;
                     ecgStatusBox.SelectedItem = checkerNull (dt.Rows[0][22].ToString (), ecgStatusBox);
-                    ecgStatusBox.Enabled = true;
 
                 }
 
@@ -316,25 +307,16 @@ namespace SouthJLAInformationSystemC {
 
             if (Convert.ToInt32 (ageBox.Text) < 30) {
                 papsStatusBox.SelectedItem = "N/A";
-                papsStatusBox.Enabled = false;
                 fbsStatusBox.SelectedItem = "N/A";
-                fbsStatusBox.Enabled = false;
                 ecgStatusBox.SelectedItem = "N/A";
-                ecgStatusBox.Enabled = false;
             } else if (genderBox.SelectedItem.ToString ().ToUpper () == "MALE") {
                 papsStatusBox.SelectedItem = "N/A";
-                papsStatusBox.Enabled = false;
                 fbsStatusBox.SelectedItem = checkerNull (dt.Rows[0][19].ToString (), fbsStatusBox);
-                fbsStatusBox.Enabled = true;
                 ecgStatusBox.SelectedItem = checkerNull (dt.Rows[0][22].ToString (), ecgStatusBox);
-                ecgStatusBox.Enabled = true;
             } else {
                 papsStatusBox.SelectedItem = checkerNull (dt.Rows[0][23].ToString (), papsStatusBox);
-                papsStatusBox.Enabled = true;
                 fbsStatusBox.SelectedItem = checkerNull (dt.Rows[0][19].ToString (), fbsStatusBox);
-                fbsStatusBox.Enabled = true;
                 ecgStatusBox.SelectedItem = checkerNull (dt.Rows[0][22].ToString (), ecgStatusBox);
-                ecgStatusBox.Enabled = true;
 
             }
 
