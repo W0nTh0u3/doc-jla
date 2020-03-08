@@ -1400,7 +1400,7 @@
             // 
             // offsiteReportsFormBindingSource
             // 
-            this.offsiteReportsFormBindingSource.DataSource = typeof(SouthJLAInformationSystemC.OffsiteReportsForm);
+            this.offsiteReportsFormBindingSource.DataSource = typeof(SouthJLAInformationSystemC.ReportsForm);
             // 
             // OffsiteEntEdtForm
             // 

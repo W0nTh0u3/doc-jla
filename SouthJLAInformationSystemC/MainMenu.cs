@@ -256,10 +256,10 @@ namespace SouthJLAInformationSystemC
 
         private void GenRepsBtn_Click(object sender, EventArgs e)
         {
-            CloseChildForm();
-            Button btn = sender as Button;
+            GenClinicPanel.Hide();
+            OpenChildForm(new ReportsForm());
             MenuClickedLabel.Text = GeneralClinicBtn.Text;
-            SubMenuLabelClicked.Text = btn.Text;
+            SubMenuLabelClicked.Text = GenRepsBtn.Text;
         }
 
         private void GenBillBtn_Click(object sender, EventArgs e)
