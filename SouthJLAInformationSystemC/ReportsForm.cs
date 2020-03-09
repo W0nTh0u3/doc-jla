@@ -14,13 +14,14 @@ namespace SouthJLAInformationSystemC
 {
     public partial class ReportsForm : Form
     {
-        DataTable patients,Hematology, urineStool, xray,ecg,fbs;
+        DataTable patients,Hematology, urineStool, xray,ecg,fbs,counter,dt;
+        int ei;
         public ReportsForm()
         {
             InitializeComponent();
         }
-
-        private void generateBtn_Click(object sender, EventArgs e)
+/*
+        private void generateBtn_Click1(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
             DataTable dt = new DataTable("");
@@ -31,8 +32,8 @@ namespace SouthJLAInformationSystemC
             SqlDataAdapter sda = new SqlDataAdapter(sqlstring, conn);
             patients = new DataTable(); //this is creating a virtual table  
             sda.Fill(patients);
-
             dt.Merge(patients);
+
            //transfer Hematology to dt
             sqlstring = "SELECT wbc,rbc,hgb,hct,platelets,neutrophil,lymphocytes,monocyte   FROM dbo.Hematology";
             sda = new SqlDataAdapter(sqlstring, conn);
@@ -56,6 +57,7 @@ namespace SouthJLAInformationSystemC
             sqlstring = "SELECT ecgStatus,ecgImpression   FROM dbo.ecg";
             sda = new SqlDataAdapter(sqlstring, conn);
             ecg = new DataTable(); //this is creating a virtual table  
+            sda.Fill(patients);
             sda.Fill(ecg);
             dt.Merge(ecg);
             //transfer FBS to dt
@@ -127,12 +129,176 @@ namespace SouthJLAInformationSystemC
             #endregion
 
 
-            dataGrid.DataSource = dt;
+            dataGrid.DataSource = patients;
             exportBtn.Enabled = true;
 
 
         }
+        */
+        private void generateBtn_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+            dt = new DataTable();
+            #region 
+            //patient info
+            dt.Columns.Add("Form No.");
+            dt.Columns.Add("Surname");
+            dt.Columns.Add("Name");
+            dt.Columns.Add("M.I.");
+            dt.Columns.Add("Age");
+            dt.Columns.Add("Birthdate");
+            dt.Columns.Add("Gender");
+            dt.Columns.Add("Civil Status");
+            dt.Columns.Add("Address");
+            dt.Columns.Add("Date Registered");
+            dt.Columns.Add("Package");
+            dt.Columns.Add("Payment Status");
+            dt.Columns.Add("Agency");
+            dt.Columns.Add("Account");
+            //CBC - Hematology
+            dt.Columns.Add("WBC");
+            dt.Columns.Add("RBC");
+            dt.Columns.Add("HGB");
+            dt.Columns.Add("HCT");
+            dt.Columns.Add("Platelets");
+            dt.Columns.Add("Neutrophil");
+            dt.Columns.Add("Lymphocytes");
+            dt.Columns.Add("Monocyte");
+            //Clinical Microscopy - Urine Stool
+            dt.Columns.Add("Urine Color");
+            dt.Columns.Add("Urine Transparency");
+            dt.Columns.Add("Leukocyte");
+            dt.Columns.Add("Nitrite");
+            dt.Columns.Add("Urobilinogen");
+            dt.Columns.Add("Protein");
+            dt.Columns.Add("PH");
+            dt.Columns.Add("Blood");
+            dt.Columns.Add("Specific Gravity");
+            dt.Columns.Add("Ketone");
+            dt.Columns.Add("Bilirubin");
+            dt.Columns.Add("Glucose");
+            dt.Columns.Add("Epithelial Cells");
+            dt.Columns.Add("Mucous Threads");
+            dt.Columns.Add("Amorphous Meterial");
+            dt.Columns.Add("PUS Cells");
+            dt.Columns.Add("Urine RBC");
+            dt.Columns.Add("Bacteria");
+            dt.Columns.Add("Stool Color");
+            dt.Columns.Add("Stool Consistency");
+            dt.Columns.Add("Stool PUS");
+            dt.Columns.Add("Stool RBC");
+            dt.Columns.Add("Others");
+            //Xray
+            dt.Columns.Add("Xray Status");
+            dt.Columns.Add("Xray Impression");
+            //ECG
+            dt.Columns.Add("ECG Status");
+            dt.Columns.Add("ECG Impression");
+            //FBS
+            dt.Columns.Add("FBS");
+            dt.Columns.Add("Total Cholesterol");
+            #endregion
 
+            string sqlstring = "SELECT COUNT(*) FROM dbo.ofw";
+            SqlDataAdapter sda = new SqlDataAdapter(sqlstring, conn);
+            counter = new DataTable(); //this is creating a virtual table  
+            sda.Fill(counter);
+
+            int count = Int32.Parse(counter.Rows[0][0].ToString()),rowTracker;
+            string IDtracker;
+             for (int i = 1; i <= count; i++)
+             {
+                 sqlstring = "SELECT patientID,lastName,givenName,middleName,age,birthDate,gender,civilStatus,address,dateFiled,package,paid,agency,account   FROM dbo.ofw ";
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 patients = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(patients);
+                 IDtracker = patients.Rows[i-1][0].ToString();
+                 
+
+
+                dt.Rows.Add();
+
+                 for (ei = 0; ei < 14; ei++)
+                 {
+                     dt.Rows[i - 1][ei] = patients.Rows[i - 1][ei];
+                 }
+                patients.Clear();
+                //transfer Hematology to dt
+                sqlstring = "SELECT wbc,rbc,hgb,hct,platelets,neutrophil,lymphocytes,monocyte FROM dbo.Hematology WHERE ofw_id ="+IDtracker;
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 Hematology = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(Hematology);
+                Console.WriteLine(i);
+                 rowTracker = Hematology.Rows.Count;
+                 addToDT(rowTracker, Hematology,8,i);
+                  Hematology.Clear();
+                 //transfer Clinical Microscopy - Urine Stool to dt
+                 sqlstring = "SELECT MacroColor,MacroTransparency,Leukocyte,Nitrite,Urobilinogen,Protein,PH,Blood,SpecificGravity,Ketone,Bilirubin,Glucose,MicroEpithelial,MucousThreads,AmorphousMaterial,PusCells,rbcU,bacteria,color,consistency,pus,rbcS,others FROM dbo.urineStool WHERE ofw_id =" + IDtracker;
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 urineStool = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(urineStool);
+    
+                rowTracker = urineStool.Rows.Count;
+                 addToDT(rowTracker, urineStool, 23, i);
+                urineStool.Clear();
+
+                //transfer xray to dt
+                sqlstring = "SELECT status,impression   FROM dbo.xray WHERE ofw_id =" + IDtracker;
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 xray = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(xray);
+
+                 rowTracker = xray.Rows.Count;
+                 addToDT(rowTracker, xray, 2, i);
+                xray.Clear();
+
+                //transfer ECG to dt
+                sqlstring = "SELECT ecgStatus,ecgImpression   FROM dbo.ecg WHERE ofw_id =" + IDtracker;
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 ecg = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(ecg);
+                 dataGrid.DataSource = dt;
+                 rowTracker = ecg.Rows.Count;
+                 addToDT(rowTracker, ecg, 2, i);
+                ecg.Clear();
+
+                //transfer FBS to dt
+                sqlstring = "SELECT fbs,totalCholesterol   FROM dbo.Blood_Chemistrty WHERE ofw_id =" + IDtracker;
+                 sda = new SqlDataAdapter(sqlstring, conn);
+                 fbs = new DataTable(); //this is creating a virtual table  
+                 sda.Fill(fbs);
+
+                 rowTracker = fbs.Rows.Count;
+                 addToDT(rowTracker, fbs, 2, i);
+                fbs.Clear();
+
+            }
+
+
+            dataGrid.DataSource = dt;
+
+
+        }
+        // tracker is number of columns
+        // cl is number of columns on the table to be added
+        // i is number of row
+        private void addToDT(int tracker, DataTable table, int cl, int i)
+        {
+            int clnow = 0;
+            if (tracker == 1)
+            {
+                for (; clnow < cl; clnow++)
+                {
+                    dt.Rows[i - 1][ei] = table.Rows[0][clnow].ToString();
+                    ei++;
+                }
+            }
+            else
+            {
+                ei = ei + cl;
+            }
+        }
+     
         private void exportBtn_Click(object sender, EventArgs e)
         {
             SaveFileDialog savefile = new SaveFileDialog();
