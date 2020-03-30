@@ -28,41 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.InternalPrintViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.TestReportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // InternalPrintViewer
+            // TestReportViewer
             // 
-            this.InternalPrintViewer.ActiveViewIndex = -1;
-            this.InternalPrintViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.InternalPrintViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.InternalPrintViewer.DisplayBackgroundEdge = false;
-            this.InternalPrintViewer.DisplayStatusBar = false;
-            this.InternalPrintViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.InternalPrintViewer.EnableToolTips = false;
-            this.InternalPrintViewer.Location = new System.Drawing.Point(0, 0);
-            this.InternalPrintViewer.Name = "InternalPrintViewer";
-            this.InternalPrintViewer.ShowCloseButton = false;
-            this.InternalPrintViewer.ShowCopyButton = false;
-            this.InternalPrintViewer.ShowExportButton = false;
-            this.InternalPrintViewer.ShowGotoPageButton = false;
-            this.InternalPrintViewer.ShowGroupTreeButton = false;
-            this.InternalPrintViewer.ShowLogo = false;
-            this.InternalPrintViewer.ShowParameterPanelButton = false;
-            this.InternalPrintViewer.ShowRefreshButton = false;
-            this.InternalPrintViewer.ShowTextSearchButton = false;
-            this.InternalPrintViewer.ShowZoomButton = false;
-            this.InternalPrintViewer.Size = new System.Drawing.Size(1200, 609);
-            this.InternalPrintViewer.TabIndex = 0;
-            this.InternalPrintViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            this.InternalPrintViewer.Load += new System.EventHandler(this.PrintPreviewForm_Load);
+            this.TestReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TestReportViewer.LocalReport.ReportEmbeddedResource = "SouthJLAInformationSystemC.TestReports.rdlc";
+            this.TestReportViewer.Location = new System.Drawing.Point(0, 0);
+            this.TestReportViewer.Name = "TestReportViewer";
+            this.TestReportViewer.PageCountMode = Microsoft.Reporting.WinForms.PageCountMode.Actual;
+            this.TestReportViewer.ServerReport.BearerToken = null;
+            this.TestReportViewer.ShowProgress = false;
+            this.TestReportViewer.Size = new System.Drawing.Size(1200, 609);
+            this.TestReportViewer.TabIndex = 0;
+            this.TestReportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             // 
             // PrintPreviewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 609);
-            this.Controls.Add(this.InternalPrintViewer);
+            this.Controls.Add(this.TestReportViewer);
             this.Name = "PrintPreviewForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Internal Print";
@@ -74,6 +61,6 @@
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer InternalPrintViewer;
+        private Microsoft.Reporting.WinForms.ReportViewer TestReportViewer;
     }
 }

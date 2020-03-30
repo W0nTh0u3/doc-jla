@@ -40,7 +40,9 @@ namespace SouthJLAInformationSystemC
 
             clearAll.Enabled = false;
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection  
+            ConnectStringRead stringFile = new ConnectStringRead();
+            SqlConnection conn = new SqlConnection(stringFile.text);
             SqlDataAdapter sda = new SqlDataAdapter("SELECT DISTINCT packageName FROM dbo.Packages", conn);
             DataTable dt = new DataTable(); //this is creating a virtual table 
             sda.Fill(dt);
@@ -516,7 +518,9 @@ namespace SouthJLAInformationSystemC
         {
             try
           {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                ConnectStringRead stringFile = new ConnectStringRead();
+                SqlConnection conn = new SqlConnection(stringFile.text);
                 SqlDataAdapter sdaSearch = new SqlDataAdapter("SELECT * FROM dbo.ofw WHERE patientID = '" + searchBox.Text + "'", conn);
                 DataTable dt = new DataTable(); //this is creating a virtual table  
                 sdaSearch.Fill(dt);
@@ -566,7 +570,9 @@ namespace SouthJLAInformationSystemC
         {
             if (submit.Text == "Enter")
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                ConnectStringRead stringFile = new ConnectStringRead();
+                SqlConnection conn = new SqlConnection(stringFile.text);
                 SqlCommand sda = new SqlCommand("INSERT INTO dbo.ofw (lastName, givenName, middleName, age, address, civilStatus, gender, dateFiled, paid, terminal, package, agency, account, birthDate) VALUES('" + lastBox.Text + "','" + firstBox.Text + "','" + middleBox.Text + "','" + ageBox.Text + "','" + addressBox.Text + "','" + civilBox.SelectedItem + "','" + genderBox.SelectedItem + "','" + dateFiledBox.Value.ToString("MM-dd-yyyy") + "','" + paymentStatusBox.SelectedItem + "','" + terminal + "','" + packageBox.SelectedItem + "','" + companyBox.Text + "','" + accBox.Text + "', '" + bdayBox.Value.Date + "')", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();
@@ -596,7 +602,9 @@ namespace SouthJLAInformationSystemC
                 MessageBox.Show("Successful! This is your Patient ID: " + unique);
             }            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
+                ConnectStringRead stringFile = new ConnectStringRead();
+                SqlConnection conn = new SqlConnection(stringFile.text);
                 SqlCommand sda = new SqlCommand("UPDATE dbo.ofw  SET lastName = '" + lastBox.Text + "',  givenName =   '" + firstBox.Text + "', middleName = '" + middleBox.Text + "', age = '" + ageBox.Text + "', gender = '" + genderBox.SelectedItem + "', civilStatus = '" + civilBox.SelectedItem + "', address = '" + addressBox.Text + "',  agency =   '" + companyBox.Text + "',  paid =   '" + paymentStatusBox.SelectedItem + "',  terminal =   '" + terminal + "',  package =   '" + packageBox.SelectedItem + "',  account =   '" + accBox.Text + "',  birthDate =   '" +bdayBox.Value + "' WHERE id = '" + idPass + "'", conn);
                 conn.Open();
                 sda.ExecuteNonQuery();

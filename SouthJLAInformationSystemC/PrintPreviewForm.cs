@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Reporting.WinForms;
 
 namespace SouthJLAInformationSystemC
 {
@@ -27,7 +28,7 @@ namespace SouthJLAInformationSystemC
 
         private void PrintPreviewForm_Load(object sender, EventArgs e)
         {
-            if (patientInfoValue[0] == "CBCForm")
+            /*if (patientInfoValue[0] == "CBCForm")
                 CBCFormPreview();
             else if (patientInfoValue[0] == "UrinStoolForm")
                 UrinStoolFormPreview();
@@ -40,10 +41,12 @@ namespace SouthJLAInformationSystemC
             else if (patientInfoValue[0] == "MedExamForm")
                 MedExamFormPreview();
             else
-                MessageBox.Show("Work in Progress");
+                MessageBox.Show("Work in Progress");*/
+            this.TestReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            this.TestReportViewer.RefreshReport();
         }
 
-        private void CBCFormPreview()
+        /*private void CBCFormPreview()
         {
             CBCFormDoc cBCFormDoc = new CBCFormDoc();
             cBCFormDoc.SetParameterValue("IDVal", patientInfoValue[1]);
@@ -312,7 +315,7 @@ namespace SouthJLAInformationSystemC
                 return "N";
             else
                 return ""; 
-        }
+        }*/
 
     }
 }
