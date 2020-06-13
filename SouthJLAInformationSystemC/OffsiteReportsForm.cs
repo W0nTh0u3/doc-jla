@@ -57,7 +57,7 @@ namespace SouthJLAInformationSystemC {
             }
         }
     }
-    public static class CSVUtlity {
+    public static class CSVUtlitye {
         public static void ToCSV (this DataTable dtDataTable, string strFilePath) {
             StreamWriter sw = new StreamWriter (strFilePath, false, Encoding.UTF8);
             //headers  
