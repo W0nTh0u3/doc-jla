@@ -37,12 +37,9 @@
             this.TestReportViewer.LocalReport.ReportEmbeddedResource = "SouthJLAInformationSystemC.TestReports.rdlc";
             this.TestReportViewer.Location = new System.Drawing.Point(0, 0);
             this.TestReportViewer.Name = "TestReportViewer";
-            this.TestReportViewer.PageCountMode = Microsoft.Reporting.WinForms.PageCountMode.Actual;
             this.TestReportViewer.ServerReport.BearerToken = null;
-            this.TestReportViewer.ShowProgress = false;
             this.TestReportViewer.Size = new System.Drawing.Size(1200, 609);
             this.TestReportViewer.TabIndex = 0;
-            this.TestReportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             // 
             // PrintPreviewForm
             // 

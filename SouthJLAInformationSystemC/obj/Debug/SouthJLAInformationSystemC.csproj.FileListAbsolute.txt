@@ -354,3 +354,9 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\zh-CHS\Microsoft.Report
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\RdlCompile.cache
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\RdlCompile.compiled
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.exe.manifest
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\SouthJLAInformationSystemC.application
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.exe.manifest
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.application
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.dll
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.xml

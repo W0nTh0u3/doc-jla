@@ -16,6 +16,7 @@ namespace SouthJLAInformationSystemC
         private readonly string[] values,patientInfoValue, vMin, vMax, vUnits;
         public PrintPreviewForm(string[] values, string[] patientInfoValue, string[] vMin, string[] vMax, string[] vUnits)
         {
+            //patientInfoValue = { Name, idBox.Text, lastBox.Text, firstBox.Text, middleBox.Text, ageBox.Text, gender, civilStat, packageBox.Text, companyBox.Text, accBox.Text, DateBox.Text, FormNBox.Text };
             InitializeComponent();
             this.patientInfoValue = patientInfoValue;
             this.values = values;
@@ -28,7 +29,8 @@ namespace SouthJLAInformationSystemC
 
         private void PrintPreviewForm_Load(object sender, EventArgs e)
         {
-            /*if (patientInfoValue[0] == "CBCForm")
+            
+            if (patientInfoValue[0] == "CBCForm")
                 CBCFormPreview();
             else if (patientInfoValue[0] == "UrinStoolForm")
                 UrinStoolFormPreview();
@@ -41,12 +43,12 @@ namespace SouthJLAInformationSystemC
             else if (patientInfoValue[0] == "MedExamForm")
                 MedExamFormPreview();
             else
-                MessageBox.Show("Work in Progress");*/
-            this.TestReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
-            this.TestReportViewer.RefreshReport();
+                MessageBox.Show("Work in Progress");
+            
         }
-
-        /*private void CBCFormPreview()
+        #region crystalreports
+        /*
+        private void CBCFormPreview()
         {
             CBCFormDoc cBCFormDoc = new CBCFormDoc();
             cBCFormDoc.SetParameterValue("IDVal", patientInfoValue[1]);
@@ -183,6 +185,11 @@ namespace SouthJLAInformationSystemC
             InternalPrintViewer.Refresh();
         }
 
+        private void TestReportViewer_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void ECGFormPreview()
         {
             ECGFormDoc eCGFormDoc = new ECGFormDoc();
@@ -315,7 +322,59 @@ namespace SouthJLAInformationSystemC
                 return "N";
             else
                 return ""; 
-        }*/
+        }
+        */
+        #endregion
+        #region rdlc
+        private void CBCFormPreview()
+        {
+            TestReportViewer.LocalReport.ReportEmbeddedResource = "SouthJLAInformationSystemC.CBCFormDoc.rdlc";
+            TestReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            ReportParameterCollection reportParameter = new ReportParameterCollection();
+            for (int x = 1; x < patientInfoValue.Length; x++)
+                reportParameter.Add(new ReportParameter("head" + x.ToString(), patientInfoValue[x]));
+            TestReportViewer.LocalReport.SetParameters(reportParameter);
+            TestReportViewer.RefreshReport();
+            DataTable dt = new DataTable();
+            dt.Clear();
+            dt.Columns.Add("wbc");
+            dt.Columns.Add("rbc");
+            dt.Columns.Add("hgb");
+            dt.Columns.Add("hct");
+            dt.Columns.Add("platelet");
+            dt.Columns.Add("neutrophil");
+            dt.Columns.Add("lymphocytes");
+            dt.Columns.Add("monocytes");
+            /*DataRow _dt = dt.NewRow(); //backup rows to!
+            _dt["wbc"] = values[0];
+            _dt["rbc"] = values[1];*/
+            dt.Rows.Add(values);
+            ReportDataSource reportt = new ReportDataSource();
+            reportt.Name = "CBCSet";
+            reportt.Value = dt;
+            this.TestReportViewer.LocalReport.DataSources.Add(reportt);
+            this.TestReportViewer.RefreshReport();
+        }
+        private void UrinStoolFormPreview()
+        {
 
+        }
+        private void XrayFormPreview()
+        {
+
+        }
+        private void ECGFormPreview()
+        {
+
+        }
+        private void FBSChloreFormPreview()
+        {
+
+        }
+        private void MedExamFormPreview()
+        {
+
+        }
+        #endregion
     }
 }
