@@ -152,6 +152,14 @@
       <DependentUpon>OffsiteEntEdtForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TestDataSet.cs">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TestDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="XrayFormDoc.cs">
       <DependentUpon>XrayFormDoc.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -414,6 +422,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="SouthJLAInformationSystemC_TemporaryKey.pfx" />
+    <None Include="TestDataSet.xsc">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TestDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TestDataSet.xss">
+      <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

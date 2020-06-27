@@ -337,18 +337,24 @@ namespace SouthJLAInformationSystemC
             TestReportViewer.RefreshReport();
             DataTable dt = new DataTable();
             dt.Clear();
-            dt.Columns.Add("wbc");
-            dt.Columns.Add("rbc");
-            dt.Columns.Add("hgb");
-            dt.Columns.Add("hct");
-            dt.Columns.Add("platelet");
-            dt.Columns.Add("neutrophil");
-            dt.Columns.Add("lymphocytes");
-            dt.Columns.Add("monocytes");
-            /*DataRow _dt = dt.NewRow(); //backup rows to!
-            _dt["wbc"] = values[0];
-            _dt["rbc"] = values[1];*/
-            dt.Rows.Add(values);
+            for (int i = 0; i < values.Length; i++)
+                dt.Columns.Add("val" + (i + 1).ToString());
+            for (int i = 0; i < vUnits.Length; i++)
+                dt.Columns.Add("unit" + (i + 1).ToString());
+            for (int i = 0; i < vMin.Length; i++)
+                dt.Columns.Add("lo" + (i + 1).ToString());
+            for (int i = 0; i < vMax.Length; i++)
+                dt.Columns.Add("up" + (i + 1).ToString());
+            DataRow _dt = dt.NewRow();
+            for (int i = 0; i < values.Length; i++)
+                _dt["val" + (i + 1).ToString()] = values[i];
+            for (int i = 0; i < values.Length; i++)
+                _dt["unit" + (i + 1).ToString()] = vUnits[i];
+            for (int i = 0; i < values.Length; i++)
+                _dt["lo" + (i + 1).ToString()] = vMin[i];
+            for (int i = 0; i < values.Length; i++)
+                _dt["up" + (i + 1).ToString()] = vMax[i];
+            dt.Rows.Add(_dt);
             ReportDataSource reportt = new ReportDataSource();
             reportt.Name = "CBCSet";
             reportt.Value = dt;

@@ -9,62 +9,429 @@
       </ConnectionProperties>
       <rd:DataSourceID>3105e4e6-bf67-47fa-a6c2-a0ee89b31d48</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="TestDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>625c37e8-e090-4f56-b016-418b39ed2d76</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="CBCSet">
       <Query>
-        <DataSourceName>DatabaseDataSet</DataSourceName>
+        <DataSourceName>TestDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="id">
-          <DataField>id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="lo25">
+          <DataField>lo25</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="wbc">
-          <DataField>wbc</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo24">
+          <DataField>lo24</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="rbc">
-          <DataField>rbc</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo23">
+          <DataField>lo23</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="hgb">
-          <DataField>hgb</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo22">
+          <DataField>lo22</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="hct">
-          <DataField>hct</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo21">
+          <DataField>lo21</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="platelets">
-          <DataField>platelets</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="lo20">
+          <DataField>lo20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="neutrophil">
-          <DataField>neutrophil</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo19">
+          <DataField>lo19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="lymphocytes">
-          <DataField>lymphocytes</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo18">
+          <DataField>lo18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="monocyte">
-          <DataField>monocyte</DataField>
-          <rd:TypeName>System.Single</rd:TypeName>
+        <Field Name="lo17">
+          <DataField>lo17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ofw_id">
-          <DataField>ofw_id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="lo16">
+          <DataField>lo16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo15">
+          <DataField>lo15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo14">
+          <DataField>lo14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo13">
+          <DataField>lo13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo12">
+          <DataField>lo12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo11">
+          <DataField>lo11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo10">
+          <DataField>lo10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo9">
+          <DataField>lo9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo8">
+          <DataField>lo8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo7">
+          <DataField>lo7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo6">
+          <DataField>lo6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo5">
+          <DataField>lo5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo4">
+          <DataField>lo4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo3">
+          <DataField>lo3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo2">
+          <DataField>lo2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="lo1">
+          <DataField>lo1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up25">
+          <DataField>up25</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up24">
+          <DataField>up24</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up23">
+          <DataField>up23</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up22">
+          <DataField>up22</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up21">
+          <DataField>up21</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up20">
+          <DataField>up20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up19">
+          <DataField>up19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up18">
+          <DataField>up18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up17">
+          <DataField>up17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up16">
+          <DataField>up16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up15">
+          <DataField>up15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up14">
+          <DataField>up14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up13">
+          <DataField>up13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up12">
+          <DataField>up12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up11">
+          <DataField>up11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up10">
+          <DataField>up10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up9">
+          <DataField>up9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up8">
+          <DataField>up8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up7">
+          <DataField>up7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up6">
+          <DataField>up6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up5">
+          <DataField>up5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up4">
+          <DataField>up4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up3">
+          <DataField>up3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up2">
+          <DataField>up2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="up1">
+          <DataField>up1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit25">
+          <DataField>unit25</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit24">
+          <DataField>unit24</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit23">
+          <DataField>unit23</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit22">
+          <DataField>unit22</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit21">
+          <DataField>unit21</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit20">
+          <DataField>unit20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit19">
+          <DataField>unit19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit18">
+          <DataField>unit18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit17">
+          <DataField>unit17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit16">
+          <DataField>unit16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit15">
+          <DataField>unit15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit14">
+          <DataField>unit14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit13">
+          <DataField>unit13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit12">
+          <DataField>unit12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit11">
+          <DataField>unit11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit10">
+          <DataField>unit10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit9">
+          <DataField>unit9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit8">
+          <DataField>unit8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit7">
+          <DataField>unit7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit6">
+          <DataField>unit6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit5">
+          <DataField>unit5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit4">
+          <DataField>unit4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit3">
+          <DataField>unit3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit2">
+          <DataField>unit2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="unit1">
+          <DataField>unit1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val25">
+          <DataField>val25</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val24">
+          <DataField>val24</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val23">
+          <DataField>val23</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val22">
+          <DataField>val22</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val21">
+          <DataField>val21</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val20">
+          <DataField>val20</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val19">
+          <DataField>val19</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val18">
+          <DataField>val18</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val17">
+          <DataField>val17</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val16">
+          <DataField>val16</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val15">
+          <DataField>val15</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val14">
+          <DataField>val14</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val13">
+          <DataField>val13</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val12">
+          <DataField>val12</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val11">
+          <DataField>val11</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val10">
+          <DataField>val10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val9">
+          <DataField>val9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val8">
+          <DataField>val8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val7">
+          <DataField>val7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val6">
+          <DataField>val6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val5">
+          <DataField>val5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val4">
+          <DataField>val4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val3">
+          <DataField>val3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val2">
+          <DataField>val2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="val1">
+          <DataField>val1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DatabaseDataSet</rd:DataSetName>
-        <rd:SchemaPath>E:\GitRepos\doc-jla\SouthJLAInformationSystemC\DatabaseDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Hematology</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>HematologyTableAdapter</rd:TableAdapterName>
+        <rd:DataSetName>TestDataSet</rd:DataSetName>
+        <rd:SchemaPath>E:\GitRepos\doc-jla\SouthJLAInformationSystemC\TestDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>TestDataTable</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -323,7 +690,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -335,27 +702,32 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="wbc">
+                        <Textbox Name="Textbox1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!wbc.Value</Value>
+                                  <Value>=Fields!val1.Value</Value>
                                   <Style>
-                                    <Color>=IIf(Fields!wbc.Value=Fields!rbc.Value,"Red","Black")</Color>
+                                    <Format>0.00;(0.00)</Format>
+                                    <Color>=IIf(
+(CDbl(Fields!val1.Value)&lt;=CDbl(Fields!up1.Value))
+And
+(CDbl(Fields!val1.Value)&gt;=CDbl(Fields!lo1.Value))
+,"Black","Red")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>wbc</rd:DefaultName>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -367,25 +739,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox6">
+                        <Textbox Name="unit1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <rd:DefaultName>unit1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -404,7 +776,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!wbc.Value</Value>
+                                  <Value>=Fields!lo1.Value</Value>
                                   <Style />
                                 </TextRun>
                                 <TextRun>
@@ -412,7 +784,7 @@
                                   <Style />
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=Fields!rbc.Value</Value>
+                                  <Value>=Fields!up1.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -423,7 +795,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -458,7 +830,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -470,25 +842,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="rbc">
+                        <Textbox Name="Textbox9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!rbc.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val2.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val2.Value)&lt;=CDbl(Fields!up2.Value))
+And
+(CDbl(Fields!val2.Value)&gt;=CDbl(Fields!lo2.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>rbc</rd:DefaultName>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -500,25 +878,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox10">
+                        <Textbox Name="unit2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <rd:DefaultName>unit2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -537,7 +915,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo2.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up2.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -548,7 +934,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -583,7 +969,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -595,25 +981,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="hgb">
+                        <Textbox Name="val3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!hgb.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val3.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val3.Value)&lt;=CDbl(Fields!up3.Value))
+And
+(CDbl(Fields!val3.Value)&gt;=CDbl(Fields!lo3.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>hgb</rd:DefaultName>
+                          <rd:DefaultName>val3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -625,25 +1017,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox15">
+                        <Textbox Name="unit3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit3.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <rd:DefaultName>unit3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -662,7 +1054,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo3.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up3.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -673,7 +1073,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -708,7 +1108,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -720,25 +1120,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="hct">
+                        <Textbox Name="val4">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!hct.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val4.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val4.Value)&lt;=CDbl(Fields!up4.Value))
+And
+(CDbl(Fields!val4.Value)&gt;=CDbl(Fields!lo4.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>hct</rd:DefaultName>
+                          <rd:DefaultName>val4</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -750,25 +1156,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox19">
+                        <Textbox Name="unit4">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit4.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <rd:DefaultName>unit4</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -787,7 +1193,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo4.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up4.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -798,7 +1212,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -833,7 +1247,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -845,25 +1259,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="platelets1">
+                        <Textbox Name="val5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!platelets.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val5.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val5.Value)&lt;=CDbl(Fields!up5.Value))
+And
+(CDbl(Fields!val5.Value)&gt;=CDbl(Fields!lo5.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>platelets1</rd:DefaultName>
+                          <rd:DefaultName>val5</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -875,25 +1295,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox23">
+                        <Textbox Name="unit5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit5.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox23</rd:DefaultName>
+                          <rd:DefaultName>unit5</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -912,7 +1332,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo5.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up5.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -923,7 +1351,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -958,7 +1386,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -970,25 +1398,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="neutrophil">
+                        <Textbox Name="val6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!neutrophil.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val6.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val6.Value)&lt;=CDbl(Fields!up6.Value))
+And
+(CDbl(Fields!val6.Value)&gt;=CDbl(Fields!lo6.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>neutrophil</rd:DefaultName>
+                          <rd:DefaultName>val6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1000,25 +1434,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox31">
+                        <Textbox Name="unit6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit6.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox31</rd:DefaultName>
+                          <rd:DefaultName>unit6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1037,7 +1471,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo6.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up6.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1048,7 +1490,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1083,7 +1525,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1095,25 +1537,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="lymphocytes">
+                        <Textbox Name="val7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!lymphocytes.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val7.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val7.Value)&lt;=CDbl(Fields!up7.Value))
+And
+(CDbl(Fields!val7.Value)&gt;=CDbl(Fields!lo7.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>lymphocytes</rd:DefaultName>
+                          <rd:DefaultName>val7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1125,25 +1573,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox39">
+                        <Textbox Name="unit7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit7.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox39</rd:DefaultName>
+                          <rd:DefaultName>unit7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1162,7 +1610,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo7.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up7.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1173,7 +1629,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1208,7 +1664,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1220,25 +1676,31 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="monocyte">
+                        <Textbox Name="val8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!monocyte.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!val8.Value</Value>
+                                  <Style>
+                                    <Color>=IIf(
+(CDbl(Fields!val8.Value)&lt;=CDbl(Fields!up8.Value))
+And
+(CDbl(Fields!val8.Value)&gt;=CDbl(Fields!lo8.Value))
+,"Black","Red")</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>monocyte</rd:DefaultName>
+                          <rd:DefaultName>val8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1250,25 +1712,25 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox45">
+                        <Textbox Name="unit8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!unit8.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <rd:DefaultName>unit8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1287,7 +1749,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Fields!lo8.Value</Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value> - </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!up8.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1298,7 +1768,7 @@
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1352,7 +1822,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>27.7cm</Height>
+        <Height>10.06667cm</Height>
         <Style />
       </Body>
       <Width>19.00004cm</Width>
@@ -1380,7 +1850,7 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>Tel. No. 834-7046 / 0920-9537443
+                      <Value>Tel. No.(02) 8834-7046 / 0920-9537443
 </Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -1684,6 +2154,10 @@ ISO Certified 9001:2015</Value>
                         </TextRun>
                         <TextRun>
                           <Value>=Parameters!head4.Value</Value>
+                          <Style />
+                        </TextRun>
+                        <TextRun>
+                          <Value>.</Value>
                           <Style />
                         </TextRun>
                       </TextRuns>
