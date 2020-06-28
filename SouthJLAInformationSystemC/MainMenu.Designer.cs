@@ -153,6 +153,7 @@
             this.ContentTitlePanel = new System.Windows.Forms.Panel();
             this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.MenuClickedLabel = new System.Windows.Forms.Label();
+            this.MedExLandClickableLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -1508,7 +1509,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1571,7 +1572,7 @@
             this.firstBox.Location = new System.Drawing.Point(98, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
-            this.firstBox.Size = new System.Drawing.Size(118, 20);
+            this.firstBox.Size = new System.Drawing.Size(117, 20);
             this.firstBox.TabIndex = 61;
             // 
             // middleBox
@@ -1579,11 +1580,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(220, 2);
+            this.middleBox.Location = new System.Drawing.Point(219, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(49, 20);
+            this.middleBox.Size = new System.Drawing.Size(50, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1591,7 +1592,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(232, 30);
+            this.Label6.Location = new System.Drawing.Point(231, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1846,6 +1847,7 @@
             // 
             // PatientIDPanel
             // 
+            this.PatientIDPanel.Controls.Add(this.MedExLandClickableLabel);
             this.PatientIDPanel.Controls.Add(this.clearAll);
             this.PatientIDPanel.Controls.Add(this.searchButton);
             this.PatientIDPanel.Controls.Add(this.searchBox);
@@ -1932,6 +1934,16 @@
             this.MenuClickedLabel.TabIndex = 0;
             this.MenuClickedLabel.Text = "MenuTitle";
             this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // MedExLandClickableLabel
+            // 
+            this.MedExLandClickableLabel.AutoSize = true;
+            this.MedExLandClickableLabel.Location = new System.Drawing.Point(825, 22);
+            this.MedExLandClickableLabel.Name = "MedExLandClickableLabel";
+            this.MedExLandClickableLabel.Size = new System.Drawing.Size(54, 13);
+            this.MedExLandClickableLabel.TabIndex = 74;
+            this.MedExLandClickableLabel.Text = "FormLand";
+            this.MedExLandClickableLabel.Click += new System.EventHandler(this.MedExLandClickableLabel_Click);
             // 
             // MainMenu
             // 
@@ -2116,5 +2128,6 @@
         internal System.Windows.Forms.Label ECGClickableLabel;
         internal System.Windows.Forms.Label FBSClickableLabel;
         internal System.Windows.Forms.Label PAPSClickedLabel;
+        private System.Windows.Forms.Label MedExLandClickableLabel;
     }
 }

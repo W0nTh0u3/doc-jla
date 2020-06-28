@@ -449,13 +449,16 @@ namespace SouthJLAInformationSystemC
         }
 
 
-
-
-
         private void PAPSClickedLabel_Click(object sender, EventArgs e)
         {
             PAPForm pAPForm = new PAPForm();
             pAPForm.Show();
+        }
+
+        private void MedExLandClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedExamLand medExamLand = new MedExamLand();
+            medExamLand.Show();
         }
         #endregion
         private void DisableAllBoxes()
@@ -558,6 +561,8 @@ namespace SouthJLAInformationSystemC
             }
 
         }
+
+
 
         private void clearAll_Click(object sender, EventArgs e)
         {

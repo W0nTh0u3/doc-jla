@@ -360,3 +360,4 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSyst
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.application
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.dll
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.xml
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamLand.resources

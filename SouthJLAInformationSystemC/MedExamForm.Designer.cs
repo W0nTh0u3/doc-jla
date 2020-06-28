@@ -244,9 +244,6 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.y2 = new System.Windows.Forms.RadioButton();
             this.n2 = new System.Windows.Forms.RadioButton();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.y1 = new System.Windows.Forms.RadioButton();
-            this.n1 = new System.Windows.Forms.RadioButton();
             this.mensBox = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
@@ -291,6 +288,9 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.n1 = new System.Windows.Forms.RadioButton();
+            this.y1 = new System.Windows.Forms.RadioButton();
+            this.panel22 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -325,13 +325,13 @@
             this.panel43.SuspendLayout();
             this.pregnancyN.SuspendLayout();
             this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -2625,38 +2625,6 @@
             this.n2.Text = "NO";
             this.n2.UseVisualStyleBackColor = true;
             // 
-            // panel22
-            // 
-            this.panel22.AutoSize = true;
-            this.panel22.Controls.Add(this.y1);
-            this.panel22.Controls.Add(this.n1);
-            this.panel22.Location = new System.Drawing.Point(210, 257);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(99, 23);
-            this.panel22.TabIndex = 216;
-            // 
-            // y1
-            // 
-            this.y1.AutoSize = true;
-            this.y1.Location = new System.Drawing.Point(3, 3);
-            this.y1.Name = "y1";
-            this.y1.Size = new System.Drawing.Size(46, 17);
-            this.y1.TabIndex = 97;
-            this.y1.TabStop = true;
-            this.y1.Text = "YES";
-            this.y1.UseVisualStyleBackColor = true;
-            // 
-            // n1
-            // 
-            this.n1.AutoSize = true;
-            this.n1.Location = new System.Drawing.Point(55, 3);
-            this.n1.Name = "n1";
-            this.n1.Size = new System.Drawing.Size(41, 17);
-            this.n1.TabIndex = 98;
-            this.n1.TabStop = true;
-            this.n1.Text = "NO";
-            this.n1.UseVisualStyleBackColor = true;
-            // 
             // mensBox
             // 
             this.mensBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3137,6 +3105,38 @@
             this.label12.TabIndex = 95;
             this.label12.Text = "Patient ID";
             // 
+            // n1
+            // 
+            this.n1.AutoSize = true;
+            this.n1.Location = new System.Drawing.Point(55, 3);
+            this.n1.Name = "n1";
+            this.n1.Size = new System.Drawing.Size(41, 17);
+            this.n1.TabIndex = 98;
+            this.n1.TabStop = true;
+            this.n1.Text = "NO";
+            this.n1.UseVisualStyleBackColor = true;
+            // 
+            // y1
+            // 
+            this.y1.AutoSize = true;
+            this.y1.Location = new System.Drawing.Point(3, 3);
+            this.y1.Name = "y1";
+            this.y1.Size = new System.Drawing.Size(46, 17);
+            this.y1.TabIndex = 97;
+            this.y1.TabStop = true;
+            this.y1.Text = "YES";
+            this.y1.UseVisualStyleBackColor = true;
+            // 
+            // panel22
+            // 
+            this.panel22.AutoSize = true;
+            this.panel22.Controls.Add(this.y1);
+            this.panel22.Controls.Add(this.n1);
+            this.panel22.Location = new System.Drawing.Point(210, 257);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(99, 23);
+            this.panel22.TabIndex = 216;
+            // 
             // MedExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3217,8 +3217,6 @@
             this.pregnancyN.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.panel24.ResumeLayout(false);
@@ -3230,6 +3228,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3322,9 +3322,6 @@
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.RadioButton y2;
         private System.Windows.Forms.RadioButton n2;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.RadioButton y1;
-        private System.Windows.Forms.RadioButton n1;
         internal System.Windows.Forms.TextBox mensBox;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
@@ -3498,5 +3495,8 @@
         private System.Windows.Forms.RadioButton y14;
         private System.Windows.Forms.NumericUpDown weightBox;
         private System.Windows.Forms.NumericUpDown heightBox;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.RadioButton y1;
+        private System.Windows.Forms.RadioButton n1;
     }
 }

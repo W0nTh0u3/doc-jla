@@ -109,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectStringRead.cs" />
+    <Compile Include="MedExamLand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedExamLand.Designer.cs">
+      <DependentUpon>MedExamLand.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,6 +304,9 @@
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedExamLand.resx">
+      <DependentUpon>MedExamLand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsForm.resx">
       <DependentUpon>ReportsForm.cs</DependentUpon>
