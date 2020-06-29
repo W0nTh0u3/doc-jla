@@ -459,6 +459,12 @@ namespace SouthJLAInformationSystemC
         {
             MedExamLand medExamLand = new MedExamLand();
             medExamLand.Show();
+        }
+
+        private void MedExSeaClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedExamSea medExamSea = new MedExamSea();
+            medExamSea.Show();
         }
         #endregion
         private void DisableAllBoxes()
@@ -561,8 +567,6 @@ namespace SouthJLAInformationSystemC
             }
 
         }
-
-
 
         private void clearAll_Click(object sender, EventArgs e)
         {
