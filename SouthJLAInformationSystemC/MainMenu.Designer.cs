@@ -146,6 +146,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.PatientIDPanel = new System.Windows.Forms.Panel();
+            this.MedExSeaClickableLabel = new System.Windows.Forms.Label();
             this.MedExLandClickableLabel = new System.Windows.Forms.Label();
             this.clearAll = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
@@ -154,7 +155,8 @@
             this.ContentTitlePanel = new System.Windows.Forms.Panel();
             this.SubMenuLabelClicked = new System.Windows.Forms.Label();
             this.MenuClickedLabel = new System.Windows.Forms.Label();
-            this.MedExSeaClickableLabel = new System.Windows.Forms.Label();
+            this.MedCertLandClickableLabel = new System.Windows.Forms.Label();
+            this.MedCertSeaClickableLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.MenuPanel4.SuspendLayout();
             this.MenuPanel5.SuspendLayout();
@@ -1510,7 +1512,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.24242F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.75758F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel2.Controls.Add(this.Label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Label4, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lastBox, 0, 0);
@@ -1531,7 +1533,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(125, 30);
+            this.Label5.Location = new System.Drawing.Point(124, 30);
             this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 13);
@@ -1560,7 +1562,7 @@
             this.lastBox.Location = new System.Drawing.Point(2, 2);
             this.lastBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastBox.Name = "lastBox";
-            this.lastBox.Size = new System.Drawing.Size(92, 20);
+            this.lastBox.Size = new System.Drawing.Size(91, 20);
             this.lastBox.TabIndex = 60;
             // 
             // firstBox
@@ -1570,7 +1572,7 @@
             this.firstBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.firstBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.firstBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.firstBox.Location = new System.Drawing.Point(98, 2);
+            this.firstBox.Location = new System.Drawing.Point(97, 2);
             this.firstBox.Margin = new System.Windows.Forms.Padding(2);
             this.firstBox.Name = "firstBox";
             this.firstBox.Size = new System.Drawing.Size(116, 20);
@@ -1581,11 +1583,11 @@
             this.middleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.middleBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.middleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.middleBox.Location = new System.Drawing.Point(218, 2);
+            this.middleBox.Location = new System.Drawing.Point(217, 2);
             this.middleBox.Margin = new System.Windows.Forms.Padding(2);
             this.middleBox.MaxLength = 2;
             this.middleBox.Name = "middleBox";
-            this.middleBox.Size = new System.Drawing.Size(51, 20);
+            this.middleBox.Size = new System.Drawing.Size(52, 20);
             this.middleBox.TabIndex = 62;
             // 
             // Label6
@@ -1593,7 +1595,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(231, 30);
+            this.Label6.Location = new System.Drawing.Point(230, 30);
             this.Label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(25, 13);
@@ -1848,6 +1850,8 @@
             // 
             // PatientIDPanel
             // 
+            this.PatientIDPanel.Controls.Add(this.MedCertSeaClickableLabel);
+            this.PatientIDPanel.Controls.Add(this.MedCertLandClickableLabel);
             this.PatientIDPanel.Controls.Add(this.MedExSeaClickableLabel);
             this.PatientIDPanel.Controls.Add(this.MedExLandClickableLabel);
             this.PatientIDPanel.Controls.Add(this.clearAll);
@@ -1859,6 +1863,16 @@
             this.PatientIDPanel.Name = "PatientIDPanel";
             this.PatientIDPanel.Size = new System.Drawing.Size(1133, 60);
             this.PatientIDPanel.TabIndex = 84;
+            // 
+            // MedExSeaClickableLabel
+            // 
+            this.MedExSeaClickableLabel.AutoSize = true;
+            this.MedExSeaClickableLabel.Location = new System.Drawing.Point(885, 22);
+            this.MedExSeaClickableLabel.Name = "MedExSeaClickableLabel";
+            this.MedExSeaClickableLabel.Size = new System.Drawing.Size(49, 13);
+            this.MedExSeaClickableLabel.TabIndex = 75;
+            this.MedExSeaClickableLabel.Text = "FormSea";
+            this.MedExSeaClickableLabel.Click += new System.EventHandler(this.MedExSeaClickableLabel_Click);
             // 
             // MedExLandClickableLabel
             // 
@@ -1947,15 +1961,25 @@
             this.MenuClickedLabel.Text = "MenuTitle";
             this.MenuClickedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // MedExSeaClickableLabel
+            // MedCertLandClickableLabel
             // 
-            this.MedExSeaClickableLabel.AutoSize = true;
-            this.MedExSeaClickableLabel.Location = new System.Drawing.Point(885, 22);
-            this.MedExSeaClickableLabel.Name = "MedExSeaClickableLabel";
-            this.MedExSeaClickableLabel.Size = new System.Drawing.Size(49, 13);
-            this.MedExSeaClickableLabel.TabIndex = 75;
-            this.MedExSeaClickableLabel.Text = "FormSea";
-            this.MedExSeaClickableLabel.Click += new System.EventHandler(this.MedExSeaClickableLabel_Click);
+            this.MedCertLandClickableLabel.AutoSize = true;
+            this.MedCertLandClickableLabel.Location = new System.Drawing.Point(940, 22);
+            this.MedCertLandClickableLabel.Name = "MedCertLandClickableLabel";
+            this.MedCertLandClickableLabel.Size = new System.Drawing.Size(50, 13);
+            this.MedCertLandClickableLabel.TabIndex = 76;
+            this.MedCertLandClickableLabel.Text = "CertLand";
+            this.MedCertLandClickableLabel.Click += new System.EventHandler(this.MedCertLandClickableLabel_Click);
+            // 
+            // MedCertSeaClickableLabel
+            // 
+            this.MedCertSeaClickableLabel.AutoSize = true;
+            this.MedCertSeaClickableLabel.Location = new System.Drawing.Point(1000, 22);
+            this.MedCertSeaClickableLabel.Name = "MedCertSeaClickableLabel";
+            this.MedCertSeaClickableLabel.Size = new System.Drawing.Size(45, 13);
+            this.MedCertSeaClickableLabel.TabIndex = 77;
+            this.MedCertSeaClickableLabel.Text = "CertSea";
+            this.MedCertSeaClickableLabel.Click += new System.EventHandler(this.MedCertSeaClickableLabel_Click);
             // 
             // MainMenu
             // 
@@ -2142,5 +2166,7 @@
         internal System.Windows.Forms.Label PAPSClickedLabel;
         private System.Windows.Forms.Label MedExLandClickableLabel;
         private System.Windows.Forms.Label MedExSeaClickableLabel;
+        private System.Windows.Forms.Label MedCertSeaClickableLabel;
+        private System.Windows.Forms.Label MedCertLandClickableLabel;
     }
 }

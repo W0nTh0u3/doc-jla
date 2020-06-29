@@ -906,14 +906,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SouthJLAInformationSystemC.exe" size="5805552">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SouthJLAInformationSystemC.exe" size="5841392">
       <assemblyIdentity name="SouthJLAInformationSystemC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Kv6et7k0TvVxCtiafroqMMItreg0fZHf2bxCAp6B/Mk=</dsig:DigestValue>
+        <dsig:DigestValue>VMhiU4rkw2VyWOmzVNvwetYhayXDzUtMwxVfpEvD++s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

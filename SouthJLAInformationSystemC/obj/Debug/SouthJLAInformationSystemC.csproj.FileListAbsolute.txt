@@ -362,3 +362,5 @@ E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.dll
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\bin\Debug\NGS.Templater.xml
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamLand.resources
 E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedExamSea.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedCertLand.resources
+E:\GitRepos\doc-jla\SouthJLAInformationSystemC\obj\Debug\SouthJLAInformationSystemC.MedCertSea.resources

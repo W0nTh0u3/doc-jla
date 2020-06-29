@@ -465,6 +465,18 @@ namespace SouthJLAInformationSystemC
         {
             MedExamSea medExamSea = new MedExamSea();
             medExamSea.Show();
+        }
+
+        private void MedCertSeaClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedCertSea medCertSea = new MedCertSea();
+            medCertSea.Show();
+        }
+
+        private void MedCertLandClickableLabel_Click(object sender, EventArgs e)
+        {
+            MedCertLand medCertLand = new MedCertLand();
+            medCertLand.Show();
         }
         #endregion
         private void DisableAllBoxes()

@@ -109,6 +109,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectStringRead.cs" />
+    <Compile Include="MedCertLand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedCertLand.Designer.cs">
+      <DependentUpon>MedCertLand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedCertSea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedCertSea.Designer.cs">
+      <DependentUpon>MedCertSea.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedExamSea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +322,12 @@
     </Compile>
     <EmbeddedResource Include="CBCForm.resx">
       <DependentUpon>CBCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedCertLand.resx">
+      <DependentUpon>MedCertLand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedCertSea.resx">
+      <DependentUpon>MedCertSea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MedExamSea.resx">
       <DependentUpon>MedExamSea.cs</DependentUpon>
