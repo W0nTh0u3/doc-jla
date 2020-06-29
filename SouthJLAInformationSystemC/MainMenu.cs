@@ -47,7 +47,7 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table 
             sda.Fill(dt);
 
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 packageBox.Items.Add(dt.Rows[i][0].ToString());
             }

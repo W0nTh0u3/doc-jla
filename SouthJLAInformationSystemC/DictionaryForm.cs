@@ -15,8 +15,8 @@ namespace SouthJLAInformationSystemC
     public partial class DictionaryForm : Form
     {
         public string testDic = "";
-        
 
+        
         public DictionaryForm()
         {
             InitializeComponent();
@@ -27,13 +27,26 @@ namespace SouthJLAInformationSystemC
             DataTable dt = new DataTable(); //this is creating a virtual table 
             sda.Fill(dt);
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
                 viewTestCombo.Items.Add(dt.Rows[i][0].ToString());
                 editTestCombo.Items.Add(dt.Rows[i][0].ToString());
+                pTestAddBox.Items.Add(dt.Rows[i][0].ToString());
             }
-        
+
+
+            SqlDataAdapter sdaP = new SqlDataAdapter("SELECT DISTINCT packageName FROM dbo.Packages", conn);
+            DataTable dtP = new DataTable(); //this is creating a virtual table 
+            sdaP.Fill(dtP);
+
+            for (int p = 0; p < dtP.Rows.Count; p++)
+            {
+                packsViewComboBox.Items.Add(dtP.Rows[p][0].ToString());
+                packsEditComboBox.Items.Add(dtP.Rows[p][0].ToString());
+            }
+
         }
+       
         private void HideAllPanel()
         {
             ViewDictPanel.Hide();
@@ -225,6 +238,127 @@ namespace SouthJLAInformationSystemC
         }
 
 
+        private void ChangePTestEdit(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
+            string sqlpt = "SELECT price FROM dbo.tests WHERE tests = '" + pTestAddBox.Text.ToString() + "'";
+            SqlDataAdapter sdapt = new SqlDataAdapter(sqlpt, conn);
+            DataTable dtPT = new DataTable();
+            sdapt.Fill(dtPT);
+            
+            aPriceText.Text = dtPT.Rows[0][0].ToString();
+            if (testIncluded.Items.Contains(pTestAddBox.Text.ToString()))
+            {
+                removeFrom.Enabled = true;
+                addTo.Enabled = false;
+                priceModBtn.Enabled = false;
+                mPriceBox.Enabled = false;
+
+
+            }
+            else
+            {
+                mPriceText.Text = dtPT.Rows[0][0].ToString();
+                removeFrom.Enabled = false;
+                addTo.Enabled = true;
+                priceModBtn.Enabled = true;
+                mPriceBox.Enabled = true;
+
+            }
+
+        }
+
+        private void changePackView(object sender, EventArgs e)
+        {
+            testViewPacks.Items.Clear();
+            priceViewPacks.Items.Clear();
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
+            string sqlbill = "SELECT * FROM dbo.Packages WHERE packageName = '" + packsViewComboBox.Text.ToString() + "'";
+            SqlDataAdapter sdabill = new SqlDataAdapter(sqlbill, conn);
+            DataTable dtP = new DataTable();
+            sdabill.Fill(dtP);
+            viewPricePack.Text = dtP.Rows[0][2].ToString();
+            int numTestPack = dtP.Columns.Count - 2;
+
+            for (int cTest = 1; cTest < numTestPack; cTest++)
+            {
+                Console.WriteLine(dtP.Rows[0][cTest + 2].ToString());
+                if (dtP.Rows[0][cTest + 2].ToString() != "")
+                {
+
+                    string sqltestName = "SELECT tests FROM dbo.tests WHERE id = '" + cTest + "'";
+                    SqlDataAdapter sdaTN = new SqlDataAdapter(sqltestName, conn);
+                    DataTable dtTN = new DataTable();
+                    sdaTN.Fill(dtTN);
+
+                    testViewPacks.Items.Add(dtTN.Rows[0][0].ToString());
+                    priceViewPacks.Items.Add(dtP.Rows[0][cTest + 2].ToString());
+
+                }
+            }
+        }
+        private void ChangePackEdit(object sender, EventArgs e)
+        {
+            testIncluded.Items.Clear();
+            priceIncluded.Items.Clear();
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
+
+            int numPacks = packsEditComboBox.Items.Count, ifInside = 0;
+            for (int pac = 0; pac < numPacks; pac++)
+            {
+                if (packsEditComboBox.Items.Contains(packsEditComboBox.Text))
+                {
+                    ifInside = 1;
+                }
+            }
+            if(ifInside == 1)
+            {
+                savePack.Text = "Save";
+                string sqlbill = "SELECT * FROM dbo.Packages WHERE packageName = '" + packsEditComboBox.Text.ToString() + "'";
+                SqlDataAdapter sdabill = new SqlDataAdapter(sqlbill, conn);
+                DataTable dtP = new DataTable(); 
+                sdabill.Fill(dtP);
+                packagePrice.Text = dtP.Rows[0][2].ToString();
+                int numTestPack = dtP.Columns.Count - 2;
+                int packBill = 0;
+                for (int cTest = 1; cTest <numTestPack; cTest++)
+                {
+                    Console.WriteLine(dtP.Rows[0][cTest + 2].ToString());
+                    if (dtP.Rows[0][cTest+2].ToString() != "")
+                    {
+                      
+                        string sqltestName = "SELECT tests FROM dbo.tests WHERE id = '" + cTest + "'";
+                        SqlDataAdapter sdaTN = new SqlDataAdapter(sqltestName, conn);
+                        DataTable dtTN = new DataTable();
+                        sdaTN.Fill(dtTN);
+                      
+                        testIncluded.Items.Add(dtTN.Rows[0][0].ToString());
+                        priceIncluded.Items.Add(dtP.Rows[0][cTest+2].ToString());
+
+                        if (dtP.Rows[0][2].ToString() == "" || dtP.Rows[0][2].ToString() == "0")
+                        {
+                            string adder = dtP.Rows[0][cTest + 2].ToString();
+                            packBill += Int32.Parse(adder) ;
+                            packagePrice.Text = packBill.ToString();
+                        }
+                        else
+                        {
+                            packagePrice.Text = dtP.Rows[0][2].ToString();
+                        }
+
+
+                    }
+                }
+          
+            }
+            else
+            {
+                savePack.Text = "Create Package";
+            }
+
+
+
+        }
         private void ChangeTestEdit(object sender, EventArgs e)
         {
 
@@ -423,6 +557,99 @@ namespace SouthJLAInformationSystemC
 
 
 
+        }
+
+        private void savePack_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection
+            string sqlstring = "";
+            if (savePack.Text == "Save") {
+                sqlstring = "DELETE FROM dbo.Packages WHERE packageName = '"+packsEditComboBox.Text+"'";
+                SqlCommand sda3 = new SqlCommand(sqlstring, conn);
+                conn.Open();
+                sda3.ExecuteNonQuery();
+                conn.Close();
+            }
+            int counterTest = testIncluded.Items.Count;
+
+            sqlstring = "INSERT INTO dbo.Packages (packageName,bill) VALUES ('" + packsEditComboBox.Text + "', '" + packagePrice.Text + "')";
+            SqlCommand sda = new SqlCommand(sqlstring, conn);
+            conn.Open();
+            sda.ExecuteNonQuery();
+            conn.Close();
+            for (int cT = 0; cT<counterTest; cT++)
+            {
+                SqlCommand sda2 = new SqlCommand("UPDATE dbo.Packages SET " + testIncluded.Items[cT].ToString() +" = '"+priceIncluded.Items[cT].ToString()+"' WHERE packageName = '"+packsEditComboBox.Text+"'", conn);
+                conn.Open();
+                sda2.ExecuteNonQuery();
+                conn.Close();
+            }
+            clearPackage();
+
+        }
+
+        private void priceModBtn_Click(object sender, EventArgs e)
+        {
+            if (mPriceBox.Text != "")
+            { mPriceText.Text = mPriceBox.Text; }
+        }
+
+        private void addTo_Click(object sender, EventArgs e)
+        {
+            testIncluded.Items.Add(pTestAddBox.Text);
+            priceIncluded.Items.Add(mPriceText.Text);
+       
+                removeFrom.Enabled = true;
+                addTo.Enabled = false;
+                priceModBtn.Enabled = false;
+                mPriceBox.Enabled = false;
+                mPriceText.Text = "";
+                mPriceBox.Text = "";
+
+            refreshPrice();
+        }
+
+        private void removeFrom_Click(object sender, EventArgs e)
+        {
+            int testIndex = testIncluded.Items.IndexOf(pTestAddBox.Text);
+            testIncluded.Items.Remove(pTestAddBox.Text);
+            priceIncluded.Items.RemoveAt(testIndex);
+
+            mPriceText.Text = aPriceText.Text;
+            mPriceBox.Text = "";
+            removeFrom.Enabled = false;
+            addTo.Enabled = true;
+            priceModBtn.Enabled = true;
+            mPriceBox.Enabled = true;
+            refreshPrice();
+        }
+        private void refreshPrice()
+        {
+            int adder=0;
+            for (int cPrices = 0; cPrices<priceIncluded.Items.Count; cPrices++)
+            {
+                adder += Int32.Parse(priceIncluded.Items[cPrices].ToString());
+            }
+            packagePrice.Text = adder.ToString();
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            clearPackage();
+
+        }
+        private void clearPackage()
+        {
+            packsEditComboBox.Text = "";
+            priceIncluded.Items.Clear();
+            testIncluded.Items.Clear();
+            packagePrice.Text = "";
+            mPriceText.Text = aPriceText.Text;
+            mPriceBox.Text = "";
+            mPriceBox.Enabled = false;
+            priceModBtn.Enabled = false;
+            addTo.Enabled = true;
+            removeFrom.Enabled = false;
         }
     }
 }
