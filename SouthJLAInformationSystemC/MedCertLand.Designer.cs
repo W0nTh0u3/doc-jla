@@ -56,19 +56,33 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitCBC = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.label19 = new System.Windows.Forms.Label();
+            this.agencyBox = new System.Windows.Forms.TextBox();
+            this.passportBox = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.religionBox = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.nationalityBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.destinationBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.contactBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.positionBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.expirationDate = new System.Windows.Forms.DateTimePicker();
             this.label34 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.issuanceDate = new System.Windows.Forms.DateTimePicker();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.directorBox = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.physicianBox = new System.Windows.Forms.TextBox();
             this.label142 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.examDate = new System.Windows.Forms.DateTimePicker();
             this.label139 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.fitRadio = new System.Windows.Forms.RadioButton();
+            this.falseFit = new System.Windows.Forms.RadioButton();
             this.label31 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label24 = new System.Windows.Forms.Label();
@@ -77,36 +91,22 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.sightRadio = new System.Windows.Forms.RadioButton();
+            this.falseSight = new System.Windows.Forms.RadioButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.hearingRadio = new System.Windows.Forms.RadioButton();
+            this.falseHearing = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.colorRadio = new System.Windows.Forms.RadioButton();
+            this.falseColor = new System.Windows.Forms.RadioButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.psychRadio = new System.Windows.Forms.RadioButton();
+            this.falsePsych = new System.Windows.Forms.RadioButton();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.medConditionRadio = new System.Windows.Forms.RadioButton();
+            this.falseMed = new System.Windows.Forms.RadioButton();
             this.label74 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -425,34 +425,35 @@
             this.SubmitCBC.TabIndex = 0;
             this.SubmitCBC.Text = "Verify";
             this.SubmitCBC.UseVisualStyleBackColor = true;
+            this.SubmitCBC.Click += new System.EventHandler(this.SubmitCBC_Click);
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
             this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 20);
             this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.agencyBox);
+            this.panel2.Controls.Add(this.passportBox);
             this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.religionBox);
             this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.nationalityBox);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.destinationBox);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.contactBox);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.positionBox);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.dateTimePicker4);
+            this.panel2.Controls.Add(this.expirationDate);
             this.panel2.Controls.Add(this.label34);
-            this.panel2.Controls.Add(this.dateTimePicker3);
+            this.panel2.Controls.Add(this.issuanceDate);
             this.panel2.Controls.Add(this.label33);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.directorBox);
             this.panel2.Controls.Add(this.label32);
-            this.panel2.Controls.Add(this.textBox52);
+            this.panel2.Controls.Add(this.physicianBox);
             this.panel2.Controls.Add(this.label142);
-            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.examDate);
             this.panel2.Controls.Add(this.label139);
             this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.label31);
@@ -465,12 +466,124 @@
             this.panel2.Size = new System.Drawing.Size(800, 410);
             this.panel2.TabIndex = 12;
             // 
-            // dateTimePicker4
+            // label19
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(290, 645);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker4.TabIndex = 370;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(19, 138);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(336, 13);
+            this.label19.TabIndex = 384;
+            this.label19.Text = "Name of Company/Employer/Recruitment Agency (When Applicable):";
+            // 
+            // agencyBox
+            // 
+            this.agencyBox.Location = new System.Drawing.Point(358, 135);
+            this.agencyBox.Name = "agencyBox";
+            this.agencyBox.Size = new System.Drawing.Size(396, 20);
+            this.agencyBox.TabIndex = 383;
+            // 
+            // passportBox
+            // 
+            this.passportBox.Location = new System.Drawing.Point(128, 83);
+            this.passportBox.Name = "passportBox";
+            this.passportBox.Size = new System.Drawing.Size(250, 20);
+            this.passportBox.TabIndex = 382;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(19, 112);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 13);
+            this.label18.TabIndex = 381;
+            this.label18.Text = "Position Applied For:";
+            // 
+            // religionBox
+            // 
+            this.religionBox.Location = new System.Drawing.Point(522, 83);
+            this.religionBox.Name = "religionBox";
+            this.religionBox.Size = new System.Drawing.Size(232, 20);
+            this.religionBox.TabIndex = 380;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(402, 112);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(114, 13);
+            this.label17.TabIndex = 379;
+            this.label17.Text = "Country of Destination:";
+            // 
+            // nationalityBox
+            // 
+            this.nationalityBox.Location = new System.Drawing.Point(128, 57);
+            this.nationalityBox.Name = "nationalityBox";
+            this.nationalityBox.Size = new System.Drawing.Size(250, 20);
+            this.nationalityBox.TabIndex = 378;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 86);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(91, 13);
+            this.label16.TabIndex = 377;
+            this.label16.Text = "Passport Number:";
+            // 
+            // destinationBox
+            // 
+            this.destinationBox.Location = new System.Drawing.Point(522, 109);
+            this.destinationBox.Name = "destinationBox";
+            this.destinationBox.Size = new System.Drawing.Size(232, 20);
+            this.destinationBox.TabIndex = 376;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(402, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 13);
+            this.label14.TabIndex = 375;
+            this.label14.Text = "Contact Number:";
+            // 
+            // contactBox
+            // 
+            this.contactBox.Location = new System.Drawing.Point(522, 57);
+            this.contactBox.Name = "contactBox";
+            this.contactBox.Size = new System.Drawing.Size(232, 20);
+            this.contactBox.TabIndex = 374;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(402, 86);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 13);
+            this.label13.TabIndex = 373;
+            this.label13.Text = "Religion:";
+            // 
+            // positionBox
+            // 
+            this.positionBox.Location = new System.Drawing.Point(128, 109);
+            this.positionBox.Name = "positionBox";
+            this.positionBox.Size = new System.Drawing.Size(250, 20);
+            this.positionBox.TabIndex = 372;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(19, 60);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(59, 13);
+            this.label15.TabIndex = 371;
+            this.label15.Text = "Nationality:";
+            // 
+            // expirationDate
+            // 
+            this.expirationDate.Location = new System.Drawing.Point(290, 645);
+            this.expirationDate.Name = "expirationDate";
+            this.expirationDate.Size = new System.Drawing.Size(200, 20);
+            this.expirationDate.TabIndex = 370;
             // 
             // label34
             // 
@@ -481,12 +594,12 @@
             this.label34.TabIndex = 369;
             this.label34.Text = "DATE OF EXPIRATION OF PEME CERTIFICATE:";
             // 
-            // dateTimePicker3
+            // issuanceDate
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(290, 619);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 368;
+            this.issuanceDate.Location = new System.Drawing.Point(290, 619);
+            this.issuanceDate.Name = "issuanceDate";
+            this.issuanceDate.Size = new System.Drawing.Size(200, 20);
+            this.issuanceDate.TabIndex = 368;
             // 
             // label33
             // 
@@ -497,13 +610,13 @@
             this.label33.TabIndex = 367;
             this.label33.Text = "DATE OF ISSUANCE OF PEME CERTIFICATE:";
             // 
-            // textBox9
+            // directorBox
             // 
-            this.textBox9.AllowDrop = true;
-            this.textBox9.Location = new System.Drawing.Point(256, 572);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(200, 20);
-            this.textBox9.TabIndex = 366;
+            this.directorBox.AllowDrop = true;
+            this.directorBox.Location = new System.Drawing.Point(256, 572);
+            this.directorBox.Name = "directorBox";
+            this.directorBox.Size = new System.Drawing.Size(200, 20);
+            this.directorBox.TabIndex = 366;
             // 
             // label32
             // 
@@ -514,13 +627,13 @@
             this.label32.TabIndex = 365;
             this.label32.Text = "Medical Director";
             // 
-            // textBox52
+            // physicianBox
             // 
-            this.textBox52.AllowDrop = true;
-            this.textBox52.Location = new System.Drawing.Point(256, 520);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(200, 20);
-            this.textBox52.TabIndex = 364;
+            this.physicianBox.AllowDrop = true;
+            this.physicianBox.Location = new System.Drawing.Point(256, 520);
+            this.physicianBox.Name = "physicianBox";
+            this.physicianBox.Size = new System.Drawing.Size(200, 20);
+            this.physicianBox.TabIndex = 364;
             // 
             // label142
             // 
@@ -531,12 +644,12 @@
             this.label142.TabIndex = 363;
             this.label142.Text = "Name of Examining/Authorized Physician";
             // 
-            // dateTimePicker2
+            // examDate
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(256, 546);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 362;
+            this.examDate.Location = new System.Drawing.Point(256, 546);
+            this.examDate.Name = "examDate";
+            this.examDate.Size = new System.Drawing.Size(200, 20);
+            this.examDate.TabIndex = 362;
             // 
             // label139
             // 
@@ -550,34 +663,34 @@
             // panel13
             // 
             this.panel13.AutoSize = true;
-            this.panel13.Controls.Add(this.radioButton17);
-            this.panel13.Controls.Add(this.radioButton18);
+            this.panel13.Controls.Add(this.fitRadio);
+            this.panel13.Controls.Add(this.falseFit);
             this.panel13.Location = new System.Drawing.Point(81, 471);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(175, 23);
             this.panel13.TabIndex = 360;
             // 
-            // radioButton17
+            // fitRadio
             // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Checked = true;
-            this.radioButton17.Location = new System.Drawing.Point(3, 3);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(76, 17);
-            this.radioButton17.TabIndex = 97;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "Fit for Duty";
-            this.radioButton17.UseVisualStyleBackColor = true;
+            this.fitRadio.AutoSize = true;
+            this.fitRadio.Checked = true;
+            this.fitRadio.Location = new System.Drawing.Point(3, 3);
+            this.fitRadio.Name = "fitRadio";
+            this.fitRadio.Size = new System.Drawing.Size(76, 17);
+            this.fitRadio.TabIndex = 97;
+            this.fitRadio.TabStop = true;
+            this.fitRadio.Text = "Fit for Duty";
+            this.fitRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton18
+            // falseFit
             // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(85, 3);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(87, 17);
-            this.radioButton18.TabIndex = 98;
-            this.radioButton18.Text = "Unfit for Duty";
-            this.radioButton18.UseVisualStyleBackColor = true;
+            this.falseFit.AutoSize = true;
+            this.falseFit.Location = new System.Drawing.Point(85, 3);
+            this.falseFit.Name = "falseFit";
+            this.falseFit.Size = new System.Drawing.Size(87, 17);
+            this.falseFit.TabIndex = 98;
+            this.falseFit.Text = "Unfit for Duty";
+            this.falseFit.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
@@ -677,166 +790,166 @@
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.AutoSize = true;
-            this.panel4.Controls.Add(this.radioButton1);
-            this.panel4.Controls.Add(this.radioButton2);
+            this.panel4.Controls.Add(this.sightRadio);
+            this.panel4.Controls.Add(this.falseSight);
             this.panel4.Location = new System.Drawing.Point(474, 50);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(99, 23);
             this.panel4.TabIndex = 219;
             // 
-            // radioButton1
+            // sightRadio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 17);
-            this.radioButton1.TabIndex = 97;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "YES";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.sightRadio.AutoSize = true;
+            this.sightRadio.Checked = true;
+            this.sightRadio.Location = new System.Drawing.Point(3, 3);
+            this.sightRadio.Name = "sightRadio";
+            this.sightRadio.Size = new System.Drawing.Size(46, 17);
+            this.sightRadio.TabIndex = 97;
+            this.sightRadio.TabStop = true;
+            this.sightRadio.Text = "YES";
+            this.sightRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // falseSight
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(55, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(41, 17);
-            this.radioButton2.TabIndex = 98;
-            this.radioButton2.Text = "NO";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.falseSight.AutoSize = true;
+            this.falseSight.Location = new System.Drawing.Point(55, 3);
+            this.falseSight.Name = "falseSight";
+            this.falseSight.Size = new System.Drawing.Size(41, 17);
+            this.falseSight.TabIndex = 98;
+            this.falseSight.Text = "NO";
+            this.falseSight.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.AutoSize = true;
-            this.panel7.Controls.Add(this.radioButton7);
-            this.panel7.Controls.Add(this.radioButton8);
+            this.panel7.Controls.Add(this.hearingRadio);
+            this.panel7.Controls.Add(this.falseHearing);
             this.panel7.Location = new System.Drawing.Point(474, 9);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(99, 23);
             this.panel7.TabIndex = 219;
             // 
-            // radioButton7
+            // hearingRadio
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Checked = true;
-            this.radioButton7.Location = new System.Drawing.Point(3, 3);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(46, 17);
-            this.radioButton7.TabIndex = 97;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "YES";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.hearingRadio.AutoSize = true;
+            this.hearingRadio.Checked = true;
+            this.hearingRadio.Location = new System.Drawing.Point(3, 3);
+            this.hearingRadio.Name = "hearingRadio";
+            this.hearingRadio.Size = new System.Drawing.Size(46, 17);
+            this.hearingRadio.TabIndex = 97;
+            this.hearingRadio.TabStop = true;
+            this.hearingRadio.Text = "YES";
+            this.hearingRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // falseHearing
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(55, 3);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(41, 17);
-            this.radioButton8.TabIndex = 98;
-            this.radioButton8.Text = "NO";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.falseHearing.AutoSize = true;
+            this.falseHearing.Location = new System.Drawing.Point(55, 3);
+            this.falseHearing.Name = "falseHearing";
+            this.falseHearing.Size = new System.Drawing.Size(41, 17);
+            this.falseHearing.TabIndex = 98;
+            this.falseHearing.Text = "NO";
+            this.falseHearing.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.AutoSize = true;
-            this.panel5.Controls.Add(this.radioButton3);
-            this.panel5.Controls.Add(this.radioButton4);
+            this.panel5.Controls.Add(this.colorRadio);
+            this.panel5.Controls.Add(this.falseColor);
             this.panel5.Location = new System.Drawing.Point(474, 91);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(99, 23);
             this.panel5.TabIndex = 220;
             // 
-            // radioButton3
+            // colorRadio
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 3);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(46, 17);
-            this.radioButton3.TabIndex = 97;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "YES";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.colorRadio.AutoSize = true;
+            this.colorRadio.Checked = true;
+            this.colorRadio.Location = new System.Drawing.Point(3, 3);
+            this.colorRadio.Name = "colorRadio";
+            this.colorRadio.Size = new System.Drawing.Size(46, 17);
+            this.colorRadio.TabIndex = 97;
+            this.colorRadio.TabStop = true;
+            this.colorRadio.Text = "YES";
+            this.colorRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // falseColor
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(55, 3);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(41, 17);
-            this.radioButton4.TabIndex = 98;
-            this.radioButton4.Text = "NO";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.falseColor.AutoSize = true;
+            this.falseColor.Location = new System.Drawing.Point(55, 3);
+            this.falseColor.Name = "falseColor";
+            this.falseColor.Size = new System.Drawing.Size(41, 17);
+            this.falseColor.TabIndex = 98;
+            this.falseColor.Text = "NO";
+            this.falseColor.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.AutoSize = true;
-            this.panel6.Controls.Add(this.radioButton5);
-            this.panel6.Controls.Add(this.radioButton6);
+            this.panel6.Controls.Add(this.psychRadio);
+            this.panel6.Controls.Add(this.falsePsych);
             this.panel6.Location = new System.Drawing.Point(474, 132);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(99, 23);
             this.panel6.TabIndex = 221;
             // 
-            // radioButton5
+            // psychRadio
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Checked = true;
-            this.radioButton5.Location = new System.Drawing.Point(3, 3);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(46, 17);
-            this.radioButton5.TabIndex = 97;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "YES";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.psychRadio.AutoSize = true;
+            this.psychRadio.Checked = true;
+            this.psychRadio.Location = new System.Drawing.Point(3, 3);
+            this.psychRadio.Name = "psychRadio";
+            this.psychRadio.Size = new System.Drawing.Size(46, 17);
+            this.psychRadio.TabIndex = 97;
+            this.psychRadio.TabStop = true;
+            this.psychRadio.Text = "YES";
+            this.psychRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // falsePsych
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(55, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(41, 17);
-            this.radioButton6.TabIndex = 98;
-            this.radioButton6.Text = "NO";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.falsePsych.AutoSize = true;
+            this.falsePsych.Location = new System.Drawing.Point(55, 3);
+            this.falsePsych.Name = "falsePsych";
+            this.falsePsych.Size = new System.Drawing.Size(41, 17);
+            this.falsePsych.TabIndex = 98;
+            this.falsePsych.Text = "NO";
+            this.falsePsych.UseVisualStyleBackColor = true;
             // 
             // panel8
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.AutoSize = true;
-            this.panel8.Controls.Add(this.radioButton9);
-            this.panel8.Controls.Add(this.radioButton10);
+            this.panel8.Controls.Add(this.medConditionRadio);
+            this.panel8.Controls.Add(this.falseMed);
             this.panel8.Location = new System.Drawing.Point(474, 175);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(99, 23);
             this.panel8.TabIndex = 222;
             // 
-            // radioButton9
+            // medConditionRadio
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(3, 3);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(46, 17);
-            this.radioButton9.TabIndex = 97;
-            this.radioButton9.Text = "YES";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.medConditionRadio.AutoSize = true;
+            this.medConditionRadio.Location = new System.Drawing.Point(3, 3);
+            this.medConditionRadio.Name = "medConditionRadio";
+            this.medConditionRadio.Size = new System.Drawing.Size(46, 17);
+            this.medConditionRadio.TabIndex = 97;
+            this.medConditionRadio.Text = "YES";
+            this.medConditionRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // falseMed
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Checked = true;
-            this.radioButton10.Location = new System.Drawing.Point(55, 3);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(41, 17);
-            this.radioButton10.TabIndex = 98;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "NO";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.falseMed.AutoSize = true;
+            this.falseMed.Checked = true;
+            this.falseMed.Location = new System.Drawing.Point(55, 3);
+            this.falseMed.Name = "falseMed";
+            this.falseMed.Size = new System.Drawing.Size(41, 17);
+            this.falseMed.TabIndex = 98;
+            this.falseMed.TabStop = true;
+            this.falseMed.Text = "NO";
+            this.falseMed.UseVisualStyleBackColor = true;
             // 
             // label74
             // 
@@ -850,125 +963,13 @@
             // 
             // label67
             // 
-            this.label67.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(1, 0);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(779, 43);
             this.label67.TabIndex = 223;
             this.label67.Text = "MEDICAL CERTIFICATE FOR LANDBASED OVERSEAS WORKERS";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(19, 138);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(336, 13);
-            this.label19.TabIndex = 384;
-            this.label19.Text = "Name of Company/Employer/Recruitment Agency (When Applicable):";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(358, 135);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(396, 20);
-            this.textBox7.TabIndex = 383;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(128, 83);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(250, 20);
-            this.textBox6.TabIndex = 382;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(19, 112);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(103, 13);
-            this.label18.TabIndex = 381;
-            this.label18.Text = "Position Applied For:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(522, 83);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(232, 20);
-            this.textBox5.TabIndex = 380;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(402, 112);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(114, 13);
-            this.label17.TabIndex = 379;
-            this.label17.Text = "Country of Destination:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(128, 57);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 20);
-            this.textBox4.TabIndex = 378;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(19, 86);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 13);
-            this.label16.TabIndex = 377;
-            this.label16.Text = "Passport Number:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(522, 109);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 20);
-            this.textBox3.TabIndex = 376;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(402, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 13);
-            this.label14.TabIndex = 375;
-            this.label14.Text = "Contact Number:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(522, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 20);
-            this.textBox1.TabIndex = 374;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(402, 86);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(48, 13);
-            this.label13.TabIndex = 373;
-            this.label13.Text = "Religion:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(128, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 20);
-            this.textBox2.TabIndex = 372;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(19, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 13);
-            this.label15.TabIndex = 371;
-            this.label15.Text = "Nationality:";
             // 
             // MedCertLand
             // 
@@ -1043,52 +1044,52 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton sightRadio;
+        private System.Windows.Forms.RadioButton falseSight;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton hearingRadio;
+        private System.Windows.Forms.RadioButton falseHearing;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton colorRadio;
+        private System.Windows.Forms.RadioButton falseColor;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton psychRadio;
+        private System.Windows.Forms.RadioButton falsePsych;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton medConditionRadio;
+        private System.Windows.Forms.RadioButton falseMed;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
+        private System.Windows.Forms.RadioButton fitRadio;
+        private System.Windows.Forms.RadioButton falseFit;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker examDate;
         private System.Windows.Forms.Label label139;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox directorBox;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox52;
+        private System.Windows.Forms.TextBox physicianBox;
         private System.Windows.Forms.Label label142;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker expirationDate;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker issuanceDate;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox agencyBox;
+        private System.Windows.Forms.TextBox passportBox;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox religionBox;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox nationalityBox;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox destinationBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox contactBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox positionBox;
         private System.Windows.Forms.Label label15;
     }
 }

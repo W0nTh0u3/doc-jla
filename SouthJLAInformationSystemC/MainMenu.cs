@@ -21,7 +21,7 @@ namespace SouthJLAInformationSystemC
         public bool userEdit = false;
         public bool userSuper = false;
         public string terminal = System.Environment.MachineName;
-        public static string statusCbc = "", statusUrineStool = "", statusMed = "", statusXray = "", statusEcg = "", statusFbs = "", statusPaps = "";
+        public static string statusCbc = "", statusUrineStool = "", statusMed = "", statusXray = "", statusEcg = "", statusFbs = "", statusPaps = "", statusMedCertLand = "";
         public MainMenu(string type, string firstName, string lastName)
         {
             InitializeComponent();
@@ -29,13 +29,23 @@ namespace SouthJLAInformationSystemC
             Console.WriteLine("terminal: " + terminal);
 
             MenuClickedLabel.Text = "";
-            SubMenuLabelClicked.Text = "";            userClass = type;            Console.WriteLine("User classification type: " + userClass);            Console.WriteLine("First Name of User " + firstName);            Console.WriteLine("Last Name: " + lastName);            if (type == "2")
+            SubMenuLabelClicked.Text = "";
+
+            userClass = type;
+            Console.WriteLine("User classification type: " + userClass);
+            Console.WriteLine("First Name of User " + firstName);
+            Console.WriteLine("Last Name: " + lastName);
+
+            if (type == "2")
             {
                 EditOnly();
-            }            else if (type == "1")
+            }
+            else if (type == "1")
             {
                 EnterOnly();
-            }
+            }
+
+
             dateFiledBox.Value = DateTime.Now;
 
             clearAll.Enabled = false;
@@ -62,7 +72,8 @@ namespace SouthJLAInformationSystemC
             }
         }
         private void MainMenuV2_Load(object sender, EventArgs e)
-        {
+        {
+
             this.KeyPreview = true;
             SidePanel.Dock = DockStyle.Fill;
             SubPanelsHide();
@@ -351,7 +362,8 @@ namespace SouthJLAInformationSystemC
         #region labelsclickGenClinic
 
 
-        private void CBCClickableLabel_Click(object sender, EventArgs e)
+        private void CBCClickableLabel_Click(object sender, EventArgs e)
+
         {
             Console.WriteLine(uniquePass + "/" + idPass + "/" + submit.Text);
             try
@@ -367,10 +379,14 @@ namespace SouthJLAInformationSystemC
             }
 
 
-        }
-
-        private void UriClickableLabel_Click(object sender, EventArgs e)
-        {            try
+        }
+
+
+
+        private void UriClickableLabel_Click(object sender, EventArgs e)
+
+        {
+            try
             {
                 UrinStoolForm urinStoolForm = new UrinStoolForm(uniquePass, idPass, submit.Text);
 
@@ -383,13 +399,18 @@ namespace SouthJLAInformationSystemC
             }
 
 
-        }
-
-        private void MedExClickableLabel_Click(object sender, EventArgs e)
-        {            try
+        }
+
+
+
+        private void MedExClickableLabel_Click(object sender, EventArgs e)
+
+        {
+            try
             {
 
-                MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
+                MedExamForm medExamForm = new MedExamForm(uniquePass, idPass, submit.Text);
+
                 medExamForm.Show();
             }
             catch (Exception en)
@@ -398,10 +419,14 @@ namespace SouthJLAInformationSystemC
                 Console.WriteLine(en.Message);
             }
 
-        }
-
-        private void XrayClickableLabel_Click(object sender, EventArgs e)
-        {            try
+        }
+
+
+
+        private void XrayClickableLabel_Click(object sender, EventArgs e)
+
+        {
+            try
             {
                 XrayForm xrayForm = new XrayForm(uniquePass, idPass, submit.Text);
 
@@ -414,10 +439,14 @@ namespace SouthJLAInformationSystemC
             }
 
 
-        }
-
-        private void ECGClickableLabel_Click(object sender, EventArgs e)
-        {            try
+        }
+
+
+
+        private void ECGClickableLabel_Click(object sender, EventArgs e)
+
+        {
+            try
             {
                 ECGForm eCGForm = new ECGForm(uniquePass, idPass, submit.Text);
 
@@ -430,10 +459,14 @@ namespace SouthJLAInformationSystemC
             }
 
 
-        }
-
-        private void FBSClickableLabel_Click(object sender, EventArgs e)
-        {            try
+        }
+
+
+
+        private void FBSClickableLabel_Click(object sender, EventArgs e)
+
+        {
+            try
             {
                 FBSCholeForm fBSCholeForm = new FBSCholeForm(uniquePass, idPass, submit.Text);
 
@@ -449,10 +482,14 @@ namespace SouthJLAInformationSystemC
         }
 
 
-        private void PAPSClickedLabel_Click(object sender, EventArgs e)
-        {
-            PAPForm pAPForm = new PAPForm();
-            pAPForm.Show();
+        private void PAPSClickedLabel_Click(object sender, EventArgs e)
+
+        {
+
+            PAPForm pAPForm = new PAPForm();
+
+            pAPForm.Show();
+
         }
 
         private void MedExLandClickableLabel_Click(object sender, EventArgs e)
@@ -475,9 +512,10 @@ namespace SouthJLAInformationSystemC
 
         private void MedCertLandClickableLabel_Click(object sender, EventArgs e)
         {
-            MedCertLand medCertLand = new MedCertLand();
+            MedCertLand medCertLand = new MedCertLand(uniquePass, idPass, submit.Text);
             medCertLand.Show();
-        }
+        }
+
         #endregion
         private void DisableAllBoxes()
         {
@@ -486,7 +524,8 @@ namespace SouthJLAInformationSystemC
             PatientIDPanel.Enabled = false;
         }
         private void EnableOnlyPatientInfo()
-        {                PatientInfoPanel.Enabled = true;
+        {    
+            PatientInfoPanel.Enabled = true;
             PatientIDPanel.Enabled = true;         
             MajorelPanel.Enabled = false;
         }
@@ -503,7 +542,13 @@ namespace SouthJLAInformationSystemC
 
         private void clearAllfields()
         {
-            lastBox.Text = String.Empty;            firstBox.Text = String.Empty;            middleBox.Text = String.Empty;            ageBox.Text = String.Empty;            addressBox.Text = String.Empty;            civilBox.SelectedIndex = -1;            genderBox.SelectedIndex = -1;
+            lastBox.Text = String.Empty;
+            firstBox.Text = String.Empty;
+            middleBox.Text = String.Empty;
+            ageBox.Text = String.Empty;
+            addressBox.Text = String.Empty;
+            civilBox.SelectedIndex = -1;
+            genderBox.SelectedIndex = -1;
             searchBox.Text = String.Empty;
             bdayBox.Value = DateTime.Now;
             packageBox.SelectedIndex = -1;
@@ -621,7 +666,8 @@ namespace SouthJLAInformationSystemC
                 civilBox.SelectedIndex = -1;
                 genderBox.SelectedIndex = -1;
                 MessageBox.Show("Successful! This is your Patient ID: " + unique);
-            }            else if (submit.Text == "Save" || submit.Text == "Save changes")
+            }
+            else if (submit.Text == "Save" || submit.Text == "Save changes")
             {
                 //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True"); // making connection   
                 ConnectStringRead stringFile = new ConnectStringRead();

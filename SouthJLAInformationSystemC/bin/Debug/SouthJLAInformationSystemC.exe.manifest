@@ -246,14 +246,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="261888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="254848">
       <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LUZiqV/1MRdwlLuHYfjv+7faiJFEldiPzrNEepGjepc=</dsig:DigestValue>
+        <dsig:DigestValue>gmrIe/DrZhd/csiF7yM1BwCGElCIhc18qeNtgtNnzXc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -906,14 +906,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SouthJLAInformationSystemC.exe" size="5841392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SouthJLAInformationSystemC.exe" size="5842928">
       <assemblyIdentity name="SouthJLAInformationSystemC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VMhiU4rkw2VyWOmzVNvwetYhayXDzUtMwxVfpEvD++s=</dsig:DigestValue>
+        <dsig:DigestValue>gRyVE+xpvaUevXMy9/M7yFFhxeUnYQ7tDioBhJxhGY4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -938,13 +938,13 @@
       <dsig:DigestValue>bvHI+es0Hq6YoahXqjRxAKti3N/MZzt9fuXpwSX+Fbk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SqlServerTypes\readme.htm" size="2369">
+  <file name="SqlServerTypes\readme.htm" size="2309">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>BJeEVrWpRfGg1+JGs0y5jUfWeRb8LhM/r3ZxnZxUbP8=</dsig:DigestValue>
+      <dsig:DigestValue>wc1UAIM/zgRgP74/m6P9yp8cM5DGzUdUoPSA9VWYF+8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\x64\msvcr120.dll" size="963744">
